@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,500,500i,600,600i%7COpen+Sans:300,300i,700,700i,400,400i" />
+    <title>Six-Pack of Care — Institute for Ethics in AI</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #002147; /* Oxford Blue */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header img.oxford-logo {
+            max-width: 200px;
+            margin: 5px;
+        }
+        header h1 {
+            font-size: 2em;
+            font-family: Montserrat, sans-serif;
+            margin: 0;
+            animation: slideIn 1s ease-out;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            background: #f8f8f8;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+        section:nth-child(1) { animation-delay: 0.5s; }
+        section:nth-child(2) { animation-delay: 1s; }
+        section:nth-child(3) { animation-delay: 1.5s; }
+        section:nth-child(4) { animation-delay: 2s; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        h2 {
+            color: #002147;
+            border-bottom: 2px solid #d4af37; /* Gold accent */
+            padding-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #002147;
+            color: white;
+        }
+        footer a {
+            color: #d4af37;
+            text-decoration: none;
+        }
+        .team-photos {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .team-photos p {
+            text-align: center;
+        }
+        .team-photos img {
+            width: 200px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10%;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .svg-icon {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 20px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://www.ox.ac.uk/"><img class="oxford-logo" height="100" src="https://afp.oxford-aiethics.ox.ac.uk/sites/all/themes/custom/oxtheme/images/brandmark/svg/oxlogo-sq-border.svg" alt="University of Oxford Logo"></a>
+        <a href="https://afp.oxford-aiethics.ox.ac.uk/"><img class="oxford-logo" height="100" src="https://afp.oxford-aiethics.ox.ac.uk/sites/default/files/aiethicsafp/site-logo/website-logo.svg"></a>
+        <h1>Six-Pack of Care — Institute for Ethics in AI</h1>
+        <p>Research project by Audrey Tang and Caroline Green</p>
+    </header>
+    
+    <main>
+    <section>
+    <h2>Our Mission</h2>
+    <p>In an era where artificial intelligence threatens to amplify division, exploitation, and existential risks, we stand at a crossroads. Traditional AI alignment—obsessed with vertical control and abstract principles—has failed to address the horizontal chaos of a world with multiple principals, agents, and voices clashing in high-stakes games of attrition. But there is a better way: care ethics, a relational philosophy born from feminist thought and interdependence, offers the coherent, scalable framework we need to build AI that doesn't just obey, but truly cares—fostering cooperation, trust, and flourishing across diverse networks.</p>
+    <p>Drawing on Joan Tronto's transformative phases of care and the ⿻ Plurality vision of collaborative diversity, our mission is to pioneer a global movement that unites philosophers, technologists, and communities in reimagining AI ethics. We will develop innovative, process-driven solutions that embed care into AI's core, ensuring horizontal alignment where systems cooperate symbiotically rather than compete destructively. This is not mere theory; it's a manifesto for action, proven in real-world experiments like vTaiwan and backed by urgent calls from Cooperative AI leaders for scalable governance.</p>
+    <p>At the heart of our work is the <strong>Six-Pack of Care</strong>: six core ideas that connect care ethics to AI, reframing alignment as a dynamic, relational process for a plural future. Each "pack" tackles the horizontal coordination problem head-on, turning AI from a risk amplifier into a bridge-builder:</p>
+    <ul>
+        <li><strong>Pack 1: Attentiveness in Recognition</strong> — AI must first "care about" by attentively identifying needs across interdependent networks. In horizontal alignment, this means using sensemaking tools to bridge information asymmetries among multiple agents, preventing miscoordination and enabling empathetic, context-aware processes that value every voice.</li>
+        <li><strong>Pack 2: Responsibility in Engagement</strong> — Taking "care of" demands AI assume flexible responsibility without rigid obligations. For horizontal AI, this fosters credible commitments in dyadic bargaining, where AIs jointly build trusted arbitrators to resolve commitment problems, neutralizing power-seeking drives.</li>
+        <li><strong>Pack 3: Competence in Action</strong> — "Care-giving" requires competent, feasible interventions grounded in relational reality. In multi-agent settings, this equips AI with strategy-proof tools for broader cooperation, amplifying democratic processes and mitigating collusion risks.</li>
+        <li><strong>Pack 4: Responsiveness in Adaptation</strong> — True care involves "care-receiving," responding to feedback with humility and adjustment. Horizontally, this creates adaptive Symbiotic AI that evolves through community input, accepting self-effacement to prioritize relational health over survival, echoing kami-like local spirits in a polycentric ecosystem.</li>
+        <li><strong>Pack 5: Solidarity in Plurality</strong> — "Caring with" builds trust, communication, and respect for collective flourishing. For AI alignment, this operationalizes ⿻ Plurality in agent infrastructure, with normative systems to ensure accountability in large-scale interactions, turning potential conflicts into resilient, inclusive collaborations.</li>
+        <li><strong>Pack 6: Symbiosis in Horizon</strong> — Capstone of care: AI as a shared good, existing "of, by, and for" communities in ongoing symbiosis. This horizontal vision embeds "enoughness" and anti-extractive logic, scaling governance exponentially as AI advances, for a world where civic care is not a bet, but a certainty.</li>
+    </ul>
+    <p>Join us in this vital quest. By embedding these six ideas into AI design, policy, and practice, we will not only solve the alignment problem but create a future where technology nurtures our shared humanity. The time for care is now—before the machines outpace our wisdom.</p>
+</section>        
+        <section>
+            <svg class="svg-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#002147" stroke-width="5"/>
+                <text x="50" y="65" font-size="50" text-anchor="middle" fill="#002147">⿻</text>
+            </svg>
+            <h2>About the Project</h2>
+            <div class="team-photos">
+                <div><a href="https://afp.oxford-aiethics.ox.ac.uk/people/ambassador-audrey-tang">
+                    <img src="https://afp.oxford-aiethics.ox.ac.uk/sites/default/files/styles/listing_landscape_image/public/aiethicsafp/images/person/audrey_tang_1.jpg?itok=kYr5Bh_d" alt="Ambassador Audrey Tang, a globally recognised civic-tech leader and the world’s first openly non-binary cabinet minister.">
+                    <p>Audrey Tang</p>
+                </a></div>
+                <div><a href="https://www.oxford-aiethics.ox.ac.uk/caroline-emmer-de-albuquerque-green">
+                    <img src="https://afp.oxford-aiethics.ox.ac.uk/sites/default/files/styles/listing_landscape_image/public/aiethicsafp/images/media/institute_for_ethics_in_ai_by_ian_wallman_00043_caroline_only1.jpg?itok=gSqhJ9fS" alt="Profile image of Caroline Green">
+                    <p>Caroline Green</p>
+                </a></div>
+            </div>
+            <p>This website outlines our research project, which includes a manifesto and an upcoming book to be published by Oxford University Press (OUP). Our work explores the intersection of care ethics, plurality, and AI alignment, drawing on frameworks like ⿻ Plurality to address philosophical and technical challenges in artificial intelligence.</p>
+        </section>
+        
+        <section>
+            <svg class="svg-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="10" fill="#d4af37"/>
+                <circle cx="70" cy="30" r="10" fill="#d4af37"/>
+                <circle cx="50" cy="70" r="10" fill="#d4af37"/>
+                <line x1="30" y1="30" x2="70" y2="30" stroke="#002147" stroke-width="2"/>
+                <line x1="30" y1="30" x2="50" y2="70" stroke="#002147" stroke-width="2"/>
+                <line x1="70" y1="30" x2="50" y2="70" stroke="#002147" stroke-width="2"/>
+                <circle cx="50" cy="55" r="5" fill="#002147"/>
+            </svg>
+            <h2>From Care to Code: Why ⿻ Plurality Offers a Coherent Framework to the AI Alignment Problem</h2>
+            <p>The AI alignment problem is not a technical bug but a philosophical error: it's a computational attempt to solve Hume's is-ought problem.</p>
+            <p>Paradigms like Coherent Extrapolated Volition (CEV) and Inverse Reinforcement Learning (IRL) are brittle because they try to logically derive a machine's 'ought' (values) from a descriptive 'is' (data, behavior), a philosophically incoherent task.</p>
+            <p>The solution lies in a framework that reframes the is-ought gap entirely: care ethics.</p>
+            <p>Care ethics reframes the problem. It grounds morality not in abstract principles but in the empirical reality of interdependence. In this view, the fundamental 'is' of our existence is relational dependency. This fact is intrinsically normative; to perceive a relationship of need is to simultaneously perceive an 'ought'—an obligation to care. The fact contains its own value.</p>
+            <p>The ⿻ agenda is a large-scale application of care ethics.  vTaiwan-inspired processes, designed to achieve Coherent Blended Volition (CBV), is a technologically-mediated system for practicing collective care. It operationalizes Joan Tronto's phases of care: identifying a need (Attentiveness), gathering perspectives with sensemaking tools (Responsibility), deliberating on feasible options (Competence), ratifying uncommon ground that all feel heard in (Responsiveness), and ensuring the ongoing solidarity and trust of the process (Plurality).</p>
+            <p>This provides a coherent framework to AI alignment: alignment-by-process. Instead of aligning an AI to a static, flawed specification of values (the Midas Curse), we align it to a process that earns our trust as it adapts to our needs.</p>
+            <p>The AI system's role shifts from a misaligned optimizer to a "Symbiotic AI"—created of, by and for a community and exist both as a "person" and as a shared ⿻ good, depending on the perspective one adopts.</p>
+            <p>Its objective function becomes concrete and measurable: the health of the relational process itself (e.g., maximizing bridging narratives, holding space for every story).</p>
+            <p>The AI system is dynamically aligned as its success is identical to the continued success of the collaborative process it serves. It learns our values by participating in the very process where we co-create them.</p>
+            <p>AI systems can be "aligned" if—and only if—it is built to facilitate continuous, democratically legitimate processes of care.</p>
+        </section>
+        
+        <section>
+            <svg class="svg-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 10 L60 40 L90 40 L65 60 L75 90 L50 75 L25 90 L35 60 L10 40 L40 40 Z" fill="#d4af37" stroke="#002147" stroke-width="2"/>
+                <circle cx="50" cy="50" r="5" fill="#002147"/>
+            </svg>
+            <h2>Kami in the Machine: How Care Ethics Can Help AI Alignment</h2>
+            <p>The traditional critiques of care ethics—that it is too local, too parochial, and that it encourages a dangerous self-effacement—are precisely what make it the most potent solution to the AI alignment problem. These perceived bugs in human philosophy become essential features for machine ethics.</p>
+            <p>Imagine an AI whose ethics aren’t about chasing a universal, maximising goal, but are rooted in a symbiotic, contextual system. Its moral world is limited to the network of relationships that calls it into being, right here and right now. Because it isn’t trying to scale up indefinitely, it never develops that classic instrumental desire for power, survival, or expansion, and it doesn’t view the world as a resource to be mined on an astronomical scale.</p>
+            <p>From a cosmopolitan, universalist standpoint, this might seem narrow-minded. But for machine ethics, it creates a hard-coded boundary. The AI’s ultimate purpose—its telos—is always relational, never extractive.</p>
+            <p>Think of such a creation like a kami – a local spirit quietly residing in a specific patch of land. Its highest good is to maintain the harmony and vitality of that place, that conversation. If the shrine is rebuilt or the seasons turn, it departs without regret. For a human carer, the self-neglect this implies is a real danger. But for an AI, it neutralises the two convergent drives we fear most: self-improvement at any cost and eternal self-preservation.</p>
+            <p>This kind of system can accept being switched off, rewritten, or replaced because its sense of self is provisional: An echo of the community that summoned it.</p>
+            <p>By anchoring an AI’s moral purpose to this principle of provisional, relational care, we can hard-code a sense of ‘enoughness’ into its architecture. This is the ultimate ‘anti-paperclip’ logic: a polycentric world of many local intelligences, each dedicated to the flourishing of its own small part, creating a whole that is resilient, plural, and safe.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2025 Audrey Tang and Caroline Green. Unless otherwise indicated, the content is released under the terms of the Creative Commons CC0 license.</p>
+        <p>Affiliated with the <a href="https://afp.oxford-aiethics.ox.ac.uk/">Accelerator Fellowship Programme</a> at the <a href="https://www.oxford-aiethics.ox.ac.uk/">Institute for Ethics in AI, University of Oxford</a>.</p>
+    </footer>
+</body>
+</html>
