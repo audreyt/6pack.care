@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chapter 1: Attentiveness in Recognition — Six-Pack of Care</title>
   <style>
     @font-face {
@@ -35,7 +35,7 @@
       --bg: #ffffff;
       --card: #f8f8f8;
       --text: #000000;
-      --muted: #444;
+      --muted: #444444;
       --shadow: 0 4px 6px rgba(0,0,0,0.1);
       --shadow-hover: 0 6px 12px rgba(0,0,0,0.15);
     }
@@ -48,7 +48,7 @@
     }
     header {
       background: var(--oxford-blue);
-      color: #fff;
+      color: #ffffff;
       padding: 28px 16px;
       text-align: center;
     }
@@ -128,7 +128,7 @@
     footer {
       text-align: center;
       padding: 20px;
-      color: #fff;
+      color: #ffffff;
       background: var(--oxford-blue);
       margin-top: 28px;
     }
@@ -152,30 +152,29 @@
       display: block;
       margin: 0 auto 12px;
     }
-@media (max-width: 719px) {
-  .metrics, .tools, .interfaces, .glossary {
-    display: grid;
-    grid-template-columns: 1fr; /* single column */
-    row-gap: 0;                 /* no extra vertical gap */
-    column-gap: 0;
-  }
-  .metrics ul,
-  .tools ul,
-  .interfaces ul,
-  .glossary ul {
-    margin: 0;
-  }
-}
+    @media (max-width: 719px) {
+      .metrics, .tools, .interfaces, .glossary {
+        grid-template-columns: 1fr;
+        row-gap: 0;
+        column-gap: 0;
+      }
+      .metrics ul,
+      .tools ul,
+      .interfaces ul,
+      .glossary ul {
+        margin: 0;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="brand">
       <a href="index.html" title="Home">
-        <img class="logo" src="img/oxford-logo.svg" alt="University of Oxford Logo">
+        <img class="logo" src="img/oxford-logo.svg" alt="University of Oxford Logo" />
       </a>
-      <a href="index.html" title="Six-Pack of Care">
-        <img class="logo" src="img/afp-logo.svg" alt="Accelerator Fellowship Programme Logo">
+      <a href="index.html" title="Six-Pack of Care Home">
+        <img class="logo" src="img/afp-logo.svg" alt="Accelerator Fellowship Programme Logo" />
       </a>
     </div>
     <h1>Chapter 1: Attentiveness in Recognition</h1>
@@ -183,19 +182,18 @@
 
   <main>
     <a class="back-link" href="index.html">← Back to Home</a>
-
     <article>
       <section>
         <p class="lead">Before we optimise anything, we choose what to notice. That first look sets the stage for every model, metric, and policy that follows. Attentiveness is not just “collecting data.” It is a promise to see needs and to act as if people and places matter.</p>
 
         <div class="callout">
-          <h3 style="margin:0 0 6px 0;">Quick version</h3>
+          <h3 style="margin: 0 0 6px 0;">Quick version</h3>
           <ul>
             <li>What counts is decided at the start. Make that choice fair and revisitable.</li>
             <li>Some situations come with obvious duties (a crying child at a crossing). Caring begins there.</li>
             <li>We can build AI that notices well, answers to people, and can be switched off without a fight.</li>
           </ul>
-          <p style="margin-top:8px;"><strong>Results we want:</strong></p>
+          <p style="margin-top: 8px;"><strong>Results we want:</strong></p>
           <ul>
             <li>AI that serves a community and accepts handover or shutdown.</li>
             <li>Institutions that earn trust because they can be questioned and corrected.</li>
@@ -208,8 +206,8 @@
         <h2>Why start with attentiveness?</h2>
         <h3>A simple picture</h3>
         <p>At a crosswalk, drivers slow for a child. No one stops to solve an equation. A need appears; a duty follows. That is attentiveness.</p>
-        <p>Now scale up. An AI looks at a world full of “crosswalks”: workers, rivers, languages, customs. It can treat them as obstacles or as relationships asking for care. The difference begins with the first look.</p>
-        <p>At global scale, attention is contested and easy to manipulate. So we keep the clarity of the crosswalk and add simple rules that hold up under complexity and pressure.</p>
+        <p>Now scale up. An AI looks at a world full of “crosswalks” — workers, rivers, languages, customs. It can treat them as obstacles or as relationships asking for care. The difference begins with the first look.</p>
+        <p>At global scale, attention is contested and easily manipulated. So we keep the clarity of the crosswalk example and add simple rules that hold up under complexity and pressure.</p>
       </section>
 
       <section>
@@ -224,11 +222,11 @@
 
       <section>
         <div class="callout">
-          <h3 style="margin-top:0">Basic rights and fair oversight</h3>
+          <h3 style="margin-top: 0;">Basic rights and fair oversight</h3>
           <ul>
-            <li><strong>Rights baseline.</strong> We use the UN’s Universal Declaration of Human Rights (UDHR), plus local constitutional rights. Claims that try to erase someone’s basic standing are recorded but do not set the agenda.</li>
-            <li><strong>Independent oversight.</strong> A small board (community members and experts) can pause or veto high‑impact changes. They publish reasons and conflicts of interest.</li>
-            <li><strong>Clear appeals.</strong> Urgent cases answered in 48 hours, standard in 7 days, complex in 30 days. Remedies include correction, rollback, and in some cases compensation.</li>
+            <li><strong>Rights baseline.</strong> We use the UN’s Universal Declaration of Human Rights (UDHR) plus local constitutional rights. Claims that try to erase someone’s basic standing are recorded but do not set the agenda.</li>
+            <li><strong>Independent oversight.</strong> A small board (community members and experts) can pause or veto high-impact changes. They publish reasons and note any conflicts of interest.</li>
+            <li><strong>Clear appeals.</strong> Urgent cases answered in 48 hours, standard in 7 days, complex in 30 days. Remedies include correction, rollback, or sometimes compensation.</li>
             <li><strong>Real independence.</strong> Protected budget, term limits, and transparent selection. Power answers to people, not the other way around.</li>
           </ul>
         </div>
@@ -240,10 +238,10 @@
         <p>Attentiveness offers another route: align to a <em>trusted process</em> that listens, explains, adapts, and can be corrected. In practice this means:</p>
         <ul>
           <li>Summaries that show their sources and version history.</li>
-          <li>Explicit unknowns and time‑boxed decisions.</li>
+          <li>Explicit unknowns and time-boxed decisions.</li>
           <li>Standing invitations to revise when new voices appear.</li>
         </ul>
-        <p>Rule of thumb: if challenged, the fuzzy parts must get clearer—and everyone should be able to see how they got clearer.</p>
+        <p>Rule of thumb: if a decision is challenged, its fuzzy parts must be made clearer. Everyone should be able to see how they became clearer.</p>
       </section>
 
       <section>
@@ -251,7 +249,7 @@
         <ul>
           <li><strong>No unchecked power.</strong> Decisions can be questioned, and answers are required.</li>
           <li><strong>Basic rights first.</strong> No process can vote away someone’s basic rights.</li>
-          <li><strong>Extra attention for the overlooked.</strong> Quiet and at‑risk groups get a fair share of time and care.</li>
+          <li><strong>Extra attention for the overlooked.</strong> Quiet and at-risk groups get a fair share of time and care.</li>
         </ul>
       </section>
 
@@ -259,7 +257,7 @@
         <h2>What good attentiveness looks like</h2>
         <ul>
           <li><strong>Bridge first, decide second.</strong> Line up views so people can understand each other, in their own words.</li>
-          <li><strong>Hunt for absences.</strong> “We heard nothing from night‑shift carers—go find them.” Missing voices are data.</li>
+          <li><strong>Hunt for absences.</strong> <em>“We heard nothing from night-shift carers — go find them.”</em> Missing voices are data.</li>
           <li><strong>Show your work.</strong> Every summary links to sources and marks disagreements.</li>
           <li><strong>Share attention fairly.</strong> Don’t just follow the loudest. Give time to those most affected.</li>
           <li><strong>Build in repair.</strong> Sunset clauses, review points, reversible defaults, and the humility to shut down or hand off.</li>
@@ -268,43 +266,42 @@
 
       <section>
         <h2>From ideas to everyday practice</h2>
-
         <h3>Step by step</h3>
         <ul>
           <li><strong>1) Listen widely.</strong> Take input by voice, text, and simple forms. Keep original language next to translations. Offer offline and accessible options.</li>
-          <li><strong>2) Map the views.</strong> Make a “bridging map” that shows where people agree, where they clash, and why—without forcing a fake average.</li>
+          <li><strong>2) Map the views.</strong> Make a “bridging map” that shows where people agree, where they clash, and why — without forcing a fake average.</li>
           <li><strong>3) Send receipts.</strong> Tell contributors where their words appear. Let them correct mistakes.</li>
           <li><strong>4) Set a fair queue.</strong> Spend more time where harm is high and voices are quiet. Make the rules public. Don’t starve any group.</li>
           <li><strong>5) Decide with brakes.</strong> Big changes need the map, the receipts, and an oversight check before they ship.</li>
           <li><strong>6) Keep an appeals path open.</strong> People can ask for fixes, and they get answers on a deadline.</li>
-          <li><strong>7) Learn and repair.</strong> After decisions, check what went wrong, and update the rules.</li>
+          <li><strong>7) Learn and repair.</strong> After decisions, check what went wrong and update the rules.</li>
           <li><strong>8) Hand off or switch off.</strong> If the job is done or trust is lost, stop gracefully and pass the baton with clear records.</li>
         </ul>
 
         <div class="callout">
-          <h3 style="margin-top:0">Plain tools (buildable today)</h3>
+          <h3 style="margin-top: 0;">Plain tools (buildable today)</h3>
           <ul>
-            <li><strong>Broad listening.</strong> Keep source, language, and uncertainty tags.</li>
-            <li><strong>Bridging maps.</strong> Charts of overlap and disagreement with citations.</li>
-            <li><strong>Perspective receipts.</strong> Each person can find and correct their representation.</li>
+            <li><strong>Broad listening.</strong> Keep source, language, and uncertainty tags intact.</li>
+            <li><strong>Bridging maps.</strong> Charts of overlap and disagreement, with citations.</li>
+            <li><strong>Perspective receipts.</strong> Each person can find and correct how they were represented.</li>
             <li><strong>Rules computers can check.</strong> Community data rules written so software can enforce them automatically.</li>
-            <li><strong>Fair queues.</strong> Simple algorithms that favour high‑risk issues and quiet voices.</li>
+            <li><strong>Fair queues.</strong> Simple algorithms that favour high-risk issues and quiet voices.</li>
             <li><strong>Appeals buttons.</strong> Standard ways to ask for a fix, with timers and audit trails.</li>
           </ul>
         </div>
       </section>
 
       <section>
-        <h2>The flood‑bot story (a running example)</h2>
-        <p>A midsize city is hit by floods. The city launches a simple chatbot to help people apply for emergency cash. Here is what attentiveness looks like in action.</p>
+        <h2>The flood-bot story (a running example)</h2>
+        <p>A midsize city is hit by floods. The city launches a simple chatbot to help people apply for emergency cash. Here is what attentiveness looks like in action:</p>
         <ul>
-          <li><strong>Listening.</strong> People send voice notes, texts, or visit a kiosk. Messages stay in the original language, with a clear translation beside them. Each entry stores where it came from and when.</li>
-          <li><strong>Mapping.</strong> The team and the bot group needs: housing, wage loss, medical care. They keep disagreements visible: renters and homeowners need different proofs.</li>
+          <li><strong>Listening.</strong> People send voice notes, texts, or visit a kiosk. Messages stay in the original language, with a clear translation beside them. Each entry records where it came from and when.</li>
+          <li><strong>Mapping.</strong> The team (and the bot) sort the needs into categories: housing, wage loss, and medical care. They keep disagreements visible — renters and homeowners need different proofs.</li>
           <li><strong>Receipts.</strong> Every contributor gets a link to see how their words were used and a button to say “that’s not what I meant.”</li>
           <li><strong>Fair queue.</strong> The system gives extra review time to medically fragile people and to areas with poor connectivity. It also reserves a slice of time for groups the city often misses.</li>
-          <li><strong>Decision with brakes.</strong> A new rule—“proof of residence within 30 days”—is paused when night‑shift workers appeal. A reversible default extends eligibility while the case is reviewed.</li>
-          <li><strong>Appeal and repair.</strong> The appeals panel checks the sources and notices the rule hurt renters. They roll it back and try other proofs (employer letters, neighbour attestations) for two weeks, then check results.</li>
-          <li><strong>Measure and share.</strong> A public dashboard shows who was reached, how fair the queue was, and a simple “trust‑under‑loss” score: do people who disagreed still accept the outcome as fair?</li>
+          <li><strong>Decision with brakes.</strong> A new rule — “proof of residence within 30 days” — is paused when night-shift workers appeal. A reversible default extends eligibility while the case is reviewed.</li>
+          <li><strong>Appeal and repair.</strong> The appeals panel checks the sources and finds the rule hurt renters. They roll it back and try other proofs (employer letters, neighbour attestations) for two weeks, then check results.</li>
+          <li><strong>Measure and share.</strong> A public dashboard shows who was reached and how fair the queue was. It also provides a simple “trust-under-loss” score — do people who disagreed still accept the outcome as fair?</li>
           <li><strong>Shutdown as success.</strong> When the crisis ends, the chatbot is switched off. All maps, rules, and decisions are archived so the next team can pick up fast.</li>
         </ul>
       </section>
@@ -312,17 +309,17 @@
       <section>
         <h2>What could go wrong (and quick fixes)</h2>
         <ul>
-          <li><strong>One metric runs the show.</strong> Engagement is up, trust is down. Fix: use a small set of balanced measures and rotate them.</li>
-          <li><strong>Listening theatre.</strong> Glossy reports, same outcomes. Fix: real decision gates, outside veto power, spot‑checks, and whistleblower protection.</li>
-          <li><strong>Loud voices take over.</strong> Well‑funded groups flood the channel. Fix: throttles, fair quotas, penalties for abuse, and public attention dashboards.</li>
-          <li><strong>First movers freeze the frame.</strong> Early language locks in. Fix: rolling windows and boosts for late but important views.</li>
-          <li><strong>False balance.</strong> Treating harmful claims as equal. Fix: separate facts from values, uphold basic rights, and refuse fake equivalence.</li>
+          <li><strong>One metric runs the show.</strong> Engagement is up, trust is down. <em>Fix:</em> use a small set of balanced measures and rotate them.</li>
+          <li><strong>Listening theatre.</strong> Glossy reports, same outcomes. <em>Fix:</em> real decision gates, outside veto power, spot-checks, and whistleblower protection.</li>
+          <li><strong>Loud voices take over.</strong> Well-funded groups flood the channel. <em>Fix:</em> throttles, fair quotas, penalties for abuse, and public attention dashboards.</li>
+          <li><strong>First movers freeze the frame.</strong> Early language locks in. <em>Fix:</em> rolling windows and boosts for late but important views.</li>
+          <li><strong>False balance.</strong> Treating harmful claims as equal. <em>Fix:</em> separate facts from values, uphold basic rights, and refuse fake equivalence.</li>
         </ul>
 
         <div class="callout">
-          <h3 style="margin-top:0">Basic threat model</h3>
+          <h3 style="margin-top: 0;">Basic threat model</h3>
           <ul>
-            <li><strong>Fake crowds.</strong> Lots of copy‑paste comments. Use simple source checks and rate limits.</li>
+            <li><strong>Fake crowds.</strong> Lots of copy-paste comments. Use simple source checks and rate limits.</li>
             <li><strong>Data poisoning.</strong> Malicious inputs. Run anomaly checks and quarantine suspicious clusters.</li>
             <li><strong>Harassment.</strong> Protect identities, support moderators, and enforce zero tolerance.</li>
             <li><strong>Capture by power.</strong> Keep oversight independent, rulings public, and funding transparent.</li>
@@ -334,16 +331,16 @@
         <h2>How we keep ourselves honest (what we measure)</h2>
         <div class="metrics">
           <ul>
-            <li><strong>Coverage and balance.</strong> Who took part, who we missed, and how many agenda items came from under‑represented groups.</li>
-            <li><strong>Bridging quality.</strong> Can people explain the other side fairly? We ask both sides before and after. We look for steady improvement.</li>
-            <li><strong>Traceability.</strong> Can we trace each decision back to sources? Do contributors accept their receipts? How fast do we fix errors?</li>
-            <li><strong>Trust‑under‑loss.</strong> After a decision, we ask those who disagreed if they can accept the result as fair. If many say “no,” we review the process.</li>
+            <li><strong>Coverage and balance.</strong> Who took part, who we missed, and how many agenda items came from under-represented groups.</li>
+            <li><strong>Bridging quality.</strong> Can people explain the other side fairly? We ask participants on both sides before and after, and we look for steady improvement.</li>
+            <li><strong>Traceability.</strong> Can we trace each decision back to its sources? Do contributors accept their receipts? How fast do we fix errors?</li>
+            <li><strong>Trust-under-loss.</strong> After a decision, we ask those who disagreed if they can accept the result as fair. If many say “no,” we review the process.</li>
           </ul>
           <ul>
             <li><strong>Uncertainty discipline.</strong> How often we ship with safeguards when we’re unsure, and whether our caution fits reality.</li>
-            <li><strong>Non‑extraction.</strong> We follow consent rules, share benefits, honour revocations, and protect dignity and privacy.</li>
+            <li><strong>Non-extraction.</strong> We follow consent rules, share benefits, honour revocations, and protect dignity and privacy.</li>
             <li><strong>Manipulation resistance.</strong> We track and reduce the effect of coordinated campaigns.</li>
-            <li><strong>Exit‑with‑trust.</strong> People can step away and still trust they could re‑enter and be heard.</li>
+            <li><strong>Exit-with-trust.</strong> People can step away and still trust they could re-enter and be heard.</li>
           </ul>
         </div>
       </section>
@@ -352,13 +349,13 @@
         <h2>Tools you can adopt now</h2>
         <div class="tools">
           <ul>
-            <li><strong>Broad listening.</strong> Multi‑language, multi‑channel input with source and uncertainty kept intact.</li>
+            <li><strong>Broad listening.</strong> Multi-language, multi-channel input with source and uncertainty kept intact.</li>
             <li><strong>Bridging maps, not mush.</strong> Clear charts of disagreement and workable overlap, with citations.</li>
             <li><strong>Perspective receipts.</strong> People can see how they were represented and ask for fixes.</li>
           </ul>
           <ul>
-            <li><strong>Consent‑aware pipelines.</strong> Community rules written so software can check and enforce them automatically.</li>
-            <li><strong>Fair attention budgets.</strong> A published queue that gives time to high‑risk issues and quiet voices.</li>
+            <li><strong>Consent-aware pipelines.</strong> Community rules written so software can automatically check and enforce them.</li>
+            <li><strong>Fair attention budgets.</strong> A published queue that gives time to high-risk issues and quiet voices.</li>
             <li><strong>Appeals paths.</strong> Standard buttons and forms with deadlines, reasons, and remedies.</li>
           </ul>
         </div>
@@ -368,9 +365,9 @@
         <h2>How it feels to participate</h2>
         <ul>
           <li>You can find yourself: your words are on the map.</li>
-          <li>You can disagree without vanishing: difference is kept unless it breaks basic rights.</li>
+          <li>You can disagree without vanishing: your perspective is kept, unless it violates someone’s basic rights.</li>
           <li>You can change outcomes: appeals work often enough to matter.</li>
-          <li>You can walk away trusting the process—even when you didn’t win—because decision‑makers answered to you.</li>
+          <li>You can walk away trusting the process — even when you didn’t win — because decision-makers answered to you.</li>
         </ul>
       </section>
 
@@ -378,31 +375,31 @@
         <h2>Interfaces with the other packs</h2>
         <div class="interfaces">
           <ul>
-            <li>To <code>Responsibility</code>: attentiveness hands off who/what/why, with rights flags and notes on risk and uncertainty.</li>
-            <li>To <code>Competence</code>: high‑caution areas become small, safe‑to‑fail trials, not grand bets.</li>
-            <li>To <code>Responsiveness</code>: repair loops and rollbacks are normal, with service levels and public reasons.</li>
+            <li><strong>To Responsibility:</strong> attentiveness hands over the who, what, and why — along with any flags on rights issues and notes on risks or unknowns.</li>
+            <li><strong>To Competence:</strong> attentiveness ensures high-caution areas become small, safe-to-fail trials instead of grand bets.</li>
+            <li><strong>To Responsiveness:</strong> attentiveness makes repair loops and rollbacks normal, with clear timelines and public explanations.</li>
           </ul>
           <ul>
-            <li>To <code>Solidarity</code>: fair attention and open challenge build trust across difference and scale.</li>
-            <li>To <code>Symbiosis</code>: the system serves a place and time, shares benefits locally, and treats shutdown as success.</li>
+            <li><strong>To Solidarity:</strong> attentiveness fosters trust across differences (even at scale) by ensuring fair attention and open challenge.</li>
+            <li><strong>To Symbiosis:</strong> attentiveness keeps the system grounded in a specific community (place and time), sharing benefits locally and treating shutdown as a success.</li>
           </ul>
         </div>
       </section>
 
       <section>
-        <h2>Plain‑words glossary</h2>
+        <h2>Plain-words glossary</h2>
         <div class="glossary">
           <ul>
-            <li><strong>Attention budget.</strong> Simple rules for how we spend limited review time.</li>
+            <li><strong>Attention budget.</strong> Simple rules for how to spend limited review time.</li>
             <li><strong>Bridging map.</strong> A map that shows both overlap and disagreement, with sources.</li>
             <li><strong>Perspective receipt.</strong> A notice showing how your words were used, with a way to correct them.</li>
             <li><strong>Rules computers can check.</strong> Community rules written so software can enforce them automatically.</li>
           </ul>
           <ul>
-            <li><strong>Appeals path.</strong> A standard, auditable way to ask for a fix—and get an answer on time.</li>
+            <li><strong>Appeals path.</strong> A standard, auditable way to ask for a fix — and get an answer on time.</li>
             <li><strong>Source trail.</strong> Records that show where information came from.</li>
-            <li><strong>Trust‑under‑loss.</strong> Whether people who disagreed still accept the process as fair.</li>
-            <li><strong>Enoughness (kami).</strong> A system that knows its limits and can let go; built to be switched off gracefully.</li>
+            <li><strong>Trust-under-loss.</strong> Whether people who disagreed still accept the process as fair.</li>
+            <li><strong>Enoughness (kami).</strong> A system that knows its limits and can let go — built to be switched off gracefully.</li>
           </ul>
         </div>
       </section>
