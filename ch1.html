@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chapter 1: Attentiveness in Recognition — Six-Pack of Care</title>
+  <style>
+    @font-face {
+      font-family: 'Open Sans';
+      src: url('fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Open Sans';
+      src: url('fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+    :root {
+      --oxford-blue: #002147;
+      --gold: #d4af37;
+      --bg: #ffffff;
+      --card: #f8f8f8;
+      --text: #000000;
+      --muted: #444;
+      --shadow: 0 4px 6px rgba(0,0,0,0.1);
+      --shadow-hover: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      line-height: 1.65;
+    }
+    header {
+      background: var(--oxford-blue);
+      color: #fff;
+      padding: 28px 16px;
+      text-align: center;
+    }
+    header .brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    header img.logo {
+      height: 60px;
+      max-width: 180px;
+    }
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      margin: 10px 0 0 0;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    article {
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+    h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--oxford-blue);
+      margin-top: 1.2em;
+      margin-bottom: 0.4em;
+    }
+    h2 {
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 8px;
+      font-size: 1.6rem;
+    }
+    h3 {
+      font-size: 1.2rem;
+    }
+    p {
+      margin: 0.6em 0;
+    }
+    ul {
+      padding-left: 1.2em;
+      margin: 0.6em 0;
+    }
+    li {
+      margin: 0.35em 0;
+    }
+    .lead {
+      font-size: 1.05rem;
+      color: var(--muted);
+    }
+    .callout {
+      border-left: 4px solid var(--gold);
+      background: #fffdf6;
+      padding: 12px 14px;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      margin: 1em 0;
+    }
+    .metrics, .tools, .interfaces, .glossary {
+      display: grid;
+      gap: 12px;
+    }
+    @media (min-width: 720px) {
+      .metrics, .tools, .interfaces, .glossary {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+      background: var(--oxford-blue);
+      margin-top: 28px;
+    }
+    footer a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 16px;
+      color: var(--oxford-blue);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .svg-icon {
+      width: 64px;
+      height: 64px;
+      display: block;
+      margin: 0 auto 12px;
+    }
+@media (max-width: 719px) {
+  .metrics, .tools, .interfaces, .glossary {
+    display: grid;
+    grid-template-columns: 1fr; /* single column */
+    row-gap: 0;                 /* no extra vertical gap */
+    column-gap: 0;
+  }
+  .metrics ul,
+  .tools ul,
+  .interfaces ul,
+  .glossary ul {
+    margin: 0;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <a href="index.html" title="Home">
+        <img class="logo" src="img/oxford-logo.svg" alt="University of Oxford Logo">
+      </a>
+      <a href="index.html" title="Six-Pack of Care">
+        <img class="logo" src="img/afp-logo.svg" alt="Accelerator Fellowship Programme Logo">
+      </a>
+    </div>
+    <h1>Chapter 1: Attentiveness in Recognition</h1>
+  </header>
+
+  <main>
+    <a class="back-link" href="index.html">← Back to Home</a>
+
+    <article>
+      <section>
+        <p class="lead">Before we optimize anything, we choose what to notice. That choice sets the boundaries of what we later measure, justify, and build. Attentiveness is that first act: deciding what counts, whose voices matter, and which relationships and risks are real. It is not passive data collection. It is a moral commitment that shapes everything downstream.</p>
+
+        <div class="callout">
+          <p>This chapter delivers two things at once:</p>
+          <ul>
+            <li>Clear ideas in plain words: relationships are the basic unit of moral concern. Some facts carry obligations on their face.</li>
+            <li>Practical mechanisms you can deploy: procedures, tools, and safeguards that hold under scale, conflict, and bad faith.</li>
+          </ul>
+          <p>The outcome we’re aiming for:</p>
+          <ul>
+            <li>AI that can be turned off or handed over without resentment.</li>
+            <li>Institutions that earn authority because they can be questioned and corrected.</li>
+            <li>Communities that miss less, regret less, and repair faster.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Why start with attentiveness?</h2>
+        <h3>A simple image</h3>
+        <p>At a crosswalk, drivers slow for a child. No one solves an optimization problem. A need appears; a responsibility follows. That is attentiveness.</p>
+        <p>Now scale up: an AI looks at a world full of crosswalks: Workers, rivers, languages, customs. It can treat them as obstacles to a goal or as relationships asking for care. The difference starts with the first look.</p>
+        <p>At global scale, attention is contested and manipulable. So we keep the clarity of the crosswalk and add procedures that survive complexity and adversaries.</p>
+
+        <h3>Attention is never neutral</h3>
+        <p>We like to imagine: observe → model → optimize. But observation is already a choice:</p>
+        <ul>
+          <li>Who gets signal status, who gets labeled “noise?”</li>
+          <li>Which harms count, which become “externalities?”</li>
+          <li>Whether silence means “no issue” or “we didn’t ask?”</li>
+        </ul>
+        <p>Care ethics says: when we notice a need, we are already addressed by it. Interdependence is not an add-on; it is the starting point. Some facts are ethically thick: a cry, a dependency, an obvious power asymmetry. They summon care.</p>
+      </section>
+
+      <section>
+        <h2>Why this matters for alignment?</h2>
+        <p>“Learn the objective” sounds efficient until you remember that objectives are temporary settlements across many lives—and those lives change. Systems that try to infer a fixed target from past data fail when the settlement shifts or when the unheard finally speak.</p>
+        <p>Attentiveness shifts alignment from guessing a perfect target to building a shared world on purpose. We replace false certainty with disciplined inquiry:</p>
+        <ul>
+          <li>Versioned summaries.</li>
+          <li>Explicit unknowns.</li>
+          <li>Time-bounded decisions.</li>
+          <li>Standing invitations to revise.</li>
+        </ul>
+        <p>The rule: vagueness must sharpen under challenge, and the sharpening must be auditable.</p>
+
+        <h3>Recognition is dignity — and better information</h3>
+        <p>To recognize someone is to let them appear on their own terms. That is not sentimentality; it improves your map of the world. People reveal what you would otherwise miss. For example, even if a future without certain jobs is better overall, people can still grieve the loss of work as part of who they are. That grief is real and informative. Attentiveness hears the grief inside the gain and plans transitions that honor both.</p>
+        <p>Now, conflict and bad faith are part of the world. Attentiveness does not require universal goodwill. It does require rules that:</p>
+        <ul>
+          <li>Make disagreements legible, including value clashes that facts alone cannot settle.</li>
+          <li>Limit bad-faith behavior without muting legitimate dissent.</li>
+          <li>Protect minority viewpoints while refusing demands to erase others.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Three grounding principles:</h2>
+        <ul>
+          <li><strong>Non-domination:</strong> no one should be subject to unanswerable power. Attention rules must be explainable and challengeable.</li>
+          <li><strong>Rights floor:</strong> recognition cannot permit the denial of basic rights. Attempts to erase others’ standing are excluded as violations, not treated as “just another opinion.”</li>
+          <li><strong>Burden-aware fairness:</strong> attention budgets protect those who are systematically overlooked, without giving veto power to those seeking to harm or monopolize discourse.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>What good attentiveness looks like in practice:</h2>
+        <ul>
+          <li>Start with bridges, not verdicts: line up perspectives so each side can see what the others actually mean, in their own words.</li>
+          <li>Track absences: “We heard nothing from night-shift caregivers—go find them.” Missingness is data.</li>
+          <li>Show your work: every summary links to sources and exposes points of disagreement.</li>
+          <li>Budget attention fairly: scarce attention follows explicit rules that counter loudness and uplift quiet signals.</li>
+          <li>Build in repair: sunset clauses, review points, reversible defaults, and the humility to shut down or hand off.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>From ideals to mechanisms</h2>
+
+        <h3>1. Scaling to many people without flattening them.</h3>
+        <ul>
+          <li>Multi-level deliberation: local → regional → global pipelines with translation in both directions. Local stays local when appropriate; global claims must show cross-context evidence.</li>
+          <li>Stratified sampling and weighted quotas: ensure representation from groups with less power or higher risk, not just by population share.</li>
+          <li>Rotating agenda windows: protect late arrivals and prevent early frames from freezing the conversation.</li>
+        </ul>
+
+        <h3>2. Technically feasible now.</h3>
+        <ul>
+          <li>Many ways in: combine voice, text, and simple forms; keep original language alongside translations; add uncertainty tags to translations (broad listening).</li>
+          <li>Honest summaries: require citations, disagreement fields, and validation against source clusters; send “receipts” back to contributors to approve or challenge (bridging summaries with receipts).</li>
+          <li>Consent-aware data use: encode community usage rules as machine-checkable policies; log access immutably; alert on violations; allow revocation and track benefit-sharing (policy-as-code).</li>
+          <li>Fair attention budgets: allocate scarce review time by risk-of-harm rather than popularity; throttle high-power actors; reserve queue capacity for underserved groups (bandit-style allocation tuned to harm).</li>
+          <li>Contestation rails: standard interfaces to appeal, request redress, and propose corrections; response timelines; audit trails linking outcomes to inputs (APIs and SLAs for contestation).</li>
+        </ul>
+
+        <h3>3. Politics: when recognition meets power.</h3>
+        <ul>
+          <li>Guardrails against erasure: rights baselines are non-negotiable constraints. Claims that deny others’ standing are documented but excluded from agenda-setting.</li>
+          <li>Adversarial participation: detect and slow coordinated manipulation using provenance checks, diversity constraints, anomaly audits; penalties escalate from rate limits to exclusion when policies are broken.</li>
+          <li>Oversight with teeth: tie attentiveness artifacts to decision gates. High-impact changes cannot ship without them. Independent overseers can pause or veto.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Philosophical backbone, in simple terms</h2>
+        <ul>
+          <li>Some facts come with obligations: needs are not neutral. The relation is the moral unit.</li>
+          <li>Contestability is a virtue: because recognition can err, it must be open to challenge. That is how authority earns trust.</li>
+          <li>Precision serves care: start with stories and relations; add precision when it helps, and always with procedures for updating.</li>
+          <li>Enoughness: an attentive AI is a local spirit—a <code>kami</code>—whose purpose is the health of the relationships that called it into being. Being switched off or replaced can be success, not failure.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Common failure modes and how to preempt them</h2>
+        <ul>
+          <li>Metric monoculture: one number (e.g., “engagement”) rises while trust falls. Cure: metric portfolios tied to lived experience, uncertainty labels, regular metric-rotation with outside review.</li>
+          <li>Performative listening: glossy reports, predetermined outcomes. Cure: decision gates with external veto power; red-team audits of attention artifacts; surprise spot-checks; whistleblower protections.</li>
+          <li>Attention capture: wealth and organization dominate the channel. Cure: throttles, fairness constraints, stratified quotas, enforceable penalties; public dashboards of attention flows.</li>
+          <li>Early-frame lock-in: first movers define the terms forever. Cure: rolling windows, scheduled reframing, latecomer boosts triggered by novelty or harm signals.</li>
+          <li>False balance: pretending both sides meet minimum standards when one does not. Cure: maps that separate empirical from normative claims, flag rights violations, and deny equivalence when standards aren’t met.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>What to measure so we stay honest</h2>
+        <div class="metrics">
+          <ul>
+            <li>Coverage and balance: participation spread; identified and reached missing groups; share of agenda items originating from underrepresented communities; harm-weighted inclusion.</li>
+            <li>Bridging quality: growth in shared understanding between disagreeing groups; “I understand you” rates without requiring agreement; durability of partial agreements.</li>
+            <li>Traceability: fidelity from source to summary; contributor receipt acceptance; appeal success rates; time from error discovery to repair.</li>
+          </ul>
+          <ul>
+            <li>Uncertainty discipline: calibration scores; fraction of high-uncertainty decisions shipped with safeguards; postmortems that adjust future caution.</li>
+            <li>Non-extraction: adherence to consent policies; benefit-sharing delivered; honored revocations; privacy and dignity incidents per decision.</li>
+            <li>Manipulation resistance: detection and mitigation rates for coordinated campaigns; distribution skew before/after throttles.</li>
+            <li>Legitimacy signals: trust-under-loss (people can accept outcomes they opposed); “exit-with-trust” rates.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Tools you can adopt now</h2>
+        <div class="tools">
+          <ul>
+            <li>Broad listening: multi-language, multi-channel submissions with provenance and uncertainty preserved.</li>
+            <li>Sensemaker: faithful charts of disagreement and workable overlap; citations inline; no forced averaging.</li>
+            <li>Perspective receipts: each contributor can see where their input appears, how it was represented, and how to contest errors.</li>
+          </ul>
+          <ul>
+            <li>Consent-aware pipelines: community rules encoded as <code>policy-as-code</code>; visible violations; sanctions that matter; revocations propagated downstream.</li>
+            <li>Attention budgets: algorithms that route scarce deliberation toward risk reduction and quiet signals, not popularity; published rules and audits.</li>
+            <li>Contestation rails: standard appeals with deadlines, reasons, and remedies; reversible-by-default changes in high-risk zones.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>How it feels to participate</h2>
+        <ul>
+          <li>You can locate yourself: your words are findable on the map; you can also see maps from people unlike you.</li>
+          <li>You can disagree without vanishing: difference is preserved unless it violates rights constraints.</li>
+          <li>You can change outcomes: appeals succeed often enough to be real; revisions are routine, not scandals.</li>
+          <li>You can walk away trusting the process even when you didn’t win, because the first look treated you as a full participant and decision-makers were answerable.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Interfaces with the other packs</h2>
+        <div class="interfaces">
+          <ul>
+            <li>To <code>Responsibility</code>: attentiveness hands off <code>who/what/why</code> proposals with rights flags, risk notes, and uncertainty tags.</li>
+            <li>To <code>Competence</code>: high-caution areas are translated into strategy-proof mechanisms and safe-to-fail trials.</li>
+            <li>To <code>Responsiveness</code>: repair loops with service levels, rollback, and feedback integration are institutionalized.</li>
+          </ul>
+          <ul>
+            <li>To <code>Solidarity</code>: attention budgets and contestability maintain trust under difference and scale.</li>
+            <li>To <code>Symbiosis</code>: non-extraction and local benefit-sharing are enforced; shutdown and handoff count as success.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>A closing image: the hospitable threshold that can still say no</h2>
+        <p>Picture a host who welcomes each guest by name, makes space for their baggage, and shows how their presence changes the seating plan. That is attentiveness. And because some guests try to erase others, the host keeps a firm rule: hospitality within a rights-respecting home. Philosophy at the doorway—simple enough to feel, rigorous enough to build, strong enough to refuse domination. Teach our systems to be good hosts before great optimizers, and we will keep more of what is precious and create more that is shareable.</p>
+      </section>
+
+      <section>
+        <h2>Appendix: quick glossary for non-experts</h2>
+        <div class="glossary">
+          <ul>
+            <li><strong>Attention budget:</strong> explicit rules for how limited review time or deliberation space is allocated.</li>
+            <li><strong>Bandit allocation:</strong> a simple learning method that tries options and shifts attention to the ones that reduce risk or improve outcomes.</li>
+            <li><strong>Policy-as-code:</strong> community rules written so computers can enforce them automatically.</li>
+          </ul>
+          <ul>
+            <li><strong>Contestation rails:</strong> a standard, auditable pathway to appeal or correct a decision.</li>
+            <li><strong>Sensemaker:</strong> a summary that preserves disagreements and cites sources, aiming for mutual understanding rather than forced consensus.</li>
+          </ul>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2025 Audrey Tang and Caroline Green. Unless otherwise indicated, textual content on this website is released under the terms of the Creative Commons CC0 license.</p>
+    <p>Affiliated with the <a href="https://afp.oxford-aiethics.ox.ac.uk/">Accelerator Fellowship Programme</a> at the <a href="https://www.oxford-aiethics.ox.ac.uk/">Institute for Ethics in AI, University of Oxford</a>.</p>
+  </footer>
+</body>
+</html>
