@@ -4,134 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Six-Pack of Care — Institute for Ethics in AI</title>
-    <style>
-        @font-face {
-            font-family: 'Open Sans';
-            src: url('fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
-            font-weight: 400;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'Open Sans';
-            src: url('fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
-            font-weight: 700;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'Montserrat';
-            src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-            font-weight: 400;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'Montserrat';
-            src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-            font-weight: 700;
-            font-style: normal;
-        }
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background: #ffffff;
-            color: #000000;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background: #002147; /* Oxford Blue */
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        header img.oxford-logo {
-            max-width: 200px;
-            margin: 5px;
-        }
-        header h1 {
-            font-size: 2em;
-            font-family: Montserrat, sans-serif;
-            margin: 0;
-            animation: slideIn 1s ease-out;
-        }
-        @keyframes slideIn {
-            from { transform: translateY(-50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        section {
-            background: #f8f8f8;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            padding: 20px;
-            margin-bottom: 30px;
-            transition: transform 0.3s, box-shadow 0.3s;
-            opacity: 0;
-            animation: fadeIn 1.5s forwards;
-        }
-        section:nth-child(1) { animation-delay: 0.5s; }
-        section:nth-child(2) { animation-delay: 1s; }
-        section:nth-child(3) { animation-delay: 1.5s; }
-        section:nth-child(4) { animation-delay: 2s; }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-        }
-        h2 {
-            color: #002147;
-            border-bottom: 2px solid #d4af37; /* Gold accent */
-            padding-bottom: 10px;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #002147;
-            color: white;
-        }
-        footer a {
-            color: #d4af37;
-            text-decoration: none;
-        }
-        .team-photos {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
-        }
-        .team-photos p {
-            text-align: center;
-        }
-        .team-photos img {
-            width: 200px;
-            max-width: 100%;
-            height: auto;
-            border-radius: 10%;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .svg-icon {
-            width: 100px;
-            height: 100px;
-            display: block;
-            margin: 0 auto 20px;
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -217,6 +90,15 @@
             <p>By anchoring an AI’s moral purpose to this principle of provisional, relational care, we can hard-code a sense of ‘enoughness’ into its architecture. This is the ultimate ‘anti-paperclip’ logic: a polycentric world of many local intelligences, each dedicated to the flourishing of its own small part, creating a whole that is resilient, plural, and safe.</p>
         </section>
     </main>
+    
+    <section class="next-action">
+        <div class="next-action-content">
+            <a href="ch1.html" class="next-action-button">
+                <span class="button-text">Pack 1: Attentiveness in Recognition</span>
+                <span class="button-arrow">→</span>
+            </a>
+        </div>
+    </section>
     
     <footer>
         <p>© 2025 Audrey Tang and Caroline Green. Unless otherwise indicated, textual content on this website is released under the terms of the Creative Commons CC0 license.</p>

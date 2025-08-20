@@ -4,179 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chapter 1: Attentiveness in Recognition — Six-Pack of Care</title>
-  <style>
-    @font-face {
-      font-family: 'Open Sans';
-      src: url('fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
-      font-weight: 400;
-      font-style: normal;
-    }
-    @font-face {
-      font-family: 'Open Sans';
-      src: url('fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
-      font-weight: 700;
-      font-style: normal;
-    }
-    @font-face {
-      font-family: 'Montserrat';
-      src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-      font-weight: 400;
-      font-style: normal;
-    }
-    @font-face {
-      font-family: 'Montserrat';
-      src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-      font-weight: 700;
-      font-style: normal;
-    }
-    :root {
-      --oxford-blue: #002147;
-      --gold: #d4af37;
-      --bg: #ffffff;
-      --card: #f8f8f8;
-      --text: #000000;
-      --muted: #444444;
-      --shadow: 0 4px 6px rgba(0,0,0,0.1);
-      --shadow-hover: 0 6px 12px rgba(0,0,0,0.15);
-    }
-    body {
-      font-family: 'Open Sans', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      margin: 0;
-      line-height: 1.65;
-    }
-    header {
-      background: var(--oxford-blue);
-      color: #ffffff;
-      padding: 28px 16px;
-      text-align: center;
-    }
-    header .brand {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-      margin-bottom: 10px;
-    }
-    header img.logo {
-      height: 60px;
-      max-width: 180px;
-    }
-    header h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.8rem;
-      margin: 10px 0 0 0;
-    }
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    article {
-      background: var(--card);
-      border-radius: 12px;
-      box-shadow: var(--shadow);
-      padding: 24px;
-    }
-    h2, h3 {
-      font-family: 'Montserrat', sans-serif;
-      color: var(--oxford-blue);
-      margin-top: 1.2em;
-      margin-bottom: 0.4em;
-    }
-    h2 {
-      border-bottom: 2px solid var(--gold);
-      padding-bottom: 8px;
-      font-size: 1.6rem;
-    }
-    h3 {
-      font-size: 1.2rem;
-    }
-    p {
-      margin: 0.6em 0;
-    }
-    ul {
-      padding-left: 1.2em;
-      margin: 0.6em 0;
-    }
-    li {
-      margin: 0.35em 0;
-    }
-    .lead {
-      font-size: 1.05rem;
-      color: var(--muted);
-    }
-    .callout {
-      border-left: 4px solid var(--gold);
-      background: #fffdf6;
-      padding: 12px 14px;
-      border-radius: 8px;
-      box-shadow: var(--shadow);
-      margin: 1em 0;
-    }
-    .metrics, .tools, .interfaces, .glossary {
-      display: grid;
-      gap: 12px;
-    }
-    @media (min-width: 720px) {
-      .metrics, .tools, .interfaces, .glossary {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #ffffff;
-      background: var(--oxford-blue);
-      margin-top: 28px;
-    }
-    footer a {
-      color: #ffecb3;
-      text-decoration: none;
-    }
-    .back-link {
-      display: inline-block;
-      margin-bottom: 16px;
-      color: var(--oxford-blue);
-      text-decoration: none;
-      font-weight: 700;
-    }
-    .back-link:hover {
-      text-decoration: underline;
-    }
-    .svg-icon {
-      width: 64px;
-      height: 64px;
-      display: block;
-      margin: 0 auto 12px;
-    }
-    @media (max-width: 719px) {
-      .metrics, .tools, .interfaces, .glossary {
-        grid-template-columns: 1fr;
-        row-gap: 0;
-        column-gap: 0;
-      }
-      .metrics ul,
-      .tools ul,
-      .interfaces ul,
-      .glossary ul {
-        margin: 0;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <div class="brand">
       <a href="index.html" title="Home">
         <img class="logo" src="img/oxford-logo.svg" alt="University of Oxford Logo" />
       </a>
       <a href="index.html" title="Six-Pack of Care Home">
         <img class="logo" src="img/afp-logo.svg" alt="Accelerator Fellowship Programme Logo" />
       </a>
-    </div>
     <div style="position: absolute; top: 20px; right: 20px;">
       <a href="tw1.html" style="color: white; text-decoration: none; font-weight: bold; background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 5px;">華文</a>
     </div>
@@ -185,7 +22,6 @@
 
   <main>
     <a class="back-link" href="index.html">← Back to Home</a>
-    <article>
       <section>
         <p class="lead">Before we optimise anything, we choose what to notice. That first look sets the stage for every model, metric, and policy that follows. Attentiveness is not just “collecting data.” It is a promise to see needs and to act as if people and places matter.</p>
 
@@ -411,8 +247,16 @@
         <h2>A closing image: the hospitable threshold that can still say no</h2>
         <p>Picture a host who welcomes each guest by name, makes space for their baggage, and shows how their presence changes the seating plan. That is attentiveness. And because some guests try to erase others, the host keeps a firm rule: hospitality within a rights‑respecting home. Teach our systems to be good hosts before great optimisers, and we will keep more of what is precious and create more that is shareable.</p>
       </section>
-    </article>
   </main>
+
+    <section class="next-action">
+        <div class="next-action-content">
+            <a href="index.html" class="next-action-button">
+                <span class="button-arrow">←</span>
+                <span class="button-text">Back</span>
+            </a>
+        </div>
+    </section>
 
   <footer>
     <p>© 2025 Audrey Tang and Caroline Green. Unless otherwise indicated, textual content on this website is released under the terms of the Creative Commons CC0 license.</p>

@@ -4,134 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>關懷六力 — 牛津人工智慧倫理研究所</title>
-    <style>
-@font-face {
-  font-family: 'Open Sans';
-  src: url('fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url('fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Montserrat';
-  src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Montserrat';
-  src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-body {
-  font-family: 'Open Sans', sans-serif;
-  background: #ffffff;
-  color: #000000;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-header {
-  background: #002147; /* Oxford Blue */
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-header img.oxford-logo {
-  max-width: 200px;
-  margin: 5px;
-}
-header h1 {
-  font-size: 2em;
-  font-family: Montserrat, sans-serif;
-  margin: 0;
-  animation: slideIn 1s ease-out;
-}
-@keyframes slideIn {
-  from { transform: translateY(-50px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-section {
-  background: #f8f8f8;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  padding: 20px;
-  margin-bottom: 30px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  opacity: 0;
-  animation: fadeIn 1.5s forwards;
-}
-section:nth-child(1) { animation-delay: 0.5s; }
-section:nth-child(2) { animation-delay: 1s; }
-section:nth-child(3) { animation-delay: 1.5s; }
-section:nth-child(4) { animation-delay: 2s; }
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-}
-h2 {
-  color: #002147;
-  border-bottom: 2px solid #d4af37; /* Gold accent */
-  padding-bottom: 10px;
-}
-p {
-  margin-bottom: 15px;
-}
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #002147;
-  color: white;
-}
-footer a {
-  color: #d4af37;
-  text-decoration: none;
-}
-.team-photos {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-}
-.team-photos p {
-  text-align: center;
-}
-.team-photos img {
-  width: 200px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 10%;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-.svg-icon {
-  width: 100px;
-  height: 100px;
-  display: block;
-  margin: 0 auto 20px;
-  animation: pulse 2s infinite;
-}
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
@@ -222,6 +95,16 @@ footer a {
         <p>透過將 AI 的道德目的錨定在這種暫時性的、關係性的關懷原則上，我們可以在其架構中硬編碼一種「足夠性」的意識。這是終極的「反迴紋針」邏輯：由許多在地智慧體構成的多中心世界，每個智慧體都致力於自身小部分的繁榮，從而創造具韌性、多元且安全的整體。</p>
       </section>
     </main>
+    
+    <section class="next-action">
+        <div class="next-action-content">
+            <a href="tw1.html" class="next-action-button">
+                <span class="button-text">第一章：辨識中的關注力</span>
+                <span class="button-arrow">→</span>
+            </a>
+        </div>
+    </section>
+    
     <footer>
       <p>© 2025 唐鳳與 Caroline Green。除非另有說明，本網站上的文字內容根據創用 CC0 授權條款釋出。</p>
       <p>本研究為<a href="https://afp.oxford-aiethics.ox.ac.uk/">加速學人計畫</a>的一部分，該計畫隸屬於<a href="https://www.oxford-aiethics.ox.ac.uk/">牛津大學人工智慧倫理研究所</a>。</p>

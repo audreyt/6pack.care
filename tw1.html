@@ -4,18 +4,16 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>第一章：辨識中的關注力 — 關懷六力</title>
-    <style>    @font-face {      font-family: 'Open Sans';      src: url('fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');      font-weight: 400;      font-style: normal;    }    @font-face {      font-family: 'Open Sans';      src: url('fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');      font-weight: 700;      font-style: normal;    }    @font-face {      font-family: 'Montserrat';      src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');      font-weight: 400;      font-style: normal;    }    @font-face {      font-family: 'Montserrat';      src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');      font-weight: 700;      font-style: normal;    }    :root {      --oxford-blue: #002147;      --gold: #d4af37;      --bg: #ffffff;      --card: #f8f8f8;      --text: #000000;      --muted: #444444;      --shadow: 0 4px 6px rgba(0,0,0,0.1);      --shadow-hover: 0 6px 12px rgba(0,0,0,0.15);    }    body {      font-family: 'Open Sans', 'Noto Sans TC', sans-serif;      background: var(--bg);      color: var(--text);      margin: 0;      line-height: 1.65;    }    header {      background: var(--oxford-blue);      color: #ffffff;      padding: 28px 16px;      text-align: center;    }    header .brand {      display: flex;      align-items: center;      justify-content: center;      gap: 16px;      flex-wrap: wrap;      margin-bottom: 10px;    }    header img.logo {      height: 60px;      max-width: 180px;    }    header h1 {      font-family: 'Montserrat', sans-serif;      font-size: 1.8rem;      margin: 10px 0 0 0;    }    main {      max-width: 900px;      margin: 0 auto;      padding: 20px;    }    article {      background: var(--card);      border-radius: 12px;      box-shadow: var(--shadow);      padding: 24px;    }    h2, h3 {      font-family: 'Montserrat', 'Noto Sans TC', sans-serif;      color: var(--oxford-blue);      margin-top: 1.2em;      margin-bottom: 0.4em;    }    h2 {      border-bottom: 2px solid var(--gold);      padding-bottom: 8px;      font-size: 1.6rem;    }    h3 {      font-size: 1.2rem;    }    p {      margin: 0.6em 0;    }    ul {      padding-left: 1.2em;      margin: 0.6em 0;    }    li {      margin: 0.35em 0;    }    .lead {      font-size: 1.05rem;      color: var(--muted);    }    .callout {      border-left: 4px solid var(--gold);      background: #fffdf6;      padding: 12px 14px;      border-radius: 8px;      box-shadow: var(--shadow);      margin: 1em 0;    }    .metrics, .tools, .interfaces, .glossary {      display: grid;      gap: 12px;    }    @media (min-width: 720px) {      .metrics, .tools, .interfaces, .glossary {        grid-template-columns: 1fr 1fr;      }    }    footer {      text-align: center;      padding: 20px;      color: #ffffff;      background: var(--oxford-blue);      margin-top: 28px;    }    footer a {      color: #ffecb3;      text-decoration: none;    }    .back-link {      display: inline-block;      margin-bottom: 16px;      color: var(--oxford-blue);      text-decoration: none;      font-weight: 700;    }    .back-link:hover {      text-decoration: underline;    }    .svg-icon {      width: 64px;      height: 64px;      display: block;      margin: 0 auto 12px;    }    @media (max-width: 719px) {      .metrics, .tools, .interfaces, .glossary {        grid-template-columns: 1fr;        row-gap: 0;        column-gap: 0;      }      .metrics ul,      .tools ul,      .interfaces ul,      .glossary ul {        margin: 0;      }    }  </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
-      <div class="brand">
         <a href="tw.html" title="首頁">
           <img class="logo" src="img/oxford-logo.svg" alt="牛津大學校徽"/>
         </a>
         <a href="tw.html" title="關懷六力首頁">
           <img class="logo" src="img/afp-logo.svg" alt="加速學人徽章"/>
         </a>
-      </div>
       <div style="position: absolute; top: 20px; right: 20px;">
         <a href="ch1.html" style="color: white; text-decoration: none; font-weight: bold; background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 5px;">English</a>
       </div>
@@ -23,7 +21,6 @@
     </header>
     <main>
       <a class="back-link" href="tw.html">← 返回首頁</a>
-      <article>
         <section>
           <p class="lead">在最佳化任何事物之前，我們會選擇要關注什麼。這第一眼決定了之後的每個模型、指標和政策。關注不僅僅是「收集資料」，它更是一個承諾，承諾要看見需求，並像人們和地方真有其事般地行動。</p>
           <div class="callout">
@@ -233,8 +230,17 @@
           <h2>一個結尾意象：能說「不」的好客門檻</h2>
           <p>想像有位主人，他能叫出每位客人的名字，替他們安放行李，還會示意他們的到來如何影響了座位安排。這就是「關注力」。因為有些客人會試圖排擠或抹去別人，主人訂下了一條明確規則：這個家裡的待客之道，必須建立在尊重權利的基礎上。如果我們教 AI 系統，在追求最佳化之前先學會當一個好主人，我們就能保留更多珍貴的東西，並創造更多能分享的好事物。</p>
         </section>
-      </article>
     </main>
+
+    <section class="next-action">
+        <div class="next-action-content">
+            <a href="tw.html" class="next-action-button">
+                <span class="button-arrow">←</span>
+                <span class="button-text">返回</span>
+            </a>
+        </div>
+    </section>
+
     <footer>
       <p>© 2025 Audrey Tang and Caroline Green. 除非另有說明，本網站上的文字內容根據創用 CC0 授權條款釋出。</p>
       <p>本研究為<a href="https://afp.oxford-aiethics.ox.ac.uk/">加速學人計畫</a>的一部分，該計畫隸屬於<a href="https://www.oxford-aiethics.ox.ac.uk/">牛津大學人工智慧倫理研究所</a>。</p>
