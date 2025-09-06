@@ -1,0 +1,61 @@
+# Jekyll Configuration for 6-Pack of Care
+title: "6-Pack of Care"
+description: "Research project by Audrey Tang and Caroline Green - Institute for Ethics in AI"
+baseurl: ""
+url: "https://6pack.care"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-metadata
+
+# Include files
+include:
+  - _redirects
+
+# Disable SCSS processing - we're using static CSS
+# sass:
+#   sass_dir: _sass
+#   style: compressed
+
+# Markdown and syntax highlighting
+markdown: kramdown
+highlighter: rouge
+
+# Language support
+languages: ["en", "zh-tw"]
