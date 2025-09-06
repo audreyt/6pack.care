@@ -129,7 +129,7 @@ section:hover {
 h2, h3 {
     font-family: 'Montserrat', 'Noto Sans TC', sans-serif;
     color: var(--oxford-blue);
-    margin-top: 1.2em;
+    margin-top: 0.4em;
     margin-bottom: 0.4em;
 }
 
@@ -278,7 +278,7 @@ li {
 }
 
 .next-action-button .button-text {
-    font-family: Montserrat, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .next-action-button .button-arrow {
