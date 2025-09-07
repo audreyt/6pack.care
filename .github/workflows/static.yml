@@ -37,7 +37,7 @@ jobs:
       
       - name: Build with Jekyll
         run: |
-          bundle exec jekyll build --baseurl ${{ github.event.repository.name }}
+          bundle exec jekyll build --baseurl ""
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
