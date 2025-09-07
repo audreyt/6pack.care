@@ -64,3 +64,4 @@ The original HTML files (`index.html`, `ch1.html`, `tw.html`, `tw1.html`) are pr
 3. **Content Management**: Markdown is easier to edit than HTML
 4. **GitHub Pages**: Native Jekyll support on GitHub Pages
 5. **Scalability**: Easy to add new pages and languages
+

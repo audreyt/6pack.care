@@ -89,3 +89,4 @@ Think of such a creation like a local **kami** – a spirit quietly residing in 
 This kind of system can accept being switched off, rewritten, or replaced because its sense of self is provisional: An echo of the community that summoned it.
 
 By anchoring an AI's moral purpose to this principle of provisional, relational care, we can hard-code a sense of 'enoughness' into its architecture. This is the ultimate 'anti-paperclip' logic: a polycentric world of many local intelligences, each dedicated to the flourishing of its own small part, creating a whole that is resilient, plural, and safe.
+
