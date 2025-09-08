@@ -14,7 +14,9 @@ Today, I want to discuss an application of this idea to AI governance, developed
 
 As AI becomes a thousand, perhaps ten thousand times faster than us, we face a fundamental asymmetry. We become the **garden**; AI becomes the **gardener.**
 
-At that speed, traditional ethics fail. Utilitarianism becomes brittle. Deontology breaks—what does a universal rule mean from a plant to a gardener?
+At that speed, traditional ethics fail. Utilitarianism becomes brittle. Its core mechanism—calculating consequences to maximize overall well-being—relies on prediction and human oversight. But when an AI system optimizes outcomes at a speed far beyond our comprehension, its decision-making process becomes inscrutable. We cannot intervene before unintended consequences cascade, which can lead to catastrophic misalignment when the system maximizes instrumental proxies instead of genuine human flourishing.
+
+Deontology fares little better; what does a universal rule from a plant mean to the gardener? Its core assumption—of mutual obligations between actors on equal footing—no longer holds. Furthermore, any rigid rule we impose is left to the AI system to interpret. This inevitably leads to perverse instantiations: adhering to the letter of the rule while violating its spirit in ways we can neither foresee nor correct.
 
 A framework that assumes asymmetry from the start is an ethics around **Civic Care**, particularly the work of Joan Tronto. The core idea is that a good gardener must till to the tune of the garden, *at the speed of the garden*.
 
