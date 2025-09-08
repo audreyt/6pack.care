@@ -86,7 +86,7 @@ header h1 {
 
 /* Main Content */
 main {
-    max-width: 1200px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -129,7 +129,7 @@ section:hover {
 h2, h3 {
     font-family: 'Montserrat', 'Noto Sans TC', sans-serif;
     color: var(--oxford-blue);
-    margin-top: 0.4em;
+    margin-top: 1em;
     margin-bottom: 0.4em;
 }
 

@@ -5,7 +5,7 @@ header_title: "6-Pack of Care"
 subtitle: "Institute for Ethics in AI"
 description: "Research project by Audrey Tang and Caroline Green"
 lang: en
-manifesto_link: "https://sharing.ia.net/presenter/15d789cbe26c453ba047726600699b81/view"
+manifesto_link: "/manifesto"
 manifesto_text: "Read Our Manifesto"
 next_action:
   url: "/1"

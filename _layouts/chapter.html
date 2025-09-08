@@ -34,11 +34,6 @@
     </header>
 
     <main>
-        {% if page.lang == 'en' %}
-            <a class="back-link" href="{{ '/' | relative_url }}">← Back to Home</a>
-        {% else %}
-            <a class="back-link" href="{{ '/tw' | relative_url }}">← 返回首頁</a>
-        {% endif %}
         {{ content }}
     </main>
 

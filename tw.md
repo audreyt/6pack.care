@@ -5,10 +5,10 @@ header_title: "關懷六力"
 subtitle: "AI 倫理研究院"
 description: "唐鳳與 Caroline Green 的研究計畫"
 lang: zh-tw
-manifesto_link: "https://sharing.ia.net/presenter/3eb682f8d34245dc99f1dff34d31cbca/view"
+manifesto_link: "/tw/manifesto"
 manifesto_text: "計畫宣言"
 next_action:
-  url: "/tw1"
+  url: "/tw/1"
   text: "第一章：辨識中的覺察力"
   arrow: "right"
 ---
