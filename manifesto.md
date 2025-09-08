@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: "6-Pack of Care: Manifesto"
+title: "6-Pack of Care: A Manifesto"
 lang: en
 alt_lang_url: "/tw/manifesto"
 ---
