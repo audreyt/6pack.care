@@ -52,7 +52,7 @@ We invite you to join us in this collaborative quest. By integrating these six i
     </a></div>
 </div>
 
-This website outlines our research project, which includes [a manifesto](https://sharing.ia.net/presenter/15d789cbe26c453ba047726600699b81/view) and an upcoming book to be published by Oxford University Press (OUP). Our work explores the intersection of care ethics, plurality, and AI alignment, drawing on frameworks like ⿻ Plurality to address philosophical and technical challenges in artificial intelligence.
+This website outlines our research project, which includes [a manifesto](/manifesto) and an upcoming book to be published by Oxford University Press (OUP). Our work explores the intersection of care ethics, plurality, and AI alignment, drawing on frameworks like ⿻ Plurality to address philosophical and technical challenges in artificial intelligence.
 
 ## From Care to Code: Why ⿻ Plurality Offers a Coherent Framework to the AI Alignment Problem
 
