@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: "計畫宣言"
+title: "關懷六力：計畫宣言"
 lang: zh-tw
 alt_lang_url: "/manifesto"
 permalink: "/tw/manifesto"
