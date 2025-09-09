@@ -2,8 +2,8 @@
 layout: chapter
 title: "關懷六力：計畫宣言"
 lang: zh-tw
-alt_lang_url: "/manifesto"
-permalink: "/tw/manifesto"
+alt_lang_url: "/manifesto/"
+permalink: "/tw/manifesto/"
 ---
 當我們討論「AI」與「社會」時，兩種未來互為競爭。
 
