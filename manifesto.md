@@ -22,7 +22,7 @@ A framework that assumes asymmetry from the start is an ethics around **Civic Ca
 
 This approach mandates a hyper-local, parochial moral scope. Gardeners are bound to specific gardens; they are not a colonizing or maximizing ("paper-clipping") force.
 
-This requires our AI gardeners to become digital permaculturists, mirroring a movement that embraces anti-fragility through diversity—what Professor Yuk Hui calls "technodiversity"—rather than fragile monocultures.
+This requires our AI gardeners to become **digital permaculturists**, mirroring a movement that embraces anti-fragility through diversity—what Professor Yuk Hui calls "technodiversity"—rather than fragile monocultures.
 
 The vertical narrative of a technological "Singularity" needs a horizontal alternative. Today, I wish to discuss that alternative: a steering wheel called ⿻ Plurality, and its design principles: the 6-Pack of Care.
 
