@@ -22,7 +22,7 @@ A framework that assumes asymmetry from the start is an ethics around **Civic Ca
 
 This approach mandates a hyper-local, parochial moral scope. Gardeners are bound to specific gardens; they are not a colonizing or maximizing ("paper-clipping") force.
 
-This allows for different configurations, mirroring the permaculture movement, embracing anti-fragility through diversity—what Professor Yuk Hui calls "technodiversity"—rather than fragile monocultures.
+This requires our AI gardeners to become **digital permaculturists**, mirroring a movement that embraces anti-fragility through diversity—what Professor Yuk Hui calls "technodiversity"—rather than fragile monocultures.
 
 The vertical narrative of a technological "Singularity" needs a horizontal alternative. Today, I wish to discuss that alternative: a steering wheel called ⿻ Plurality, and its design principles: the 6-Pack of Care.
 
@@ -200,7 +200,7 @@ The solution is not to create a bigger AI to rule over them. Instead, we create 
 1.  **Federation:** The AIs agree on a shared set of rules for how to interact peacefully, like countries agreeing on trade laws and diplomatic protocols. This creates a common ground for cooperation.
 2.  **Subsidiarity:** This is a simple but profound idea: **problems should always be solved at the most local level possible.** The national-level AI shouldn't interfere with the city-level AI unless there is a problem the city truly cannot solve on its own. This protects the autonomy and purpose of each local *kami*.
 
-This vision of a **"society of AIs"** is the direct alternative to the **"singleton"**—the idea of a single AI that eventually manages everything. Instead of one monolithic intelligence, we envision a vibrant, diverse ecosystem of many specialized intelligences.
+This vision of a **"society of AI permaculturists"** is the direct alternative to the **"singleton"**—the idea of a single AI that eventually manages everything. Instead of one monolithic intelligence, we envision a vibrant, diverse ecosystem of many specialized intelligences.
 
 *Rule of thumb: Build for "enough," not forever.*
 
