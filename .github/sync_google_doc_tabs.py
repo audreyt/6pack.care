@@ -1,0 +1,208 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Fetch markdown tabs from the published Google Doc and regenerate local files."""
+
+from __future__ import annotations
+
+import argparse
+import re
+from pathlib import Path
+from typing import Dict, Iterable, List
+
+import requests
+from bs4 import BeautifulSoup, NavigableString
+
+DEFAULT_DOC_URL = "https://docs.google.com/document/d/e/2PACX-1vTvWQ1BT8cUYdjPNCTFt-LL0tm_zv1KpvJyIzdS7NuHIbIdjFrwD243eMGie5O2um-iEuAGRRRLZ6PQ/pub"
+PACK_PATTERN = re.compile(r"^Pack ([1-6]):\s*(.+)$")
+
+
+def detect_locale(tab_name: str) -> str:
+    return "zh-tw" if tab_name.startswith("tw") else "en"
+
+
+def inline_text(node) -> str:
+    if isinstance(node, NavigableString):
+        return str(node)
+    result: List[str] = []
+    for child in node.children:
+        if isinstance(child, NavigableString):
+            result.append(str(child))
+        else:
+            name = child.name.lower()
+            if name in {"strong", "b"}:
+                result.append("**" + inline_text(child) + "**")
+            elif name in {"em", "i"}:
+                result.append("*" + inline_text(child) + "*")
+            elif name == "a":
+                href = child.get("href", "").strip()
+                text = inline_text(child).strip() or href
+                result.append(f"[{text}]({href})" if href else text)
+            elif name == "br":
+                result.append("\n")
+            else:
+                result.append(inline_text(child))
+    text = "".join(result)
+    text = re.sub(r"[\t\f\v]+", " ", text)
+    text = re.sub(r" *\n *", "\\n", text)
+    return text
+
+
+def render_section(nodes: Iterable, locale: str) -> str:
+    lines: List[str] = []
+    state = {"pack": False}
+
+    def ensure_blank() -> None:
+        if lines and lines[-1] != "":
+            lines.append("")
+
+    def finish_pack() -> None:
+        if state["pack"]:
+            ensure_blank()
+            state["pack"] = False
+
+    for node in nodes:
+        if isinstance(node, NavigableString):
+            continue
+        name = getattr(node, "name", "").lower()
+        if name in {"h1", "h2", "h3", "h4", "h5", "h6"}:
+            finish_pack()
+            level = int(name[1])
+            ensure_blank()
+            heading = node.get_text(strip=True)
+            lines.append("#" * level + " " + heading)
+            ensure_blank()
+        elif name in {"p", "li"}:
+            text = inline_text(node).strip()
+            if not text:
+                continue
+            match = PACK_PATTERN.match(text) if locale == "en" else None
+            if locale == "en" and match:
+                num, remainder = match.groups()
+                title_part, body_part = remainder, ""
+                if " — " in remainder:
+                    title_part, body_part = remainder.split(" — ", 1)
+                title_part = title_part.strip()
+                body_part = body_part.strip()
+                if num == "1":
+                    label = f"**[Pack {num}: {title_part}](/1)**"
+                else:
+                    label = f"**Pack {num}: {title_part}**"
+                if num == "4" and "kami" in body_part:
+                    body_part = body_part.replace(" an local ", " a local ")
+                    body_part = body_part.replace("kami", "**kami**", 1)
+                bullet = f"- {label}"
+                if body_part:
+                    bullet += f" — {body_part}"
+                if not state["pack"]:
+                    ensure_blank()
+                lines.append(bullet)
+                state["pack"] = True
+                continue
+            finish_pack()
+            ensure_blank()
+            if locale == "en" and text.startswith("At the heart of our work is the 6-Pack"):
+                text = text.replace("At the heart of our work is the 6-Pack", "At the heart of our work is the **6-Pack", 1)
+            lines.append(text)
+            ensure_blank()
+        elif name in {"ul", "ol"}:
+            finish_pack()
+            bullet = "-" if name == "ul" else "1."
+            ensure_blank()
+            for li in node.find_all("li", recursive=False):
+                text = inline_text(li).strip()
+                if text:
+                    lines.append(f"{bullet} {text}")
+            ensure_blank()
+        else:
+            finish_pack()
+            html_block = node.decode().strip()
+            if html_block:
+                ensure_blank()
+                lines.append(html_block)
+                ensure_blank()
+
+    finish_pack()
+    cleaned: List[str] = []
+    for line in lines:
+        if line == "":
+            if cleaned and cleaned[-1] == "":
+                continue
+            if not cleaned:
+                continue
+            cleaned.append("")
+        else:
+            cleaned.append(line.rstrip())
+    if cleaned and cleaned[-1] == "":
+        cleaned.pop()
+    return "\n".join(cleaned).strip() + "\n"
+
+
+def extract_front_matter(path: Path) -> str:
+    if path.exists():
+        text = path.read_text(encoding="utf-8")
+        if text.startswith("---"):
+            parts = text.split("---", 2)
+            if len(parts) >= 3:
+                return "---" + parts[1] + "---\n\n"
+    return ""
+
+
+def gather_sections(contents: BeautifulSoup) -> Dict[str, List]:
+    sections: Dict[str, List] = {}
+    current = None
+    for elem in contents.children:
+        if isinstance(elem, NavigableString):
+            continue
+        if not hasattr(elem, "get_text"):
+            continue
+        label = elem.get_text(" ", strip=True)
+        if label.endswith(".md"):
+            current = label
+            sections[current] = []
+            continue
+        if current:
+            text = elem.get_text(" ", strip=True)
+            if text.lower().endswith(".md"):
+                current = None
+                continue
+            sections[current].append(elem)
+    return sections
+
+
+def regenerate_markdown(doc_url: str) -> List[str]:
+    response = requests.get(doc_url, timeout=30)
+    response.raise_for_status()
+    soup = BeautifulSoup(response.text, "lxml")
+    contents = soup.find("div", id="contents")
+    if contents is None:
+        raise SystemExit("Could not locate contents div in published document")
+
+    sections = gather_sections(contents)
+    if not sections:
+        raise SystemExit("No .md tabs found in document")
+
+    updated: List[str] = []
+    for tab, nodes in sections.items():
+        target = Path(tab)
+        locale = detect_locale(tab)
+        content = render_section(nodes, locale)
+        front = extract_front_matter(target)
+        target.write_text(front + content, encoding="utf-8")
+        updated.append(tab)
+    return updated
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--doc-url", default=DEFAULT_DOC_URL, help="Published Google Doc URL")
+    args = parser.parse_args()
+
+    updated = regenerate_markdown(args.doc_url)
+    if updated:
+        print("Updated:", ", ".join(sorted(updated)))
+    else:
+        print("No markdown tabs updated")
+
+
+if __name__ == "__main__":
+    main()
