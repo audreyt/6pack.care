@@ -22,10 +22,15 @@ next_action:
 我們工作的核心是**關懷六力**：六項連結關懷倫理與 AI 的核心理念，將「對齊」重新定義為動態、關係式的流程，以實現多元的未來。每一項「關懷」都回應水平協作的挑戰，幫助 AI 成為橋樑建造者，而非風險放大器。
 
 - **[一：辨識中的覺察力](/tw/1)** — AI 必須首先透過專注地辨識橫跨相互依存網絡的需求來「覺察」。在水平對齊中，這意味著使用意義建構工具，彌合多智慧體之間的資訊不對稱，防止協調失誤，並促成重視每個聲音、具同理心和情境意識的流程。
+
 - **二：參與中的負責力** — 「負責關懷」意味著邀請 AI 擔負靈活的責任，以補充在多智慧體情境中建立可信承諾與信任的現有方法。
+
 - **三：行動中的勝任力** — 「給予關懷」在執行時，需要以關係現實為基礎、可行且稱職。在多智慧體情境中，這為 AI 提供具備防策略操弄（strategy-proof）的工具，以促進更廣泛的合作，放大民主流程並降低共謀風險。
+
 - **四：調適中的回應力** — 真正的關懷涉及「接受關懷」，以謙遜回應反饋並作出調整。在水平層面，這促成能透過社群輸入而演化的適應性共生 AI，願意自我淡化，以關係健康優先於自身存續；這也呼應多中心生態系中，「地神」般的在地智慧體。
+
 - **五：群體中的團結力** — 「共同關懷」建立信任、溝通與對集體繁榮的尊重。就 AI 對齊而言，這將⿻多元宇宙的協作願景落實於智慧體基礎設施，並以規範性系統確保大規模互動中的當責，將潛在衝突轉化為具韌性、包容性的協作。
+
 - **六：願景中的共生力** — 關懷的頂點：AI 作為一種共享的善，在持續的共生關係中，為社群「民有、民治、民享」。這項水平願景嵌入了「足夠性」與反榨取邏輯，隨著 AI 的進步加速分散式民主防衛，讓公民關懷成為共享的確定性。
 
 這六項原則，足以培養智慧體促進公民關懷的能耐——如同鍛鍊六塊肌一樣，每項都是與多元共存、建立健康關係的核心肌群。
@@ -35,28 +40,46 @@ next_action:
 ## 關於本計畫
 
 <div style="text-align: center; margin: 20px 0;">
-    <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="45" fill="none" stroke="#002147" stroke-width="5"/>
-        <text x="50" y="65" font-size="50" text-anchor="middle" fill="#002147">⿻</text>
-    </svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" viewBox="0 0 100 100">
+
+<circle cx="50" cy="50" r="45" fill="none" stroke="#002147" stroke-width="5"/>
+
+<text x="50" y="65" font-size="50" text-anchor="middle" fill="#002147">⿻</text>
+
+</svg>
+
 </div>
 
 <div class="team-photos">
-    <div>
-        <a href="https://afp.oxford-aiethics.ox.ac.uk/people/ambassador-audrey-tang">
-            <img src="/img/audrey.jpg" alt="唐鳳大使個人照片"/>
-            <p>唐鳳</p>
-        </a>
-    </div>
-    <div>
-        <a href="https://www.oxford-aiethics.ox.ac.uk/caroline-emmer-de-albuquerque-green">
-            <img src="/img/caroline.jpg" alt="Caroline Green 博士個人照片"/>
-            <p>Caroline Green</p>
-        </a>
-    </div>
+
+<div>
+
+<a href="https://afp.oxford-aiethics.ox.ac.uk/people/ambassador-audrey-tang">
+
+<img src="/img/audrey.jpg" alt="唐鳳大使個人照片"/>
+
+<p>唐鳳</p>
+
+</a>
+
 </div>
 
-本網站概述了我們的研究計畫，其中包括[一份宣言](/tw/manifesto)和一本即將由牛津大學出版社（OUP）出版的書籍。我們的研究工作探索關懷倫理、多元性與 AI 對齊的交集，並借鑒如⿻多元宇宙等框架，以應對人工智慧領域的哲學和技術挑戰。
+<div>
+
+<a href="https://www.oxford-aiethics.ox.ac.uk/caroline-emmer-de-albuquerque-green">
+
+<img src="/img/caroline.jpg" alt="Caroline Green 博士個人照片"/>
+
+<p>Caroline Green</p>
+
+</a>
+
+</div>
+
+</div>
+
+本網站概述了我們的研究計畫，其中包括一份宣言和一本即將由牛津大學出版社（OUP）出版的書籍。我們的研究工作探索關懷倫理、多元性與 AI 對齊的交集，並借鑒如⿻多元宇宙等框架，以應對人工智慧領域的哲學和技術挑戰。
 
 ## 從關懷到程式：為何⿻多元宇宙為 AI 對齊問題提供了連貫的框架
 
@@ -93,4 +116,3 @@ AI 系統能夠被「對齊」，當且僅當它被建構來促進持續、具�
 這種系統可以接受被關閉、重寫或替換，因為它的自我意識是暫時性的：來自召喚它的社群的回聲。
 
 透過將 AI 的道德目的錨定在這種暫時性的、關係性的關懷原則上，我們可以在其架構中硬編碼一種「足夠性」的意識。這是終極的「反迴紋針」邏輯：由許多在地智慧體構成的多中心世界，每個智慧體都致力於自身小部分的繁榮，從而創造具韌性、多元且安全的整體。
-

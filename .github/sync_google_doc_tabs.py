@@ -1,19 +1,36 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Fetch markdown tabs from the published Google Doc and regenerate local files."""
+"""Fetch markdown tabs from the published Google Doc via curl and regenerate local files."""
 
 from __future__ import annotations
 
 import argparse
+import subprocess
 import re
 from pathlib import Path
 from typing import Dict, Iterable, List
+from urllib.parse import parse_qs, unquote, urlparse
 
-import requests
-from bs4 import BeautifulSoup, NavigableString
+from bs4 import BeautifulSoup, NavigableString, Tag
 
 DEFAULT_DOC_URL = "https://docs.google.com/document/d/e/2PACX-1vTvWQ1BT8cUYdjPNCTFt-LL0tm_zv1KpvJyIzdS7NuHIbIdjFrwD243eMGie5O2um-iEuAGRRRLZ6PQ/pub"
 PACK_PATTERN = re.compile(r"^Pack ([1-6]):\s*(.+)$")
+
+
+def _run_curl(url: str) -> str:
+    try:
+        result = subprocess.run(
+            ["curl", "-fsSL", url],
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+    except FileNotFoundError as exc:
+        raise SystemExit("curl is required but was not found in PATH") from exc
+    except subprocess.CalledProcessError as exc:
+        stderr = exc.stderr.strip() if exc.stderr else ""
+        raise SystemExit(f"curl failed with exit code {exc.returncode}: {stderr}") from exc
+    return result.stdout
 
 
 def detect_locale(tab_name: str) -> str:
@@ -34,7 +51,7 @@ def inline_text(node) -> str:
             elif name in {"em", "i"}:
                 result.append("*" + inline_text(child) + "*")
             elif name == "a":
-                href = child.get("href", "").strip()
+                href = _clean_href(child.get("href", "").strip())
                 text = inline_text(child).strip() or href
                 result.append(f"[{text}]({href})" if href else text)
             elif name == "br":
@@ -147,32 +164,54 @@ def extract_front_matter(path: Path) -> str:
     return ""
 
 
-def gather_sections(contents: BeautifulSoup) -> Dict[str, List]:
+def _clean_href(href: str) -> str:
+    if not href:
+        return href
+
+    parsed = urlparse(href)
+    if "google.com" in parsed.netloc and parsed.path == "/url":
+        target = parse_qs(parsed.query).get("q")
+        if target:
+            href = unquote(target[0])
+            parsed = urlparse(href)
+
+    if parsed.scheme in {"http", "https"} and parsed.netloc.endswith("6pack.care"):
+        path = parsed.path or "/"
+        href = path if path.startswith("/") else f"/{path}"
+        if parsed.query:
+            href = f"{href}?{parsed.query}"
+
+    return href
+
+
+def gather_sections(contents: Tag) -> Dict[str, List]:
     sections: Dict[str, List] = {}
-    current = None
-    for elem in contents.children:
-        if isinstance(elem, NavigableString):
-            continue
-        if not hasattr(elem, "get_text"):
-            continue
-        label = elem.get_text(" ", strip=True)
-        if label.endswith(".md"):
-            current = label
-            sections[current] = []
-            continue
-        if current:
-            text = elem.get_text(" ", strip=True)
-            if text.lower().endswith(".md"):
-                current = None
+    seen: set[str] = set()
+    markers: List[Tag] = []
+    for tag in contents.find_all(True):
+        text = tag.get_text(strip=True)
+        if text.endswith(".md") and text not in seen:
+            markers.append(tag)
+            seen.add(text)
+    for marker in markers:
+        name = marker.get_text(strip=True)
+        nodes: List[Tag] = []
+        for sibling in marker.next_siblings:
+            if isinstance(sibling, NavigableString):
                 continue
-            sections[current].append(elem)
+            if not hasattr(sibling, "get_text"):
+                continue
+            text = sibling.get_text(strip=True)
+            if text.lower().endswith(".md") or text.strip().lower() == "manifesto":
+                break
+            nodes.append(sibling)
+        sections[name] = nodes
     return sections
 
 
 def regenerate_markdown(doc_url: str) -> List[str]:
-    response = requests.get(doc_url, timeout=30)
-    response.raise_for_status()
-    soup = BeautifulSoup(response.text, "lxml")
+    html = _run_curl(doc_url)
+    soup = BeautifulSoup(html, "lxml")
     contents = soup.find("div", id="contents")
     if contents is None:
         raise SystemExit("Could not locate contents div in published document")
