@@ -8,7 +8,7 @@ import argparse
 import subprocess
 import re
 from pathlib import Path
-from typing import Dict, Iterable, List
+from typing import Dict, Iterable, List, Set
 from urllib.parse import parse_qs, unquote, urlparse
 
 from bs4 import BeautifulSoup, NavigableString, Tag
@@ -37,7 +37,7 @@ def detect_locale(tab_name: str) -> str:
     return "zh-tw" if tab_name.startswith("tw") else "en"
 
 
-def inline_text(node) -> str:
+def inline_text(node, bold_classes: Set[str]) -> str:
     if isinstance(node, NavigableString):
         return str(node)
     result: List[str] = []
@@ -46,25 +46,29 @@ def inline_text(node) -> str:
             result.append(str(child))
         else:
             name = child.name.lower()
-            if name in {"strong", "b"}:
-                result.append("**" + inline_text(child) + "**")
+            style = child.get("style", "")
+            style_lower = style.lower().replace(" ", "")
+            is_bold_style = any(token in style_lower for token in ("font-weight:bold", "font-weight:600", "font-weight:700", "font-weight:800", "font-weight:900"))
+            classes = set(child.get("class", []))
+            if name in {"strong", "b"} or is_bold_style or classes & bold_classes:
+                result.append("**" + inline_text(child, bold_classes) + "**")
             elif name in {"em", "i"}:
-                result.append("*" + inline_text(child) + "*")
+                result.append("*" + inline_text(child, bold_classes) + "*")
             elif name == "a":
                 href = _clean_href(child.get("href", "").strip())
-                text = inline_text(child).strip() or href
+                text = inline_text(child, bold_classes).strip() or href
                 result.append(f"[{text}]({href})" if href else text)
             elif name == "br":
                 result.append("\n")
             else:
-                result.append(inline_text(child))
+                result.append(inline_text(child, bold_classes))
     text = "".join(result)
     text = re.sub(r"[\t\f\v]+", " ", text)
     text = re.sub(r" *\n *", "\\n", text)
     return text
 
 
-def render_section(nodes: Iterable, locale: str) -> str:
+def render_section(nodes: Iterable, locale: str, bold_classes: Set[str]) -> str:
     lines: List[str] = []
     state = {"pack": False}
 
@@ -89,7 +93,7 @@ def render_section(nodes: Iterable, locale: str) -> str:
             lines.append("#" * level + " " + heading)
             ensure_blank()
         elif name in {"p", "li"}:
-            text = inline_text(node).strip()
+            text = inline_text(node, bold_classes).strip()
             if not text:
                 continue
             match = PACK_PATTERN.match(text) if locale == "en" else None
@@ -126,7 +130,7 @@ def render_section(nodes: Iterable, locale: str) -> str:
             bullet = "-" if name == "ul" else "1."
             ensure_blank()
             for li in node.find_all("li", recursive=False):
-                text = inline_text(li).strip()
+                text = inline_text(li, bold_classes).strip()
                 if text:
                     lines.append(f"{bullet} {text}")
             ensure_blank()
@@ -209,6 +213,18 @@ def gather_sections(contents: Tag) -> Dict[str, List]:
     return sections
 
 
+def extract_bold_classes(contents: Tag) -> Set[str]:
+    bold: Set[str] = set()
+    for style_tag in contents.find_all("style"):
+        css = style_tag.string or ""
+        for match in re.finditer(r"\.([a-zA-Z0-9_-]+)\s*\{[^}]*font-weight\s*:\s*([^;}]*)", css):
+            cls, weight = match.groups()
+            weight_clean = weight.strip().lower()
+            if any(token in weight_clean for token in ("bold", "600", "700", "800", "900")):
+                bold.add(cls)
+    return bold
+
+
 def regenerate_markdown(doc_url: str) -> List[str]:
     html = _run_curl(doc_url)
     soup = BeautifulSoup(html, "lxml")
@@ -220,11 +236,13 @@ def regenerate_markdown(doc_url: str) -> List[str]:
     if not sections:
         raise SystemExit("No .md tabs found in document")
 
+    bold_classes = extract_bold_classes(contents)
+
     updated: List[str] = []
     for tab, nodes in sections.items():
         target = Path(tab)
         locale = detect_locale(tab)
-        content = render_section(nodes, locale)
+        content = render_section(nodes, locale, bold_classes)
         front = extract_front_matter(target)
         target.write_text(front + content, encoding="utf-8")
         updated.append(tab)
