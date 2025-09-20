@@ -18,112 +18,178 @@ jobs:
       - name: Update index.md from published Google Doc
         run: |
           python3 <<'PY'
-          from pathlib import Path
-          import requests
-          from bs4 import BeautifulSoup, NavigableString, Tag
+# -*- coding: utf-8 -*-
+from pathlib import Path
+import re
+import requests
+from bs4 import BeautifulSoup, NavigableString
 
-          DOC_URL = "https://docs.google.com/document/d/e/2PACX-1vTvWQ1BT8cUYdjPNCTFt-LL0tm_zv1KpvJyIzdS7NuHIbIdjFrwD243eMGie5O2um-iEuAGRRRLZ6PQ/pub"
+DOC_URL = "https://docs.google.com/document/d/e/2PACX-1vTvWQ1BT8cUYdjPNCTFt-LL0tm_zv1KpvJyIzdS7NuHIbIdjFrwD243eMGie5O2um-iEuAGRRRLZ6PQ/pub"
 
-          index_path = Path("index.md")
-          existing = index_path.read_text(encoding="utf-8")
-          if not existing.startswith("---"):
-              raise SystemExit("index.md must begin with front matter")
-          parts = existing.split("---", 2)
-          if len(parts) < 3:
-              raise SystemExit("Could not parse front matter in index.md")
-          front_matter = "---" + parts[1] + "---\n\n"
+index_path = Path("index.md")
+raw = index_path.read_text(encoding="utf-8")
+if not raw.startswith("---"):
+    raise SystemExit("index.md must begin with front matter")
+parts = raw.split("---", 2)
+if len(parts) < 3:
+    raise SystemExit("Could not parse front matter in index.md")
+front_matter = "---" + parts[1] + "---\n\n"
 
-          response = requests.get(DOC_URL, timeout=30)
-          response.raise_for_status()
-          soup = BeautifulSoup(response.text, "lxml")
+response = requests.get(DOC_URL, timeout=30)
+response.raise_for_status()
+soup = BeautifulSoup(response.text, "lxml")
+contents = soup.find("div", id="contents")
+if contents is None:
+    raise SystemExit("Could not locate contents div in published document")
 
-          contents = soup.find("div", id="contents")
-          if contents is None:
-              raise SystemExit("Could not locate contents div in published document")
+def find_tab(marker: str):
+    for tag in contents.find_all(True):
+        if tag.get_text(strip=True) == marker:
+            return tag
+    return None
 
-          # Find the marker for the index.md tab
-          start_tag = None
-          for child in contents.descendants:
-              if isinstance(child, Tag) and child.get_text(strip=True) == "index.md":
-                  start_tag = child
-                  break
-          if start_tag is None:
-              raise SystemExit("Could not find index.md section marker in document")
+start_tag = find_tab("index.md")
+if start_tag is None:
+    raise SystemExit("Could not find index.md section marker in document")
 
-          collected = []
-          for sibling in start_tag.next_siblings:
-              if isinstance(sibling, NavigableString):
-                  continue
-              if isinstance(sibling, Tag):
-                  text = sibling.get_text(strip=True)
-                  if not text:
-                      continue
-                  if text.lower().endswith(".md") and text.lower() != "index.md":
-                      break
-                  if text.strip().lower() == "manifesto":
-                      break
-                  collected.append(sibling)
+collected = []
+for sibling in start_tag.next_siblings:
+    if isinstance(sibling, NavigableString):
+        continue
+    if not hasattr(sibling, 'get_text'):
+        continue
+    text = sibling.get_text(" ", strip=True)
+    if not text and not sibling.find(True):
+        continue
+    if text.lower().endswith(".md") and text.lower() != "index.md":
+        break
+    if text.strip().lower() == "manifesto":
+        break
+    collected.append(sibling)
 
-          if not collected:
-              raise SystemExit("No content collected for index.md tab")
+if not collected:
+    raise SystemExit("No content collected for index.md tab")
 
-          lines = []
-          def append_blank():
-              if lines and lines[-1] != "":
-                  lines.append("")
+lines = []
+state = {"pack": False}
 
-          for node in collected:
-              if not isinstance(node, Tag):
-                  continue
-              name = node.name.lower()
-              if name in {"h1", "h2", "h3", "h4", "h5", "h6"}:
-                  level = int(name[1])
-                  heading = "#" * level + " " + node.get_text(strip=True)
-                  lines.append(heading)
-                  append_blank()
-              elif name in {"p", "li"}:
-                  text = node.get_text(separator=" ")
-                  text = " ".join(text.split())
-                  if text:
-                      lines.append(text)
-                      append_blank()
-              elif name in {"ul", "ol"}:
-                  bullet = "-" if name == "ul" else "1."
-                  for li in node.find_all("li", recursive=False):
-                      text = li.get_text(separator=" ")
-                      text = " ".join(text.split())
-                      if text:
-                          lines.append(f"{bullet} {text}")
-                  append_blank()
-              else:
-                  html_block = node.decode()
-                  if html_block.strip():
-                      lines.append(html_block.strip())
-                      append_blank()
+def ensure_blank():
+    if lines and lines[-1] != "":
+        lines.append("")
 
-          heading_titles = [
-              "Our Mission",
-              "About the Project",
-              "From Care to Code: Why ⿻ Plurality Offers a Coherent Framework to the AI Alignment Problem",
-              "Kami in the Machine: How Care Ethics Can Help AI Alignment",
-          ]
-          for title in heading_titles:
-              for idx, line in enumerate(lines):
-                  if line.strip() == title:
-                      lines[idx] = f"## {title}" if not line.startswith("#") else line
-                      if idx + 1 >= len(lines) or lines[idx + 1].strip():
-                          lines.insert(idx + 1, "")
-                      break
+def finish_pack():
+    if state["pack"]:
+        ensure_blank()
+        state["pack"] = False
 
-          cleaned = []
-          for line in lines:
-              if line == "" and cleaned and cleaned[-1] == "":
-                  continue
-              cleaned.append(line.rstrip())
-          content = "\n".join(cleaned).strip() + "\n"
+def inline_text(node):
+    if isinstance(node, NavigableString):
+        return str(node)
+    result = []
+    for child in node.children:
+        if isinstance(child, NavigableString):
+            result.append(str(child))
+        else:
+            name = child.name.lower()
+            if name in {"strong", "b"}:
+                result.append("**" + inline_text(child) + "**")
+            elif name in {"em", "i"}:
+                result.append("*" + inline_text(child) + "*")
+            elif name == "a":
+                href = child.get("href", "").strip()
+                text = inline_text(child).strip()
+                text = text or href
+                if href:
+                    result.append(f"[{text}]({href})")
+                else:
+                    result.append(text)
+            elif name == "br":
+                result.append("\n")
+            else:
+                result.append(inline_text(child))
+    text = ''.join(result)
+    text = re.sub(r'[\t\f\v]+', ' ', text)
+    text = re.sub(r' *\n *', '\n', text)
+    return text
 
-          index_path.write_text(front_matter + content, encoding="utf-8")
-          PY
+pack_title_pattern = re.compile(r'^Pack ([1-6]):\s*(.+)$')
+
+for node in collected:
+    name = getattr(node, 'name', '').lower()
+    if name in {"h1", "h2", "h3", "h4", "h5", "h6"}:
+        finish_pack()
+        level = int(name[1])
+        heading_text = node.get_text(strip=True)
+        ensure_blank()
+        lines.append('#' * level + ' ' + heading_text)
+        ensure_blank()
+    elif name in {"p", "li"}:
+        text = inline_text(node).strip()
+        if not text:
+            continue
+        match = pack_title_pattern.match(text)
+        if match:
+            num = match.group(1)
+            remainder = match.group(2)
+            title_part, body_part = remainder, ""
+            if " — " in remainder:
+                title_part, body_part = remainder.split(" — ", 1)
+            title_part = title_part.strip()
+            body_part = body_part.strip()
+            if num == "1":
+                label = f"**[Pack {num}: {title_part}](/1)**"
+            else:
+                label = f"**Pack {num}: {title_part}**"
+            if num == "4" and "kami" in body_part:
+                body_part = body_part.replace(" an local ", " a local ", 1)
+                body_part = body_part.replace("kami", "**kami**", 1)
+            bullet_line = f"- {label}" + (f" — {body_part}" if body_part else "")
+            if not state["pack"]:
+                ensure_blank()
+            lines.append(bullet_line)
+            state["pack"] = True
+            continue
+        if text.startswith("At the heart of our work is the 6-Pack of Care"):
+            text = text.replace("At the heart of our work is the 6-Pack of Care", "At the heart of our work is the **6-Pack of Care**", 1)
+        finish_pack()
+        ensure_blank()
+        lines.append(text)
+        ensure_blank()
+    elif name in {"ul", "ol"}:
+        finish_pack()
+        bullet = '-' if name == 'ul' else '1.'
+        ensure_blank()
+        for li in node.find_all('li', recursive=False):
+            text = inline_text(li).strip()
+            if text:
+                lines.append(f"{bullet} {text}")
+        ensure_blank()
+    else:
+        finish_pack()
+        html_block = node.decode().strip()
+        if html_block:
+            ensure_blank()
+            lines.append(html_block)
+            ensure_blank()
+
+finish_pack()
+
+cleaned = []
+for line in lines:
+    if line == "":
+        if cleaned and cleaned[-1] == "":
+            continue
+        if not cleaned:
+            continue
+        cleaned.append("")
+    else:
+        cleaned.append(line.rstrip())
+if cleaned and cleaned[-1] == "":
+    cleaned.pop()
+content = "\n".join(cleaned).strip() + "\n"
+
+index_path.write_text(front_matter + content, encoding="utf-8")
+PY
 
       - name: Show changes
         run: git diff --stat
