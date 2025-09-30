@@ -1,6 +1,7 @@
 ---
 layout: chapter
 title: "關懷六力：計畫宣言"
+description: "唐鳳與 Caroline Green"
 lang: zh-tw
 alt_lang_url: "/manifesto/"
 permalink: "/tw/manifesto/"

@@ -1,6 +1,7 @@
 ---
 layout: chapter
 title: "6-Pack of Care: A Manifesto"
+description: "Audrey Tang and Caroline Green"
 lang: en
 alt_lang_url: "/tw/manifesto"
 ---
