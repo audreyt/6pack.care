@@ -43,16 +43,69 @@
 
     <section class="next-action">
         <div class="next-action-content">
-            {% if page.lang == 'en' %}
-                <a href="{{ '/' | relative_url }}" class="next-action-button">
-                    <span class="button-arrow">←</span>
-                    <span class="button-text">Back</span>
-                </a>
+            {% assign chapters = "1,2,3,4,5,6,7" | split: "," %}
+            {% assign current_chapter = page.url | remove: '/tw/' | remove: '/' | split: '/' | first %}
+            {% assign current_index = -1 %}
+            {% for ch in chapters %}
+                {% if ch == current_chapter %}
+                    {% assign current_index = forloop.index0 %}
+                {% endif %}
+            {% endfor %}
+            
+            {% if current_index > 0 %}
+                {% assign prev_index = current_index | minus: 1 %}
+                {% assign prev_chapter = chapters[prev_index] %}
+                {% if page.lang == 'en' %}
+                    <a href="{{ '/' | append: prev_chapter | relative_url }}" class="next-action-button">
+                        <span class="button-arrow">←</span>
+                        <span class="button-text">Previous</span>
+                    </a>
+                {% else %}
+                    <a href="{{ '/tw/' | append: prev_chapter | relative_url }}" class="next-action-button">
+                        <span class="button-arrow">←</span>
+                        <span class="button-text">上一章</span>
+                    </a>
+                {% endif %}
             {% else %}
-                <a href="{{ '/tw' | relative_url }}" class="next-action-button">
-                    <span class="button-arrow">←</span>
-                    <span class="button-text">返回</span>
-                </a>
+                {% if page.lang == 'en' %}
+                    <a href="{{ '/' | relative_url }}" class="next-action-button">
+                        <span class="button-arrow">←</span>
+                        <span class="button-text">Home</span>
+                    </a>
+                {% else %}
+                    <a href="{{ '/tw' | relative_url }}" class="next-action-button">
+                        <span class="button-arrow">←</span>
+                        <span class="button-text">首頁</span>
+                    </a>
+                {% endif %}
+            {% endif %}
+            
+            {% assign next_index = current_index | plus: 1 %}
+            {% if next_index < chapters.size %}
+                {% assign next_chapter = chapters[next_index] %}
+                {% if page.lang == 'en' %}
+                    <a href="{{ '/' | append: next_chapter | relative_url }}" class="next-action-button">
+                        <span class="button-text">Next</span>
+                        <span class="button-arrow">→</span>
+                    </a>
+                {% else %}
+                    <a href="{{ '/tw/' | append: next_chapter | relative_url }}" class="next-action-button">
+                        <span class="button-text">下一章</span>
+                        <span class="button-arrow">→</span>
+                    </a>
+                {% endif %}
+            {% else %}
+                {% if page.lang == 'en' %}
+                    <a href="{{ '/' | relative_url }}" class="next-action-button">
+                        <span class="button-text">Home</span>
+                        <span class="button-arrow">→</span>
+                    </a>
+                {% else %}
+                    <a href="{{ '/tw' | relative_url }}" class="next-action-button">
+                        <span class="button-text">首頁</span>
+                        <span class="button-arrow">→</span>
+                    </a>
+                {% endif %}
             {% endif %}
         </div>
     </section>

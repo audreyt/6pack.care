@@ -68,9 +68,9 @@ def inline_text(node, bold_classes: Set[str]) -> str:
     return text
 
 
-def render_section(nodes: Iterable, locale: str, bold_classes: Set[str]) -> str:
+def render_section(nodes: Iterable, locale: str, bold_classes: Set[str], skip_first_h1: bool = False) -> str:
     lines: List[str] = []
-    state = {"pack": False}
+    state = {"pack": False, "seen_h1": False}
 
     def ensure_blank() -> None:
         if lines and lines[-1] != "":
@@ -85,9 +85,22 @@ def render_section(nodes: Iterable, locale: str, bold_classes: Set[str]) -> str:
         if isinstance(node, NavigableString):
             continue
         name = getattr(node, "name", "").lower()
+        
+        # Check if this node contains text that indicates start of next chapter
+        node_text = node.get_text(strip=True)
+        if node_text and (node_text.startswith("Chapter 8:") or node_text.startswith("# Chapter 8:") or 
+                         node_text.startswith("ch8:") or node_text.startswith("**ch8:") or
+                         node_text.startswith("**ch9:") or node_text.startswith("Chapter 9:")):
+            # Stop processing this section
+            break
+            
         if name in {"h1", "h2", "h3", "h4", "h5", "h6"}:
             finish_pack()
             level = int(name[1])
+            # Skip the first H1 if requested (chapter files have title in front matter)
+            if skip_first_h1 and level == 1 and not state["seen_h1"]:
+                state["seen_h1"] = True
+                continue
             ensure_blank()
             heading = node.get_text(strip=True)
             lines.append("#" * level + " " + heading)
@@ -240,12 +253,26 @@ def regenerate_markdown(doc_url: str) -> List[str]:
 
     updated: List[str] = []
     for tab, nodes in sections.items():
-        target = Path(tab)
+        # Map chapter names to numbered files
+        chapter_mapping = {
+            "ch1: attentiveness.md": "1.md",
+            "ch2: responsibility.md": "2.md", 
+            "ch3: competence.md": "3.md",
+            "ch4: responsiveness.md": "4.md",
+            "ch5: solidarity.md": "5.md",
+            "ch6: symbiosis.md": "6.md",
+            "ch7: faq.md": "7.md"
+        }
+        
+        target_name = chapter_mapping.get(tab, tab)
+        target = Path(target_name)
         locale = detect_locale(tab)
-        content = render_section(nodes, locale, bold_classes)
+        # Skip first H1 for chapter files (they have title in front matter)
+        is_chapter = target_name in chapter_mapping.values() or target_name.startswith("tw-") and target_name[3:] in chapter_mapping.values()
+        content = render_section(nodes, locale, bold_classes, skip_first_h1=is_chapter)
         front = extract_front_matter(target)
         target.write_text(front + content, encoding="utf-8")
-        updated.append(tab)
+        updated.append(target_name)
     return updated
 
 
