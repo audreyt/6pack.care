@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: "第六章：視域中的共生力"
+title: "第六章：願景中的共生力"
 lang: zh-tw
 alt_lang_url: "/6/"
 permalink: "/tw/6/"

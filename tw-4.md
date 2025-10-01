@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: "第四章：適應中的回應力"
+title: "第四章：調適中的回應力"
 lang: zh-tw
 alt_lang_url: "/4/"
 permalink: "/tw/4/"

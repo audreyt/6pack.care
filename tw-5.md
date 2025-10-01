@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: "第五章：社群中的團結力"
+title: "第五章：群體中的團結力"
 lang: zh-tw
 alt_lang_url: "/5/"
 permalink: "/tw/5/"
