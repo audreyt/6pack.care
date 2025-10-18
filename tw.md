@@ -37,6 +37,10 @@ next_action:
 
 我們邀請您加入這項協作探索。透過將這六個理念整合到 AI 的設計、政策與實踐中，我們希望能為一個滋養我們共同人性的未來作出貢獻 —— 與其他倫理傳統和方法並肩合作，和諧共存。
 
+<div class="overview-section">
+<img src="/img/overview-small-zh.jpg" alt="關懷六力視覺概覽" class="overview-image">
+</div>
+
 ## 關於本計畫
 
 <div style="text-align: center; margin: 20px 0;">

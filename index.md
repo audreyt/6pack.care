@@ -32,6 +32,10 @@ These six principles are sufficient to cultivate an intelligent agent’s ‘mus
 
 We invite you to join us in this collaborative quest. By integrating these six ideas into AI design, policy, and practice, we hope to contribute to a future where technology nurtures our shared humanity—working alongside, and in harmony with, other ethical traditions and approaches.
 
+<div class="overview-section">
+<img src="/img/overview-small.jpg" alt="6-Pack of Care visual overview" class="overview-image">
+</div>
+
 ## About the Project
 
 <div style="text-align: center; margin: 20px 0;">
