@@ -13,6 +13,10 @@ next_action:
   arrow: "right"
 ---
 
+<div class="overview-section">
+<img src="/img/overview-small.jpg" alt="6-Pack of Care visual overview" class="overview-image">
+</div>
+
 ## Our Mission
 
 Traditional approaches to AI alignment—often grounded in utilitarian reasoning and vertical control—have made significant progress in addressing risks and promoting beneficial outcomes. Yet, as our societies and technologies grow more interconnected, there is increasing recognition that relational, process-based perspectives can complement and enrich these efforts, especially in contexts where multiple agents, values, and voices interact.
@@ -31,10 +35,6 @@ At the heart of our work is the **6-Pack of Care**: six core ideas that connect 
 These six principles are sufficient to cultivate an intelligent agent’s ‘muscular endurance’ to foster civic care — like training a 6-pack, each is a core muscle group for coexisting with diversity and forming healthy relationships. These ‘systemic relationships’ unfold within wider contexts of human- human and human-AI relationships, working towards overall relational health.
 
 We invite you to join us in this collaborative quest. By integrating these six ideas into AI design, policy, and practice, we hope to contribute to a future where technology nurtures our shared humanity—working alongside, and in harmony with, other ethical traditions and approaches.
-
-<div class="overview-section">
-<img src="/img/overview-small.jpg" alt="6-Pack of Care visual overview" class="overview-image">
-</div>
 
 ## About the Project
 

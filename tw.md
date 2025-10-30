@@ -13,6 +13,10 @@ next_action:
   arrow: "right"
 ---
 
+<div class="overview-section">
+<img src="/img/overview-small-zh.jpg" alt="關懷六力視覺概覽" class="overview-image">
+</div>
+
 ## 我們的使命
 
 傳統的 AI 對齊方法，通常基於功利主義推理和垂直控制，在應對風險和促進有益成果方面取得了顯著進展。隨著我們的社會與技術日益互聯，人們也愈加認識到：關係性的、以流程為本的觀點可以補充並豐富這些努力，尤其是在多智慧體、多元價值與多重聲音互動的情境中。
@@ -36,10 +40,6 @@ next_action:
 這六項原則，足以培養智慧體促進公民關懷的能耐——如同鍛鍊六塊肌一樣，每項都是與多元共存、建立健康關係的核心肌群。
 
 我們邀請您加入這項協作探索。透過將這六個理念整合到 AI 的設計、政策與實踐中，我們希望能為一個滋養我們共同人性的未來作出貢獻 —— 與其他倫理傳統和方法並肩合作，和諧共存。
-
-<div class="overview-section">
-<img src="/img/overview-small-zh.jpg" alt="關懷六力視覺概覽" class="overview-image">
-</div>
 
 ## 關於本計畫
 
