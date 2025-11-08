@@ -5,6 +5,8 @@ description: "Audrey Tang and Caroline Green"
 lang: en
 alt_lang_url: "/tw/manifesto"
 ---
+(Audio version of this page is available [here](https://drive.google.com/file/d/1uuSUzT2kLMOhdBelCS-NAibQkZnlbDpj/view?usp=sharing).)
+
 When we discuss "AI" and "society," two futures compete.
 
 In one—arguably the default trajectory—AI supercharges conflict.
