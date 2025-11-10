@@ -17,8 +17,18 @@ next_action:
 <img src="/img/overview-small.jpg" alt="6-Pack of Care visual overview" class="overview-image">
 </div>
 
-(Audio version of this page is available [here](/audio/index.mp3).
-This website explains the six items of pack. The audio version of each page of pack is linked here [Pack 1](/audio/pack-1.mp3), [Pack 2](/audio/pack-2.mp3), [Pack 3](/audio/pack-3.mp3), [Pack 4](/audio/pack-4.mp3), [Pack 5](/audio/pack-5.mp3) and [Pack 6](/audio/pack-6.mp3).)     
+<div class="audio-section">
+  <div class="audio-icon">🔊</div>
+  <div class="audio-content">
+    <p class="audio-label">Audio Version Available</p>
+    <audio controls preload="metadata">
+      <source src="/audio/index.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <p class="audio-links">Individual chapters: <a href="/audio/pack-1.mp3">Pack 1</a> • <a href="/audio/pack-2.mp3">Pack 2</a> • <a href="/audio/pack-3.mp3">Pack 3</a> • <a href="/audio/pack-4.mp3">Pack 4</a> • <a href="/audio/pack-5.mp3">Pack 5</a> • <a href="/audio/pack-6.mp3">Pack 6</a></p>
+  </div>
+</div>
+
 ## Our Mission
 
 Traditional approaches to AI alignment—often grounded in utilitarian reasoning and vertical control—have made significant progress in addressing risks and promoting beneficial outcomes. Yet, as our societies and technologies grow more interconnected, there is increasing recognition that relational, process-based perspectives can complement and enrich these efforts, especially in contexts where multiple agents, values, and relationships interact.
