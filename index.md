@@ -17,8 +17,8 @@ next_action:
 <img src="/img/overview-small.jpg" alt="6-Pack of Care visual overview" class="overview-image">
 </div>
 
-(Audio version of this page is available [here](https://drive.google.com/file/d/1869-7ASk-CMGXhoPES_9nQ5yZeua2d3N/view?usp=sharing).
-This website explains the six items of pack. The audio version of each page of pack is linked here [Pack 1](https://drive.google.com/file/d/1SpIdo2VWMmWsW3xQaL6ufcgynlXLUFJP/view?usp=sharing), [Pack 2](https://drive.google.com/file/d/1od3osQqOHSeZKia3rXWss7SAt8v4AdYR/view?usp=sharing), [Pack 3](https://drive.google.com/file/d/1sIIsU4pRev9asFjVPdUaaRN-ERibmzG1/view?usp=sharing), [Pack 4](https://drive.google.com/file/d/1JncM8taRQOoUQmPahAy2dLWToRu0Qass/view?usp=sharing), [Pack 5](https://drive.google.com/file/d/1zpy8MHyQ1tAgCDuHgS5LiW40xI-iqp4a/view?usp=sharing) and [Pack 6](https://drive.google.com/file/d/1STCQ5r9BQrzhq_hrYxARb3kG6wSyNZ7S/view?usp=sharing).)     
+(Audio version of this page is available [here](/audio/index.mp3).
+This website explains the six items of pack. The audio version of each page of pack is linked here [Pack 1](/audio/pack-1.mp3), [Pack 2](/audio/pack-2.mp3), [Pack 3](/audio/pack-3.mp3), [Pack 4](/audio/pack-4.mp3), [Pack 5](/audio/pack-5.mp3) and [Pack 6](/audio/pack-6.mp3).)     
 ## Our Mission
 
 Traditional approaches to AI alignment—often grounded in utilitarian reasoning and vertical control—have made significant progress in addressing risks and promoting beneficial outcomes. Yet, as our societies and technologies grow more interconnected, there is increasing recognition that relational, process-based perspectives can complement and enrich these efforts, especially in contexts where multiple agents, values, and relationships interact.

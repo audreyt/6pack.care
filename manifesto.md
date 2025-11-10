@@ -5,7 +5,7 @@ description: "Audrey Tang and Caroline Green"
 lang: en
 alt_lang_url: "/tw/manifesto"
 ---
-(Audio version of this page is available [here](https://drive.google.com/file/d/1uuSUzT2kLMOhdBelCS-NAibQkZnlbDpj/view?usp=sharing).)
+(Audio version of this page is available [here](/audio/manifesto.mp3).)
 
 When we discuss "AI" and "society," two futures compete.
 
