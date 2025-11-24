@@ -4,6 +4,7 @@ title: "AI 對齊不能由上而下"
 lang: zh-tw
 alt_lang_url: "/ai-alignment-cannot-be-top-down/"
 permalink: "/tw/ai-alignment-cannot-be-top-down/"
+date: 2025-11-03
 ---
 
 *社群備註（Community Notes）提供了一個更好的模式 — 由公民而非企業來決定什麼是「對齊」。*

@@ -55,6 +55,14 @@ header h1 {
     animation: slideIn 0.5s ease-out;
 }
 
+header .chapter-date {
+    margin: 8px auto 0;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    max-width: 95%;
+}
+
 /* Main Content */
 main {
     max-width: 700px;
