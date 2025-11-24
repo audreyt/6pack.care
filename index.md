@@ -48,6 +48,10 @@ At the heart of our work is the **6-Pack of Care**: six core ideas that connect 
 
 These six principles are sufficient to cultivate an intelligent agent’s ‘muscular endurance’ to foster civic care — like training a 6-pack, each is a core muscle group for coexisting with diversity and forming healthy relationships. These ‘systemic relationships’ unfold within wider contexts of human- human and human-AI relationships, working towards overall relational health.
 
+## Latest perspective
+
+We just published [“AI Alignment Cannot Be Top-Down”](/ai-alignment-cannot-be-top-down/)—a field report showing how Taiwan’s attentive, citizen-led response to AI-enabled scams illustrates what alignment looks like when people steer the system together. 
+
 We invite you to join us in this collaborative quest. By integrating these six ideas into AI design, policy, and practice, we hope to contribute to a future where technology nurtures our shared humanity—working alongside, and in harmony with, other ethical traditions and approaches.
 
 ## About the Project

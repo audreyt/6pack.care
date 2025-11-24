@@ -266,6 +266,17 @@ li {
     box-shadow: var(--shadow);
 }
 
+.figure-caption {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    color: var(--muted);
+    text-align: center;
+}
+
+.figure-caption strong {
+    color: var(--oxford-blue);
+}
+
 /* SVG Icons */
 .svg-icon {
     width: 100px;
