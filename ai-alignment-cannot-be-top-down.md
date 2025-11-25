@@ -54,7 +54,7 @@ Applying the principle of attentiveness would shift the field from pursuing cent
 
 Fortunately, the tools needed to pursue a more attentive course already exist.
 
-Attentiveness in Practice
+## Attentiveness in Practice
 
 **Attentiveness does not emerge by accident; it rests on an explicit ethical foundation.** Building on University of Minnesota Prof. Joan Tronto’s care ethics, I, along with Caroline Emmer De Albuquerque Green (of the University of Oxford’s Institute for Ethics in AI), developed the [6-Pack of Care](https://6pack.care/manifesto/) — six interlocking practices that translate ethical principles into institutional design. The framework recognizes a basic asymmetry: AI operates at speeds and scales beyond human oversight. To keep it aligned, our institutions must evolve to match that tempo by learning, responding, and recalibrating continuously, with people in the loop at every level. 
 
@@ -105,7 +105,7 @@ At a high level, sequencing matters. Frontier AI corporations must move first, o
 
 Success, too, must be measurable: how quickly bridging notes arrive, how effectively they reduce polarization, how often outputs cite their governing rules, and how freely users can move across social networks and AI services. These metrics tell us whether attentiveness is working in practice, and where course corrections are needed.
 
-Attentiveness Works
+## Attentiveness Works
 
 Naturally, objections to this approach will arise, particularly regarding efficiency, value coherence, and coordination costs. Making attentiveness the foundation of our future AI alignment paradigm is a serious challenge, but one that is possible to meet.
 
