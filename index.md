@@ -104,7 +104,7 @@ The ⿻ Plurality agenda is a large-scale application of care ethics. vTaiwan-in
 
 This provides a coherent framework to AI alignment: alignment-by-process. Instead of aligning an AI to a static, flawed specification of values (the Midas Curse), we align it to a process that earns our trust as it adapts to our needs.
 
-The AI system's role shifts from a misaligned optimizer to a "Symbiotic AI"—created of, by and for a community and exist both as a "person" and as a shared ⿻ Plurality good, depending on the perspective one adopts.
+The AI system's role shifts from a misaligned optimizer to a "Symbiotic AI"—created of, by and for a community and exist both as a "person" and as a shared plural good, depending on the perspective one adopts.
 
 Its objective function becomes concrete and measurable: the health of the relational process itself (e.g., maximizing bridging narratives, holding space for every story).
 
