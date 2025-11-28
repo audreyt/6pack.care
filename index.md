@@ -100,11 +100,11 @@ The solution lies in a framework that reframes the is-ought gap entirely: care e
 
 Care ethics reframes the problem. It grounds morality not in abstract principles but in the empirical reality of interdependence. In this view, the fundamental 'is' of our existence is relational dependency. This fact is intrinsically normative; to perceive a relationship of need is to simultaneously perceive an 'ought'—an obligation to care. The fact contains its own value.
 
-The ⿻ agenda is a large-scale application of care ethics. vTaiwan-inspired processes, designed to achieve Coherent Blended Volition (CBV), is a technologically-mediated system for practicing collective care. It operationalizes Joan Tronto's phases of care: identifying a need (Attentiveness), gathering perspectives with sensemaking tools (Responsibility), deliberating on feasible options (Competence), ratifying uncommon ground that all feel heard in (Responsiveness), and ensuring the ongoing trust of the process (Solidarity).
+The ⿻ Plurality agenda is a large-scale application of care ethics. vTaiwan-inspired processes, designed to achieve Coherent Blended Volition (CBV), is a technologically-mediated system for practicing collective care. It operationalizes Joan Tronto's phases of care: identifying a need (Attentiveness), gathering perspectives with sensemaking tools (Responsibility), deliberating on feasible options (Competence), ratifying uncommon ground that all feel heard in (Responsiveness), and ensuring the ongoing trust of the process (Solidarity).
 
 This provides a coherent framework to AI alignment: alignment-by-process. Instead of aligning an AI to a static, flawed specification of values (the Midas Curse), we align it to a process that earns our trust as it adapts to our needs.
 
-The AI system's role shifts from a misaligned optimizer to a "Symbiotic AI"—created of, by and for a community and exist both as a "person" and as a shared ⿻ good, depending on the perspective one adopts.
+The AI system's role shifts from a misaligned optimizer to a "Symbiotic AI"—created of, by and for a community and exist both as a "person" and as a shared ⿻ Plurality good, depending on the perspective one adopts.
 
 Its objective function becomes concrete and measurable: the health of the relational process itself (e.g., maximizing bridging narratives, holding space for every story).
 
