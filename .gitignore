@@ -1,12 +1,10 @@
-# Jekyll
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+# Dependencies
+node_modules/
+.bun/
 
-# Ruby
-.bundle/
-vendor/
+# Build output
+_site/
+docs/
 
 # macOS
 .DS_Store

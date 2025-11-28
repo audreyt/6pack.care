@@ -55,6 +55,14 @@ header h1 {
     animation: slideIn 0.5s ease-out;
 }
 
+header .chapter-date {
+    margin: 8px auto 0;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    max-width: 95%;
+}
+
 /* Main Content */
 main {
     max-width: 700px;
@@ -172,6 +180,109 @@ li {
     height: auto;
     border-radius: 10%;
     box-shadow: var(--shadow);
+}
+
+/* Audio Player Section */
+.audio-section {
+    background: linear-gradient(135deg, #f0f4f8 0%, #e8eef3 100%);
+    border-left: 4px solid var(--gold);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 20px 0 30px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.3s ease;
+}
+
+.audio-section:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+    transform: translateY(-1px);
+}
+
+.audio-section .audio-icon {
+    font-size: 1.8em;
+    color: var(--oxford-blue);
+    flex-shrink: 0;
+}
+
+.audio-section .audio-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.audio-section .audio-label {
+    font-size: 0.9em;
+    color: var(--oxford-blue);
+    font-weight: 600;
+    margin: 0;
+}
+
+.audio-section audio {
+    width: 100%;
+    height: 32px;
+    outline: none;
+}
+
+.audio-section .audio-links {
+    font-size: 0.85em;
+    color: var(--muted);
+    margin: 0;
+}
+
+.audio-section .audio-links a {
+    color: var(--oxford-blue);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.audio-section .audio-links a:hover {
+    color: var(--gold);
+    text-decoration: underline;
+}
+
+@media (max-width: 719px) {
+    .audio-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 16px;
+    }
+    
+    .audio-section .audio-icon {
+        font-size: 1.5em;
+    }
+}
+
+/* Overview Section */
+.overview-section {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background: var(--card);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.overview-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.figure-caption {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    color: var(--muted);
+    text-align: center;
+}
+
+.figure-caption strong {
+    color: var(--oxford-blue);
 }
 
 /* SVG Icons */

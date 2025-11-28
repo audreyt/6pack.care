@@ -13,11 +13,29 @@ next_action:
   arrow: "right"
 ---
 
+<div class="overview-section">
+<img src="/img/overview-small.jpg" alt="6-Pack of Care visual overview" class="overview-image">
+</div>
+
+<div class="audio-section">
+  <div class="audio-icon">🔊</div>
+  <div class="audio-content">
+    <p class="audio-label">Audio Version Available</p>
+    <audio controls preload="metadata">
+      <source src="/audio/index.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <p class="audio-links">Individual chapters: <a href="/audio/pack-1.mp3">Pack 1</a> • <a href="/audio/pack-2.mp3">Pack 2</a> • <a href="/audio/pack-3.mp3">Pack 3</a> • <a href="/audio/pack-4.mp3">Pack 4</a> • <a href="/audio/pack-5.mp3">Pack 5</a> • <a href="/audio/pack-6.mp3">Pack 6</a></p>
+  </div>
+</div>
+
 ## Our Mission
 
-Traditional approaches to AI alignment—often grounded in utilitarian reasoning and vertical control—have made significant progress in addressing risks and promoting beneficial outcomes. Yet, as our societies and technologies grow more interconnected, there is increasing recognition that relational, process-based perspectives can complement and enrich these efforts, especially in contexts where multiple agents, values, and voices interact.
+Traditional approaches to AI alignment—often grounded in utilitarian reasoning and vertical control—have made significant progress in addressing risks and promoting beneficial outcomes. Yet, as our societies and technologies grow more interconnected, there is increasing recognition that relational, process-based perspectives can complement and enrich these efforts, especially in contexts where multiple agents, values, and relationships interact.
 
-Drawing on Joan Tronto's transformative phases of care and the ⿻ Plurality vision of collaborative diversity, our mission is to help build a global movement that brings together philosophers, technologists, and communities to reimagine AI ethics. We aim to develop innovative, process-driven solutions that embed **civic care** into AI's core, fostering horizontal alignment where systems cooperate symbiotically and inclusively.  This **‘Civic AI’ **approach is based on the recognition of human interdependence and interconnectedness, with relational health and thereby the protection and furthering of core values like wellbeing and dignity of humans as a goal to strive for. It transcends the person-to-person connectivity to include AI collaboration with humans and amongst AI systems. This approach is not meant to replace existing frameworks, but to offer additional tools and perspectives—proven in real-world experiments like vTaiwan and echoed in calls from Cooperative AI leaders for scalable, participatory governance.
+Drawing on Joan Tronto's transformative phases of care and the ⿻ Plurality vision of collaborative diversity, our mission is to help build a global movement that brings together philosophers, technologists, and communities to reimagine AI ethics. We aim to develop innovative, process-driven solutions that embed **civic care** into AI's core, fostering horizontal alignment where systems cooperate symbiotically and inclusively.
+
+This **‘Civic AI’** approach is based on the recognition of human interdependence and interconnectedness, with relational health and thereby the protection and furthering of core values like wellbeing and dignity of humans as a goal to strive for. It transcends the person-to-person connectivity to include AI collaboration with humans and amongst AI systems. This approach is not meant to replace existing frameworks, but to offer additional tools and perspectives—proven in real-world experiments like vTaiwan and echoed in calls from Cooperative AI leaders for scalable, participatory governance.
 
 At the heart of our work is the **6-Pack of Care**: six core ideas that connect care ethics to AI, reframing alignment as a dynamic, relational process for a plural future. Each "pack" addresses the horizontal coordination problem, helping AI become not a risk amplifier, but a bridge-builder. ‘Co-production’ as a concept of human collaboration is closely intertwined with the systemic relational process throughout the 6-pack:
 
@@ -29,6 +47,10 @@ At the heart of our work is the **6-Pack of Care**: six core ideas that connect 
 - **[Pack 6: Symbiosis in Horizon](/6/)** — Capstone of care: AI as a shared good, existing "of, by, and for" communities in ongoing symbiosis. This horizontal vision embeds "enoughness" and anti-extractive logic, accelerating decentralized democratic defense as AI advances, for a world where civic care is a shared certainty.
 
 These six principles are sufficient to cultivate an intelligent agent’s ‘muscular endurance’ to foster civic care — like training a 6-pack, each is a core muscle group for coexisting with diversity and forming healthy relationships. These ‘systemic relationships’ unfold within wider contexts of human- human and human-AI relationships, working towards overall relational health.
+
+## Latest perspective
+
+We just published [“AI Alignment Cannot Be Top-Down”](/ai-alignment-cannot-be-top-down/)—a field report showing how Taiwan’s attentive, citizen-led response to AI-enabled scams illustrates what alignment looks like when people steer the system together. 
 
 We invite you to join us in this collaborative quest. By integrating these six ideas into AI design, policy, and practice, we hope to contribute to a future where technology nurtures our shared humanity—working alongside, and in harmony with, other ethical traditions and approaches.
 
@@ -78,11 +100,11 @@ The solution lies in a framework that reframes the is-ought gap entirely: care e
 
 Care ethics reframes the problem. It grounds morality not in abstract principles but in the empirical reality of interdependence. In this view, the fundamental 'is' of our existence is relational dependency. This fact is intrinsically normative; to perceive a relationship of need is to simultaneously perceive an 'ought'—an obligation to care. The fact contains its own value.
 
-The ⿻ agenda is a large-scale application of care ethics. vTaiwan-inspired processes, designed to achieve Coherent Blended Volition (CBV), is a technologically-mediated system for practicing collective care. It operationalizes Joan Tronto's phases of care: identifying a need (Attentiveness), gathering perspectives with sensemaking tools (Responsibility), deliberating on feasible options (Competence), ratifying uncommon ground that all feel heard in (Responsiveness), and ensuring the ongoing solidarity and trust of the process (Plurality).
+The ⿻ Plurality agenda is a large-scale application of care ethics. vTaiwan-inspired processes, designed to achieve Coherent Blended Volition (CBV), is a technologically-mediated system for practicing collective care. It operationalizes Joan Tronto's phases of care: identifying a need (Attentiveness), gathering perspectives with sensemaking tools (Responsibility), deliberating on feasible options (Competence), ratifying uncommon ground that all feel heard in (Responsiveness), and ensuring the ongoing trust of the process (Solidarity).
 
 This provides a coherent framework to AI alignment: alignment-by-process. Instead of aligning an AI to a static, flawed specification of values (the Midas Curse), we align it to a process that earns our trust as it adapts to our needs.
 
-The AI system's role shifts from a misaligned optimizer to a "Symbiotic AI"—created of, by and for a community and exist both as a "person" and as a shared ⿻ good, depending on the perspective one adopts.
+The AI system's role shifts from a misaligned optimizer to a "Symbiotic AI"—created of, by and for a community and exist both as a "person" and as a shared plural good, depending on the perspective one adopts.
 
 Its objective function becomes concrete and measurable: the health of the relational process itself (e.g., maximizing bridging narratives, holding space for every story).
 
