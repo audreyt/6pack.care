@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: 'en' }}">
+<html lang="{{ lang | default: 'en' }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} — {{ site.title }}</title>
+    <title>{{ title }} — {{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,500,500i,600,600i%7COpen+Sans:300,300i,700,700i,400,400i" />
 </head>
@@ -12,20 +12,20 @@
         <a href="https://www.ox.ac.uk/"><img class="oxford-logo" height="100" src="{{ '/img/oxford-logo.svg' | relative_url }}" alt="University of Oxford Logo"></a>
         <a href="https://afp.oxford-aiethics.ox.ac.uk/"><img class="oxford-logo" height="100" src="{{ '/img/afp-logo.svg' | relative_url }}" alt="Accelerator Fellowship Programme Logo"></a>
         <div style="position: absolute; top: 20px; right: 20px;">
-            {% if page.lang == 'en' %}
+            {% if lang == 'en' %}
                 <a href="{{ '/tw' | relative_url }}" style="color: white; text-decoration: none; font-weight: bold; background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 5px;">華文</a>
             {% else %}
                 <a href="{{ '/' | relative_url }}" style="color: white; text-decoration: none; font-weight: bold; background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 5px;">English</a>
             {% endif %}
         </div>
-        <h1>{{ page.header_title | default: page.title }} <span style="font-weight: 100">—</span> {{ page.subtitle | default: "Institute for Ethics in AI" }}</h1>
-        {% if page.description %}
-        <p>{{ page.description }}</p>
+        <h1>{{ header_title | default: title }} <span style="font-weight: 100">—</span> {{ subtitle | default: "Institute for Ethics in AI" }}</h1>
+        {% if description %}
+        <p>{{ description }}</p>
         {% endif %}
-        {% if page.manifesto_link %}
+        {% if manifesto_link %}
         <br>
-            <a href="{{ page.manifesto_link }}" class="next-action-button">
-                <span class="button-text">↗️ {{ page.manifesto_text | default: "Read Our Manifesto" }}</span>
+            <a href="{{ manifesto_link }}" class="next-action-button">
+                <span class="button-text">↗️ {{ manifesto_text | default: "Read Our Manifesto" }}</span>
             </a>
         {% endif %}
     </header>
@@ -34,15 +34,15 @@
         {{ content }}
     </main>
     
-    {% if page.next_action %}
+    {% if next_action %}
     <section class="next-action">
         <div class="next-action-content">
-            <a href="{{ page.next_action.url | relative_url }}" class="next-action-button">
-                {% if page.next_action.arrow == 'left' %}
+            <a href="{{ next_action.url | relative_url }}" class="next-action-button">
+                {% if next_action.arrow == 'left' %}
                     <span class="button-arrow">←</span>
-                    <span class="button-text">{{ page.next_action.text }}</span>
+                    <span class="button-text">{{ next_action.text }}</span>
                 {% else %}
-                    <span class="button-text">{{ page.next_action.text }}</span>
+                    <span class="button-text">{{ next_action.text }}</span>
                     <span class="button-arrow">→</span>
                 {% endif %}
             </a>
@@ -51,7 +51,7 @@
     {% endif %}
     
     <footer>
-    {% if page.lang == 'en' %}
+    {% if lang == 'en' %}
         <p>⓪ 2025 <a href="https://afp.oxford-aiethics.ox.ac.uk/people/ambassador-audrey-tang">Audrey Tang</a> and <a href="https://www.oxford-aiethics.ox.ac.uk/caroline-emmer-de-albuquerque-green">Caroline Green</a>. Unless otherwise indicated, textual content and illustrations on this website are released under the terms of the Creative Commons CC0 license. Illustration by <a href="https://ncase.me">Nicky Case</a>. Mandarin localization contributed by <a href="https://github.com/giselechou">Gisele Chou</a>.</p>
         <p>This research was undertaken as part of the <a href="https://afp.oxford-aiethics.ox.ac.uk/">Accelerator Fellowship Programme</a> at the <a href="https://www.oxford-aiethics.ox.ac.uk/">Oxford Institute for Ethics in AI</a>.</p>
     {% else %}
