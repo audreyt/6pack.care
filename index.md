@@ -56,18 +56,6 @@ We invite you to join us in this collaborative quest. By integrating these six i
 
 ## About the Project
 
-<div style="text-align: center; margin: 20px 0;">
-
-<svg class="svg-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-
-<circle cx="50" cy="50" r="45" fill="none" stroke="#002147" stroke-width="5"/>
-
-<text x="50" y="65" font-size="50" text-anchor="middle" fill="#002147">⿻</text>
-
-</svg>
-
-</div>
-
 <div class="team-photos">
 
 <div><a href="https://afp.oxford-aiethics.ox.ac.uk/people/ambassador-audrey-tang">
