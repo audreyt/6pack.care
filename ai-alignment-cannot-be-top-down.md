@@ -33,7 +33,7 @@ When unexpected behavior emerges, patch fixes are applied based solely on the de
 
 **The risks of continuing this inattentive approach to alignment are severe.** Today, leading AI models project the values of their makers. Once embedded into civic, economic, and governmental decision-making (drafting laws, grading exams, advising lawyers, screening welfare applications, or summarizing public consultations), these systems will do more than mislead: they will begin to redefine what a society treats as truth and whose experience qualifies as evidence, hollowing out the very institutions meant to uphold collective sense-making.
 
-When the linguistic and moral frameworks of public reasoning are mediated by a handful of culturally uniform systems, democratic pluralism will erode. 
+When the linguistic and moral frameworks of public reasoning are mediated by a handful of culturally uniform systems, democratic pluralism will erode.
 
 **With the current approach to AI alignment, we are seeing a repeat of the mistakes made in efforts to align social media.** In the 2010s, platforms relied on centralized, top-down moderation: trust and safety teams wrote global rules and enforced them with automated filters and human review. 
 
