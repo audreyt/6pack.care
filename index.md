@@ -76,7 +76,7 @@ We invite you to join us in this collaborative quest. By integrating these six i
 
 </div>
 
-This website outlines our research project, which includes [a manifesto](/manifesto/) and an upcoming book to be published in March 2026. Our work explores the intersection of care ethics, plurality, and AI alignment, drawing on frameworks like ⿻ Plurality to address philosophical and technical challenges in artificial intelligence.
+This website outlines our research project, which includes [a manifesto](/manifesto/) and an upcoming book to be published in 2026. Our work explores the intersection of care ethics, plurality, and AI alignment, drawing on frameworks like ⿻ Plurality to address philosophical and technical challenges in artificial intelligence.
 
 ## From Care to Code: Why ⿻ Plurality Offers a Coherent Framework to the AI Alignment Problem
 
