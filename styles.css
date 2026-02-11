@@ -3,13 +3,15 @@
 /* CSS Custom Properties */
 :root {
     --oxford-blue: #002147;
-    --gold: #d4af37;
+    --accent-teal: #4CA6B1;
+    --accent-blue: #2B66F5;
+    --accent-gradient: linear-gradient(135deg, #4CA6B1, #2B66F5);
     --bg: #ffffff;
-    --card: #f8f8f8;
-    --text: #000000;
+    --card: #f8f9fb;
+    --text: #002147;
     --muted: #444444;
-    --shadow: 0 4px 6px rgba(0,0,0,0.1);
-    --shadow-hover: 0 6px 12px rgba(0,0,0,0.15);
+    --shadow: 0 2px 8px rgba(0,33,71,0.08);
+    --shadow-hover: 0 4px 16px rgba(0,33,71,0.12);
 }
 
 /* Base Styles */
@@ -19,14 +21,24 @@ body {
     color: var(--text);
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.85;
+}
+
+/* Links */
+a {
+    color: var(--accent-blue);
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--accent-teal);
 }
 
 /* Header Styles */
 header {
     background: var(--oxford-blue);
     color: white;
-    padding: 40px 20px;
+    padding: 48px 24px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -55,19 +67,23 @@ header h1 {
     animation: slideIn 0.5s ease-out;
 }
 
+header a {
+    color: white;
+}
+
 header .chapter-date {
     margin: 8px auto 0;
     font-size: 0.95rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.7);
     font-weight: 400;
     max-width: 95%;
 }
 
 /* Main Content */
 main {
-    max-width: 700px;
+    max-width: 740px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 32px 24px;
 }
 
 main article {
@@ -77,19 +93,19 @@ main article {
 
 article {
     background: var(--card);
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: var(--shadow);
-    padding: 24px;
+    padding: 32px;
 }
 
 /* Section Styles */
 section {
     background: var(--card);
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: var(--shadow);
-    padding: 20px;
-    margin-bottom: 30px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 32px;
+    margin-bottom: 32px;
+    transition: box-shadow 0.3s;
     opacity: 0;
     animation: fadeIn 0.5s forwards;
 }
@@ -100,7 +116,6 @@ section:nth-child(3) { animation-delay: 0.3s; }
 section:nth-child(4) { animation-delay: 0.4s; }
 
 section:hover {
-    transform: translateY(-5px);
     box-shadow: var(--shadow-hover);
 }
 
@@ -109,11 +124,11 @@ h2, h3 {
     font-family: 'Montserrat', 'Noto Sans TC', sans-serif;
     color: var(--oxford-blue);
     margin-top: 1em;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.5em;
 }
 
 h2 {
-    border-bottom: 2px solid var(--gold);
+    border-bottom: 3px solid var(--accent-teal);
     padding-bottom: 10px;
     font-size: 1.6rem;
 }
@@ -123,8 +138,7 @@ h3 {
 }
 
 p {
-    margin-bottom: 15px;
-    margin: 0.6em 0;
+    margin: 0.7em 0;
 }
 
 ul {
@@ -133,7 +147,7 @@ ul {
 }
 
 li {
-    margin: 0.35em 0;
+    margin: 0.4em 0;
 }
 
 /* Special Classes */
@@ -143,12 +157,12 @@ li {
 }
 
 .callout {
-    border-left: 4px solid var(--gold);
-    background: #fffdf6;
-    padding: 12px 14px;
-    border-radius: 8px;
+    border-left: 4px solid var(--accent-teal);
+    background: #f4fafb;
+    padding: 16px 20px;
+    border-radius: 6px;
     box-shadow: var(--shadow);
-    margin: 1em 0;
+    margin: 1.2em 0;
 }
 
 .back-link {
@@ -160,6 +174,7 @@ li {
 }
 
 .back-link:hover {
+    color: var(--accent-blue);
     text-decoration: underline;
 }
 
@@ -167,7 +182,7 @@ li {
 .team-photos {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .team-photos p {
@@ -184,26 +199,25 @@ li {
 
 /* Audio Player Section */
 .audio-section {
-    background: linear-gradient(135deg, #f0f4f8 0%, #e8eef3 100%);
-    border-left: 4px solid var(--gold);
-    border-radius: 8px;
-    padding: 16px 20px;
-    margin: 20px 0 30px 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    background: linear-gradient(135deg, #f0f6f7 0%, #eaf0f8 100%);
+    border-left: 4px solid var(--accent-teal);
+    border-radius: 6px;
+    padding: 20px 24px;
+    margin: 24px 0 32px 0;
+    box-shadow: var(--shadow);
     display: flex;
     align-items: center;
     gap: 16px;
-    transition: all 0.3s ease;
+    transition: box-shadow 0.3s ease;
 }
 
 .audio-section:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
-    transform: translateY(-1px);
+    box-shadow: var(--shadow-hover);
 }
 
 .audio-section .audio-icon {
     font-size: 1.8em;
-    color: var(--oxford-blue);
+    color: var(--accent-teal);
     flex-shrink: 0;
 }
 
@@ -234,14 +248,14 @@ li {
 }
 
 .audio-section .audio-links a {
-    color: var(--oxford-blue);
+    color: var(--accent-blue);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s;
 }
 
 .audio-section .audio-links a:hover {
-    color: var(--gold);
+    color: var(--accent-teal);
     text-decoration: underline;
 }
 
@@ -249,9 +263,9 @@ li {
     .audio-section {
         flex-direction: column;
         align-items: flex-start;
-        padding: 14px 16px;
+        padding: 16px 18px;
     }
-    
+
     .audio-section .audio-icon {
         font-size: 1.5em;
     }
@@ -260,17 +274,17 @@ li {
 /* Overview Section */
 .overview-section {
     text-align: center;
-    margin: 30px 0;
-    padding: 20px;
+    margin: 32px 0;
+    padding: 24px;
     background: var(--card);
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: var(--shadow);
 }
 
 .overview-image {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: var(--shadow);
 }
 
@@ -291,7 +305,6 @@ li {
     height: 100px;
     display: block;
     margin: 0 auto 20px;
-    // animation: pulse 2s infinite;
 }
 
 /* Grid Layouts */
@@ -308,12 +321,12 @@ li {
 
 /* Next Action Section */
 .next-action {
-    background: linear-gradient(135deg, var(--oxford-blue) 0%, #003366 100%);
+    background: var(--accent-gradient);
     color: white;
-    padding: 60px 20px;
+    padding: 48px 24px;
     margin: 40px 0;
     text-align: center;
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: var(--shadow);
 }
 
@@ -327,6 +340,7 @@ li {
     font-size: 2.2em;
     margin: 0 0 16px 0;
     color: white;
+    border-bottom: none;
 }
 
 .next-action p {
@@ -339,28 +353,27 @@ li {
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    background: var(--gold);
+    background: white;
     color: var(--oxford-blue);
     text-decoration: none;
-    padding: 18px 32px;
+    padding: 16px 32px;
     border-radius: 50px;
     font-weight: 700;
     font-size: 1.1em;
     transition: all 0.3s ease;
     box-shadow: var(--shadow);
-    border: 3px solid transparent;
+    border: 2px solid transparent;
 }
 
 .next-action-button:hover {
-    background: white;
-    color: var(--oxford-blue);
-    transform: translateY(-2px);
+    background: var(--oxford-blue);
+    color: white;
     box-shadow: var(--shadow-hover);
-    border-color: var(--gold);
+    border-color: rgba(255,255,255,0.3);
 }
 
 .next-action-button .button-text {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
 }
 
 .next-action-button .button-arrow {
@@ -375,25 +388,32 @@ li {
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 32px 24px;
     background: var(--oxford-blue);
-    color: white;
-    margin-top: 28px;
+    color: rgba(255,255,255,0.85);
+    margin-top: 0;
+    font-size: 0.9em;
+    line-height: 1.7;
 }
 
 footer a {
-    color: var(--gold);
+    color: #7FC8D0;
     text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 /* Animations */
 @keyframes slideIn {
-    from { transform: translateY(-50px); opacity: 0; }
+    from { transform: translateY(-30px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
+    from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
@@ -410,26 +430,26 @@ footer a {
         row-gap: 0;
         column-gap: 0;
     }
-    
+
     .metrics ul,
     .tools ul,
     .interfaces ul,
     .glossary ul {
         margin: 0;
     }
-    
+
     header {
-        padding: 28px 16px;
+        padding: 32px 16px;
     }
-    
+
     header h1 {
         font-size: 1.8rem;
     }
-    
+
     main {
-        padding: 20px;
+        padding: 24px 16px;
     }
-    
+
     section {
         padding: 24px;
     }
