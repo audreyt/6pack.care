@@ -46,7 +46,7 @@ At the heart of our work is the **6-Pack of Care**: six core ideas that connect 
 - **[Pack 5: Solidarity in Community](/5/)** — "Caring with" builds trust, communication, and respect for collective flourishing. For AI alignment, this operationalizes ⿻ Plurality in agent infrastructure, with normative systems to ensure accountability in large-scale interactions, turning potential conflicts into resilient, inclusive collaborations.
 - **[Pack 6: Symbiosis in Horizon](/6/)** — Capstone of care: AI as a shared good, existing "of, by, and for" communities in ongoing symbiosis. This horizontal vision embeds "enoughness" and anti-extractive logic, accelerating decentralized democratic defense as AI advances, for a world where civic care is a shared certainty.
 
-These six principles are sufficient to cultivate an intelligent agent’s ‘muscular endurance’ to foster civic care — like training a 6-pack, each is a core muscle group for coexisting with diversity and forming healthy relationships. These ‘systemic relationships’ unfold within wider contexts of human- human and human-AI relationships, working towards overall relational health.
+These six principles are sufficient to cultivate an intelligent agent’s ‘muscular endurance’ to foster civic care — like training a 6-pack, each is a core muscle group for coexisting with diversity and forming healthy relationships. These 'systemic relationships' unfold within wider contexts of human-human and human-AI relationships, working towards overall relational health.
 
 ## Latest perspective
 
@@ -98,7 +98,7 @@ Its objective function becomes concrete and measurable: the health of the relati
 
 The AI system is dynamically aligned as its success is identical to the continued success of the collaborative process it serves. It learns our values by participating in the very process where we co-create with them.
 
-AI systems can be "aligned" if—and only if—it is built to facilitate continuous, democratically legitimate processes of care.
+AI systems can be "aligned" if—and only if—they are built to facilitate continuous, democratically legitimate processes of care.
 
 ## Kami in the Machine: How Care Ethics Can Help AI Alignment
 

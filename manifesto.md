@@ -138,7 +138,7 @@ Before we optimize, we must choose what to notice. We must notice what people cl
 
 This starts with curiosity. If an agent isn't even curious about the harm it's causing, it is beyond repair. This is why in Taiwan, we revised our national curriculum post-AlphaGo to focus solely on curiosity, collaboration, and civic care.
 
-Attentiveness means using **broad listening**, rather than broadcasting, to aggregating feelings; we are all experts in our own feelings.
+Attentiveness means using **broad listening**, rather than broadcasting, to aggregate feelings; we are all experts in our own feelings.
 
 **Bridging maps** (like Polis or Sensemaker) create a "group selfie." If done continuously, this snapshot becomes a movie, allowing AI to align to the *here and now.*
 
