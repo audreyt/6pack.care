@@ -69,6 +69,7 @@ header h1 {
 
 header a {
     color: white;
+    text-decoration: none;
 }
 
 header .chapter-date {
