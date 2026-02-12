@@ -373,7 +373,7 @@ li {
 }
 
 .next-action-button .button-text {
-    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Helvetica, Arial, sans-serif;
 }
 
 .next-action-button .button-arrow {
