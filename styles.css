@@ -261,13 +261,7 @@ li {
 
 @media (max-width: 719px) {
     .audio-section {
-        flex-direction: column;
-        align-items: flex-start;
         padding: 16px 18px;
-    }
-
-    .audio-section .audio-icon {
-        font-size: 1.5em;
     }
 }
 
@@ -452,5 +446,18 @@ footer a:hover {
 
     section {
         padding: 24px;
+    }
+
+    .overview-section {
+        margin-left: -16px;
+        margin-right: -16px;
+        border-radius: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .overview-image {
+        border-radius: 0;
+        box-shadow: none;
     }
 }
