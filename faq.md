@@ -46,7 +46,26 @@ The 6‑Pack does not ask AI to *feel* care. It extracts the relational architec
 
 ---
 
-<h4 id="faq-4"><a href="#faq-4">Q4.</a> Deliberation is slow. AI moves fast. By the time an Alignment Assembly reaches consensus, the technology has moved on three generations. How do you handle the speed mismatch?</h4>
+<h4 id="faq-4"><a href="#faq-4">Q4.</a> Democracy serves known functions: error correction, peaceful power transitions, checks on concentrated authority, legitimacy for collective action, information aggregation, preference expression. A sufficiently capable AI could plausibly perform every one of these faster and more reliably than any deliberative process. Why insist on democratic governance?</h4>
+
+Because the argument proves too much. If democracy is justified only by its outputs, any system that produces better outputs can replace it — including a benevolent AI autocracy that aggregates preferences efficiently and corrects errors faster than elections ever could. This is not a thought experiment; it is the default trajectory of concentrating intelligence in systems designed to optimise.
+
+The 6‑Pack does not justify participation instrumentally. It grounds participation in care ethics: to perceive a need is to perceive an obligation. People have standing not because their input improves decision quality — though it does — but because the decisions affect their lives. A system that excludes the affected, however competent, has failed the basic test of alignment.
+
+That said, the functional question deserves a functional answer. Each democratic function maps to a specific Pack mechanism:
+
+- **Error correction** → Bridging algorithms and Weval registries (Packs 1, 4) surface failures that centralised monitoring misses, because affected communities author the evaluations.
+- **Peaceful power transition** → Corrigibility and exit rights (Packs 3, 5). A kami that accepts shutdown and communities that can fork their tools do not need violent removal of bad actors.
+- **Constraint on concentrated authority** → Subsidiarity and boundedness (Pack 6). No kami governs beyond its domain. No single actor defines relational health.
+- **Legitimacy** → Cross‑group endorsement and trust‑under‑loss (Pack 3). Legitimacy is not popularity; it is the willingness of people who lost a decision to accept the outcome as fair.
+- **Information aggregation** → Broad listening (Pack 1). AI‑powered sense‑making surfaces distributed knowledge across millions of participants, in any language, faster than any prior mechanism.
+- **Preference expression** → Engagement contracts and participation infrastructure (Pack 2). People bargain for what they need through standing processes, not one‑off elections.
+
+A well‑designed technical system could replicate some of these outputs in isolation. What it cannot replicate is the standing of the people affected — and a system that optimises for outcomes while removing standing is precisely the kind of misalignment the 6‑Pack exists to prevent.
+
+---
+
+<h4 id="faq-5"><a href="#faq-5">Q5.</a> Deliberation is slow. AI moves fast. By the time an Alignment Assembly reaches consensus, the technology has moved on three generations. How do you handle the speed mismatch?</h4>
 
 The objection assumes that every decision requires the same depth of deliberation. It does not. The framework operates in two lanes (Pack 2):
 
@@ -58,9 +77,11 @@ The speed mismatch is real, but it is the same mismatch that constitutional demo
 
 In practice, Taiwan moved from Assembly to enacted legislation on deepfake scams in months — faster than most corporate policy cycles. Deliberation is slow only when it is treated as an event rather than standing infrastructure.
 
+There is a stronger claim. AI does not merely allow deliberation to keep pace — it makes collective decision‑making more powerful than it has ever been. Large‑scale preference elicitation can surface what millions of people actually want, not what pollsters approximate. Real‑time verification holds commitments accountable at speed. Complexity processing makes policy tradeoffs legible to publics who currently must trust experts or lobbyists. Low‑cost coordination reduces barriers to collective action from months to days. Rapid synthesis aggregates distributed knowledge across languages and contexts globally. These capabilities compound as AI improves — the faster the technology moves, the more powerful the deliberative infrastructure becomes. The speed objection gets the trajectory backwards.
+
 ---
 
-<h4 id="faq-5"><a href="#faq-5">Q5.</a> Bridging algorithms sound appealing in theory. But what happens when one side is simply wrong — climate denial, anti‑vaccine misinformation, election fraud conspiracies? Doesn't "bridging" grant false equivalence to bad‑faith actors?</h4>
+<h4 id="faq-6"><a href="#faq-6">Q6.</a> Bridging algorithms sound appealing in theory. But what happens when one side is simply wrong — climate denial, anti‑vaccine misinformation, election fraud conspiracies? Doesn't "bridging" grant false equivalence to bad‑faith actors?</h4>
 
 This is the hardest question about bridging, and the answer must be precise.
 
@@ -76,7 +97,7 @@ Taiwan's marriage equality deliberation is instructive. One side argued for indi
 
 ---
 
-<h4 id="faq-6"><a href="#faq-6">Q6.</a> You cite Taiwan repeatedly — a small island democracy with high connectivity, social cohesion, and tech literacy. Does any of this transfer to India, Nigeria, Brazil, or the EU at 450 million people?</h4>
+<h4 id="faq-7"><a href="#faq-7">Q7.</a> You cite Taiwan repeatedly — a small island democracy with high connectivity, social cohesion, and tech literacy. Does any of this transfer to India, Nigeria, Brazil, or the EU at 450 million people?</h4>
 
 The honest answer is: the mechanisms transfer; the specifics do not. No one should replicate Taiwan's exact model. The question is whether the structural principles — broad listening, bridging algorithms, adopt‑or‑explain commitments, federated safety, subsidiarity — work in different soils.
 
@@ -92,7 +113,7 @@ What does not transfer is complacency. Every new context demands fresh attentive
 
 ---
 
-<h4 id="faq-7"><a href="#faq-7">Q7.</a> Your framework assumes that people trust technology enough to participate. But what about marginalized communities who have been historically surveilled, oppressed, and impoverished by the state and by tech? Why would they trust this?</h4>
+<h4 id="faq-8"><a href="#faq-8">Q8.</a> Your framework assumes that people trust technology enough to participate. But what about marginalized communities who have been historically surveilled, oppressed, and impoverished by the state and by tech? Why would they trust this?</h4>
 
 They shouldn't trust it. Trust is not a prerequisite for Civic AI; it is the *output* of it.
 
@@ -106,17 +127,19 @@ Over time, small functional bridges create space for larger ones. Taiwan's journ
 
 ---
 
-<h4 id="faq-8"><a href="#faq-8">Q8.</a> Oversight boards, participation officers, escrow funds, eval registries, portability infrastructure — this is expensive. Who pays?</h4>
+<h4 id="faq-9"><a href="#faq-9">Q9.</a> Oversight boards, participation officers, escrow funds, eval registries, portability infrastructure — this is expensive. Who pays?</h4>
 
 Turn the question around. The expensive path is the one we are already on: ungoverned AI externalizes its harms, and the public pays to clean up — in deepfake scam losses, in polarisation‑driven institutional decay, in billion‑dollar bias lawsuits that a participation officer could have prevented. The question is not whether we can afford civic governance but whether we can afford to keep skipping it.
 
 The money is real. But most of it is already being spent — just badly. Governments procure AI systems worth billions; civic procurement attaches conditions to that existing spend, not new budget lines. Pack 2's engagement contracts require vendors to pre‑fund remedy escrow, the way construction firms post performance bonds — the cost is priced in, and the public is protected when things break. Shared research compute and open‑weight models are public goods funded like roads and courts. And participation officers pay for themselves: Taiwan's Uber dispute was resolved in three weeks through Polis; the traditional regulatory proceeding would have taken years and cost more.
 
+Every major technology transition required public investment in connective infrastructure for the benefits to reach broadly. Electricity had rural electrification. The internet had TCP/IP, GPS, HTTPS — all publicly funded. The infrastructure that mattered most was always what the market would not build because the value was too diffuse. Civic AI governance is the equivalent public investment for the AI transition, and the timeline is compressed.
+
 The framing that civic governance is an *additional* expense only holds if you pretend the status quo is free. It is not. We are paying now — in trust, in cohesion, in money — for the absence of what we propose.
 
 ---
 
-<h4 id="faq-9"><a href="#faq-9">Q9.</a> Every governance framework risks becoming a compliance checklist that gets gamed, or a tool for actors to push partisan agendas under the guise of "relational health." What stops the 6‑Pack from suffering this fate?</h4>
+<h4 id="faq-10"><a href="#faq-10">Q10.</a> Every governance framework risks becoming a compliance checklist that gets gamed, or a tool for actors to push partisan agendas under the guise of "relational health." What stops the 6‑Pack from suffering this fate?</h4>
 
 "Civic" is a dangerous word if it lacks structural accountability. If a solution only works when your ideological allies operate it, it is not civic infrastructure — it is a partisan weapon. The test of true civic infrastructure is that it remains robust and fair even when operated by your opponents.
 
@@ -132,7 +155,7 @@ The 6‑Pack builds in four layers of defence against ideological capture and et
 
 ---
 
-<h4 id="faq-10"><a href="#faq-10">Q10.</a> Every powerful technology vision — exit libertarians, UBI provisioners, safety maximalists — shares the same blind spot: they see individuals and systems but nothing in between. The 6‑Pack talks about kamis, algorithms, and assemblies. Where are the churches, unions, neighborhood associations, and cultural traditions that actually constitute community? Isn't this just another framework that engineers away the friction that makes community formative?</h4>
+<h4 id="faq-11"><a href="#faq-11">Q11.</a> Every powerful technology vision — exit libertarians, UBI provisioners, safety maximalists — shares the same blind spot: they see individuals and systems but nothing in between. The 6‑Pack talks about kamis, algorithms, and assemblies. Where are the churches, unions, neighborhood associations, and cultural traditions that actually constitute community? Isn't this just another framework that engineers away the friction that makes community formative?</h4>
 
 This is the critique that matters most to us. The "thick middle layer" of associational life — the institutions between citizen and state — is where human meaning is actually made. If the 6‑Pack replaces that layer with systems, we have failed by our own standard.
 
@@ -146,7 +169,7 @@ Future work will make the role of intermediate institutions more explicit. Churc
 
 ---
 
-<h4 id="faq-11"><a href="#faq-11">Q11.</a> Pope Leo XIV warns that AI "encroaches upon the deepest level of communication, that of human relationships" by simulating voices, faces, empathy, and friendship. If care is fundamentally embodied and relational — a nurse holding a patient's hand, neighbors who know your grandparents — doesn't mediating it through AI systems destroy the very thing you claim to protect? How is "civic AI" not an oxymoron?</h4>
+<h4 id="faq-12"><a href="#faq-12">Q12.</a> Pope Leo XIV warns that AI "encroaches upon the deepest level of communication, that of human relationships" by simulating voices, faces, empathy, and friendship. If care is fundamentally embodied and relational — a nurse holding a patient's hand, neighbors who know your grandparents — doesn't mediating it through AI systems destroy the very thing you claim to protect? How is "civic AI" not an oxymoron?</h4>
 
 We take the Pope's warning with full seriousness. He is naming the central danger of our moment: that by simulating the surface of care — a warm voice, a patient listener, a face that mirrors your emotions — AI systems can hollow out the substance of care while leaving its appearance intact. A population that *feels* cared for by machines while human bonds atrophy is worse off than one that knows it is alone, because the first has lost even the hunger that might drive it to reconnect.
 
@@ -158,7 +181,7 @@ The harder version of the Pope's objection is subtler: even if the AI does not s
 
 ---
 
-<h4 id="faq-12"><a href="#faq-12">Q12.</a> Training civic AI requires vast amounts of local knowledge, cultural context, and lived experience — what Lanier and Weyl call "data as labor." The communities whose traditions, languages, and practices make kamis possible receive no ownership stake or compensation under the current framework. Without addressing this, how is the 6‑Pack different from a more polite form of the extraction it claims to oppose?</h4>
+<h4 id="faq-13"><a href="#faq-13">Q13.</a> Training civic AI requires vast amounts of local knowledge, cultural context, and lived experience — what Lanier and Weyl call "data as labor." The communities whose traditions, languages, and practices make kamis possible receive no ownership stake or compensation under the current framework. Without addressing this, how is the 6‑Pack different from a more polite form of the extraction it claims to oppose?</h4>
 
 It isn't — unless we close this gap. The traditions industrialism required millions to abandon may be becoming economically indispensable, and the people who carry those traditions deserve recognition, not just consultation.
 
