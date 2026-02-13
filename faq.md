@@ -4,6 +4,12 @@ title: "Frequently Asked Questions"
 lang: en
 alt_lang_url: "/tw/faq"
 permalink: "/faq/"
+nav_prev:
+  url: "/manifesto"
+  text: "Manifesto"
+nav_next:
+  url: "/"
+  text: "Home"
 ---
 
 <h4 id="faq-1"><a href="#faq-1">Q1.</a> The AI market is locked in an arms race driven by commercial profit and geopolitical dominance. An AI working for a tax-software monopoly can lobby to keep tax filing difficult — and far worse is easy to imagine. If this continues, isn't the vision of cooperative kami hopelessly naive?</h4>

@@ -5,6 +5,12 @@ description: "唐鳳與 Caroline Green"
 lang: zh-tw
 alt_lang_url: "/manifesto"
 permalink: "/tw/manifesto/"
+nav_prev:
+  url: "/tw"
+  text: "首頁"
+nav_next:
+  url: "/tw/faq"
+  text: "常見問題"
 ---
 當我們討論「AI」與「社會」時，兩種未來互為競爭。
 

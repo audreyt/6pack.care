@@ -4,6 +4,12 @@ title: "常見問題"
 lang: zh-tw
 alt_lang_url: "/faq"
 permalink: "/tw/faq/"
+nav_prev:
+  url: "/tw/manifesto"
+  text: "計畫宣言"
+nav_next:
+  url: "/tw"
+  text: "首頁"
 ---
 
 <h4 id="faq-1"><a href="#faq-1">Q1.</a> AI 市場陷入由商業利潤與地緣政治主導權驅動的軍備競賽。為報稅軟體壟斷企業工作的 AI 可以遊說政府維持報稅的困難度——更糟的情況不難想像。如果這種局面持續下去，合作式地神的願景是否天真到不切實際？</h4>
