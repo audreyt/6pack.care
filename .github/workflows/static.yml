@@ -2,11 +2,10 @@
 name: Build and Deploy 11ty Site
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
+  pull_request:
+    branches: ["main"]
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -45,8 +44,9 @@ jobs:
         with:
           path: ./docs
 
-  # Deploy job
+  # Deploy job (only on push to main, not on PRs)
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
