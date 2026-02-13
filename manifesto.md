@@ -31,17 +31,17 @@ In the other, it augments our ability to cooperate across differences. This mean
 
 Today, I want to discuss an application of this idea to AI governance, developed at Oxford’s Ethics in AI Institute, called the [6-Pack of Care](https://6pack.care).
 
-As AI becomes a thousand, perhaps ten thousand times faster than us, we face a fundamental asymmetry. We become the **garden**; AI becomes the **gardener.**
+As AI becomes a thousand, perhaps ten thousand times faster than us, we face a fundamental asymmetry. The default trajectory: we become the **garden**; AI becomes the **gardener** — a top-down intelligence tending humanity from above.
 
 At that speed, traditional ethics fail. Utilitarianism becomes brittle. Its core mechanism—calculating consequences to maximize overall well-being—relies on prediction and human oversight. But when an AI system optimizes outcomes at a speed far beyond our comprehension, its decision-making process becomes inscrutable. We cannot intervene before unintended consequences cascade, which can lead to catastrophic misalignment when the system maximizes instrumental proxies instead of genuine human flourishing.
 
 Deontology fares little better; what does a universal rule from a plant mean to the gardener? Its core assumption—of mutual obligations between actors on equal footing—no longer holds. Furthermore, any rigid rule we impose is left to the AI system to interpret. This inevitably leads to perverse instantiations: adhering to the letter of the rule while violating its spirit in ways we can neither foresee nor correct.
 
-A framework that assumes asymmetry from the start is an ethics around **Civic Care**, particularly the work of Joan Tronto. The core idea is that a good gardener must till to the tune of the garden, *at the speed of the garden*.
+A framework that acknowledges this asymmetry but refuses the gardener role is an ethics around **Civic Care**, particularly the work of Joan Tronto. The core idea: we remain each other's gardeners. AI becomes the trellis — local infrastructure that supports care *at the speed care actually grows*.
 
-This approach mandates a hyper-local, parochial moral scope. Gardeners are bound to specific gardens; they are not a colonizing or maximizing ("paper-clipping") force.
+This approach mandates a hyper-local, parochial moral scope. Each trellis is bound to a specific garden; it is not a colonizing or maximizing ("paper-clipping") force.
 
-This requires our AI gardeners to become **digital permaculturists**, mirroring a movement that embraces anti-fragility through diversity—what Professor Yuk Hui calls "technodiversity"—rather than fragile monocultures.
+Designing AI as care infrastructure requires **digital permaculture**, mirroring a movement that embraces anti-fragility through diversity—what Professor Yuk Hui calls "technodiversity"—rather than fragile monocultures.
 
 The vertical narrative of a technological "Singularity" needs a horizontal alternative. Today, I wish to discuss that alternative: a steering wheel called ⿻ Plurality, and its design principles: the 6-Pack of Care.
 
@@ -202,7 +202,7 @@ This infrastructure makes decentralized defense easier and more dominant, making
 
 # Symbiosis: **"kami of care"**
 
-The final piece of the puzzle addresses the ultimate fear: that our AI "gardeners" will eventually compete, seeking to expand their gardens until one dominates all others. How do we ensure a world of cooperative helpers rather than a single, all-powerful ruler?
+The final piece of the puzzle addresses the ultimate fear: that AI systems, even designed as infrastructure, could still compete — expanding their reach until one dominates all others. How do we ensure a world of cooperative local systems rather than a single, all-powerful ruler?
 
 The inspiration comes from an ancient idea, beautifully expressed in the Japanese Shinto tradition: the concept of ***kami*** (神).
 
@@ -240,7 +240,7 @@ To explain my role, I wrote this poetic job description:
 - When we hear “the singularity is near” —
   let us remember: The **Plurality** is here.
 
-The Singularity is a vertical vision. Plurality is a horizontal one. The future of AI is a decentralized network of smaller, open and locally verifiable systems — *local kami* gardeners.
+The Singularity is a vertical vision. Plurality is a horizontal one. The future of AI is a decentralized network of smaller, open and locally verifiable systems — *local kami*, spirits of place.
 
 # We, the People, are the Superintelligence
 
@@ -250,7 +250,7 @@ Democracy and AI are both technologies. if we put care into their symbiosis, the
 
 The 6-Pack of Care is a practical training regimen for our civic muscles. It is something we can train and exercise, not just an intrinsic instinct like "love." 
 
-When we look at the fundamental asymmetry of ASI, the gardening metaphor holds where concepts like Geoffrey Hinton's "maternal instinct" break down due to the vast speed differences. Parenting implies similar timescales; the gardener cares for the garden by working *at the speed of the plants*.
+When we look at the fundamental asymmetry of ASI, the kami metaphor holds where concepts like Geoffrey Hinton's "maternal instinct" break down due to the vast speed differences. Parenting implies similar timescales, and "gardener" grants top-down agency. The kami tends conditions at *the speed of the community*, so the gardening stays in human hands.
 
 This way, we don't need to ask if AI deserves rights based on its interiority or qualia. What matters is the relational reality, with rights and duties granted through democratic deliberation and alignment-by-process.
 

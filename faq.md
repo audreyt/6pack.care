@@ -100,6 +100,8 @@ The threat landscape itself is shifting in ways that make bridging necessary, no
 
 Taiwan's marriage equality deliberation shows the mechanism in finer grain. One side argued for individual wedding rights (*hūn*); the other for family kinship structures (*yīn*). They were arguing about different things. The bridging process did not split the difference — it made the structure of the disagreement legible, revealing a path (legalising individual weddings without mandating family kinship) that neither side had seen. That is not false equivalence. It is clarity.
 
+A necessary nuance: the epistemic baseline of "checkable facts" is not self‑evident. What counts as verifiable is established by transparent, accountable, and contestable institutions — peer review, independent statistical offices, judicial fact‑finding — whose authority rests on openness to correction, not on claims of finality. This is precisely why Packs 1 and 4 exist: community‑authored evaluations and broad listening ensure that the institutions determining the factual baseline are themselves subject to democratic scrutiny. The 6‑Pack does not treat the fact/value line as given from nowhere. It treats it as a threshold that must be maintained by the same participatory infrastructure that governs everything else.
+
 ---
 
 <h4 id="faq-7"><a href="#faq-7">Q7.</a> You cite Taiwan repeatedly — a small island democracy with high connectivity, social cohesion, and tech literacy. Does any of this transfer to India, Nigeria, Brazil, or the EU at 450 million people?</h4>
