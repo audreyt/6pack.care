@@ -113,13 +113,13 @@ Early evidence suggests they do:
 
 The framework is designed for scale. Subsidiarity (Pack 6) means each deployment is shaped by its context — the kami belongs to its place, not to Taiwan. Federation (Pack 5) means local deployments share threat intelligence and interoperability standards without requiring a single governance model. The Alignment Assembly format can scale from a neighbourhood to a nation because its democratic legitimacy comes from representative sampling, not total participation — 447 representative citizens deliberated Taiwan's anti‑scam policy for a population of 23 million. Over a decade, some 10 million Taiwanese — nearly half the population — have participated in one digital deliberation or another, including people without voting rights: immigrants, teenagers, and other groups traditionally excluded.
 
-What does not transfer is complacency. Every new context demands fresh attentiveness (Pack 1): who is missing, what power dynamics exist, which local institutions deserve trust and which do not. The framework provides the scaffolding. The community provides the knowledge.
+Every new context demands fresh attentiveness (Pack 1): who is missing, what power dynamics exist, which local institutions deserve trust and which do not. The framework provides the scaffolding. The community provides the knowledge.
 
 ---
 
 <h4 id="faq-8"><a href="#faq-8">Q8.</a> Your framework assumes that people trust technology enough to participate. But what about marginalized communities who have been historically surveilled, oppressed, and impoverished by the state and by tech? Why would they trust this?</h4>
 
-They shouldn't trust it. Trust is not a prerequisite for Civic AI; it is the *output* of it.
+Trust is not a prerequisite for Civic AI; it is the *output* of it.
 
 Taiwan's digital democracy did not emerge from a society that inherently trusted its government. It was born in the aftermath of authoritarianism and a severe crisis of public faith (the Sunflower Movement). Public trust stood at 9 percent in 2014. We built these systems precisely because people *did not* trust the institutions or each other.
 
