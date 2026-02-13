@@ -70,7 +70,8 @@ header img.oxford-logo {
 
 header h1 {
     font-size: 2em;
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-weight: 700;
     margin: 10px 0 0 0;
     animation: slideIn 0.5s ease-out;
 }
@@ -134,7 +135,8 @@ section:hover {
 
 /* Typography */
 h2, h3, h4 {
-    font-family: 'Montserrat', 'Noto Sans TC', sans-serif;
+    font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-weight: 700;
     color: var(--oxford-blue);
     margin-top: 1em;
     margin-bottom: 0.5em;
@@ -322,7 +324,7 @@ li {
 }
 
 .next-action h2 {
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
     font-size: 2.2em;
     margin: 0 0 16px 0;
     color: white;
