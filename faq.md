@@ -149,7 +149,7 @@ Taiwan's implementation makes this concrete. The g0v civic hacking movement that
 
 The danger the question identifies is real: a framework that *engineers* togetherness without *friction* produces a simulation of community, not the real thing. This is why Pack 6's subsidiarity is not optional polish but load‑bearing structure. The kami belongs to its place. It inherits the obligations, the annoying neighbors, the inherited traditions — the very friction the question rightly insists on. A kami that optimizes away local friction has violated its own engagement contract.
 
-We concede that the current framework under‑specifies the role of intermediate institutions. Churches, unions, cultural traditions, and local governments are not stakeholders to be consulted. They are the primary actors. The technology serves them, or it serves no one.
+Future work will make the role of intermediate institutions more explicit. Churches, unions, cultural traditions, and local governments are not stakeholders to be consulted. They are the primary actors. The technology serves them, or it serves no one.
 
 ---
 
@@ -177,4 +177,4 @@ The 6‑Pack's current architecture has the structural pieces but has not suffic
 
 **Cultural preservation as productive investment.** As AI masters managerial prose, it increasingly needs what industrial modernity devalued — craft knowledge, linguistic diversity, physical intuition, the thousand small negotiations of raising children in a specific place. Communities that conserve dying languages and living traditions are not performing nostalgia; they are maintaining irreplaceable productive assets. The 6‑Pack should make this explicit: investment in cultural preservation is investment in the quality of civic AI, and the returns must flow to the communities that sustain the culture, not to the platform that indexes it.
 
-We acknowledge this is the least developed part of the framework and the most urgent to build out. A civic AI that extracts community knowledge while preaching community care is not merely hypocritical — it is the precise failure mode the entire project exists to prevent.
+Connecting data dignity to the existing Pack principles is an active direction of future work. A civic AI that extracts community knowledge while preaching community care is the precise failure mode the entire project exists to prevent.
