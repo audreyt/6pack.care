@@ -121,7 +121,7 @@ section:hover {
 }
 
 /* Typography */
-h2, h3 {
+h2, h3, h4 {
     font-family: 'Montserrat', 'Noto Sans TC', sans-serif;
     color: var(--oxford-blue);
     margin-top: 1em;
