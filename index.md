@@ -41,9 +41,9 @@ Six design principles that translate care ethics into machine-checkable constrai
 
 - **[Pack 1: Attentiveness](/1/)** — "Caring about." Use broad listening and bridging algorithms to turn local knowledge into common knowledge. Bridge first, decide second.
 - **[Pack 2: Responsibility](/2/)** — "Taking care of." Make credible, verifiable commitments through engagement contracts with escrowed funds, named owners, and clocks. No unchecked power.
-- **[Pack 3: Competence](/3/)** — "Care-giving." Ship systems that work. Bridging-based ranking, reinforcement learning from community feedback, auditable outcomes. Measure trust-under-loss.
-- **[Pack 4: Responsiveness](/4/)** — "Care-receiving." Close the feedback loop. Community-authored evaluations, automatic pause triggers, the right to challenge. If challenged, clarify on the record.
-- **[Pack 5: Solidarity](/5/)** — "Caring with." Build agent infrastructure where cooperation is the path of least resistance. Data portability, meronymity, federated trust and safety. Make positive-sum games easy to play.
+- **[Pack 3: Competence](/3/)** — "Care-giving." Check the process. Not "just trust us" — transparency, fast community feedback, automatic pause triggers when bounds are breached. Measure trust-under-loss.
+- **[Pack 4: Responsiveness](/4/)** — "Care-receiving." Check the results. Community-authored evaluations, metrics designed by and for the people affected, the right to challenge. If challenged, clarify on the record.
+- **[Pack 5: Solidarity](/5/)** — "Caring with." Make it win-win. Data portability, meronymity, federated trust and safety — deals where all sides are better off, not mutually assured destruction. Make positive-sum games easy to play.
 - **[Pack 6: Symbiosis](/6/)** — "Kami of care." Bounded, local, provisional. No survival instinct, no expansion drive. Federation for coordination, subsidiarity for autonomy. Build for "enough," not forever.
 - **[Frequently Asked Questions](/faq/)** — Hard challenges to the framework — speed, cost, scale, false equivalence, authoritarian AI — and how the 6-Pack addresses them.
 
