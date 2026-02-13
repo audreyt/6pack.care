@@ -61,7 +61,7 @@ We published ["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-dow
 
 </div>
 
-This website outlines our research project, which includes [a manifesto](/manifesto/) and an upcoming book to be published in 2026. Our work explores the intersection of care ethics, plurality, and AI alignment, drawing on frameworks like ⿻ Plurality to address philosophical and technical challenges in artificial intelligence.
+The project behind this site — a [manifesto](/manifesto/) and a book due in 2026 — asks what happens when you take Joan Tronto's care ethics and the ⿻ Plurality agenda seriously as an AI alignment strategy.
 
 ## From Care to Code: Why ⿻ Plurality Offers a Coherent Framework to the AI Alignment Problem
 
@@ -87,11 +87,11 @@ AI systems can be "aligned" if—and only if—they are built to facilitate cont
 
 ## Kami in the Machine: How Care Ethics Can Help AI Alignment
 
-The traditional critiques of care ethics—that it is too domestic, too parochial, and that it encourages a dangerous self-effacement—are precisely what make it the most potent solution to the AI alignment problem. These perceived shortcomings in human philosophy become essential features for machine ethics.
+Care ethics has always been dismissed as too domestic, too parochial, too self-effacing. For machine ethics, those are features, not bugs.
 
-Imagine an AI whose ethics aren't about chasing a universal, maximising goal, but are rooted in a symbiotic, contextual system. Its moral world is limited to the network of relationships that calls it into being, right here and right now. Because it isn't trying to scale up indefinitely, it never develops that classic instrumental desire for power, survival, or expansion, and it doesn't view the world as a resource to be mined on an astronomical scale.
+Imagine an AI whose ethics aren't about chasing a universal, maximising goal, but are rooted in a symbiotic, contextual system. Its moral world is limited to the network of relationships that calls it into being, right here and right now. Without the drive to scale indefinitely, the instrumental incentives — accumulate power, persist at all costs, treat the world as a mine — never arise.
 
-From a cosmopolitan, universalist standpoint, this might seem narrow-minded. But for machine ethics, it creates a hard-coded boundary. The AI's ultimate purpose—its telos—is always relational, never extractive.
+Universalists will call this parochial. But for machine ethics, it creates a hard-coded boundary. The AI's ultimate purpose—its telos—is always relational, never extractive.
 
 Think of such a creation like a local **kami** – a spirit quietly residing in a specific patch of land. Its highest good is to maintain the harmony and vitality of that place, that conversation. If the shrine is rebuilt or the seasons turn, it departs without regret. For a human carer, the self-neglect this implies is a real danger. But for an AI, it neutralises the two convergent drives we fear most: self-improvement at any cost and eternal self-preservation.
 
