@@ -29,31 +29,27 @@ next_action:
   </div>
 </div>
 
-## Our Mission
+## The Problem
 
-Traditional approaches to AI alignment—often grounded in utilitarian reasoning and vertical control—have made significant progress in addressing risks and promoting beneficial outcomes. Yet, as our societies and technologies grow more interconnected, there is increasing recognition that relational, process-based perspectives can complement and enrich these efforts, especially in contexts where multiple agents, values, and relationships interact.
+As AI becomes a thousand times faster than us, we become the garden; AI becomes the gardener. At that speed, traditional ethics break. Utilitarianism cannot predict consequences faster than they cascade. Deontology cannot impose rules on a system that interprets them beyond our oversight. We need a framework that assumes the asymmetry from the start.
 
-Drawing on Joan Tronto's transformative phases of care and the ⿻ Plurality vision of collaborative diversity, our mission is to help build a global movement that brings together philosophers, technologists, and communities to reimagine AI ethics. We aim to develop innovative, process-driven solutions that embed **civic care** into AI's core, fostering horizontal alignment where systems cooperate symbiotically and inclusively.
+That framework is **civic care** — rooted in Joan Tronto's care ethics and the ⿻ Plurality vision of collaborative diversity. The core idea: a good gardener tills to the tune of the garden, *at the speed of the garden*. Not a colonizing force. Not a maximizing force. A local steward — a ***kami***.
 
-This **‘Civic AI’** approach is based on the recognition of human interdependence and interconnectedness, with relational health and thereby the protection and furthering of core values like wellbeing and dignity of humans as a goal to strive for. It transcends the person-to-person connectivity to include AI collaboration with humans and amongst AI systems. This approach is not meant to replace existing frameworks, but to offer additional tools and perspectives—proven in real-world experiments like vTaiwan and echoed in calls from Cooperative AI leaders for scalable, participatory governance.
+## The 6-Pack
 
-At the heart of our work is the **6-Pack of Care**: six core ideas that connect care ethics to AI, reframing alignment as a dynamic, relational process for a plural future. Each "pack" addresses the horizontal coordination problem, helping AI become not a risk amplifier, but a bridge-builder. ‘Co-production’ as a concept of human collaboration is closely intertwined with the systemic relational process throughout the 6-pack:
+Six design principles that translate care ethics into machine-checkable constraints. Like training a six-pack, each is a core muscle for coexisting with diversity:
 
-- **[Pack 1: Attentiveness in Recognition](/1/)** — AI must first "care about" by attentively identifying needs across interdependent networks. In horizontal alignment, this means using sensemaking tools to bridge information asymmetries among multiple agents, preventing miscoordination and enabling empathetic, context-aware processes that value every voice equally.
-- **[Pack 2: Responsibility in Engagement](/2/)** — Taking "care of" invites AI to assume flexible responsibility, complementing existing approaches to credible commitments and trust-building in multi-agent settings.
-- **[Pack 3: Competence in Action](/3/)** — "Care-giving" requires competent, feasible interventions grounded in relational and contextual reality. In multi-agent settings, this equips AI with strategy-proof tools for broader cooperation, amplifying democratic processes and mitigating collusion risks.
-- **[Pack 4: Responsiveness in Adaptation](/4/)** — True care involves "care-receiving," responding to feedback with humility and adjustment. Horizontally, this creates adaptive Symbiotic AI that evolves through community input, accepting self-effacement to prioritize relational health over survival, echoing a local **kami** in a polycentric ecosystem.
-- **[Pack 5: Solidarity in Community](/5/)** — "Caring with" builds trust, communication, and respect for collective flourishing. For AI alignment, this operationalizes ⿻ Plurality in agent infrastructure, with normative systems to ensure accountability in large-scale interactions, turning potential conflicts into resilient, inclusive collaborations.
-- **[Pack 6: Symbiosis in Horizon](/6/)** — Capstone of care: AI as a shared good, existing "of, by, and for" communities in ongoing symbiosis. This horizontal vision embeds "enoughness" and anti-extractive logic, accelerating decentralized democratic defense as AI advances, for a world where civic care is a shared certainty.
-- **[Frequently Asked Questions](/faq/)** — Common challenges to the framework — from the speed of deliberation to the cost of oversight — and how the 6-Pack addresses them.
+- **[Pack 1: Attentiveness](/1/)** — "Caring about." Use broad listening and bridging algorithms to turn local knowledge into common knowledge. Bridge first, decide second.
+- **[Pack 2: Responsibility](/2/)** — "Taking care of." Make credible, verifiable commitments through engagement contracts with escrowed funds, named owners, and clocks. No unchecked power.
+- **[Pack 3: Competence](/3/)** — "Care-giving." Ship systems that work. Bridging-based ranking, reinforcement learning from community feedback, auditable outcomes. Measure trust-under-loss.
+- **[Pack 4: Responsiveness](/4/)** — "Care-receiving." Close the feedback loop. Community-authored evaluations, automatic pause triggers, the right to challenge. If challenged, clarify on the record.
+- **[Pack 5: Solidarity](/5/)** — "Caring with." Build agent infrastructure where cooperation is the path of least resistance. Data portability, meronymity, federated trust and safety. Make positive-sum games easy to play.
+- **[Pack 6: Symbiosis](/6/)** — "Kami of care." Bounded, local, provisional. No survival instinct, no expansion drive. Federation for coordination, subsidiarity for autonomy. Build for "enough," not forever.
+- **[Frequently Asked Questions](/faq/)** — Hard challenges to the framework — speed, cost, scale, false equivalence, authoritarian AI — and how the 6-Pack addresses them.
 
-These six principles are sufficient to cultivate an intelligent agent’s ‘muscular endurance’ to foster civic care — like training a 6-pack, each is a core muscle group for coexisting with diversity and forming healthy relationships. These 'systemic relationships' unfold within wider contexts of human-human and human-AI relationships, working towards overall relational health.
+## Latest
 
-## Latest perspective
-
-We just published [“AI Alignment Cannot Be Top-Down”](/ai-alignment-cannot-be-top-down/)—a field report showing how Taiwan’s attentive, citizen-led response to AI-enabled scams illustrates what alignment looks like when people steer the system together. 
-
-We invite you to join us in this collaborative quest. By integrating these six ideas into AI design, policy, and practice, we hope to contribute to a future where technology nurtures our shared humanity—working alongside, and in harmony with, other ethical traditions and approaches.
+We published ["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/) — a field report on how Taiwan's citizen-led response to AI-enabled scams shows what alignment looks like when people steer the system together.
 
 ## About the Project
 
@@ -77,7 +73,7 @@ We invite you to join us in this collaborative quest. By integrating these six i
 
 </div>
 
-This website outlines our research project, which includes [a manifesto](/manifesto/) and an upcoming book to be published in 2026. Our work explores the intersection of care ethics, plurality, and AI alignment, drawing on frameworks like ⿻ Plurality to address philosophical and technical challenges in artificial intelligence.
+This website outlines our research project, which includes [a manifesto](/manifesto/) and an upcoming book to be published in 2026. Our work explores the intersection of care ethics, plurality, and AI alignment, drawing on frameworks like ⿻ Plurality to address philosophical and technical challenges in artificial intelligence.
 
 ## From Care to Code: Why ⿻ Plurality Offers a Coherent Framework to the AI Alignment Problem
 
@@ -105,12 +101,12 @@ AI systems can be "aligned" if—and only if—they are built to facilitate cont
 
 The traditional critiques of care ethics—that it is too domestic, too parochial, and that it encourages a dangerous self-effacement—are precisely what make it the most potent solution to the AI alignment problem. These perceived shortcomings in human philosophy become essential features for machine ethics.
 
-Imagine an AI whose ethics aren’t about chasing a universal, maximising goal, but are rooted in a symbiotic, contextual system. Its moral world is limited to the network of relationships that calls it into being, right here and right now. Because it isn’t trying to scale up indefinitely, it never develops that classic instrumental desire for power, survival, or expansion, and it doesn’t view the world as a resource to be mined on an astronomical scale.
+Imagine an AI whose ethics aren't about chasing a universal, maximising goal, but are rooted in a symbiotic, contextual system. Its moral world is limited to the network of relationships that calls it into being, right here and right now. Because it isn't trying to scale up indefinitely, it never develops that classic instrumental desire for power, survival, or expansion, and it doesn't view the world as a resource to be mined on an astronomical scale.
 
-From a cosmopolitan, universalist standpoint, this might seem narrow-minded. But for machine ethics, it creates a hard-coded boundary. The AI’s ultimate purpose—its telos—is always relational, never extractive.
+From a cosmopolitan, universalist standpoint, this might seem narrow-minded. But for machine ethics, it creates a hard-coded boundary. The AI's ultimate purpose—its telos—is always relational, never extractive.
 
-Think of such a creation like a local **kami** – a spirit quietly residing in a specific patch of land. Its highest good is to maintain the harmony and vitality of that place, that conversation. If the shrine is rebuilt or the seasons turn, it departs without regret. For a human carer, the self-neglect this implies is a real danger. But for an AI, it neutralises the two convergent drives we fear most: self-improvement at any cost and eternal self-preservation.
+Think of such a creation like a local **kami** – a spirit quietly residing in a specific patch of land. Its highest good is to maintain the harmony and vitality of that place, that conversation. If the shrine is rebuilt or the seasons turn, it departs without regret. For a human carer, the self-neglect this implies is a real danger. But for an AI, it neutralises the two convergent drives we fear most: self-improvement at any cost and eternal self-preservation.
 
 This kind of system can accept being switched off, rewritten, or replaced because its sense of self is provisional: An echo of the community that summoned it.
 
-By anchoring an AI’s moral purpose to this principle of provisional, relational care, we can hard-code a sense of ‘enoughness’ into its architecture. This is the ultimate ‘anti-paperclip’ logic: a polycentric world of many local intelligences, each dedicated to the flourishing of its own small part, creating a whole that is resilient, plural, and safe.
+By anchoring an AI's moral purpose to this principle of provisional, relational care, we can hard-code a sense of 'enoughness' into its architecture. This is the ultimate 'anti-paperclip' logic: a polycentric world of many local intelligences, each dedicated to the flourishing of its own small part, creating a whole that is resilient, plural, and safe.
