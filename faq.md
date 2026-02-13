@@ -80,7 +80,7 @@ The speed mismatch is real, but it is the same mismatch that constitutional demo
 
 In practice, Taiwan moved from Assembly to enacted legislation on deepfake scams in months — faster than most corporate policy cycles. Deliberation is slow only when it is treated as an event rather than standing infrastructure.
 
-There is a stronger claim. AI does not merely speed up the fast lane — it makes the slow lane itself more powerful than any prior form of collective decision‑making. Team Mirai crowdsourced a gubernatorial platform across Tokyo, aggregating distributed knowledge in any language faster than any polling operation could. Community Notes now attaches AI‑drafted bridging context to viral posts within minutes, holding claims accountable at the speed they spread. These capabilities compound as AI improves. The faster the technology moves, the more powerful the deliberative infrastructure becomes. The speed objection gets the trajectory backwards.
+There is a stronger claim. AI does not merely speed up the fast lane — it makes the slow lane itself more powerful than any prior form of collective decision‑making. Takahiro Anno crowdsourced a gubernatorial platform across Tokyo, aggregating distributed knowledge in any language faster than any polling operation could. Community Notes now attaches AI‑drafted bridging context to viral posts within minutes, holding claims accountable at the speed they spread. These capabilities compound as AI improves. The faster the technology moves, the more powerful the deliberative infrastructure becomes. The speed objection gets the trajectory backwards.
 
 ---
 
