@@ -1,4 +1,4 @@
-# Jekyll workflow for building and deploying to GitHub Pages
+# Build and deploy 11ty site to GitHub Pages
 name: Build and Deploy 11ty Site
 
 on:
