@@ -58,7 +58,7 @@
 
     <section class="next-action">
         <div class="next-action-content">
-            {% assign chapters = "1,2,3,4,5,6,7" | split: "," %}
+            {% assign chapters = "1,2,3,4,5,6,faq" | split: "," %}
             {% assign current_chapter = page.url | remove: '/tw/' | remove: '/' | split: '/' | first %}
             {% assign current_index = -1 %}
             {% for ch in chapters %}
