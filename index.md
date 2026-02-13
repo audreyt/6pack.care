@@ -17,18 +17,6 @@ next_action:
 <img src="/img/overview-small.jpg" alt="6-Pack of Care visual overview" class="overview-image">
 </div>
 
-<div class="audio-section">
-  <div class="audio-icon">🔊</div>
-  <div class="audio-content">
-    <p class="audio-label">Audio Version Available</p>
-    <audio controls preload="metadata">
-      <source src="/audio/index.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-    <p class="audio-links">Individual chapters: <a href="/audio/pack-1.mp3">Pack 1</a> • <a href="/audio/pack-2.mp3">Pack 2</a> • <a href="/audio/pack-3.mp3">Pack 3</a> • <a href="/audio/pack-4.mp3">Pack 4</a> • <a href="/audio/pack-5.mp3">Pack 5</a> • <a href="/audio/pack-6.mp3">Pack 6</a></p>
-  </div>
-</div>
-
 ## The Problem
 
 As AI becomes a thousand times faster than us, we become the garden; AI becomes the gardener. At that speed, traditional ethics break. Utilitarianism cannot predict consequences faster than they cascade. Deontology cannot impose rules on a system that interprets them beyond our oversight. We need a framework that assumes the asymmetry from the start.
