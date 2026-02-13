@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: "第七章：常見問題"
+title: "常見問題"
 lang: zh-tw
 alt_lang_url: "/faq"
 permalink: "/tw/faq/"
