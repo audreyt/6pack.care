@@ -136,7 +136,7 @@ The solution is not "thin," abstract universal principles. It requires hyperloca
 
 Care ethics optimizes for the internal characteristics of actors and the quality of relationships in a community, not just outcomes (consequentialism). It treats "relational health" as first-class.
 
-The following "6-Pack" translates Care Ethics into design primitives we can code into agentic systems to steer toward relational health.
+The following "6-Pack" translates Care Ethics into design primitives we can code into agentic systems to steer toward relational health. The 6-Pack does not replace technical safety research; it is the governance architecture that gives societies leverage even when technical alignment is imperfect — making failures legible, contestable, and reversible.
 
 # Attentiveness: **"caring about"**
 
