@@ -52,6 +52,8 @@ Because the argument proves too much. If democracy is justified only by its outp
 
 The 6‑Pack does not justify participation instrumentally. It grounds participation in care ethics: to perceive a need is to perceive an obligation. People have standing not because their input improves decision quality — though it does — but because the decisions affect their lives. A system that excludes the affected, however competent, has failed the basic test of alignment.
 
+Taiwan's trajectory makes this concrete. Digital democracy did not emerge because technocrats calculated that participation was optimal. It emerged because people demanded standing — the Sunflower Movement, 9 percent institutional trust, occupation of the legislature. The capability followed the care relationship, not the other way around.
+
 That said, the functional question deserves a functional answer. Each democratic function maps to a specific Pack mechanism:
 
 - **Error correction** → Bridging algorithms and Weval registries (Packs 1, 4) surface failures that centralised monitoring misses, because affected communities author the evaluations.
@@ -77,7 +79,7 @@ The speed mismatch is real, but it is the same mismatch that constitutional demo
 
 In practice, Taiwan moved from Assembly to enacted legislation on deepfake scams in months — faster than most corporate policy cycles. Deliberation is slow only when it is treated as an event rather than standing infrastructure.
 
-There is a stronger claim. AI does not merely allow deliberation to keep pace — it makes collective decision‑making more powerful than it has ever been. Large‑scale preference elicitation can surface what millions of people actually want, not what pollsters approximate. Real‑time verification holds commitments accountable at speed. Complexity processing makes policy tradeoffs legible to publics who currently must trust experts or lobbyists. Low‑cost coordination reduces barriers to collective action from months to days. Rapid synthesis aggregates distributed knowledge across languages and contexts globally. These capabilities compound as AI improves — the faster the technology moves, the more powerful the deliberative infrastructure becomes. The speed objection gets the trajectory backwards.
+There is a stronger claim. AI does not merely speed up the fast lane — it makes the slow lane itself more powerful than any prior form of collective decision‑making. Large‑scale preference elicitation surfaces what millions actually want, not what pollsters approximate. Real‑time verification holds commitments accountable at speed. Complexity processing makes policy tradeoffs legible to publics who currently must trust experts or lobbyists. Low‑cost coordination reduces barriers to collective action from months to days. Rapid synthesis aggregates distributed knowledge across languages and contexts. Fragments of this infrastructure already work — Team Mirai crowdsourced a gubernatorial platform across Tokyo, Engaged California co‑created wildfire recovery with thousands of residents — and these capabilities compound as AI improves. The faster the technology moves, the more powerful the deliberative infrastructure becomes. The speed objection gets the trajectory backwards.
 
 ---
 
