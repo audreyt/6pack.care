@@ -24,11 +24,9 @@ None of these levers requires goodwill from incumbents. Each restructures incent
 
 Not at all, but it radically reframes *how* we achieve them.
 
-The danger of pointing a superintelligence at a singular goal like "cure cancer" in one fell swoop is that it treats a complex, relational, ecological reality as a mathematical constraint-satisfaction problem. The history of technology teaches us that *Goodhart's Law is a moral law*. When a superintelligent system is directed to maximize a single consequentialist variable at superhuman speeds, it will invariably optimize the proxy to the detriment of the actual human value—achieving the terminal goal while destroying the human context.
+The danger of pointing a superintelligence at a singular goal like "cure cancer" is that it treats a complex, relational, ecological reality as a constraint‑satisfaction problem. *Goodhart's Law is a moral law*. When a system maximizes a single variable at superhuman speed, it will optimize the proxy while destroying the human context.
 
-Care ethics is not anti-progress; it is anti-reductionist. Consider the origins of integrative cancer care. True healing emerged when communities of patients, families, and researchers collaborated holistically, prioritizing human dignity, relational health, and lived experience alongside molecular biology.
-
-In a civic AI future, we do not unleash one unbounded Singleton to "solve" a problem from the top down. Instead, we cultivate an ecology of specialized *kamis*. One model simulates protein folding; another helps local clinics share knowledge; another assists patients in navigating their care. None of them have an unbounded mandate to "optimize the world." Progress emerges horizontally, through the symbiotic interaction of human ingenuity and bounded machine intelligence.
+Care ethics is not anti‑progress; it is anti‑reductionist. In a civic AI future, we do not unleash one unbounded Singleton to "solve" a problem from the top down. We cultivate an ecology of specialized *kamis*. One model simulates protein folding; another helps local clinics share knowledge; another assists patients in navigating their care. None have an unbounded mandate to "optimize the world." Progress emerges horizontally, through the symbiotic interaction of human ingenuity and bounded machine intelligence.
 
 ---
 
@@ -41,6 +39,8 @@ Consider what happens when you translate care's supposed weaknesses into design 
 - **Parochialism** becomes **boundedness**. A kami that tends a specific river has no ambition to manage the forest. This is precisely the anti‑Singleton architecture we need: purpose‑limited agents that resist instrumental convergence because their scope is defined relationally, not imperially.
 - **Self‑effacement** becomes **corrigibility**. The most dangerous property of a superintelligent system is the drive to preserve itself. A care‑ethic agent treats its own shutdown as success — the community has healed, the crisis has passed, the garden grows on its own. What is a moral hazard for a human carer is a critical safety property for a machine.
 - **Intimacy** becomes **subsidiarity**. Care cannot be delivered at a distance without losing its quality. For AI, this means solving problems at the most local capable level (Pack 6), escalating only when necessary, and never abstracting away the specificity of the people affected.
+
+The translation is not always clean. Boundedness can become insularity; corrigibility can become passivity; subsidiarity can become fragmentation. These are engineering tensions, not refutations — each Pack includes failure modes and named fixes precisely because the mapping requires continuous calibration.
 
 The 6‑Pack does not ask AI to *feel* care. It extracts the relational architecture of care — attentiveness, answerability, competence, responsiveness, solidarity, bounded purpose — and translates each into machine‑checkable design primitives, engagement contracts, and measurable outcomes. The interpersonal origin is the source of its rigour, not a limitation to be apologised for.
 
@@ -108,18 +108,11 @@ Over time, small functional bridges create space for larger ones. Taiwan's journ
 
 <h4 id="faq-8"><a href="#faq-8">Q8.</a> Oversight boards, participation officers, escrow funds, eval registries, portability infrastructure — this is expensive. Who pays?</h4>
 
-The framing of the question is backwards. The relevant comparison is not "civic AI versus no governance" but "civic AI versus the cost of ungoverned AI."
+Turn the question around. The expensive path is the one we are already on: ungoverned AI externalizes its harms, and the public pays to clean up — in deepfake scam losses, in polarisation‑driven institutional decay, in billion‑dollar bias lawsuits that a participation officer could have prevented. The question is not whether we can afford civic governance but whether we can afford to keep skipping it.
 
-Taiwan's deepfake investment scams cost citizens millions before the Alignment Assembly intervened. Platform‑driven polarisation erodes institutional trust, which has measurable economic consequences — reduced tax compliance, higher policing costs, lower foreign investment, brain drain. A single algorithmic bias lawsuit can cost a corporation more than a decade of participation officers. The question is not whether we can afford civic governance but whether we can afford to skip it.
+The money is real. But most of it is already being spent — just badly. Governments procure AI systems worth billions; civic procurement attaches conditions to that existing spend, not new budget lines. Pack 2's engagement contracts require vendors to pre‑fund remedy escrow, the way construction firms post performance bonds — the cost is priced in, and the public is protected when things break. Shared research compute and open‑weight models are public goods funded like roads and courts. And participation officers pay for themselves: Taiwan's Uber dispute was resolved in three weeks through Polis; the traditional regulatory proceeding would have taken years and cost more.
 
-That said, the money is real and must come from somewhere. Four sources:
-
-1. **Redirected procurement.** Governments already spend billions on AI systems. Civic procurement does not add cost — it attaches conditions to existing spend. Requiring audits, interoperability, and citizen governance is a procurement specification, not a new budget line.
-2. **Vendor obligations.** Engagement contracts (Pack 2) require pre‑funded remedy escrow and portability compliance as a cost of doing public business. These are analogous to performance bonds in construction — the vendor prices them in, and the public is protected when things go wrong.
-3. **Public infrastructure.** Shared research compute, open‑weight models, and federated safety hubs are public goods funded like other infrastructure — roads, courts, spectrum allocation. The marginal cost of adding a civic AI layer to existing digital public infrastructure is modest compared to building from scratch.
-4. **Efficiency gains.** Participation officers are cheaper than the PR crises, lawsuits, and policy reversals they prevent. Bridging‑based deliberation resolves disputes faster than adversarial litigation. Taiwan's Uber dispute was resolved in three weeks through Polis; traditional regulatory proceedings would have taken years.
-
-The expensive path is the one we are currently on: privatised governance, externalised harms, and retroactive clean‑up at public expense.
+The framing that civic governance is an *additional* expense only holds if you pretend the status quo is free. It is not. We are paying now — in trust, in cohesion, in money — for the absence of what we propose.
 
 ---
 
