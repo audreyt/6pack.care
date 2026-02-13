@@ -21,7 +21,7 @@ next_action:
 
 As AI becomes a thousand times faster than us, the default trajectory is clear: we become the garden, AI becomes the gardener — a top-down intelligence tending humanity from above. At that speed, traditional ethics break. Utilitarianism cannot predict consequences faster than they cascade. Deontology cannot impose rules on a system that interprets them beyond our oversight. We need a framework that acknowledges the asymmetry but refuses the casting.
 
-That framework is **civic care** — rooted in Joan Tronto's care ethics and the ⿻ Plurality vision of collaborative diversity. The core idea: we remain each other's gardeners. AI becomes the trellis — local infrastructure that supports care *at the speed care actually grows*. Not a colonizing force. Not a maximizing force. A spirit of place — a ***kami***.
+That framework is **civic care** — rooted in Joan Tronto's care ethics and the ⿻ Plurality vision of collaborative diversity. The core idea: we remain each other's gardeners. AI becomes local infrastructure — a spirit of place, a ***kami*** — that supports care *at the speed care actually grows*. Not a colonizing force. Not a maximizing force.
 
 ## The 6-Pack
 

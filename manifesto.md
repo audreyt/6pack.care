@@ -37,9 +37,9 @@ At that speed, traditional ethics fail. Utilitarianism becomes brittle. Its core
 
 Deontology fares little better; what does a universal rule from a plant mean to the gardener? Its core assumption—of mutual obligations between actors on equal footing—no longer holds. Furthermore, any rigid rule we impose is left to the AI system to interpret. This inevitably leads to perverse instantiations: adhering to the letter of the rule while violating its spirit in ways we can neither foresee nor correct.
 
-A framework that acknowledges this asymmetry but refuses the gardener role is an ethics around **Civic Care**, particularly the work of Joan Tronto. The core idea: we remain each other's gardeners. AI becomes the trellis — local infrastructure that supports care *at the speed care actually grows*.
+A framework that acknowledges this asymmetry but refuses the gardener role is an ethics around **Civic Care**, particularly the work of Joan Tronto. The core idea: we remain each other's gardeners. AI becomes local infrastructure — a spirit of place, a *kami* — that supports care *at the speed care actually grows*.
 
-This approach mandates a hyper-local, parochial moral scope. Each trellis is bound to a specific garden; it is not a colonizing or maximizing ("paper-clipping") force.
+This approach mandates a hyper-local, parochial moral scope. Each kami is bound to a specific garden; it is not a colonizing or maximizing ("paper-clipping") force.
 
 Designing AI as care infrastructure requires **digital permaculture**, mirroring a movement that embraces anti-fragility through diversity—what Professor Yuk Hui calls "technodiversity"—rather than fragile monocultures.
 
