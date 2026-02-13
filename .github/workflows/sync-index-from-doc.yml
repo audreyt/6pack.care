@@ -21,14 +21,16 @@ jobs:
       - name: Show changes
         run: git diff --stat
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
         with:
-          ruby-version: '3.1'
-          bundler-cache: true
+          bun-version: latest
 
-      - name: Build site with Jekyll
-        run: bundle exec jekyll build
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build with 11ty
+        run: bun run build
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
@@ -36,5 +38,5 @@ jobs:
           name: site-build
           path: |
             *.md
-            _site
+            docs
           if-no-files-found: error

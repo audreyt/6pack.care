@@ -2,7 +2,7 @@
 layout: chapter
 title: "六：願景中的共生力"
 lang: zh-tw
-alt_lang_url: "/6/"
+alt_lang_url: "/6"
 permalink: "/tw/6/"
 ---
 

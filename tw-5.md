@@ -2,7 +2,7 @@
 layout: chapter
 title: "五：群體中的團結力"
 lang: zh-tw
-alt_lang_url: "/5/"
+alt_lang_url: "/5"
 permalink: "/tw/5/"
 ---
 

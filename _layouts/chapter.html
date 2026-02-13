@@ -14,27 +14,27 @@
     <header>
         {% if lang == 'en' %}
         <a href="{{ '/' | relative_url }}" title="Home">
-            <img class="logo" src="{{ '/img/oxford-logo.svg' | relative_url }}" alt="University of Oxford Logo" />
+            <img class="oxford-logo" src="{{ '/img/oxford-logo.svg' | relative_url }}" alt="University of Oxford Logo" />
         </a>
         <a href="{{ '/' | relative_url }}" title="6-Pack of Care Home">
-            <img class="logo" src="{{ '/img/afp-logo.svg' | relative_url }}"
+            <img class="oxford-logo" src="{{ '/img/afp-logo.svg' | relative_url }}"
                 alt="Accelerator Fellowship Programme Logo" />
         </a>
         {% else %}
         <a href="{{ '/tw' | relative_url }}" title="首頁">
-            <img class="logo" src="{{ '/img/oxford-logo.svg' | relative_url }}" alt="牛津大學校徽" />
+            <img class="oxford-logo" src="{{ '/img/oxford-logo.svg' | relative_url }}" alt="牛津大學校徽" />
         </a>
         <a href="{{ '/tw' | relative_url }}" title="關懷六力首頁">
-            <img class="logo" src="{{ '/img/afp-logo.svg' | relative_url }}" alt="加速哲人徽章" />
+            <img class="oxford-logo" src="{{ '/img/afp-logo.svg' | relative_url }}" alt="加速哲人徽章" />
         </a>
         {% endif %}
         <div style="position: absolute; top: 20px; right: 20px;">
             {% if lang == 'en' %}
             <a href="{{ alt_lang_url | relative_url }}"
-                style="color: white; text-decoration: none; font-weight: bold; background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 5px;">華文</a>
+                class="lang-toggle">華文</a>
             {% else %}
             <a href="{{ alt_lang_url | relative_url }}"
-                style="color: white; text-decoration: none; font-weight: bold; background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 5px;">English</a>
+                class="lang-toggle">English</a>
             {% endif %}
         </div>
         <h1>{{ title }}</h1>
@@ -58,7 +58,7 @@
 
     <section class="next-action">
         <div class="next-action-content">
-            {% assign chapters = "1,2,3,4,5,6,faq" | split: "," %}
+            {% assign chapters = site.chapters %}
             {% assign current_chapter = page.url | remove: '/tw/' | remove: '/' | split: '/' | first %}
             {% assign current_index = -1 %}
             {% for ch in chapters %}

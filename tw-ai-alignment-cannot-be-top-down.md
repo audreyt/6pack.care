@@ -2,7 +2,7 @@
 layout: chapter
 title: "AI 對齊不能由上而下"
 lang: zh-tw
-alt_lang_url: "/ai-alignment-cannot-be-top-down/"
+alt_lang_url: "/ai-alignment-cannot-be-top-down"
 permalink: "/tw/ai-alignment-cannot-be-top-down/"
 date: 2025-11-03
 ---

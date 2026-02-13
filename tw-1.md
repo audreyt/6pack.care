@@ -2,7 +2,7 @@
 layout: chapter
 title: "一：辨識中的覺察力"
 lang: zh-tw
-alt_lang_url: "/1/"
+alt_lang_url: "/1"
 permalink: "/tw/1/"
 ---
 

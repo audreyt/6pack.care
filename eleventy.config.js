@@ -1,8 +1,7 @@
 export default function (eleventyConfig) {
     // Passthrough copy for static assets
     eleventyConfig.addPassthroughCopy("img");
-    eleventyConfig.addPassthroughCopy("fonts");
-    eleventyConfig.addPassthroughCopy("audio");
+eleventyConfig.addPassthroughCopy("audio");
     eleventyConfig.addPassthroughCopy("styles.css");
     eleventyConfig.addPassthroughCopy("CNAME");
 

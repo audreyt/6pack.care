@@ -2,7 +2,7 @@
 layout: chapter
 title: "二：參與中的負責力"
 lang: zh-tw
-alt_lang_url: "/2/"
+alt_lang_url: "/2"
 permalink: "/tw/2/"
 ---
 

@@ -13,9 +13,9 @@
         <a href="https://afp.oxford-aiethics.ox.ac.uk/"><img class="oxford-logo" height="100" src="{{ '/img/afp-logo.svg' | relative_url }}" alt="Accelerator Fellowship Programme Logo"></a>
         <div style="position: absolute; top: 20px; right: 20px;">
             {% if lang == 'en' %}
-                <a href="{{ '/tw' | relative_url }}" style="color: white; text-decoration: none; font-weight: bold; background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 5px;">華文</a>
+                <a href="{{ '/tw' | relative_url }}" class="lang-toggle">華文</a>
             {% else %}
-                <a href="{{ '/' | relative_url }}" style="color: white; text-decoration: none; font-weight: bold; background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 5px;">English</a>
+                <a href="{{ '/' | relative_url }}" class="lang-toggle">English</a>
             {% endif %}
         </div>
         <h1>{{ header_title | default: title }} <span style="font-weight: 100">—</span> {{ subtitle | default: "Institute for Ethics in AI" }}</h1>
