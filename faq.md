@@ -141,7 +141,7 @@ The 6‑Pack builds in four layers of defence against ideological capture and et
 
 <h4 id="faq-10"><a href="#faq-10">Q10.</a> Every powerful technology vision — exit libertarians, UBI provisioners, safety maximalists — shares the same blind spot: they see individuals and systems but nothing in between. The 6‑Pack talks about kamis, algorithms, and assemblies. Where are the churches, unions, neighborhood associations, and cultural traditions that actually constitute community? Isn't this just another framework that engineers away the friction that makes community formative?</h4>
 
-This is the critique that matters most to us, and the Technocommunitarian Commencement states it precisely: the "thick middle layer" of associational life — the institutions between citizen and state — is where human meaning is actually made. If the 6‑Pack replaces that layer with systems, we have failed by our own standard.
+This is the critique that matters most to us. The "thick middle layer" of associational life — the institutions between citizen and state — is where human meaning is actually made. If the 6‑Pack replaces that layer with systems, we have failed by our own standard.
 
 So let us be explicit about what the 6‑Pack is *not*. It is not a replacement for community. It is scaffolding *for* community — infrastructure that existing institutions can use, the way a town hall is infrastructure that a neighborhood council uses. The kami does not replace the temple; it handles the translation, sense‑making, and coordination that let the temple participate in decisions that affect it.
 
@@ -149,7 +149,7 @@ Taiwan's implementation makes this concrete. The g0v civic hacking movement that
 
 The danger the question identifies is real: a framework that *engineers* togetherness without *friction* produces a simulation of community, not the real thing. This is why Pack 6's subsidiarity is not optional polish but load‑bearing structure. The kami belongs to its place. It inherits the obligations, the annoying neighbors, the inherited traditions — the very friction the question rightly insists on. A kami that optimizes away local friction has violated its own engagement contract.
 
-We concede that the current framework under‑specifies the role of intermediate institutions. Future work must make explicit what the Commencement makes clear: churches, unions, cultural traditions, and local governments are not stakeholders to be consulted. They are the primary actors. The technology serves them, or it serves no one.
+We concede that the current framework under‑specifies the role of intermediate institutions. Churches, unions, cultural traditions, and local governments are not stakeholders to be consulted. They are the primary actors. The technology serves them, or it serves no one.
 
 ---
 
@@ -161,13 +161,13 @@ The 6‑Pack does not ask AI to simulate care. It asks AI to do what AI does wel
 
 This is the distinction between *mediating* care and *instrumenting* it. A bridge does not replace the act of crossing a river; it makes crossing possible where it was not. The 6‑Pack's tools are bridges, not substitutes for the journey.
 
-The harder version of the Pope's objection is subtler: even if the AI does not simulate care directly, does the *habit* of relying on algorithmic coordination erode the human muscles of attention, negotiation, and mutual obligation? Does the availability of a sense‑making tool make us worse at making sense of each other? We do not dismiss this. It is why Pack 4 — responsiveness — includes the principle that the kami must be willing to *retire*. A kami that has become a dependency rather than a scaffold has failed. The community should be able to compost it and grow on its own. As the Commencement puts it: "the aim should never be for digital to replace analogue" but to "strengthen us as embodied creatures." We agree. Civic AI earns its name only when it makes itself unnecessary.
+The harder version of the Pope's objection is subtler: even if the AI does not simulate care directly, does the *habit* of relying on algorithmic coordination erode the human muscles of attention, negotiation, and mutual obligation? Does the availability of a sense‑making tool make us worse at making sense of each other? We do not dismiss this. It is why Pack 4 — responsiveness — includes the principle that the kami must be willing to *retire*. A kami that has become a dependency rather than a scaffold has failed. The community should be able to compost it and grow on its own. The aim should never be for digital to replace analogue but to strengthen us as embodied creatures. Civic AI earns its name only when it makes itself unnecessary.
 
 ---
 
 <h4 id="faq-12"><a href="#faq-12">Q12.</a> Training civic AI requires vast amounts of local knowledge, cultural context, and lived experience — what Lanier and Weyl call "data as labor." The communities whose traditions, languages, and practices make kamis possible receive no ownership stake or compensation under the current framework. Without addressing this, how is the 6‑Pack different from a more polite form of the extraction it claims to oppose?</h4>
 
-It isn't — unless we close this gap. And the Technocommunitarian Commencement is right to name it: "the traditions industrialism required millions to abandon may become economically indispensable," and the people who carry those traditions deserve recognition, not just consultation.
+It isn't — unless we close this gap. The traditions industrialism required millions to abandon may be becoming economically indispensable, and the people who carry those traditions deserve recognition, not just consultation.
 
 The 6‑Pack's current architecture has the structural pieces but has not sufficiently connected them to data dignity. Here is how they should connect:
 
@@ -175,6 +175,6 @@ The 6‑Pack's current architecture has the structural pieces but has not suffic
 
 **Engagement contracts must price data.** Pack 2's engagement contracts currently specify obligations around service, accountability, and remedy. They must also specify data terms: who contributed what, who can use it, and what flows back. Arrieta‑Ibarra et al. (2018) proposed treating data as labor deserving compensation. We agree — and the engagement contract is the natural vehicle.
 
-**Cultural preservation as productive investment.** The Commencement makes the economic case: as AI masters managerial prose, it increasingly needs what industrial modernity devalued — craft knowledge, linguistic diversity, physical intuition, the "thousand small negotiations of raising children in a specific place." Communities that conserve dying languages and living traditions are not performing nostalgia; they are maintaining irreplaceable productive assets. The 6‑Pack should make this explicit: investment in cultural preservation is investment in the quality of civic AI, and the returns must flow to the communities that sustain the culture, not to the platform that indexes it.
+**Cultural preservation as productive investment.** As AI masters managerial prose, it increasingly needs what industrial modernity devalued — craft knowledge, linguistic diversity, physical intuition, the thousand small negotiations of raising children in a specific place. Communities that conserve dying languages and living traditions are not performing nostalgia; they are maintaining irreplaceable productive assets. The 6‑Pack should make this explicit: investment in cultural preservation is investment in the quality of civic AI, and the returns must flow to the communities that sustain the culture, not to the platform that indexes it.
 
 We acknowledge this is the least developed part of the framework and the most urgent to build out. A civic AI that extracts community knowledge while preaching community care is not merely hypocritical — it is the precise failure mode the entire project exists to prevent.
