@@ -2,7 +2,7 @@
 layout: chapter
 title: "AI Alignment Cannot Be Top-Down"
 lang: en
-alt_lang_url: "/tw/ai-alignment-cannot-be-top-down/"
+alt_lang_url: "/tw/ai-alignment-cannot-be-top-down"
 permalink: "/ai-alignment-cannot-be-top-down/"
 date: 2025-11-03
 ---

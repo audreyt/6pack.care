@@ -1,7 +1,7 @@
 export default function (eleventyConfig) {
     // Passthrough copy for static assets
     eleventyConfig.addPassthroughCopy("img");
-eleventyConfig.addPassthroughCopy("audio");
+    eleventyConfig.addPassthroughCopy("audio");
     eleventyConfig.addPassthroughCopy("styles.css");
     eleventyConfig.addPassthroughCopy("CNAME");
 
@@ -18,9 +18,7 @@ eleventyConfig.addPassthroughCopy("audio");
 
     // Date filter
     eleventyConfig.addFilter("date", function (date, format) {
-        // Basic date formatting - can be improved with luxon if needed
-        // For now, just return the date string or use a simple formatter
-        // This is a placeholder for the Jekyll date filter
+        // Date filter supporting Jekyll-style format strings
         if (!date) return "";
         const d = new Date(date);
         // Very basic mapping for the formats used in the templates
