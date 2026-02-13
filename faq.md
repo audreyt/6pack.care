@@ -48,11 +48,11 @@ The 6‑Pack does not ask AI to *feel* care. It extracts the relational architec
 
 <h4 id="faq-4"><a href="#faq-4">Q4.</a> Democracy serves known functions: error correction, peaceful power transitions, checks on concentrated authority, legitimacy for collective action, information aggregation, preference expression. A sufficiently capable AI could plausibly perform every one of these faster and more reliably than any deliberative process. Why insist on democratic governance?</h4>
 
-Because the argument proves too much. If democracy is justified only by its outputs, any system that produces better outputs can replace it — including a benevolent AI autocracy that aggregates preferences efficiently and corrects errors faster than elections ever could. This is not a thought experiment; it is the default trajectory of concentrating intelligence in systems designed to optimise.
+If democracy is justified only by its outputs, any system that produces better outputs can replace it — including a benevolent AI autocracy that aggregates preferences efficiently and corrects errors faster than elections ever could. This is not a thought experiment; it is the default trajectory of concentrating intelligence in systems designed to optimise.
 
 The 6‑Pack does not justify participation instrumentally. It grounds participation in care ethics: to perceive a need is to perceive an obligation. People have standing not because their input improves decision quality — though it does — but because the decisions affect their lives. A system that excludes the affected, however competent, has failed the basic test of alignment.
 
-Taiwan's trajectory makes this concrete. Digital democracy did not emerge because technocrats calculated that participation was optimal. It emerged because people demanded standing — the Sunflower Movement, 9 percent institutional trust, occupation of the legislature. The capability followed the care relationship, not the other way around.
+Taiwan's trajectory makes this concrete. Digital democracy did not emerge because technocrats calculated that participation was optimal. It emerged because people demanded standing — institutional trust at 9 percent, the Sunflower Movement occupying the legislature. The capability followed the care relationship, not the other way around.
 
 That said, the functional question deserves a functional answer. Each democratic function maps to a specific Pack mechanism:
 
