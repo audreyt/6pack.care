@@ -20,7 +20,7 @@ from typing import Optional
 
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
-from doc_sync_config import DOC_ID, SITE_URL, TAB_MAP
+from doc_sync_config import DOC_ID, SITE_URL, TAB_MAP, validate_sync_config
 
 HEADING_STYLE = {
     1: "HEADING_1",
@@ -477,6 +477,7 @@ def _find_tab(tabs: list[dict], target_id: str):
 
 
 def main() -> None:
+    validate_sync_config()
     if len(sys.argv) < 2:
         raise SystemExit(f"Usage: {sys.argv[0]} <file.md> [file2.md ...]")
 
