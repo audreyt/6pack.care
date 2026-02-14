@@ -12,7 +12,10 @@ on:
         - cron: "0 */6 * * *" # check for doc changes every 6 hours
     push:
         branches: [main]
-        paths: [index.md, manifesto.md, faq.md]
+        paths:
+            - "*.md"
+            - ".github/doc_sync_config.py"
+            - ".github/workflows/doc-sync.yml"
     workflow_dispatch:
 
 permissions:
@@ -43,6 +46,11 @@ jobs:
                   python -m pip install --upgrade pip
                   python -m pip install -r .github/requirements-doc-sync.txt
 
+            - name: Load synced files
+              id: sync-files
+              run: |
+                  echo "files=$(python3 .github/doc_sync_config.py --print-files)" >> "$GITHUB_OUTPUT"
+
             - name: Fetch content from Google Doc
               env:
                   GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
@@ -53,7 +61,8 @@ jobs:
             - name: Check for drift against main
               id: drift
               run: |
-                  if git diff --quiet -- index.md manifesto.md faq.md; then
+                  sync_files="${{ steps.sync-files.outputs.files }}"
+                  if git diff --quiet -- $sync_files; then
                     echo "drifted=false" >> "$GITHUB_OUTPUT"
                   else
                     echo "drifted=true" >> "$GITHUB_OUTPUT"
@@ -62,9 +71,10 @@ jobs:
             - name: Push snapshot to doc/upstream
               if: steps.drift.outputs.drifted == 'true'
               run: |
+                  sync_files="${{ steps.sync-files.outputs.files }}"
                   git config user.name "github-actions[bot]"
                   git config user.email "github-actions[bot]@users.noreply.github.com"
-                  git add index.md manifesto.md faq.md
+                  git add $sync_files
                   git commit -m "doc: snapshot from Google Doc"
                   git push --force origin HEAD:refs/heads/doc/upstream
 
@@ -73,20 +83,17 @@ jobs:
               env:
                   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |
+                  sync_scope=$(python3 .github/doc_sync_config.py --print-scope)
                   existing=$(gh pr list --head doc/upstream --json number -q '.[0].number' || true)
                   if [ -n "$existing" ]; then
                     echo "::notice::PR #$existing already open — branch force-updated"
                   else
+                    sync_body=$'Automated sync — the Google Doc has drifted from `main`.\n\n**Scope:** '"$sync_scope"
                     gh pr create \
                       --head doc/upstream \
                       --base main \
                       --title "doc: sync from Google Doc" \
-                      --body "$(cat <<'EOF'
-                  Automated sync — the Google Doc has drifted from `main`.
-
-                  **Scope:** `index.md`, `manifesto.md`, `faq.md`
-                  EOF
-                  )"
+                      --body "$sync_body"
                   fi
 
             - name: Close stale PR if back in sync
@@ -123,14 +130,20 @@ jobs:
                   python -m pip install --upgrade pip
                   python -m pip install -r .github/requirements-doc-sync.txt
 
+            - name: Load synced files
+              id: sync-files
+              run: |
+                  echo "files=$(python3 .github/doc_sync_config.py --print-files)" >> "$GITHUB_OUTPUT"
+
             - name: Push to Google Doc
               env:
                   GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
                   GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
                   GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
               run: |
+                  sync_files="${{ steps.sync-files.outputs.files }}"
                   # Push changed files that have tab mappings
-                  for f in index.md manifesto.md faq.md; do
+                  for f in $sync_files; do
                     if git rev-parse --verify HEAD~1 >/dev/null 2>&1 && git diff --name-only HEAD~1 HEAD | grep -q "^${f}$"; then
                         python3 .github/sync_to_google_doc.py "$f"
                     fi

@@ -16,19 +16,10 @@ import re
 import sys
 from pathlib import Path
 
+from doc_sync_config import DOC_ID, SITE_URL, TAB_MAP
+
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
-
-# ── Configuration (keep in sync with sync_to_google_doc.py) ──────────
-
-DOC_ID = "1qmurZps5LUyFhjbM1C6DXtWrZvWXDd3rjIXpWsAABO0"
-SITE_URL = "https://6pack.care"
-
-TAB_MAP: dict[str, str] = {
-    "faq.md": "t.jutu46j75do3",
-    "manifesto.md": "t.iphokcalvpzi",
-    "index.md": "t.n06zotu1buvc",
-}
 
 ORDERED_GLYPH_TYPES = {
     "DECIMAL", "ZERO_DECIMAL", "ALPHA", "UPPER_ALPHA", "ROMAN", "UPPER_ROMAN",

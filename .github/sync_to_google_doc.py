@@ -20,18 +20,7 @@ from typing import Optional
 
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
-
-# ── Configuration ────────────────────────────────────────────────────
-
-DOC_ID = "1qmurZps5LUyFhjbM1C6DXtWrZvWXDd3rjIXpWsAABO0"
-SITE_URL = "https://6pack.care"
-
-# local filename → Google Docs tab ID
-TAB_MAP: dict[str, str] = {
-    "faq.md": "t.jutu46j75do3",
-    "manifesto.md": "t.iphokcalvpzi",
-    "index.md": "t.n06zotu1buvc",
-}
+from doc_sync_config import DOC_ID, SITE_URL, TAB_MAP
 
 HEADING_STYLE = {
     1: "HEADING_1",
