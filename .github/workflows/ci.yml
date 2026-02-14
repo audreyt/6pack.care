@@ -3,7 +3,7 @@ name: CI
 on:
     push:
         branches: [main]
-    pull_request:
+    pull_request_target:
         branches: [main]
 
 jobs:
@@ -13,7 +13,7 @@ jobs:
         steps:
             - uses: actions/checkout@v4
               with:
-                  ref: ${{ github.head_ref || github.ref }}
+                  ref: ${{ github.event.pull_request.head.sha || github.ref }}
                   repository: ${{ github.event.pull_request.head.repo.full_name || github.repository }}
 
             - name: Setup Bun
@@ -25,7 +25,7 @@ jobs:
               run: bun install
 
             - name: Auto-format
-              if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+              if: github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name == github.repository
               run: |
                   bunx prettier --write .
                   git diff --quiet || {
