@@ -16,7 +16,7 @@ import re
 import sys
 from pathlib import Path
 
-from doc_sync_config import DOC_ID, SITE_URL, TAB_MAP, SYNC_FILES, validate_sync_config
+from doc_sync_config import DOC_ID, SITE_URL, TAB_MAP, SYNC_FILES, CONTENT_START, validate_sync_config
 
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
@@ -216,14 +216,22 @@ def tab_to_markdown(
     tab: dict,
     page_path: str,
     skip_first_h1: bool = True,
+    content_start: str | None = None,
 ) -> str:
-    """Convert a Google Doc tab to markdown text (without front matter)."""
+    """Convert a Google Doc tab to markdown text (without front matter).
+
+    When *content_start* is given (e.g. ``"Pack 1"``), all elements
+    before the first heading whose text starts with that prefix are
+    skipped.  The matching heading itself is treated as the "first H1"
+    and also skipped (its text lives in the YAML front-matter title).
+    """
     body = tab["documentTab"]["body"]
     lists_meta = tab.get("documentTab", {}).get("lists", {})
     content = body.get("content", [])
 
     lines: list[str] = []
     seen_h1 = False
+    capturing = content_start is None
     prev_kind = ""  # "heading", "list", "para", "blank"
 
     for elem in content:
@@ -243,6 +251,13 @@ def tab_to_markdown(
         named = para.get("paragraphStyle", {}).get("namedStyleType", "NORMAL_TEXT")
         level = HEADING_LEVEL.get(named)
         bullet = para.get("bullet")
+
+        # ── partial-tab: skip until boundary heading ──
+        if not capturing:
+            if level and text.startswith(content_start):
+                capturing = True
+                seen_h1 = True  # treat boundary heading as first H1 (skip it)
+            continue
 
         # blank paragraph
         if not text:
@@ -320,7 +335,11 @@ def main() -> None:
             continue
 
         page_path = "/" + Path(filename).stem + "/"
-        md = tab_to_markdown(tab, page_path, skip_first_h1=True)
+        md = tab_to_markdown(
+            tab, page_path,
+            skip_first_h1=True,
+            content_start=CONTENT_START.get(filename),
+        )
 
         front = _extract_front_matter(target)
         html_blocks = _extract_html_blocks(target)

@@ -20,7 +20,7 @@ from typing import Optional
 
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
-from doc_sync_config import DOC_ID, SITE_URL, TAB_MAP, SYNC_FILES, validate_sync_config
+from doc_sync_config import DOC_ID, SITE_URL, TAB_MAP, SYNC_FILES, CONTENT_START, validate_sync_config
 
 HEADING_STYLE = {
     1: "HEADING_1",
@@ -269,19 +269,24 @@ def _build_requests(
     blocks: list[Block],
     tab_id: str,
     end_index: int,
+    insert_at: int = 1,
 ) -> tuple[list[dict], str]:
-    """Return (requests, assembled_text)."""
-    DOC_OFFSET = 1  # section break lives at index 0
+    """Return (requests, assembled_text).
 
+    *insert_at* is the document index where new content is placed.
+    For full-tab sync this is 1 (right after the section break).
+    For partial-tab sync it is the startIndex of the boundary heading,
+    so everything before it is preserved.
+    """
     requests: list[dict] = []
 
-    # 1. clear tab
-    if end_index > 2:
+    # 1. clear managed range
+    if end_index > insert_at + 1:
         requests.append(
             {
                 "deleteContentRange": {
                     "range": {
-                        "startIndex": 1,
+                        "startIndex": insert_at,
                         "endIndex": end_index - 1,
                         "tabId": tab_id,
                     }
@@ -340,7 +345,7 @@ def _build_requests(
     requests.append(
         {
             "insertText": {
-                "location": {"index": DOC_OFFSET, "tabId": tab_id},
+                "location": {"index": insert_at, "tabId": tab_id},
                 "text": full_text,
             }
         }
@@ -354,8 +359,8 @@ def _build_requests(
             {
                 "updateTextStyle": {
                     "range": {
-                        "startIndex": DOC_OFFSET,
-                        "endIndex": DOC_OFFSET + len(full_text),
+                        "startIndex": insert_at,
+                        "endIndex": insert_at + len(full_text),
                         "tabId": tab_id,
                     },
                     "textStyle": {"bold": False, "italic": False},
@@ -370,8 +375,8 @@ def _build_requests(
             {
                 "updateParagraphStyle": {
                     "range": {
-                        "startIndex": start + DOC_OFFSET,
-                        "endIndex": end + DOC_OFFSET,
+                        "startIndex": start + insert_at,
+                        "endIndex": end + insert_at,
                         "tabId": tab_id,
                     },
                     "paragraphStyle": {"namedStyleType": style},
@@ -400,8 +405,8 @@ def _build_requests(
                 {
                     "updateTextStyle": {
                         "range": {
-                            "startIndex": start + DOC_OFFSET,
-                            "endIndex": end + DOC_OFFSET,
+                            "startIndex": start + insert_at,
+                            "endIndex": end + insert_at,
                             "tabId": tab_id,
                         },
                         "textStyle": style,
@@ -428,8 +433,8 @@ def _build_requests(
             {
                 "createParagraphBullets": {
                     "range": {
-                        "startIndex": start + DOC_OFFSET,
-                        "endIndex": end + DOC_OFFSET,
+                        "startIndex": start + insert_at,
+                        "endIndex": end + insert_at,
                         "tabId": tab_id,
                     },
                     "bulletPreset": preset,
@@ -489,6 +494,29 @@ def _find_tab(tabs: list[dict], target_id: str):
     return None
 
 
+def _find_content_start(body: dict, prefix: str) -> Optional[int]:
+    """Return the startIndex of the first heading whose text starts with *prefix*.
+
+    Scans the structural elements in the tab body for a paragraph styled
+    as any heading level whose plain text begins with the given prefix.
+    Returns ``None`` if no match is found.
+    """
+    for elem in body.get("content", []):
+        para = elem.get("paragraph")
+        if not para:
+            continue
+        named = para.get("paragraphStyle", {}).get("namedStyleType", "")
+        if named not in HEADING_STYLE.values():
+            continue
+        text = "".join(
+            el.get("textRun", {}).get("content", "")
+            for el in para.get("elements", [])
+        ).strip()
+        if text.startswith(prefix):
+            return elem["startIndex"]
+    return None
+
+
 # ── Main ─────────────────────────────────────────────────────────────
 
 
@@ -520,9 +548,19 @@ def main() -> None:
         body = tab["documentTab"]["body"]
         end_index = body["content"][-1]["endIndex"]
 
+        # Determine where managed content starts in the tab.
+        content_prefix = CONTENT_START.get(filename)
+        if content_prefix:
+            boundary = _find_content_start(body, content_prefix)
+            offset = boundary if boundary is not None else end_index - 1
+        else:
+            offset = 1  # full-tab sync (after section break)
+
         md_text = md_path.read_text(encoding="utf-8")
         title, blocks = parse_markdown(md_text, filename=filename)
-        requests, full_text = _build_requests(title, blocks, tab_id, end_index)
+        requests, full_text = _build_requests(
+            title, blocks, tab_id, end_index, insert_at=offset,
+        )
 
         result = service.documents().batchUpdate(
             documentId=DOC_ID,

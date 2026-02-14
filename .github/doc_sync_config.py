@@ -9,13 +9,30 @@ DOC_ID = "1qmurZps5LUyFhjbM1C6DXtWrZvWXDd3rjIXpWsAABO0"
 SITE_URL = "https://6pack.care"
 
 # Files managed by the doc-sync workflow.
-SYNC_FILES = ("index.md", "manifesto.md", "faq.md")
+SYNC_FILES = ("index.md", "manifesto.md", "faq.md", "1.md", "2.md", "3.md", "4.md", "5.md", "6.md")
 
 # Mapping from local filename to Google Docs tab id.
 TAB_MAP: dict[str, str] = {
     "faq.md": "t.jutu46j75do3",
     "manifesto.md": "t.iphokcalvpzi",
     "index.md": "t.n06zotu1buvc",
+    "1.md": "t.wvx7cq952sj5",
+    "2.md": "t.w4pue0hgeutw",
+    "3.md": "t.a0wddqpxtuk7",
+    "4.md": "t.8b7he5x870mo",
+    "5.md": "t.keauzhwx9sq",
+    "6.md": "t.rk66ffskrbnk",
+}
+
+# Partial-tab sync: only manage content from the first heading whose
+# text starts with the given prefix.  Files not listed sync the full tab.
+CONTENT_START: dict[str, str] = {
+    "1.md": "Pack 1",
+    "2.md": "Pack 2",
+    "3.md": "Pack 3",
+    "4.md": "Pack 4",
+    "5.md": "Pack 5",
+    "6.md": "Pack 6",
 }
 
 
@@ -50,6 +67,13 @@ def validate_sync_config() -> None:
         raise SystemExit(
             "doc-sync config invalid: "
             + "; ".join(details)
+        )
+
+    extra_start = sorted(set(CONTENT_START.keys()) - sync_files)
+    if extra_start:
+        raise SystemExit(
+            "doc-sync config invalid: CONTENT_START references unknown files: "
+            + ", ".join(extra_start)
         )
 
 

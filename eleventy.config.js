@@ -57,6 +57,10 @@ export default function (eleventyConfig) {
         return d.toDateString();
     });
 
+    eleventyConfig.ignores.add("AGENTS.md");
+    eleventyConfig.ignores.add("CLAUDE.md");
+    eleventyConfig.ignores.add("README.md");
+
     return {
         dir: {
             input: ".",
