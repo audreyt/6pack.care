@@ -7,7 +7,7 @@ description: "Research project by Audrey Tang and Caroline Green"
 lang: en-gb
 alt_lang_url: "/tw/"
 manifesto_link: "/manifesto"
-manifesto_text: "Read Our Manifesto"
+manifesto_text: "Manifesto"
 next_action:
     url: "/1"
     text: "Pack 1: Attentiveness in Recognition"

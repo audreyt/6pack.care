@@ -49,8 +49,7 @@
             <br />
             <a href="{{ manifesto_link }}" class="next-action-button">
                 <span class="button-text"
-                    >↗️ {{ manifesto_text | default: "Read Our Manifesto"
-                    }}</span
+                    >↗️ {{ manifesto_text | default: "Manifesto" }}</span
                 >
             </a>
             {% endif %}
@@ -58,21 +57,27 @@
 
         <main>{{ content }}</main>
 
-        {% if next_action %}
+        {% if next_action or manifesto_link %}
         <section class="next-action">
             <div class="next-action-content">
+                {% if manifesto_link %}
+                <a
+                    href="{{ manifesto_link | relative_url }}"
+                    class="next-action-button"
+                >
+                    <span class="button-text"
+                        >↗️ {{ manifesto_text | default: "Manifesto" }}</span
+                    >
+                </a>
+                {% endif %} {% if next_action %}
                 <a
                     href="{{ next_action.url | relative_url }}"
                     class="next-action-button"
                 >
-                    {% if next_action.arrow == 'left' %}
-                    <span class="button-arrow">←</span>
-                    <span class="button-text">{{ next_action.text }}</span>
-                    {% else %}
                     <span class="button-text">{{ next_action.text }}</span>
                     <span class="button-arrow">→</span>
-                    {% endif %}
                 </a>
+                {% endif %}
             </div>
         </section>
         {% endif %} {% include "footer.html" %}
