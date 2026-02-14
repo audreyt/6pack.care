@@ -7,7 +7,7 @@ permalink: "/ai-alignment-cannot-be-top-down/"
 date: 2025-11-03
 ---
 
-*Community Notes offers a better model — where citizens, not corporations, decide what “aligned” means.*
+_Community Notes offers a better model — where citizens, not corporations, decide what “aligned” means._
 
 In March 2024, I opened Facebook and saw Jensen Huang’s face. The Nvidia CEO was offering investment advice, speaking directly to me in Mandarin. Of course, it was not really Huang. It was an AI-generated scam, and I was far from the first to be targeted: across Taiwan, a flood of scams was defrauding millions of citizens.
 
@@ -15,13 +15,13 @@ We faced a dilemma. Taiwan has the freest internet in Asia; any content regulati
 
 Our response — and its success — demonstrates something fundamental about how AI alignment must work. We did not ask experts to solve it. We did not let a handful of researchers decide what counted as “fraud.” Instead, we sent 200,000 random text messages asking citizens: what should we do together?
 
-Four hundred forty-seven everyday Taiwanese — mirroring our entire population by age, education, region, occupation — [deliberated](https://moda.gov.tw/en/major-policies/alignment-assemblies/2024-deliberative-assembly/1521) in groups of 10. They were not seeking perfect agreement but *uncommon ground* — ideas that people with different views could still find reasonable. Within months, we had unanimous parliamentary support for [new](https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=J0080037) [laws](https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=D0080226). By 2025, the scam ads were gone.
+Four hundred forty-seven everyday Taiwanese — mirroring our entire population by age, education, region, occupation — [deliberated](https://moda.gov.tw/en/major-policies/alignment-assemblies/2024-deliberative-assembly/1521) in groups of 10. They were not seeking perfect agreement but _uncommon ground_ — ideas that people with different views could still find reasonable. Within months, we had unanimous parliamentary support for [new](https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=J0080037) [laws](https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=D0080226). By 2025, the scam ads were gone.
 
-This is what I call *attentiveness*: giving the people real, ongoing power to steer technology. It is the foundation of how Taiwan has aligned AI with our society. And it is the missing ingredient in global AI alignment efforts.
+This is what I call _attentiveness_: giving the people real, ongoing power to steer technology. It is the foundation of how Taiwan has aligned AI with our society. And it is the missing ingredient in global AI alignment efforts.
 
 ## AI Alignment Today Is Fundamentally Flawed
 
-**In technical terms, *alignment* means ensuring that AI systems act in accordance with human values and intentions.** But, as Taiwan’s experience with AI deception shows, alignment cannot be defined in the abstract; it depends on context. Choices that guide how AI systems respond — for instance, prioritizing freedom of expression — can also make them prone to harmful uses, such as scams and disinformation. True alignment demands navigating such tensions, deciding which values must take precedence in a given context. This can be done only by keeping AI’s development in continuous conversation with the societies where it is deployed.
+**In technical terms, _alignment_ means ensuring that AI systems act in accordance with human values and intentions.** But, as Taiwan’s experience with AI deception shows, alignment cannot be defined in the abstract; it depends on context. Choices that guide how AI systems respond — for instance, prioritizing freedom of expression — can also make them prone to harmful uses, such as scams and disinformation. True alignment demands navigating such tensions, deciding which values must take precedence in a given context. This can be done only by keeping AI’s development in continuous conversation with the societies where it is deployed.
 
 **But today’s dominant approach to AI alignment looks nothing like this. It is highly vertical, dominated by a limited number of actors within a few private AI corporations.** These actors select the training data, set the optimal objectives, and unilaterally define what counts as “aligned” behavior. They publish high-level model specifications (e.g., “be helpful”), but operationalize and enforce them behind closed doors.
 
@@ -33,9 +33,9 @@ When unexpected behavior emerges, patch fixes are applied based solely on the de
 
 **The risks of continuing this inattentive approach to alignment are severe.** Today, leading AI models project the values of their makers. Once embedded into civic, economic, and governmental decision-making (drafting laws, grading exams, advising lawyers, screening welfare applications, or summarizing public consultations), these systems will do more than mislead: they will begin to redefine what a society treats as truth and whose experience qualifies as evidence, hollowing out the very institutions meant to uphold collective sense-making.
 
-When the linguistic and moral frameworks of public reasoning are mediated by a handful of culturally uniform systems, democratic pluralism will erode. 
+When the linguistic and moral frameworks of public reasoning are mediated by a handful of culturally uniform systems, democratic pluralism will erode.
 
-**With the current approach to AI alignment, we are seeing a repeat of the mistakes made in efforts to align social media.** In the 2010s, platforms relied on centralized, top-down moderation: trust and safety teams wrote global rules and enforced them with automated filters and human review. 
+**With the current approach to AI alignment, we are seeing a repeat of the mistakes made in efforts to align social media.** In the 2010s, platforms relied on centralized, top-down moderation: trust and safety teams wrote global rules and enforced them with automated filters and human review.
 
 Trying to answer all relevant questions through centralized, upstream programming inevitably failed under the weight of real-world complexity — with tragic consequences. Facebook’s systems failed to stem military-run disinformation that fueled attacks against the Rohingya in Myanmar. Incremental fixes — warning labels, carve-outs, AI-enabled reviews — could not solve the structural problem inherent in a handful of decision-makers trying to govern billions of posts across diverse cultures.
 
@@ -43,7 +43,7 @@ Trying to answer all relevant questions through centralized, upstream programmin
 
 This is exactly the kind of attentiveness that is lacking in current AI alignment efforts. Just as Community Notes democratized context in social media, the AI systems that will increasingly shape governance, the economy, and civic life must embed structured participation by those most affected. To enable course correction, they must continuously notice mismatches: who is being harmed, what needs are unmet, and where meaning is breaking down.
 
-Just as a small circle of trust and safety officials could not steer global social media, no handful of researchers can successfully align general-purpose AI systems for the world. 
+Just as a small circle of trust and safety officials could not steer global social media, no handful of researchers can successfully align general-purpose AI systems for the world.
 
 <div class="overview-section">
 <img src="/img/gpt-value-correlation.png" alt="Correlation between GPT and human values across cultures" class="overview-image">
@@ -56,16 +56,16 @@ Fortunately, the tools needed to pursue a more attentive course already exist.
 
 ## Attentiveness in Practice
 
-**Attentiveness does not emerge by accident; it rests on an explicit ethical foundation.** Building on University of Minnesota Prof. Joan Tronto’s care ethics, I, along with Caroline Emmer De Albuquerque Green (of the University of Oxford’s Institute for Ethics in AI), developed the [6-Pack of Care](https://6pack.care/manifesto/) — six interlocking practices that translate ethical principles into institutional design. The framework recognizes a basic asymmetry: AI operates at speeds and scales beyond human oversight. To keep it aligned, our institutions must evolve to match that tempo by learning, responding, and recalibrating continuously, with people in the loop at every level. 
+**Attentiveness does not emerge by accident; it rests on an explicit ethical foundation.** Building on University of Minnesota Prof. Joan Tronto’s care ethics, I, along with Caroline Emmer De Albuquerque Green (of the University of Oxford’s Institute for Ethics in AI), developed the [6-Pack of Care](https://6pack.care/manifesto/) — six interlocking practices that translate ethical principles into institutional design. The framework recognizes a basic asymmetry: AI operates at speeds and scales beyond human oversight. To keep it aligned, our institutions must evolve to match that tempo by learning, responding, and recalibrating continuously, with people in the loop at every level.
 
 <div class="overview-section">
 <img src="/img/overview-small.jpg" alt="Illustration of 6-Pack of Care by Nicky Case" class="overview-image">
 <p class="figure-caption"><strong>Figure 2.</strong> Illustration of 6-Pack of Care, by Nicky Case.</p>
 </div>
 
-*Attentiveness* is the essential ingredient, which is why we have placed it first in the 6-Pack of Care. Every other form of care depends on seeing clearly where need and impact arise.
+_Attentiveness_ is the essential ingredient, which is why we have placed it first in the 6-Pack of Care. Every other form of care depends on seeing clearly where need and impact arise.
 
-Yet, today’s dominant approach to AI alignment is deeply *inattentive*.
+Yet, today’s dominant approach to AI alignment is deeply _inattentive_.
 
 **So how can we turn these insights into practical systems for AI alignment at a global scale?** This challenge will require action along three mutually reinforcing directions: industry norms, market policy, and community-scale assistants. Critically, these are not hypothetical. They are tested tools already in use today — piloted by AI companies, deployed in civic-tech systems, and trialed in limited jurisdictions. They show what scaled attentiveness can look like in practice.
 
@@ -75,7 +75,7 @@ As discussed, the current landscape of AI alignment is dominated by a handful of
 
 **Attentiveness begins by opening that black box.** When AI corporations make their reasoning legible to the public, alignment becomes a shared responsibility rather than a proprietary secret.
 
-Some developers do publish various kinds of [model constitutions](https://www.anthropic.com/news/claudes-constitution) and [public specifications](https://model-spec.openai.com/2025-10-27.html) that define, in plain language, how a system is intended to behave, versioned like open-source code. Each clause represents a promise. Some prototypes are also [testing citations at inference time](https://cookbook.openai.com/articles/gpt-oss-safeguard-guide), where an AI model’s outputs reference the policy clause that guided the reasoning behind an output — a lightweight but powerful auditing mechanism. 
+Some developers do publish various kinds of [model constitutions](https://www.anthropic.com/news/claudes-constitution) and [public specifications](https://model-spec.openai.com/2025-10-27.html) that define, in plain language, how a system is intended to behave, versioned like open-source code. Each clause represents a promise. Some prototypes are also [testing citations at inference time](https://cookbook.openai.com/articles/gpt-oss-safeguard-guide), where an AI model’s outputs reference the policy clause that guided the reasoning behind an output — a lightweight but powerful auditing mechanism.
 
 **Once intentions, reasoning, and revisions are made public, outsiders — journalists, researchers, civic technologists — can test whether systems live up to their commitments.** In doing so, they transform alignment from faith-based to verifiable, from a closed procedure into a visible, collective act of steering.
 
@@ -91,7 +91,7 @@ Shifting market incentives in these ways can make attentiveness economically via
 
 ### Community-Scale Assistants
 
-If norms set expectations and markets set incentives, *community-scale AI assistants* can make attentiveness tangible in daily civic life.
+If norms set expectations and markets set incentives, _community-scale AI assistants_ can make attentiveness tangible in daily civic life.
 
 Where foundation models aim for generality, community-scale assistants are tuned to the specific histories, dialects, and norms of a community, serving as mediators between global technologies and local realities. Through systems like [Reinforcement Learning from Community Feedback](https://arxiv.org/pdf/2506.24118), which rewards models for output that people with opposing views find reasonable, community-scale assistants can transform disagreement into sense-making and problem-solving.
 
@@ -113,9 +113,9 @@ As with any innovation, there are trade-offs to manage. Open models can lower th
 
 First as a civic technologist, then as Taiwan’s digital minister, and now as its cyber ambassador, I have seen how years of civic-tech innovation and cross-sector collaboration in Taiwan have produced a system for attentive technological alignment.
 
-And it works. With this steering wheel and attentive civic drivers, we have [blunted polarization](https://www.dandc.eu/en/article/how-taiwan-has-reduced-social-polarisation-and-become-more-resilient-disinformation) and kept our information ecosystem *aligned* with the Taiwanese people’s shared goals and values. No blanket suppression is needed. No amplification arms race. Just fast, transparent turns of the wheel by those on the front line of the impact. 
+And it works. With this steering wheel and attentive civic drivers, we have [blunted polarization](https://www.dandc.eu/en/article/how-taiwan-has-reduced-social-polarisation-and-become-more-resilient-disinformation) and kept our information ecosystem _aligned_ with the Taiwanese people’s shared goals and values. No blanket suppression is needed. No amplification arms race. Just fast, transparent turns of the wheel by those on the front line of the impact.
 
-But what Taiwan has built is not just a tool for defending against disinformation. Rather, it has built and tested a model system for broader democratic AI alignment — one that channels civic participation, transparency, and rapid response into alignment mechanisms. 
+But what Taiwan has built is not just a tool for defending against disinformation. Rather, it has built and tested a model system for broader democratic AI alignment — one that channels civic participation, transparency, and rapid response into alignment mechanisms.
 
 The tools are here: public, portable, and pluralistic. They are not perfect, but they work, and they reinforce one another.
 

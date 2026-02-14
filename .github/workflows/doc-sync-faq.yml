@@ -8,108 +8,108 @@ name: "Doc sync"
 #                via the Docs API (clear + rebuild with formatting).
 
 on:
-  schedule:
-    - cron: "0 */6 * * *"          # check for doc changes every 6 hours
-  push:
-    branches: [main]
-    paths: [index.md, manifesto.md, faq.md]
-  workflow_dispatch:
+    schedule:
+        - cron: "0 */6 * * *" # check for doc changes every 6 hours
+    push:
+        branches: [main]
+        paths: [index.md, manifesto.md, faq.md]
+    workflow_dispatch:
 
 permissions:
-  contents: write
-  pull-requests: write
+    contents: write
+    pull-requests: write
 
 jobs:
-  # ── Google Doc → Repo ─────────────────────────────────────────
-  # Fetch the published Doc, snapshot into a doc/upstream branch
-  # one commit ahead of main, and open a PR if it differs.
-  doc-to-repo:
-    if: github.event_name != 'push'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+    # ── Google Doc → Repo ─────────────────────────────────────────
+    # Fetch the published Doc, snapshot into a doc/upstream branch
+    # one commit ahead of main, and open a PR if it differs.
+    doc-to-repo:
+        if: github.event_name != 'push'
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
 
-      - name: Install Python dependencies
-        run: pip install google-api-python-client google-auth
+            - name: Install Python dependencies
+              run: pip install google-api-python-client google-auth
 
-      - name: Fetch content from Google Doc
-        env:
-          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
-          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
-          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
-        run: python3 .github/sync_from_google_doc.py
+            - name: Fetch content from Google Doc
+              env:
+                  GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+                  GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+                  GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+              run: python3 .github/sync_from_google_doc.py
 
-      - name: Check for drift against main
-        id: drift
-        run: |
-          if git diff --quiet -- index.md manifesto.md faq.md; then
-            echo "drifted=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "drifted=true" >> "$GITHUB_OUTPUT"
-          fi
+            - name: Check for drift against main
+              id: drift
+              run: |
+                  if git diff --quiet -- index.md manifesto.md faq.md; then
+                    echo "drifted=false" >> "$GITHUB_OUTPUT"
+                  else
+                    echo "drifted=true" >> "$GITHUB_OUTPUT"
+                  fi
 
-      - name: Push snapshot to doc/upstream
-        if: steps.drift.outputs.drifted == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.md manifesto.md faq.md
-          git commit -m "doc: snapshot from Google Doc"
-          git push --force origin HEAD:refs/heads/doc/upstream
+            - name: Push snapshot to doc/upstream
+              if: steps.drift.outputs.drifted == 'true'
+              run: |
+                  git config user.name "github-actions[bot]"
+                  git config user.email "github-actions[bot]@users.noreply.github.com"
+                  git add index.md manifesto.md faq.md
+                  git commit -m "doc: snapshot from Google Doc"
+                  git push --force origin HEAD:refs/heads/doc/upstream
 
-      - name: Open or update PR
-        if: steps.drift.outputs.drifted == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          existing=$(gh pr list --head doc/upstream --json number -q '.[0].number' || true)
-          if [ -n "$existing" ]; then
-            echo "::notice::PR #$existing already open — branch force-updated"
-          else
-            gh pr create \
-              --head doc/upstream \
-              --base main \
-              --title "doc: sync from Google Doc" \
-              --body "$(cat <<'EOF'
-          Automated sync — the Google Doc has drifted from `main`.
+            - name: Open or update PR
+              if: steps.drift.outputs.drifted == 'true'
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: |
+                  existing=$(gh pr list --head doc/upstream --json number -q '.[0].number' || true)
+                  if [ -n "$existing" ]; then
+                    echo "::notice::PR #$existing already open — branch force-updated"
+                  else
+                    gh pr create \
+                      --head doc/upstream \
+                      --base main \
+                      --title "doc: sync from Google Doc" \
+                      --body "$(cat <<'EOF'
+                  Automated sync — the Google Doc has drifted from `main`.
 
-          **Scope:** `index.md`, `manifesto.md`, `faq.md`
-          EOF
-          )"
-          fi
+                  **Scope:** `index.md`, `manifesto.md`, `faq.md`
+                  EOF
+                  )"
+                  fi
 
-      - name: Close stale PR if back in sync
-        if: steps.drift.outputs.drifted == 'false'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          existing=$(gh pr list --head doc/upstream --json number -q '.[0].number' || true)
-          if [ -n "$existing" ]; then
-            gh pr close "$existing" --comment "Back in sync — closing."
-            git push origin --delete doc/upstream 2>/dev/null || true
-          fi
+            - name: Close stale PR if back in sync
+              if: steps.drift.outputs.drifted == 'false'
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: |
+                  existing=$(gh pr list --head doc/upstream --json number -q '.[0].number' || true)
+                  if [ -n "$existing" ]; then
+                    gh pr close "$existing" --comment "Back in sync — closing."
+                    git push origin --delete doc/upstream 2>/dev/null || true
+                  fi
 
-  # ── Repo → Google Doc ────────────────────────────────────────
-  # When changes land on main, push the merged markdown back
-  # to the Google Doc tabs via the Docs API.
-  repo-to-doc:
-    if: github.event_name == 'push'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+    # ── Repo → Google Doc ────────────────────────────────────────
+    # When changes land on main, push the merged markdown back
+    # to the Google Doc tabs via the Docs API.
+    repo-to-doc:
+        if: github.event_name == 'push'
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
 
-      - name: Install Python dependencies
-        run: pip install google-api-python-client google-auth
+            - name: Install Python dependencies
+              run: pip install google-api-python-client google-auth
 
-      - name: Push to Google Doc
-        env:
-          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
-          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
-          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
-        run: |
-          # Push changed files that have tab mappings
-          for f in index.md manifesto.md faq.md; do
-            if git diff --name-only HEAD~1 HEAD | grep -q "^${f}$"; then
-              python3 .github/sync_to_google_doc.py "$f"
-            fi
-          done
+            - name: Push to Google Doc
+              env:
+                  GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+                  GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+                  GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+              run: |
+                  # Push changed files that have tab mappings
+                  for f in index.md manifesto.md faq.md; do
+                    if git diff --name-only HEAD~1 HEAD | grep -q "^${f}$"; then
+                      python3 .github/sync_to_google_doc.py "$f"
+                    fi
+                  done

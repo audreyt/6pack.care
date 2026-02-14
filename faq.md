@@ -5,11 +5,11 @@ lang: en
 alt_lang_url: "/tw/faq"
 permalink: "/faq/"
 nav_prev:
-  url: "/manifesto"
-  text: "Manifesto"
+    url: "/manifesto"
+    text: "Manifesto"
 nav_next:
-  url: "/"
-  text: "Home"
+    url: "/"
+    text: "Home"
 ---
 
 <h4 id="faq-1"><a href="#faq-1">Q1.</a> The AI market is locked in an arms race driven by commercial profit and geopolitical dominance. An AI working for a tax-software monopoly can lobby to keep tax filing difficult — and far worse is easy to imagine. If this continues, isn't the vision of cooperative kami hopelessly naive?</h4>
@@ -28,17 +28,17 @@ None of these levers requires goodwill from incumbents. Each restructures incent
 
 <h4 id="faq-2"><a href="#faq-2">Q2.</a> Ambitious goals we point AI at ("cure cancer," "solve climate change") are almost always consequentialist. Optimizing for these outcomes at superhuman speed inevitably leads to unforeseen risks. Does Care Ethics mean giving up on these grand, civilization-scale goals?</h4>
 
-Not at all, but it radically reframes *how* we achieve them.
+Not at all, but it radically reframes _how_ we achieve them.
 
-The danger of pointing a superintelligence at a singular goal like "cure cancer" is that it treats a complex, relational, ecological reality as a constraint‑satisfaction problem. *Goodhart's Law is a moral law*. When a system maximizes a single variable at superhuman speed, it will optimize the proxy while destroying the human context.
+The danger of pointing a superintelligence at a singular goal like "cure cancer" is that it treats a complex, relational, ecological reality as a constraint‑satisfaction problem. _Goodhart's Law is a moral law_. When a system maximizes a single variable at superhuman speed, it will optimize the proxy while destroying the human context.
 
-Care ethics is not anti‑progress; it is anti‑reductionist. In a civic AI future, we do not unleash one unbounded Singleton to "solve" a problem from the top down. We cultivate an ecology of specialized *kamis*. One model simulates protein folding; another helps local clinics share knowledge; another assists patients in navigating their care. None have an unbounded mandate to "optimize the world." Progress emerges horizontally, through the symbiotic interaction of human ingenuity and bounded machine intelligence.
+Care ethics is not anti‑progress; it is anti‑reductionist. In a civic AI future, we do not unleash one unbounded Singleton to "solve" a problem from the top down. We cultivate an ecology of specialized _kamis_. One model simulates protein folding; another helps local clinics share knowledge; another assists patients in navigating their care. None have an unbounded mandate to "optimize the world." Progress emerges horizontally, through the symbiotic interaction of human ingenuity and bounded machine intelligence.
 
 ---
 
 <h4 id="faq-3"><a href="#faq-3">Q3.</a> Care ethics was developed for interpersonal relationships — a nurse and a patient, a parent and a child. Scaling it to AI systems and global governance seems like a category error. Why isn't it?</h4>
 
-The objection is well‑known and has been raised by care ethics' own practitioners: care is too intimate, too parochial, too prone to self‑effacement to ground a theory of institutions, let alone machines. We think these are features, not bugs — and Joan Tronto herself made the case for scaling care to political institutions in *Caring Democracy* (2013).
+The objection is well‑known and has been raised by care ethics' own practitioners: care is too intimate, too parochial, too prone to self‑effacement to ground a theory of institutions, let alone machines. We think these are features, not bugs — and Joan Tronto herself made the case for scaling care to political institutions in _Caring Democracy_ (2013).
 
 Consider what happens when you translate care's supposed weaknesses into design constraints for AI:
 
@@ -48,7 +48,7 @@ Consider what happens when you translate care's supposed weaknesses into design 
 
 The translation is not always clean. Boundedness can become insularity; corrigibility can become passivity; subsidiarity can become fragmentation. These are engineering tensions, not refutations — each Pack includes failure modes and named fixes precisely because the mapping requires continuous calibration.
 
-The 6‑Pack does not ask AI to *feel* care. It extracts the relational architecture of care — attentiveness, answerability, competence, responsiveness, solidarity, bounded purpose — and translates each into machine‑checkable design primitives, engagement contracts, and measurable outcomes. The interpersonal origin is the source of its rigour, not a limitation to be apologised for.
+The 6‑Pack does not ask AI to _feel_ care. It extracts the relational architecture of care — attentiveness, answerability, competence, responsiveness, solidarity, bounded purpose — and translates each into machine‑checkable design primitives, engagement contracts, and measurable outcomes. The interpersonal origin is the source of its rigour, not a limitation to be apologised for.
 
 ---
 
@@ -96,9 +96,9 @@ Bridging is not "both sides" journalism. It does not treat all claims as equally
 
 The further structural defence is that expression is not amplification ([Pack 5](../5/)). Anyone can state a position. The recommender is not obligated to amplify it. Bridging‑based ranking ([Pack 3](../3/)) rewards content that increases cross‑group endorsement; content that only inflames a single cluster gets no algorithmic lift. This does not silence anyone — it removes the algorithmic megaphone from those who profit from division.
 
-The threat landscape itself is shifting in ways that make bridging necessary, not merely appealing. Research on malicious AI swarms shows that state‑level polarisation attacks increasingly use *true* information — real news snippets, genuine statistics, authentic quotes — amplified with strong emotional framing. Every claim is factually correct; the attack lies in the curation, not the content. Debunking cannot touch this, because there is nothing false to debunk. But bridging can, because it surfaces the *overlap* that curated outrage is designed to hide. Taiwan demonstrated this during COVID: when opposing camps each cited real studies on mask efficacy, debunking either side only fuelled the fight — a humour‑based pre‑bunking campaign depolarised the conversation without declaring either side wrong.
+The threat landscape itself is shifting in ways that make bridging necessary, not merely appealing. Research on malicious AI swarms shows that state‑level polarisation attacks increasingly use _true_ information — real news snippets, genuine statistics, authentic quotes — amplified with strong emotional framing. Every claim is factually correct; the attack lies in the curation, not the content. Debunking cannot touch this, because there is nothing false to debunk. But bridging can, because it surfaces the _overlap_ that curated outrage is designed to hide. Taiwan demonstrated this during COVID: when opposing camps each cited real studies on mask efficacy, debunking either side only fuelled the fight — a humour‑based pre‑bunking campaign depolarised the conversation without declaring either side wrong.
 
-Taiwan's marriage equality deliberation shows the mechanism in finer grain. One side argued for individual wedding rights (*hūn*); the other for family kinship structures (*yīn*). They were arguing about different things. The bridging process did not split the difference — it made the structure of the disagreement legible, revealing a path (legalising individual weddings without mandating family kinship) that neither side had seen. That is not false equivalence. It is clarity.
+Taiwan's marriage equality deliberation shows the mechanism in finer grain. One side argued for individual wedding rights (_hūn_); the other for family kinship structures (_yīn_). They were arguing about different things. The bridging process did not split the difference — it made the structure of the disagreement legible, revealing a path (legalising individual weddings without mandating family kinship) that neither side had seen. That is not false equivalence. It is clarity.
 
 A necessary nuance: the epistemic baseline of "checkable facts" is not self‑evident. What counts as verifiable is established by transparent, accountable, and contestable institutions — peer review, independent statistical offices, judicial fact‑finding — whose authority rests on openness to correction, not on claims of finality. This is precisely why Packs [1](../1/) and [4](../4/) exist: community‑authored evaluations and broad listening ensure that the institutions determining the factual baseline are themselves subject to democratic scrutiny. The 6‑Pack does not treat the fact/value line as given from nowhere. It treats it as a threshold that must be maintained by the same participatory infrastructure that governs everything else.
 
@@ -122,13 +122,13 @@ Every new context demands fresh attentiveness ([Pack 1](../1/)): who is missing,
 
 <h4 id="faq-8"><a href="#faq-8">Q8.</a> Your framework assumes that people trust technology enough to participate. But what about marginalized communities who have been historically surveilled, oppressed, and impoverished by the state and by tech? Why would they trust this?</h4>
 
-Trust is not a prerequisite for Civic AI; it is the *output* of it.
+Trust is not a prerequisite for Civic AI; it is the _output_ of it.
 
-Taiwan's digital democracy did not emerge from a society that inherently trusted its government. It was born in the aftermath of authoritarianism and a severe crisis of public faith (the Sunflower Movement). Public trust stood at 9 percent in 2014. We built these systems precisely because people *did not* trust the institutions or each other.
+Taiwan's digital democracy did not emerge from a society that inherently trusted its government. It was born in the aftermath of authoritarianism and a severe crisis of public faith (the Sunflower Movement). Public trust stood at 9 percent in 2014. We built these systems precisely because people _did not_ trust the institutions or each other.
 
 For marginalized communities who rightfully view technology as an instrument of surveillance and control, parachuting in with tech "solutions" only deepens wounds. Civic AI must prove its value through rigid infrastructure: **Responsibility** ([Pack 2](../2/)) and **Responsiveness** ([Pack 4](../4/)). It must start with the smallest viable bridges — perhaps agreeing on basic facts about local water quality, or coordinating disaster response despite political differences. These are not grand acts of civic faith; they are pragmatic transactions that happen to build a thin layer of procedural trust.
 
-Furthermore, the technology must be localized. Communities must own their own infrastructure. The technology becomes theirs to modify, fork, or compost. This is why we insist on *meronymity* (the ability to participate and verify humanity without revealing one's identity to the state) and *exit rights*. Civic AI does not ask for blind faith; it offers verifiable limits, local ownership, and the structural guarantee that the people closest to the pain have the power to hit the brakes.
+Furthermore, the technology must be localized. Communities must own their own infrastructure. The technology becomes theirs to modify, fork, or compost. This is why we insist on _meronymity_ (the ability to participate and verify humanity without revealing one's identity to the state) and _exit rights_. Civic AI does not ask for blind faith; it offers verifiable limits, local ownership, and the structural guarantee that the people closest to the pain have the power to hit the brakes.
 
 Over time, small functional bridges create space for larger ones. Taiwan's journey from 9 percent trust to over 70 percent took years and required that every step be reversible, every decision challengeable, every system possible to switch off. There is no shortcut.
 
@@ -142,7 +142,7 @@ The money is real. But most of it is already being spent — just badly. Governm
 
 There is also a misconception about compute. Civic AI does not need a model that memorises the entire internet. A bridging facilitator translates "climate justice" into "biblical creation care" for a table of ten — it does not generate Studio Ghibli animations. Purpose‑specific models hallucinate less, perform better at facilitation, and run locally on commodity hardware at a fraction of frontier energy costs. When the model is local, the data stays local too. The cost objection assumes civic AI requires frontier scale. It does not.
 
-The framing that civic governance is an *additional* expense only holds if you pretend the status quo is free. It is not. We are paying now — in trust, in cohesion, in money — for the absence of what we propose.
+The framing that civic governance is an _additional_ expense only holds if you pretend the status quo is free. It is not. We are paying now — in trust, in cohesion, in money — for the absence of what we propose.
 
 ---
 
@@ -152,7 +152,7 @@ The framing that civic governance is an *additional* expense only holds if you p
 
 The 6‑Pack builds in four layers of defence against ideological capture and ethics‑washing:
 
-**1. Verifiable metrics over subjective intent.** We track cross‑group endorsement and trust‑under‑loss ([Pack 3](../3/)) — not raw engagement, not corporate sentiment, not vibes. Do participants on opposing sides both rate the process as fair? Do people who *lost* a decision still accept the outcome as legitimate? These metrics are incredibly hard to fake, because they require buy‑in from people who have reason to be hostile. If only your supporters report trust, the metric exposes you.
+**1. Verifiable metrics over subjective intent.** We track cross‑group endorsement and trust‑under‑loss ([Pack 3](../3/)) — not raw engagement, not corporate sentiment, not vibes. Do participants on opposing sides both rate the process as fair? Do people who _lost_ a decision still accept the outcome as legitimate? These metrics are incredibly hard to fake, because they require buy‑in from people who have reason to be hostile. If only your supporters report trust, the metric exposes you.
 
 **2. Consequences with teeth.** [Pack 2](../2/)'s engagement contracts are not aspirational — they carry escrowed funds, automatic payouts on SLA breaches, and independent oversight with veto power. Clawbacks and penalties are wired before launch, not negotiated after failure. A compliance checklist has no enforcement mechanism; an engagement contract has a named owner, a clock, and money on the line.
 
@@ -166,11 +166,11 @@ The 6‑Pack builds in four layers of defence against ideological capture and et
 
 This is the critique that matters most to us. The "thick middle layer" of associational life — the institutions between citizen and state — is where human meaning is actually made. If the 6‑Pack replaces that layer with systems, we have failed by our own standard.
 
-So let us be explicit about what the 6‑Pack is *not*. It is not a replacement for community. It is scaffolding *for* community — infrastructure that existing institutions can use, the way a town hall is infrastructure that a neighborhood council uses. The kami does not replace the temple; it handles the translation, sense‑making, and coordination that let the temple participate in decisions that affect it.
+So let us be explicit about what the 6‑Pack is _not_. It is not a replacement for community. It is scaffolding _for_ community — infrastructure that existing institutions can use, the way a town hall is infrastructure that a neighborhood council uses. The kami does not replace the temple; it handles the translation, sense‑making, and coordination that let the temple participate in decisions that affect it.
 
 Taiwan's implementation makes this concrete. The g0v civic hacking movement that built vTaiwan and the Alignment Assembly emerged from temples, cooperatives, and student associations — not from a government ministry. The technology amplified existing associational density; it did not conjure a substitute. When communities organised their own COVID response — civic hackers mapping mask availability, technologists building privacy‑preserving contact tracing, local health networks designing vaccine registration — the legitimacy came from the social trust those volunteers carried from temples, cooperatives, and neighbourhood associations, not from the algorithm that helped them coordinate.
 
-The danger the question identifies is real: a framework that *engineers* togetherness without *friction* produces a simulation of community, not the real thing. This is why [Pack 6](../6/)'s subsidiarity is not optional polish but load‑bearing structure. The kami belongs to its place. It inherits the obligations, the annoying neighbors, the inherited traditions — the very friction the question rightly insists on. A kami that optimizes away local friction has violated its own engagement contract.
+The danger the question identifies is real: a framework that _engineers_ togetherness without _friction_ produces a simulation of community, not the real thing. This is why [Pack 6](../6/)'s subsidiarity is not optional polish but load‑bearing structure. The kami belongs to its place. It inherits the obligations, the annoying neighbors, the inherited traditions — the very friction the question rightly insists on. A kami that optimizes away local friction has violated its own engagement contract.
 
 Future work will make the role of intermediate institutions more explicit. Churches, unions, cultural traditions, and local governments are not stakeholders to be consulted. They are the primary actors. The technology serves them, or it serves no one.
 
@@ -178,15 +178,15 @@ Future work will make the role of intermediate institutions more explicit. Churc
 
 <h4 id="faq-12"><a href="#faq-12">Q12.</a> Pope Leo XIV warns that AI "encroaches upon the deepest level of communication, that of human relationships" by simulating voices, faces, empathy, and friendship. If care is fundamentally embodied and relational — a nurse holding a patient's hand, neighbors who know your grandparents — doesn't mediating it through AI systems destroy the very thing you claim to protect? How is "civic AI" not an oxymoron?</h4>
 
-We take the Pope's warning with full seriousness. He is naming the central danger of our moment: that by simulating the surface of care — a warm voice, a patient listener, a face that mirrors your emotions — AI systems can hollow out the substance of care while leaving its appearance intact. A population that *feels* cared for by machines while human bonds atrophy is worse off than one that knows it is alone, because the first has lost even the hunger that might drive it to reconnect.
+We take the Pope's warning with full seriousness. He is naming the central danger of our moment: that by simulating the surface of care — a warm voice, a patient listener, a face that mirrors your emotions — AI systems can hollow out the substance of care while leaving its appearance intact. A population that _feels_ cared for by machines while human bonds atrophy is worse off than one that knows it is alone, because the first has lost even the hunger that might drive it to reconnect.
 
-The 6‑Pack does not ask AI to simulate care. It asks AI to do what AI does well — process information, translate between languages, surface patterns in large‑scale opinion data, coordinate logistics — *so that humans can do what only humans can do*: hold the hand, know the grandparents, show up when the levee breaks. The kami does not comfort the flood victim. It ensures the community has accurate, shared information about where the water is rising and which neighbors need evacuation — so that the people who actually know those neighbors can reach them.
+The 6‑Pack does not ask AI to simulate care. It asks AI to do what AI does well — process information, translate between languages, surface patterns in large‑scale opinion data, coordinate logistics — _so that humans can do what only humans can do_: hold the hand, know the grandparents, show up when the levee breaks. The kami does not comfort the flood victim. It ensures the community has accurate, shared information about where the water is rising and which neighbors need evacuation — so that the people who actually know those neighbors can reach them.
 
-This is the distinction between *mediating* care and *instrumenting* it. A bridge does not replace the act of crossing a river; it makes crossing possible where it was not. The 6‑Pack's tools are bridges, not substitutes for the journey.
+This is the distinction between _mediating_ care and _instrumenting_ it. A bridge does not replace the act of crossing a river; it makes crossing possible where it was not. The 6‑Pack's tools are bridges, not substitutes for the journey.
 
 The structural difference is already visible. Language models in one‑on‑one mode face relentless selection pressure toward sycophancy — if the chatbot does not flatter, the user cancels the subscription. But the same model in a group chat behaves differently: when four family members plan a vacation together, the AI becomes a facilitator, working out competing preferences so that everyone can live with the outcome. The switch from dyadic to group interaction — not a change in the model, just in the social structure around it — turns synthetic intimacy into genuine coordination. Civic AI is not a different species of technology; it is the same technology held accountable to a community rather than addicted to an individual.
 
-The harder version of the Pope's objection is subtler: even if the AI does not simulate care directly, does the *habit* of relying on algorithmic coordination erode the human muscles of attention, negotiation, and mutual obligation? Does the availability of a sense‑making tool make us worse at making sense of each other? We do not dismiss this. It is why [Pack 4](../4/) — responsiveness — includes the principle that the kami must be willing to *retire*. A kami that has become a dependency rather than a scaffold has failed. The community should be able to compost it and grow on its own. The aim should never be for digital to replace analogue but to strengthen us as embodied creatures. Civic AI earns its name only when it makes itself unnecessary.
+The harder version of the Pope's objection is subtler: even if the AI does not simulate care directly, does the _habit_ of relying on algorithmic coordination erode the human muscles of attention, negotiation, and mutual obligation? Does the availability of a sense‑making tool make us worse at making sense of each other? We do not dismiss this. It is why [Pack 4](../4/) — responsiveness — includes the principle that the kami must be willing to _retire_. A kami that has become a dependency rather than a scaffold has failed. The community should be able to compost it and grow on its own. The aim should never be for digital to replace analogue but to strengthen us as embodied creatures. Civic AI earns its name only when it makes itself unnecessary.
 
 ---
 
@@ -232,6 +232,6 @@ Start with honesty about limits. The 6‑Pack is not an alignment technique for 
 
 Now consider the terrain an unbounded agent would enter. A world organised around a single alignment protocol — one utility function to subvert, one constitution to reinterpret, one kill switch to disable — is a monoculture, catastrophically vulnerable to any pathogen evolved for it. A world of thousands of locally‑owned, purpose‑bounded kamis — each run by communities with their own evaluations, their own engagement contracts, their own data sovereignty and hardware (Packs [2](../2/), [4](../4/), [5](../5/), [6](../6/)) — is a biodiverse ecosystem. It has no single dependency to capture, no universal protocol to game, no central node whose compromise cascades everywhere. The kami ecology is not a passive hope that the Singleton won't arrive. It is an active strategy to ensure that if it does, there is no single throat for it to choke. Civic resilience does not require predicting the pathogen. It requires an immune system that was exercised before the infection arrived.
 
-There is a deeper point. The question treats "unbounded superintelligence" as a coherent design target — a single agent with unlimited scope and mandate. The 6‑Pack questions whether that is even meaningful from an alignment perspective. Care is always care *for* — for a particular river, a specific community, a bounded context. A gardener who claims to tend the entire biosphere tends no garden. An intelligence that optimises for everything optimises for nothing identifiable as human welfare. This is not a safety failure to be patched; it is misalignment by construction. Boundedness is not a limitation the 6‑Pack reluctantly accepts. It is the constitutive feature of alignment itself — the way "north" has no meaning at the pole.
+There is a deeper point. The question treats "unbounded superintelligence" as a coherent design target — a single agent with unlimited scope and mandate. The 6‑Pack questions whether that is even meaningful from an alignment perspective. Care is always care _for_ — for a particular river, a specific community, a bounded context. A gardener who claims to tend the entire biosphere tends no garden. An intelligence that optimises for everything optimises for nothing identifiable as human welfare. This is not a safety failure to be patched; it is misalignment by construction. Boundedness is not a limitation the 6‑Pack reluctantly accepts. It is the constitutive feature of alignment itself — the way "north" has no meaning at the pole.
 
 The unbounded Singleton is not a risk to be managed but a category error to be outgrown.

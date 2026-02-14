@@ -22,6 +22,7 @@ There is no automated test suite. Verify changes by building successfully and ch
 **Content files** are top-level Markdown with YAML front matter.
 
 **Layouts** in `_layouts/`:
+
 - `default.html` — main template (header with logos, language toggle, footer)
 - `chapter.html` — extends default, adds prev/next chapter navigation
 

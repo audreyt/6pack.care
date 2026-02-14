@@ -5,12 +5,14 @@ header_title: "關懷六力"
 subtitle: "AI 倫理研究院"
 description: "唐鳳與 Caroline Green 的研究計畫"
 lang: zh-tw
+alt_lang_url: "/"
+permalink: "/tw/"
 manifesto_link: "/tw/manifesto"
 manifesto_text: "計畫宣言"
 next_action:
-  url: "/tw/1"
-  text: "一：辨識中的覺察力"
-  arrow: "right"
+    url: "/tw/1"
+    text: "一：辨識中的覺察力"
+    arrow: "right"
 ---
 
 <div class="overview-section">

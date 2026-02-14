@@ -3,20 +3,20 @@
 /* CSS Custom Properties */
 :root {
     --oxford-blue: #002147;
-    --accent-teal: #4CA6B1;
-    --accent-blue: #2B66F5;
-    --accent-gradient: linear-gradient(135deg, #4CA6B1, #2B66F5);
+    --accent-teal: #4ca6b1;
+    --accent-blue: #2b66f5;
+    --accent-gradient: linear-gradient(135deg, #4ca6b1, #2b66f5);
     --bg: #ffffff;
     --card: #f8f9fb;
     --text: #002147;
     --muted: #444444;
-    --shadow: 0 2px 8px rgba(0,33,71,0.08);
-    --shadow-hover: 0 4px 16px rgba(0,33,71,0.12);
+    --shadow: 0 2px 8px rgba(0, 33, 71, 0.08);
+    --shadow-hover: 0 4px 16px rgba(0, 33, 71, 0.12);
 }
 
 /* Base Styles */
 body {
-    font-family: 'Open Sans', 'Noto Sans TC', sans-serif;
+    font-family: "Open Sans", "Noto Sans TC", sans-serif;
     background: var(--bg);
     color: var(--text);
     margin: 0;
@@ -63,14 +63,20 @@ header img.oxford-logo {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     padding: 5px 10px;
     border-radius: 5px;
 }
 
 header h1 {
     font-size: 2em;
-    font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-family:
+        Montserrat,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        system-ui,
+        sans-serif;
     font-weight: 700;
     margin: 10px 0 0 0;
     animation: slideIn 0.5s ease-out;
@@ -120,22 +126,47 @@ section {
     animation: fadeIn 0.5s forwards;
 }
 
-section:nth-child(1) { animation-delay: 0.1s; }
-section:nth-child(2) { animation-delay: 0.2s; }
-section:nth-child(3) { animation-delay: 0.3s; }
-section:nth-child(4) { animation-delay: 0.4s; }
-section:nth-child(5) { animation-delay: 0.5s; }
-section:nth-child(6) { animation-delay: 0.6s; }
-section:nth-child(7) { animation-delay: 0.7s; }
-section:nth-child(8) { animation-delay: 0.8s; }
+section:nth-child(1) {
+    animation-delay: 0.1s;
+}
+section:nth-child(2) {
+    animation-delay: 0.2s;
+}
+section:nth-child(3) {
+    animation-delay: 0.3s;
+}
+section:nth-child(4) {
+    animation-delay: 0.4s;
+}
+section:nth-child(5) {
+    animation-delay: 0.5s;
+}
+section:nth-child(6) {
+    animation-delay: 0.6s;
+}
+section:nth-child(7) {
+    animation-delay: 0.7s;
+}
+section:nth-child(8) {
+    animation-delay: 0.8s;
+}
 
 section:hover {
     box-shadow: var(--shadow-hover);
 }
 
 /* Typography */
-h2, h3, h4 {
-    font-family: 'Montserrat', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+h2,
+h3,
+h4 {
+    font-family:
+        "Montserrat",
+        "Noto Sans TC",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        system-ui,
+        sans-serif;
     font-weight: 700;
     color: var(--oxford-blue);
     margin-top: 1em;
@@ -296,13 +327,19 @@ li {
 }
 
 /* Grid Layouts */
-.metrics, .tools, .interfaces, .glossary {
+.metrics,
+.tools,
+.interfaces,
+.glossary {
     display: grid;
     gap: 12px;
 }
 
 @media (min-width: 720px) {
-    .metrics, .tools, .interfaces, .glossary {
+    .metrics,
+    .tools,
+    .interfaces,
+    .glossary {
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -324,7 +361,13 @@ li {
 }
 
 .next-action h2 {
-    font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-family:
+        Montserrat,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        system-ui,
+        sans-serif;
     font-size: 2.2em;
     margin: 0 0 16px 0;
     color: white;
@@ -357,11 +400,13 @@ li {
     background: var(--oxford-blue);
     color: white;
     box-shadow: var(--shadow-hover);
-    border-color: rgba(255,255,255,0.3);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .next-action-button .button-text {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Helvetica, Arial, sans-serif;
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Helvetica,
+        Arial, sans-serif;
 }
 
 .next-action-button .button-arrow {
@@ -378,14 +423,14 @@ footer {
     text-align: center;
     padding: 32px 24px;
     background: var(--oxford-blue);
-    color: rgba(255,255,255,0.85);
+    color: rgba(255, 255, 255, 0.85);
     margin-top: 0;
     font-size: 0.9em;
     line-height: 1.7;
 }
 
 footer a {
-    color: #7FC8D0;
+    color: #7fc8d0;
     text-decoration: none;
 }
 
@@ -396,24 +441,45 @@ footer a:hover {
 
 /* Animations */
 @keyframes slideIn {
-    from { transform: translateY(-30px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* Responsive Design */
 @media (max-width: 719px) {
-    .metrics, .tools, .interfaces, .glossary {
+    .metrics,
+    .tools,
+    .interfaces,
+    .glossary {
         grid-template-columns: 1fr;
         row-gap: 0;
         column-gap: 0;

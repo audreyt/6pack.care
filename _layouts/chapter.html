@@ -1,136 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ lang | default: 'en' }}">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{{ title }} — {{ site.title }}</title>
+        <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7COpen+Sans:300,300i,400,400i,700,700i"
+        />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ title }} — {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7COpen+Sans:300,300i,400,400i,700,700i" />
-</head>
-
-<body>
-    <header>
-        {% if lang == 'en' %}
-        <a href="{{ '/' | relative_url }}" title="Home">
-            <img class="oxford-logo" src="{{ '/img/oxford-logo.svg' | relative_url }}" alt="University of Oxford Logo" />
-        </a>
-        <a href="{{ '/' | relative_url }}" title="6-Pack of Care Home">
-            <img class="oxford-logo" src="{{ '/img/afp-logo.svg' | relative_url }}"
-                alt="Accelerator Fellowship Programme Logo" />
-        </a>
-        {% else %}
-        <a href="{{ '/tw' | relative_url }}" title="首頁">
-            <img class="oxford-logo" src="{{ '/img/oxford-logo.svg' | relative_url }}" alt="牛津大學校徽" />
-        </a>
-        <a href="{{ '/tw' | relative_url }}" title="關懷六力首頁">
-            <img class="oxford-logo" src="{{ '/img/afp-logo.svg' | relative_url }}" alt="加速哲人徽章" />
-        </a>
-        {% endif %}
-        <div style="position: absolute; top: 20px; right: 20px;">
+    <body>
+        <header>
             {% if lang == 'en' %}
-            <a href="{{ alt_lang_url | relative_url }}"
-                class="lang-toggle">華文</a>
+            <a href="{{ '/' | relative_url }}" title="Home">
+                <img
+                    class="oxford-logo"
+                    src="{{ '/img/oxford-logo.svg' | relative_url }}"
+                    alt="University of Oxford Logo"
+                />
+            </a>
+            <a href="{{ '/' | relative_url }}" title="6-Pack of Care Home">
+                <img
+                    class="oxford-logo"
+                    src="{{ '/img/afp-logo.svg' | relative_url }}"
+                    alt="Accelerator Fellowship Programme Logo"
+                />
+            </a>
             {% else %}
-            <a href="{{ alt_lang_url | relative_url }}"
-                class="lang-toggle">English</a>
+            <a href="{{ '/tw' | relative_url }}" title="首頁">
+                <img
+                    class="oxford-logo"
+                    src="{{ '/img/oxford-logo.svg' | relative_url }}"
+                    alt="牛津大學校徽"
+                />
+            </a>
+            <a href="{{ '/tw' | relative_url }}" title="關懷六力首頁">
+                <img
+                    class="oxford-logo"
+                    src="{{ '/img/afp-logo.svg' | relative_url }}"
+                    alt="加速哲人徽章"
+                />
+            </a>
             {% endif %}
-        </div>
-        <h1>{{ title }}</h1>
-        {% if date %}
-        <p class="chapter-date">
-            {% if lang == 'en' %}
-            {{ date | date: "%B %-d, %Y" }}
-            {% else %}
-            {{ date | date: "%Y 年 %-m 月 %-d 日" }}
+            <div style="position: absolute; top: 20px; right: 20px">
+                {% if lang == 'en' %}
+                <a href="{{ alt_lang_url | relative_url }}" class="lang-toggle"
+                    >華文</a
+                >
+                {% else %}
+                <a href="{{ alt_lang_url | relative_url }}" class="lang-toggle"
+                    >English</a
+                >
+                {% endif %}
+            </div>
+            <h1>{{ title }}</h1>
+            {% if date %}
+            <p class="chapter-date">
+                {% if lang == 'en' %} {{ date | date: "%B %-d, %Y" }} {% else %}
+                {{ date | date: "%Y 年 %-m 月 %-d 日" }} {% endif %}
+            </p>
+            {% endif %} {% if description %}
+            <p>{{ description }}</p>
             {% endif %}
-        </p>
-        {% endif %}
-        {% if description %}
-        <p>{{ description }}</p>
-        {% endif %}
-    </header>
+        </header>
 
-    <main>
-        {{ content }}
-    </main>
+        <main>{{ content }}</main>
 
-    <section class="next-action">
-        <div class="next-action-content">
-            {% if nav_prev %}
-            <a href="{{ nav_prev.url | relative_url }}" class="next-action-button">
-                <span class="button-arrow">←</span>
-                <span class="button-text">{{ nav_prev.text }}</span>
-            </a>
-            {% else %}
-            {% assign chapters = site.chapters %}
-            {% assign current_chapter = page.url | remove: '/tw/' | remove: '/' | split: '/' | first %}
-            {% assign current_index = -1 %}
-            {% for ch in chapters %}
-            {% if ch == current_chapter %}
-            {% assign current_index = forloop.index0 %}
-            {% endif %}
-            {% endfor %}
-            {% if current_index > 0 %}
-            {% assign prev_index = current_index | minus: 1 %}
-            {% assign prev_chapter = chapters[prev_index] %}
-            {% if lang == 'en' %}
-            <a href="{{ '/' | append: prev_chapter | relative_url }}" class="next-action-button">
-                <span class="button-arrow">←</span>
-                <span class="button-text">Previous</span>
-            </a>
-            {% else %}
-            <a href="{{ '/tw/' | append: prev_chapter | relative_url }}" class="next-action-button">
-                <span class="button-arrow">←</span>
-                <span class="button-text">上一章</span>
-            </a>
-            {% endif %}
-            {% else %}
-            {% if lang == 'en' %}
-            <a href="{{ '/' | relative_url }}" class="next-action-button">
-                <span class="button-arrow">←</span>
-                <span class="button-text">Home</span>
-            </a>
-            {% else %}
-            <a href="{{ '/tw' | relative_url }}" class="next-action-button">
-                <span class="button-arrow">←</span>
-                <span class="button-text">首頁</span>
-            </a>
-            {% endif %}
-            {% endif %}
-            {% endif %}
-
-            {% if nav_next %}
-            <a href="{{ nav_next.url | relative_url }}" class="next-action-button">
-                <span class="button-text">{{ nav_next.text }}</span>
-                <span class="button-arrow">→</span>
-            </a>
-            {% else %}
-            {% unless nav_prev %}
-            {% assign chapters = site.chapters %}
-            {% assign current_chapter = page.url | remove: '/tw/' | remove: '/' | split: '/' | first %}
-            {% assign current_index = -1 %}
-            {% for ch in chapters %}
-            {% if ch == current_chapter %}
-            {% assign current_index = forloop.index0 %}
-            {% endif %}
-            {% endfor %}
-            {% endunless %}
-            {% assign next_index = current_index | plus: 1 %}
-            {% if next_index < chapters.size %} {% assign next_chapter=chapters[next_index] %} {% if lang=='en' %} <a
-                href="{{ '/' | append: next_chapter | relative_url }}" class="next-action-button">
-                <span class="button-text">Next</span>
-                <span class="button-arrow">→</span>
+        <section class="next-action">
+            <div class="next-action-content">
+                {% if nav_prev %}
+                <a
+                    href="{{ nav_prev.url | relative_url }}"
+                    class="next-action-button"
+                >
+                    <span class="button-arrow">←</span>
+                    <span class="button-text">{{ nav_prev.text }}</span>
+                </a>
+                {% else %} {% assign chapters = site.chapters %} {% assign
+                current_chapter = page.url | remove: '/tw/' | remove: '/' |
+                split: '/' | first %} {% assign current_index = -1 %} {% for ch
+                in chapters %} {% if ch == current_chapter %} {% assign
+                current_index = forloop.index0 %} {% endif %} {% endfor %} {% if
+                current_index > 0 %} {% assign prev_index = current_index |
+                minus: 1 %} {% assign prev_chapter = chapters[prev_index] %} {%
+                if lang == 'en' %}
+                <a
+                    href="{{ '/' | append: prev_chapter | relative_url }}"
+                    class="next-action-button"
+                >
+                    <span class="button-arrow">←</span>
+                    <span class="button-text">Previous</span>
                 </a>
                 {% else %}
-                <a href="{{ '/tw/' | append: next_chapter | relative_url }}" class="next-action-button">
+                <a
+                    href="{{ '/tw/' | append: prev_chapter | relative_url }}"
+                    class="next-action-button"
+                >
+                    <span class="button-arrow">←</span>
+                    <span class="button-text">上一章</span>
+                </a>
+                {% endif %} {% else %} {% if lang == 'en' %}
+                <a href="{{ '/' | relative_url }}" class="next-action-button">
+                    <span class="button-arrow">←</span>
+                    <span class="button-text">Home</span>
+                </a>
+                {% else %}
+                <a href="{{ '/tw' | relative_url }}" class="next-action-button">
+                    <span class="button-arrow">←</span>
+                    <span class="button-text">首頁</span>
+                </a>
+                {% endif %} {% endif %} {% endif %} {% if nav_next %}
+                <a
+                    href="{{ nav_next.url | relative_url }}"
+                    class="next-action-button"
+                >
+                    <span class="button-text">{{ nav_next.text }}</span>
+                    <span class="button-arrow">→</span>
+                </a>
+                {% else %} {% unless nav_prev %} {% assign chapters =
+                site.chapters %} {% assign current_chapter = page.url | remove:
+                '/tw/' | remove: '/' | split: '/' | first %} {% assign
+                current_index = -1 %} {% for ch in chapters %} {% if ch ==
+                current_chapter %} {% assign current_index = forloop.index0 %}
+                {% endif %} {% endfor %} {% endunless %} {% assign next_index =
+                current_index | plus: 1 %} {% if next_index < chapters.size %}
+                {% assign next_chapter=chapters[next_index] %} {% if lang=='en'
+                %}
+                <a
+                    href="{{ '/' | append: next_chapter | relative_url }}"
+                    class="next-action-button"
+                >
+                    <span class="button-text">Next</span>
+                    <span class="button-arrow">→</span>
+                </a>
+                {% else %}
+                <a
+                    href="{{ '/tw/' | append: next_chapter | relative_url }}"
+                    class="next-action-button"
+                >
                     <span class="button-text">下一章</span>
                     <span class="button-arrow">→</span>
                 </a>
-                {% endif %}
-                {% else %}
-                {% if lang == 'en' %}
+                {% endif %} {% else %} {% if lang == 'en' %}
                 <a href="{{ '/' | relative_url }}" class="next-action-button">
                     <span class="button-text">Home</span>
                     <span class="button-arrow">→</span>
@@ -140,33 +153,71 @@
                     <span class="button-text">首頁</span>
                     <span class="button-arrow">→</span>
                 </a>
-                {% endif %}
-                {% endif %}
+                {% endif %} {% endif %} {% endif %}
+            </div>
+        </section>
+
+        <footer>
+            {% if lang == 'en' %}
+            <p>
+                ⓪
+                <a
+                    href="https://afp.oxford-aiethics.ox.ac.uk/people/ambassador-audrey-tang"
+                    >Audrey Tang</a
+                >
+                and
+                <a
+                    href="https://www.oxford-aiethics.ox.ac.uk/caroline-emmer-de-albuquerque-green"
+                    >Caroline Green</a
+                >. Text and illustrations: CC0 (public domain) unless noted.
+                Illustration by <a href="https://ncase.me">Nicky Case</a>;
+                Mandarin localization by
+                <a href="https://github.com/giselechou">Gisele Chou</a>.
+            </p>
+            <p>
+                Co-written with language models — the
+                <a href="https://github.com/audreyt/6pack.care"
+                    >GitHub commit log</a
+                >
+                has full authorship details.
+            </p>
+            <p>
+                Part of the
+                <a href="https://afp.oxford-aiethics.ox.ac.uk/"
+                    >Accelerator Fellowship Programme</a
+                >,
+                <a href="https://www.oxford-aiethics.ox.ac.uk/"
+                    >Oxford Institute for Ethics in AI</a
+                >.
+            </p>
+            {% else %}
+            <p>
+                ⓪
+                <a
+                    href="https://afp.oxford-aiethics.ox.ac.uk/people/ambassador-audrey-tang"
+                    >唐鳳</a
+                >與
+                <a
+                    href="https://www.oxford-aiethics.ox.ac.uk/caroline-emmer-de-albuquerque-green"
+                    >Caroline Green</a
+                >。文字與插圖：CC0（公眾領域），除另有註明。插圖由
+                <a href="https://ncase.me">Nicky Case</a> 創作，華文版由
+                <a href="https://github.com/giselechou">Gisele Chou</a> 貢獻。
+            </p>
+            <p>
+                與語言模型共同撰寫——完整紀錄見
+                <a href="https://github.com/audreyt/6pack.care"
+                    >GitHub 提交日誌</a
+                >。
+            </p>
+            <p>
+                隸屬<a href="https://afp.oxford-aiethics.ox.ac.uk/"
+                    >加速哲人計畫</a
+                >，<a href="https://www.oxford-aiethics.ox.ac.uk/"
+                    >牛津 AI 倫理研究院</a
+                >。
+            </p>
             {% endif %}
-        </div>
-    </section>
-
-    <footer>
-        {% if lang == 'en' %}
-        <p>⓪ <a href="https://afp.oxford-aiethics.ox.ac.uk/people/ambassador-audrey-tang">Audrey Tang</a> and <a
-                href="https://www.oxford-aiethics.ox.ac.uk/caroline-emmer-de-albuquerque-green">Caroline Green</a>.
-            Text and illustrations: CC0 (public domain) unless noted. Illustration by <a href="https://ncase.me">Nicky Case</a>; Mandarin
-            localization by <a href="https://github.com/giselechou">Gisele Chou</a>.</p>
-        <p>Co-written with language models — the <a href="https://github.com/audreyt/6pack.care">GitHub commit log</a> has full authorship details.</p>
-        <p>Part of the <a href="https://afp.oxford-aiethics.ox.ac.uk/">Accelerator
-                Fellowship Programme</a>, <a href="https://www.oxford-aiethics.ox.ac.uk/">Oxford Institute for
-                Ethics in AI</a>.</p>
-        {% else %}
-        <p>⓪ <a href="https://afp.oxford-aiethics.ox.ac.uk/people/ambassador-audrey-tang">唐鳳</a>與 <a
-                href="https://www.oxford-aiethics.ox.ac.uk/caroline-emmer-de-albuquerque-green">Caroline
-                Green</a>。文字與插圖：CC0（公眾領域），除另有註明。插圖由 <a href="https://ncase.me">Nicky Case</a> 創作，華文版由 <a
-                href="https://github.com/giselechou">Gisele Chou</a>
-                貢獻。</p>
-        <p>與語言模型共同撰寫——完整紀錄見 <a href="https://github.com/audreyt/6pack.care">GitHub 提交日誌</a>。</p>
-        <p>隸屬<a href="https://afp.oxford-aiethics.ox.ac.uk/">加速哲人計畫</a>，<a
-                href="https://www.oxford-aiethics.ox.ac.uk/">牛津 AI 倫理研究院</a>。</p>
-        {% endif %}
-    </footer>
-</body>
-
+        </footer>
+    </body>
 </html>
