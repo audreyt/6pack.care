@@ -1,0 +1,114 @@
+name: "Doc sync (FAQ)"
+
+# Bidirectional sync between the Google Doc and this repo, scoped to FAQ only.
+#
+#   Doc → Repo : fetch published Doc, snapshot FAQ into doc/upstream branch,
+#                open (or update) a PR when it drifts from main.
+#   Repo → Doc : generate .docx artifacts from FAQ markdown on push to main
+#                so collaborators can import changes back into the Doc.
+#
+# Phase 2 roadmap: replace .docx artifact with Google Docs API push for
+# fully automated repo → Doc sync.
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"          # check for doc changes every 6 hours
+  push:
+    branches: [main]
+    paths: [faq.md, tw-faq.md]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  # ── Google Doc → Repo ─────────────────────────────────────────
+  # Fetch the published Doc, snapshot FAQ into a doc/upstream branch
+  # one commit ahead of main, and open a PR if it differs.
+  doc-to-repo:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Python dependencies
+        run: pip install beautifulsoup4 lxml
+
+      - name: Fetch content from Google Doc
+        run: python3 .github/sync_google_doc_tabs.py
+
+      - name: Check for FAQ drift against main
+        id: drift
+        run: |
+          if git diff --quiet -- faq.md tw-faq.md; then
+            echo "drifted=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "drifted=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Push FAQ snapshot to doc/upstream
+        if: steps.drift.outputs.drifted == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add faq.md tw-faq.md
+          git commit -m "doc: snapshot FAQ from Google Doc"
+          git push --force origin HEAD:refs/heads/doc/upstream
+
+      - name: Open or update PR
+        if: steps.drift.outputs.drifted == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          existing=$(gh pr list --head doc/upstream --json number -q '.[0].number' || true)
+          if [ -n "$existing" ]; then
+            echo "::notice::PR #$existing already open — branch force-updated"
+          else
+            gh pr create \
+              --head doc/upstream \
+              --base main \
+              --title "doc: sync FAQ from Google Doc" \
+              --body "$(cat <<'EOF'
+          Automated sync — the Google Doc FAQ has drifted from `main`.
+
+          **Scope:** `faq.md`, `tw-faq.md`
+          EOF
+          )"
+          fi
+
+      - name: Close stale PR if back in sync
+        if: steps.drift.outputs.drifted == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          existing=$(gh pr list --head doc/upstream --json number -q '.[0].number' || true)
+          if [ -n "$existing" ]; then
+            gh pr close "$existing" --comment "FAQ is back in sync — closing."
+            git push origin --delete doc/upstream 2>/dev/null || true
+          fi
+
+  # ── Repo → .docx artifact ────────────────────────────────────
+  # When FAQ changes land on main, generate .docx files that can
+  # be imported back into the Google Doc.
+  repo-to-docx:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Convert FAQ markdown to .docx
+        run: |
+          for f in faq.md tw-faq.md; do
+            pandoc "$f" -o "${f%.md}.docx" \
+              --from=markdown --to=docx --standalone
+          done
+
+      - name: Upload .docx artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: faq-docx
+          path: |
+            faq.docx
+            tw-faq.docx
+          retention-days: 90
