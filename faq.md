@@ -198,13 +198,13 @@ Right now, the global debate over AI and copyright is trapped in an unsolvable p
 
 The 6‑Pack bypasses this trap. We cannot easily untangle the past, but we can shape the future. We do this by shifting from an extractive model to **prospective epistemic accounting**, using the infrastructure the 6‑Pack already requires:
 
-**1. Data Coalitions as the Protective Membrane.**
+**1. Data Coalitions as protective membrane.**
 Compensation cannot just flow to isolated individuals, or we risk turning authentic cultures into performative "content farms" for the machine. Knowledge is held by communities. Existing institutions — neighbourhood associations, tribal councils, unions, craft cooperatives, or religious congregations — act as "Data Coalitions" that collectively bargain the Engagement Contract ([Pack 2](../2/)), deciding what local knowledge is legible to the AI for compensation, and what remains sacred and offline.
 
-**2. Decision Traces as Civic Receipts.**
+**2. Decision Traces as civic receipts.**
 Civic _kamis_ are bounded; they do not know everything. When a local AI reaches the limit of its statistical guessing and needs human friction — a community elder's context, a bilingual translator's nuance, a neighbourhood's tacit knowledge — it must retrieve it. Under Competence ([Pack 3](../3/)), the system is already mandated to generate a "Decision Trace" showing exactly where it sourced its answers. In a civic AI economy, this trace is not just a transparency log; it is a verifiable financial receipt.
 
-**3. Reversing the Extraction Engine.**
+**3. Reversing the extraction engine.**
 Every civic AI deployment requires pre-funded escrow ([Pack 2](../2/)). When a local _kami_ retrieves a Coalition's knowledge to successfully solve a problem or bridge a divide, the Decision Trace acts as an invoice. It triggers a transaction from the escrow pool — capitalised by public procurement budgets, science grants, or commercial levies — directly back to the Coalition.
 
 The dominant tech model absorbs human culture as free input to make human labour obsolete. The 6‑Pack inverts this. The moment the AI relies on human friction to avoid an error or understand a local reality, capital flows _back_ to the humans maintaining that lifeworld.
