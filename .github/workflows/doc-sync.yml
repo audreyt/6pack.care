@@ -64,8 +64,8 @@ jobs:
             - name: Check for drift against main
               id: drift
               run: |
-                  sync_files="${{ steps.sync-files.outputs.files }}"
-                  if git diff --quiet -- $sync_files; then
+                  read -r -a sync_files <<< "${{ steps.sync-files.outputs.files }}"
+                  if git diff --quiet -- "${sync_files[@]}"; then
                     echo "drifted=false" >> "$GITHUB_OUTPUT"
                   else
                     echo "drifted=true" >> "$GITHUB_OUTPUT"
@@ -74,10 +74,10 @@ jobs:
             - name: Push snapshot to doc/upstream
               if: steps.drift.outputs.drifted == 'true'
               run: |
-                  sync_files="${{ steps.sync-files.outputs.files }}"
+                  read -r -a sync_files <<< "${{ steps.sync-files.outputs.files }}"
                   git config user.name "github-actions[bot]"
                   git config user.email "github-actions[bot]@users.noreply.github.com"
-                  git add $sync_files
+                  git add "${sync_files[@]}"
                   git commit -m "doc: snapshot from Google Doc"
                   git push --force origin HEAD:refs/heads/doc/upstream
 
@@ -147,10 +147,10 @@ jobs:
                   GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
                   GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
               run: |
-                  sync_files="${{ steps.sync-files.outputs.files }}"
+                  read -r -a sync_files <<< "${{ steps.sync-files.outputs.files }}"
                   # Push changed files that have tab mappings
-                  for f in $sync_files; do
-                    if git rev-parse --verify HEAD~1 >/dev/null 2>&1 && git diff --name-only HEAD~1 HEAD | grep -q "^${f}$"; then
+                  for f in "${sync_files[@]}"; do
+                    if git rev-parse --verify HEAD~1 >/dev/null 2>&1 && ! git diff --name-only --exit-code HEAD~1 HEAD -- "$f" >/dev/null; then
                         python3 .github/sync_to_google_doc.py "$f"
                     fi
                   done

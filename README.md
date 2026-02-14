@@ -46,6 +46,12 @@ There is no automated test suite. Verify changes by building successfully and ch
 - Optimize images before committing; reuse existing typography tokens in CSS
 - When adding/editing content, maintain parity between English and Mandarin variants
 
+## Doc sync
+
+- Edit `.github/doc_sync_config.py` to change sync scope and tab mapping.
+- Keep `SYNC_FILES` and `TAB_MAP` aligned to avoid mismatches.
+- Validate locally with `python3 .github/doc_sync_config.py --check`.
+
 ## Contributing
 
 Pull requests are welcome! By contributing to this project, you agree to release your contributions under the [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) public domain dedication.

@@ -463,6 +463,14 @@ def _credentials() -> Credentials:
 # ── Helpers ──────────────────────────────────────────────────────────
 
 
+def _validate_paths(files: list[str]) -> list[Path]:
+    paths = [Path(path) for path in files]
+    for path in paths:
+        if not path.exists():
+            raise SystemExit(f"Missing sync source file: {path}")
+    return paths
+
+
 def _find_tab(tabs: list[dict], target_id: str):
     for tab in tabs:
         if tab["tabProperties"]["tabId"] == target_id:
@@ -479,6 +487,7 @@ def _find_tab(tabs: list[dict], target_id: str):
 def main() -> None:
     validate_sync_config()
     md_files = sys.argv[1:] if len(sys.argv) > 1 else list(SYNC_FILES)
+    md_paths = _validate_paths(md_files)
 
     creds = _credentials()
     service = build("docs", "v1", credentials=creds)
@@ -488,8 +497,8 @@ def main() -> None:
         includeTabsContent=True,
     ).execute()
 
-    for md_path in md_files:
-        filename = Path(md_path).name
+    for md_path in md_paths:
+        filename = md_path.name
         tab_id = TAB_MAP.get(filename)
         if not tab_id:
             print(f"skip {filename}: no tab mapping")
@@ -503,7 +512,7 @@ def main() -> None:
         body = tab["documentTab"]["body"]
         end_index = body["content"][-1]["endIndex"]
 
-        md_text = Path(md_path).read_text(encoding="utf-8")
+        md_text = md_path.read_text(encoding="utf-8")
         title, blocks = parse_markdown(md_text, filename=filename)
         requests, full_text = _build_requests(title, blocks, tab_id, end_index)
 

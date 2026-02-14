@@ -48,6 +48,14 @@ def _credentials() -> Credentials:
 # ── Helpers ──────────────────────────────────────────────────────────
 
 
+def _validate_targets(targets: list[str]) -> list[Path]:
+    paths = [Path(target) for target in targets]
+    for path in paths:
+        if not path.exists():
+            raise SystemExit(f"Missing sync source file: {path}")
+    return paths
+
+
 def _find_tab(tabs: list[dict], target_id: str):
     for tab in tabs:
         if tab["tabProperties"]["tabId"] == target_id:
@@ -279,7 +287,8 @@ def tab_to_markdown(
 
 def main() -> None:
     validate_sync_config()
-    targets = sys.argv[1:] if len(sys.argv) > 1 else list(SYNC_FILES)
+    raw_targets = sys.argv[1:] if len(sys.argv) > 1 else list(SYNC_FILES)
+    target_paths = _validate_targets(raw_targets)
 
     creds = _credentials()
     service = build("docs", "v1", credentials=creds)
@@ -290,7 +299,8 @@ def main() -> None:
         .execute()
     )
 
-    for filename in targets:
+    for target in target_paths:
+        filename = target.name
         tab_id = TAB_MAP.get(filename)
         if not tab_id:
             print(f"skip {filename}: no tab mapping")
@@ -304,7 +314,6 @@ def main() -> None:
         page_path = "/" + Path(filename).stem + "/"
         md = tab_to_markdown(tab, page_path, skip_first_h1=True)
 
-        target = Path(filename)
         front = _extract_front_matter(target)
         html_blocks = _extract_html_blocks(target)
         md = _reinject_html_blocks(md, html_blocks)
