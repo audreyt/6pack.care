@@ -12,6 +12,8 @@ jobs:
 
         steps:
             - uses: actions/checkout@v4
+              with:
+                  ref: ${{ github.head_ref }}
 
             - name: Setup Bun
               uses: oven-sh/setup-bun@v1
@@ -20,6 +22,18 @@ jobs:
 
             - name: Install dependencies
               run: bun install
+
+            - name: Auto-format
+              if: github.event_name == 'pull_request'
+              run: |
+                  bunx prettier --write .
+                  git diff --quiet || {
+                    git config user.name "github-actions[bot]"
+                    git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                    git add -A
+                    git commit -m "style: auto-format with prettier"
+                    git push
+                  }
 
             - name: Lint
               run: bun run lint

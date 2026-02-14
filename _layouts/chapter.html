@@ -61,6 +61,8 @@
                 {% if lang == 'en' %} {{ date | date: "%B %-d, %Y" }} {% else %}
                 {{ date | date: "%Y 年 %-m 月 %-d 日" }} {% endif %}
             </p>
+            {% endif %} {% if author %}
+            <p class="chapter-date">{{ author }}</p>
             {% endif %} {% if description %}
             <p>{{ description }}</p>
             {% endif %}
@@ -157,6 +159,6 @@
             </div>
         </section>
 
-        {% include footer.html %}
+        {% include "footer.html" %}
     </body>
 </html>
