@@ -43,7 +43,5 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                   name: site-build
-                  path: |
-                      *.md
-                      docs
+                  path: docs
                   if-no-files-found: error
