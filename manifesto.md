@@ -2,7 +2,7 @@
 layout: chapter
 title: "6-Pack of Care: A Manifesto"
 description: "Audrey Tang and Caroline Green"
-lang: en
+lang: en-gb
 alt_lang_url: "/tw/manifesto"
 nav_prev:
     url: "/"
@@ -34,13 +34,13 @@ Today, I want to discuss an application of this idea to AI governance, developed
 
 As AI becomes a thousand, perhaps ten thousand times faster than us, we face a fundamental asymmetry. The default trajectory: we become the **garden**; AI becomes the **gardener** — a top-down intelligence tending humanity from above.
 
-At that speed, traditional ethics fail. Utilitarianism becomes brittle. Its core mechanism—calculating consequences to maximize overall well-being—relies on prediction and human oversight. But when an AI system optimizes outcomes at a speed far beyond our comprehension, its decision-making process becomes inscrutable. We cannot intervene before unintended consequences cascade, which can lead to catastrophic misalignment when the system maximizes instrumental proxies instead of genuine human flourishing.
+At that speed, traditional ethics fail. Utilitarianism becomes brittle. Its core mechanism—calculating consequences to maximise overall well-being—relies on prediction and human oversight. But when an AI system optimises outcomes at a speed far beyond our comprehension, its decision-making process becomes inscrutable. We cannot intervene before unintended consequences cascade, which can lead to catastrophic misalignment when the system maximises instrumental proxies instead of genuine human flourishing.
 
 Deontology fares little better; what does a universal rule from a plant mean to the gardener? Its core assumption—of mutual obligations between actors on equal footing—no longer holds. Furthermore, any rigid rule we impose is left to the AI system to interpret. This inevitably leads to perverse instantiations: adhering to the letter of the rule while violating its spirit in ways we can neither foresee nor correct.
 
 A framework that acknowledges this asymmetry but refuses the gardener role is an ethics around **Civic Care**, particularly the work of Joan Tronto. The core idea: we remain each other's gardeners. AI becomes local infrastructure — a spirit of place, a _kami_ — that supports care _at the speed care actually grows_.
 
-This approach mandates a hyper-local, parochial moral scope. Each kami is bound to a specific garden; it is not a colonizing or maximizing ("paper-clipping") force.
+This approach mandates a hyper-local, parochial moral scope. Each kami is bound to a specific garden; it is not a colonising or maximising ("paper-clipping") force.
 
 Designing AI as care infrastructure requires **digital permaculture**, mirroring a movement that embraces anti-fragility through diversity—what Professor Yuk Hui calls "technodiversity"—rather than fragile monocultures.
 
@@ -64,7 +64,7 @@ In 2015, we handled our first major case using a bridge-making algorithm. Uber's
 
 Research shows that any social network with a "dunk button" (reposting) leads to polarization. Polis removes these. There is not even a reply button.
 
-You see a statement from a fellow citizen, and you can only agree or disagree. You then see a visualization where your avatar moves toward a group of people who feel similarly to you.
+You see a statement from a fellow citizen, and you can only agree or disagree. You then see a visualisation where your avatar moves toward a group of people who feel similarly to you.
 
 Crucially, we offer a "bridging bonus." We reward people who can come up with ideas that speak to both sides. Using traditional machine learning tools like Principal Component Analysis (PCA) and dimensional reduction, we highlight ideas that **bridge** divides.
 
@@ -78,11 +78,11 @@ This approach highlights a crucial insight: how we deliberate matters. It’s ab
 
 Research shows that when polled individually, people tend toward YIMBY or NIMBY (Yes/Not In My Backyard). But when deliberating in small groups (like groups of 10), they shift to MIMBY (Maybe In My Backyard, if...). Group deliberation is transformative; it engages a different aspect of us and inoculates against outrage, an effect that can last for years.
 
-We see this repeatedly. When polarized petitions emerged about changing Taiwan's time zone (+8 vs +9), individual polling showed gridlock. But bringing them into structured groups revealed a shared underlying value: making Taiwan seen as unique. They collaboratively brainstormed better ways to achieve this (like the Gold Card residency program) than an expensive time zone change.
+We see this repeatedly. When polarised petitions emerged about changing Taiwan's time zone (+8 vs +9), individual polling showed gridlock. But bringing them into structured groups revealed a shared underlying value: making Taiwan seen as unique. They collaboratively brainstormed better ways to achieve this (like the Gold Card residency programme) than an expensive time zone change.
 
 This illustrates the "legitimacy of sensemaking." Many conflicts have common knowledge problems at the root. The solutions are made tangible simply by ensuring local knowledge is well known by everyone, and everyone knows that everyone knows it.
 
-For example, in our marriage equality debate, polarization occurred because one side argued for individual rights ("hūn") while the other focused on family kinship ("yīn"). They were arguing about different things. Once this interpretation became common knowledge through legitimate sense-making, the path forward (legalizing individual weddings without forcing family kinship) became clear, depolarizing the issue.
+For example, in our marriage equality debate, polarisation occurred because one side argued for individual rights ("hūn") while the other focused on family kinship ("yīn"). They were arguing about different things. Once this interpretation became common knowledge through legitimate sense-making, the path forward (legalising individual weddings without forcing family kinship) became clear, depolarising the issue.
 
 # Alignment Assemblies
 
@@ -93,7 +93,7 @@ We convened a national **Alignment Assembly** with the Collective Intelligence P
 1.  **Discovery (Open):** We sent 200,000 SMS messages (a "democracy lottery"). Everyone, even those not selected, could use Polis to set the agenda. This broad participation contributes significantly to legitimacy.
 2.  **Definition (Protected):** We invited 450 demographically representative citizens to deliberate in groups of ten.
 
-**AI assistants** provided real-time transcripts and facilitation. Language models (tools similar to Google Jigsaw's Sensemaker) synthesized proposals in real-time—ideas like requiring digital signatures for ads, making platforms jointly liable for the full amount scammed, or dialing down the network reach (slowing CDN connections) of non-compliant platforms.
+**AI assistants** provided real-time transcripts and facilitation. Language models (tools similar to Google Jigsaw's Sensemaker) synthesised proposals in real-time—ideas like requiring digital signatures for ads, making platforms jointly liable for the full amount scammed, or dialing down the network reach (slowing CDN connections) of non-compliant platforms.
 
 The final package earned over 85 percent cross-partisan support. This rigor is crucial; it functions as a "duck-rabbit"—from one side it looks like a deliberation, from the other it looks like a rigorous poll, providing legitimacy for the legislature.
 
@@ -120,12 +120,12 @@ Here are key policy levers:
 - **Expression ≠ Amplification (Freedom of Speech vs. Freedom of Reach).** We must distinguish hosting speech from algorithmic amplification. In the US context, Section 230 protects speech, but never protected amplification. We must reframe the debate to recommender accountability, regulating amplification without touching the speech itself.
 - **Social Portability.** We must mandate "number portability for social." The Utah Digital Choice Act (effective next July) mandates that users can take their entire social graph to new services. It requires platforms to choose a fair, non-discriminatory, interoperable protocol (like ActivityPub, AT Protocol, or DSNP), with the state publishing qualifying technical standards. The information superhighway must have off-ramps. This forces platforms to compete on quality of care, not lock-in.
 - **Bridging-Based Ranking Transparency.** We can audit the relational health of platforms. X.com is already testing bridge-based ranking (derived from Community Notes) as the default feed for some users. Its new Collaborative Notes feature lets human contributors request AI-drafted context, then collectively rate and refine it — a two-lane pattern where AI provides speed and humans provide judgment.
-- **Federated Trust & Safety.** We must adopt open-source, federated models. A key example is the **ROOST.tools** (Robust Open Online Safety Tools) initiative for Child Sexual Abuse Material (CSAM) defense. Launched this year in Paris, it bridged the gap between the security camp (Eric Schmidt) and the open camp (Yann LeCun).
+- **Federated Trust & Safety.** We must adopt open-source, federated models. A key example is the **ROOST.tools** (Robust Open Online Safety Tools) initiative for Child Sexual Abuse Material (CSAM) defence. Launched this year in Paris, it bridged the gap between the security camp (Eric Schmidt) and the open camp (Yann LeCun).
   Instead of relying on a single source (like Microsoft PhotoDNA), ROOST allows partners (like Bluesky, Roblox or Discord) to train local AIs—what I call _kami_ or local stewards—to detect CSAM within their specific cultural context. We can then translate those embeddings into text (which is legal to hold and reduces privacy issues) and share threat intelligence via federated learning. This allows safety to be tuned to local norms and evolving definitions without being colonized by a single corporate policy.
 
 # From "Is" to "Ought"
 
-The examples so far showed democratic, decentralized defense acceleration (d/acc) in the info domain. More generally, many actors tackle _vertical_ alignment across many domains: "Is the AI loyally serving its principal?"
+The examples so far showed democratic, decentralised defence acceleration (d/acc) in the info domain. More generally, many actors tackle _vertical_ alignment across many domains: "Is the AI loyally serving its principal?"
 
 But due to externalities, perfect vertical alignment can lead to systemic conflict. Policymakers must focus on _horizontal_ alignment: How do we ensure these AI systems help us (and each other) cooperate, rather than supercharge our conflicts?
 
@@ -135,7 +135,7 @@ The solution is not "thin," abstract universal principles. It requires hyperloca
 
 **Civic Care** is a bridge from "is" to "ought" through a relational ethics framework. In a thick context, to perceive a need is to affirm the obligation to cooperate (if capable).
 
-Care ethics optimizes for the internal characteristics of actors and the quality of relationships in a community, not just outcomes (consequentialism). It treats "relational health" as first-class.
+Care ethics optimises for the internal characteristics of actors and the quality of relationships in a community, not just outcomes (consequentialism). It treats "relational health" as first-class.
 
 The following "6-Pack" translates Care Ethics into design primitives we can code into agentic systems to steer toward relational health. The 6-Pack does not replace technical safety research; it is the governance architecture that gives societies leverage even when technical alignment is imperfect — making failures legible, contestable, and reversible.
 
@@ -149,7 +149,7 @@ Attentiveness means using **broad listening**, rather than broadcasting, to aggr
 
 **Bridging maps** (like Polis or Sensemaker) create a "group selfie." If done continuously, this snapshot becomes a movie, allowing AI to align to the _here and now._
 
-Bridging algorithms prioritize marginalized voices. Unlike majority voting, smaller, coherent clusters offer a higher bridging bonus because they are harder to bridge to and provide more unique information to the aggregation.
+Bridging algorithms prioritise marginalised voices. Unlike majority voting, smaller, coherent clusters offer a higher bridging bonus because they are harder to bridge to and provide more unique information to the aggregation.
 
 _Rule of thumb: Bridge first, decide second._
 
@@ -159,7 +159,7 @@ This is about making credible, flexible commitments to act on the needs identifi
 
 In practice, this means developing **model specs** with verifiable commitments. A frontier model maker can _pre-commit_ to adopting a crowdsourced code of conduct (from an Alignment Assembly) if it meets thresholds for due process and relational health.
 
-It also requires institutionalization. In Taiwan, we introduced **Participation Officers (POs)** in every ministry. This structure is "fractal"—present in every agency and team. POs institutionalize the input/output process, translating public input into workable rules and ensuring commitments are honored and cascaded throughout the organization.
+It also requires institutionalisation. In Taiwan, we introduced **Participation Officers (POs)** in every ministry. This structure is "fractal"—present in every agency and team. POs institutionalise the input/output process, translating public input into workable rules and ensuring commitments are honoured and cascaded throughout the organisation.
 
 _Rule of thumb: No unchecked power; answers are required._
 
@@ -169,7 +169,7 @@ Good intentions require working code. Competence is shipping systems that delive
 
 This is where we implement **bridging-based ranking** and **Reinforcement Learning from Community Feedback (RLCF).**
 
-We must optimize not for individual engagement, but for cross-group endorsement and relational health. We train AI agents, using RL or evolution, to exhibit pro-social behavior and collect signals to reward it.
+We must optimise not for individual engagement, but for cross-group endorsement and relational health. We train AI agents, using RL or evolution, to exhibit pro-social behaviour and collect signals to reward it.
 
 _Rule of thumb: Always measure trust-under-loss._
 
@@ -213,14 +213,14 @@ This gives us a powerful design principle: **boundedness**.
 
 Most technology today is built for infinite scale. A successful app is expected to grow forever. But the _kami_ model suggests a different goal. We can design AIs to be local stewards—_kami_ of care.
 
-But this raises a crucial question: What stops these specialized AIs from fighting each other?
+But this raises a crucial question: What stops these specialised AIs from fighting each other?
 
 The solution is not to create a bigger AI to rule over them. Instead, we create a system of cooperative governance, built on two key principles:
 
 1.  **Federation:** The AIs agree on a shared set of rules for how to interact peacefully, like countries agreeing on trade laws and diplomatic protocols. This creates a common ground for cooperation.
 2.  **Subsidiarity:** This is a simple but profound idea: **problems should always be solved at the most local level possible.** The national-level AI shouldn't interfere with the city-level AI unless there is a problem the city truly cannot solve on its own. This protects the autonomy and purpose of each local _kami_.
 
-This vision of a **"society of AI permaculturists"** is the direct alternative to the **"singleton"**—the idea of a single AI that eventually manages everything. Instead of one monolithic intelligence, we envision a vibrant, diverse ecosystem of many specialized intelligences.
+This vision of a **"society of AI permaculturists"** is the direct alternative to the **"singleton"**—the idea of a single AI that eventually manages everything. Instead of one monolithic intelligence, we envision a vibrant, diverse ecosystem of many specialised intelligences.
 
 _Rule of thumb: Build for "enough," not forever._
 
@@ -241,7 +241,7 @@ To explain my role, I wrote this poetic job description:
 - When we hear “the singularity is near” —
     let us remember: The **Plurality** is here.
 
-The Singularity is a vertical vision. Plurality is a horizontal one. The future of AI is a decentralized network of smaller, open and locally verifiable systems — _local kami_, spirits of place.
+The Singularity is a vertical vision. Plurality is a horizontal one. The future of AI is a decentralised network of smaller, open and locally verifiable systems — _local kami_, spirits of place.
 
 # We, the People, are the Superintelligence
 

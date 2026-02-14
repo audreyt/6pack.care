@@ -4,7 +4,7 @@ title: "6-Pack of Care"
 header_title: "6-Pack of Care"
 subtitle: "Institute for Ethics in AI"
 description: "Research project by Audrey Tang and Caroline Green"
-lang: en
+lang: en-gb
 alt_lang_url: "/tw/"
 manifesto_link: "/manifesto"
 manifesto_text: "Read Our Manifesto"
@@ -22,7 +22,7 @@ next_action:
 
 As AI accelerates at a thousand times the speed of human progress, the default trajectory is clear: humanity becomes the garden, and AI the gardener – a top-down intelligence tending us from above. At that speed, traditional ethics break down. Utilitarianism cannot predict consequences before they cascade. Deontology cannot impose rules on a system that interprets them beyond our oversight. We need a framework that acknowledges the asymmetry but does not accept a hierarchical role for AI.
 
-That framework is **civic care** — a concept grounded in Joan Tronto's care ethics, which emphasizes the importance of mutual responsibility and the ⿻ Plurality vision that advocates for collaborative diversity. The core idea: we remain each other's gardeners. AI becomes local infrastructure — a spirit of place, a **_kami_** — that supports care _at the speed care actually grows_. Not a colonizing force, not a maximizing force.
+That framework is **civic care** — a concept grounded in Joan Tronto's care ethics, which emphasises the importance of mutual responsibility and the ⿻ Plurality vision that advocates for collaborative diversity. The core idea: we remain each other's gardeners. AI becomes local infrastructure — a spirit of place, a **_kami_** — that supports care _at the speed care actually grows_. Not a colonising force, not a maximising force.
 
 ## The 6-Pack
 
@@ -62,11 +62,11 @@ The project behind this site — a [manifesto](/manifesto/) and a book due in 20
 
 The AI alignment problem is not a technical bug but a philosophical error: it attempts to address the challenge of deriving ethical imperatives ('ought') from empirical observations ('is'), a dilemma famously articulated by philosopher David Hume.
 
-Paradigms like Coherent Extrapolated Volition (CEV) and Inverse Reinforcement Learning (IRL) are brittle because they try to logically derive a machine's 'ought' (values) from a descriptive 'is' (data, behavior), a philosophically incoherent task.
+Paradigms like Coherent Extrapolated Volition (CEV) and Inverse Reinforcement Learning (IRL) are brittle because they try to logically derive a machine's 'ought' (values) from a descriptive 'is' (data, behaviour), a philosophically incoherent task.
 
 The answer is a framework that reframes the is-ought gap entirely: care ethics.
 
-Care ethics reframes the problem by grounding morality in the empirical reality of interdependence, emphasizing that ethical obligations arise naturally from our interconnectedness and mutual dependencies. In this view, the fundamental 'is' of our existence is relational dependency. This fact is intrinsically normative; to perceive a relationship of need is to simultaneously perceive an 'ought'—an obligation to care. The fact contains its own value.
+Care ethics reframes the problem by grounding morality in the empirical reality of interdependence, emphasising that ethical obligations arise naturally from our interconnectedness and mutual dependencies. In this view, the fundamental 'is' of our existence is relational dependency. This fact is intrinsically normative; to perceive a relationship of need is to simultaneously perceive an 'ought'—an obligation to care. The fact contains its own value.
 
 The ⿻ Plurality agenda is a large-scale application of care ethics. vTaiwan-inspired processes, designed to achieve Coherent Blended Volition (CBV), is a technologically-mediated system for practicing collective care. It operationalizes Joan Tronto's phases of care: identifying a need (Attentiveness), gathering perspectives with sensemaking tools (Responsibility), deliberating on feasible options (Competence), ratifying uncommon ground that all feel heard in (Responsiveness), and ensuring the ongoing trust of the process (Solidarity).
 
@@ -74,7 +74,7 @@ This provides a coherent framework to AI alignment: alignment-by-process. Instea
 
 The AI system's role shifts from a misaligned optimizer to a "Symbiotic AI"—created of, by, and for a community and existing both as a "person" and as a shared plural good, depending on the perspective one adopts.
 
-Its objective function becomes concrete and measurable: the health of the relational process itself (e.g., maximizing bridging narratives, holding space for every story).
+Its objective function becomes concrete and measurable: the health of the relational process itself (e.g., maximising bridging narratives, holding space for every story).
 
 The AI system is dynamically aligned as its success is identical to the continued success of the collaborative process it serves. It learns our values by participating in the very process where we co-create with them.
 
@@ -84,7 +84,7 @@ AI systems can be "aligned" if—and only if—they are built to facilitate cont
 
 Care ethics has always been dismissed as too domestic, too parochial, too self-effacing. For machine ethics, those are features, not bugs.
 
-Consider an AI whose ethics are not focused on achieving a universal, maximizing goal but are instead rooted in a symbiotic, contextual system that prioritizes local relationships and situational needs over global optimization. Its moral world is limited to the network of relationships that calls it into being, right here and right now. Without the drive to scale indefinitely, the instrumental incentives—accumulate power, persist at all costs, treat the world as a mine—never arise.
+Consider an AI whose ethics are not focused on achieving a universal, maximising goal but are instead rooted in a symbiotic, contextual system that prioritises local relationships and situational needs over global optimisation. Its moral world is limited to the network of relationships that calls it into being, right here and right now. Without the drive to scale indefinitely, the instrumental incentives—accumulate power, persist at all costs, treat the world as a mine—never arise.
 
 Universalists will call this parochial. But for machine ethics, it creates a hard-coded boundary. The AI's ultimate purpose—its telos—is always relational, never extractive.
 
