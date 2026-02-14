@@ -40,7 +40,7 @@ There is no automated test suite. Verify changes by building successfully and ch
 - Commits: short imperative style (e.g. `add manifesto link`, `ch7: fix anchor ids`)
 - Never edit the `docs/` output directory — it is generated
 - Optimize images before committing; reuse existing typography tokens in CSS
-- When adding/editing content, maintain parity between English and Mandarin variants
+- When adding/editing content, maintain parity between British English and Traditional Mandarin variants
 
 ## Doc sync
 
