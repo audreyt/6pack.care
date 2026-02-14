@@ -4,11 +4,8 @@ name: "Doc sync (FAQ)"
 #
 #   Doc → Repo : fetch published Doc, snapshot FAQ into doc/upstream branch,
 #                open (or update) a PR when it drifts from main.
-#   Repo → Doc : generate .docx artifacts from FAQ markdown on push to main
-#                so collaborators can import changes back into the Doc.
-#
-# Phase 2 roadmap: replace .docx artifact with Google Docs API push for
-# fully automated repo → Doc sync.
+#   Repo → Doc : push merged FAQ markdown back to the Google Doc tab
+#                via the Docs API (clear + rebuild with formatting).
 
 on:
   schedule:
@@ -88,27 +85,21 @@ jobs:
             git push origin --delete doc/upstream 2>/dev/null || true
           fi
 
-  # ── Repo → .docx artifact ────────────────────────────────────
-  # When FAQ changes land on main, generate .docx files that can
-  # be imported back into the Google Doc.
-  repo-to-docx:
+  # ── Repo → Google Doc ────────────────────────────────────────
+  # When FAQ changes land on main, push the merged markdown back
+  # to the Google Doc tab via the Docs API.
+  repo-to-doc:
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Convert FAQ markdown to .docx
-        run: |
-          for f in faq.md tw-faq.md; do
-            pandoc "$f" -o "${f%.md}.docx" \
-              --from=markdown --to=docx --standalone
-          done
+      - name: Install Python dependencies
+        run: pip install google-api-python-client google-auth
 
-      - name: Upload .docx artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: faq-docx
-          path: |
-            faq.docx
-            tw-faq.docx
-          retention-days: 90
+      - name: Push FAQ to Google Doc
+        env:
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+        run: python3 .github/sync_to_google_doc.py faq.md
