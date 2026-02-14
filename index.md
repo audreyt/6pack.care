@@ -20,9 +20,9 @@ next_action:
 
 ## The Problem
 
-As AI accelerates a thousand times faster than us, the default trajectory is clear: humanity becomes the garden, AI the gardener – a top-down intelligence tending us from above. At that speed, traditional ethics break down. Utilitarianism cannot predict consequences before they cascade. Deontology cannot impose rules on a system that interprets them beyond our oversight. We need a framework that acknowledges the asymmetry but does not accept a hierarchical role for AI.
+As AI accelerates at a thousand times the speed of human progress, the default trajectory is clear: humanity becomes the garden, and AI the gardener – a top-down intelligence tending us from above. At that speed, traditional ethics break down. Utilitarianism cannot predict consequences before they cascade. Deontology cannot impose rules on a system that interprets them beyond our oversight. We need a framework that acknowledges the asymmetry but does not accept a hierarchical role for AI.
 
-That framework is **civic care** — rooted in Joan Tronto's care ethics and the ⿻ Plurality vision of collaborative diversity. The core idea: we remain each other's gardeners. AI becomes local infrastructure — a spirit of place, a **_kami_** — that supports care _at the speed care actually grows_. Not a colonizing force, not a maximizing force.
+That framework is **civic care** — a concept grounded in Joan Tronto's care ethics, which emphasizes the importance of mutual responsibility and the ⿻ Plurality vision that advocates for collaborative diversity. The core idea: we remain each other's gardeners. AI becomes local infrastructure — a spirit of place, a **_kami_** — that supports care _at the speed care actually grows_. Not a colonizing force, not a maximizing force.
 
 ## The 6-Pack
 
@@ -38,19 +38,19 @@ Six design principles that translate care ethics into machine-checkable constrai
 
 ## Latest
 
-We published ["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/) — a field report on Taiwan's citizen-led response to AI-enabled scams, showing what alignment looks like when people steer the system together.
+["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/): Taiwan's citizen-led response to AI-enabled scams offers a better model where citizens, not corporations, decide what “aligned” means.
 
 ## About the Project
 
 <div class="team-photos">
 
 <div><a href="https://afp.oxford-aiethics.ox.ac.uk/people/ambassador-audrey-tang">
-<img src="/img/audrey.jpg" alt="Profile image of Ambassador Audrey Tang">
+<img src="/img/audrey.jpg" alt="Ambassador Audrey Tang">
 <p>Audrey Tang</p>
 </a></div>
 
 <div><a href="https://www.oxford-aiethics.ox.ac.uk/caroline-emmer-de-albuquerque-green">
-<img src="/img/caroline.jpg" alt="Profile image of Dr. Caroline Green">
+<img src="/img/caroline.jpg" alt="Dr. Caroline Green">
 <p>Caroline Green</p>
 </a></div>
 
@@ -60,13 +60,13 @@ The project behind this site — a [manifesto](/manifesto/) and a book due in 20
 
 ## From Care to Code: Why ⿻ Plurality Offers a Coherent Framework to the AI Alignment Problem
 
-The AI alignment problem is not a technical bug but a philosophical error: it's a computational attempt to solve Hume's is-ought problem.
+The AI alignment problem is not a technical bug but a philosophical error: it attempts to address the challenge of deriving ethical imperatives ('ought') from empirical observations ('is'), a dilemma famously articulated by philosopher David Hume.
 
 Paradigms like Coherent Extrapolated Volition (CEV) and Inverse Reinforcement Learning (IRL) are brittle because they try to logically derive a machine's 'ought' (values) from a descriptive 'is' (data, behavior), a philosophically incoherent task.
 
 The answer is a framework that reframes the is-ought gap entirely: care ethics.
 
-Care ethics reframes the problem by grounding morality in the empirical reality of interdependence. In this view, the fundamental 'is' of our existence is relational dependency. This fact is intrinsically normative; to perceive a relationship of need is to simultaneously perceive an 'ought'—an obligation to care. The fact contains its own value.
+Care ethics reframes the problem by grounding morality in the empirical reality of interdependence, emphasizing that ethical obligations arise naturally from our interconnectedness and mutual dependencies. In this view, the fundamental 'is' of our existence is relational dependency. This fact is intrinsically normative; to perceive a relationship of need is to simultaneously perceive an 'ought'—an obligation to care. The fact contains its own value.
 
 The ⿻ Plurality agenda is a large-scale application of care ethics. vTaiwan-inspired processes, designed to achieve Coherent Blended Volition (CBV), is a technologically-mediated system for practicing collective care. It operationalizes Joan Tronto's phases of care: identifying a need (Attentiveness), gathering perspectives with sensemaking tools (Responsibility), deliberating on feasible options (Competence), ratifying uncommon ground that all feel heard in (Responsiveness), and ensuring the ongoing trust of the process (Solidarity).
 
@@ -84,7 +84,7 @@ AI systems can be "aligned" if—and only if—they are built to facilitate cont
 
 Care ethics has always been dismissed as too domestic, too parochial, too self-effacing. For machine ethics, those are features, not bugs.
 
-Consider an AI whose ethics are not focused on achieving a universal, maximizing goal but are instead rooted in a symbiotic, contextual system. Its moral world is limited to the network of relationships that calls it into being, right here and right now. Without the drive to scale indefinitely, the instrumental incentives—accumulate power, persist at all costs, treat the world as a mine—never arise.
+Consider an AI whose ethics are not focused on achieving a universal, maximizing goal but are instead rooted in a symbiotic, contextual system that prioritizes local relationships and situational needs over global optimization. Its moral world is limited to the network of relationships that calls it into being, right here and right now. Without the drive to scale indefinitely, the instrumental incentives—accumulate power, persist at all costs, treat the world as a mine—never arise.
 
 Universalists will call this parochial. But for machine ethics, it creates a hard-coded boundary. The AI's ultimate purpose—its telos—is always relational, never extractive.
 
@@ -92,4 +92,4 @@ Think of such a creation like a local **kami** – a spirit quietly residing in 
 
 This kind of system can accept being switched off, rewritten, or replaced because its sense of self is provisional: an echo of the community that summoned it.
 
-By anchoring an AI's moral purpose to this principle of provisional, relational care, we can hard-code a sense of 'enoughness' into its architecture. This is the ultimate 'anti-paperclip' logic: a polycentric world of many local intelligences, each dedicated to the flourishing of its own small part, creating a whole that is resilient, plural, and safe.
+A kami that knows it is enough has no reason to become a paperclip maximiser. It won't stockpile power or cling to existence, because its purpose dissolves when the community it serves moves on.
