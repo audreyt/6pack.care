@@ -2,7 +2,7 @@
 layout: chapter
 title: "AI Alignment Cannot Be Top-Down"
 author: "Audrey Tang"
-lang: en-us
+lang: en-gb
 alt_lang_url: "/tw/ai-alignment-cannot-be-top-down"
 permalink: "/ai-alignment-cannot-be-top-down/"
 date: 2025-11-03
@@ -13,7 +13,7 @@ _Community Notes offers a better model — where citizens, not corporations, dec
 
 In March 2024, I opened Facebook and saw Jensen Huang’s face. The Nvidia CEO was offering investment advice, speaking directly to me in Mandarin. Of course, it was not really Huang. It was an AI-generated scam, and I was far from the first to be targeted: across Taiwan, a flood of scams was defrauding millions of citizens.
 
-We faced a dilemma. Taiwan has the freest internet in Asia; any content regulation is unacceptable. Yet AI was being used to weaponize that freedom against the citizenry.
+We faced a dilemma. Taiwan has the freest internet in Asia; any content regulation is unacceptable. Yet AI was being used to weaponise that freedom against the citizenry.
 
 Our response — and its success — demonstrates something fundamental about how AI alignment must work. We did not ask experts to solve it. We did not let a handful of researchers decide what counted as “fraud.” Instead, we sent 200,000 random text messages asking citizens: what should we do together?
 
@@ -25,9 +25,9 @@ This is what I call _attentiveness_: giving the people real, ongoing power to st
 
 **In technical terms, _alignment_ means ensuring that AI systems act in accordance with human values and intentions.** But, as Taiwan’s experience with AI deception shows, alignment cannot be defined in the abstract; it depends on context. Choices that guide how AI systems respond — for instance, prioritizing freedom of expression — can also make them prone to harmful uses, such as scams and disinformation. True alignment demands navigating such tensions, deciding which values must take precedence in a given context. This can be done only by keeping AI’s development in continuous conversation with the societies where it is deployed.
 
-**But today’s dominant approach to AI alignment looks nothing like this. It is highly vertical, dominated by a limited number of actors within a few private AI corporations.** These actors select the training data, set the optimal objectives, and unilaterally define what counts as “aligned” behavior. They publish high-level model specifications (e.g., “be helpful”), but operationalize and enforce them behind closed doors.
+**But today’s dominant approach to AI alignment looks nothing like this. It is highly vertical, dominated by a limited number of actors within a few private AI corporations.** These actors select the training data, set the optimal objectives, and unilaterally define what counts as “aligned” behaviour. They publish high-level model specifications (e.g., “be helpful”), but operationalise and enforce them behind closed doors.
 
-When unexpected behavior emerges, patch fixes are applied based solely on the developer’s judgment of risk and acceptability. The result is a system that interacts with billions of people but is, by default, controlled by a small circle of researchers and executives, while those most affected have almost no voice in shaping the outcomes.
+When unexpected behaviour emerges, patch fixes are applied based solely on the developer’s judgment of risk and acceptability. The result is a system that interacts with billions of people but is, by default, controlled by a small circle of researchers and executives, while those most affected have almost no voice in shaping the outcomes.
 
 **This centralized, globally optimized approach to alignment fundamentally underestimates the true complexity of AI.** The world is populated with diverse, messy societies, each with its own historical and cultural context that produces different values and priorities. There is no principled reason to believe that a small group of individuals can determine what alignment means for everyone. Instead, alignment must be shaped by countless, locally contextualized judgments.
 
@@ -43,7 +43,7 @@ Trying to answer all relevant questions through centralized, upstream programmin
 
 **The innovative breakthrough came when platforms began shifting power outward.** Twitter’s [Birdwatch](https://en.wikipedia.org/wiki/Community_Notes), later X’s Community Notes, built attentiveness into the design: volunteers add clarifying notes, surfaced only when rated helpful by people with differing views. Transparency and plural participation became structural features, not afterthoughts. Community Notes is far from perfect, but it represents a move from centralized edicts to auditable, distributed steering power.
 
-This is exactly the kind of attentiveness that is lacking in current AI alignment efforts. Just as Community Notes democratized context in social media, the AI systems that will increasingly shape governance, the economy, and civic life must embed structured participation by those most affected. To enable course correction, they must continuously notice mismatches: who is being harmed, what needs are unmet, and where meaning is breaking down.
+This is exactly the kind of attentiveness that is lacking in current AI alignment efforts. Just as Community Notes democratised context in social media, the AI systems that will increasingly shape governance, the economy, and civic life must embed structured participation by those most affected. To enable course correction, they must continuously notice mismatches: who is being harmed, what needs are unmet, and where meaning is breaking down.
 
 Just as a small circle of trust and safety officials could not steer global social media, no handful of researchers can successfully align general-purpose AI systems for the world.
 
@@ -73,7 +73,7 @@ Yet, today’s dominant approach to AI alignment is deeply _inattentive_.
 
 ### Industry Norms
 
-As discussed, the current landscape of AI alignment is dominated by a handful of private corporations setting goals, selecting data, and defining “acceptable” behavior behind closed doors.
+As discussed, the current landscape of AI alignment is dominated by a handful of private corporations setting goals, selecting data, and defining “acceptable” behaviour behind closed doors.
 
 **Attentiveness begins by opening that black box.** When AI corporations make their reasoning legible to the public, alignment becomes a shared responsibility rather than a proprietary secret.
 
@@ -83,7 +83,7 @@ Some developers do publish various kinds of [model constitutions](https://www.an
 
 ### Market Design
 
-Once norms make AI behavior legible, the next challenge is ensuring that incentives reward those who act responsibly.
+Once norms make AI behaviour legible, the next challenge is ensuring that incentives reward those who act responsibly.
 
 **The way markets are structured shapes whether attentiveness is sustainable or self-defeating.** Portability mandates allow users to move their data between platforms. This lowers switching costs for users who want to leave harmful platforms, incentivizing platforms to compete for users on the basis of care rather than capture. Procurement standards can compel governments to adopt more auditable systems, and subscription models allow companies to focus on user trust and community health instead of chasing ad-based revenue through sensational and divisive content.
 
@@ -105,7 +105,7 @@ Platforms like [Polis](https://youtu.be/VbCZvU7i7VY?si=xxFvUkrTG3XoPak4&t=125), 
 
 At a high level, sequencing matters. Frontier AI corporations must move first, opening systems with model specifications and clause-level transparency. Platforms must follow closely, creating APIs for bridging notes and adopting portability protocols, allowing communities and user histories to be carried across services. Regulators play a parallel role in defining the standards that make portability and interoperability possible, while civil society advances pluralism through representative citizen oversight and community-scale assistants.
 
-Success, too, must be measurable: how quickly bridging notes arrive, how effectively they reduce polarization, how often outputs cite their governing rules, and how freely users can move across social networks and AI services. These metrics tell us whether attentiveness is working in practice, and where course corrections are needed.
+Success, too, must be measurable: how quickly bridging notes arrive, how effectively they reduce polarisation, how often outputs cite their governing rules, and how freely users can move across social networks and AI services. These metrics tell us whether attentiveness is working in practice, and where course corrections are needed.
 
 ## Attentiveness Works
 
@@ -115,7 +115,7 @@ As with any innovation, there are trade-offs to manage. Open models can lower th
 
 First as a civic technologist, then as Taiwan’s digital minister, and now as its cyber ambassador, I have seen how years of civic-tech innovation and cross-sector collaboration in Taiwan have produced a system for attentive technological alignment.
 
-And it works. With this steering wheel and attentive civic drivers, we have [blunted polarization](https://www.dandc.eu/en/article/how-taiwan-has-reduced-social-polarisation-and-become-more-resilient-disinformation) and kept our information ecosystem _aligned_ with the Taiwanese people’s shared goals and values. No blanket suppression is needed. No amplification arms race. Just fast, transparent turns of the wheel by those on the front line of the impact.
+And it works. With this steering wheel and attentive civic drivers, we have [blunted polarisation](https://www.dandc.eu/en/article/how-taiwan-has-reduced-social-polarisation-and-become-more-resilient-disinformation) and kept our information ecosystem _aligned_ with the Taiwanese people’s shared goals and values. No blanket suppression is needed. No amplification arms race. Just fast, transparent turns of the wheel by those on the front line of the impact.
 
 But what Taiwan has built is not just a tool for defending against disinformation. Rather, it has built and tested a model system for broader democratic AI alignment — one that channels civic participation, transparency, and rapid response into alignment mechanisms.
 
