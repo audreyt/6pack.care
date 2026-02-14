@@ -21,6 +21,8 @@ There is no automated test suite. Verify changes by building successfully and ch
 
 **Content files** are top-level Markdown with YAML front matter.
 
+**Doc sync config:** `.github/doc_sync_config.py` is the single source of truth for Google Doc synchronization scope via `SYNC_FILES` and `TAB_MAP`; keep both structures aligned.
+
 **Layouts** in `_layouts/`:
 
 - `default.html` — main template (header with logos, language toggle, footer)
