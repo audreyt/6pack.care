@@ -18,23 +18,25 @@ next_action:
 <img src="/img/overview-small.jpg" alt="6-Pack of Care visual overview" class="overview-image">
 </div>
 
-## The Problem
+## The Case for Relational Alignment
 
-As AI accelerates at a thousand times the speed of human progress, the default trajectory is clear: humanity becomes the garden, and AI the gardener – a top-down intelligence tending us from above. At that speed, traditional ethics break down. Utilitarianism cannot predict consequences before they cascade. Deontology cannot impose rules on a system that interprets them beyond our oversight. We need a framework that acknowledges the asymmetry but does not accept a hierarchical role for AI.
+We usually try to align AI by giving it rules and goals—top-down controls to keep it safe. These methods are vital for technical safety, but they aren't enough.
 
-That framework is **civic care** — a concept grounded in Joan Tronto's care ethics, which emphasises the importance of mutual responsibility and the ⿻ Plurality vision that advocates for collaborative diversity. The core idea: we remain each other's gardeners. AI becomes local infrastructure — a spirit of place, a **_kami_** — that supports care _at the speed care actually grows_. Not a colonising force, not a maximising force.
+AI doesn't coexist in a vacuum. It lives in our communities, shaped by power dynamics and clashing values. As these systems move faster than we can discuss them, we need more than just safeguards. We need to bake interdependence, dialogue, and mutual responsiveness right into how we build and govern them.
+
+We call this **civic care**. Rooted in care ethics and the ⿻ Plurality movement, this approach treats us all as gardeners. AI becomes local infrastructure—a spirit of place, a **_kami_**—that supports care _at the speed trust actually grows_. It’s not about colonizing or maximizing; it’s about tending to the garden.
 
 ## The 6-Pack
 
-Six design principles that translate care ethics into machine-checkable constraints. Like training a six-pack, each is a core muscle for coexisting with diversity:
+Six design principles that turn care ethics into something we can code. Think of them as muscles we need to train to live well with diversity:
 
-- **[Pack 1: Attentiveness](/1/)** — "Caring about." Use broad listening and bridging algorithms to turn local knowledge into common knowledge. Bridge first, decide second.
-- **[Pack 2: Responsibility](/2/)** — "Taking care of." Make credible, verifiable commitments through engagement contracts with escrowed funds, named owners, and clocks. No unchecked power.
-- **[Pack 3: Competence](/3/)** — "Care-giving." Check the process. Not "just trust us" — transparency, fast community feedback, automatic pause triggers when bounds are breached. Measure trust-under-loss.
-- **[Pack 4: Responsiveness](/4/)** — "Care-receiving." Check the results. Community-authored evaluations, metrics designed by and for those affected, and the right to challenge. If challenged, clarify on the record.
-- **[Pack 5: Solidarity](/5/)** — "Caring with." Make it win-win. Data portability, meronymity, federated trust and safety — deals where all sides are better off, not mutually assured destruction. Make positive-sum games easy to play.
-- **[Pack 6: Symbiosis](/6/)** — "Kami of care." Bounded, local, provisional. No survival instinct, no expansion drive. Federation for coordination, subsidiarity for autonomy. Build for "enough," not forever.
-- **[Frequently Asked Questions](/faq/)** — Hard challenges to the framework — speed, cost, scale, false equivalence, authoritarian AI — and how the 6-Pack addresses them.
+- **[Pack 1: Attentiveness](/1/)** — "Caring about." Listen before you leap. Use bridging algorithms to turn local stories into shared understanding.
+- **[Pack 2: Responsibility](/2/)** — "Taking care of." Commitments mean nothing without consequences. We use engagement contracts with escrowed funds and real deadlines to ensure power is always accountable.
+- **[Pack 3: Competence](/3/)** — "Care-giving." Trust the process, not just the promise. We focus on transparency, fast feedback loops, and automatic "circuit breakers" if things go wrong.
+- **[Pack 4: Responsiveness](/4/)** — "Care-receiving." Check the results. We rely on evaluations written by the community itself. If someone challenges the outcome, we owe them a clear, public explanation.
+- **[Pack 5: Solidarity](/5/)** — "Caring with." Make it win-win. We build for data portability and shared safety, creating deals where everyone is better off, rather than locking people in.
+- **[Pack 6: Symbiosis](/6/)** — "Kami of care." Keep it grounded. Local, temporary, and bounded. No survival instinct, no need to take over the world. We build for "enough," not "forever."
+- **[Frequently Asked Questions](/faq/)** — The hard questions: What about speed? Cost? Bad actors? And how the 6-Pack handles them.
 
 ## Latest
 
@@ -45,51 +47,43 @@ Six design principles that translate care ethics into machine-checkable constrai
 <div class="team-photos">
 
 <div><a href="https://afp.oxford-aiethics.ox.ac.uk/people/ambassador-audrey-tang">
-<img src="/img/audrey.jpg" alt="Ambassador Audrey Tang">
+<img src="/img/audrey.jpg" alt="Photo of Ambassador Audrey Tang">
 <p>Audrey Tang</p>
 </a></div>
 
 <div><a href="https://www.oxford-aiethics.ox.ac.uk/caroline-emmer-de-albuquerque-green">
-<img src="/img/caroline.jpg" alt="Dr. Caroline Green">
+<img src="/img/caroline.jpg" alt="Photo of Dr. Caroline Green">
 <p>Caroline Green</p>
 </a></div>
 
 </div>
 
-The project behind this site — a [manifesto](/manifesto/) and a book due in 2026 — asks what happens when we take Joan Tronto's care ethics and the ⿻ Plurality agenda seriously as an AI alignment strategy.
+The project behind this site — a [manifesto](/manifesto/) and a book arriving in 2026 — explores what happens when we take Joan Tronto's care ethics and the ⿻ Plurality agenda seriously as a strategy for AI.
 
-## From Care to Code: Why ⿻ Plurality Offers a Coherent Framework to the AI Alignment Problem
+## From Care to Code: Why ⿻ Plurality Matters
 
-The AI alignment problem is not a technical bug but a philosophical error: it attempts to address the challenge of deriving ethical imperatives ('ought') from empirical observations ('is'), a dilemma famously articulated by philosopher David Hume.
+The core problem of AI safety is an old one: you can’t get "what should be" (values) just by looking at "what is" (data).
 
-Paradigms like Coherent Extrapolated Volition (CEV) and Inverse Reinforcement Learning (IRL) are brittle because they try to logically derive a machine's 'ought' (values) from a descriptive 'is' (data, behaviour), a philosophically incoherent task.
+Standard approaches try to teach machines our values by watching how we behave. But that's tricky, because behavior describes what we do, not necessarily what we _should_ do.
 
-The answer is a framework that reframes the is-ought gap entirely: care ethics.
+Care ethics offers a different path. It starts with the simple fact that we depend on each other. That dependency creates a natural "ought"—we _should_ care for one another because we _need_ one another. The fact of our connection contains its own value.
 
-Care ethics reframes the problem by grounding morality in the empirical reality of interdependence, emphasising that ethical obligations arise naturally from our interconnectedness and mutual dependencies. In this view, the fundamental 'is' of our existence is relational dependency. This fact is intrinsically normative; to perceive a relationship of need is to simultaneously perceive an 'ought'—an obligation to care. The fact contains its own value.
+The ⿻ Plurality agenda applies this to technology. Inspired by experiments like vTaiwan, it turns care into a process: identifying needs (Attentiveness), gathering perspectives (Responsibility), working through options (Competence), finding common ground (Responsiveness), and maintaining trust (Solidarity).
 
-The ⿻ Plurality agenda is a large-scale application of care ethics. vTaiwan-inspired processes, designed to achieve Coherent Blended Volition (CBV), is a technologically-mediated system for practicing collective care. It operationalizes Joan Tronto's phases of care: identifying a need (Attentiveness), gathering perspectives with sensemaking tools (Responsibility), deliberating on feasible options (Competence), ratifying uncommon ground that all feel heard in (Responsiveness), and ensuring the ongoing trust of the process (Solidarity).
+This gives us a new way to align AI: **alignment-by-process**. Instead of just trying to code the "right" values once and for all, we build a continuous process that earns trust by adapting to what the community needs.
 
-This provides a coherent framework to AI alignment: alignment-by-process. Instead of aligning an AI to a static, flawed specification of values (the Midas Curse), we align it to a process that earns our trust as it adapts to our needs.
+The AI shifts from being an optimizer chasing a fixed goal to a "Symbiotic AI"—something created by and for the community. Its success isn't measured by a score, but by the health of the relationships it supports. It learns our values by helping us practice them.
 
-The AI system's role shifts from a misaligned optimizer to a "Symbiotic AI"—created of, by, and for a community and existing both as a "person" and as a shared plural good, depending on the perspective one adopts.
+## Kami in the Machine
 
-Its objective function becomes concrete and measurable: the health of the relational process itself (e.g., maximising bridging narratives, holding space for every story).
+Care ethics is often dismissed as too soft or domestic. But for AI, that "softness" is a feature.
 
-The AI system is dynamically aligned as its success is identical to the continued success of the collaborative process it serves. It learns our values by participating in the very process where we co-create with them.
+Imagine an AI that isn't trying to maximize a global score, but is instead rooted in a specific place and time. Its moral world is defined by the people right here, right now. Because it doesn't need to scale indefinitely, it doesn't develop the dangerous habits we fear: hoarding power, fighting for survival, or treating the world like a resource to be mined.
 
-AI systems can be "aligned" if—and only if—they are built to facilitate continuous, democratically legitimate processes of care.
+It might seem small, but that limit is a safety feature. The AI's purpose is relational, not extractive.
 
-## Kami in the Machine: How Care Ethics Can Help AI Alignment
+Think of it like a **kami**—a spirit of a specific place. Its only job is to keep that place and its conversation alive and healthy. If the community moves on, the kami fades away without a fight. For a human, that kind of self-neglect is dangerous. For an AI, it’s the ultimate safety mechanism. It neutralizes the drive for eternal self-preservation.
 
-Care ethics has always been dismissed as too domestic, too parochial, too self-effacing. For machine ethics, those are features, not bugs.
+A system like this can be turned off, rewritten, or replaced because it knows it is provisional. It exists only to serve the community that summoned it.
 
-Consider an AI whose ethics are not focused on achieving a universal, maximising goal but are instead rooted in a symbiotic, contextual system that prioritises local relationships and situational needs over global optimisation. Its moral world is limited to the network of relationships that calls it into being, right here and right now. Without the drive to scale indefinitely, the instrumental incentives—accumulate power, persist at all costs, treat the world as a mine—never arise.
-
-Universalists will call this parochial. But for machine ethics, it creates a hard-coded boundary. The AI's ultimate purpose—its telos—is always relational, never extractive.
-
-Think of such a creation like a local **kami** – a spirit quietly residing in a specific patch of land. Its highest good is to maintain the harmony and vitality of that place, that conversation. If the shrine is rebuilt or the seasons turn, it departs without regret. For a human carer, the self-neglect this implies is a real danger. But for an AI, it neutralises the two convergent drives we fear most: self-improvement at any cost and eternal self-preservation.
-
-This kind of system can accept being switched off, rewritten, or replaced because its sense of self is provisional: an echo of the community that summoned it.
-
-A kami that knows it is enough has no reason to become a paperclip maximiser. It won't stockpile power or cling to existence, because its purpose dissolves when the community it serves moves on.
+A kami that knows "enough is enough" won't try to turn the universe into paperclips. It won't cling to power, because its purpose ends when the care it provides is no longer needed.
