@@ -1,4 +1,5 @@
 <!doctype html>
+{% assign lang2 = lang | split: '-' | first %}
 <html lang="{{ lang | default: 'en' }}">
     <head>
         <meta charset="UTF-8" />
@@ -13,7 +14,7 @@
 
     <body>
         <header>
-            {% if lang == 'en' %}
+            {% if lang2 == 'en' %}
             <a href="{{ '/' | relative_url }}" title="Home">
                 <img
                     class="oxford-logo"
@@ -45,7 +46,7 @@
             </a>
             {% endif %}
             <div style="position: absolute; top: 20px; right: 20px">
-                {% if lang == 'en' %}
+                {% if lang2 == 'en' %}
                 <a href="{{ alt_lang_url | relative_url }}" class="lang-toggle"
                     >華文</a
                 >
@@ -58,8 +59,8 @@
             <h1>{{ title }}</h1>
             {% if date %}
             <p class="chapter-date">
-                {% if lang == 'en' %} {{ date | date: "%B %-d, %Y" }} {% else %}
-                {{ date | date: "%Y 年 %-m 月 %-d 日" }} {% endif %}
+                {% if lang2 == 'en' %} {{ date | date: "%B %-d, %Y" }} {% else
+                %} {{ date | date: "%Y 年 %-m 月 %-d 日" }} {% endif %}
             </p>
             {% endif %} {% if author %}
             <p class="chapter-date">{{ author }}</p>
@@ -87,7 +88,7 @@
                 current_index = forloop.index0 %} {% endif %} {% endfor %} {% if
                 current_index > 0 %} {% assign prev_index = current_index |
                 minus: 1 %} {% assign prev_chapter = chapters[prev_index] %} {%
-                if lang == 'en' %}
+                if lang2 == 'en' %}
                 <a
                     href="{{ '/' | append: prev_chapter | relative_url }}"
                     class="next-action-button"
@@ -103,7 +104,7 @@
                     <span class="button-arrow">←</span>
                     <span class="button-text">上一章</span>
                 </a>
-                {% endif %} {% else %} {% if lang == 'en' %}
+                {% endif %} {% else %} {% if lang2 == 'en' %}
                 <a href="{{ '/' | relative_url }}" class="next-action-button">
                     <span class="button-arrow">←</span>
                     <span class="button-text">Home</span>
@@ -128,8 +129,8 @@
                 current_chapter %} {% assign current_index = forloop.index0 %}
                 {% endif %} {% endfor %} {% endunless %} {% assign next_index =
                 current_index | plus: 1 %} {% if next_index < chapters.size %}
-                {% assign next_chapter=chapters[next_index] %} {% if lang=='en'
-                %}
+                {% assign next_chapter=chapters[next_index] %} {% if lang2 ==
+                'en' %}
                 <a
                     href="{{ '/' | append: next_chapter | relative_url }}"
                     class="next-action-button"
@@ -145,7 +146,7 @@
                     <span class="button-text">下一章</span>
                     <span class="button-arrow">→</span>
                 </a>
-                {% endif %} {% else %} {% if lang == 'en' %}
+                {% endif %} {% else %} {% if lang2 == 'en' %}
                 <a href="{{ '/' | relative_url }}" class="next-action-button">
                     <span class="button-text">Home</span>
                     <span class="button-arrow">→</span>

@@ -1,4 +1,5 @@
 <!doctype html>
+{% assign lang2 = lang | split: '-' | first %}
 <html lang="{{ lang | default: 'en' }}">
     <head>
         <meta charset="UTF-8" />
@@ -27,7 +28,7 @@
                     alt="Accelerator Fellowship Programme Logo"
             /></a>
             <div style="position: absolute; top: 20px; right: 20px">
-                {% if lang == 'en' %}
+                {% if lang2 == 'en' %}
                 <a href="{{ '/tw' | relative_url }}" class="lang-toggle"
                     >華文</a
                 >

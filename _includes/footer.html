@@ -1,5 +1,5 @@
 <footer>
-    {% if lang == 'en' %}
+    {% assign lang2 = lang | split: '-' | first %} {% if lang2 == 'en' %}
     <p>
         ⓪
         <a
