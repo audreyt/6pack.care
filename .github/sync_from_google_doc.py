@@ -12,6 +12,7 @@ in the environment (e.g. from GitHub Secrets).
 from __future__ import annotations
 
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -85,6 +86,78 @@ def _extract_front_matter(path: Path) -> str:
             if len(parts) >= 3:
                 return "---" + parts[1] + "---\n\n"
     return ""
+
+
+def _extract_html_blocks(path: Path) -> list[tuple[str | None, str]]:
+    """Extract multi-line <div> blocks from existing file.
+
+    Returns a list of (heading_anchor, block) tuples where
+    *heading_anchor* is the nearest preceding markdown heading
+    (e.g. ``"## About the Project"``), or ``None`` if the block
+    appears before any heading (i.e. top of body).
+    """
+    if not path.exists():
+        return []
+    text = path.read_text(encoding="utf-8")
+    # strip front matter
+    if text.startswith("---"):
+        parts = text.split("---", 2)
+        if len(parts) >= 3:
+            text = parts[2]
+
+    lines = text.split("\n")
+    blocks: list[tuple[str | None, str]] = []
+    depth = 0
+    block_lines: list[str] = []
+    last_heading: str | None = None
+
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        stripped = line.strip()
+
+        # track headings
+        if depth == 0 and re.match(r"^#{1,6}\s", stripped):
+            last_heading = stripped
+
+        opens = len(re.findall(r"<div\b", stripped))
+        closes = len(re.findall(r"</div>", stripped))
+
+        if depth > 0 or opens > 0:
+            block_lines.append(line)
+            depth += opens - closes
+            if depth < 0:
+                depth = 0
+            if depth == 0:
+                blocks.append((last_heading, "\n".join(block_lines)))
+                block_lines = []
+            i += 1
+            continue
+        i += 1
+
+    return blocks
+
+
+def _reinject_html_blocks(md: str, blocks: list[tuple[str | None, str]]) -> str:
+    """Re-insert preserved HTML blocks after their heading anchors."""
+    if not blocks:
+        return md
+    for heading, block in blocks:
+        if heading is None:
+            # top-of-body block — prepend with one blank line
+            md = block + "\n\n" + md.lstrip("\n")
+            continue
+        idx = md.find(heading)
+        if idx == -1:
+            continue  # heading removed — drop the block
+        # find end of the heading line
+        eol = md.find("\n", idx)
+        if eol == -1:
+            eol = len(md)
+        # insert after the heading line, preserving blank line spacing
+        insert_at = eol + 1
+        md = md[:insert_at] + "\n" + block + "\n\n" + md[insert_at:].lstrip("\n")
+    return md
 
 
 # ── Docs API content → markdown ──────────────────────────────────────
@@ -241,6 +314,8 @@ def main() -> None:
 
         target = Path(filename)
         front = _extract_front_matter(target)
+        html_blocks = _extract_html_blocks(target)
+        md = _reinject_html_blocks(md, html_blocks)
         target.write_text(front + md, encoding="utf-8")
         print(f"{filename} ← tab {tab_id}")
 
