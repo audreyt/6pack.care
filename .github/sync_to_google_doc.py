@@ -467,8 +467,16 @@ def _validate_paths(files: list[str]) -> list[Path]:
     paths = [Path(path) for path in files]
     for path in paths:
         if not path.exists():
-            raise SystemExit(f"Missing sync source file: {path}")
+            raise SystemExit(f"doc-sync error: missing source file: {path}")
     return paths
+
+
+def _warn_no_tab_mapping(filename: str) -> None:
+    print(f"doc-sync warning: {filename}: missing tab mapping")
+
+
+def _warn_tab_not_found(filename: str, tab_id: str) -> None:
+    print(f"doc-sync warning: {filename}: mapped tab not found in Google Doc: {tab_id}")
 
 
 def _find_tab(tabs: list[dict], target_id: str):
@@ -501,12 +509,12 @@ def main() -> None:
         filename = md_path.name
         tab_id = TAB_MAP.get(filename)
         if not tab_id:
-            print(f"skip {filename}: no tab mapping")
+            _warn_no_tab_mapping(filename)
             continue
 
         tab = _find_tab(doc["tabs"], tab_id)
         if not tab:
-            print(f"skip {filename}: tab {tab_id} not found in doc")
+            _warn_tab_not_found(filename, tab_id)
             continue
 
         body = tab["documentTab"]["body"]
