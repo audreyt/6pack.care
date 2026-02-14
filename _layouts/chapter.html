@@ -157,66 +157,6 @@
             </div>
         </section>
 
-        <footer>
-            {% if lang == 'en' %}
-            <p>
-                ⓪
-                <a
-                    href="https://afp.oxford-aiethics.ox.ac.uk/people/ambassador-audrey-tang"
-                    >Audrey Tang</a
-                >
-                and
-                <a
-                    href="https://www.oxford-aiethics.ox.ac.uk/caroline-emmer-de-albuquerque-green"
-                    >Caroline Green</a
-                >. Text and illustrations: CC0 (public domain). Illustration by
-                <a href="https://ncase.me">Nicky Case</a>; Mandarin localization
-                by <a href="https://github.com/giselechou">Gisele Chou</a>.
-            </p>
-            <p>
-                Co-written with language models — the
-                <a href="https://github.com/audreyt/6pack.care"
-                    >GitHub commit log</a
-                >
-                has full authorship details.
-            </p>
-            <p>
-                Part of the
-                <a href="https://afp.oxford-aiethics.ox.ac.uk/"
-                    >Accelerator Fellowship Programme</a
-                >,
-                <a href="https://www.oxford-aiethics.ox.ac.uk/"
-                    >Oxford Institute for Ethics in AI</a
-                >.
-            </p>
-            {% else %}
-            <p>
-                ⓪
-                <a
-                    href="https://afp.oxford-aiethics.ox.ac.uk/people/ambassador-audrey-tang"
-                    >唐鳳</a
-                >與
-                <a
-                    href="https://www.oxford-aiethics.ox.ac.uk/caroline-emmer-de-albuquerque-green"
-                    >Caroline Green</a
-                >。文字與插圖：CC0（公眾領域）。插圖由
-                <a href="https://ncase.me">Nicky Case</a> 創作，華文版由
-                <a href="https://github.com/giselechou">Gisele Chou</a> 貢獻。
-            </p>
-            <p>
-                與語言模型共同撰寫——完整紀錄見
-                <a href="https://github.com/audreyt/6pack.care"
-                    >GitHub 提交日誌</a
-                >。
-            </p>
-            <p>
-                隸屬<a href="https://afp.oxford-aiethics.ox.ac.uk/"
-                    >加速哲人計畫</a
-                >，<a href="https://www.oxford-aiethics.ox.ac.uk/"
-                    >牛津 AI 倫理研究院</a
-                >。
-            </p>
-            {% endif %}
-        </footer>
+        {% include footer.html %}
     </body>
 </html>
