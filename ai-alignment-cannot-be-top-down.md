@@ -2,13 +2,12 @@
 layout: chapter
 title: "AI Alignment Cannot Be Top-Down"
 author: "Audrey Tang"
-lang: en
+lang: en-us
 alt_lang_url: "/tw/ai-alignment-cannot-be-top-down"
 permalink: "/ai-alignment-cannot-be-top-down/"
 date: 2025-11-03
+description: 'Originally published in <a href="https://ai-frontiers.org/articles/ai-alignment-cannot-be-top-down">AI Frontiers</a>.'
 ---
-
-_Originally published in [AI Frontiers](https://ai-frontiers.org/articles/ai-alignment-cannot-be-top-down)._
 
 _Community Notes offers a better model — where citizens, not corporations, decide what “aligned” means._
 
