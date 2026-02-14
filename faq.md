@@ -110,13 +110,13 @@ The honest answer is: the mechanisms transfer; the specifics do not. No one shou
 
 Early evidence suggests they do:
 
-- **Japan.** After Taiwan's joint‑liability law eliminated deepfake scam ads domestically, a Reuters investigation revealed that Meta simply rerouted those ads to nearby jurisdictions without the same rules. Japan's former digital ministers are now fast‑tracking equivalent legislation — the regulatory flywheel turns because one country's proof of concept becomes the next country's political mandate.
+- **Japan.** After Taiwan's joint‑liability law eliminated deepfake scam ads domestically, a Reuters investigation revealed that Meta simply rerouted those ads to nearby jurisdictions without the same rules. Japan is now fast‑tracking equivalent legislation — the regulatory flywheel turns because one country's proof of concept becomes the next country's political mandate.
 - **United States.** The We the People 250 bridging experiment found that 97 percent of an American mini‑public agreed on fundamental values; even the most divisive topic — affirmative action — reached nearly 70 percent depolarisation after social translation. In California, the Engaged California platform co‑created wildfire recovery plans with thousands of LA residents using AI sensemaking, and is now hosting deliberations on government efficiency with state employees.
 - **Global.** Bridging algorithms have been deployed in dozens of countries across six continents. The math is culturally agnostic — it finds cross‑group overlap in whatever language and context it encounters. The outputs are always local.
 
 The framework is designed for scale. Subsidiarity ([Pack 6](../6/)) means each deployment is shaped by its context — the kami belongs to its place, not to Taiwan. Federation ([Pack 5](../5/)) means local deployments share threat intelligence and interoperability standards without requiring a single governance model. The Alignment Assembly format can scale from a neighbourhood to a nation because its democratic legitimacy comes from representative sampling, not total participation — 447 representative citizens deliberated Taiwan's anti‑scam policy for a population of 23 million. Over a decade, some 10 million Taiwanese — nearly half the population — have participated in one digital deliberation or another, including people without voting rights: immigrants, teenagers, and other groups traditionally excluded.
 
-Every new context demands fresh attentiveness ([Pack 1](../1/)): who is missing, what power dynamics exist, which local institutions deserve trust and which do not. The framework provides the scaffolding. The community provides the knowledge.
+Every new context demands fresh attentiveness ([Pack 1](../1/)): who is missing, what power dynamics exist, which local institutions deserve trust and which do not. The 6‑Pack provides the framework. The community provides the knowledge.
 
 ---
 
