@@ -61,7 +61,7 @@ We published ["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-dow
 
 </div>
 
-The project behind this site — a [manifesto](/manifesto/) and a book due in 2026 — asks what happens when you take Joan Tronto's care ethics and the ⿻ Plurality agenda seriously as an AI alignment strategy.
+The project behind this site — a [manifesto](/manifesto/) and a book due in 2026 — asks what happens when we take Joan Tronto's care ethics and the ⿻ Plurality agenda seriously as an AI alignment strategy.
 
 ## From Care to Code: Why ⿻ Plurality Offers a Coherent Framework to the AI Alignment Problem
 
