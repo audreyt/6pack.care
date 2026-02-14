@@ -48,7 +48,7 @@ Consider what happens when you translate care's supposed weaknesses into design 
 
 The translation is not always clean. Boundedness can become insularity; corrigibility can become passivity; subsidiarity can become fragmentation. These are engineering tensions, not refutations — each Pack includes failure modes and named fixes precisely because the mapping requires continuous calibration.
 
-The 6‑Pack does not ask AI to _feel_ care. It extracts the relational architecture of care — attentiveness, answerability, competence, responsiveness, solidarity, bounded purpose — and translates each into machine‑checkable design primitives, engagement contracts, and measurable outcomes. The interpersonal origin is the source of its rigour, not a limitation to be apologised for.
+The 6‑Pack does not ask AI to _feel_ care. It extracts the relational architecture of care — attentiveness, answerability, competence, responsiveness, solidarity, symbiosis — and translates each into machine‑checkable design primitives, engagement contracts, and measurable outcomes. The interpersonal origin is the source of its rigour, not a limitation to be apologised for.
 
 ---
 
