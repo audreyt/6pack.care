@@ -29,6 +29,8 @@ SITE_URL = "https://6pack.care"
 # local filename → Google Docs tab ID
 TAB_MAP: dict[str, str] = {
     "faq.md": "t.jutu46j75do3",
+    "manifesto.md": "t.iphokcalvpzi",
+    "index.md": "t.n06zotu1buvc",
 }
 
 HEADING_STYLE = {
@@ -158,11 +160,38 @@ _HEADING_RE = re.compile(r"^(#{1,6})\s+(.+)$")
 _NUM_LIST_RE = re.compile(r"^(\d+)\.\s+(.+)$")
 
 
-def parse_markdown(text: str) -> tuple[str, list[Block]]:
+def _strip_html_blocks(body: str) -> str:
+    """Remove multi-line HTML block elements (<div>…</div>) that can't
+    be represented in Google Docs.  Tracks nesting depth so nested divs
+    are handled correctly."""
+    lines = body.split("\n")
+    result: list[str] = []
+    depth = 0
+    for line in lines:
+        stripped = line.strip()
+        opens = len(re.findall(r"<div\b", stripped))
+        closes = len(re.findall(r"</div>", stripped))
+        if depth > 0 or opens > 0:
+            depth += opens - closes
+            if depth < 0:
+                depth = 0
+            continue
+        result.append(line)
+    return "\n".join(result)
+
+
+def parse_markdown(text: str, filename: str = "faq.md") -> tuple[str, list[Block]]:
     """Return (title_from_frontmatter, blocks)."""
     fm, body = _parse_front_matter(text)
     title = fm.get("title", "")
-    page_path = fm.get("permalink", "/faq/").rstrip("/") + "/"
+    # derive page_path from permalink or filename
+    permalink = fm.get("permalink", "")
+    if not permalink:
+        permalink = "/" + Path(filename).stem + "/"
+    page_path = permalink.rstrip("/") + "/"
+
+    # strip multi-line HTML blocks (audio sections, etc.)
+    body = _strip_html_blocks(body)
 
     blocks: list[Block] = []
     para_lines: list[str] = []
@@ -181,6 +210,10 @@ def parse_markdown(text: str) -> tuple[str, list[Block]]:
             flush()
             if blocks and not blocks[-1].is_separator:
                 blocks.append(Block(is_separator=True))
+            continue
+
+        # skip HTML block elements (can't be represented in Google Docs)
+        if stripped.startswith("<") and not _H4_RE.match(stripped):
             continue
 
         # horizontal rule
@@ -219,6 +252,12 @@ def parse_markdown(text: str) -> tuple[str, list[Block]]:
         if stripped.startswith("- "):
             flush()
             blocks.append(Block(spans=_parse_inline(stripped[2:], page_path), is_list_item=True))
+            continue
+
+        # indented continuation of a list item (e.g., multi-line bullets)
+        if line != line.lstrip() and blocks and blocks[-1].is_list_item and not para_lines:
+            blocks[-1].spans.append(Span("\n"))
+            blocks[-1].spans.extend(_parse_inline(stripped, page_path))
             continue
 
         # regular text — accumulate
@@ -476,7 +515,7 @@ def main() -> None:
         end_index = body["content"][-1]["endIndex"]
 
         md_text = Path(md_path).read_text(encoding="utf-8")
-        title, blocks = parse_markdown(md_text)
+        title, blocks = parse_markdown(md_text, filename=filename)
         requests, full_text = _build_requests(title, blocks, tab_id, end_index)
 
         result = service.documents().batchUpdate(

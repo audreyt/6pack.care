@@ -1,10 +1,10 @@
-name: "Doc sync (FAQ)"
+name: "Doc sync"
 
-# Bidirectional sync between the Google Doc and this repo, scoped to FAQ only.
+# Bidirectional sync between the Google Doc and this repo.
 #
-#   Doc → Repo : fetch published Doc, snapshot FAQ into doc/upstream branch,
-#                open (or update) a PR when it drifts from main.
-#   Repo → Doc : push merged FAQ markdown back to the Google Doc tab
+#   Doc → Repo : read Doc tabs via the Docs API, snapshot into
+#                doc/upstream branch, open (or update) a PR on drift.
+#   Repo → Doc : push merged markdown back to the Google Doc tabs
 #                via the Docs API (clear + rebuild with formatting).
 
 on:
@@ -12,7 +12,7 @@ on:
     - cron: "0 */6 * * *"          # check for doc changes every 6 hours
   push:
     branches: [main]
-    paths: [faq.md, tw-faq.md]
+    paths: [index.md, manifesto.md, faq.md]
   workflow_dispatch:
 
 permissions:
@@ -21,7 +21,7 @@ permissions:
 
 jobs:
   # ── Google Doc → Repo ─────────────────────────────────────────
-  # Fetch the published Doc, snapshot FAQ into a doc/upstream branch
+  # Fetch the published Doc, snapshot into a doc/upstream branch
   # one commit ahead of main, and open a PR if it differs.
   doc-to-repo:
     if: github.event_name != 'push'
@@ -30,27 +30,31 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install Python dependencies
-        run: pip install beautifulsoup4 lxml
+        run: pip install google-api-python-client google-auth
 
       - name: Fetch content from Google Doc
-        run: python3 .github/sync_google_doc_tabs.py
+        env:
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+        run: python3 .github/sync_from_google_doc.py
 
-      - name: Check for FAQ drift against main
+      - name: Check for drift against main
         id: drift
         run: |
-          if git diff --quiet -- faq.md tw-faq.md; then
+          if git diff --quiet -- index.md manifesto.md faq.md; then
             echo "drifted=false" >> "$GITHUB_OUTPUT"
           else
             echo "drifted=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Push FAQ snapshot to doc/upstream
+      - name: Push snapshot to doc/upstream
         if: steps.drift.outputs.drifted == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add faq.md tw-faq.md
-          git commit -m "doc: snapshot FAQ from Google Doc"
+          git add index.md manifesto.md faq.md
+          git commit -m "doc: snapshot from Google Doc"
           git push --force origin HEAD:refs/heads/doc/upstream
 
       - name: Open or update PR
@@ -65,11 +69,11 @@ jobs:
             gh pr create \
               --head doc/upstream \
               --base main \
-              --title "doc: sync FAQ from Google Doc" \
+              --title "doc: sync from Google Doc" \
               --body "$(cat <<'EOF'
-          Automated sync — the Google Doc FAQ has drifted from `main`.
+          Automated sync — the Google Doc has drifted from `main`.
 
-          **Scope:** `faq.md`, `tw-faq.md`
+          **Scope:** `index.md`, `manifesto.md`, `faq.md`
           EOF
           )"
           fi
@@ -81,13 +85,13 @@ jobs:
         run: |
           existing=$(gh pr list --head doc/upstream --json number -q '.[0].number' || true)
           if [ -n "$existing" ]; then
-            gh pr close "$existing" --comment "FAQ is back in sync — closing."
+            gh pr close "$existing" --comment "Back in sync — closing."
             git push origin --delete doc/upstream 2>/dev/null || true
           fi
 
   # ── Repo → Google Doc ────────────────────────────────────────
-  # When FAQ changes land on main, push the merged markdown back
-  # to the Google Doc tab via the Docs API.
+  # When changes land on main, push the merged markdown back
+  # to the Google Doc tabs via the Docs API.
   repo-to-doc:
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
@@ -97,9 +101,15 @@ jobs:
       - name: Install Python dependencies
         run: pip install google-api-python-client google-auth
 
-      - name: Push FAQ to Google Doc
+      - name: Push to Google Doc
         env:
           GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
-        run: python3 .github/sync_to_google_doc.py faq.md
+        run: |
+          # Push changed files that have tab mappings
+          for f in index.md manifesto.md faq.md; do
+            if git diff --name-only HEAD~1 HEAD | grep -q "^${f}$"; then
+              python3 .github/sync_to_google_doc.py "$f"
+            fi
+          done
