@@ -10,20 +10,19 @@ jobs:
     build:
         runs-on: ubuntu-latest
 
-        steps:
-            - uses: actions/checkout@v4
+    steps:
+        - uses: actions/checkout@v4
 
-            - name: Set up tools
-              uses: actions/setup-node@v4
-              with:
-                  node-version: "20"
-                  cache: "npm"
+        - name: Setup Bun
+          uses: oven-sh/setup-bun@v1
+          with:
+              bun-version: latest
 
-            - name: Install dependencies
-              run: npm ci
+        - name: Install dependencies
+          run: bun install
 
-            - name: Lint
-              run: npm run lint
+        - name: Lint
+          run: bun run lint
 
-            - name: Build
-              run: npm run build
+        - name: Build
+          run: bun run build

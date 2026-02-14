@@ -25,9 +25,9 @@ export default function (eleventyConfig) {
 
     // Filter for relative_url compatibility with Jekyll
     eleventyConfig.addFilter("relative_url", function (url) {
-        // In 11ty, we can usually just return the URL as is if we're at the root,
-        // or prepend a base URL if needed. For now, let's just return it.
-        // If baseurl is set in site data, we could use it.
+        if (typeof url !== "string" || !url.length) {
+            return "";
+        }
         return url;
     });
 
@@ -35,6 +35,10 @@ export default function (eleventyConfig) {
     eleventyConfig.addFilter("date", function (date, format) {
         // Date filter supporting Jekyll-style format strings
         if (!date) return "";
+        if (typeof format !== "string") {
+            return new Date(date).toLocaleDateString("en-US");
+        }
+
         const d = new Date(date);
         // Very basic mapping for the formats used in the templates
         // "%B %-d, %Y" -> Month Day, Year

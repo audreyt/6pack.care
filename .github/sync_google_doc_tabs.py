@@ -20,7 +20,7 @@ PACK_PATTERN = re.compile(r"^Pack ([1-6]):\s*(.+)$")
 def _run_curl(url: str) -> str:
     try:
         result = subprocess.run(
-            ["curl", "-fsSL", url],
+            ["curl", "-fsSL", "--max-time", "30", "--retry", "2", url],
             check=True,
             capture_output=True,
             text=True,
@@ -29,7 +29,11 @@ def _run_curl(url: str) -> str:
         raise SystemExit("curl is required but was not found in PATH") from exc
     except subprocess.CalledProcessError as exc:
         stderr = exc.stderr.strip() if exc.stderr else ""
-        raise SystemExit(f"curl failed with exit code {exc.returncode}: {stderr}") from exc
+        message = stderr or exc.stdout.strip() if exc.stdout else ""
+        raise SystemExit(
+            f"curl failed with exit code {exc.returncode}"
+            + (f": {message}" if message else "")
+        ) from exc
     return result.stdout
 
 

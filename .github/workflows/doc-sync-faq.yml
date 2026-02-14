@@ -85,8 +85,8 @@ jobs:
               run: |
                   existing=$(gh pr list --head doc/upstream --json number -q '.[0].number' || true)
                   if [ -n "$existing" ]; then
-                    gh pr close "$existing" --comment "Back in sync — closing."
-                    git push origin --delete doc/upstream 2>/dev/null || true
+                      gh pr close "$existing" --comment "Back in sync — closing." --yes
+                      git push origin --delete doc/upstream 2>/dev/null || true
                   fi
 
     # ── Repo → Google Doc ────────────────────────────────────────
