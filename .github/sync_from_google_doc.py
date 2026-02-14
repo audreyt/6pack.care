@@ -16,7 +16,7 @@ import re
 import sys
 from pathlib import Path
 
-from doc_sync_config import DOC_ID, SITE_URL, TAB_MAP, validate_sync_config
+from doc_sync_config import DOC_ID, SITE_URL, TAB_MAP, SYNC_FILES, validate_sync_config
 
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
@@ -279,7 +279,7 @@ def tab_to_markdown(
 
 def main() -> None:
     validate_sync_config()
-    targets = sys.argv[1:] if len(sys.argv) > 1 else list(TAB_MAP.keys())
+    targets = sys.argv[1:] if len(sys.argv) > 1 else list(SYNC_FILES)
 
     creds = _credentials()
     service = build("docs", "v1", credentials=creds)
