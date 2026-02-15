@@ -14,7 +14,7 @@ nav_next:
 
 <h4 id="faq-1"><a href="#faq-1">Q1.</a> The AI market is locked in an arms race driven by commercial profit and geopolitical dominance. An AI working for a tax-software monopoly can lobby to keep tax filing difficult — and far worse is easy to imagine. If this continues, isn't the vision of cooperative kami hopelessly naive?</h4>
 
-Civic AI cannot survive by asking monopolies to be nicer. [Moloch](https://slatestarcodex.com/2014/07/30/meditations-on-moloch/) — the dynamic where rational actors race to the bottom because defection pays — is not defeated by moralising. It is defeated by changing the terrain so that cooperation pays more than extraction. Five levers, several already proven, can bend the curve:
+Civic AI will not succeed if we just hope that monopolies will become more generous. Appeals to morality are not enough. Instead, we need to set up systems where working together is more attractive than simply taking as much as possible. There are five practical ways to shift these incentives, and some of them are already being put to the test.
 
 1. **Interoperability and portability.** Mandate fair protocol‑level interop so users can exit without losing their networks. The [Utah Digital Choice Act](https://le.utah.gov/~2025/bills/static/HB0418.html) requires platforms to offer social‑graph portability through qualifying open protocols. When the moat of captive audiences evaporates, platforms must compete on quality of care, not strength of the cage.
 2. **Civic procurement.** Governments shape markets through buying power. Requiring that any AI procured for public use be auditable, interoperable, and governed by citizen assemblies — as Taiwan's Alignment Assembly demonstrated for anti‑scam policy — creates large economic incentives to build kami‑like systems. [Steward‑ownership structures](https://purpose-economy.org/en/) and board‑level safety duties make civic care a fiduciary obligation, not a marketing slogan.
@@ -33,7 +33,7 @@ The objection is well‑known and has been raised by care ethics' own practition
 Consider what happens when you translate care's supposed weaknesses into design constraints for AI:
 
 - **Parochialism** becomes **boundedness**. A kami that tends a specific river has no ambition to manage the forest. This is precisely the anti‑Singleton architecture we need: purpose‑limited agents that resist [instrumental convergence](https://aisafety.dance/p2/#problem2) because their scope is defined relationally, not imperially.
-- **Self‑effacement** becomes corrigibility\*\*. The most dangerous property of a superintelligent system is the drive to preserve itself. A care‑ethic agent treats its own shutdown as success — the community has healed, the crisis has passed, the garden grows on its own. What is a moral hazard for a human carer is a critical safety property for a machine.
+- **Self‑effacement** becomes **corrigibility**. The most dangerous property of a superintelligent system is the drive to preserve itself. A care‑ethic agent treats its own shutdown as success — the community has healed, the crisis has passed, the garden grows on its own. What is a moral hazard for a human carer is a critical safety property for a machine.
 - **Intimacy** becomes **subsidiarity**. Care cannot be delivered at a distance without losing its quality. For AI, this means solving problems at the most local capable level ([Pack 6](../6/)), escalating only when necessary, and never abstracting away the specificity of the people affected.
 
 The translation is not always clean. Boundedness can become insularity; corrigibility can become passivity; subsidiarity can become fragmentation. These are engineering tensions, not refutations — each Pack includes failure modes and named fixes precisely because the mapping requires continuous calibration.
@@ -56,7 +56,7 @@ Care ethics is not anti‑progress; it is anti‑reductionist. In a civic AI fut
 
 If democracy is justified only by its outputs, any system that produces better outputs can replace it — including a benevolent AI autocracy that aggregates preferences efficiently and corrects errors faster than elections ever could. This is not a thought experiment; it is the default trajectory of concentrating intelligence in systems designed to optimise.
 
-The 6‑Pack does not justify participation instrumentally. It grounds participation in care ethics: to perceive a need is to perceive an obligation. People have standing not because their input improves decision quality — though it does — but because the decisions affect their lives. A system that excludes the affected, however competent, has failed the basic test of alignment.
+The 6‑Pack does not justify participation merely as a means to better decisions. It is rooted in care ethics: to perceive a need is to perceive an obligation. People have standing not because their input improves decision quality — though it does — but because the decisions affect their lives. A system that excludes the affected, however competent, has failed the basic test of alignment.
 
 Taiwan's trajectory makes this concrete. Digital democracy did not emerge because technocrats calculated that participation was optimal. It emerged because people demanded standing — institutional trust at 9 percent, the [Sunflower Movement](https://en.wikipedia.org/wiki/Sunflower_Student_Movement) occupying the legislature. The capability followed the care relationship, not the other way around.
 
@@ -122,7 +122,7 @@ Every new context demands fresh attentiveness ([Pack 1](../1/)): who is missing,
 
 <h4 id="faq-8"><a href="#faq-8">Q8.</a> Your framework assumes that people trust technology enough to participate. But what about marginalized communities who have been historically surveilled, oppressed, and impoverished by the state and by tech? Why would they trust this?</h4>
 
-Trust is not a prerequisite for Civic AI; it is the _output_ of it.
+Trust is not something we need before starting with Civic AI; it is something that grows as a result.
 
 Taiwan's digital democracy did not emerge from a society that inherently trusted its government. It was born in the aftermath of authoritarianism and a severe crisis of public faith (the Sunflower Movement). Public trust stood at 9 percent in 2014. We built these systems precisely because people _did not_ trust the institutions or each other.
 
