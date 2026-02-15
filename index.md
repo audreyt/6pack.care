@@ -24,7 +24,7 @@ We usually try to align AI by giving it rules and goals—top-down controls to k
 
 AI doesn't coexist in a vacuum. It lives in our communities, shaped by power dynamics and clashing values. As these systems move faster than we can discuss them, we need more than just safeguards. We need to bake interdependence, dialogue, and mutual responsiveness right into how we build and govern them.
 
-We call this **civic care**. Rooted in care ethics and the Plurality movement, this approach treats us all as gardeners. AI becomes local infrastructure—a spirit of place, a **_kami_**—that supports care _at the speed trust actually grows_. It's not about colonising or maximising; it's about tending to the garden.
+We call this **civic care**. Rooted in care ethics and the Plurality movement, this approach treats us all as gardeners. AI becomes local infrastructure—a spirit of place, a ***kami***—that supports care *at the speed trust actually grows*. It's not about colonising or maximising; it's about tending to the garden.
 
 ## The 6-Pack
 
@@ -64,9 +64,9 @@ Our project — a [manifesto](/manifesto/) and a book arriving in 2026 — explo
 
 The core problem of AI safety is an old one: you can’t get "what should be" (values) just by looking at "what is" (data).
 
-Standard approaches try to teach machines our values by watching how we behave. But that's tricky, because behaviour describes what we do, not necessarily what we _should_ do.
+Standard approaches try to teach machines our values by watching how we behave. But that's tricky, because behaviour describes what we do, not necessarily what we *should* do.
 
-Care ethics offers a different path. It starts with the simple fact that we depend on each other. That dependency creates a natural "ought"—we _should_ care for one another because we _need_ one another. The fact of our connection contains its own value.
+Care ethics offers a different path. It starts with the simple fact that we depend on each other. That dependency creates a natural "ought"—we *should* care for one another because we *need* one another. The fact of our connection contains its own value.
 
 [⿻ Plurality](https://plurality.net/) applies this to technology. Inspired by experiments like vTaiwan, it turns care into a process: identifying needs (Attentiveness), gathering perspectives (Responsibility), working through options (Competence), finding common ground (Responsiveness), and maintaining trust (Solidarity).
 
