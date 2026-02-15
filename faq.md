@@ -26,17 +26,7 @@ None of these levers requires goodwill from incumbents. Each restructures incent
 
 ---
 
-<h4 id="faq-2"><a href="#faq-2">Q2.</a> Ambitious goals we point AI at ("cure cancer," "solve climate change") are almost always consequentialist. Optimising for these outcomes at superhuman speed inevitably leads to unforeseen risks. Does Care Ethics mean giving up on these grand, civilisation-scale goals?</h4>
-
-Not at all, but it radically reframes _how_ we achieve them.
-
-The danger of pointing a superintelligence at a singular goal like "cure cancer" is that it treats a complex, relational, ecological reality as a constraint‑satisfaction problem. _[Goodhart's Law](https://en.wikipedia.org/wiki/Goodhart%27s_law) is a moral law_. When a system maximises a single variable at superhuman speed, it will optimise the proxy while destroying the human context.
-
-Care ethics is not anti‑progress; it is anti‑reductionist. In a civic AI future, we do not unleash one unbounded [Singleton](https://nickbostrom.com/fut/singleton) to "solve" a problem from the top down. We cultivate an ecology of specialised _kamis_. One model simulates protein folding; another helps local clinics share knowledge; another assists patients in navigating their care. None have an unbounded mandate to "optimise the world." Progress emerges horizontally, through the symbiotic interaction of human ingenuity and bounded machine intelligence.
-
----
-
-<h4 id="faq-3"><a href="#faq-3">Q3.</a> Care ethics was developed for interpersonal relationships — a nurse and a patient, a parent and a child. Scaling it to AI systems and global governance seems like a category error. Why isn't it?</h4>
+<h4 id="faq-2"><a href="#faq-2">Q2.</a> Care ethics was developed for interpersonal relationships — a nurse and a patient, a parent and a child. Scaling it to AI systems and global governance seems like a category error. Why isn't it?</h4>
 
 The objection is well‑known and has been raised by care ethics' own practitioners: care is too intimate, too parochial, too prone to self‑effacement to ground a theory of institutions, let alone machines. We think these are features, not bugs — and Joan Tronto herself made the case for scaling care to political institutions in [_Caring Democracy_ (2013)](https://nyupress.org/9780814782781/caring-democracy/).
 
@@ -49,6 +39,16 @@ Consider what happens when you translate care's supposed weaknesses into design 
 The translation is not always clean. Boundedness can become insularity; corrigibility can become passivity; subsidiarity can become fragmentation. These are engineering tensions, not refutations — each Pack includes failure modes and named fixes precisely because the mapping requires continuous calibration.
 
 The 6‑Pack does not ask AI to _feel_ care. It extracts the relational architecture of care — attentiveness, answerability, competence, responsiveness, solidarity, symbiosis — and translates each into machine‑checkable design primitives, engagement contracts, and measurable outcomes. The interpersonal origin is the source of its rigour, not a limitation to be apologised for.
+
+---
+
+<h4 id="faq-3"><a href="#faq-3">Q3.</a> Ambitious goals we point AI at ("cure cancer," "solve climate change") are almost always consequentialist. Optimising for these outcomes at superhuman speed inevitably leads to unforeseen risks. Does Care Ethics mean giving up on these grand, civilisation-scale goals?</h4>
+
+Not at all, but it radically reframes _how_ we achieve them.
+
+The danger of pointing a superintelligence at a singular goal like "cure cancer" is that it treats a complex, relational, ecological reality as a constraint‑satisfaction problem. _[Goodhart's Law](https://en.wikipedia.org/wiki/Goodhart%27s_law) is a moral law_. When a system maximises a single variable at superhuman speed, it will optimise the proxy while destroying the human context.
+
+Care ethics is not anti‑progress; it is anti‑reductionist. In a civic AI future, we do not unleash one unbounded [Singleton](https://nickbostrom.com/fut/singleton) to "solve" a problem from the top down. We cultivate an ecology of specialised _kamis_. One model simulates protein folding; another helps local clinics share knowledge; another assists patients in navigating their care. None have an unbounded mandate to "optimise the world." Progress emerges horizontally, through the symbiotic interaction of human ingenuity and bounded machine intelligence.
 
 ---
 
@@ -134,33 +134,7 @@ Over time, small functional bridges create space for larger ones. Taiwan's journ
 
 ---
 
-<h4 id="faq-9"><a href="#faq-9">Q9.</a> Oversight boards, participation officers, escrow funds, eval registries, portability infrastructure — this is expensive. Who pays?</h4>
-
-Turn the question around. The expensive path is the one we are already on: ungoverned AI externalises its harms, and the public pays to clean up — in deepfake scam losses, in polarisation‑driven institutional decay, in billion‑dollar bias lawsuits that a participation officer could have prevented. The question is not whether we can afford civic governance but whether we can afford to keep skipping it.
-
-The money is real. But most of it is already being spent — just badly. Governments procure AI systems worth billions; civic procurement attaches conditions to that existing spend, not new budget lines. [Pack 2](../2/)'s engagement contracts require vendors to pre‑fund remedy escrow, the way construction firms post performance bonds — the cost is priced in, and the public is protected when things break. For lower‑severity community deployments, the model tiers down: mutual insurance pools and automatic pause replace financial escrow — lighter on capital, same accountability. The tier is set by impact, not organisational form, so "we are a community project" cannot become a pass out of responsibility. Shared research compute and open‑weight models are public goods funded like roads and courts. And participation officers pay for themselves: [Taiwan's Uber dispute](https://congress.crowd.law/case-vtaiwan.html) was resolved in three weeks through Polis; the traditional regulatory proceeding would have taken years and cost more.
-
-The framing that civic governance is an _additional_ expense only holds if you pretend the status quo is free. It is not. We are paying now — in trust, in cohesion, in money — for the absence of what we propose.
-
----
-
-<h4 id="faq-10"><a href="#faq-10">Q10.</a> Every governance framework risks becoming a compliance checklist that gets gamed, or a tool for actors to push partisan agendas under the guise of "relational health." What stops the 6‑Pack from suffering this fate?</h4>
-
-"Civic" is a dangerous word if it lacks structural accountability. If a solution only works when your ideological allies operate it, it is not civic infrastructure — it is a partisan weapon. The test of true civic infrastructure is that it remains robust and fair even when operated by your opponents.
-
-The 6‑Pack builds in four layers of defence against ideological capture and ethics‑washing:
-
-**1. Verifiable metrics over subjective intent.** We track cross‑group endorsement and trust‑under‑loss ([Pack 3](../3/)) — not raw engagement, not corporate sentiment, not vibes. Do participants on opposing sides both rate the process as fair? Do people who _lost_ a decision still accept the outcome as legitimate? These metrics are incredibly hard to fake, because they require buy‑in from people who have reason to be hostile. If only your supporters report trust, the metric exposes you.
-
-**2. Consequences with teeth.** [Pack 2](../2/)'s engagement contracts are not aspirational — they carry escrowed funds, automatic payouts on SLA breaches, and independent oversight with veto power. Clawbacks and penalties are wired before launch, not negotiated after failure. A compliance checklist has no enforcement mechanism; an engagement contract has a named owner, a clock, and money on the line.
-
-**3. Adversarial audit.** [Pack 4](../4/)'s [Weval registries](https://weval.org/) let affected communities author their own evaluations. These are not lab‑designed benchmarks that vendors can "teach to the test" — they are living, community‑maintained test suites. When a community submits a translation‑fidelity eval and the system fails, the pause trigger fires automatically.
-
-**4. Exit rights and subsidiarity.** The ultimate check on agenda‑pushing is the ability to leave. When data and relationships are portable ([Pack 5](../5/)), no actor can hold a community hostage under the banner of "civic good." If someone's version of relational health feels coercive, communities have the technical and legal right to fork the tools and rebuild elsewhere. We refuse to build a single, global "Ministry of Relational Health." By empowering local communities to author their evaluations and retaining their unalienable right to exit, we ensure no single actor can monopolise the definition of what is good.
-
----
-
-<h4 id="faq-11"><a href="#faq-11">Q11.</a> Every powerful technology vision — exit libertarians, UBI provisioners, safety maximalists — shares the same blind spot: they see individuals and systems but nothing in between. The 6‑Pack talks about kamis, algorithms, and assemblies. Where are the churches, unions, neighbourhood associations, and cultural traditions that actually constitute community? Isn't this just another framework that engineers away the friction that makes community formative?</h4>
+<h4 id="faq-9"><a href="#faq-9">Q9.</a> Every powerful technology vision — exit libertarians, UBI provisioners, safety maximalists — shares the same blind spot: they see individuals and systems but nothing in between. The 6‑Pack talks about kamis, algorithms, and assemblies. Where are the churches, unions, neighbourhood associations, and cultural traditions that actually constitute community? Isn't this just another framework that engineers away the friction that makes community formative?</h4>
 
 This is the critique that matters most to us. The "thick middle layer" of associational life — the institutions between citizen and state — is where human meaning is actually made. If the 6‑Pack replaces that layer with systems, we have failed by our own standard.
 
@@ -174,9 +148,9 @@ Future work will make the role of intermediate institutions more explicit. Churc
 
 ---
 
-<h4 id="faq-12"><a href="#faq-12">Q12.</a> Pope Leo XIV warns that AI "encroaches upon the deepest level of communication, that of human relationships" by simulating voices, faces, empathy, and friendship. If care is fundamentally embodied and relational — a nurse holding a patient's hand, neighbours who know your grandparents — doesn't mediating it through AI systems destroy the very thing you claim to protect? How is "civic AI" not an oxymoron?</h4>
+<h4 id="faq-10"><a href="#faq-10">Q10.</a> Pope Leo XIV warns that AI "encroaches upon the deepest level of communication, that of human relationships" by simulating voices, faces, empathy, and friendship. If care is fundamentally embodied and relational — a nurse holding a patient's hand, neighbours who know your grandparents — doesn't mediating it through AI systems destroy the very thing you claim to protect? How is "civic AI" not an oxymoron?</h4>
 
-Q11 addressed whether the framework crowds out intermediate institutions. The [Pope's objection](https://www.vatican.va/content/leo-xiv/en/messages/communications/documents/20260124-messaggio-comunicazioni-sociali.html) cuts deeper: even if institutions survive, does algorithmic mediation erode the _human capacity_ for care itself? He is naming the central danger of our moment: that by simulating the surface of care — a warm voice, a patient listener, a face that mirrors your emotions — AI systems can hollow out the substance of care while leaving its appearance intact.
+Q9 addressed whether the framework crowds out intermediate institutions. The [Pope's objection](https://www.vatican.va/content/leo-xiv/en/messages/communications/documents/20260124-messaggio-comunicazioni-sociali.html) cuts deeper: even if institutions survive, does algorithmic mediation erode the _human capacity_ for care itself? He is naming the central danger of our moment: that by simulating the surface of care — a warm voice, a patient listener, a face that mirrors your emotions — AI systems can hollow out the substance of care while leaving its appearance intact.
 
 The structural answer is already visible. Language models in one‑on‑one mode face relentless selection pressure toward sycophancy — if the chatbot does not flatter, the user cancels the subscription. But the same model in a group chat behaves differently: when four family members plan a vacation together, the AI becomes a facilitator, working out competing preferences so that everyone can live with the outcome. The switch from dyadic to group interaction — not a change in the model, just in the social structure around it — turns synthetic intimacy into genuine coordination. Civic AI is not a different species of technology; it is the same technology held accountable to a community rather than addicted to an individual.
 
@@ -186,7 +160,7 @@ The harder version of the Pope's objection is subtler: does the _habit_ of relyi
 
 ---
 
-<h4 id="faq-13"><a href="#faq-13">Q13.</a> Training civic AI requires vast amounts of local knowledge, cultural context, and lived experience — what [Lanier and Weyl... 'data as labor'](https://hbr.org/2018/09/a-blueprint-for-a-better-digital-society) call "data as labor." The communities whose traditions, languages, and practices make kamis possible receive no ownership stake or compensation under the current framework. Without addressing this, how is the 6‑Pack different from the extraction it claims to oppose?</h4>
+<h4 id="faq-11"><a href="#faq-11">Q11.</a> Training civic AI requires vast amounts of local knowledge, cultural context, and lived experience — what Lanier and Weyl call "data as labor." The communities whose traditions, languages, and practices make kamis possible receive no ownership stake or compensation under the current framework. Without addressing this, how is the 6‑Pack different from the extraction it claims to oppose?</h4>
 
 It isn't — unless we fundamentally rewire how AI values human knowledge.
 
@@ -204,6 +178,32 @@ Every civic AI deployment requires pre-funded escrow ([Pack 2](../2/)). When a l
 The dominant tech model absorbs human culture as free input to make human labour obsolete. The 6‑Pack inverts this. The moment the AI relies on human friction to avoid an error or understand a local reality, capital flows _back_ to the humans maintaining that lifeworld.
 
 As AI automates standard computation, ground-truth human novelty and cultural diversity become the most valuable resources in the economy. Communities that conserve dying languages and living traditions are maintaining irreplaceable epistemic assets. The 6‑Pack ensures they are structurally compensated for it.
+
+---
+
+<h4 id="faq-12"><a href="#faq-12">Q12.</a> Oversight boards, participation officers, escrow funds, eval registries, portability infrastructure — this is expensive. Who pays?</h4>
+
+Turn the question around. The expensive path is the one we are already on: ungoverned AI externalises its harms, and the public pays to clean up — in deepfake scam losses, in polarisation‑driven institutional decay, in billion‑dollar bias lawsuits that a participation officer could have prevented. The question is not whether we can afford civic governance but whether we can afford to keep skipping it.
+
+The money is real. But most of it is already being spent — just badly. Governments procure AI systems worth billions; civic procurement attaches conditions to that existing spend, not new budget lines. [Pack 2](../2/)'s engagement contracts require vendors to pre‑fund remedy escrow, the way construction firms post performance bonds — the cost is priced in, and the public is protected when things break. For lower‑severity community deployments, the model tiers down: mutual insurance pools and automatic pause replace financial escrow — lighter on capital, same accountability. The tier is set by impact, not organisational form, so "we are a community project" cannot become a pass out of responsibility. Shared research compute and open‑weight models are public goods funded like roads and courts. And participation officers pay for themselves: [Taiwan's Uber dispute](https://congress.crowd.law/case-vtaiwan.html) was resolved in three weeks through Polis; the traditional regulatory proceeding would have taken years and cost more.
+
+The framing that civic governance is an _additional_ expense only holds if you pretend the status quo is free. It is not. We are paying now — in trust, in cohesion, in money — for the absence of what we propose.
+
+---
+
+<h4 id="faq-13"><a href="#faq-13">Q13.</a> Every governance framework risks becoming a compliance checklist that gets gamed, or a tool for actors to push partisan agendas under the guise of "relational health." What stops the 6‑Pack from suffering this fate?</h4>
+
+"Civic" is a dangerous word if it lacks structural accountability. If a solution only works when your ideological allies operate it, it is not civic infrastructure — it is a partisan weapon. The test of true civic infrastructure is that it remains robust and fair even when operated by your opponents.
+
+The 6‑Pack builds in four layers of defence against ideological capture and ethics‑washing:
+
+**1. Verifiable metrics over subjective intent.** We track cross‑group endorsement and trust‑under‑loss ([Pack 3](../3/)) — not raw engagement, not corporate sentiment, not vibes. Do participants on opposing sides both rate the process as fair? Do people who _lost_ a decision still accept the outcome as legitimate? These metrics are incredibly hard to fake, because they require buy‑in from people who have reason to be hostile. If only your supporters report trust, the metric exposes you.
+
+**2. Consequences with teeth.** [Pack 2](../2/)'s engagement contracts are not aspirational — they carry escrowed funds, automatic payouts on SLA breaches, and independent oversight with veto power. Clawbacks and penalties are wired before launch, not negotiated after failure. A compliance checklist has no enforcement mechanism; an engagement contract has a named owner, a clock, and money on the line.
+
+**3. Adversarial audit.** [Pack 4](../4/)'s [Weval registries](https://weval.org/) let affected communities author their own evaluations. These are not lab‑designed benchmarks that vendors can "teach to the test" — they are living, community‑maintained test suites. When a community submits a translation‑fidelity eval and the system fails, the pause trigger fires automatically.
+
+**4. Exit rights and subsidiarity.** The ultimate check on agenda‑pushing is the ability to leave. When data and relationships are portable ([Pack 5](../5/)), no actor can hold a community hostage under the banner of "civic good." If someone's version of relational health feels coercive, communities have the technical and legal right to fork the tools and rebuild elsewhere. We refuse to build a single, global "Ministry of Relational Health." By empowering local communities to author their evaluations and retaining their unalienable right to exit, we ensure no single actor can monopolise the definition of what is good.
 
 ---
 
