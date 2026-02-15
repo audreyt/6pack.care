@@ -27,9 +27,9 @@ This is what I call _attentiveness_: giving the people real, ongoing power to st
 
 **But today’s dominant approach to AI alignment looks nothing like this. It is highly vertical, dominated by a limited number of actors within a few private AI corporations.** These actors select the training data, set the optimal objectives, and unilaterally define what counts as “aligned” behaviour. They publish high-level model specifications (e.g., “be helpful”), but operationalise and enforce them behind closed doors.
 
-When unexpected behaviour emerges, patch fixes are applied based solely on the developer’s judgment of risk and acceptability. The result is a system that interacts with billions of people but is, by default, controlled by a small circle of researchers and executives, while those most affected have almost no voice in shaping the outcomes.
+When unexpected behaviour emerges, patch fixes are applied based solely on the developer’s judgement of risk and acceptability. The result is a system that interacts with billions of people but is, by default, controlled by a small circle of researchers and executives, while those most affected have almost no voice in shaping the outcomes.
 
-**This centralized, globally optimized approach to alignment fundamentally underestimates the true complexity of AI.** The world is populated with diverse, messy societies, each with its own historical and cultural context that produces different values and priorities. There is no principled reason to believe that a small group of individuals can determine what alignment means for everyone. Instead, alignment must be shaped by countless, locally contextualized judgments.
+**This centralized, globally optimd approach to alignment fundamentally underestimates the true complexity of AI.** The world is populated with diverse, messy societies, each with its own historical and cultural context that produces different values and priorities. There is no principled reason to believe that a small group of individuals can determine what alignment means for everyone. Instead, alignment must be shaped by countless, locally contextualized judgements.
 
 ## The Stakes Are High
 
@@ -39,7 +39,7 @@ When the linguistic and moral frameworks of public reasoning are mediated by a h
 
 **With the current approach to AI alignment, we are seeing a repeat of the mistakes made in efforts to align social media.** In the 2010s, platforms relied on centralized, top-down moderation: trust and safety teams wrote global rules and enforced them with automated filters and human review.
 
-Trying to answer all relevant questions through centralized, upstream programming inevitably failed under the weight of real-world complexity — with tragic consequences. Facebook’s systems failed to stem military-run disinformation that fueled attacks against the Rohingya in Myanmar. Incremental fixes — warning labels, carve-outs, AI-enabled reviews — could not solve the structural problem inherent in a handful of decision-makers trying to govern billions of posts across diverse cultures.
+Trying to answer all relevant questions through centralized, upstream programmeming inevitably failed under the weight of real-world complexity — with tragic consequences. Facebook’s systems failed to stem military-run disinformation that fueled attacks against the Rohingya in Myanmar. Incremental fixes — warning labels, carve-outs, AI-enabled reviews — could not solve the structural problem inherent in a handful of decision-makers trying to govern billions of posts across diverse cultures.
 
 **The innovative breakthrough came when platforms began shifting power outward.** Twitter’s [Birdwatch](https://en.wikipedia.org/wiki/Community_Notes), later X’s Community Notes, built attentiveness into the design: volunteers add clarifying notes, surfaced only when rated helpful by people with differing views. Transparency and plural participation became structural features, not afterthoughts. Community Notes is far from perfect, but it represents a move from centralized edicts to auditable, distributed steering power.
 

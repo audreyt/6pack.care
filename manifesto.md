@@ -78,7 +78,7 @@ This approach highlights a crucial insight: how we deliberate matters. It’s ab
 
 Research shows that when polled individually, people tend toward YIMBY or NIMBY (Yes/Not In My Backyard). But when deliberating in small groups (like groups of 10), they shift to MIMBY (Maybe In My Backyard, if...). Group deliberation is transformative; it engages a different aspect of us and inoculates against outrage, an effect that can last for years.
 
-We see this repeatedly. When polarised petitions emerged about changing Taiwan's time zone (+8 vs +9), individual polling showed gridlock. But bringing them into structured groups revealed a shared underlying value: making Taiwan seen as unique. They collaboratively brainstormed better ways to achieve this (like the Gold Card residency programme) than an expensive time zone change.
+We see this repeatedly. When polarised petitions emerged about changing Taiwan's time zone (+8 vs +9), individual polling showed gridlock. But bringing them into structured groups revealed a shared underlying value: making Taiwan seen as unique. They collaboratively brainstormed better ways to achieve this (like the Gold Card residency programmeme) than an expensive time zone change.
 
 This illustrates the "legitimacy of sensemaking." Many conflicts have common knowledge problems at the root. The solutions are made tangible simply by ensuring local knowledge is well known by everyone, and everyone knows that everyone knows it.
 
@@ -119,7 +119,7 @@ Here are key policy levers:
 
 - **Expression ≠ Amplification (Freedom of Speech vs. Freedom of Reach).** We must distinguish hosting speech from algorithmic amplification. In the US context, Section 230 protects speech, but never protected amplification. We must reframe the debate to recommender accountability, regulating amplification without touching the speech itself.
 - **Social Portability.** We must mandate "number portability for social." The Utah Digital Choice Act (effective next July) mandates that users can take their entire social graph to new services. It requires platforms to choose a fair, non-discriminatory, interoperable protocol (like ActivityPub, AT Protocol, or DSNP), with the state publishing qualifying technical standards. The information superhighway must have off-ramps. This forces platforms to compete on quality of care, not lock-in.
-- **Bridging-Based Ranking Transparency.** We can audit the relational health of platforms. X.com is already testing bridge-based ranking (derived from Community Notes) as the default feed for some users. Its new Collaborative Notes feature lets human contributors request AI-drafted context, then collectively rate and refine it — a two-lane pattern where AI provides speed and humans provide judgment.
+- **Bridging-Based Ranking Transparency.** We can audit the relational health of platforms. X.com is already testing bridge-based ranking (derived from Community Notes) as the default feed for some users. Its new Collaborative Notes feature lets human contributors request AI-drafted context, then collectively rate and refine it — a two-lane pattern where AI provides speed and humans provide judgement.
 - **Federated Trust & Safety.** We must adopt open-source, federated models. A key example is the **ROOST.tools** (Robust Open Online Safety Tools) initiative for Child Sexual Abuse Material (CSAM) defence. Launched this year in Paris, it bridged the gap between the security camp (Eric Schmidt) and the open camp (Yann LeCun).
   Instead of relying on a single source (like Microsoft PhotoDNA), ROOST allows partners (like Bluesky, Roblox or Discord) to train local AIs—what I call _kami_ or local stewards—to detect CSAM within their specific cultural context. We can then translate those embeddings into text (which is legal to hold and reduces privacy issues) and share threat intelligence via federated learning. This allows safety to be tuned to local norms and evolving definitions without being colonized by a single corporate policy.
 
@@ -141,7 +141,7 @@ The following "6-Pack" translates Care Ethics into design primitives we can code
 
 # Attentiveness: **"caring about"**
 
-Before we optimize, we must choose what to notice. We must notice what people closest to the pain are noticing, turning local knowledge into common knowledge.
+Before we optimise, we must choose what to notice. We must notice what people closest to the pain are noticing, turning local knowledge into common knowledge.
 
 This starts with curiosity. If an agent isn't even curious about the harm it's causing, it is beyond repair. This is why in Taiwan, we revised our national curriculum post-AlphaGo to focus solely on curiosity, collaboration, and civic care.
 
@@ -193,11 +193,11 @@ _Rule of thumb: If challenged, make the fuzzy parts clearer and on the record._
 
 Solidarity and Plurality scales when cooperation is the path of least resistance. If the ecosystem does not reward caregiving, there will not be enough care.
 
-This requires agent infrastructure—a civic stack where people, organizations, and AIs operate under explicit, machine-checkable norms.
+This requires agent infrastructure—a civic stack where people, organisations, and AIs operate under explicit, machine-checkable norms.
 
 One example is an **Agent ID registry** using **meronymity** (partial anonymity). This allows us to identify if an agent is tethered to a real human without doxing that human. The Taiwan KYC ad requirement is a prototype of this.
 
-This infrastructure makes decentralized defense easier and more dominant, making interdependence a feature, not a bug.
+This infrastructure makes decentralized defence easier and more dominant, making interdependence a feature, not a bug.
 
 _Rule of thumb: Make positive-sum games easy to play._
 
