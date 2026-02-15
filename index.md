@@ -24,7 +24,7 @@ We usually try to align AI by giving it rules and goals—top-down controls to k
 
 AI doesn't coexist in a vacuum. It lives in our communities, shaped by power dynamics and clashing values. As these systems move faster than we can discuss them, we need more than just safeguards. We need to bake interdependence, dialogue, and mutual responsiveness right into how we build and govern them.
 
-We call this **civic care**. Rooted in care ethics and the [Plurality movement](https://plurality.net/), this approach treats us all as gardeners. AI becomes local infrastructure—a spirit of place, a **_kami_**—that supports care _at the speed trust actually grows_. It's not about colonising or maximising; it's about tending to the garden.
+We call this **civic care**. Rooted in care ethics and the Plurality movement, this approach treats us all as gardeners. AI becomes local infrastructure—a spirit of place, a **_kami_**—that supports care _at the speed trust actually grows_. It's not about colonising or maximising; it's about tending to the garden.
 
 ## The 6-Pack
 
@@ -58,9 +58,9 @@ Six design principles that turn care ethics into something we can code. Think of
 
 </div>
 
-Our project — a [manifesto](/manifesto/) and a book arriving in 2026 — explores what happens when we take Joan Tronto's care ethics and the Plurality agenda seriously as a strategy for AI alignment.
+Our project — a [manifesto](/manifesto/) and a book arriving in 2026 — explores what happens when we take Joan Tronto's care ethics seriously as a strategy for AI alignment.
 
-## From Care to Code: Why Plurality Matters
+## From Care to Code
 
 The core problem of AI safety is an old one: you can’t get "what should be" (values) just by looking at "what is" (data).
 
@@ -68,7 +68,7 @@ Standard approaches try to teach machines our values by watching how we behave. 
 
 Care ethics offers a different path. It starts with the simple fact that we depend on each other. That dependency creates a natural "ought"—we _should_ care for one another because we _need_ one another. The fact of our connection contains its own value.
 
-The Plurality agenda applies this to technology. Inspired by experiments like vTaiwan, it turns care into a process: identifying needs (Attentiveness), gathering perspectives (Responsibility), working through options (Competence), finding common ground (Responsiveness), and maintaining trust (Solidarity).
+[⿻ Plurality](https://plurality.net/) applies this to technology. Inspired by experiments like vTaiwan, it turns care into a process: identifying needs (Attentiveness), gathering perspectives (Responsibility), working through options (Competence), finding common ground (Responsiveness), and maintaining trust (Solidarity).
 
 This gives us a new way to align AI: **alignment-by-process**. Instead of just trying to code the "right" values once and for all, we build a continuous process that earns trust by adapting to what the community needs.
 
