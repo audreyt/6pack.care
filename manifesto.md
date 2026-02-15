@@ -64,7 +64,7 @@ In 2015, we handled our first major case using a bridge-making algorithm. Uber's
 
 According to research, any social network with a "dunk button" (reposting) leads to polarisation. Polis removes these buttons. In fact, it doesn't even have a reply button.
 
-Users see a statement from a fellow citizen and can only agree or disagree. Then, users see a visualisation where their avatars move towards a group of people who feel similarly.
+Participants see a statement from a fellow citizen and can only agree or disagree. Then, they see a visualisation where their avatars move towards a group of people who feel similarly.
 
 Crucially, we offer a "bridging bonus." We reward people who share ideas that speak to both sides. Using traditional machine learning tools such as principal component analysis (PCA) and dimensional reduction, we highlight ideas that **bridge** divides.
 
@@ -107,7 +107,7 @@ In Japan, 33-year-old AI engineer **Takahiro Anno** was inspired by our Pluralit
 
 He was then tapped to lead the Tokyo 2050 consultation. Based on success in that endeavour, he ran for a seat in the House of Councillors, winning over 2.5% of the national vote. His "Team Mirai" is now a national party in the Diet.
 
-In California, the **Engaged California** platform (developed with Governor Newsom's team) was intended for deliberation on teen social media use. Then the LA wildfires hit. In response, they pivoted quickly to use AI sensemaking to co-create wildfire recovery plans, which are now being implemented. They are currently hosting deliberations on government efficiency with state employees.
+In California, the **Engaged California** platform (developed with Governor Newsom's team) was intended for deliberation on teen social media use. Then the LA wildfires hit. In response, we pivoted quickly to use AI sensemaking to co-create wildfire recovery plans, which are now being implemented. They are currently hosting deliberations on government efficiency with state employees.
 
 These successes treat deliberation as a civic muscle that needs exercise. But demos alone do not bend the curve. Law and market design must follow.
 
@@ -118,8 +118,8 @@ To move these governance engines from pilots to the default, we must reengineer 
 Here are key policy levers:
 
 - **Expression ≠ Amplification (Freedom of Speech vs. Freedom of Reach).** We must distinguish hosting speech from algorithmic amplification. In the US context, Section 230 protects speech, but has never protected amplification. We must reframe the debate to recommender accountability, regulating amplification without touching the speech itself.
-- **Social Portability.** We must mandate "number portability for social." The Utah Digital Choice Act (effective July 2026) mandates that users can take their entire social graph to new services. It requires platforms to choose a fair, non-discriminatory, interoperable protocol (e.g., ActivityPub, AT Protocol, or DSNP), with the state publishing qualifying technical standards. The information superhighway must have off-ramps, which forces platforms to compete on quality of care, not lock-in.
-- **Bridging-Based Ranking Transparency.** We can audit the relational health of platforms. X.com is already testing bridge-based ranking (derived from Community Notes) as the default feed for some users. X.com's new Collaborative Notes feature lets human contributors request AI-drafted context, then collectively rate and refine it—a two-lane pattern where AI provides speed and humans provide judgement.
+- **Social Portability.** We must mandate "number portability for social." The Utah Digital Choice Act (effective July 2026) mandates that citizens can take their entire social graph to new services. It requires platforms to choose a fair, non-discriminatory, interoperable protocol (e.g., ActivityPub, AT Protocol, or DSNP), with the state publishing qualifying technical standards. The information superhighway must have off-ramps, which forces platforms to compete on quality of care, not lock-in.
+- **Bridging-Based Ranking Transparency.** We can audit the relational health of platforms. X.com is already testing bridge-based ranking (derived from Community Notes) as the default feed. Its new Collaborative Notes feature lets human contributors request AI-drafted context, then collectively rate and refine it—a two-lane pattern where AI provides speed and humans provide judgement.
 - **Federated Trust & Safety.** We must adopt open-source, federated models. A key example is the **ROOST.tools** (Robust Open Online Safety Tools) initiative for Child Sexual Abuse Material (CSAM) defence. Launched this year in Paris, the initiative bridged the gap between the security camp (Eric Schmidt) and the open camp (Yann LeCun).
   Instead of relying on a single source (e.g., Microsoft PhotoDNA), ROOST allows partners (e.g., Bluesky, Roblox, or Discord) to train local AIs—what I call _kami_ or local stewards—to detect CSAM within their specific cultural context. We can then translate those embeddings into text (which is legal to hold and reduces privacy issues) and share threat intelligence via federated learning. This allows safety to be tuned to local norms and evolving definitions without being colonised by a single corporate policy.
 
