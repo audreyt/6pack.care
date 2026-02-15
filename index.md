@@ -68,7 +68,7 @@ Standard approaches try to teach machines our values by watching how we behave. 
 
 Care ethics offers a different path, starting with the simple fact that we depend on each other. That dependency creates a natural "ought"—we _should_ care for one another because we _need_ one another. The fact of our connection contains its own value.
 
-[⿻ Plurality](https://plurality.net/) applies this to technology. Inspired by experiments like vTaiwan, it turns care into a process:
+[_⿻ Plurality_](https://plurality.net/) applies this to technology. Inspired by experiments like vTaiwan, it turns care into a process:
 
 - Recognising who needs care (Attentiveness)
 - Binding commitments to act (Responsibility)
