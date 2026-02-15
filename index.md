@@ -24,7 +24,7 @@ We usually try to align AI by giving it rules and goals—top-down controls to k
 
 AI doesn't coexist in a vacuum. It lives in our communities, shaped by power dynamics and clashing values. As AI systems move faster than we can discuss them, we need more than just safeguards. We need to bake interdependence, dialogue, and mutual responsiveness right into how we build and govern those systems.
 
-We call this **civic care**. Rooted in care ethics and the Plurality movement, this approach treats us all as gardeners. AI becomes local infrastructure—a spirit of place, a **_kami_**—that supports care _at the speed trust actually grows_. It's not about colonising or maximising; it's about tending to the garden.
+We call this **civic care**. Rooted in care ethics and the [⿻ Plurality movement](https://plurality.net/), this approach treats us all as gardeners. AI becomes local infrastructure—a spirit of place, a **_kami_**—that supports care _at the speed trust actually grows_. It's not about colonising or maximising; it's about tending to the garden.
 
 ## The 6-Pack
 
