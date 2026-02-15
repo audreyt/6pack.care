@@ -14,13 +14,14 @@ from __future__ import annotations
 import os
 import re
 import sys
+from collections import defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional
 
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
-from doc_sync_config import DOC_ID, SITE_URL, TAB_MAP, SYNC_FILES, CONTENT_START, validate_sync_config
+from doc_sync_config import SITE_URL, TAB_MAP, SYNC_FILES, CONTENT_START, doc_id_for, validate_sync_config
 
 HEADING_STYLE = {
     1: "HEADING_1",
@@ -528,50 +529,56 @@ def main() -> None:
     creds = _credentials()
     service = build("docs", "v1", credentials=creds)
 
-    doc = service.documents().get(
-        documentId=DOC_ID,
-        includeTabsContent=True,
-    ).execute()
-
+    # Group files by doc ID so each document is fetched once.
+    groups: dict[str, list[Path]] = defaultdict(list)
     for md_path in md_paths:
-        filename = md_path.name
-        tab_id = TAB_MAP.get(filename)
-        if not tab_id:
-            _warn_no_tab_mapping(filename)
-            continue
+        groups[doc_id_for(md_path.name)].append(md_path)
 
-        tab = _find_tab(doc["tabs"], tab_id)
-        if not tab:
-            _warn_tab_not_found(filename, tab_id)
-            continue
-
-        body = tab["documentTab"]["body"]
-        end_index = body["content"][-1]["endIndex"]
-
-        # Determine where managed content starts in the tab.
-        content_prefix = CONTENT_START.get(filename)
-        if content_prefix:
-            boundary = _find_content_start(body, content_prefix)
-            offset = boundary if boundary is not None else end_index - 1
-        else:
-            offset = 1  # full-tab sync (after section break)
-
-        md_text = md_path.read_text(encoding="utf-8")
-        title, blocks = parse_markdown(md_text, filename=filename)
-        requests, full_text = _build_requests(
-            title, blocks, tab_id, end_index, insert_at=offset,
-        )
-
-        result = service.documents().batchUpdate(
-            documentId=DOC_ID,
-            body={"requests": requests},
+    for did, targets in groups.items():
+        doc = service.documents().get(
+            documentId=did,
+            includeTabsContent=True,
         ).execute()
 
-        rev = result.get("writeControl", {}).get("requiredRevisionId", "?")
-        print(
-            f"{filename} → tab {tab_id}: "
-            f"{len(blocks)} blocks, {len(requests)} requests, rev {rev[:12]}…"
-        )
+        for md_path in targets:
+            filename = md_path.name
+            tab_id = TAB_MAP.get(filename)
+            if not tab_id:
+                _warn_no_tab_mapping(filename)
+                continue
+
+            tab = _find_tab(doc["tabs"], tab_id)
+            if not tab:
+                _warn_tab_not_found(filename, tab_id)
+                continue
+
+            body = tab["documentTab"]["body"]
+            end_index = body["content"][-1]["endIndex"]
+
+            # Determine where managed content starts in the tab.
+            content_prefix = CONTENT_START.get(filename)
+            if content_prefix:
+                boundary = _find_content_start(body, content_prefix)
+                offset = boundary if boundary is not None else end_index - 1
+            else:
+                offset = 1  # full-tab sync (after section break)
+
+            md_text = md_path.read_text(encoding="utf-8")
+            title, blocks = parse_markdown(md_text, filename=filename)
+            requests, full_text = _build_requests(
+                title, blocks, tab_id, end_index, insert_at=offset,
+            )
+
+            result = service.documents().batchUpdate(
+                documentId=did,
+                body={"requests": requests},
+            ).execute()
+
+            rev = result.get("writeControl", {}).get("requiredRevisionId", "?")
+            print(
+                f"{filename} → tab {tab_id}: "
+                f"{len(blocks)} blocks, {len(requests)} requests, rev {rev[:12]}…"
+            )
 
 
 if __name__ == "__main__":

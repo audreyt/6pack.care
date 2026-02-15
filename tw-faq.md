@@ -80,7 +80,7 @@ nav_next:
 
 在實踐中，臺灣從大會到針對深偽詐騙的立法制定只花了數月——比大多數企業政策週期更快。審議之所以慢，往往是因為它被當作單次事件，而非常設基礎設施。
 
-還有一個更強的主張。AI 不僅加速了快車道——它使慢車道本身比任何先前形式的集體決策都更強大。[安野貴博（Takahiro Anno）](https://en.wikipedia.org/wiki/Takahiro_Anno)在東京群眾外包了都知事競選政見，以任何語言匯集分散知識，速度遠超任何民調機構。X（前 Twitter）的[「協作備註」（Community Notes）](https://communitynotes.x.com/guide/en/contributing/collaborative-notes)讓人類貢獻者請求 AI 起草搭橋脈絡，再集體評分與修潤——以資訊傳播的速度追究主張的責任，同時保持人類判斷在迴圈之中。這些能力隨著 AI 進步而複合增長。技術移動得越快，審議基礎設施就變得越強大。關於速度的反對意見，把因果軌跡搞反了。
+還有一個更強的主張。AI 不僅加速了快車道——它使慢車道本身比任何先前形式的集體決策都更強大。[安野貴博（Takahiro Anno）](https://en.wikipedia.org/wiki/Takahiro_Anno)在東京群眾外包了都知事競選政見，以任何語言匯集分散知識，速度遠超任何民調機構。X 平台新推出的[「協作備註」（Community Notes）](https://communitynotes.x.com/guide/en/contributing/collaborative-notes)讓人類貢獻者請求 AI 起草搭橋脈絡，再集體評分與修潤——以資訊傳播的速度追究主張的責任，同時保持人類判斷在迴圈之中。這些能力隨著 AI 進步而複合增長。技術移動得越快，審議基礎設施就變得越強大。關於速度的反對意見，把因果軌跡搞反了。
 
 ---
 

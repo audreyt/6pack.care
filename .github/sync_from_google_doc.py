@@ -14,9 +14,10 @@ from __future__ import annotations
 import os
 import re
 import sys
+from collections import defaultdict
 from pathlib import Path
 
-from doc_sync_config import DOC_ID, SITE_URL, TAB_MAP, SYNC_FILES, CONTENT_START, validate_sync_config
+from doc_sync_config import SITE_URL, TAB_MAP, SYNC_FILES, CONTENT_START, doc_id_for, validate_sync_config
 
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
@@ -316,36 +317,42 @@ def main() -> None:
     creds = _credentials()
     service = build("docs", "v1", credentials=creds)
 
-    doc = (
-        service.documents()
-        .get(documentId=DOC_ID, includeTabsContent=True)
-        .execute()
-    )
-
+    # Group targets by doc ID so each document is fetched once.
+    groups: dict[str, list[Path]] = defaultdict(list)
     for target in target_paths:
-        filename = target.name
-        tab_id = TAB_MAP.get(filename)
-        if not tab_id:
-            _warn_no_tab_mapping(filename)
-            continue
+        groups[doc_id_for(target.name)].append(target)
 
-        tab = _find_tab(doc["tabs"], tab_id)
-        if not tab:
-            _warn_tab_not_found(filename, tab_id)
-            continue
-
-        page_path = "/" + Path(filename).stem + "/"
-        md = tab_to_markdown(
-            tab, page_path,
-            skip_first_h1=True,
-            content_start=CONTENT_START.get(filename),
+    for did, targets in groups.items():
+        doc = (
+            service.documents()
+            .get(documentId=did, includeTabsContent=True)
+            .execute()
         )
 
-        front = _extract_front_matter(target)
-        html_blocks = _extract_html_blocks(target)
-        md = _reinject_html_blocks(md, html_blocks)
-        target.write_text(front + md, encoding="utf-8")
-        print(f"{filename} ← tab {tab_id}")
+        for target in targets:
+            filename = target.name
+            tab_id = TAB_MAP.get(filename)
+            if not tab_id:
+                _warn_no_tab_mapping(filename)
+                continue
+
+            tab = _find_tab(doc["tabs"], tab_id)
+            if not tab:
+                _warn_tab_not_found(filename, tab_id)
+                continue
+
+            page_path = "/" + Path(filename).stem + "/"
+            md = tab_to_markdown(
+                tab, page_path,
+                skip_first_h1=True,
+                content_start=CONTENT_START.get(filename),
+            )
+
+            front = _extract_front_matter(target)
+            html_blocks = _extract_html_blocks(target)
+            md = _reinject_html_blocks(md, html_blocks)
+            target.write_text(front + md, encoding="utf-8")
+            print(f"{filename} ← tab {tab_id}")
 
 
 if __name__ == "__main__":
