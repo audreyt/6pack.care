@@ -97,7 +97,7 @@ We convened a national **Alignment Assembly** with the Collective Intelligence P
 
 The final package earned over 85 percent cross-partisan support. This rigour is crucial. It functions as a "duck-rabbit"—from one side it looks like a deliberation, from the other it looks like a rigorous poll, providing legitimacy for the legislature.
 
-The amendments passed within months. Now, Taiwan is likely the only country imposing full-spectrum, real-name KYC rules for social media advertisements. This approach employs AI as **Assistive Intelligence**.
+The amendments passed within months. As of 2025, Taiwan is likely the only country imposing full-spectrum, real-name KYC rules for social media advertisements. This approach employs **Civic AI**.
 
 # From Tokyo to California
 
