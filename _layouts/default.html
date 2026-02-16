@@ -57,17 +57,16 @@
 
         <main>{{ content }}</main>
 
-        {% if next_action or manifesto_link %}
+        {% if next_action or prev_action %}
         <section class="next-action">
             <div class="next-action-content">
-                {% if manifesto_link %}
+                {% if prev_action %}
                 <a
-                    href="{{ manifesto_link | relative_url }}"
+                    href="{{ prev_action.url | relative_url }}"
                     class="next-action-button"
                 >
-                    <span class="button-text"
-                        >↗️ {{ manifesto_text | default: "Manifesto" }}</span
-                    >
+                    <span class="button-arrow">←</span>
+                    <span class="button-text">{{ prev_action.text }}</span>
                 </a>
                 {% endif %} {% if next_action %}
                 <a

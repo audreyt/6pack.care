@@ -8,6 +8,10 @@ lang: en-gb
 alt_lang_url: "/tw/"
 manifesto_link: "/manifesto"
 manifesto_text: "Manifesto"
+prev_action:
+    url: "/faq"
+    text: "FAQ"
+    arrow: "left"
 next_action:
     url: "/1"
     text: "Pack 1: Attentiveness in Recognition"
@@ -20,11 +24,13 @@ next_action:
 
 ## The Case for Relational Alignment
 
-We usually try to align AI by giving it rules and goals—top-down controls to keep it safe. While these methods are vital for technical safety, they aren't enough.
+We usually try to align AI by giving it rules and goals—top-down controls to keep it safe. These tools matter, but they aren't enough. Behind them lies an untested assumption: that AI is a force to be subdued.
 
-AI doesn't coexist in a vacuum. It lives in our communities, shaped by power dynamics and clashing values. As AI systems move faster than we can discuss them, we need more than just safeguards. We need to bake interdependence, dialogue, and mutual responsiveness right into how we build and govern those systems.
+When we start from fear, we fall into one of two extremes—reject it outright or surrender to it completely—instead of building a healthy relationship.
 
-We call this **civic care**. Rooted in care ethics and the [⿻ Plurality movement](https://plurality.net/), this approach treats us all as gardeners. AI becomes local infrastructure—a spirit of place, a **_kami_**—that supports care _at the speed trust actually grows_. It's not about colonising or maximising; it's about tending to the garden.
+AI doesn't exist in a vacuum. It lives in our communities, shaped by power dynamics and clashing values. As it moves faster than we do, the answer isn't anthropomorphic fantasy; it's honesty about interdependence. We need to build dialogue and mutual responsiveness right into how we design and govern these systems.
+
+We call this approach **civic care**: treating us all as gardeners. AI becomes local infrastructure—a spirit of place, a _kami_—that supports relational health _at the speed trust actually grows_. It's not about colonising or maximising; it's about tending to the garden.
 
 ## The 6-Pack
 
@@ -35,7 +41,7 @@ Six design principles turn care ethics into something we can code. Think of them
 - **[Pack 3: Competence](/3/)** — "Care-giving." Trust the process, not just the promise. We focus on transparency, fast feedback loops, and automatic "circuit breakers" if things go wrong.
 - **[Pack 4: Responsiveness](/4/)** — "Care-receiving." Check the results. We rely on evaluations written by the community itself. If someone challenges the outcome, we owe them a clear, public explanation.
 - **[Pack 5: Solidarity](/5/)** — "Caring with." Make it win-win. We build for data portability and shared safety, creating deals where everyone is better off, rather than locking people in.
-- **[Pack 6: Symbiosis](/6/)** — "Kami of care." Keep it grounded. Local, temporary, and bounded. No survival instinct, no need to take over the world. We build for "enough," not "forever."
+- **[Pack 6: Symbiosis](/6/)** — "Kami of care." Keep it grounded. Local, temporary, and bounded. No drive for immortality, no need to take over the world. We build for "enough," not "forever."
 - **[Frequently Asked Questions](/faq/)** — The hard questions: What about speed? Cost? Bad actors? And how the 6-Pack handles them.
 
 ## Latest
