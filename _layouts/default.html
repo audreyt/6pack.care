@@ -38,9 +38,9 @@
                 {% endif %}
             </div>
             <h1>
-                {{ header_title | default: title }}
-                <span style="font-weight: 300">—</span> {{ subtitle | default:
-                "Institute for Ethics in AI" }}
+                <span style="white-space: nowrap">{{ header_title | default: title }}</span>
+                <span style="font-weight: 300">—</span>
+                <span style="white-space: nowrap">{{ subtitle | default: "Institute for Ethics in AI" }}</span>
             </h1>
             {% if description %}
             <p>{{ description }}</p>
