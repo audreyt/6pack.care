@@ -30,7 +30,7 @@ When we start from fear, we fall into one of two extremes—reject it outright o
 
 AI doesn't exist in a vacuum. It lives in our communities, shaped by power dynamics and clashing values. As it moves faster than we do, the answer isn't anthropomorphic fantasy; it's honesty about interdependence. We need to build dialogue and mutual responsiveness right into how we design and govern these systems.
 
-We call this approach **civic care**: treating us all as gardeners. AI becomes local infrastructure—a spirit of place, a _kami_—that supports relational health _at the speed trust actually grows_. It's not about colonising or maximising; it's about tending to the garden.
+We call this approach **Civic AI**: treating us all as gardeners. AI becomes local infrastructure—a spirit of place, a _kami_—that supports relational health _at the speed trust actually grows_. It's not about colonising or maximising; it's about tending to the garden.
 
 ## The 6-Pack
 
