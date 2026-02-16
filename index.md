@@ -2,7 +2,7 @@
 layout: default
 title: "6-Pack of Care"
 header_title: "6-Pack of Care"
-subtitle: "Institute for Ethics in AI"
+subtitle: "Civic AI"
 description: "Research project by Audrey Tang and Caroline Green"
 lang: en-gb
 alt_lang_url: "/tw/"
