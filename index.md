@@ -22,7 +22,7 @@ next_action:
 <img src="/img/overview-small.jpg" alt="6-Pack of Care visual overview" class="overview-image">
 </div>
 
-## The Case for Relational Alignment
+## Civic AI
 
 We usually try to align AI by giving it rules and goals—top-down controls to keep it safe. These tools matter, but they aren't enough. Behind them lies an untested assumption: that AI is a force to be subdued.
 
@@ -84,7 +84,7 @@ Care ethics offers a different path, starting with the simple fact that we depen
 
 This process gives us a new way to align AI: **alignment-by-process**. Instead of just trying to code the "right" values once and for all, we build a continuous process that earns trust by adapting to what the community needs.
 
-The AI then shifts from being an optimiser chasing a fixed goal to a "Symbiotic AI"—something created by and for the community. AI's success isn't measured by a score, but by the health of the relationships it supports. Symbiotic AI learns our values by helping us practice them.
+The AI then shifts from being an optimiser chasing a fixed goal to a **Civic AI**—something created by and for the community. AI's success isn't measured by a score, but by the health of the relationships it supports. Civic AI learns our values by helping us practice them.
 
 ## Kami in the Machine
 
