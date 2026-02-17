@@ -16,7 +16,7 @@ nav_next:
 _Diplomatic time runs in years. Algorithmic time runs in milliseconds. AI crisis diplomacy must close that gap._
 
 <div class="video-embed">
-<iframe src="https://customer-07bto6bf9uibrlc3.cloudflarestream.com/ab007fba825037b007039c2e647bf5f4/iframe" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://customer-07bto6bf9uibrlc3.cloudflarestream.com/ab007fba825037b007039c2e647bf5f4/iframe?defaultTextTrack=en" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 Good local time. I am Audrey Tang, Taiwan's cyber ambassador, first digital minister, and 2025 Right Livelihood Laureate. My heartfelt thanks to AI Safety Asia for staging this important conversation at the India AI Impact Summit.
