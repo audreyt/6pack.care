@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: "四：調適中的回應力"
+title: "四：回應力——接收關懷"
 lang: zh-tw
 alt_lang_url: "/4"
 permalink: "/tw/4/"

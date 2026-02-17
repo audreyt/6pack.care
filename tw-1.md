@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: "一：辨識中的覺察力"
+title: "一：覺察力——感知關懷"
 lang: zh-tw
 alt_lang_url: "/1"
 permalink: "/tw/1/"

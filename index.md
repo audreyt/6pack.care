@@ -14,7 +14,7 @@ prev_action:
     arrow: "left"
 next_action:
     url: "/1"
-    text: "Pack 1: Attentiveness in Recognition"
+    text: "Pack 1: Attentiveness"
     arrow: "right"
 ---
 

@@ -14,7 +14,7 @@ prev_action:
     text: "常見問題"
 next_action:
     url: "/tw/1"
-    text: "一：辨識中的覺察力"
+    text: "一：覺察力"
 ---
 
 <div class="overview-section">

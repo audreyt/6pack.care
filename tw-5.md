@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: "五：群體中的團結力"
+title: "五：團結力——共同關懷"
 lang: zh-tw
 alt_lang_url: "/5"
 permalink: "/tw/5/"

@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: "六：願景中的共生力"
+title: "六：共生力——地神般的關懷"
 lang: zh-tw
 alt_lang_url: "/6"
 permalink: "/tw/6/"

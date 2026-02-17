@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: "二：參與中的負責力"
+title: "二：負責力——承擔關懷"
 lang: zh-tw
 alt_lang_url: "/2"
 permalink: "/tw/2/"

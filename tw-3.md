@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: "三：行動中的勝任力"
+title: "三：勝任力——給予關懷"
 lang: zh-tw
 alt_lang_url: "/3"
 permalink: "/tw/3/"
