@@ -74,6 +74,12 @@ def _normalise_url(url: str, page_path: str = "/faq/") -> str:
 # ── Inline markdown parser ───────────────────────────────────────────
 
 
+_HTML_BOLD_OPEN = re.compile(r"^<(b|strong)\b", re.IGNORECASE)
+_HTML_BOLD_CLOSE = re.compile(r"^</(b|strong)>", re.IGNORECASE)
+_HTML_ITALIC_OPEN = re.compile(r"^<(i|em)\b", re.IGNORECASE)
+_HTML_ITALIC_CLOSE = re.compile(r"^</(i|em)>", re.IGNORECASE)
+
+
 def _parse_inline(text: str, page_path: str = "/faq/") -> list[Span]:
     """Parse inline markdown (bold, italic, links) into Spans via CommonMark."""
     tokens = _md.parseInline(text, {})
@@ -98,6 +104,16 @@ def _parse_inline(text: str, page_path: str = "/faq/") -> list[Span]:
             link = _normalise_url(tok.attrGet("href") or "", page_path)
         elif tok.type == "link_close":
             link = None
+        elif tok.type == "html_inline":
+            tag = tok.content
+            if _HTML_BOLD_OPEN.match(tag):
+                bold = True
+            elif _HTML_BOLD_CLOSE.match(tag):
+                bold = False
+            elif _HTML_ITALIC_OPEN.match(tag):
+                italic = True
+            elif _HTML_ITALIC_CLOSE.match(tag):
+                italic = False
         elif tok.type in ("text", "softbreak", "code_inline"):
             content = "\n" if tok.type == "softbreak" else tok.content
             spans.append(Span(content, bold=bold, italic=italic, link=link))

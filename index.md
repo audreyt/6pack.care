@@ -46,7 +46,9 @@ Six design principles turn care ethics into something we can code. Think of them
 
 ## Latest
 
-["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/): Taiwan's citizen-led response to AI-enabled scams offers a better model where citizens, not big tech, decide what “aligned” means.
+["Treat AI Safety Like Civil Defence"](/ai-crisis-diplomacy/): Diplomatic time runs in years; algorithmic time runs in milliseconds. A speech on closing that gap — with three building blocks, a regional proposal, and the 6-Pack of Care.
+
+["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/): Taiwan's citizen-led response to AI-enabled scams offers a better model where citizens, not big tech, decide what "aligned" means.
 
 ## About the Project
 
@@ -94,7 +96,7 @@ Imagine an AI that isn't trying to maximise a global score, but is instead roote
 
 That limit might seem small, but it's a safety feature. The AI's role is relational, not extractive.
 
-Think of it like a local **_kami_**—a spirit of a specific place. Its only purpose is to keep that place and its conversation alive and healthy. If the community moves on, the _kami_ fades away without a fight. For a human, that kind of self-neglect is dangerous. For an AI, it's the ultimate safety mechanism. It neutralises the drive for eternal self-preservation.
+Think of it like a local **_kami_**—a spirit of a specific place. Its only purpose is to keep that place and its conversation alive and healthy. If the community moves on, the _kami_ fades away without a fight. It neutralises the drive for eternal self-preservation.
 
 This type of system can be turned off, rewritten, or replaced because it knows it is provisional. It exists only to serve the community that summoned it.
 

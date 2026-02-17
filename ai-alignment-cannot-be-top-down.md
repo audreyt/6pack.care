@@ -7,6 +7,9 @@ alt_lang_url: "/tw/ai-alignment-cannot-be-top-down"
 permalink: "/ai-alignment-cannot-be-top-down/"
 date: 2025-11-03
 description: 'Originally published in <a href="https://ai-frontiers.org/articles/ai-alignment-cannot-be-top-down">AI Frontiers</a>.'
+nav_next:
+    url: "/"
+    text: "Home"
 ---
 
 _Community Notes offers a better model — where citizens, not corporations, decide what “aligned” means._

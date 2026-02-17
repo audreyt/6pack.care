@@ -15,6 +15,7 @@ import os
 import re
 import sys
 from collections import defaultdict
+from dataclasses import dataclass
 from pathlib import Path
 
 from doc_sync_config import SITE_URL, TAB_MAP, SYNC_FILES, CONTENT_START, doc_id_for, validate_sync_config
@@ -80,6 +81,8 @@ def _relativise_url(url: str, page_path: str) -> str:
     if not url.startswith(SITE_URL):
         return url
     path = url[len(SITE_URL):]
+    if not path:
+        return "/"
     if path.startswith(page_path + "#"):
         return path[len(page_path):]
     return path
@@ -171,39 +174,122 @@ def _reinject_html_blocks(md: str, blocks: list[tuple[str | None, str]]) -> str:
 # ── Docs API content → markdown ──────────────────────────────────────
 
 
-def _run_to_md(run: dict, page_path: str) -> str:
-    """Convert a single textRun to inline markdown."""
-    content = run.get("content", "")
-    if not content or content == "\n":
-        return content
+@dataclass
+class _Span:
+    """Inline text span with formatting metadata."""
+    text: str
+    bold: bool = False
+    italic: bool = False
+    link: str = ""
 
-    style = run.get("textStyle", {})
-    bold = style.get("bold", False)
-    italic = style.get("italic", False)
-    link = style.get("link", {}).get("url", "")
 
-    text = content.rstrip("\n")
+def _collect_spans(elements: list[dict], page_path: str, in_heading: bool = False) -> list[_Span]:
+    """Extract formatted spans from paragraph elements."""
+    spans: list[_Span] = []
+    for el in elements:
+        tr = el.get("textRun")
+        if not tr:
+            continue
+        content = tr.get("content", "")
+        if not content or content == "\n":
+            continue
+        style = tr.get("textStyle", {})
+        bold = style.get("bold", False) and not in_heading
+        italic = style.get("italic", False)
+        link = style.get("link", {}).get("url", "")
+        if link:
+            link = _relativise_url(link, page_path)
+        spans.append(_Span(
+            text=content.rstrip("\n"),
+            bold=bold,
+            italic=italic,
+            link=link,
+        ))
+    return spans
 
-    if link:
-        url = _relativise_url(link, page_path)
-        text = f"[{text}]({url})"
-    if bold and italic:
-        text = f"***{text}***"
-    elif bold:
-        text = f"**{text}**"
-    elif italic:
-        text = f"*{text}*"
 
-    return text
+def _coalesce_spans(spans: list[_Span]) -> list[_Span]:
+    """Merge adjacent spans with identical formatting."""
+    if not spans:
+        return spans
+    merged: list[_Span] = [_Span(spans[0].text, spans[0].bold, spans[0].italic, spans[0].link)]
+    for s in spans[1:]:
+        prev = merged[-1]
+        if prev.bold == s.bold and prev.italic == s.italic and prev.link == s.link:
+            prev.text += s.text
+        else:
+            merged.append(_Span(s.text, s.bold, s.italic, s.link))
+    return merged
+
+
+def _needs_html_emphasis(text: str, prev_char: str, next_char: str) -> bool:
+    """Check if markdown emphasis delimiters would fail around *text*.
+
+    JS markdown-it follows CommonMark: a ``**`` opener after a non-punctuation
+    char fails if the first inner char is Unicode punctuation, and a ``**``
+    closer before a non-punctuation char fails if the last inner char is Unicode
+    punctuation.  Fall back to HTML tags in these cases.
+    """
+    import unicodedata
+    _PUNCT_CATS = {"Pc", "Pd", "Pe", "Pf", "Pi", "Po", "Ps", "Sc", "Sk", "Sm", "So"}
+
+    if not text:
+        return False
+    first, last = text[0], text[-1]
+    first_cat = unicodedata.category(first)
+    last_cat = unicodedata.category(last)
+    prev_cat = unicodedata.category(prev_char) if prev_char else "Zs"
+    next_cat = unicodedata.category(next_char) if next_char else "Zs"
+
+    # Opening delimiter: if inner-first is punctuation, preceding must be
+    # punctuation or whitespace for the delimiter to be left-flanking.
+    if first_cat in _PUNCT_CATS and prev_cat not in (_PUNCT_CATS | {"Zs"}):
+        return True
+    # Closing delimiter: if inner-last is punctuation, following must be
+    # punctuation or whitespace for the delimiter to be right-flanking.
+    if last_cat in _PUNCT_CATS and next_cat not in (_PUNCT_CATS | {"Zs"}):
+        return True
+    return False
+
+
+def _spans_to_md(spans: list[_Span]) -> str:
+    """Convert a list of formatted spans to an inline markdown string."""
+    spans = _coalesce_spans(spans)
+    parts: list[str] = []
+    for i, s in enumerate(spans):
+        text = s.text
+        if s.link:
+            text = f"[{text}]({s.link})"
+
+        if s.bold or s.italic:
+            # Determine surrounding chars for emphasis-safety check
+            prev_char = parts[-1][-1] if parts and parts[-1] else ""
+            next_char = spans[i + 1].text[0] if i + 1 < len(spans) and spans[i + 1].text else ""
+            use_html = _needs_html_emphasis(s.text, prev_char, next_char)
+
+            if s.bold and s.italic:
+                text = f"<b><i>{text}</i></b>" if use_html else f"***{text}***"
+            elif s.bold:
+                text = f"<strong>{text}</strong>" if use_html else f"**{text}**"
+            elif s.italic:
+                text = f"<em>{text}</em>" if use_html else f"_{text}_"
+
+        parts.append(text)
+    return "".join(parts)
 
 
 def _is_ordered(lists_meta: dict, list_id: str, nesting: int) -> bool:
     """Check whether a list nesting level is ordered."""
     props = lists_meta.get(list_id, {})
-    levels = props.get("listProperties", {}).get("nestingLevel", [])
+    levels = props.get("listProperties", {}).get("nestingLevels", [])
     if nesting < len(levels):
         glyph = levels[nesting].get("glyphType", "")
-        return glyph in ORDERED_GLYPH_TYPES
+        if glyph in ORDERED_GLYPH_TYPES:
+            return True
+        # Fallback: GLYPH_TYPE_UNSPECIFIED but has a numeric format like "%0."
+        if glyph in ("GLYPH_TYPE_UNSPECIFIED", "") and levels[nesting].get("glyphFormat", ""):
+            fmt = levels[nesting]["glyphFormat"]
+            return bool(re.match(r"^%\d", fmt))
     return False
 
 
@@ -240,18 +326,14 @@ def tab_to_markdown(
         if not para:
             continue
 
-        # ── assemble inline text ──
-        parts: list[str] = []
-        for el in para.get("elements", []):
-            tr = el.get("textRun")
-            if tr:
-                parts.append(_run_to_md(tr, page_path))
-        text = "".join(parts).rstrip("\n").rstrip()
-
         # ── classify paragraph ──
         named = para.get("paragraphStyle", {}).get("namedStyleType", "NORMAL_TEXT")
         level = HEADING_LEVEL.get(named)
         bullet = para.get("bullet")
+
+        # ── assemble inline text via span coalescing ──
+        spans = _collect_spans(para.get("elements", []), page_path, in_heading=bool(level))
+        text = _spans_to_md(spans).rstrip()
 
         # ── partial-tab: skip until boundary heading ──
         if not capturing:
@@ -306,6 +388,49 @@ def tab_to_markdown(
     return "\n".join(lines) + "\n"
 
 
+_FAQ_Q_RE = re.compile(r"^####\s+(Q(\d+)\.\s+.+)$")
+
+
+def _faq_postprocess(md: str) -> str:
+    """Reconstruct <h4 id="faq-N"> anchors and --- separators for FAQ pages.
+
+    Converts ``#### QN. text`` lines back to the canonical
+    ``<h4 id="faq-N"><a href="#faq-N">QN.</a> text</h4>`` form
+    and inserts ``---`` horizontal rules between questions.
+    """
+    out: list[str] = []
+    seen_question = False
+
+    for line in md.split("\n"):
+        m = _FAQ_Q_RE.match(line)
+        if m:
+            full_text = m.group(1)
+            num = m.group(2)
+            # Split "QN. rest" → prefix "QN.", body "rest"
+            dot_pos = full_text.index(".")
+            q_prefix = full_text[:dot_pos + 1]
+            q_body = full_text[dot_pos + 1:].strip()
+
+            if seen_question:
+                # Insert --- separator before the next question
+                # Remove trailing blank line if present, add ---, blank, heading
+                while out and out[-1] == "":
+                    out.pop()
+                out.append("")
+                out.append("---")
+                out.append("")
+
+            faq_id = f"faq-{num}"
+            out.append(
+                f'<h4 id="{faq_id}"><a href="#{faq_id}">{q_prefix}</a> {q_body}</h4>'
+            )
+            seen_question = True
+        else:
+            out.append(line)
+
+    return "\n".join(out)
+
+
 # ── Main ─────────────────────────────────────────────────────────────
 
 
@@ -351,6 +476,11 @@ def main() -> None:
             front = _extract_front_matter(target)
             html_blocks = _extract_html_blocks(target)
             md = _reinject_html_blocks(md, html_blocks)
+            # FAQ pages: reconstruct <h4> anchors and --- separators
+            if filename in ("faq.md", "tw-faq.md"):
+                md = _faq_postprocess(md)
+            # Strip leading blank lines — front matter already ends with \n\n
+            md = md.lstrip("\n")
             target.write_text(front + md, encoding="utf-8")
             print(f"{filename} ← tab {tab_id}")
 

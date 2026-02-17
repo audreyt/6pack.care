@@ -18,7 +18,8 @@
         "build": "eleventy",
         "lint": "prettier --check .",
         "format": "prettier --write .",
-        "prepare": "husky"
+        "prepare": "husky",
+        "check-links": "bun run check-links.mjs"
     },
     "lint-staged": {
         "**/*": "prettier --write --ignore-unknown"

@@ -7,6 +7,9 @@ alt_lang_url: "/ai-alignment-cannot-be-top-down"
 permalink: "/tw/ai-alignment-cannot-be-top-down/"
 date: 2025-11-03
 description: '原載於 <a href="https://ai-frontiers.org/articles/ai-alignment-cannot-be-top-down">AI Frontiers</a>。'
+nav_next:
+    url: "/tw/"
+    text: "首頁"
 ---
 
 _社群備註（Community Notes）提供了更好的模式——由公民而非企業來決定什麼是「對齊」。_
