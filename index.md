@@ -46,7 +46,9 @@ Six design principles turn care ethics into something we can code. Think of them
 
 ## Latest
 
-["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/): Taiwan's citizen-led response to AI-enabled scams offers a better model where citizens, not big tech, decide what “aligned” means.
+["Treat AI Safety Like Civil Defence"](/ai-crisis-diplomacy/): Diplomatic time runs in years; algorithmic time runs in milliseconds. A speech on closing that gap — with three building blocks, a regional proposal, and the 6-Pack of Care.
+
+["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/): Taiwan's citizen-led response to AI-enabled scams offers a better model where citizens, not big tech, decide what "aligned" means.
 
 ## About the Project
 
