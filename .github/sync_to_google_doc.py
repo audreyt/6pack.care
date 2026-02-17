@@ -19,9 +19,12 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional
 
+from markdown_it import MarkdownIt
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from doc_sync_config import SITE_URL, TAB_MAP, SYNC_FILES, CONTENT_START, doc_id_for, validate_sync_config
+
+_md = MarkdownIt()
 
 HEADING_STYLE = {
     1: "HEADING_1",
@@ -72,54 +75,32 @@ def _normalise_url(url: str, page_path: str = "/faq/") -> str:
 
 
 def _parse_inline(text: str, page_path: str = "/faq/") -> list[Span]:
-    """Parse **bold**, *italic*, and [text](url) into Spans."""
+    """Parse inline markdown (bold, italic, links) into Spans via CommonMark."""
+    tokens = _md.parseInline(text, {})
+    if not tokens or not tokens[0].children:
+        return [Span(text)]
+
     spans: list[Span] = []
-    pos = 0
-    buf = ""
     bold = False
     italic = False
+    link: Optional[str] = None
 
-    while pos < len(text):
-        ch = text[pos]
-
-        # **bold toggle**
-        if text[pos : pos + 2] == "**":
-            if buf:
-                spans.append(Span(buf, bold=bold, italic=italic))
-                buf = ""
-            bold = not bold
-            pos += 2
-            continue
-
-        # *italic toggle* (single *, not **)
-        if ch == "*" and text[pos : pos + 2] != "**":
-            if buf:
-                spans.append(Span(buf, bold=bold, italic=italic))
-                buf = ""
-            italic = not italic
-            pos += 1
-            continue
-
-        # [link text](url)
-        if ch == "[":
-            bracket = text.find("]", pos + 1)
-            if bracket != -1 and text[bracket : bracket + 2] == "](":
-                paren = text.find(")", bracket + 2)
-                if paren != -1:
-                    if buf:
-                        spans.append(Span(buf, bold=bold, italic=italic))
-                        buf = ""
-                    link_text = text[pos + 1 : bracket]
-                    link_url = _normalise_url(text[bracket + 2 : paren], page_path)
-                    spans.append(Span(link_text, bold=bold, italic=italic, link=link_url))
-                    pos = paren + 1
-                    continue
-
-        buf += ch
-        pos += 1
-
-    if buf:
-        spans.append(Span(buf, bold=bold, italic=italic))
+    for tok in tokens[0].children:
+        if tok.type == "strong_open":
+            bold = True
+        elif tok.type == "strong_close":
+            bold = False
+        elif tok.type == "em_open":
+            italic = True
+        elif tok.type == "em_close":
+            italic = False
+        elif tok.type == "link_open":
+            link = _normalise_url(tok.attrGet("href") or "", page_path)
+        elif tok.type == "link_close":
+            link = None
+        elif tok.type in ("text", "softbreak", "code_inline"):
+            content = "\n" if tok.type == "softbreak" else tok.content
+            spans.append(Span(content, bold=bold, italic=italic, link=link))
 
     return spans or [Span(text)]
 
