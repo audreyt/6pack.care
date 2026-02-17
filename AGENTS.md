@@ -41,6 +41,7 @@ There is no automated test suite. Verify changes by building successfully and ch
 - Never edit the `docs/` output directory — it is generated
 - Optimize images before committing; reuse existing typography tokens in CSS
 - When adding/editing content, maintain parity between British English and Traditional Mandarin variants
+- Em dashes: English files use `—` (spaced single); Mandarin `tw-*.md` files use `——` (double, no spaces)
 
 ## Doc sync
 
