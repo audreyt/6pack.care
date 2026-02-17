@@ -16,7 +16,7 @@ nav_next:
 _外交時間以年為單位，演算法時間以毫秒為單位。AI 危機外交必須彌合這道落差。_
 
 <div class="video-embed">
-<iframe src="https://customer-07bto6bf9uibrlc3.cloudflarestream.com/ab007fba825037b007039c2e647bf5f4/iframe?defaultTextTrack=zh" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://customer-07bto6bf9uibrlc3.cloudflarestream.com/ab007fba825037b007039c2e647bf5f4/iframe?defaultTextTrack=zh-Hant" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 各位當地時間好。我是唐鳳，現任臺灣數位治理大使、首任數位發展部長，同時也是 2025 年正命獎得主。由衷感謝 AI Safety Asia 在印度人工智慧影響力峰會上，促成這場至關重要的對話。
