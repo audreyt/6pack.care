@@ -14,7 +14,7 @@ prev_action:
     arrow: "left"
 next_action:
     url: "/1"
-    text: "Pack 1: Attentiveness in Recognition"
+    text: "Pack 1: Attentiveness"
     arrow: "right"
 ---
 
@@ -46,7 +46,7 @@ Six design principles turn care ethics into something we can code. Think of them
 
 ## Latest
 
-["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/): Taiwan's citizen-led response to AI-enabled scams offers a better model where citizens, not corporations, decide what “aligned” means.
+["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/): Taiwan's citizen-led response to AI-enabled scams offers a better model where citizens, not big tech, decide what “aligned” means.
 
 ## About the Project
 
