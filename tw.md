@@ -35,6 +35,10 @@ AI 不是活在真空裡。它活在我們的社群裡，受權力動態和價�
 
 ## 關懷六力
 
+<div class="overview-section">
+<img src="/img/6pack.svg" alt="關懷六力概覽圖" class="overview-image" style="max-height: 82vh;">
+</div>
+
 ### 察責任，應結生
 
 六項設計原則，將關懷倫理轉化為可以實作的程式碼。可以想成我們為了與多元共存，而需要鍛鍊的六塊肌：
