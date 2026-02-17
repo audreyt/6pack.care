@@ -14,6 +14,10 @@ nav_next:
 
 _外交時間以年為單位，演算法時間以毫秒為單位。AI 危機外交必須彌合這道落差。_
 
+<div class="video-embed">
+<iframe src="https://customer-07bto6bf9uibrlc3.cloudflarestream.com/ab007fba825037b007039c2e647bf5f4/iframe" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 各位當地時間好。我是唐鳳，現任臺灣數位治理大使、首任數位發展部長，同時也是 2025 年正命獎得主。由衷感謝 AI Safety Asia 在印度人工智慧影響力峰會上，促成這場至關重要的對話。
 
 外交領域的思考以年為單位：起草文本、凝聚共識、批准承諾，每一步都需要時間。但在 AI 的世界裡，危機以毫秒為單位展開。今天我想討論的，正是外交時間與演算法時間的根本錯配。
