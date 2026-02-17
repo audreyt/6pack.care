@@ -7,6 +7,7 @@ alt_lang_url: "/tw/ai-crisis-diplomacy"
 permalink: "/ai-crisis-diplomacy/"
 date: 2026-02-17
 description: "Speech delivered at the India AI Impact Summit 2026, New Delhi."
+og_image: "https://customer-07bto6bf9uibrlc3.cloudflarestream.com/ab007fba825037b007039c2e647bf5f4/thumbnails/thumbnail.jpg"
 nav_next:
     url: "/"
     text: "Home"

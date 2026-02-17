@@ -7,6 +7,7 @@ alt_lang_url: "/ai-crisis-diplomacy"
 permalink: "/tw/ai-crisis-diplomacy/"
 date: 2026-02-17
 description: "演講於 2026 年印度人工智慧影響力峰會，新德里。"
+og_image: "https://customer-07bto6bf9uibrlc3.cloudflarestream.com/ab007fba825037b007039c2e647bf5f4/thumbnails/thumbnail.jpg"
 nav_next:
     url: "/tw/"
     text: "首頁"
