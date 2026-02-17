@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: "三：行力 - 行動中的勝任力"
+title: "三：任力 - 行動中的勝任力"
 lang: zh-tw
 alt_lang_url: "/3"
 permalink: "/tw/3/"
