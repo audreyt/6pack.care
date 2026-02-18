@@ -20,8 +20,8 @@
         "format": "prettier --write . && bun run pangu-format.mjs",
         "prepare": "husky",
         "check-links": "bun run check-links.mjs",
-        "en": "cat index.md manifesto.md 1.md 2.md 3.md 4.md 5.md 6.md faq.md ai-alignment-cannot-be-top-down.md ai-crisis-diplomacy.md podcast.md | pbcopy",
-        "tw": "cat tw.md tw-manifesto.md tw-1.md tw-2.md tw-3.md tw-4.md tw-5.md tw-6.md tw-faq.md tw-ai-alignment-cannot-be-top-down.md tw-ai-crisis-diplomacy.md tw-podcast.md | pbcopy"
+        "en": "cat index.md manifesto.md 1.md 2.md 3.md 4.md 5.md 6.md faq.md ai-alignment-cannot-be-top-down.md ai-crisis-diplomacy.md podcast.md doom-debate.md | pbcopy",
+        "tw": "cat tw.md tw-manifesto.md tw-1.md tw-2.md tw-3.md tw-4.md tw-5.md tw-6.md tw-faq.md tw-ai-alignment-cannot-be-top-down.md tw-ai-crisis-diplomacy.md tw-podcast.md tw-doom-debate.md | pbcopy"
     },
     "lint-staged": {
         "**/*": "prettier --write --ignore-unknown",
