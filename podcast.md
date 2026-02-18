@@ -11,7 +11,7 @@ nav_next:
     text: "Home"
 ---
 
-Audrey Tang and Caroline Green introduce the 6-Pack of Care — live, in the week the microsite launched. Fifty-eight minutes covering all six packs, from attentiveness to symbiosis, with grounding in social care practice, co-production, the kami metaphor, and what to do after listening.
+Audrey Tang and Caroline Green introduce the 6-Pack of Care — live, in the week the site launched. Fifty-eight minutes covering all six packs, from attentiveness to symbiosis, with grounding in social care practice, co-production, the kami metaphor, and what to do after listening.
 
 <div class="audio-section">
   <div class="audio-icon">🎙</div>
