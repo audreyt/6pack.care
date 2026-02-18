@@ -34,7 +34,7 @@ Today, we're moving from that broad vision to the specific architecture. Audrey 
 
 **Audrey Tang** — So happy to be back, and what a week working with you on this new microsite. It's up now. When you're hearing this, please check out "6", as in the number "6", 6pack.care and read our manifesto and the entire microsite.
 
-**Caroline Green** — It's been such a pleasure working with you on this, and this episode is all about introducing the 6-Pack of Care and the civic care approach to the world.
+**Caroline Green** — It's been such a pleasure working with you on this, and this episode is all about introducing the 6-Pack of Care and the Civic AI approach to the world.
 
 **Audrey Tang** — Yeah, indeed. I think one response I got from our previous podcast was that people really loved the energy of Plurality, which is about turning conflict into co-creation or co-production. However, people also want a very concrete, very actionable framework that they can put into their AI systems or evaluate the AI system they're using today, to test whether they're actually paying respect to humanity as a whole, and so I think that is why we really went very, very nitty-gritty engineering when it comes to applied ethics here with 6-Pack of Care.
 

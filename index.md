@@ -50,7 +50,7 @@ Six design principles turn care ethics into something we can code. Think of them
 
 ["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/): Taiwan's citizen-led response to AI-enabled scams offers a better model where citizens, not big tech, decide what "aligned" means.
 
-[Earlier conversation: AI and Democracy](https://podcasts.ox.ac.uk/ai-and-democracy-ambassador-audrey-tang-plurality-practice-transparency-and-collective-intelligence): Plurality in practice — transparency, collective intelligence, and the democratic case for civic tech. _(Accelerating AI Ethics, Oxford, 58 min)_
+[Podcast: AI and Democracy](https://podcasts.ox.ac.uk/ai-and-democracy-ambassador-audrey-tang-plurality-practice-transparency-and-collective-intelligence): Plurality in practice — transparency, collective intelligence, and the democratic case for civic tech. _(Accelerating AI Ethics, Oxford, 58 min)_
 
 ## About the Project
 
