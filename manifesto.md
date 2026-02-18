@@ -1,7 +1,9 @@
 ---
 layout: chapter
 title: "6-Pack of Care: A Manifesto"
-description: "Audrey Tang and Caroline Green"
+author: "Audrey Tang"
+date: 2025-09-01
+description: "Speech delivered at Google DeepMind, London."
 lang: en-gb
 alt_lang_url: "/tw/manifesto"
 nav_prev:
@@ -107,7 +109,7 @@ In Japan, 33-year-old AI engineer **Takahiro Anno** was inspired by our Pluralit
 
 He was then tapped to lead the Tokyo 2050 consultation. Based on success in that endeavour, he ran for a seat in the House of Councillors, winning over 2.5% of the national vote. His "Team Mirai" is now a national party in the Diet.
 
-In California, the **Engaged California** platform (developed with Governor Newsom's team) was intended for deliberation on teen social media use. Then the LA wildfires hit. In response, we pivoted quickly to use AI sensemaking to co-create wildfire recovery plans, which are now being implemented. They are currently hosting deliberations on government efficiency with state employees.
+In California, the **Engaged California** platform (developed with Governor Newsom's team) was intended for deliberation on teen social media use. Then the LA wildfires hit. In response, we pivoted quickly to use AI sensemaking to co-create wildfire recovery plans, which are now being implemented. A subsequent ten-week deliberation engaged over 1,400 state employees, generating more than 2,600 ideas on government efficiency — which informed real executive action.
 
 These successes treat deliberation as a civic muscle that needs exercise. But demos alone do not bend the curve. Law and market design must follow.
 
@@ -166,17 +168,19 @@ _Rule of thumb: No unchecked power; answers are required._
 
 Good intentions require working code. Competence is shipping systems that deliver care and build trust, backed by auditing and evaluation.
 
-This competence is where we implement **bridging-based ranking** and **Reinforcement Learning from Community Feedback (RLCF)**.
+This competence is where we implement **bridging-based ranking**. We must optimise not for individual engagement, but for cross-group endorsement and relational health.
 
-We must optimise not for individual engagement, but for cross-group endorsement and relational health. We train AI agents, using RL or evolution, to exhibit pro-social behaviour and collect signals to reward it.
+Security is also a competence — and a moral — question. An agent that can be hijacked cannot tend its place. Prompt injection, privilege escalation, and scope creep are care failures, not merely technical ones. A kami with real resources runs in a strict sandbox: least-privilege permissions, validated inputs, no implicit trust of anything upstream.
 
-_Rule of thumb: Always measure trust-under-loss._
+_Rule of thumb: Security failures are moral failures._
 
 # Responsiveness: **"Care-receiving"**
 
 A system that cannot be corrected will fail. Since competent action invariably introduces new problems, we need rapid feedback loops.
 
-Responsiveness means extending alignment assemblies with GlobalDialogues.ai and Weval.org—a "Wikipedia for Evals."
+This is also where we implement **Reinforcement Learning from Community Feedback (RLCF)**: train AI agents to optimise for cross-group endorsement and trust-under-loss — not raw engagement — letting the community define what "good" means, and letting that definition evolve.
+
+Responsiveness also means extending alignment assemblies with [GlobalDialogues.ai](https://globaldialogues.ai/) and [Weval.org](https://weval.org/)—a "Wikipedia for Evals."
 
 Weval allows diverse communities to document and share their lived experiences, both positive and negative, with AI. It emphasises capturing not only the harms an AI might cause in a specific cultural context—such as increasing self-harm or psychosis—but also the unexpected benefits it might bring. How are people using AI to improve their lives? When does it work best?
 
@@ -186,7 +190,7 @@ The process closes the loop of the Alignment Assembly, ensuring the system is co
 
 In Tronto's formulation, the first four packs form a feedback loop: Attentiveness -> Responsibility -> Competence -> Responsiveness -> back to Attentiveness.
 
-_Rule of thumb: If challenged, make the fuzzy parts clearer and on the record._
+_Rule of thumb: Always measure trust-under-loss._
 
 # Solidarity: **"Caring with"**
 

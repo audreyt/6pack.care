@@ -6,8 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{{ title }} — {{ subtitle | default: site.title }}</title>
         {% assign og_desc = description | default: site.description | strip_html
-        %} {% if og_image %}{% assign og_img = og_image %}{% else %}{% assign
-        og_img = site.url | append: '/img/overview-small.jpg' %}{% endif %}
+        %} {% if og_image %}{% assign og_img = og_image %}{% elsif lang2 == 'zh'
+        %}{% assign og_img = site.url | append: '/img/overview-small-tw.jpg'
+        %}{% else %}{% assign og_img = site.url | append:
+        '/img/overview-small.jpg' %}{% endif %}
         <meta property="og:title" content="{{ title }}" />
         <meta property="og:description" content="{{ og_desc }}" />
         <meta property="og:image" content="{{ og_img }}" />
@@ -54,11 +56,10 @@
                 <span style="white-space: nowrap"
                     >{{ header_title | default: title }}</span
                 >
+                {% if subtitle %}
                 <span style="font-weight: 300">—</span>
-                <span style="white-space: nowrap"
-                    >{{ subtitle | default: "Institute for Ethics in AI"
-                    }}</span
-                >
+                <span style="white-space: nowrap">{{ subtitle }}</span>
+                {% endif %}
             </h1>
             {% if description %}
             <p>{{ description }}</p>

@@ -1,8 +1,6 @@
 ---
 layout: default
-title: "關懷六力"
-header_title: "關懷六力"
-subtitle: "仁工智慧"
+title: "關懷六力・仁工智慧"
 description: "唐鳳與 Caroline Green 的研究計畫"
 lang: zh-tw
 alt_lang_url: "/"
@@ -19,7 +17,7 @@ next_action:
 
 <div class="overview-section">
 
-<img src="/img/overview-small-zh.jpg" alt="關懷六力概覽圖" class="overview-image">
+<img src="/img/overview-small-tw.jpg" alt="關懷六力概覽圖" class="overview-image">
 
 </div>
 
@@ -31,7 +29,7 @@ next_action:
 
 AI 不是活在真空裡。它活在我們的社群裡，受權力動態和價值衝突的影響。當它運作得比我們更快時，解決之道並非把 AI 擬人化的幻想，而是誠實面對我們互相依存的事實。我們需要將對話與相互回應，直接放進 AI 的開發與治理裡。
 
-我們稱此為**仁工智慧**：視每個人為園丁。AI 成為在地的基礎設施——地神（kami）——以「信任實際生長的速度」，來守護關係的健全。這不是殖民，也不是追求最大化；這是在照顧花園。
+我們稱此為**仁工智慧**（Civic AI）：視每個人為園丁。AI 成為在地的基礎設施——地神（kami）——以「信任實際生長的速度」，來守護關係的健全。這不是殖民，也不是追求最大化；這是在照顧花園。
 
 ## 關懷六力
 
@@ -53,9 +51,15 @@ AI 不是活在真空裡。它活在我們的社群裡，受權力動態和價�
 
 ## 最新成果
 
-[《把 AI 安全當成民防來對待》](/tw/ai-crisis-diplomacy/)：外交時間以年為單位，演算法時間以毫秒為單位。一場關於如何彌合這道落差的演講——涵蓋三大基礎支柱、一項區域性倡議，以及關懷六力。
-
-[《AI 對齊不能由上而下》](/tw/ai-alignment-cannot-be-top-down/)：臺灣公民主導的 AI 防詐回應提供了一個更好的模式，由公民而非科技巨頭來決定什麼是「對齊」。
+- [Podcast：關懷六力](/tw/podcast/)：唐鳳與 Caroline Green 現場介紹完整框架——涵蓋六力全部、社會關懷實踐的基礎、地神比喻，以及接下來該怎麼做。附逐字稿。_（Accelerating AI Ethics，牛津，58 分鐘）_
+- [末日辯論](/tw/doom-debate/)：唐鳳與 Liron Shapira 展開深度對談——P (末日) 是 NaN（非數值），多元宇宙已然在此，關懷六力是我們建造所需玻璃馬的藍圖。附逐字稿。_（Doom Debates，90 分鐘）_
+- [《把 AI 安全當成民防來對待》](/tw/ai-crisis-diplomacy/)：外交時間以年為單位，演算法時間以毫秒為單位。一場關於如何彌合這道落差的演講——涵蓋三大基礎支柱、一項區域性倡議，以及關懷六力。_（AI Impact Summit，德里）_
+- [《AI 對齊不能由上而下》](/tw/ai-alignment-cannot-be-top-down/)：臺灣公民主導的 AI 防詐回應提供了一個更好的模式，由公民而非科技巨頭來決定什麼是「對齊」。_（AI Frontiers）_
+- [《讓 230 條款退場，讓第一修正案大展身手》](https://cacm.acm.org/opinion/sunset-section-230-and-unleash-the-first-amendment/)：唐鳳與 Jaron Lanier、Allison Stanger 合著，主張終止演算法擴大觸及範圍的免責保護，同時保障人類言論——第五力核心的「觸及非言論」改革。_（ACM 通訊，2026 年 1 月）_
+- [《惡意 AI 蜂群如何威脅民主》](https://www.science.org/doi/10.1126/science.adz1697)：唐鳳與 Maria Ressa、Nick Bostrom、Nicholas Christakis 等 22 位研究者聯合記錄：由大型語言模型驅動的智慧體蜂群如何大規模滲透社群、偽造共識。_（《科學》期刊，2026 年）_
+- [《對話網路》](https://www.mediatechdemocracy.com/conversation-networks)：唐鳳與 Deb Roy、Lawrence Lessig 提出公民傳播基礎設施——可互通的數位應用程式結合人類引導的 AI——作為第一力與第五力的技術底層。_（麥基爾大學媒體、科技與民主研究中心，2025 年 3 月）_
+- [《社群設計》](https://arxiv.org/abs/2502.10834)：唐鳳與 Glen Weyl 等四位共同作者提出以社會紐帶重建社群平台——獎勵搭橋連結社群的內容，而非最大化參與度。第一力與第五力的技術骨幹。_（arXiv，2025 年 2 月）_
+- [Podcast：AI 與民主](https://podcasts.ox.ac.uk/ai-and-democracy-ambassador-audrey-tang-plurality-practice-transparency-and-collective-intelligence)：多元宇宙的實踐——透明度、集體智慧，以及支持 AI 公民科技的民主論據。_（Accelerating AI Ethics，牛津，58 分鐘）_
 
 ## 關於本計畫
 
