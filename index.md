@@ -44,23 +44,15 @@ Six design principles turn care ethics into something we can code. Think of them
 
 ## Latest
 
-[Podcast: The 6-Pack of Care](/podcast/): Audrey and Caroline introduce the full framework live — all six packs, with grounding in social care practice, the kami metaphor, and what to do next. Transcript included. _(Accelerating AI Ethics, Oxford, 58 min)_
-
-[Doom Debate](/doom-debate/): Audrey joins Liron Shapira to defend a foomer-not-doomer position — P(Doom) is Not a Number, Plurality is already here, and the 6-Pack is the blueprint for the glass horse we need. Transcript included. _(Doom Debates, 90 min)_
-
-["Treat AI Safety Like Civil Defence"](/ai-crisis-diplomacy/): Diplomatic time runs in years; algorithmic time runs in milliseconds. A speech on closing that gap — with three building blocks, a regional proposal, and the 6-Pack of Care. _(AI Impact Summit, Delhi)_
-
-["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/): Taiwan's citizen-led response to AI-enabled scams offers a better model where citizens, not big tech, decide what "aligned" means. _(AI Frontiers)_
-
-["Sunset Section 230 and Unleash the First Amendment"](https://cacm.acm.org/opinion/sunset-section-230-and-unleash-the-first-amendment/): Audrey, Jaron Lanier, and Allison Stanger argue for ending algorithmic amplification's liability shield while protecting human speech — the reach-not-speech reform at the heart of Pack 5. _(Communications of the ACM, January 2026)_
-
-["How Malicious AI Swarms Can Threaten Democracy"](https://www.science.org/doi/10.1126/science.adz1697): Audrey joins Maria Ressa, Nick Bostrom, Nicholas Christakis, and 19 other researchers to document how LLM-powered agent swarms can infiltrate communities and fabricate consensus at population scale. _(Science, 2026)_
-
-["Conversation Networks"](https://www.mediatechdemocracy.com/conversation-networks): Audrey, Deb Roy, and Lawrence Lessig propose civic communication infrastructure — interoperable apps with AI guided by human agency — as the technical layer beneath Packs 1 and 5. _(McGill Centre for Media, Technology and Democracy, March 2025)_
-
-["Community by Design"](https://arxiv.org/abs/2502.10834): Audrey and Glen Weyl with four co-authors propose rebuilding social platforms around social fabric — rewarding content that bridges communities rather than maximising engagement. The technical backbone behind Packs 1 and 5. _(arXiv, February 2025)_
-
-[Podcast: AI and Democracy](https://podcasts.ox.ac.uk/ai-and-democracy-ambassador-audrey-tang-plurality-practice-transparency-and-collective-intelligence): Plurality in practice — transparency, collective intelligence, and the democratic case for civic tech. _(Accelerating AI Ethics, Oxford, 58 min)_
+- [Podcast: The 6-Pack of Care](/podcast/): Audrey and Caroline introduce the full framework live — all six packs, with grounding in social care practice, the kami metaphor, and what to do next. Transcript included. _(Accelerating AI Ethics, Oxford, 58 min)_
+- [Doom Debate](/doom-debate/): Audrey joins Liron Shapira to defend a foomer-not-doomer position — P(Doom) is Not a Number, Plurality is already here, and the 6-Pack is the blueprint for the glass horse we need. Transcript included. _(Doom Debates, 90 min)_
+- ["Treat AI Safety Like Civil Defence"](/ai-crisis-diplomacy/): Diplomatic time runs in years; algorithmic time runs in milliseconds. A speech on closing that gap — with three building blocks, a regional proposal, and the 6-Pack of Care. _(AI Impact Summit, Delhi)_
+- ["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/): Taiwan's citizen-led response to AI-enabled scams offers a better model where citizens, not big tech, decide what "aligned" means. _(AI Frontiers)_
+- ["Sunset Section 230 and Unleash the First Amendment"](https://cacm.acm.org/opinion/sunset-section-230-and-unleash-the-first-amendment/): Audrey, Jaron Lanier, and Allison Stanger argue for ending algorithmic amplification's liability shield while protecting human speech — the reach-not-speech reform at the heart of Pack 5. _(Communications of the ACM, January 2026)_
+- ["How Malicious AI Swarms Can Threaten Democracy"](https://www.science.org/doi/10.1126/science.adz1697): Audrey joins Maria Ressa, Nick Bostrom, Nicholas Christakis, and 19 other researchers to document how LLM-powered agent swarms can infiltrate communities and fabricate consensus at population scale. _(Science, 2026)_
+- ["Conversation Networks"](https://www.mediatechdemocracy.com/conversation-networks): Audrey, Deb Roy, and Lawrence Lessig propose civic communication infrastructure — interoperable apps with AI guided by human agency — as the technical layer beneath Packs 1 and 5. _(McGill Centre for Media, Technology and Democracy, March 2025)_
+- ["Community by Design"](https://arxiv.org/abs/2502.10834): Audrey and Glen Weyl with four co-authors propose rebuilding social platforms around social fabric — rewarding content that bridges communities rather than maximising engagement. The technical backbone behind Packs 1 and 5. _(arXiv, February 2025)_
+- [Podcast: AI and Democracy](https://podcasts.ox.ac.uk/ai-and-democracy-ambassador-audrey-tang-plurality-practice-transparency-and-collective-intelligence): Plurality in practice — transparency, collective intelligence, and the democratic case for civic tech. _(Accelerating AI Ethics, Oxford, 58 min)_
 
 ## About the Project
 
