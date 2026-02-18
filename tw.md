@@ -49,7 +49,7 @@ AI 不是活在真空裡。它活在我們的社群裡，受權力動態和價�
 
 [《把 AI 安全當成民防來對待》](/tw/ai-crisis-diplomacy/)：外交時間以年為單位，演算法時間以毫秒為單位。一場關於如何彌合這道落差的演講——涵蓋三大基礎支柱、一項區域性倡議，以及關懷六力。
 
-[《AI 對齊不能由上而下》](/tw/ai-alignment-cannot-be-top-down/)：臺灣公民主導的 AI 防詐回應提供了一個更好的模式，由公民而非科技巨頭來決定什麼是「對齊」。
+[《AI 對齊不能由上而下》](/tw/ai-alignment-cannot-be-top-down/)：臺灣公民主導的 AI 防詐回應提供了一個更好的模式，由公民而非科技巨頭來決定什麼是「對齊」。_（AI Frontiers）_
 
 [《讓 230 條款退場，讓第一修正案大展身手》](https://cacm.acm.org/opinion/sunset-section-230-and-unleash-the-first-amendment/)：唐鳳與 Jaron Lanier、Allison Stanger 合著，主張終止演算法擴大觸及範圍的免責保護，同時保障人類言論——第五力核心的「觸及非言論」改革。_（ACM 通訊，2026 年 1 月）_
 

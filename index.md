@@ -50,7 +50,7 @@ Six design principles turn care ethics into something we can code. Think of them
 
 ["Treat AI Safety Like Civil Defence"](/ai-crisis-diplomacy/): Diplomatic time runs in years; algorithmic time runs in milliseconds. A speech on closing that gap — with three building blocks, a regional proposal, and the 6-Pack of Care.
 
-["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/): Taiwan's citizen-led response to AI-enabled scams offers a better model where citizens, not big tech, decide what "aligned" means.
+["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/): Taiwan's citizen-led response to AI-enabled scams offers a better model where citizens, not big tech, decide what "aligned" means. _(AI Frontiers)_
 
 ["Sunset Section 230 and Unleash the First Amendment"](https://cacm.acm.org/opinion/sunset-section-230-and-unleash-the-first-amendment/): Audrey, Jaron Lanier, and Allison Stanger argue for ending algorithmic amplification's liability shield while protecting human speech — the reach-not-speech reform at the heart of Pack 5. _(Communications of the ACM, January 2026)_
 
