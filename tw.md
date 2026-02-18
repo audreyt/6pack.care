@@ -43,9 +43,13 @@ AI 不是活在真空裡。它活在我們的社群裡，受權力動態和價�
 
 ## 最新成果
 
+[播客：關懷六力](/tw/podcast/)：唐鳳與 Caroline Green 現場介紹完整框架——涵蓋六力全部、社會關懷實踐的基礎、地神比喻，以及接下來該怎麼做。附錄文字稿。_（Accelerating AI Ethics，牛津，58 分鐘）_
+
 [《把 AI 安全當成民防來對待》](/tw/ai-crisis-diplomacy/)：外交時間以年為單位，演算法時間以毫秒為單位。一場關於如何彌合這道落差的演講——涵蓋三大基礎支柱、一項區域性倡議，以及關懷六力。
 
 [《AI 對齊不能由上而下》](/tw/ai-alignment-cannot-be-top-down/)：臺灣公民主導的 AI 防詐回應提供了一個更好的模式，由公民而非科技巨頭來決定什麼是「對齊」。
+
+[早期對話：AI 與民主](https://podcasts.ox.ac.uk/ai-and-democracy-ambassador-audrey-tang-plurality-practice-transparency-and-collective-intelligence)：多元宇宙的實踐——透明度、集體智慧，以及支持 AI 公民科技的民主論據。_（Accelerating AI Ethics，牛津，58 分鐘）_
 
 ## 關於本計畫
 

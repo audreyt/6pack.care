@@ -2,7 +2,7 @@
 layout: chapter
 title: "Podcast: The 6-Pack of Care"
 lang: en-gb
-alt_lang_url: "/tw/"
+alt_lang_url: "/tw/podcast/"
 permalink: "/podcast/"
 date: 2025-09-05
 description: 'Originally recorded for <a href="https://podcasts.ox.ac.uk/6-pack-care-ambassador-audrey-tang-and-dr-caroline-green-civic-care-approach">Accelerating AI Ethics</a>, University of Oxford Institute for Ethics in AI.'
@@ -28,7 +28,7 @@ Audrey Tang and Caroline Green introduce the 6-Pack of Care — live, in the wee
 
 ---
 
-**Caroline Green** — Hello and welcome back to Accelerating AI Ethics. I'm Dr. Caroline Green from the Institute for Ethics in AI. In August, we had an extraordinary conversation with Ambassador Audrey Tang about Plurality, a vision for AI that augments human cooperation rather than replacing it. The response to that episode highlighted a clear need for hopeful, practical alternatives to the dominant narratives of AI conflict or singularity.
+**Caroline Green** — Hello and welcome back to Accelerating AI Ethics. I'm Dr Caroline Green from the Institute for Ethics in AI. In August, we had an extraordinary conversation with Ambassador Audrey Tang about Plurality, a vision for AI that augments human cooperation rather than replacing it. The response to that episode highlighted a clear need for hopeful, practical alternatives to the dominant narratives of AI conflict or singularity.
 
 Today, we're moving from that broad vision to the specific architecture. Audrey and I have been collaborating here at Oxford on a new book that outlines exactly how we build this future. It's titled "The 6-Pack of Care: Exercising Civic Care in AI Governance." Audrey, welcome back.
 
