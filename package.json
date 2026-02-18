@@ -16,12 +16,20 @@
     "scripts": {
         "dev": "eleventy --serve",
         "build": "eleventy",
-        "lint": "prettier --check .",
-        "format": "prettier --write .",
+        "lint": "prettier --check . && bun run pangu-format.mjs --check",
+        "format": "prettier --write . && bun run pangu-format.mjs",
         "prepare": "husky",
         "check-links": "bun run check-links.mjs"
     },
     "lint-staged": {
-        "**/*": "prettier --write --ignore-unknown"
+        "**/*": "prettier --write --ignore-unknown",
+        "**/*.md": "bun run pangu-format.mjs"
+    },
+    "dependencies": {
+        "pangu": "^7.2.0",
+        "remark": "^15.0.1",
+        "remark-pangu": "^2.2.0",
+        "remark-parse": "^11.0.0",
+        "remark-stringify": "^11.0.0"
     }
 }
