@@ -180,7 +180,7 @@ A system that cannot be corrected will fail. Since competent action invariably i
 
 This is also where we implement **Reinforcement Learning from Community Feedback (RLCF)**: train AI agents to optimise for cross-group endorsement and trust-under-loss — not raw engagement — letting the community define what "good" means, and letting that definition evolve.
 
-Responsiveness also means extending alignment assemblies with GlobalDialogues.ai and Weval.org—a "Wikipedia for Evals."
+Responsiveness also means extending alignment assemblies with [GlobalDialogues.ai](https://globaldialogues.ai/) and [Weval.org](https://weval.org/)—a "Wikipedia for Evals."
 
 Weval allows diverse communities to document and share their lived experiences, both positive and negative, with AI. It emphasises capturing not only the harms an AI might cause in a specific cultural context—such as increasing self-harm or psychosis—but also the unexpected benefits it might bring. How are people using AI to improve their lives? When does it work best?
 
