@@ -16,7 +16,7 @@ next_action:
 ---
 
 <div class="overview-section">
-<img src="/img/overview-small-zh.jpg" alt="關懷六力概覽圖" class="overview-image">
+<img src="/img/overview-small-tw.jpg" alt="關懷六力概覽圖" class="overview-image">
 </div>
 
 ## 仁工智慧
