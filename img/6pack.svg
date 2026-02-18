@@ -1,0 +1,107 @@
+<svg viewBox="0 0 750 700" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <title>6pack Interface Map — Care Loop</title>
+
+  <defs>
+    <marker id="ac" viewBox="0 0 12 8" refX="50" refY="4"
+            markerWidth="12" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0.5 L12,4 L0,7.5Z" fill="#4f46e5"/>
+    </marker>
+    <marker id="af" viewBox="0 0 10 7" refX="48" refY="3.5"
+            markerWidth="10" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0.5 L10,3.5 L0,6.5Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <!-- Subtle "6" guide: circle + tail -->
+  <g opacity="0.2" stroke="#cbd5e1" stroke-width="1.5" fill="none" stroke-dasharray="6 4">
+    <circle cx="405" cy="445" r="150"/>
+    <path d="M300,340 Q270,250 290,178 Q340,100 425,68"/>
+  </g>
+
+  <!-- Forward edges (thin, subtle) -->
+  <g stroke="#94a3b8" stroke-width="1.2" fill="none" opacity="0.45">
+    <!-- Cross-connections within circle -->
+    <line x1="510" y1="340" x2="300" y2="550" marker-end="url(#af)"/>
+    <line x1="510" y1="550" x2="300" y2="340" marker-end="url(#af)"/>
+    <!-- Circle to tail -->
+    <line x1="510" y1="340" x2="290" y2="178" marker-end="url(#af)"/>
+    <path d="M510,340 Q496,195 425,68" marker-end="url(#af)"/>
+    <line x1="510" y1="550" x2="290" y2="178" marker-end="url(#af)"/>
+    <path d="M510,550 Q497,304 425,68" marker-end="url(#af)"/>
+    <line x1="300" y1="550" x2="290" y2="178" marker-end="url(#af)"/>
+    <line x1="300" y1="550" x2="425" y2="68" marker-end="url(#af)"/>
+    <line x1="300" y1="340" x2="425" y2="68" marker-end="url(#af)"/>
+  </g>
+
+  <!-- Care loop: 1→2→3→4→1 (arcs along the circle) -->
+  <g stroke="#4f46e5" stroke-width="2.5" fill="none">
+    <path d="M510,340 Q600,445 510,550" marker-end="url(#ac)"/>
+    <path d="M510,550 Q405,640 300,550" marker-end="url(#ac)"/>
+    <path d="M300,550 Q210,445 300,340" marker-end="url(#ac)"/>
+    <path d="M300,340 Q405,250 510,340" marker-end="url(#ac)"/>
+  </g>
+
+  <!-- Tail: 應→結→生 (arcs forming the "6" stem) -->
+  <g stroke="#4f46e5" stroke-width="2.5" fill="none">
+    <path d="M300,340 Q250,262 290,178" marker-end="url(#ac)"/>
+    <path d="M290,178 Q320,105 425,68" marker-end="url(#ac)"/>
+  </g>
+
+  <!-- Node halos (white backing to clip edge overlap) -->
+  <g fill="white">
+    <circle cx="510" cy="340" r="42"/>
+    <circle cx="510" cy="550" r="42"/>
+    <circle cx="300" cy="550" r="42"/>
+    <circle cx="300" cy="340" r="42"/>
+    <circle cx="290" cy="178" r="42"/>
+    <circle cx="425" cy="68" r="42"/>
+  </g>
+
+  <!-- Node circles -->
+  <circle cx="510" cy="340" r="38" fill="#4338ca"/>
+  <circle cx="510" cy="550" r="38" fill="#7c3aed"/>
+  <circle cx="300" cy="550" r="38" fill="#0891b2"/>
+  <circle cx="300" cy="340" r="38" fill="#059669"/>
+  <circle cx="290" cy="178" r="38" fill="#d97706"/>
+  <circle cx="425" cy="68" r="38" fill="#dc2626"/>
+
+  <!-- Node kanji (mnemonic: 察責任應結生) -->
+  <g font-size="26" fill="white" text-anchor="middle">
+    <text x="510" y="340" dy="0.38em">察</text>
+    <text x="510" y="550" dy="0.38em">責</text>
+    <text x="300" y="550" dy="0.38em">任</text>
+    <text x="300" y="340" dy="0.38em">應</text>
+    <text x="290" y="178" dy="0.38em">結</text>
+    <text x="425" y="68" dy="0.38em">生</text>
+  </g>
+
+  <!-- Labels (EN + ZH) -->
+  <text x="560" y="333" font-size="14" font-weight="600" fill="#334155">1 Attentiveness</text>
+  <text x="560" y="350" font-size="13" fill="#64748b">覺察力</text>
+
+  <text x="560" y="543" font-size="14" font-weight="600" fill="#334155">2 Responsibility</text>
+  <text x="560" y="560" font-size="13" fill="#64748b">負責力</text>
+
+  <text x="248" y="543" text-anchor="end" font-size="14" font-weight="600" fill="#334155">3 Competence</text>
+  <text x="248" y="560" text-anchor="end" font-size="13" fill="#64748b">勝任力</text>
+
+  <text x="248" y="333" text-anchor="end" font-size="14" font-weight="600" fill="#334155">4 Responsiveness</text>
+  <text x="248" y="350" text-anchor="end" font-size="13" fill="#64748b">回應力</text>
+
+  <text x="238" y="171" text-anchor="end" font-size="14" font-weight="600" fill="#334155">5 Solidarity</text>
+  <text x="238" y="188" text-anchor="end" font-size="13" fill="#64748b">團結力</text>
+
+  <text x="425" y="15" text-anchor="middle" font-size="14" font-weight="600" fill="#334155">6 Symbiosis</text>
+  <text x="425" y="32" text-anchor="middle" font-size="13" fill="#64748b">共生力</text>
+
+  <!-- Legend -->
+  <g transform="translate(250,682)">
+    <line x1="0" y1="0" x2="25" y2="0" stroke="#4f46e5" stroke-width="2.5"/>
+    <polygon points="22,-3 30,0 22,3" fill="#4f46e5"/>
+    <text x="36" y="4" font-size="11" fill="#475569">the 6 (loop + tail)</text>
+
+    <line x1="180" y1="0" x2="205" y2="0" stroke="#94a3b8" stroke-width="1.2" opacity="0.45"/>
+    <polygon points="202,-2.5 208,0 202,2.5" fill="#94a3b8" opacity="0.45"/>
+    <text x="214" y="4" font-size="11" fill="#475569">forward</text>
+  </g>
+</svg>
