@@ -44,9 +44,13 @@ Six design principles turn care ethics into something we can code. Think of them
 
 ## Latest
 
+[Podcast: The 6-Pack of Care](/podcast/): Audrey and Caroline introduce the full framework live — all six packs, with grounding in social care practice, the kami metaphor, and what to do next. Transcript included. _(Accelerating AI Ethics, Oxford, 58 min)_
+
 ["Treat AI Safety Like Civil Defence"](/ai-crisis-diplomacy/): Diplomatic time runs in years; algorithmic time runs in milliseconds. A speech on closing that gap — with three building blocks, a regional proposal, and the 6-Pack of Care.
 
 ["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/): Taiwan's citizen-led response to AI-enabled scams offers a better model where citizens, not big tech, decide what "aligned" means.
+
+[Earlier conversation: AI and Democracy](https://podcasts.ox.ac.uk/ai-and-democracy-ambassador-audrey-tang-plurality-practice-transparency-and-collective-intelligence): Plurality in practice — transparency, collective intelligence, and the democratic case for civic tech. _(Accelerating AI Ethics, Oxford, 58 min)_
 
 ## About the Project
 
