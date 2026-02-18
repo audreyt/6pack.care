@@ -55,6 +55,10 @@ AI 不是活在真空裡。它活在我們的社群裡，受權力動態和價�
 
 [《惡意 AI 蜂群如何威脅民主》](https://www.science.org/doi/10.1126/science.adz1697)：唐鳳與 Maria Ressa、Nick Bostrom、Nicholas Christakis 等 22 位研究者聯合記錄：由大型語言模型驅動的智慧體蜂群如何大規模滲透社群、偽造共識。_（《科學》期刊，2026 年）_
 
+[《對話網路》](https://www.mediatechdemocracy.com/conversation-networks)：唐鳳與 Deb Roy、Lawrence Lessig 提出公民傳播基礎設施——可互通的數位應用程式結合人類引導的 AI——作為第一力與第五力的技術底層。_（麥基爾大學媒體、科技與民主研究中心，2025 年 3 月）_
+
+[《社群設計》](https://arxiv.org/abs/2502.10834)：唐鳳與 Glen Weyl 等四位共同作者提出以社會紐帶重建社群平台——獎勵搭橋連結社群的內容，而非最大化參與度。第一力與第五力的技術骨幹。_（arXiv，2025 年 2 月）_
+
 [Podcast：AI 與民主](https://podcasts.ox.ac.uk/ai-and-democracy-ambassador-audrey-tang-plurality-practice-transparency-and-collective-intelligence)：多元宇宙的實踐——透明度、集體智慧，以及支持 AI 公民科技的民主論據。_（Accelerating AI Ethics，牛津，58 分鐘）_
 
 ## 關於本計畫
