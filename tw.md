@@ -51,6 +51,10 @@ AI 不是活在真空裡。它活在我們的社群裡，受權力動態和價�
 
 [《AI 對齊不能由上而下》](/tw/ai-alignment-cannot-be-top-down/)：臺灣公民主導的 AI 防詐回應提供了一個更好的模式，由公民而非科技巨頭來決定什麼是「對齊」。
 
+[《讓 230 條款退場，讓第一修正案大展身手》](https://cacm.acm.org/opinion/sunset-section-230-and-unleash-the-first-amendment/)：唐鳳與 Jaron Lanier、Allison Stanger 合著，主張終止演算法擴大觸及範圍的免責保護，同時保障人類言論——第五力核心的「觸及非言論」改革。_（ACM 通訊，2026 年 1 月）_
+
+[《惡意 AI 蜂群如何威脅民主》](https://www.science.org/doi/10.1126/science.adz1697)：唐鳳與 Maria Ressa、Nick Bostrom、Nicholas Christakis 等 22 位研究者聯合記錄：由大型語言模型驅動的智慧體蜂群如何大規模滲透社群、偽造共識。_（《科學》期刊，2026 年）_
+
 [Podcast：AI 與民主](https://podcasts.ox.ac.uk/ai-and-democracy-ambassador-audrey-tang-plurality-practice-transparency-and-collective-intelligence)：多元宇宙的實踐——透明度、集體智慧，以及支持 AI 公民科技的民主論據。_（Accelerating AI Ethics，牛津，58 分鐘）_
 
 ## 關於本計畫
