@@ -54,11 +54,10 @@
                 <span style="white-space: nowrap"
                     >{{ header_title | default: title }}</span
                 >
+                {% if subtitle %}
                 <span style="font-weight: 300">—</span>
-                <span style="white-space: nowrap"
-                    >{{ subtitle | default: "Institute for Ethics in AI"
-                    }}</span
-                >
+                <span style="white-space: nowrap">{{ subtitle }}</span>
+                {% endif %}
             </h1>
             {% if description %}
             <p>{{ description }}</p>

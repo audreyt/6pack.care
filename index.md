@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "6-Pack of Care — Civic AI"
-header_title: "6-Pack of Care"
-subtitle: "Civic AI"
 description: "Research project by Audrey Tang and Caroline Green"
 lang: en-gb
 alt_lang_url: "/tw/"
