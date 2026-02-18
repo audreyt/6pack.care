@@ -5,7 +5,7 @@ lang: zh-tw
 alt_lang_url: "/podcast/"
 permalink: "/tw/podcast/"
 date: 2025-09-05
-description: '原始錄音來自牛津大學人工智慧倫理研究所的 <a href="https://podcasts.ox.ac.uk/6-pack-care-ambassador-audrey-tang-and-dr-caroline-green-civic-care-approach">Accelerating AI Ethics</a> Podcast。'
+description: '原始錄音來自牛津 AI 倫理研究院的 <a href="https://podcasts.ox.ac.uk/6-pack-care-ambassador-audrey-tang-and-dr-caroline-green-civic-care-approach">Accelerating AI Ethics</a> Podcast。'
 nav_next:
     url: "/tw/"
     text: "首頁"
@@ -28,7 +28,7 @@ nav_next:
 
 ---
 
-**Caroline Green**：哈囉，歡迎回到《AI 倫理加速》。我是牛津大學人工智慧倫理研究所的 Caroline Green 博士。八月，我們與唐鳳大使進行了一場非凡的對話，探討「多元宇宙」——一種讓 AI 擴大人類合作、而非取而代之的願景。那集的迴響清楚表明，人們迫切需要有希望、有實踐性的替代方案，而不只是 AI 衝突或奇點的主流敘事。
+**Caroline Green**：哈囉，歡迎回到《AI 倫理加速》。我是牛津 AI 倫理研究院的 Caroline Green 博士。八月，我們與唐鳳大使進行了一場非凡的對話，探討「多元宇宙」——一種讓 AI 擴大人類合作、而非取而代之的願景。那集的迴響清楚表明，人們迫切需要有希望、有實踐性的替代方案，而不只是 AI 衝突或奇點的主流敘事。
 
 今天，我們要從那個宏觀願景，走向具體的架構。唐鳳與我在牛津合作了一本新書，詳細說明我們如何建構這個未來。書名是《關懷六力：在 AI 治理中實踐仁工智慧》。唐鳳，歡迎回來。
 
