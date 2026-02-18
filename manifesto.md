@@ -1,7 +1,9 @@
 ---
 layout: chapter
 title: "6-Pack of Care: A Manifesto"
-description: "Audrey Tang and Caroline Green"
+author: "Audrey Tang"
+date: 2025-09-01
+description: "Speech delivered at Google DeepMind, London."
 lang: en-gb
 alt_lang_url: "/tw/manifesto"
 nav_prev:

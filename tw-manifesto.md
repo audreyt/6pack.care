@@ -1,7 +1,9 @@
 ---
 layout: chapter
 title: "關懷六力：計畫宣言"
-description: "唐鳳與 Caroline Green"
+author: "唐鳳"
+date: 2025-09-01
+description: "於 Google DeepMind（倫敦）發表之演講。"
 lang: zh-tw
 alt_lang_url: "/manifesto"
 permalink: "/tw/manifesto/"
