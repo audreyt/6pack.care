@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "關懷六力"
+title: "關懷六力——仁工智慧"
 header_title: "關懷六力"
 subtitle: "仁工智慧"
 description: "唐鳳與 Caroline Green 的研究計畫"
