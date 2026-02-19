@@ -231,12 +231,11 @@ li {
     box-shadow: var(--shadow);
 }
 
-/* Audio Player — minimal, tucked into upper-right margin */
+/* Audio Player — minimal, centred, clears both sides */
 .audio-section {
-    float: right;
-    clear: right;
-    width: 240px;
-    margin: 0 0 1.25rem 1.75rem;
+    clear: both;
+    width: 320px;
+    margin: 0 auto 1.5rem;
     opacity: 0.55;
     transition: opacity 0.25s;
 }
@@ -253,9 +252,7 @@ li {
 
 @media (max-width: 719px) {
     .audio-section {
-        float: none;
         width: 100%;
-        margin: 0 0 1.25rem 0;
         opacity: 1;
     }
 }
