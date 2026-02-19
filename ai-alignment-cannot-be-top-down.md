@@ -14,6 +14,17 @@ nav_next:
 
 _Community Notes offers a better model — where citizens, not corporations, decide what “aligned” means._
 
+<div class=”audio-section”>
+  <div class=”audio-icon”>🔊</div>
+  <div class=”audio-content”>
+    <p class=”audio-label”>Narrated in Audrey's own AI voice</p>
+    <audio controls preload=”metadata”>
+      <source src=”/audio/ai-alignment-cannot-be-top-down.mp3” type=”audio/mpeg”>
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+
 In March 2024, I opened Facebook and saw Jensen Huang’s face. The Nvidia CEO was offering investment advice, speaking directly to me in Mandarin. Of course, it was not really Huang. It was an AI-generated scam, and I was far from the first to be targeted: across Taiwan, a flood of scams was defrauding millions of citizens.
 
 We faced a dilemma. Taiwan has the freest internet in Asia; any content regulation is unacceptable. Yet AI was being used to weaponise that freedom against the citizenry.
