@@ -8,8 +8,8 @@ permalink: "/ai-alignment-cannot-be-top-down/"
 date: 2025-11-03
 description: 'Originally published in <a href="https://ai-frontiers.org/articles/ai-alignment-cannot-be-top-down">AI Frontiers</a>.'
 nav_next:
-    url: “/”
-    text: “Home”
+    url: "/"
+    text: "Home"
 audio: /audio/ai-alignment-cannot-be-top-down.mp3
 ---
 
