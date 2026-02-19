@@ -7,16 +7,16 @@ name: "Doc sync"
 #   Repo → Doc : push merged markdown back to the Google Doc tabs
 #                via the Docs API (clear + rebuild with formatting).
 
-on:
-    schedule:
-        - cron: "0 */6 * * *" # check for doc changes every 6 hours
-    push:
-        branches: [main]
-        paths:
-            - "*.md"
-            - ".github/doc_sync_config.py"
-            - ".github/workflows/doc-sync.yml"
-    workflow_dispatch:
+#on:
+#    schedule:
+#        - cron: "0 */6 * * *" # check for doc changes every 6 hours
+#    push:
+#        branches: [main]
+#        paths:
+#            - "*.md"
+#            - ".github/doc_sync_config.py"
+#            - ".github/workflows/doc-sync.yml"
+#    workflow_dispatch:
 
 permissions:
     contents: write
