@@ -83,7 +83,20 @@
             {% endif %}
         </header>
 
-        <main>{{ content }}</main>
+        <main>
+            {% if audio %}
+            <div class="audio-section">
+                <div class="audio-icon">🔊</div>
+                <div class="audio-content">
+                    <p class="audio-label">Narrated in Audrey's own AI voice</p>
+                    <audio controls preload="metadata">
+                        <source src="{{ audio }}" type="audio/mpeg" />
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            {% endif %}{{ content }}
+        </main>
 
         <section class="next-action">
             <div class="next-action-content">

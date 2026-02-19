@@ -13,18 +13,8 @@ nav_next:
     url: "/faq"
     text: "FAQ"
 permalink: "/manifesto/"
+audio: "/audio/manifesto.mp3"
 ---
-
-<div class="audio-section">
-  <div class="audio-icon">🔊</div>
-  <div class="audio-content">
-    <p class="audio-label">Narrated in Audrey's own AI voice</p>
-    <audio controls preload="metadata">
-      <source src="/audio/manifesto.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-  </div>
-</div>
 
 When we discuss "AI" and "society," two futures compete.
 
