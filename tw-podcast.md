@@ -11,22 +11,13 @@ nav_next:
     text: "首頁"
 ---
 
-唐鳳與 Caroline Green 現場介紹關懷六力——就在網站上線的那週。五十八分鐘涵蓋六力全部，從覺察力到共生力，紮根於社會關懷實踐、共同生產、地神比喻，以及聆聽之後可以採取的行動。
+<em>唐鳳與 Caroline Green 現場介紹關懷六力——就在網站上線的那週。五十八分鐘涵蓋六力全部，從覺察力到共生力，紮根於社會關懷實踐、共同生產、地神比喻，以及聆聽之後可以採取的行動。</em>
 
 <div class="audio-section">
-  <div class="audio-icon">🎙</div>
-  <div class="audio-content">
-    <p class="audio-label">Accelerating AI Ethics · 2025 年 9 月 5 日 · 58 分鐘</p>
-    <audio controls preload="none">
-      <source src="https://media.podcasts.ox.ac.uk/philfac/accelerating_ai_ethics/2025-09-05-ethics_ai_ep-3-tang.mp3" type="audio/mpeg">
-    </audio>
-    <p class="audio-links">
-      <a href="https://podcasts.ox.ac.uk/6-pack-care-ambassador-audrey-tang-and-dr-caroline-green-civic-care-approach">Oxford Podcasts 頁面</a> · <a href="https://media.podcasts.ox.ac.uk/philfac/accelerating_ai_ethics/2025-09-05-ethics_ai_ep-3-tang.mp3">下載 MP3</a>
-    </p>
-  </div>
+  <audio controls preload="none">
+    <source src="https://media.podcasts.ox.ac.uk/philfac/accelerating_ai_ethics/2025-09-05-ethics_ai_ep-3-tang.mp3" type="audio/mpeg">
+  </audio>
 </div>
-
----
 
 **Caroline Green**：哈囉，歡迎回到《AI 倫理加速》。我是牛津 AI 倫理研究院的 Caroline Green 博士。八月，我們與唐鳳大使進行了一場非凡的對話，探討「多元宇宙」——一種讓 AI 擴大人類合作、而非取而代之的願景。那集的迴響清楚表明，人們迫切需要有希望、有實踐性的替代方案，而不只是 AI 衝突或奇點的主流敘事。
 

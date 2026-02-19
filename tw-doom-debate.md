@@ -11,22 +11,11 @@ nav_next:
     text: "首頁"
 ---
 
-唐鳳與 Liron Shapira 在《末日辯論》節目中展開深度對談——這是一個以超級智慧風險為主題的訪談系列。九十分鐘，探討為何 P (末日) 是 NaN（非數值）、什麼是透明馬架構，以及關懷六力如何在文明尺度上為仁工智慧治理提供藍圖。
+<em>唐鳳與 Liron Shapira 在《末日辯論》節目中展開深度對談——這是一個以超級智慧風險為主題的訪談系列。九十分鐘，探討為何 P (末日) 是 NaN（非數值）、什麼是透明馬架構，以及關懷六力如何在文明尺度上為仁工智慧治理提供藍圖。</em>
 
-<div class="audio-section">
-  <div class="audio-icon">📺</div>
-  <div class="audio-content">
-    <p class="audio-label">Doom Debates · 2026 年 1 月 20 日</p>
-    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;margin:1rem 0;">
-      <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" src="https://www.youtube-nocookie.com/embed/bvcmiirT8ME?si=urqA-2pfCO2UljU-" title="末日辯論——唐鳳與 Liron Shapira" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    <p class="audio-links">
-      <a href="https://sayit.archive.tw/2026-01-20-doom-debate">sayit.archive.tw</a>
-    </p>
-  </div>
+<div class="video-embed">
+<iframe src="https://www.youtube-nocookie.com/embed/bvcmiirT8ME?si=urqA-2pfCO2UljU-" title="末日辯論——唐鳳與 Liron Shapira" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-
----
 
 **Liron Shapira**：歡迎收看《末日辯論》。唐鳳是臺灣政治家兼自由軟體程式設計師，目前擔任臺灣網路空間治理無任所大使。她是自學成才的程式設計天才，國中輟學後成為全球開源社群的頂尖貢獻者。
 

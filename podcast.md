@@ -11,22 +11,13 @@ nav_next:
     text: "Home"
 ---
 
-Audrey Tang and Caroline Green introduce the 6-Pack of Care — live, in the week the site launched. Fifty-eight minutes covering all six packs, from attentiveness to symbiosis, with grounding in social care practice, co-production, the kami metaphor, and what to do after listening.
+<em>Audrey Tang and Caroline Green introduce the 6-Pack of Care — live, in the week the site launched. Fifty-eight minutes covering all six packs, from attentiveness to symbiosis, with grounding in social care practice, co-production, the kami metaphor, and what to do after listening.</em>
 
 <div class="audio-section">
-  <div class="audio-icon">🎙</div>
-  <div class="audio-content">
-    <p class="audio-label">Accelerating AI Ethics · 5 September 2025 · 58 min</p>
-    <audio controls preload="none">
-      <source src="https://media.podcasts.ox.ac.uk/philfac/accelerating_ai_ethics/2025-09-05-ethics_ai_ep-3-tang.mp3" type="audio/mpeg">
-    </audio>
-    <p class="audio-links">
-      <a href="https://podcasts.ox.ac.uk/6-pack-care-ambassador-audrey-tang-and-dr-caroline-green-civic-care-approach">Oxford Podcasts page</a> · <a href="https://media.podcasts.ox.ac.uk/philfac/accelerating_ai_ethics/2025-09-05-ethics_ai_ep-3-tang.mp3">Download MP3</a>
-    </p>
-  </div>
+  <audio controls preload="none">
+    <source src="https://media.podcasts.ox.ac.uk/philfac/accelerating_ai_ethics/2025-09-05-ethics_ai_ep-3-tang.mp3" type="audio/mpeg">
+  </audio>
 </div>
-
----
 
 **Caroline Green**: Hello and welcome back to Accelerating AI Ethics. I'm Dr Caroline Green from the Institute for Ethics in AI. In August, we had an extraordinary conversation with Ambassador Audrey Tang about Plurality, a vision for AI that augments human cooperation rather than replacing it. The response to that episode highlighted a clear need for hopeful, practical alternatives to the dominant narratives of AI conflict or singularity.
 
@@ -72,7 +63,7 @@ So then we need something else. At a speed of thousands of times the difference 
 
 And that idea of co-presence — that AI now has this seat at the table — I find really interesting. You challenge the norms of a physical presence in your own work. Can you tell us about your experience at the UN Internet Governance Forum in Geneva back in 2017, where you participated via a telepresence robot?
 
-**Audrey Tang**: Yeah, definitely. Back then in 2017, I was invited to talk in UN Geneva in the Internet Governance Forum about empowering people in small islands, in landlocked countries in which internet access isn't for granted. So, this is an area where Taiwan has extensive experience, but because Taiwan is not currently a member at the UN, at the door of the UN Geneva building, if you show a passport from Taiwan, you cannot get in. This is a classic case of something about us without us. And so, it just turns out that Double Robotics, which is a company that makes those machine doubles\*\*: their machines do not need a passport to get into the door.
+**Audrey Tang**: Yeah, definitely. Back then in 2017, I was invited to talk in UN Geneva in the Internet Governance Forum about empowering people in small islands, in landlocked countries in which internet access isn't for granted. So, this is an area where Taiwan has extensive experience, but because Taiwan is not currently a member at the UN, at the door of the UN Geneva building, if you show a passport from Taiwan, you cannot get in. This is a classic case of something about us without us. And so, it just turns out that Double Robotics, which is a company that makes those machine doubles: their machines do not need a passport to get into the door.
 
 I was in Taipei and just remote controlling that machine. When somebody raised their hands, I could turn the machine to face at them. And it became the first time since 1971 where a representative from Taiwan and a representative from Beijing spoke on the record in the same UN meeting together.
 
@@ -98,7 +89,7 @@ And so attentiveness is to both the unique needs of various different sub-groups
 
 **Caroline Green**: So, when we do listen, but then there's no action after that, you say that is theatre, right? Would you say once a need is noticed, the next step**: Responsibility**: is how we move from recognising a problem to making a verifiable commitment?
 
-**Audrey Tang**: Indeed. So nowadays, when people are developing AI, many frontier labs have this thing called "model specification" or "model spec." And such a spec is a way to make a public pledge to the relevant community about what this AI system is trying to do\*\*: and also what it pledges not to do.
+**Audrey Tang**: Indeed. So nowadays, when people are developing AI, many frontier labs have this thing called "model specification" or "model spec." And such a spec is a way to make a public pledge to the relevant community about what this AI system is trying to do: and also what it pledges not to do.
 
 And a few years ago, we introduced this idea of alignment assemblies in which a statistically representative slice of the public come together, and in groups, they look at each other's suggestions for the AI system code of conduct, integrating those into their own lived experience and upvoting or downvoting them. After a few rounds of deliberation, they settle on these kinds of bridges of what AI systems should and should not do in their community.
 
@@ -114,7 +105,7 @@ We had tech providers in this co-production as well — people who are building 
 
 And once this is done, then we translate those very legible specifications into something that AI systems can already comprehend. So, instead of human programmers programming each of those pledges into their systems logic, it is becoming a curriculum, so that when AI systems train on those data and materials, the data that goes in has already been filtered by the lens of those pledges — so that the AI, once trained, intuitively understands what is moral for this group of people.
 
-**Caroline Green**: So, there's one question that I am burning to ask you. How could we re-envision the co-production process on AI in social care, which has happened mostly without AI\*\*: how could we do it now using AI?
+**Caroline Green**: So, there's one question that I am burning to ask you. How could we re-envision the co-production process on AI in social care, which has happened mostly without AI: how could we do it now using AI?
 
 **Audrey Tang**: Yeah, definitely. So, one very quick introduction we can make is**: because you do have the transcript of all those deliberative polling sequences**: instead of just taking the quantitative data of the final poll, we can also take the qualitative data of that conversation and feed it into the sense-maker, which is open source. The sense-maker would then be able to annotate the votes that people give at the end of the deliberation and nuance those decisions into, for example, people agree that these are important principles, but people start saying: when deploying, you need to watch out for this, watch out for that.
 
@@ -132,13 +123,13 @@ A competent teacher, or a gardener, is a very good metaphor for a competent care
 
 So here, one day the system really helped the person, but on another day, in another context, it wasn't very helpful. And people are concerned that AI might mean that they will be cut off from important relationships they have with caregivers coming into their homes — because now the policy is, oh, we only need a caregiver to come in once a day instead of twice a day because there's an AI system supporting. So, how important is it to really think about how these AI systems work for people in their contexts and their situations?
 
-**Audrey Tang**: Yeah, definitely. And I think that is the fundamental difference from the previous age of reinforcement learning with human feedback in which ChatGPT was born, because they ranked the various possible outcomes by asking individuals to rank this response as better than that response. And once they worked with a lot of people to label good and bad responses, it produced something that would consistently get good scores from human labellers\*\*: but it also made ChatGPT extremely flattering, extremely sycophantic, because most people, when they are in this kind of individual dyadic relationship, they optimise for this short-term satisfaction. And so, if something flatters me, of course I'm going to let it pass. But if something really checks my understanding, really pushes back against my hallucination, maybe I'll give it a thumbs down. Right? And so an AI that is trained from individual human feedback may not prioritise the relational health of that human embedded in a community.
+**Audrey Tang**: Yeah, definitely. And I think that is the fundamental difference from the previous age of reinforcement learning with human feedback in which ChatGPT was born, because they ranked the various possible outcomes by asking individuals to rank this response as better than that response. And once they worked with a lot of people to label good and bad responses, it produced something that would consistently get good scores from human labellers: but it also made ChatGPT extremely flattering, extremely sycophantic, because most people, when they are in this kind of individual dyadic relationship, they optimise for this short-term satisfaction. And so, if something flatters me, of course I'm going to let it pass. But if something really checks my understanding, really pushes back against my hallucination, maybe I'll give it a thumbs down. Right? And so an AI that is trained from individual human feedback may not prioritise the relational health of that human embedded in a community.
 
 So now we're seeing more advances in multi-agent settings, where the agent is learning not from individual feedback, but from community feedback — and so the situation you describe, where a person is not just alone in their home, but rather has a community of helpers, prioritising these relationships of culture, family, and so on as the main unit of analysis, and then doing reinforcement learning to get the better score, not from a thumbs up or down, but from a mutual recognition and mutual assurance from those communities. This is a very active area of multi-agent research.
 
-**Caroline Green**: Yeah, and I can also see here how we then need to adopt a mindset of building systems that is about people's needs and learning from their needs and wishes rather than based on assumptions\*\*: for example, of particular groups. So, there's a growing community now interested in building systems specifically for older people. But we don't just have a group of older people where everybody is the same. If we're wanting to build systems that help older people in their situations, we should think more about those localised, individual needs, family health, relational health, and so on.
+**Caroline Green**: Yeah, and I can also see here how we then need to adopt a mindset of building systems that is about people's needs and learning from their needs and wishes rather than based on assumptions: for example, of particular groups. So, there's a growing community now interested in building systems specifically for older people. But we don't just have a group of older people where everybody is the same. If we're wanting to build systems that help older people in their situations, we should think more about those localised, individual needs, family health, relational health, and so on.
 
-**Audrey Tang**: That's exactly right. Like if I am a very old person, but I do not have this particular frailty, for an AI system to simply assume that I have and provide all sorts of help is really taking away my agency\*\*: and it is a kind of discrimination, really. And so, to overcome those very simple, very thin labels and stereotypes, it's exactly why we need this communal AI alignment, because that's the only way to provide the thick context from that particular community.
+**Audrey Tang**: That's exactly right. Like if I am a very old person, but I do not have this particular frailty, for an AI system to simply assume that I have and provide all sorts of help is really taking away my agency: and it is a kind of discrimination, really. And so, to overcome those very simple, very thin labels and stereotypes, it's exactly why we need this communal AI alignment, because that's the only way to provide the thick context from that particular community.
 
 **Caroline Green**: Let's move on to the next pack. Once we know that a system isn't perfect**: and no system is perfect**: it needs to be changed. It needs to adjust. How do we design systems that are correctable and adaptable at the speed of society?
 
@@ -148,7 +139,7 @@ The idea here is that we need to make something like a Wikipedia for evaluating 
 
 And so this then closes the loop — because once those individual harms are foregrounded and made into something that everybody can see, then we can continuously run those benchmarks against the frontier models so that when they release a new version, it doesn't only compete on the scoreboard of, for example, solving the international Olympiad on mathematics, but also makes sure that it doesn't regress on those benchmarks where it really did cause people harm.
 
-**Caroline Green**: Okay, yeah\*\*: that's actually our next step in the responsible AI and social care project, to create a database where people can report their experiences, be it harms but also what they find helpful. So I think we need a Weval here.
+**Caroline Green**: Okay, yeah: that's actually our next step in the responsible AI and social care project, to create a database where people can report their experiences, be it harms but also what they find helpful. So I think we need a Weval here.
 
 **Audrey Tang**: Yeah, we do need a Weval here so that when the next version of those technologies comes, you can run in a simulated environment**: a simulated person in exactly the same situation**: and then evaluate how the next version of the robots will respond to it, making sure they continuously run this test so that they don't cause more harm once they release the second version out to the wild.
 
@@ -164,9 +155,9 @@ And we also need the idea of selective disclosure, or meronymity — partial ano
 
 But if we do meronymity, selective disclosure, then we can make sure that it comes from somebody who claims to be a resident in this country, who claims to be between 18 and 50 years old — but then you do not need to learn anything more about it. Interoperability and meronymity together provide a good infrastructure for agentic AI, so that we can know each chatbot, each technology comes from some kind of vendor, what kind of pledge did it sign, which community is this pledge going into — without revealing the private details of any community members participating in the deliberation or the wiki eval.
 
-**Caroline Green**: So surely that would also incentivise providers to ensure that their systems work\*\*: that they're competent?
+**Caroline Green**: So surely that would also incentivise providers to ensure that their systems work: that they're competent?
 
-**Audrey Tang**: The race to the top, right\*\*: not to the bottom of the brainstem.
+**Audrey Tang**: The race to the top, right: not to the bottom of the brainstem.
 
 **Caroline Green**: So, the last pack is Symbiosis. And that one offers a direct challenge to the singularity narrative. You introduce a really powerful metaphor from Japanese Shinto\*\*: the kami. What are kami in the context of AI, and why is this vision preferable to the singularity narrative?
 

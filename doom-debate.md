@@ -11,22 +11,11 @@ nav_next:
     text: "Home"
 ---
 
-Audrey Tang joins Liron Shapira on Doom Debates — a series on superintelligence risk. Ninety minutes on why P(Doom) is Not a Number, what a glass-horse architecture looks like, and how the 6-Pack of Care provides a blueprint for civic AI governance at civilisational scale.
+<em>Audrey Tang joins Liron Shapira on Doom Debates — a series on superintelligence risk. Ninety minutes on why P(Doom) is Not a Number, what a glass-horse architecture looks like, and how the 6-Pack of Care provides a blueprint for civic AI governance at civilisational scale.</em>
 
-<div class="audio-section">
-  <div class="audio-icon">📺</div>
-  <div class="audio-content">
-    <p class="audio-label">Doom Debates · 20 January 2026</p>
-    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;margin:1rem 0;">
-      <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" src="https://www.youtube-nocookie.com/embed/bvcmiirT8ME?si=urqA-2pfCO2UljU-" title="Doom Debate — Audrey Tang and Liron Shapira" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    <p class="audio-links">
-      <a href="https://sayit.archive.tw/2026-01-20-doom-debate">sayit.archive.tw</a>
-    </p>
-  </div>
+<div class="video-embed">
+<iframe src="https://www.youtube-nocookie.com/embed/bvcmiirT8ME?si=urqA-2pfCO2UljU-" title="Doom Debate — Audrey Tang and Liron Shapira" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-
----
 
 **Liron Shapira**: Welcome to Doom Debates. Audrey Tang is a Taiwanese politician and free software programmer who currently serves as Taiwan’s ambassador at large for cyberspace governance. She is a self-taught programming genius who dropped out of high school and became a top contributor to open-source communities worldwide.
 
