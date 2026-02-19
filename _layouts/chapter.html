@@ -86,14 +86,13 @@
         <main>
             {% if audio %}
             <div class="audio-section">
-                <div class="audio-icon">🔊</div>
-                <div class="audio-content">
-                    <p class="audio-label">Narrated in Audrey's own AI voice</p>
-                    <audio controls preload="metadata">
-                        <source src="{{ audio }}" type="audio/mpeg" />
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
+                <audio
+                    controls
+                    preload="metadata"
+                    title="Narrated in Audrey's own AI voice"
+                >
+                    <source src="{{ audio }}" type="audio/mpeg" />
+                </audio>
             </div>
             {% endif %}{{ content }}
         </main>
