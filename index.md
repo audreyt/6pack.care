@@ -73,7 +73,7 @@ Six design principles turn care ethics into something we can code. Think of them
 
 </div>
 
-Our project—a [manifesto](/manifesto/) and a book arriving in 2026—explores what happens when we take Joan Tronto's care ethics seriously as a strategy for AI alignment.
+Our project—a [manifesto](/manifesto/) and a book arriving in 2026—explores what happens when we take Joan Tronto's care ethics seriously as a strategy for AI alignment. Audrey and Caroline will present the framework at the Civic AI Conference on 26 March 2026.
 
 ## From Care to Code
 
