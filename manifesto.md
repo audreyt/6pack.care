@@ -13,7 +13,7 @@ nav_next:
     url: "/faq"
     text: "FAQ"
 permalink: "/manifesto/"
-audio: "/audio/manifesto.mp3"
+audio: /audio/manifesto.mp3
 ---
 
 When we discuss "AI" and "society," two futures compete.

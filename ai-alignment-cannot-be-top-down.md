@@ -10,7 +10,7 @@ description: 'Originally published in <a href="https://ai-frontiers.org/articles
 nav_next:
     url: “/”
     text: “Home”
-audio: “/audio/ai-alignment-cannot-be-top-down.mp3”
+audio: /audio/ai-alignment-cannot-be-top-down.mp3
 ---
 
 _Community Notes offers a better model — where citizens, not corporations, decide what “aligned” means._
