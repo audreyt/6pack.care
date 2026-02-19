@@ -10,6 +10,7 @@
     --card: #f8f9fb;
     --text: #002147;
     --muted: #444444;
+    --heading: #002147;
     --shadow: 0 2px 8px rgba(0, 33, 71, 0.08);
     --shadow-hover: 0 4px 16px rgba(0, 33, 71, 0.12);
 }
@@ -168,7 +169,7 @@ h4 {
         system-ui,
         sans-serif;
     font-weight: 700;
-    color: var(--oxford-blue);
+    color: var(--heading);
     margin-top: 1em;
     margin-bottom: 0.5em;
 }
@@ -263,7 +264,7 @@ li {
 
 .audio-section .audio-label {
     font-size: 0.9em;
-    color: var(--oxford-blue);
+    color: var(--heading);
     font-weight: 600;
     margin: 0;
 }
@@ -341,7 +342,7 @@ li {
 }
 
 .figure-caption strong {
-    color: var(--oxford-blue);
+    color: var(--heading);
 }
 
 /* Grid Layouts */
@@ -537,5 +538,26 @@ footer a:hover {
     .overview-image {
         border-radius: 0;
         box-shadow: none;
+    }
+}
+
+/* Dark mode — header/footer keep --oxford-blue unchanged */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #0f172a;
+        --card: #1e293b;
+        --text: #e2e8f0;
+        --muted: #94a3b8;
+        --heading: #7dd3dc;
+        --shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+        --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.5);
+    }
+
+    .callout {
+        background: #0f2a2d;
+    }
+
+    .audio-section {
+        background: linear-gradient(135deg, #0f2a2d 0%, #0f1e30 100%);
     }
 }
