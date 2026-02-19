@@ -42,7 +42,7 @@ ABBREVS = [
     # Titles
     (r"\bDr\.",            "Doctor"),
     (r"\bProf\.",          "Professor"),
-    (r"\bkami\.",          "kaami"),
+    (r"\bkami\b",          "kaami"),
     (r"\bMr\.",            "Mister"),
     (r"\bMrs\.",           "Misses"),
     (r"\bMs\.",            "Ms"),
@@ -62,7 +62,7 @@ ABBREVS = [
     (r"\bYIMBY\b",         "yes in my backyard"),
     (r"\bNIMBY\b",         "not in my backyard"),
     (r"\bMIMBY\b",         "maybe in my backyard"),
-    (r"\bd/acc\b",         "d-acc"),
+    (r"\bd/acc\b",         "d slash a-c-c"),
     # Web
     (r"ROOST\.tools\b",    "ROOST tools"),
 ]
@@ -141,21 +141,26 @@ def transform(text: str) -> str:
     # 3. Markdown links → label only
     text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)
 
-    # 4. Markdown headings → plain text (double newline for prosody pause)
-    text = re.sub(r"^#{1,6}\s+(.+)$", r"\n\1\n", text, flags=re.MULTILINE)
+    # 4. Markdown headings → pause markers before and after for TTS prosody
+    text = re.sub(r"^#{1,6}\s+(.+)$", r"\n...... \1 ...\n", text, flags=re.MULTILINE)
 
-    # 5. Bold / italic
-    text = re.sub(r"\*{1,3}([^*\n]+)\*{1,3}", r"\1", text)
-    text = re.sub(r"_{1,2}([^_\n]+)_{1,2}",   r"\1", text)
+    # 5. Bold / italic → double-quoted for TTS emphasis (preserves stress cues)
+    text = re.sub(r"\*{1,3}([^*\n]+)\*{1,3}", r'"\1"', text)
+    text = re.sub(r"_{1,2}([^_\n]+)_{1,2}",   r'"\1"', text)
+    # Collapse double-quotes from bold wrapping already-quoted text: ""word"" → "word"
+    text = text.replace('""', '"')
 
     # 6. List markers
     text = re.sub(r"^\s*\d+\.\s+", "", text, flags=re.MULTILINE)
     text = re.sub(r"^\s*[-*]\s+",  "", text, flags=re.MULTILINE)
 
     # 7. ⿻ and Unicode symbols
-    text = text.replace("⿻", "")
+    # Consume ⿻ together with any immediately following whitespace so "⿻ Plurality" → "Plurality"
+    text = re.sub(r"⿻\s*", "", text)
     text = text.replace("…", "...")
     text = text.replace("·", ", ")
+    # Drop parenthetical CJK content entirely (e.g. (數位), (神))
+    text = re.sub(r"\s*\([^)]*[\u3400-\u9fff][^)]*\)", "", text)
 
     # 8. Smart quotes → straight
     text = text.replace("\u201c", '"').replace("\u201d", '"')
@@ -168,8 +173,9 @@ def transform(text: str) -> str:
     text = re.sub(r"(\w)\u2013(\w)", r"\1 to \2", text)
     text = re.sub(r"\s*\u2013\s*", " to ", text)
 
-    # 10. Slash in non-URL, non-path contexts → " or " / " per "
-    text = re.sub(r"(?<!\w)([A-Za-z]+)/([A-Za-z]+)(?!\w)", r"\1 or \2", text)
+    # 10. Slash in non-URL, non-path contexts → " or "
+    #     (d/acc handled already in ABBREVS above before this runs — guard it here too)
+    text = re.sub(r"(?<!\w)([A-Za-z]{2,})/([A-Za-z]{2,})(?!\w)", r"\1 or \2", text)
 
     # 11. Abbreviations (before number expansion so "vs." is caught first)
     for pattern, replacement in ABBREVS:
