@@ -86,7 +86,7 @@ AI 不是活在真空裡。它活在我們的社群裡，受權力動態和價�
 
 </div>
 
-我們的計畫——包括[宣言](/tw/manifesto/)和一本預計 2026 年出版的書——探討如果我們認真看待 Joan Tronto 的關懷倫理，並將其作為 AI 對齊的策略，會發生什麼事。唐鳳與 Caroline Green 將於 2026 年 3 月 26 日在仁工智慧研討會（Civic AI Conference）發表本框架。
+我們的計畫——包括[宣言](/tw/manifesto/)和一本預計 2026 年出版的書——探討如果我們認真看待 Joan Tronto 的關懷倫理，並將其作為 AI 對齊的策略，會發生什麼事。唐鳳與 Caroline Green 將於 2026 年 3 月 26 日在[仁工智慧研討會（Civic AI Conference）](https://www.oxford-aiethics.ox.ac.uk/event/civic-ai-conference-rhodes-house-south-park-road-oxford)發表本框架。
 
 ## 從關懷到程式
 
