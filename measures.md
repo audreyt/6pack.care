@@ -6,7 +6,7 @@ alt_lang_url: "/tw/measures"
 permalink: "/measures/"
 ---
 
-Each pack answers a distinct phase question in the care cycle. The measures below are assigned so that each metric belongs to exactly one pack — mutually exclusive, collectively exhaustive.
+Each pack answers a distinct phase question in the care cycle. The measures below are assigned so that each metric belongs to exactly one pack.
 
 ### Pack 1 — Attentiveness: did we look at the right things?
 
