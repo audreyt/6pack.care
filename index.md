@@ -40,6 +40,7 @@ Six design principles turn care ethics into something we can code. Think of them
 - **[Pack 4: Responsiveness](/4/)** — "Care-receiving." Check the results. We rely on evaluations written by the community itself. If someone challenges the outcome, we owe them a clear, public explanation.
 - **[Pack 5: Solidarity](/5/)** — "Caring with." Make it win-win. We build for data portability and shared safety, creating deals where everyone is better off, rather than locking people in.
 - **[Pack 6: Symbiosis](/6/)** — "Kami of care." Keep it grounded. Local, temporary, and bounded. No drive for immortality, no need to take over the world. We build for "enough," not "forever."
+- **[Measures](/measures/)** — Metrics for each pack: mutually exclusive, collectively exhaustive, one per phase of the care cycle.
 - **[Frequently Asked Questions](/faq/)** — The hard questions: What about speed? Cost? Bad actors? And how the 6-Pack handles them.
 
 ## Latest

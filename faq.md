@@ -5,8 +5,8 @@ lang: en-gb
 alt_lang_url: "/tw/faq"
 permalink: "/faq/"
 nav_prev:
-    url: "/manifesto"
-    text: "Manifesto"
+    url: "/measures/"
+    text: "Measures"
 nav_next:
     url: "/"
     text: "Home"

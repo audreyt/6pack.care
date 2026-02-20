@@ -5,8 +5,8 @@ lang: zh-tw
 alt_lang_url: "/faq"
 permalink: "/tw/faq/"
 nav_prev:
-    url: "/tw/manifesto"
-    text: "計畫宣言"
+    url: "/tw/measures/"
+    text: "衡量指標"
 nav_next:
     url: "/tw"
     text: "首頁"
