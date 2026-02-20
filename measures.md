@@ -73,6 +73,6 @@ Trust is present across all six phases, but each pack measures a distinct dimens
 | 5 — Solidarity     | Trust across groups (bridge index)                           |
 | 6 — Symbiosis      | Trust over time (succession readiness, scope compliance)     |
 
-**S0–S3** is a severity classifier defined in Pack 2 (S0 life/safety, S1 livelihood, S2 convenience, S3 UX). It is used as a common scale in Packs 3, 4, and 6 but is not itself a measure.
-
 **Cross-group endorsement** appears in two distinct roles: as an RLCF training signal in Pack 4 (a training objective — how you shape the model) and as the basis of the bridge index in Pack 5 (an ecosystem audit — what you report). These are separate uses.
+
+**S0–S3** is a severity classifier defined in Pack 2 (S0 life/safety, S1 livelihood, S2 convenience, S3 UX). It is used as a common scale in Packs 3, 4, and 6 but is not itself a measure.

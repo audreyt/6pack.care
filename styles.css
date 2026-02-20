@@ -96,6 +96,50 @@ header .chapter-date {
     max-width: 95%;
 }
 
+/* Tables */
+main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+}
+
+main th {
+    text-align: left;
+    padding: 0.6rem 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    font-weight: 600;
+    color: var(--muted);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+main td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+main td:first-child {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+main tr:last-child td {
+    border-bottom: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    main th {
+        border-bottom-color: rgba(255, 255, 255, 0.15);
+    }
+    main td {
+        border-bottom-color: rgba(255, 255, 255, 0.06);
+    }
+}
+
 /* Main Content */
 main {
     max-width: 740px;
