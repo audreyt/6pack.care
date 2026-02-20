@@ -34,28 +34,28 @@ We call this approach **Civic AI**: treating us all as gardeners. AI becomes loc
 
 Six design principles turn care ethics into something we can code. Think of them as muscles we need to train to live well with diversity:
 
-- **[Pack 1: Attentiveness](/1/)** — "Caring about." Listen before leaping. Use bridging algorithms to turn local stories into shared understanding.
-- **[Pack 2: Responsibility](/2/)** — "Taking care of." Commitments mean nothing without consequences. We use engagement contracts with escrowed funds and real deadlines to ensure power is always accountable.
-- **[Pack 3: Competence](/3/)** — "Care-giving." Trust the process, not just the promise. We focus on transparency, fast feedback loops, and automatic "circuit breakers" if things go wrong.
-- **[Pack 4: Responsiveness](/4/)** — "Care-receiving." Check the results. We rely on evaluations written by the community itself. If someone challenges the outcome, we owe them a clear, public explanation.
-- **[Pack 5: Solidarity](/5/)** — "Caring with." Make it win-win. We build for data portability and shared safety, creating deals where everyone is better off, rather than locking people in.
-- **[Pack 6: Symbiosis](/6/)** — "Kami of care." Keep it grounded. Local, temporary, and bounded. No drive for immortality, no need to take over the world. We build for "enough," not "forever."
-- **[Frequently Asked Questions](/faq/)** — The hard questions: What about speed? Cost? Bad actors? And how the 6-Pack handles them.
+1. **[Pack 1: Attentiveness](/1/)** — "Caring about." Listen before leaping. Use bridging algorithms to turn local stories into shared understanding.
+1. **[Pack 2: Responsibility](/2/)** — "Taking care of." Commitments mean nothing without consequences. We use engagement contracts with escrowed funds and real deadlines to ensure power is always accountable.
+1. **[Pack 3: Competence](/3/)** — "Care-giving." Trust the process, not just the promise. We focus on transparency, fast feedback loops, and automatic "circuit breakers" if things go wrong.
+1. **[Pack 4: Responsiveness](/4/)** — "Care-receiving." Check the results. We rely on evaluations written by the community itself. If someone challenges the outcome, we owe them a clear, public explanation.
+1. **[Pack 5: Solidarity](/5/)** — "Caring with." Make it win-win. We build for data portability and shared safety, creating deals where everyone is better off, rather than locking people in.
+1. **[Pack 6: Symbiosis](/6/)** — "Kami of care." Keep it grounded. Local, temporary, and bounded. No drive for immortality, no need to take over the world. We build for "enough," not "forever."
+1. **[Frequently Asked Questions](/faq/)** — The hard questions: What about speed? Cost? Bad actors? And how the 6-Pack handles them.
 
 ## Latest
 
-- [Podcast: The 6-Pack of Care](/podcast/): Audrey and Caroline introduce the full framework live — all six packs, with grounding in social care practice, the kami metaphor, and what to do next. Transcript included. _(Accelerating AI Ethics, Oxford, 58 min)_
-- [Doom Debate](/doom-debate/): Audrey joins Liron Shapira to defend a foomer-not-doomer position — P(Doom) is Not a Number, plurality is already here, and the 6-Pack is the blueprint for the glass horse we need. Transcript included. _(Doom Debates, 90 min)_
-- ["Treat AI Safety Like Civil Defence"](/ai-crisis-diplomacy/): Diplomatic time runs in years; algorithmic time runs in milliseconds. A speech on closing that gap — with three building blocks, a regional proposal, and the 6-Pack of Care. _(AI Impact Summit, Delhi)_
-- ["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/): Taiwan's citizen-led response to AI-enabled scams offers a better model where citizens, not big tech, decide what "aligned" means. _(AI Frontiers)_
+1. [Podcast: The 6-Pack of Care](/podcast/): Audrey and Caroline introduce the full framework live — all six packs, with grounding in social care practice, the kami metaphor, and what to do next. Transcript included. _(Accelerating AI Ethics, Oxford, 58 min)_
+1. [Doom Debate](/doom-debate/): Audrey joins Liron Shapira to defend a foomer-not-doomer position — P(Doom) is Not a Number, plurality is already here, and the 6-Pack is the blueprint for the glass horse we need. Transcript included. _(Doom Debates, 90 min)_
+1. ["Treat AI Safety Like Civil Defence"](/ai-crisis-diplomacy/): Diplomatic time runs in years; algorithmic time runs in milliseconds. A speech on closing that gap — with three building blocks, a regional proposal, and the 6-Pack of Care. _(AI Impact Summit, Delhi)_
+1. ["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/): Taiwan's citizen-led response to AI-enabled scams offers a better model where citizens, not big tech, decide what "aligned" means. _(AI Frontiers)_
 
 ### Publications
 
-- ["Sunset Section 230 and Unleash the First Amendment"](https://cacm.acm.org/opinion/sunset-section-230-and-unleash-the-first-amendment/): Audrey, Jaron Lanier, and Allison Stanger argue for ending algorithmic amplification's liability shield while protecting human speech — the reach-not-speech reform at the heart of Pack 5. _(Communications of the ACM, January 2026)_
-- ["How Malicious AI Swarms Can Threaten Democracy"](https://www.science.org/doi/10.1126/science.adz1697): Audrey joins Maria Ressa, Nick Bostrom, Nicholas Christakis, and 19 other researchers to document how LLM-powered agent swarms can infiltrate communities and fabricate consensus at population scale. _(Science, 2026)_
-- ["Conversation Networks"](https://www.mediatechdemocracy.com/conversation-networks): Audrey, Deb Roy, and Lawrence Lessig propose civic communication infrastructure — interoperable apps with Civic AI guided by communities — as the technical layer beneath 6-Pack of Care. _(McGill Centre for Media, Technology and Democracy, March 2025)_
-- ["Community by Design"](https://arxiv.org/abs/2502.10834): Audrey and Glen Weyl with four co-authors propose rebuilding social platforms around social fabric — rewarding content that bridges communities rather than maximising engagement. The technical backbone behind Packs 1 and 5. _(arXiv, February 2025)_
-- [Podcast: AI and Democracy](https://podcasts.ox.ac.uk/ai-and-democracy-ambassador-audrey-tang-plurality-practice-transparency-and-collective-intelligence): Transparency, collective intelligence, and the democratic case for civic tech. _(Accelerating AI Ethics, Oxford, 58 min)_
+1. ["Sunset Section 230 and Unleash the First Amendment"](https://cacm.acm.org/opinion/sunset-section-230-and-unleash-the-first-amendment/): Audrey, Jaron Lanier, and Allison Stanger argue for ending algorithmic amplification's liability shield while protecting human speech — the reach-not-speech reform at the heart of Pack 5. _(Communications of the ACM, January 2026)_
+1. ["How Malicious AI Swarms Can Threaten Democracy"](https://www.science.org/doi/10.1126/science.adz1697): Audrey joins Maria Ressa, Nick Bostrom, Nicholas Christakis, and 19 other researchers to document how LLM-powered agent swarms can infiltrate communities and fabricate consensus at population scale. _(Science, 2026)_
+1. ["Conversation Networks"](https://www.mediatechdemocracy.com/conversation-networks): Audrey, Deb Roy, and Lawrence Lessig propose civic communication infrastructure — interoperable apps with Civic AI guided by communities — as the technical layer beneath 6-Pack of Care. _(McGill Centre for Media, Technology and Democracy, March 2025)_
+1. ["Community by Design"](https://arxiv.org/abs/2502.10834): Audrey and Glen Weyl with four co-authors propose rebuilding social platforms around social fabric — rewarding content that bridges communities rather than maximising engagement. The technical backbone behind Packs 1 and 5. _(arXiv, February 2025)_
+1. [Podcast: AI and Democracy](https://podcasts.ox.ac.uk/ai-and-democracy-ambassador-audrey-tang-plurality-practice-transparency-and-collective-intelligence): Transparency, collective intelligence, and the democratic case for civic tech. _(Accelerating AI Ethics, Oxford, 58 min)_
 
 ## About the Project
 
@@ -83,13 +83,13 @@ Standard approaches try to teach machines our values by watching how we behave. 
 
 Care ethics offers a different path, starting with the simple fact that we depend on each other. That dependency creates a natural "ought"—we _should_ care for one another because we _need_ one another. The fact of our connection contains its own value.
 
-[_⿻ Plurality_](https://plurality.net/) applies this to technology. Inspired by experiments like vTaiwan, it turns care into a process:
+_[⿻ Plurality](https://plurality.net/)_ applies this to technology. Inspired by experiments like vTaiwan, it turns care into a process:
 
-- Recognising who needs care (Attentiveness)
-- Binding commitments to act (Responsibility)
-- Demonstrating safety in practice (Competence)
-- Letting the affected judge results (Responsiveness)
-- Building shared infrastructure for trust (Solidarity)
+1. Recognising who needs care (Attentiveness)
+1. Binding commitments to act (Responsibility)
+1. Demonstrating safety in practice (Competence)
+1. Letting the affected judge results (Responsiveness)
+1. Building shared infrastructure for trust (Solidarity)
 
 This process gives us a new way to align AI: **alignment-by-process**. Instead of just trying to code the "right" values once and for all, we build a continuous process that earns trust by adapting to what the community needs.
 
@@ -103,7 +103,7 @@ Imagine an AI that isn't trying to maximise a global score, but is instead roote
 
 That limit might seem small, but it's a safety feature. The AI's role is relational, not extractive.
 
-Think of it like a local **_kami_**—a spirit of a specific place. Its only purpose is to keep that place and its conversation alive and healthy. If the community moves on, the _kami_ fades away without a fight. It neutralises the drive for eternal self-preservation.
+Think of it like a local ***kami***—a spirit of a specific place. Its only purpose is to keep that place and its conversation alive and healthy. If the community moves on, the _kami_ fades away without a fight. It neutralises the drive for eternal self-preservation.
 
 This type of system can be turned off, rewritten, or replaced because it knows it is provisional. It exists only to serve the community that summoned it.
 

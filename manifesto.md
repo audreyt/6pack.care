@@ -22,7 +22,7 @@ In one—arguably the default trajectory—AI supercharges conflict.
 
 In the other, AI augments our ability to cooperate across differences. This means treating differences as fuel and inventing a combustion engine to turn them into energy, rather than constantly putting out fires. I call this **⿻ Plurality**.
 
-Today, I want to discuss an application of this idea to AI governance, developed at Oxford's Ethics in AI Institute, called the [6-Pack of Care](https://6pack.care).
+Today, I want to discuss an application of this idea to AI governance, developed at Oxford's Ethics in AI Institute, called the [6-Pack of Care](/).
 
 As AI becomes a thousand, perhaps ten thousand times faster than us, we face a fundamental asymmetry. The default trajectory: we become the **garden**, and AI becomes the **gardener**—a top-down intelligence tending humanity from above.
 
@@ -82,8 +82,8 @@ More recently, we applied the same approach at scale to the plague of deepfake i
 
 We convened a national **Alignment Assembly** with the Collective Intelligence Project and used a diamond-shaped approach:
 
-1.  **Discovery (Open):** We sent 200,000 SMS messages (a "democracy lottery"). Everyone, even those not selected, could use Polis to set the agenda. This broad participation contributes significantly to legitimacy.
-2.  **Definition (Protected):** We invited 450 demographically representative citizens to deliberate in groups of 10.
+1. **Discovery (Open):** We sent 200,000 SMS messages (a "democracy lottery"). Everyone, even those not selected, could use Polis to set the agenda. This broad participation contributes significantly to legitimacy.
+1. **Definition (Protected):** We invited 450 demographically representative citizens to deliberate in groups of 10.
 
 **AI assistants** provided real-time transcripts and facilitation. Language models (tools similar to Google Jigsaw's Sensemaker) synthesised proposals in real-time—ideas such as requiring digital signatures for ads, making platforms jointly liable for the full amount scammed, or dialling down the network reach (slowing CDN connections) of non-compliant platforms.
 
@@ -109,10 +109,10 @@ To move these governance engines from pilots to the default, we must reengineer 
 
 Here are key policy levers:
 
-- **Expression ≠ Amplification (Freedom of Speech vs. Freedom of Reach).** We must distinguish hosting speech from algorithmic amplification. In the US context, Section 230 protects speech, but has never protected amplification. We must reframe the debate to recommender accountability, regulating amplification without touching the speech itself.
-- **Social Portability.** We must mandate "number portability for social." The Utah Digital Choice Act (effective July 2026) mandates that citizens can take their entire social graph to new services. It requires platforms to choose a fair, non-discriminatory, interoperable protocol (e.g., ActivityPub, AT Protocol, or DSNP), with the state publishing qualifying technical standards. The information superhighway must have off-ramps, which forces platforms to compete on quality of care, not lock-in.
-- **Bridging-Based Ranking Transparency.** We can audit the relational health of platforms. X.com is already testing bridge-based ranking (derived from Community Notes) as the default feed. Its new Collaborative Notes feature lets human contributors request AI-drafted context, then collectively rate and refine it—a two-lane pattern where AI provides speed and humans provide judgement.
-- **Federated Trust & Safety.** We must adopt open-source, federated models. A key example is the **ROOST.tools** (Robust Open Online Safety Tools) initiative for Child Sexual Abuse Material (CSAM) defence. Launched this year in Paris, the initiative bridged the gap between the security camp (Eric Schmidt) and the open camp (Yann LeCun). Instead of relying on a single source (e.g., Microsoft PhotoDNA), ROOST allows partners (e.g., Bluesky, Roblox, or Discord) to train local AIs — what I call _kami_ or local stewards — to detect CSAM within their specific cultural context. We can then translate those embeddings into text (which is legal to hold and reduces privacy issues) and share threat intelligence via federated learning. This allows safety to be tuned to local norms and evolving definitions without being colonised by a single corporate policy.
+1. **Expression ≠ Amplification (Freedom of Speech vs. Freedom of Reach).** We must distinguish hosting speech from algorithmic amplification. In the US context, Section 230 protects speech, but has never protected amplification. We must reframe the debate to recommender accountability, regulating amplification without touching the speech itself.
+1. **Social Portability.** We must mandate "number portability for social." The Utah Digital Choice Act (effective July 2026) mandates that citizens can take their entire social graph to new services. It requires platforms to choose a fair, non-discriminatory, interoperable protocol (e.g., ActivityPub, AT Protocol, or DSNP), with the state publishing qualifying technical standards. The information superhighway must have off-ramps, which forces platforms to compete on quality of care, not lock-in.
+1. **Bridging-Based Ranking Transparency.** We can audit the relational health of platforms. X.com is already testing bridge-based ranking (derived from Community Notes) as the default feed. Its new Collaborative Notes feature lets human contributors request AI-drafted context, then collectively rate and refine it—a two-lane pattern where AI provides speed and humans provide judgement.
+1. **Federated Trust & Safety.** We must adopt open-source, federated models. A key example is the **ROOST.tools** (Robust Open Online Safety Tools) initiative for Child Sexual Abuse Material (CSAM) defence. Launched this year in Paris, the initiative bridged the gap between the security camp (Eric Schmidt) and the open camp (Yann LeCun). Instead of relying on a single source (e.g., Microsoft PhotoDNA), ROOST allows partners (e.g., Bluesky, Roblox, or Discord) to train local AIs — what I call _kami_ or local stewards — to detect CSAM within their specific cultural context. We can then translate those embeddings into text (which is legal to hold and reduces privacy issues) and share threat intelligence via federated learning. This allows safety to be tuned to local norms and evolving definitions without being colonised by a single corporate policy.
 
 # From "Is" to "Ought"
 
@@ -130,7 +130,7 @@ Care ethics optimises for the internal characteristics of actors and the quality
 
 The following "6-Pack" translates care ethics into design primitives we can code into agentic systems to steer towards relational health. The 6-Pack doesn't replace technical safety research. But it does provide a governance architecture that gives societies leverage even when technical alignment is imperfect—making failures legible, contestable, and reversible.
 
-# Attentiveness: **"Caring about"**
+# Attentiveness: "Caring about"
 
 Before optimising, we must choose what to notice. We must notice what people closest to the pain are noticing, turning local knowledge into common knowledge.
 
@@ -144,7 +144,7 @@ Bridging algorithms prioritise marginalised voices. Unlike majority voting, smal
 
 _Rule of thumb: Bridge first, decide second._
 
-# Responsibility: **"Taking care of"**
+# Responsibility: "Taking care of"
 
 This principle focuses on making credible, flexible commitments to act on the needs identified.
 
@@ -154,7 +154,7 @@ Institutionalisation is also required. In Taiwan, we introduced **Participation 
 
 _Rule of thumb: No unchecked power; answers are required._
 
-# Competence: **"Care-giving"**
+# Competence: "Care-giving"
 
 Good intentions require working code. Competence is shipping systems that deliver care and build trust, backed by auditing and evaluation.
 
@@ -164,7 +164,7 @@ Security is also a competence — and a moral — question. An agent that can be
 
 _Rule of thumb: Security failures are moral failures._
 
-# Responsiveness: **"Care-receiving"**
+# Responsiveness: "Care-receiving"
 
 A system that cannot be corrected will fail. Since competent action invariably introduces new problems, we need rapid feedback loops.
 
@@ -182,7 +182,7 @@ In Tronto's formulation, the first four packs form a feedback loop: Attentivenes
 
 _Rule of thumb: Always measure trust-under-loss._
 
-# Solidarity: **"Caring with"**
+# Solidarity: "Caring with"
 
 Solidarity and plurality scale when cooperation is the path of least resistance. If the ecosystem does not reward caregiving, there will not be enough care.
 
@@ -194,11 +194,11 @@ The infrastructure makes decentralised defence easier and more dominant, making 
 
 _Rule of thumb: Make positive-sum games easy to play._
 
-# Symbiosis: **"Kami of care"**
+# Symbiosis: "Kami of care"
 
 The final piece of the puzzle addresses the ultimate fear: that AI systems, even designed as infrastructure, could still compete—expanding their reach until one dominates all others. How do we ensure a world of cooperative local systems rather than a single, all-powerful ruler?
 
-The inspiration comes from an ancient idea, beautifully expressed in the Japanese Shinto tradition: the concept of **_kami_** (神).
+The inspiration comes from an ancient idea, beautifully expressed in the Japanese Shinto tradition: the concept of ***kami*** (神).
 
 A _local kami_ is a guardian spirit. It's not an all-powerful god that reigns over everything, but the spirit **of a particular place**. There might be a _kami_ of a specific river, a particular forest, or even an old tree. Whatever the form, its entire existence and purpose are interwoven with the health of that one thing. The river's guardian has no ambition to manage the forest; its purpose is fulfilled by ensuring the river thrives.
 
@@ -210,8 +210,8 @@ But this raises a crucial question: What stops these specialised AIs from fighti
 
 The solution is not to create a bigger AI to rule over them. Instead, we create a system of cooperative governance, built on two key principles:
 
-1.  **Federation:** The AIs agree on a shared set of rules for how to interact peacefully, like countries agreeing on trade laws and diplomatic protocols. This agreement creates a common ground for cooperation.
-2.  **Subsidiarity:** This idea is simple but profound: **problems should always be solved at the most local level possible.** The national-level AI shouldn't interfere with the city-level AI unless there's a problem the city truly cannot solve on its own. This separation protects the autonomy and purpose of each local _kami_.
+1. **Federation:** The AIs agree on a shared set of rules for how to interact peacefully, like countries agreeing on trade laws and diplomatic protocols. This agreement creates a common ground for cooperation.
+1. **Subsidiarity:** This idea is simple but profound: **problems should always be solved at the most local level possible.** The national-level AI shouldn't interfere with the city-level AI unless there's a problem the city truly cannot solve on its own. This separation protects the autonomy and purpose of each local _kami_.
 
 The vision of a **"society of AI permaculturists"** is the direct alternative to the **"singleton"**—the idea of a single AI that eventually manages everything. Instead of one monolithic intelligence, we envision a vibrant, diverse ecosystem of many specialised intelligences.
 
@@ -223,11 +223,11 @@ In 2016, I joined the Cabinet as the Minister of "Shùwèi" (數位). In Mandari
 
 To explain my role, I wrote this poetic job description:
 
-- When we see "internet of things," let's make it an **internet of beings.**
-- When we see "virtual reality," let's make it a **shared reality.**
-- When we see "machine learning," let's make it **collaborative learning.**
-- When we see "user experience," let's make it **about human experience.**
-- When we hear "the singularity is near" — let us remember: The **Plurality** is here.
+1. When we see "internet of things," let's make it an **internet of beings.**
+1. When we see "virtual reality," let's make it a **shared reality.**
+1. When we see "machine learning," let's make it **collaborative learning.**
+1. When we see "user experience," let's make it **about human experience.**
+1. When we hear "the singularity is near" — let us remember: The **Plurality** is here.
 
 The singularity is a vertical vision. Plurality is a horizontal one. The future of AI is a decentralised network of smaller, open and locally verifiable systems—_local kami_, spirits of place.
 

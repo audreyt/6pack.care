@@ -33,28 +33,28 @@ AI 不是活在真空裡。它活在我們的社群裡，受權力動態和價�
 
 六項設計原則，將關懷倫理轉化為可以實作的程式碼。可以想成我們為了與多元共存，而需要鍛鍊的六塊肌：
 
-- **[一：覺察力](/tw/1/)** —「感知關懷」。行動前先傾聽。使用搭橋演算法將在地故事轉化為共同理解。
-- **[二：負責力](/tw/2/)** —「承擔關懷」。沒有後果的承諾毫無意義。我們使用附帶託管資金與明確期限的參與契約，確保權力始終可究責。
-- **[三：勝任力](/tw/3/)** —「給予關懷」。相信流程，而不只是相信承諾。我們專注於透明度、快速的回饋迴圈，以及出錯時的自動「斷路器」。
-- **[四：回應力](/tw/4/)** —「接收關懷」。檢驗成果。我們依賴社群親自撰寫的評測。如果有人對結果提出質疑，我們欠他們一個清楚、公開的解釋。
-- **[五：團結力](/tw/5/)** —「共同關懷」。創造雙贏。我們建立資料可攜性與共享安全，創造讓每個人都過得更好的協議，而不是把人鎖死。
-- **[六：共生力](/tw/6/)** —「地神般的關懷」。腳踏實地。在地、暫時且有界限。沒有追求永生的本能，不需要接管世界。我們是為了「足夠」而建，不是為了「永恆」。
-- **[常見問題](/tw/faq/)** — 關於速度、成本、惡意份子等難題，以及關懷六力如何應對。
+1. **[一：覺察力](/tw/1/)** —「感知關懷」。行動前先傾聽。使用搭橋演算法將在地故事轉化為共同理解。
+1. **[二：負責力](/tw/2/)** —「承擔關懷」。沒有後果的承諾毫無意義。我們使用附帶託管資金與明確期限的參與契約，確保權力始終可究責。
+1. **[三：勝任力](/tw/3/)** —「給予關懷」。相信流程，而不只是相信承諾。我們專注於透明度、快速的回饋迴圈，以及出錯時的自動「斷路器」。
+1. **[四：回應力](/tw/4/)** —「接收關懷」。檢驗成果。我們依賴社群親自撰寫的評測。如果有人對結果提出質疑，我們欠他們一個清楚、公開的解釋。
+1. **[五：團結力](/tw/5/)** —「共同關懷」。創造雙贏。我們建立資料可攜性與共享安全，創造讓每個人都過得更好的協議，而不是把人鎖死。
+1. **[六：共生力](/tw/6/)** —「地神般的關懷」。腳踏實地。在地、暫時且有界限。沒有追求永生的本能，不需要接管世界。我們是為了「足夠」而建，不是為了「永恆」。
+1. **[常見問題](/tw/faq/)** — 關於速度、成本、惡意份子等難題，以及關懷六力如何應對。
 
 ## 最新成果
 
-- [Podcast：關懷六力](/tw/podcast/)：唐鳳與 Caroline Green 現場介紹完整框架——涵蓋六力全部、社會關懷實踐的基礎、地神比喻，以及接下來該怎麼做。附逐字稿。_（Accelerating AI Ethics，牛津，58 分鐘）_
-- [末日辯論](/tw/doom-debate/)：唐鳳與 Liron Shapira 展開深度對談——P (末日) 是 NaN（非數值），多元宇宙已然在此，關懷六力是我們建造所需透明馬的藍圖。附逐字稿。_（Doom Debates，90 分鐘）_
-- [《把 AI 安全當成民防來對待》](/tw/ai-crisis-diplomacy/)：外交時間以年為單位，演算法時間以毫秒為單位。一場關於如何彌合這道落差的演講——涵蓋三大基礎支柱、一項區域性倡議，以及關懷六力。_（AI Impact Summit，德里）_
-- [《AI 對齊不能由上而下》](/tw/ai-alignment-cannot-be-top-down/)：臺灣公民主導的 AI 防詐回應提供了一個更好的模式，由公民而非科技巨頭來決定什麼是「對齊」。_（AI Frontiers）_
+1. [Podcast：關懷六力](/tw/podcast/)：唐鳳與 Caroline Green 現場介紹完整框架——涵蓋六力全部、社會關懷實踐的基礎、地神比喻，以及接下來該怎麼做。附逐字稿。_（Accelerating AI Ethics，牛津，58 分鐘）_
+1. [末日辯論](/tw/doom-debate/)：唐鳳與 Liron Shapira 展開深度對談——P (末日) 是 NaN（非數值），多元宇宙已然在此，關懷六力是我們建造所需透明馬的藍圖。附逐字稿。_（Doom Debates，90 分鐘）_
+1. [《把 AI 安全當成民防來對待》](/tw/ai-crisis-diplomacy/)：外交時間以年為單位，演算法時間以毫秒為單位。一場關於如何彌合這道落差的演講——涵蓋三大基礎支柱、一項區域性倡議，以及關懷六力。_（AI Impact Summit，德里）_
+1. [《AI 對齊不能由上而下》](/tw/ai-alignment-cannot-be-top-down/)：臺灣公民主導的 AI 防詐回應提供了一個更好的模式，由公民而非科技巨頭來決定什麼是「對齊」。_（AI Frontiers）_
 
 ### 已發表
 
-- [《Sunset Section 230 and Unleash the First Amendment》](https://cacm.acm.org/opinion/sunset-section-230-and-unleash-the-first-amendment/)：唐鳳與 Jaron Lanier、Allison Stanger 合著，主張終止演算法擴大觸及範圍的免責保護，同時保障人類言論——第五力核心的「言論自由、觸及規管」改革。_（ACM 通訊，2026 年 1 月）_
-- [《How malicious AI swarms can threaten democracy》](https://www.science.org/doi/10.1126/science.adz1697)：唐鳳與 Maria Ressa、Nick Bostrom、Nicholas Christakis 等 22 位研究者聯合記錄：由大型語言模型驅動的智慧體蜂群如何大規模滲透社群、偽造共識。_（《科學》期刊，2026 年）_
-- [《Conversation Networks》](https://www.mediatechdemocracy.com/conversation-networks)：唐鳳與 Deb Roy、Lawrence Lessig 提出公民通訊基礎設施——可互通的數位應用程式結合社群引導的「仁工智慧」——作為關懷六力的技術底層。_（麥基爾大學媒體、科技與民主研究中心，2025 年 3 月）_
-- [《Community By Design》](https://arxiv.org/abs/2502.10834)：唐鳳與 Glen Weyl 等四位共同作者提出以社會紐帶重建社群平台——獎勵搭橋連結社群的內容，而非最大化參與度。第一力與第五力的技術骨幹。_（arXiv，2025 年 2 月）_
-- [Podcast：AI 與民主](https://podcasts.ox.ac.uk/ai-and-democracy-ambassador-audrey-tang-plurality-practice-transparency-and-collective-intelligence)：透明度、集體智慧，以及支持 AI 公民科技的民主論據。_（Accelerating AI Ethics，牛津，58 分鐘）_
+1. [《Sunset Section 230 and Unleash the First Amendment》](https://cacm.acm.org/opinion/sunset-section-230-and-unleash-the-first-amendment/)：唐鳳與 Jaron Lanier、Allison Stanger 合著，主張終止演算法擴大觸及範圍的免責保護，同時保障人類言論——第五力核心的「言論自由、觸及規管」改革。_（ACM 通訊，2026 年 1 月）_
+1. [《How malicious AI swarms can threaten democracy》](https://www.science.org/doi/10.1126/science.adz1697)：唐鳳與 Maria Ressa、Nick Bostrom、Nicholas Christakis 等 22 位研究者聯合記錄：由大型語言模型驅動的智慧體蜂群如何大規模滲透社群、偽造共識。_（《科學》期刊，2026 年）_
+1. [《Conversation Networks》](https://www.mediatechdemocracy.com/conversation-networks)：唐鳳與 Deb Roy、Lawrence Lessig 提出公民通訊基礎設施——可互通的數位應用程式結合社群引導的「仁工智慧」——作為關懷六力的技術底層。_（麥基爾大學媒體、科技與民主研究中心，2025 年 3 月）_
+1. [《Community By Design》](https://arxiv.org/abs/2502.10834)：唐鳳與 Glen Weyl 等四位共同作者提出以社會紐帶重建社群平台——獎勵搭橋連結社群的內容，而非最大化參與度。第一力與第五力的技術骨幹。_（arXiv，2025 年 2 月）_
+1. [Podcast：AI 與民主](https://podcasts.ox.ac.uk/ai-and-democracy-ambassador-audrey-tang-plurality-practice-transparency-and-collective-intelligence)：透明度、集體智慧，以及支持 AI 公民科技的民主論據。_（Accelerating AI Ethics，牛津，58 分鐘）_
 
 ## 關於本計畫
 
@@ -94,15 +94,15 @@ AI 安全的核心問題是個老問題：無法光看「是什麼」（資料�
 
 標準作法試圖透過觀察我們的行為，來教導機器我們的價值觀。但這很棘手。行為描述的是我們「做」了什麼，而不一定是我們「應該」做什麼。
 
-關懷倫理提供了一條不同的路徑，從一個簡單的事實出發：我們彼此依存。這種依存關係創造了一種自然的「應然」——我們*應該*互相關懷，因為我們*需要*彼此。連結的事實本身就包含了價值。
+關懷倫理提供了一條不同的路徑，從一個簡單的事實出發：我們彼此依存。這種依存關係創造了一種自然的「應然」——我們_應該_互相關懷，因為我們_需要_彼此。連結的事實本身就包含了價值。
 
 [《⿻多元宇宙（Plurality）》](https://plurality.net/)將此應用於科技。受 vTaiwan 等實驗啟發，它將關懷轉化為一套流程：
 
-- 辨識誰需要關懷（覺察力）
-- 確立行動承諾（負責力）
-- 在實踐中驗證安全（勝任力）
-- 讓受影響者評判結果（回應力）
-- 建立共享的信任基礎設施（團結力）
+1. 辨識誰需要關懷（覺察力）
+1. 確立行動承諾（負責力）
+1. 在實踐中驗證安全（勝任力）
+1. 讓受影響者評判結果（回應力）
+1. 建立共享的信任基礎設施（團結力）
 
 這個流程給了我們對齊 AI 的新方法：**以流程對齊**。與其試圖一次性寫死「正確」的價值觀，我們建立一個持續的流程，透過適應社群需求來贏得信任。
 
