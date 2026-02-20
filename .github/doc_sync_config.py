@@ -13,7 +13,7 @@ SITE_URL = "https://6pack.care"
 SYNC_FILES = (
     "index.md", "manifesto.md", "faq.md",
     "1.md", "2.md", "3.md", "4.md", "5.md", "6.md",
-    "tw.md", "tw-manifesto.md", "tw-faq.md",
+    "tw-index.md", "tw-manifesto.md", "tw-faq.md",
     "tw-1.md", "tw-2.md", "tw-3.md", "tw-4.md", "tw-5.md", "tw-6.md",
 )
 
@@ -28,7 +28,7 @@ TAB_MAP: dict[str, str] = {
     "4.md": "t.8b7he5x870mo",
     "5.md": "t.keauzhwx9sq",
     "6.md": "t.rk66ffskrbnk",
-    "tw.md": "t.0",
+    "tw-index.md": "t.0",
     "tw-manifesto.md": "t.pstem4cg1bvo",
     "tw-1.md": "t.mzhiy338dord",
     "tw-2.md": "t.nv6d0g7hrqd0",
@@ -41,7 +41,7 @@ TAB_MAP: dict[str, str] = {
 
 # Per-file doc ID override (files not listed default to DOC_ID).
 FILE_DOC_ID: dict[str, str] = {f: DOC_ID_TW for f in (
-    "tw.md", "tw-manifesto.md", "tw-faq.md",
+    "tw-index.md", "tw-manifesto.md", "tw-faq.md",
     "tw-1.md", "tw-2.md", "tw-3.md", "tw-4.md", "tw-5.md", "tw-6.md",
 )}
 

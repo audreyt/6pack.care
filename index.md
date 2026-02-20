@@ -102,7 +102,7 @@ Care ethics is often dismissed as too soft or domestic. But for AI, that "softne
 
 Imagine an AI that isn't trying to maximise a global score, but is instead rooted in a specific place and time. Its moral world is defined by the people right here, right now. Because it doesn't need to scale indefinitely, it doesn't develop the dangerous habits we fear: hoarding power, fighting for survival, or treating the world like a resource to be mined.
 
-That limit might seem small, but it's a safety feature. The AI's role is relational, not extractive.
+That limit might seem small, but it's a safety feature. The AI tends the community's relationships; it doesn't replace them or mine them.
 
 Think of it like a local **_kami_**—a spirit of a specific place. Its only purpose is to keep that place and its conversation alive and healthy. If the community moves on, the _kami_ fades away without a fight. It neutralises the drive for eternal self-preservation.
 
