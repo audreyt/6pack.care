@@ -10,18 +10,18 @@ Where the vertical narrative of a technological singularity concentrates power i
 
 ## The six packs
 
-| #   | Pack                      | Tronto phase   | Core question                                                                  |
-| --- | ------------------------- | -------------- | ------------------------------------------------------------------------------ |
-| 1   | [**Attentiveness**](/1/)  | Caring about   | What do the people closest to the pain notice that we're missing?              |
-| 2   | [**Responsibility**](/2/) | Taking care of | Who is accountable, with what authority, and what happens if they fail?        |
-| 3   | [**Competence**](/3/)     | Care-giving    | Does the system demonstrably work — audited, explainable, safe-to-fail?        |
-| 4   | [**Responsiveness**](/4/) | Care-receiving | Can those affected correct the system, and does correction actually change it? |
-| 5   | [**Solidarity**](/5/)     | Caring with    | Does the ecosystem structurally reward cooperation over lock-in?               |
-| 6   | [**Symbiosis**](/6/)      | Kami of care   | Is the system bounded, sunset-ready, and incapable of imperial creep?          |
+| #   | Pack                                        | Tronto phase   | Core question                                                                  |
+| --- | ------------------------------------------- | -------------- | ------------------------------------------------------------------------------ |
+| 1   | [**Attentiveness**](https://6pack.care/1/)  | Caring about   | What do the people closest to the pain notice that we're missing?              |
+| 2   | [**Responsibility**](https://6pack.care/2/) | Taking care of | Who is accountable, with what authority, and what happens if they fail?        |
+| 3   | [**Competence**](https://6pack.care/3/)     | Care-giving    | Does the system demonstrably work — audited, explainable, safe-to-fail?        |
+| 4   | [**Responsiveness**](https://6pack.care/4/) | Care-receiving | Can those affected correct the system, and does correction actually change it? |
+| 5   | [**Solidarity**](https://6pack.care/5/)     | Caring with    | Does the ecosystem structurally reward cooperation over lock-in?               |
+| 6   | [**Symbiosis**](https://6pack.care/6/)      | Kami of care   | Is the system bounded, sunset-ready, and incapable of imperial creep?          |
 
 Packs 1 – 4 form Tronto's feedback loop. Pack 5 (from _Caring Democracy_) ensures the loop operates within democratic commitments to justice, equality, and freedom. Pack 6 is Tang and Green's addition: the anti-Singleton architecture that keeps care local, bounded, and provisional.
 
-Also: [**Measures**](/measures/) (one metric per pack) and [**FAQ**](/faq/) (speed, cost, bad actors, and how the framework handles them).
+Also: [**Measures**](https://6pack.care/measures/) (one metric per pack) and [**FAQ**](https://6pack.care/faq/) (speed, cost, bad actors, and how the framework handles them).
 
 ## Who it's for
 
