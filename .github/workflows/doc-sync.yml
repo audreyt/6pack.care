@@ -7,16 +7,16 @@ name: "Doc sync"
 #   Repo → Doc : push merged markdown back to the Google Doc tabs
 #                via the Docs API (clear + rebuild with formatting).
 
-#on:
-#    schedule:
-#        - cron: "0 */6 * * *" # check for doc changes every 6 hours
-#    push:
-#        branches: [main]
-#        paths:
-#            - "*.md"
-#            - ".github/doc_sync_config.py"
-#            - ".github/workflows/doc-sync.yml"
-#    workflow_dispatch:
+on:
+    #    schedule:
+    #        - cron: "0 */6 * * *" # check for doc changes every 6 hours
+    push:
+        branches: [main]
+        paths:
+            - "*.md"
+            - ".github/doc_sync_config.py"
+            - ".github/workflows/doc-sync.yml"
+    workflow_dispatch:
 
 permissions:
     contents: write
@@ -26,89 +26,89 @@ jobs:
     # ── Google Doc → Repo ─────────────────────────────────────────
     # Fetch the published Doc, snapshot into a doc/upstream branch
     # one commit ahead of main, and open a PR if it differs.
-    doc-to-repo:
-        if: github.event_name != 'push'
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v4
-              with:
-                  fetch-depth: 2
-
-            - name: Setup Python
-              uses: actions/setup-python@v5
-              with:
-                  python-version: "3.12"
-                  cache: "pip"
-                  cache-dependency-path: ".github/requirements-doc-sync.txt"
-
-            - name: Install Python dependencies
-              run: |
-                  python -m pip install --upgrade pip
-                  python -m pip install -r .github/requirements-doc-sync.txt
-
-            - name: Validate doc-sync config
-              run: python3 .github/doc_sync_config.py --check
-
-            - name: Load synced files
-              id: sync-files
-              run: |
-                  echo "files=$(python3 .github/doc_sync_config.py --print-files)" >> "$GITHUB_OUTPUT"
-
-            - name: Fetch content from Google Doc
-              env:
-                  GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
-                  GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
-                  GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
-              run: python3 .github/sync_from_google_doc.py
-
-            - name: Check for drift against main
-              id: drift
-              run: |
-                  read -r -a sync_files <<< "${{ steps.sync-files.outputs.files }}"
-                  if git diff --quiet -- "${sync_files[@]}"; then
-                    echo "drifted=false" >> "$GITHUB_OUTPUT"
-                  else
-                    echo "drifted=true" >> "$GITHUB_OUTPUT"
-                  fi
-
-            - name: Push snapshot to doc/upstream
-              if: steps.drift.outputs.drifted == 'true'
-              run: |
-                  read -r -a sync_files <<< "${{ steps.sync-files.outputs.files }}"
-                  git config user.name "github-actions[bot]"
-                  git config user.email "github-actions[bot]@users.noreply.github.com"
-                  git add "${sync_files[@]}"
-                  git commit -m "doc: snapshot from Google Doc"
-                  git push --force origin HEAD:refs/heads/doc/upstream
-
-            - name: Open or update PR
-              if: steps.drift.outputs.drifted == 'true'
-              env:
-                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: |
-                  sync_scope=$(python3 .github/doc_sync_config.py --print-scope)
-                  existing=$(gh pr list --head doc/upstream --json number -q '.[0].number' || true)
-                  if [ -n "$existing" ]; then
-                    echo "::notice::PR #$existing already open — branch force-updated"
-                  else
-                    sync_body=$'Automated sync — the Google Doc has drifted from `main`.\n\n**Scope:** '"$sync_scope"
-                    gh pr create \
-                      --head doc/upstream \
-                      --base main \
-                      --title "doc: sync from Google Doc" \
-                      --body "$sync_body"
-                  fi
-
-            - name: Close stale PR if back in sync
-              if: steps.drift.outputs.drifted == 'false'
-              env:
-                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: |
-                  existing=$(gh pr list --head doc/upstream --json number -q '.[0].number' || true)
-                  if [ -n "$existing" ]; then
-                      gh pr close "$existing" --comment "Back in sync — closing." --yes
-                      git push origin --delete doc/upstream 2>/dev/null || true
-                  fi
+    #    doc-to-repo:
+    #        if: github.event_name != 'push'
+    #        runs-on: ubuntu-latest
+    #        steps:
+    #            - uses: actions/checkout@v4
+    #              with:
+    #                  fetch-depth: 2
+    #
+    #            - name: Setup Python
+    #              uses: actions/setup-python@v5
+    #              with:
+    #                  python-version: "3.12"
+    #                  cache: "pip"
+    #                  cache-dependency-path: ".github/requirements-doc-sync.txt"
+    #
+    #            - name: Install Python dependencies
+    #              run: |
+    #                  python -m pip install --upgrade pip
+    #                  python -m pip install -r .github/requirements-doc-sync.txt
+    #
+    #            - name: Validate doc-sync config
+    #              run: python3 .github/doc_sync_config.py --check
+    #
+    #            - name: Load synced files
+    #              id: sync-files
+    #              run: |
+    #                  echo "files=$(python3 .github/doc_sync_config.py --print-files)" >> "$GITHUB_OUTPUT"
+    #
+    #            - name: Fetch content from Google Doc
+    #              env:
+    #                  GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+    #                  GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+    #                  GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+    #              run: python3 .github/sync_from_google_doc.py
+    #
+    #            - name: Check for drift against main
+    #              id: drift
+    #              run: |
+    #                  read -r -a sync_files <<< "${{ steps.sync-files.outputs.files }}"
+    #                  if git diff --quiet -- "${sync_files[@]}"; then
+    #                    echo "drifted=false" >> "$GITHUB_OUTPUT"
+    #                  else
+    #                    echo "drifted=true" >> "$GITHUB_OUTPUT"
+    #                  fi
+    #
+    #            - name: Push snapshot to doc/upstream
+    #              if: steps.drift.outputs.drifted == 'true'
+    #              run: |
+    #                  read -r -a sync_files <<< "${{ steps.sync-files.outputs.files }}"
+    #                  git config user.name "github-actions[bot]"
+    #                  git config user.email "github-actions[bot]@users.noreply.github.com"
+    #                  git add "${sync_files[@]}"
+    #                  git commit -m "doc: snapshot from Google Doc"
+    #                  git push --force origin HEAD:refs/heads/doc/upstream
+    #
+    #            - name: Open or update PR
+    #              if: steps.drift.outputs.drifted == 'true'
+    #              env:
+    #                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #              run: |
+    #                  sync_scope=$(python3 .github/doc_sync_config.py --print-scope)
+    #                  existing=$(gh pr list --head doc/upstream --json number -q '.[0].number' || true)
+    #                  if [ -n "$existing" ]; then
+    #                    echo "::notice::PR #$existing already open — branch force-updated"
+    #                  else
+    #                    sync_body=$'Automated sync — the Google Doc has drifted from `main`.\n\n**Scope:** '"$sync_scope"
+    #                    gh pr create \
+    #                      --head doc/upstream \
+    #                      --base main \
+    #                      --title "doc: sync from Google Doc" \
+    #                      --body "$sync_body"
+    #                  fi
+    #
+    #            - name: Close stale PR if back in sync
+    #              if: steps.drift.outputs.drifted == 'false'
+    #              env:
+    #                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #              run: |
+    #                  existing=$(gh pr list --head doc/upstream --json number -q '.[0].number' || true)
+    #                  if [ -n "$existing" ]; then
+    #                      gh pr close "$existing" --comment "Back in sync — closing." --yes
+    #                      git push origin --delete doc/upstream 2>/dev/null || true
+    #                  fi
 
     # ── Repo → Google Doc ────────────────────────────────────────
     # When changes land on main, push the merged markdown back
