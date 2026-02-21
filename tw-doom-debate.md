@@ -17,7 +17,7 @@ nav_next:
 <iframe src="https://www.youtube-nocookie.com/embed/bvcmiirT8ME?si=urqA-2pfCO2UljU-" title="末日辯論——唐鳳與 Liron Shapira" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-**Liron Shapira**：歡迎收看《末日辯論》。唐鳳是臺灣政治家兼自由軟體程式設計師，目前擔任臺灣網路空間治理無任所大使。她是自學成才的程式設計天才，國中輟學後成為全球開源社群的頂尖貢獻者。
+**Liron Shapira**：歡迎收看《末日辯論》。唐鳳是臺灣政治家兼自由軟體程式設計師，目前擔任臺灣數位治理無任所大使。她是自學成才的程式設計天才，國中輟學後成為全球開源社群的頂尖貢獻者。
 
 2016 年，年僅三十五歲的她出任臺灣數位政委，成為臺灣史上最年輕的不管部會政務委員。新冠疫情期間，她主導開發了口罩配給與接觸追蹤等數位工具，協助臺灣在不實施嚴格封鎖的情況下，取得全球最出色的初期防疫成效之一。
 

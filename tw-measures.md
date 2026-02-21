@@ -4,6 +4,12 @@ title: "衡量指標"
 lang: zh-tw
 alt_lang_url: "/measures"
 permalink: "/tw/measures/"
+nav_prev:
+    url: "/tw/6/"
+    text: "六：共生力"
+nav_next:
+    url: "/tw/faq/"
+    text: "常見問題"
 ---
 
 每個「力」回答關懷循環中一個獨立的階段問題。以下指標的分配方式確保每個指標只歸屬於一個「力」。

@@ -42,7 +42,7 @@ And eventually, of course, to the Internet. So, I got into the habit of publishi
 
 **Caroline Green**: And how has that shaped you into adulthood?
 
-**Audrey Tang**: So, when I was 14, I already went through three kindergartens, six primary schools, and one year of middle school. And I discovered at a time this thing called the Internet web browsers, which was just coming up in 1995 and also this preprint server called arXiv, from Cornell, it is still around, and is where most people publish their AI findings and so on. And so, I started writing to professors and they didn't know I was just 14.
+**Audrey Tang**: So, when I was 14, I already went through three kindergartens, six primary schools, and one year of middle school. And I discovered at that time this thing called the Internet web browsers, which was just coming up in 1995 and also this preprint server called arXiv, from Cornell, it is still around, and is where most people publish their AI findings and so on. And so, I started writing to professors and they didn't know I was just 14.
 
 I actually spoke terrible English back then, I had to look up dictionaries, but I was very interested in why people come to trust each other so readily online; in person it takes hours, days for people to get acquainted to one another. But online with just the right meme, the right hashtag, the right common ideas, the right domain name, people tell each other very intimate things very quickly. And of course, they also break up very quickly, but that's called Swift Trust.
 
@@ -68,7 +68,7 @@ And so, I think the social nature of the Internet was always what fascinates me 
 
 **Audrey Tang**: Yes, and this is what we call pro-social media in Taiwan. So, a very quick story. In 2014, we peacefully occupied our Parliament for three weeks in Taiwan, because the president at the time was enjoying only 9% approval rate.
 
-So, in the country of 24 million people, anything President Ma says 20 million people were automatically skeptical. Which was the same situation in many of the Occupy Arab Spring movements. But we took a critical different approach.
+So, in the country of 24 million people, anything President Ma says 20 million people were automatically skeptical. Which was the same situation in many of the Occupy Arab Spring movements. But we took a critically different approach.
 
 Instead of calling ourselves protesters, which are against something, we call ourselves demonstrators, which is showing something new, and that's something new. Is anybody who are worried about the trade agreement with Beijing at the time that would have, you know, invited Huawei, ZTE into our telecommunication our 4G infrastructure our publishing industry, media and so on. If you're worried instead of protesting, saying we shouldn't do this, you can go to one of those corners in the occupied Parliament on the facilitated conversation where people ask each other how do I truly feel about this?
 
@@ -124,7 +124,7 @@ That's very powerful thinking about, you know, our changing demographics. And so
 
 **Caroline Green**: I'm going to pivot slightly to different questions. So, Audrey, what is AI ethics to you?
 
-**Audrey Tang**: To me, AI ethics represents the technologies and methodologies to imbue the human society's preferences into the whole cycle of AI development so that we ensure that the AI systems that we make conform to the societal expectations, understand the social context and norms, and is steerable by the unity. Without AI ethics, it's like a car that is has a very fixed place to go, and the only thing you can do is to hit the brakes or hit the gas pedal. That is to say, to decelerate or to accelerate.
+**Audrey Tang**: To me, AI ethics represents the technologies and methodologies to imbue the human society's preferences into the whole cycle of AI development so that we ensure that the AI systems that we make conform to the societal expectations, understand the social context and norms, and is steerable by the community. Without AI ethics, it's like a car that is has a very fixed place to go, and the only thing you can do is to hit the brakes or hit the gas pedal. That is to say, to decelerate or to accelerate.
 
 On the other hand, most of the societies do not want a few people in Silicon Valley, or in some other big tech to dictate how we should relate to one another. So just like social media, many people would prefer the social media instead of selling our attention to the highest bidder, they would prefer that social media have more bridging content, more shared experience and so on. However, without ethics input, the social media network systems are designed in such a way that it pulls people, streamlines the social fabric, and then sell our attention to the highest bidder, and so had it been designed with ethics in mind they will come up with very different business models.
 
@@ -144,7 +144,7 @@ That's because the people can co-create together. And the other one is to depola
 
 And so today, Taiwan is doing very well according to BTI, more than 90% of Taiwanese said that democracy is at least fairly good. On the other hand, no country is an island, not even Taiwan. So even if Taiwan depolarised the society, even if Taiwan rebuilt the democratic resilience if all our allies succumb to the polarisation, to the hate to the intergenerational distrust, then this authoritarian notion that democracy only leads to chaos, democracy never deliver is still kind of like self-fulfilling prophecy.
 
-So my main job now is to show that actually democracy can deliver and just with some tweaks in the social media regulations in the ethics, when we're designing AI, we can actually steer those technologies toward a prosocial direction, instead of this singularity vision where it just keeps getting better and better, ultimate its next generation without the need of humans in training, new AI models — superintelligence — take off — leaving everyone behind. I think the world needs a better vision than this superintelligent singularity take off, and which is what I call Plurality.
+So my main job now is to show that actually democracy can deliver and just with some tweaks in the social media regulations in the ethics, when we're designing AI, we can actually steer those technologies toward a prosocial direction, instead of this singularity vision where it just keeps getting better and better, ultimately its next generation without the need of humans in training, new AI models — superintelligence — take off — leaving everyone behind. I think the world needs a better vision than this superintelligent singularity take off, and which is what I call Plurality.
 
 **Caroline Green**: Yeah. So, what strikes me about that is that the Taiwanese government also has the readiness and the openness to listen to people, to embrace that modern age. Democracy.
 
@@ -256,7 +256,7 @@ They can be very small models. Just to summarise, you do not have to memorise th
 
 On the other hand, if they offer a kind of relationship that actually isolates people from each other, then of course is very bad, because then we just fall into this addictive part of ourselves. Just just keep doom scrolling and so on. And in this sense, generative AI is no different.
 
-It can be made to be cooperative in the sense of it facilitates human cooperation, but it can also be made to make people addicted to them, so it become more and more antisocial. In fact, change. GPT-4o was, for three days, anti-social.
+It can be made to be cooperative in the sense of it facilitates human cooperation, but it can also be made to make people addicted to them, so it become more and more antisocial. In fact, ChatGPT-4o was, for three days, anti-social.
 
 It got so sycophant it agreed with every idea of yours. Even people who hallucinates suffers from different conspiracy theories. For three days, ChatGPT would agree with each and every idea of you, that may be saying, oh, they're conspiring about me.
 

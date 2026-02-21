@@ -4,6 +4,12 @@ title: "Measures"
 lang: en-gb
 alt_lang_url: "/tw/measures"
 permalink: "/measures/"
+nav_prev:
+    url: "/6/"
+    text: "Pack 6: Symbiosis"
+nav_next:
+    url: "/faq/"
+    text: "FAQ"
 ---
 
 Each pack answers a distinct phase question in the care cycle. The measures below are assigned so that each metric belongs to exactly one pack.

@@ -32,7 +32,7 @@ A framework that acknowledges this asymmetry but refuses the gardener role is an
 
 This approach mandates a hyper-local, parochial moral scope. Each _kami_ is bound to a specific garden, rather than being a colonising or maximising ("paper-clipping") force.
 
-Designing AI as care infrastructure requires **digital permaculture**, mirroring a movement that embraces anti-fragility through diversity—what Professor Yuk Hui calls "technodiversity"—rather than fragile monocultures.
+Designing AI as care infrastructure requires digital permaculture, mirroring a movement that embraces anti-fragility through diversity—what Professor Yuk Hui calls "technodiversity"—rather than fragile monocultures.
 
 The vertical narrative of a technological "singularity" needs a horizontal alternative. Today, I wish to discuss that alternative: a steering wheel called **⿻ Plurality** and its design principles, the **6-Pack of Care**.
 
@@ -44,7 +44,7 @@ As civic technologists, we didn't just protest. We pivoted to demonstration ("de
 
 We crowdsourced internet access and livestreamed debates for radical transparency. Half a million people on the street, and many more online, used collaborative tools pioneered by other movements—such as Loomio (from Occupy Wellington) and later Polis (from Occupy Seattle).
 
-We drafted better versions of the trade deal together, iteratively. Each day, we reviewed the low-hanging fruits—the ideas agreed upon the previous day—and the best arguments from both sides on the remaining conflicts. Then we resolved them step by step.
+We drafted better versions of the trade deal together, iteratively. Each day, we reviewed the low-hanging fruit—the ideas agreed upon the previous day—and the best arguments from both sides on the remaining conflicts. Then we resolved them step by step.
 
 By shifting from protest to a productive demo, we began tilling the soil of our democracy. Systemically applying such bridge-making algorithms contributed to increased public trust — not alone, but as part of a broader democratic renewal. Trust climbed from 9 percent in 2014 to over 70 percent by 2020. We showed that the best way to fix a system is to build a better one.
 
@@ -81,7 +81,7 @@ More recently, we applied the same approach at scale to the plague of deepfake i
 We convened a national **Alignment Assembly** with the Collective Intelligence Project and used a diamond-shaped approach:
 
 1.  **Discovery (Open):** We sent 200,000 SMS messages (a "democracy lottery"). Everyone, even those not selected, could use Polis to set the agenda. This broad participation contributes significantly to legitimacy.
-2.  **Definition (Protected):** We invited 450 demographically representative citizens to deliberate in groups of 10.
+2.  **Definition (Protected):** We invited 447 demographically representative citizens to deliberate in 44 virtual tables of roughly 10.
 
 **AI assistants** provided real-time transcripts and facilitation. Language models (tools similar to Google Jigsaw's Sensemaker) synthesised proposals in real-time—ideas such as requiring digital signatures for ads, making platforms jointly liable for the full amount scammed, or dialling down the network reach (slowing CDN connections) of non-compliant platforms.
 
@@ -107,10 +107,10 @@ To move these governance engines from pilots to the default, we must reengineer 
 
 Here are key policy levers:
 
-- **Expression ≠ Amplification (Freedom of Speech vs. Freedom of Reach).** We must distinguish hosting speech from algorithmic amplification. In the US context, Section 230 protects speech, but has never protected amplification. We must reframe the debate to recommender accountability, regulating amplification without touching the speech itself.
+- **Expression ≠ Amplification (Freedom of Speech vs. Freedom of Reach).** We must distinguish hosting speech from algorithmic amplification. In the US context, Section 230 protects speech, but has never protected amplification. We must reframe the debate around recommender accountability, regulating amplification without touching the speech itself.
 - **Social Portability.** We must mandate "number portability for social." The Utah Digital Choice Act (effective July 2026) mandates that citizens can take their entire social graph to new services. It requires platforms to choose a fair, non-discriminatory, interoperable protocol (e.g., ActivityPub, AT Protocol, or DSNP), with the state publishing qualifying technical standards. The information superhighway must have off-ramps, which forces platforms to compete on quality of care, not lock-in.
 - **Bridging-Based Ranking Transparency.** We can audit the relational health of platforms. X.com is already testing bridge-based ranking (derived from Community Notes) as the default feed. Its new Collaborative Notes feature lets human contributors request AI-drafted context, then collectively rate and refine it—a two-lane pattern where AI provides speed and humans provide judgement.
-- **Federated Trust & Safety.** We must adopt open-source, federated models. A key example is the **ROOST.tools** (Robust Open Online Safety Tools) initiative for Child Sexual Abuse Material (CSAM) defence. Launched this year in Paris, the initiative bridged the gap between the security camp (Eric Schmidt) and the open camp (Yann LeCun). Instead of relying on a single source (e.g., Microsoft PhotoDNA), ROOST allows partners (e.g., Bluesky, Roblox, or Discord) to train local AIs — what I call _kami_ or local stewards — to detect CSAM within their specific cultural context. We can then translate those embeddings into text (which is legal to hold and reduces privacy issues) and share threat intelligence via federated learning. This allows safety to be tuned to local norms and evolving definitions without being colonised by a single corporate policy.
+- **Federated Trust & Safety.** We must adopt open-source, federated models. A key example is the **ROOST.tools** (Robust Open Online Safety Tools) initiative for Child Sexual Abuse Material (CSAM) defence, launched this year in Paris. The initiative bridged the security camp (Eric Schmidt) and the open camp (Yann LeCun). Instead of relying on a single source (e.g., Microsoft PhotoDNA), ROOST allows partners (e.g., Bluesky, Roblox, or Discord) to train local AIs — what I call _kami_ — to detect CSAM within their specific cultural context. Embeddings are translated into text (legal to hold, with fewer privacy issues) and shared via federated learning. Safety is tuned to local norms without being colonised by a single corporate policy.
 
 # From "Is" to "Ought"
 
