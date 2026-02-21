@@ -54,3 +54,5 @@ bun run build        # production build → ./docs/
 Pull requests are welcome. By contributing, you agree to release your work under the [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) public domain dedication.
 
 When editing content, maintain parity between English (`*.md`) and Traditional Mandarin (`tw-*.md`) variants.
+
+Part of the [Accelerator Fellowship Programme](https://afp.oxford-aiethics.ox.ac.uk/), [Oxford Institute for Ethics in AI](https://www.oxford-aiethics.ox.ac.uk/).
