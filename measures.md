@@ -38,12 +38,12 @@ Each pack answers a distinct phase question in the care cycle. The measures belo
 
 ### Pack 4 — Responsiveness: did the care land well?
 
-| Metric              | What it answers                                                                 |
-| ------------------- | ------------------------------------------------------------------------------- |
-| Resolution rate     | What share of S0/S1 cases are successfully resolved within the promised window? |
-| Appeal closure time | How does actual vs. target closure time compare, by severity class?             |
-| Harm recurrence     | At what rate do resolved incidents re-appear within 90 days?                    |
-| Trust-under-loss    | What is the trust score after a bad outcome — did repair work?                  |
+| Metric              | What it answers                                                                            |
+| ------------------- | ------------------------------------------------------------------------------------------ |
+| Resolution rate     | What share of highest-severity cases are successfully resolved within the promised window? |
+| Appeal closure time | How does actual vs. target closure time compare, by severity class?                        |
+| Harm recurrence     | At what rate do resolved incidents re-appear within 90 days?                               |
+| Trust-under-loss    | What is the trust score after a bad outcome — did repair work?                             |
 
 ### Pack 5 — Solidarity: is the ecosystem structurally fair?
 
@@ -77,4 +77,4 @@ Trust is present across all six phases, but each pack measures a distinct dimens
 
 **Cross-group endorsement** appears in two distinct roles: as an RLCF training signal in Pack 4 (a training objective — how you shape the model) and as the basis of the bridge index in Pack 5 (an ecosystem audit — what you report). These are separate uses.
 
-**S0–S3** is a severity classifier defined in Pack 2 (S0 life/safety, S1 livelihood, S2 convenience, S3 UX). It is used as a common scale in Packs 3, 4, and 6 but is not itself a measure.
+**Severity classes** are community-defined categories established through deliberation as part of Pack 2's Engagement Contract. The framework requires that every contract includes a severity scale distinguishing at minimum life-and-safety from lower-impact harms. These classes are used as a common scale in Packs 3, 4, and 6 but are not themselves measures.

@@ -19,3 +19,7 @@ docs/
 # Logs
 *.log
 .npm-cache
+
+# Local scratch files
+z/
+z-*
