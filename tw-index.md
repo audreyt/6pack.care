@@ -63,7 +63,7 @@ AI 不是活在真空裡。它活在我們的社群裡，受權力動態和價�
 
 <div>
 
-<a href="https://afp.oxford-aiethics.ox.ac.uk/people/ambassador-audrey-tang">
+<a href="https://audreyt.org/">
 
 <img src="/img/audrey.jpg" alt="唐鳳大使個人照片"/>
 

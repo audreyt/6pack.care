@@ -62,7 +62,7 @@ Six design principles turn care ethics into something we can code. Think of them
 
 <div class="team-photos">
 
-<div><a href="https://afp.oxford-aiethics.ox.ac.uk/people/ambassador-audrey-tang">
+<div><a href="https://audreyt.org/">
 <img src="/img/audrey.jpg" alt="Photo of Ambassador Audrey Tang">
 <p>Audrey Tang</p>
 </a></div>
