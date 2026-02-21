@@ -30,26 +30,26 @@ Each pack answers a distinct phase question in the care cycle. The measures belo
 | Metric                | What it answers                                                                              |
 | --------------------- | -------------------------------------------------------------------------------------------- |
 | Promise coverage      | What share of identified needs have a named owner and SLA?                                   |
-| SLA adherence         | What share of cases are resolved within their severity-class window?                         |
+| SLA adherence         | What share of cases are resolved within their published response window?                     |
 | Adopt-or-explain rate | What share of Assembly outcomes have documented adoption or published deviation with remedy? |
 
 ### Pack 3 — Competence: did we execute correctly?
 
 | Metric              | What it answers                                                                 |
 | ------------------- | ------------------------------------------------------------------------------- |
-| Decision accuracy   | What is the error rate by severity class?                                       |
+| Decision accuracy   | What share of decisions are overturned on audit or appeal?                      |
 | Guardrail integrity | What share of red-line tests pass?                                              |
 | Trace completeness  | What share of decisions have a full trace (rule, source, uncertainty, receipt)? |
 | Canary health       | What share of canary releases complete without triggering rollback?             |
 
 ### Pack 4 — Responsiveness: did the care land well?
 
-| Metric              | What it answers                                                                            |
-| ------------------- | ------------------------------------------------------------------------------------------ |
-| Resolution rate     | What share of highest-severity cases are successfully resolved within the promised window? |
-| Appeal closure time | How does actual vs. target closure time compare, by severity class?                        |
-| Harm recurrence     | At what rate do resolved incidents re-appear within 90 days?                               |
-| Trust-under-loss    | What is the trust score after a bad outcome — did repair work?                             |
+| Metric              | What it answers                                                               |
+| ------------------- | ----------------------------------------------------------------------------- |
+| Resolution rate     | What share of pause-triggering cases are resolved within the promised window? |
+| Appeal closure time | How does actual vs. target appeal closure time compare across case types?     |
+| Harm recurrence     | At what rate do resolved incidents re-appear within 90 days?                  |
+| Trust-under-loss    | What is the trust score after a bad outcome — did repair work?                |
 
 ### Pack 5 — Solidarity: is the ecosystem structurally fair?
 
