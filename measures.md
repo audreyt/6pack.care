@@ -82,5 +82,3 @@ Trust is present across all six phases, but each pack measures a distinct dimens
 | 6 — Symbiosis      | Trust over time (succession readiness, scope compliance)     |
 
 **Cross-group endorsement** appears in two distinct roles: as an RLCF training signal in Pack 4 (a training objective — how you shape the model) and as the basis of the bridge index in Pack 5 (an ecosystem audit — what you report). These are separate uses.
-
-**Severity classes** are community-defined categories established through deliberation as part of Pack 2's Engagement Contract. The framework requires that every contract includes a severity scale distinguishing at minimum life-and-safety from lower-impact harms. These classes are used as a common scale in Packs 3, 4, and 6 but are not themselves measures.
