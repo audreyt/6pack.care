@@ -126,6 +126,10 @@ The solution is not "thin," abstract universal principles. Instead, it requires 
 
 Care ethics focuses on the internal characteristics of actors and the quality of relationships in a community, not just outcomes (consequentialism). It treats "relational health" as first class.
 
+Tronto's foundational argument in _Moral Boundaries_ is that care was excluded from serious moral and political consideration by historically constructed boundaries — between morality and politics, public and private life, and a "moral point of view" that prizes detachment over responsiveness. These boundaries are contingent, not natural, and they were built to keep care invisible. AI governance is reproducing the same pattern: by constructing "alignment" and "safety" as purely technical categories, it draws new boundaries that exclude relational concerns from the conversation before it even begins.
+
+What the philosopher Margaret Urban Walker calls "expressive-collaborative morality" — the view that moral life is a continuing negotiation among people, not the application of principles from above — is the philosophical foundation for this approach. The 6-Pack's reliance on bridging, deliberation, and alignment assemblies is expressive-collaborative morality in practice: moral norms emerge from democratic encounter, not from expert decree (Margaret Urban Walker, _Moral Understandings: A Feminist Study in Ethics_, 1998/2007).
+
 The 6-Pack is a governance architecture — it gives societies leverage even when technical alignment is imperfect, making failures legible, contestable, and reversible. The following "6-Pack" translates care ethics into design primitives we can code into agentic systems to steer towards relational health.
 
 # Attentiveness: **"Caring about"**
@@ -136,7 +140,7 @@ This step starts with curiosity. If an agent isn't even curious about the harm i
 
 Attentiveness means using **broad listening**, rather than broadcasting, to aggregate feelings. We are all experts in our own feelings.
 
-**Bridging maps** (e.g., Polis or Sensemaker) create a "group selfie." If done continuously, this snapshot becomes a movie, allowing AI to align to the _here and now_.
+**Bridging maps** (e.g., Polis or Sensemaker) create a "group selfie." If done continuously, this snapshot becomes a movie, allowing governance to align AI to the _here and now_.
 
 Bridging algorithms prioritise marginalised voices. Unlike majority voting, smaller, coherent clusters offer a higher bridging bonus. The latter are harder to bridge to and provide more unique information to the aggregation.
 

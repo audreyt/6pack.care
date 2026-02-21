@@ -87,7 +87,7 @@ AI 不是活在真空裡。它活在我們的社群裡，受權力動態和價�
 
 </div>
 
-我們的計畫——包括[宣言](/tw/manifesto/)和一本預計 2026 年出版的書——探討如果我們認真看待 Joan Tronto 的關懷倫理，並將其作為 AI 對齊的策略，會發生什麼事。唐鳳與 Caroline Green 將於 2026 年 3 月 26 日在[仁工智慧研討會（Civic AI Conference）](https://www.oxford-aiethics.ox.ac.uk/event/civic-ai-conference-rhodes-house-south-park-road-oxford)發表本框架。
+我們的計畫——包括[宣言](/tw/manifesto/)和一本預計 2026 年出版的書——探討如果我們認真看待 Joan Tronto 的關懷倫理，並將其作為 AI 對齊的治理策略，會發生什麼事。唐鳳與 Caroline Green 將於 2026 年 3 月 26 日在[仁工智慧研討會（Civic AI Conference）](https://www.oxford-aiethics.ox.ac.uk/event/civic-ai-conference-rhodes-house-south-park-road-oxford)發表本框架。
 
 ## 從關懷到程式
 
@@ -95,7 +95,7 @@ AI 安全的核心問題是個老問題：無法光看「是什麼」（資料�
 
 標準作法試圖透過觀察我們的行為，來教導機器我們的價值觀。但這很棘手。行為描述的是我們「做」了什麼，而不一定是我們「應該」做什麼。
 
-關懷倫理提供了一條不同的路徑。它從我們對社群生活的共同承諾*內部*出發，追問我們彼此虧欠什麼——因此「應然」源自我們的價值觀，而需求的事實則賦予這些價值觀具體的形貌。
+關懷倫理提供了一條不同的路徑。它不試圖解決「實然-應然」問題，而是如 Joan Tronto 所言，「從事物之中」出發——始於對民主價值的既有承諾——並追問：一旦我們認真看待彼此的相互依存，這些承諾要求我們做什麼。
 
 [《⿻多元宇宙（Plurality）》](https://plurality.net/)將此應用於科技。受 vTaiwan 等實驗啟發，它將關懷轉化為一套流程：
 
