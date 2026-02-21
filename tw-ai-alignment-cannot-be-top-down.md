@@ -52,7 +52,7 @@ _社群備註（Community Notes）提供了更好的模式——由公民而非�
 
 <div class="overview-section">
 <img src="/img/gpt-value-correlation-tw.png" alt="GPT 與跨文化人類價值反應之間的相關性" class="overview-image">
-<p class="figure-caption"><strong>圖 1.</strong> GPT 與跨文化人類價值反應之間的相關性。隨著與美國——一個高度 WEIRD（西方、受過教育、工業化、富裕和民主）參考點——的文化距離增加，GPT 與當地人類價值觀的對齊程度下降。這種模式說明了若全球 AI 系統僅在狹隘的文化背景下訓練，就可能大規模嵌入並放大單一的道德世界觀——這對多元主義和民主自決是一個微妙但系統性的風險。來源：<a href="https://osf.io/preprints/psyarxiv/5b26t_v1">PsyArXiv Preprints, “Which Humans?”</a> (via <a href="https://www.adalovelaceinstitute.org/blog/cultural-misalignment-llms/">Ada Lovelace Institute, 2025</a>).</p>
+<p class="figure-caption"><strong>圖 1.</strong> GPT 與跨文化人類價值反應之間的相關性。隨著與美國——高度 WEIRD（西方、受過教育、工業化、富裕和民主）參考點——的文化距離增加，GPT 與當地人類價值觀的對齊程度下降。這種模式說明了若全球 AI 系統僅在狹隘的文化背景下訓練，就可能大規模嵌入並放大單一的道德世界觀——這對多元主義和民主自決是一個微妙但系統性的風險。來源：<a href="https://osf.io/preprints/psyarxiv/5b26t_v1">PsyArXiv Preprints, “Which Humans?”</a> (via <a href="https://www.adalovelaceinstitute.org/blog/cultural-misalignment-llms/">Ada Lovelace Institute, 2025</a>).</p>
 </div>
 
 應用覺察力原則將使該領域從追求中心化、主要是技術性的「解決方案」轉向民主共創和治理。沒有覺察力，我們就可能打造出極具風險的系統：它們鞏固狹隘的價值觀、大規模推進有害目標，甚至完全脫離人類的有效控制。

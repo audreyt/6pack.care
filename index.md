@@ -82,7 +82,7 @@ The core problem of AI safety is an old one: You can't get "what should be" (val
 
 Standard approaches try to teach machines our values by watching how we behave. But that's tricky. Behaviour describes what we do, not necessarily what we _should_ do.
 
-Care ethics offers a different path. It starts _within_ a shared commitment to democratic life and asks what we owe each other — so the "ought" flows from our values, while the fact of need gives those values concrete shape.
+Care ethics offers a different path. It starts _within_ a shared commitment to community life and asks what we owe each other — so the "ought" flows from our values, while the fact of need gives those values concrete shape.
 
 [_⿻ Plurality_](https://plurality.net/) applies this to technology. Inspired by experiments like vTaiwan, it turns care into a process:
 
