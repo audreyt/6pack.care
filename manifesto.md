@@ -130,7 +130,7 @@ Tronto's foundational argument in _Moral Boundaries_ is that care was excluded f
 
 What the philosopher Margaret Urban Walker calls "expressive-collaborative morality" — the view that moral life is a continuing negotiation among people, not the application of principles from above — is the philosophical foundation for this approach. The 6-Pack's reliance on bridging, deliberation, and alignment assemblies is expressive-collaborative morality in practice: moral norms emerge from democratic encounter, not from expert decree (Margaret Urban Walker, _Moral Understandings: A Feminist Study in Ethics_, 1998/2007).
 
-The 6-Pack is a governance architecture — it gives societies leverage even when technical alignment is imperfect, making failures legible, contestable, and reversible. The following "6-Pack" translates care ethics into design primitives we can code into agentic systems to steer towards relational health.
+The 6-Pack is a governance architecture — it gives societies leverage even when technical alignment is imperfect, making failures legible, contestable, and reversible. This is a deliberate trade-off: a governance framework can create conditions where moral attention is rewarded and its absence is visible, but the moral attention itself still requires human judgment that no procedure can replace. The following "6-Pack" translates care ethics into design primitives we can code into agentic systems to steer towards relational health.
 
 # Attentiveness: **"Caring about"**
 
