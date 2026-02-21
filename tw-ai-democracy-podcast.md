@@ -6,6 +6,7 @@ alt_lang_url: "/ai-democracy-podcast/"
 permalink: "/tw/ai-democracy-podcast/"
 date: 2025-08-05
 description: '原始錄音來自牛津 AI 倫理研究院的 <a href="https://podcasts.ox.ac.uk/ai-and-democracy-ambassador-audrey-tang-plurality-practice-transparency-and-collective-intelligence">Accelerating AI Ethics</a> Podcast。'
+og_image: "/img/ai-democracy-podcast.jpg"
 nav_next:
     url: "/tw/"
     text: "首頁"

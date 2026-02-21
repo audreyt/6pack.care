@@ -6,6 +6,7 @@ alt_lang_url: "/tw/ai-democracy-podcast/"
 permalink: "/ai-democracy-podcast/"
 date: 2025-08-05
 description: 'Originally recorded for <a href="https://podcasts.ox.ac.uk/ai-and-democracy-ambassador-audrey-tang-plurality-practice-transparency-and-collective-intelligence">Accelerating AI Ethics</a>, University of Oxford Institute for Ethics in AI.'
+og_image: "/img/ai-democracy-podcast.jpg"
 nav_next:
     url: "/"
     text: "Home"
