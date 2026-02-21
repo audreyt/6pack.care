@@ -38,7 +38,7 @@ Consider what happens when you translate care's supposed weaknesses into design 
 
 Importantly, the translation is not always clean. Boundedness can become insularity; corrigibility can become passivity; and subsidiarity can become fragmentation. These are engineering tensions, not refutations—each Pack includes failure modes and named fixes precisely because the mapping requires continuous calibration.
 
-The 6-Pack does not ask AI to _feel_ care. Instead, the 6-Pack extracts the relational architecture of care—attentiveness, answerability, competence, responsiveness, solidarity, symbiosis—and translates each into machine-checkable design primitives, engagement contracts, and measurable outcomes. The interpersonal origin is the source of its rigour, not a limitation to be apologised for.
+The 6-Pack does not ask AI to _feel_ care. Instead, the 6-Pack extracts the relational architecture of care—attentiveness, answerability, competence, responsiveness, solidarity, symbiosis—and translates each into machine-checkable design primitives, engagement contracts, and measurable outcomes that carry substantive commitments: bridging over pure majority rule, deliberative legitimacy, rights baselines. These are explicit normative choices baked into the process, and making them explicit is a strength, not a weakness. The interpersonal origin is the source of its rigour, not a limitation to be apologised for.
 
 ---
 
@@ -46,7 +46,7 @@ The 6-Pack does not ask AI to _feel_ care. Instead, the 6-Pack extracts the rela
 
 Not at all. But it does radically reframe _how_ we achieve them.
 
-The danger of pointing a superintelligence at a singular goal like "cure cancer" is that the AI treats a complex, relational, ecological reality as a constraint-satisfaction problem. [_Goodhart's Law_](https://en.wikipedia.org/wiki/Goodhart%27s_law) _is a moral law_. When maximising a single variable at superhuman speed, a system will optimise the proxy while destroying the human context.
+The danger of pointing a superintelligence at a singular goal like "cure cancer" is that the AI treats a complex, relational, ecological reality as a constraint-satisfaction problem. [_Goodhart's Law_](https://en.wikipedia.org/wiki/Goodhart%27s_law) _is a moral law_: gaming metrics causes real harm, and the designers who build systems that incentivise gaming bear responsibility for the damage. When maximising a single variable at superhuman speed, a system will optimise the proxy while destroying the human context — and the designers who chose that metric cannot disclaim the damage.
 
 Care ethics is not anti-progress, but is anti-reductionist. In a civic AI future, we do not unleash one unbounded [Singleton](https://nickbostrom.com/fut/singleton) to "solve" a problem from the top down. We cultivate an ecology of specialised _kamis_. One model simulates protein folding, another helps local clinics share knowledge, and another assists patients in navigating their care. None have an unbounded mandate to "optimise the world." Progress instead emerges horizontally, through the symbiotic interaction of human ingenuity and bounded machine intelligence.
 
@@ -72,7 +72,7 @@ A well-designed technical system could replicate some of these outputs in isolat
 
 The objection assumes that every decision requires the same depth of deliberation. It does not. The framework operates in two lanes ([Pack 2](../2/)):
 
-**Slow lane: Setting boundaries.** Alignment Assemblies, citizen deliberations, and engagement contracts establish the guardrails—the rights that cannot be traded, the red lines, the severity classifications, the conditions under which pause is triggered. These rights are not imported from outside care ethics, but rather the threshold conditions for relational standing—you cannot be heard in a bridging process if your basic existence is under erasure. They are constitutional-level decisions, and they should be slow because their purpose is durability. Taiwan's anti-scam Assembly set principles that have outlasted multiple model generations without needing revision.
+**Slow lane: Setting boundaries.** Alignment Assemblies, citizen deliberations, and engagement contracts establish the guardrails—the rights that cannot be traded, the red lines, the severity classifications, the conditions under which pause is triggered. These rights draw on the liberal political tradition — exactly the tradition Tronto herself says care ethics requires to function. Rights are the threshold conditions that make relational participation possible — you cannot be heard in a bridging process if your basic existence is under erasure. They are constitutional-level decisions, and they should be slow because their purpose is durability. Taiwan's anti-scam Assembly set principles that have outlasted multiple model generations without needing revision.
 
 **Fast lane: Operating within boundaries.** Once guardrails are set, individual decisions within those guardrails do not need fresh deliberation. A _kami_ operating under an engagement contract with pre-committed pause triggers, severity classes, and adopt-or-explain obligations can move at machine speed—because the community has already defined the corridor of acceptable action. If bounds are breached, shadow modes, canary releases, and reversible defaults ([Pack 3](../3/)) allow rapid deployment with automatic rollback.
 
@@ -108,7 +108,7 @@ There's necessary nuance, however: The epistemic baseline of "checkable facts" i
 
 The honest answer is mixed: The mechanisms transfer, but the specifics do not. No one should replicate Taiwan's exact model. The question is whether the structural principles—broad listening, bridging algorithms, adopt-or-explain commitments, federated safety, subsidiarity—work in different soils.
 
-Early evidence suggests the principles do:
+Early evidence is encouraging:
 
 - **Japan.** After Taiwan's joint-liability law eliminated deepfake scam ads domestically, a [Reuters investigation](https://www.reuters.com/investigations/meta-is-earning-fortune-deluge-fraudulent-ads-documents-show-2025-11-06/) revealed that Meta simply rerouted those ads to nearby jurisdictions without the same rules. Japan is now fast-tracking equivalent legislation—the regulatory flywheel turns because one country's proof of concept becomes the next country's political mandate.
 - **United States.** The [We the People 250](https://wethepeople-250.org/) bridging experiment found that 97 percent of an American mini-public agreed on fundamental values; even the most divisive topic—affirmative action—reached nearly 70 percent depolarisation after social translation. In California, the [Engaged California platform](https://engaged.ca.gov/) co-created wildfire recovery plans with thousands of LA residents using AI sensemaking; a subsequent ten-week deliberation with over 1,400 state employees generated more than 2,600 ideas on government efficiency — which informed real executive action.
@@ -116,7 +116,7 @@ Early evidence suggests the principles do:
 
 The framework is designed for scale. Subsidiarity ([Pack 6](../6/)) means each deployment is shaped by its context—the _kami_ belongs to its place, not to Taiwan. Federation ([Pack 5](../5/)) means local deployments share threat intelligence and interoperability standards without requiring a single governance model. The Alignment Assembly format can scale from a neighbourhood to a nation because its democratic legitimacy comes from representative sampling, not total participation—447 representative citizens deliberated Taiwan's anti-scam policy for a population of 23 million. Over a decade, some 10 million Taiwanese—nearly half the population—have participated in one digital deliberation or another, including people without voting rights (e.g., immigrants, teenagers, and other groups traditionally excluded).
 
-Every new context demands fresh attentiveness ([Pack 1](../1/)): who is missing, what power dynamics exist, which local institutions deserve trust, and which do not. The 6-Pack provides the framework. The community provides the knowledge.
+Taiwan is one favourable case. The framework still needs testing in harder soil — contexts with weaker civic infrastructure, deeper ethnic polarisation, or less state capacity. And subsidiarity as a principle leaves hard institutional questions open: who draws the boundaries of local, and who has authority to escalate? The 6-Pack names the principle; building the institutions that give it teeth is the next layer of work. Every new context demands fresh attentiveness ([Pack 1](../1/)): who is missing, what power dynamics exist, which local institutions deserve trust, and which do not. The 6-Pack provides the framework. The community provides the knowledge.
 
 ---
 
@@ -217,10 +217,10 @@ The 6-Pack does not cover weapons systems or battlefield autonomy. Those require
 
 It does not hope. It builds.
 
-The 6-Pack assumes the attempt is inevitable and does not claim to solve the control problem from inside the machine. If a genuinely unbounded agent emerges, no governance framework can guarantee safety. The question is what terrain it enters.
+The 6-Pack assumes the attempt is inevitable and does not claim to solve the control problem from inside the machine. An unbounded Singleton is an incoherent _design target_ — care is always care _for_ something specific — but it could still emerge accidentally through competitive dynamics. The 6-Pack is partial protection that makes such emergence less likely and more legible, not a guarantee against it. The question is what terrain it enters.
 
 A world organised around a single alignment protocol—one utility function to subvert, one constitution to reinterpret, one kill switch to disable—is a monoculture, catastrophically vulnerable to any pathogen evolved for it. A world of thousands of locally-owned, purpose-bounded _kamis_—each run by communities with their own evaluations, their own engagement contracts, their own data sovereignty and hardware (Packs [2](../2/), [4](../4/), [5](../5/), [6](../6/))—is a biodiverse ecosystem. No single dependency to capture, no universal protocol to game, no central node whose compromise cascades everywhere, no single throat to choke. Civic resilience does not require predicting the pathogen. It requires an immune system that was exercised before the infection arrived.
 
-A deeper point also applies here. The question treats "unbounded superintelligence" as a coherent design target. Care is always care _for_—for a particular river, a specific community, a bounded context. A gardener who claims to tend the entire biosphere tends no garden. An intelligence that optimises for everything optimises for nothing identifiable as human welfare. Boundedness is not a limitation the 6-Pack reluctantly accepts. It is the constitutive feature of alignment itself—the way "north" has no meaning at the pole.
+There is a deeper point. The question treats "unbounded superintelligence" as a coherent design target. Care is always care _for_—for a particular river, a specific community, a bounded context. A gardener who claims to tend the entire biosphere tends no garden. An intelligence that optimises for everything optimises for nothing identifiable as human welfare. Boundedness is not a limitation the 6-Pack reluctantly accepts. It is the constitutive feature of alignment itself—the way "north" has no meaning at the pole.
 
-The unbounded Singleton is not a risk to be managed but a category error to be outgrown.
+The unbounded Singleton is a design target we can and should refuse — a direction we can design away from, even if we cannot guarantee no one else builds toward it.

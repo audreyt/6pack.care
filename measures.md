@@ -8,6 +8,8 @@ permalink: "/measures/"
 
 Each pack answers a distinct phase question in the care cycle. The measures below are assigned so that each metric belongs to exactly one pack.
 
+**These metrics are designed for sufficiency, not maximisation.** Each deployment context defines a threshold — "good enough" for that community. Crossing the threshold is the goal; score-chasing beyond it risks the same metric-gaming the 6-Pack warns against. The kami tends its garden — it does not compete to tend the most gardens.
+
 ### Pack 1 — Attentiveness: did we look at the right things?
 
 | Metric       | What it answers                                                                                    |

@@ -82,7 +82,7 @@ The core problem of AI safety is an old one: You can't get "what should be" (val
 
 Standard approaches try to teach machines our values by watching how we behave. But that's tricky. Behaviour describes what we do, not necessarily what we _should_ do.
 
-Care ethics offers a different path, starting with the simple fact that we depend on each other. That dependency creates a natural "ought"—we _should_ care for one another because we _need_ one another. The fact of our connection contains its own value.
+Care ethics offers a different path. It starts _within_ a shared commitment to democratic life and asks what we owe each other — so the "ought" flows from our values, while the fact of need gives those values concrete shape.
 
 [_⿻ Plurality_](https://plurality.net/) applies this to technology. Inspired by experiments like vTaiwan, it turns care into a process:
 
@@ -92,7 +92,7 @@ Care ethics offers a different path, starting with the simple fact that we depen
 - Letting the affected judge results (Responsiveness)
 - Building shared infrastructure for trust (Solidarity)
 
-This process gives us a new way to align AI: **alignment-by-process**. Instead of just trying to code the "right" values once and for all, we build a continuous process that earns trust by adapting to what the community needs.
+This process gives us a new way to align AI: **alignment-by-process**. Instead of just trying to code the "right" values once and for all, we build a continuous governance process that complements technical safety research by earning trust and adapting to what the community needs.
 
 The AI then shifts from being an optimiser chasing a fixed goal to a **Civic AI**—something created by and for the community. AI's success isn't measured by a score, but by the health of the relationships it supports. Civic AI learns our values by helping us practice them.
 
@@ -100,7 +100,7 @@ The AI then shifts from being an optimiser chasing a fixed goal to a **Civic AI*
 
 Care ethics is often dismissed as too soft or domestic. But for AI, that "softness" is a feature.
 
-Imagine an AI that isn't trying to maximise a global score, but is instead rooted in a specific place and time. Its moral world is defined by the people right here, right now. Because it doesn't need to scale indefinitely, it doesn't develop the dangerous habits we fear: hoarding power, fighting for survival, or treating the world like a resource to be mined.
+Imagine an AI that isn't trying to maximise a global score, but is instead rooted in a specific place and time. Its moral world is defined by the people right here, right now. Because it doesn't need to scale indefinitely, it doesn't develop the dangerous habits we fear: hoarding power, fighting for survival, or treating the world like a resource to be mined. These properties don't arise automatically — they require deliberate engineering constraints that enforce what the kami metaphor illustrates.
 
 That limit might seem small, but it's a safety feature. The AI tends the community's relationships; it doesn't replace them or mine them.
 

@@ -26,9 +26,7 @@ Today, I want to discuss an application of this idea to AI governance, developed
 
 As AI becomes a thousand, perhaps ten thousand times faster than us, we face a fundamental asymmetry. The default trajectory: we become the **garden**, and AI becomes the **gardener**—a top-down intelligence tending humanity from above.
 
-At that speed, traditional ethics fail. Utilitarianism becomes brittle. Its core mechanism—calculating consequences to maximise overall well-being—relies on prediction and human oversight. But when an AI system optimises outcomes at a speed far beyond our comprehension, the system's decision-making process becomes inscrutable. We cannot intervene before unintended consequences cascade, which can lead to catastrophic misalignment when the system maximises instrumental proxies instead of genuine human flourishing.
-
-Deontology fares little better. What does a universal rule from a plant mean to the gardener? Its core assumption—of mutual obligations between actors on equal footing—no longer holds. Any rigid rule we impose is left for the AI system to interpret. This inevitably leads to perverse instantiations: adhering to the letter of the rule while violating its spirit in ways we can neither foresee nor correct.
+At that speed, traditional ethics struggle. Consequentialism — even its most sophisticated forms — relies on predicting and overseeing outcomes. When an AI system optimises far beyond our comprehension, we cannot intervene before unintended consequences cascade. Deontology relies on moral agents interpreting obligations in good faith on roughly equal footing. When the "interpreter" operates thousands of times faster, the gap between a rule's letter and its spirit widens in ways we can neither foresee nor correct. Both traditions have far more depth than caricature suggests, but care ethics offers something neither provides: it starts from relationships and process rather than from outcomes or rules alone.
 
 A framework that acknowledges this asymmetry but refuses the gardener role is an ethics around **civic care**, particularly the work of Joan Tronto. The core idea is that we remain each other's gardeners. AI becomes local infrastructure—a spirit of place, a _kami_—that supports care _at the speed care actually grows_.
 
@@ -48,7 +46,7 @@ We crowdsourced internet access and livestreamed debates for radical transparenc
 
 We drafted better versions of the trade deal together, iteratively. Each day, we reviewed the low-hanging fruits—the ideas agreed upon the previous day—and the best arguments from both sides on the remaining conflicts. Then we resolved them step by step.
 
-By shifting from protest to a productive demo, we began tilling the soil of our democracy. Systemically applying such bridge-making algorithms led to increased public trust. It climbed from 9 percent in 2014 to over 70 percent by 2020. We showed that the best way to fix a system is to build a better one.
+By shifting from protest to a productive demo, we began tilling the soil of our democracy. Systemically applying such bridge-making algorithms contributed to increased public trust — not alone, but as part of a broader democratic renewal. Trust climbed from 9 percent in 2014 to over 70 percent by 2020. We showed that the best way to fix a system is to build a better one.
 
 # From Outrage to Overlap
 
@@ -116,19 +114,19 @@ Here are key policy levers:
 
 # From "Is" to "Ought"
 
-The examples so far showed democratic, decentralised defence acceleration (d/acc) in the info domain. More generally, many actors tackle _vertical_ alignment across many domains: "Is the AI loyally serving its principal?"
+The examples so far showed democratic, decentralised defence acceleration (d/acc) in the info domain. More generally, many actors tackle _vertical_ alignment — the technical question across many domains: "Is the AI loyally serving its principal?"
 
-But due to externalities, perfect vertical alignment can lead to systemic conflict. Policymakers must instead focus on _horizontal_ alignment: "How do we ensure these AI systems help us (and each other) cooperate, rather than supercharge our conflicts?"
+But due to externalities, perfect vertical alignment can lead to systemic conflict. Policymakers must _also_ focus on _horizontal_ alignment — the governance question: "How do we ensure these AI systems help us (and each other) cooperate, rather than supercharge our conflicts?"
 
 Here, we face Hume's Is-Ought problem: No amount of accurate observation of how things _are_ can derive a universally agreeable way things _ought_ to be.
 
 The solution is not "thin," abstract universal principles. Instead, it requires hyperlocal social-cultural contexts, what Alondra Nelson calls "thick" alignment.
 
-**Civic care** is a bridge from "is" to "ought" through a relational ethics framework. In a thick context, to perceive a need is to affirm the obligation to cooperate (if capable).
+**Civic care** offers a practical way forward — not by solving the Is-Ought problem, but by starting, as Joan Tronto puts it, "in the middle of things." It begins _within_ an existing commitment to democratic values and asks what those commitments demand once we take our mutual dependence seriously. Within such a community, to perceive a need is to recognise a claim on our shared responsibility.
 
-Care ethics optimises for the internal characteristics of actors and the quality of relationships in a community, not just outcomes (consequentialism). It treats "relational health" as first class.
+Care ethics focuses on the internal characteristics of actors and the quality of relationships in a community, not just outcomes (consequentialism). It treats "relational health" as first class.
 
-The following "6-Pack" translates care ethics into design primitives we can code into agentic systems to steer towards relational health. The 6-Pack doesn't replace technical safety research. But it does provide a governance architecture that gives societies leverage even when technical alignment is imperfect—making failures legible, contestable, and reversible.
+The 6-Pack is a governance architecture — it gives societies leverage even when technical alignment is imperfect, making failures legible, contestable, and reversible. The following "6-Pack" translates care ethics into design primitives we can code into agentic systems to steer towards relational health.
 
 # Attentiveness: **"Caring about"**
 
@@ -162,7 +160,7 @@ This competence is where we implement **bridging-based ranking**. We must optimi
 
 Security is also a competence — and a moral — question. An agent that can be hijacked cannot tend its place. Prompt injection, privilege escalation, and scope creep are care failures, not merely technical ones. A kami with real resources runs in a strict sandbox: least-privilege permissions, validated inputs, no implicit trust of anything upstream.
 
-_Rule of thumb: Security failures are moral failures._
+_Rule of thumb: Security failures are moral failures of those who build and deploy, not merely technical oversights._
 
 # Responsiveness: **"Care-receiving"**
 
@@ -184,9 +182,9 @@ _Rule of thumb: Always measure trust-under-loss._
 
 # Solidarity: **"Caring with"**
 
-Solidarity and plurality scale when cooperation is the path of least resistance. If the ecosystem does not reward caregiving, there will not be enough care.
+Solidarity and plurality scale when cooperation is the path of least resistance. If the ecosystem does not reward caregiving, there will not be enough care. And care, as Tronto reminds us, is only viable as a political ideal when liberal, pluralistic, democratic institutions already guarantee the rights and justice it depends on.
 
-This requires agent infrastructure—a civic stack where people, organisations, and AIs operate under explicit, machine-checkable norms.
+This requires agent infrastructure — a civic stack where people, organisations, and AIs operate under explicit, machine-checkable norms.
 
 One example is an **Agent ID registry** using **meronymity** (partial anonymity), which allows us to identify if an agent is tethered to a real human without doxing that human. The Taiwan KYC ad requirement is a prototype of this infrastructure.
 
@@ -204,7 +202,7 @@ A _local kami_ is a guardian spirit. It's not an all-powerful god that reigns ov
 
 This concept gives us a powerful design principle: **boundedness**.
 
-Today, most technology is built for infinite scale. A successful app is expected to grow forever. But the _kami_ model suggests a different goal. We can design AIs to be local stewards—_kami_ of care.
+Today, most technology is built for infinite scale. A successful app is expected to grow forever. But the _kami_ model suggests a different goal. We can design AIs to be local stewards — _kami_ of care — whose boundedness is not intrinsic but engineered: resource caps, sunset timers, non-expansion pacts, and fresh democratic authority for any scope change. Without these, "imperial creep" — scope expansion beyond the original mandate — is a real failure mode.
 
 But this raises a crucial question: What stops these specialised AIs from fighting each other?
 
