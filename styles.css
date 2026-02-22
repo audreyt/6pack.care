@@ -487,12 +487,6 @@ main p:has(> strong:first-child) {
     margin-top: 1.6rem;
 }
 
-main p > strong:first-child {
-    color: var(--heading);
-    font-size: 0.85em;
-    letter-spacing: 0.02em;
-}
-
 /* ─── VIDEO EMBED ─── */
 .video-embed {
     position: relative;
