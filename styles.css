@@ -109,9 +109,13 @@ body {
     background: var(--paper);
     margin: 0;
     padding: 0;
-    line-height: 1.75;
-    font-weight: 300;
+    line-height: 1.8;
+    font-weight: 400;
     -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+    background: color-mix(in srgb, var(--teal) 20%, transparent);
 }
 
 /* ─── LINKS ─── */
@@ -233,7 +237,9 @@ main table {
     width: 100%;
     border-collapse: collapse;
     margin: 1.5rem 0;
-    font-size: 0.95rem;
+    font-size: 0.92rem;
+    overflow-x: auto;
+    display: block;
 }
 
 main th {
@@ -265,7 +271,7 @@ main tr:last-child td {
 
 /* ─── MAIN CONTENT ─── */
 main {
-    max-width: 740px;
+    max-width: 680px;
     margin: 0 auto;
     padding: 48px 32px;
 }
@@ -289,41 +295,6 @@ section {
     border-radius: 4px;
     padding: 36px;
     margin-bottom: 32px;
-    transition:
-        box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1),
-        transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-    opacity: 0;
-    animation: fadeUp 0.6s ease forwards;
-}
-
-section:nth-child(1) {
-    animation-delay: 0.1s;
-}
-section:nth-child(2) {
-    animation-delay: 0.15s;
-}
-section:nth-child(3) {
-    animation-delay: 0.2s;
-}
-section:nth-child(4) {
-    animation-delay: 0.25s;
-}
-section:nth-child(5) {
-    animation-delay: 0.3s;
-}
-section:nth-child(6) {
-    animation-delay: 0.35s;
-}
-section:nth-child(7) {
-    animation-delay: 0.4s;
-}
-section:nth-child(8) {
-    animation-delay: 0.45s;
-}
-
-section:hover {
-    box-shadow: var(--shadow-hover);
-    transform: translateY(-2px);
 }
 
 /* ─── TYPOGRAPHY ─── */
@@ -333,37 +304,104 @@ h4 {
     font-family: var(--serif);
     font-weight: 600;
     color: var(--heading);
-    margin-top: 1.2em;
-    margin-bottom: 0.5em;
     letter-spacing: -0.01em;
 }
 
-h2 {
-    font-size: clamp(1.5rem, 3vw, 1.8rem);
-    padding-bottom: 12px;
-    border-bottom: 2px solid var(--gold);
+h1 {
+    scroll-margin-top: 24px;
 }
 
+h2 {
+    font-size: clamp(1.6rem, 3.5vw, 2rem);
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--gold);
+    margin-top: 2.5em;
+    margin-bottom: 0.8em;
+}
+
+/* h3 is the primary structural heading within chapters */
 h3 {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: 600;
+    margin-top: 2.8em;
+    margin-bottom: 0.6em;
+    padding-top: 1.5em;
+    border-top: 1px solid var(--border);
+    scroll-margin-top: 24px;
+}
+
+/* First heading right after opening prose — no divider needed */
+main > p + h3,
+main > p + h2,
+main > em + h3,
+main > .audio-section + h3,
+main > .overview-section + h2,
+main > .video-embed + h3 {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 2em;
 }
 
 h4 {
     font-size: 1.05rem;
+    margin-top: 1.8em;
+    margin-bottom: 0.4em;
 }
 
 p {
-    margin: 0.8em 0;
+    margin: 1em 0;
+}
+
+/* Blockquotes — for manifesto and inline quotes */
+blockquote {
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--muted);
+    border-left: 2px solid var(--gold);
+    padding: 4px 0 4px 24px;
+    margin: 2em 0;
+    line-height: 1.7;
+}
+
+blockquote p {
+    margin: 0.5em 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 3em 0;
 }
 
 ul {
     padding-left: 1.2em;
-    margin: 0.6em 0;
+    margin: 0.8em 0;
+}
+
+ol {
+    padding-left: 1.4em;
+    margin: 0.8em 0;
 }
 
 li {
-    margin: 0.4em 0;
+    margin: 0.5em 0;
+    line-height: 1.7;
+}
+
+li > ul,
+li > ol {
+    margin: 0.3em 0;
+}
+
+/* ─── EMPHASIS ─── */
+strong {
+    font-weight: 600;
+    color: var(--heading);
+}
+
+em {
+    font-style: italic;
 }
 
 /* ─── LEAD & CALLOUT ─── */
@@ -443,8 +481,14 @@ li {
 /* ─── TRANSCRIPT SPEAKER TURNS ─── */
 main p:has(> strong:first-child) {
     border-top: 1px solid var(--border);
-    padding-top: 1rem;
-    margin-top: 1.25rem;
+    padding-top: 1.4rem;
+    margin-top: 1.6rem;
+}
+
+main p > strong:first-child {
+    color: var(--heading);
+    font-size: 0.85em;
+    letter-spacing: 0.02em;
 }
 
 /* ─── VIDEO EMBED ─── */
@@ -777,6 +821,14 @@ footer a:hover {
     }
 
     main p:has(> strong:first-child) {
+        border-top-color: rgba(255, 255, 255, 0.08);
+    }
+
+    h3 {
+        border-top-color: rgba(255, 255, 255, 0.08);
+    }
+
+    hr {
         border-top-color: rgba(255, 255, 255, 0.08);
     }
 
