@@ -274,6 +274,8 @@ main {
     max-width: 680px;
     margin: 0 auto;
     padding: 48px 32px;
+    font-family: var(--serif);
+    font-size: 1.1rem;
 }
 
 main article {
