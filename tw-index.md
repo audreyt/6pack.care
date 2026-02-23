@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "關懷六力・仁工智慧"
+title: "關懷六力 · 仁工智慧"
 description: "唐鳳與 Caroline Green 的研究計畫"
 lang: zh-tw
 alt_lang_url: "/"
