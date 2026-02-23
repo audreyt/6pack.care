@@ -666,6 +666,27 @@ footer a:hover {
     }
 }
 
+/* ─── SKIP LINK ─── */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 16px;
+    z-index: 2000;
+    background: var(--oxford-blue);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 0 0 4px 4px;
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: top 0.2s;
+}
+
+.skip-link:focus {
+    top: 0;
+    color: white;
+}
+
 /* ─── FOCUS ─── */
 :focus-visible {
     outline: 2px solid var(--teal);
@@ -743,6 +764,46 @@ footer a:hover {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
+    }
+}
+
+/* ─── PRINT ─── */
+@media print {
+    header,
+    .next-action,
+    .skip-link,
+    .lang-toggle,
+    .audio-section,
+    .video-embed,
+    footer {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+        color: black;
+        font-size: 11pt;
+    }
+
+    main {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: underline;
+    }
+
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.85em;
+        color: #555;
+    }
+
+    a[href^="#"]::after,
+    a[href^="/"]::after {
+        content: "";
     }
 }
 

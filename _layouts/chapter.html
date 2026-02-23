@@ -5,6 +5,17 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{{ title }} — {{ subtitle | default: site.title }}</title>
+        <meta
+            name="theme-color"
+            content="#0f1923"
+            media="(prefers-color-scheme: dark)"
+        />
+        <meta
+            name="theme-color"
+            content="#faf8f5"
+            media="(prefers-color-scheme: light)"
+        />
+        <meta name="color-scheme" content="light dark" />
         {% assign og_desc = description | default: site.description | strip_html
         %} {% if og_image %}{% assign og_img = og_image %}{% elsif lang2 == 'zh'
         %}{% assign og_img = site.url | append: '/img/overview-small-tw.jpg'
@@ -19,6 +30,8 @@
         <meta name="twitter:title" content="{{ title }}" />
         <meta name="twitter:description" content="{{ og_desc }}" />
         <meta name="twitter:image" content="{{ og_img }}" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}" />
         <link
             rel="preload"
@@ -37,15 +50,29 @@
         <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
+            media="print"
+            onload="this.media = 'all'"
         />
+        <noscript
+            ><link
+                rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
+        /></noscript>
     </head>
 
     <body>
+        {% if lang2 == 'en' %}
+        <a class="skip-link" href="#main">Skip to content</a>
+        {% else %}
+        <a class="skip-link" href="#main">跳至內容</a>
+        {% endif %}
         <header>
             {% if lang2 == 'en' %}
             <a href="{{ '/' | relative_url }}" title="Home">
                 <img
                     class="oxford-logo"
+                    width="100"
+                    height="100"
                     src="{{ '/img/oxford-logo.svg' | relative_url }}"
                     alt="University of Oxford Logo"
                 />
@@ -53,6 +80,8 @@
             <a href="{{ '/' | relative_url }}" title="6-Pack of Care Home">
                 <img
                     class="oxford-logo"
+                    width="246"
+                    height="100"
                     src="{{ '/img/afp-logo.svg' | relative_url }}"
                     alt="Accelerator Fellowship Programme Logo"
                 />
@@ -61,6 +90,8 @@
             <a href="{{ '/tw' | relative_url }}" title="首頁">
                 <img
                     class="oxford-logo"
+                    width="100"
+                    height="100"
                     src="{{ '/img/oxford-logo.svg' | relative_url }}"
                     alt="牛津大學校徽"
                 />
@@ -68,6 +99,8 @@
             <a href="{{ '/tw' | relative_url }}" title="關懷六力首頁">
                 <img
                     class="oxford-logo"
+                    width="246"
+                    height="100"
                     src="{{ '/img/afp-logo.svg' | relative_url }}"
                     alt="加速哲人徽章"
                 />
@@ -97,7 +130,7 @@
             {% endif %}
         </header>
 
-        <main>
+        <main id="main">
             {% if audio %}
             <div class="audio-section">
                 <audio
@@ -208,5 +241,30 @@
         </section>
 
         {% include "footer.html" %}
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": "{{ title }}",
+                "description": "{{ og_desc }}",
+                "url": "{{ site.url }}{{ page.url }}",
+                "image": "{{ og_img }}",
+                {% if date %}"datePublished": "{{ date | date: '%Y-%m-%d' }}",{% endif %}
+                "author": [
+                    { "@type": "Person", "name": "Audrey Tang", "url": "https://audreyt.org" },
+                    { "@type": "Person", "name": "Caroline Green", "url": "https://www.oxford-aiethics.ox.ac.uk/caroline-emmer-de-albuquerque-green" }
+                ],
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Oxford Institute for Ethics in AI",
+                    "url": "https://www.oxford-aiethics.ox.ac.uk/"
+                },
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "name": "6-Pack of Care",
+                    "url": "{{ site.url }}"
+                }
+            }
+        </script>
     </body>
 </html>

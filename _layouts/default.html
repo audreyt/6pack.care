@@ -5,6 +5,17 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{{ title }} — {{ subtitle | default: site.title }}</title>
+        <meta
+            name="theme-color"
+            content="#0f1923"
+            media="(prefers-color-scheme: dark)"
+        />
+        <meta
+            name="theme-color"
+            content="#faf8f5"
+            media="(prefers-color-scheme: light)"
+        />
+        <meta name="color-scheme" content="light dark" />
         {% assign og_desc = description | default: site.description | strip_html
         %} {% if og_image %}{% assign og_img = og_image %}{% elsif lang2 == 'zh'
         %}{% assign og_img = site.url | append: '/img/overview-small-tw.jpg'
@@ -19,6 +30,8 @@
         <meta name="twitter:title" content="{{ title }}" />
         <meta name="twitter:description" content="{{ og_desc }}" />
         <meta name="twitter:image" content="{{ og_img }}" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}" />
         <link
             rel="preload"
@@ -30,13 +43,26 @@
         <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
+            media="print"
+            onload="this.media = 'all'"
         />
+        <noscript
+            ><link
+                rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
+        /></noscript>
     </head>
     <body>
+        {% if lang2 == 'en' %}
+        <a class="skip-link" href="#main">Skip to content</a>
+        {% else %}
+        <a class="skip-link" href="#main">跳至內容</a>
+        {% endif %}
         <header>
             <a href="https://www.ox.ac.uk/"
                 ><img
                     class="oxford-logo"
+                    width="100"
                     height="100"
                     src="{{ '/img/oxford-logo.svg' | relative_url }}"
                     alt="University of Oxford Logo"
@@ -44,6 +70,7 @@
             <a href="https://afp.oxford-aiethics.ox.ac.uk/"
                 ><img
                     class="oxford-logo"
+                    width="246"
                     height="100"
                     src="{{ '/img/afp-logo.svg' | relative_url }}"
                     alt="Accelerator Fellowship Programme Logo"
@@ -80,7 +107,7 @@
             {% endif %}
         </header>
 
-        <main>{{ content }}</main>
+        <main id="main">{{ content }}</main>
 
         {% if next_action or prev_action %}
         <section class="next-action">
@@ -105,5 +132,31 @@
             </div>
         </section>
         {% endif %} {% include "footer.html" %}
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "6-Pack of Care — Civic AI",
+                "url": "{{ site.url }}",
+                "description": "{{ site.description }}",
+                "author": [
+                    {
+                        "@type": "Person",
+                        "name": "Audrey Tang",
+                        "url": "https://audreyt.org"
+                    },
+                    {
+                        "@type": "Person",
+                        "name": "Caroline Green",
+                        "url": "https://www.oxford-aiethics.ox.ac.uk/caroline-emmer-de-albuquerque-green"
+                    }
+                ],
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Oxford Institute for Ethics in AI",
+                    "url": "https://www.oxford-aiethics.ox.ac.uk/"
+                }
+            }
+        </script>
     </body>
 </html>
