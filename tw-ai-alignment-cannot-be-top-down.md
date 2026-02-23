@@ -51,7 +51,7 @@ _社群備註（Community Notes）提供了更好的模式——由公民而非�
 就像一小圈信任與安全官員無法引導全球社群媒體一樣，沒有少數研究人員能夠成功地為世界對齊通用 AI 系統。
 
 <div class="overview-section">
-<img src="/img/gpt-value-correlation-tw.png" alt="GPT 與跨文化人類價值反應之間的相關性" class="overview-image">
+<img src="/img/gpt-value-correlation-tw.png" alt="GPT 與跨文化人類價值反應之間的相關性" class="overview-image" width="1024" height="1024" loading="lazy" decoding="async">
 <p class="figure-caption"><strong>圖 1.</strong> GPT 與跨文化人類價值反應之間的相關性。隨著與美國——高度 WEIRD（西方、受過教育、工業化、富裕和民主）參考點——的文化距離增加，GPT 與當地人類價值觀的對齊程度下降。這種模式說明了若全球 AI 系統僅在狹隘的文化背景下訓練，就可能大規模嵌入並放大單一的道德世界觀——這對多元主義和民主自決是一個微妙但系統性的風險。來源：<a href="https://osf.io/preprints/psyarxiv/5b26t_v1">PsyArXiv Preprints, “Which Humans?”</a> (via <a href="https://www.adalovelaceinstitute.org/blog/cultural-misalignment-llms/">Ada Lovelace Institute, 2025</a>).</p>
 </div>
 
@@ -64,7 +64,7 @@ _社群備註（Community Notes）提供了更好的模式——由公民而非�
 **覺察力並非偶然出現；它建立在明確的倫理基礎上。** 在明尼蘇達大學 Joan Tronto 教授的關懷倫理基礎上，我與 Caroline Emmer De Albuquerque Green（牛津大學 AI 倫理研究所）共同開發了 [關懷六力（6-Pack of Care）](https://6pack.care/manifesto/)——六項環環相扣的實踐，將倫理原則轉化為制度設計。該框架承認一個基本的不對稱性：AI 以超出人類監督的速度和規模運作。為了保持對齊，我們的機構必須演進以匹配這種節奏，透過持續學習、回應和重新校準，並在每個層級都有人在迴路中。
 
 <div class="overview-section">
-<img src="/img/overview-small.jpg" alt="關懷六力插圖，由 Nicky Case 繪製" class="overview-image">
+<img src="/img/overview-small.jpg" alt="關懷六力插圖，由 Nicky Case 繪製" class="overview-image" width="1280" height="1810" loading="lazy" decoding="async">
 <p class="figure-caption"><strong>圖 2.</strong> 關懷六力插圖，由 Nicky Case 繪製。</p>
 </div>
 
