@@ -41,8 +41,8 @@
     --border: #e0ddd7;
     --shadow: 0 2px 8px rgba(0, 33, 71, 0.06);
     --shadow-hover: 0 8px 32px rgba(0, 0, 0, 0.08);
-    --serif: "Lora", "Noto Serif TC", Georgia, serif;
-    --sans: "Outfit", "Noto Sans TC", system-ui, sans-serif;
+    --serif: "Lora", Georgia, serif;
+    --sans: "Outfit", system-ui, sans-serif;
     --accent-teal: #2a7f8a;
     --accent-blue: #2a7f8a;
     --accent-gradient: linear-gradient(135deg, var(--oxford-blue), #003366);

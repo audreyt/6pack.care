@@ -41,23 +41,33 @@
             crossorigin
         />
         <link
-            rel="preload"
-            as="font"
-            type="font/woff2"
-            href="{{ '/fonts/outfit-latin.woff2' | relative_url }}"
-            crossorigin
-        />
-        <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
             media="print"
             onload="this.media = 'all'"
         />
         <noscript
             ><link
                 rel="stylesheet"
-                href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
+                href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         /></noscript>
+        <script>
+            function __imgProbe(s) {
+                return new Promise(function (r) {
+                    var i = new Image();
+                    i.onload = function () {
+                        r(i.width > 0);
+                    };
+                    i.onerror = function () {
+                        r(!1);
+                    };
+                    i.src = s;
+                });
+            }
+            window.__avif = __imgProbe(
+                '{{ "/img/probe.avif" | relative_url }}'
+            );
+        </script>
     </head>
 
     <body>
@@ -265,6 +275,20 @@
                     "url": "{{ site.url }}"
                 }
             }
+        </script>
+        <script>
+            window.__avif.then(function (ok) {
+                document.querySelectorAll("noscript").forEach(function (ns) {
+                    var html = ns.textContent;
+                    if (html.indexOf("<img ") === -1) return;
+                    if (ok)
+                        html = html.replace(/\.(jpg|png)(?=["'\s])/g, ".avif");
+                    var tmp = document.createElement("div");
+                    tmp.innerHTML = html;
+                    var img = tmp.querySelector("img");
+                    if (img) ns.parentNode.insertBefore(img, ns);
+                });
+            });
         </script>
     </body>
 </html>

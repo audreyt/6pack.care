@@ -52,7 +52,7 @@ This is exactly the kind of attentiveness that is lacking in current AI alignmen
 Just as a small circle of trust and safety officials could not steer global social media, no handful of researchers can successfully align general-purpose AI systems for the world.
 
 <div class="overview-section">
-<img src="/img/gpt-value-correlation.png" alt="Correlation between GPT and human values across cultures" class="overview-image" width="1600" height="1506" loading="lazy" decoding="async">
+<noscript><img src="/img/gpt-value-correlation.png" alt="Correlation between GPT and human values across cultures" class="overview-image" width="1600" height="1506" loading="lazy" decoding="async"></noscript>
 <p class="figure-caption"><strong>Figure 1.</strong> Correlation between GPT and human value responses across cultures. As the cultural distance from the United States — a highly WEIRD (Western, Educated, Industrialised, Rich, and Democratic) reference point — increases, GPT’s alignment with local human values declines. This pattern illustrates how global AI systems, trained within narrow cultural contexts, can embed and amplify a single moral worldview at scale — a subtle but systemic risk to pluralism and democratic self-determination. Source: <a href="https://osf.io/preprints/psyarxiv/5b26t_v1">PsyArXiv Preprints, “Which Humans?”</a> (via <a href="https://www.adalovelaceinstitute.org/blog/cultural-misalignment-llms/">Ada Lovelace Institute, 2025</a>).</p>
 </div>
 
@@ -65,7 +65,7 @@ Fortunately, the tools needed to pursue a more attentive course already exist.
 **Attentiveness does not emerge by accident; it rests on an explicit ethical foundation.** Building on University of Minnesota Prof. Joan Tronto’s care ethics, I, along with Caroline Emmer De Albuquerque Green (of the University of Oxford’s Institute for Ethics in AI), developed the [6-Pack of Care](https://6pack.care/manifesto/) — six interlocking practices that translate ethical principles into institutional design. The framework recognises a basic asymmetry: AI operates at speeds and scales beyond human oversight. To keep it aligned, our institutions must evolve to match that tempo by learning, responding, and recalibrating continuously, with people in the loop at every level.
 
 <div class="overview-section">
-<img src="/img/overview-small.jpg" alt="Illustration of 6-Pack of Care by Nicky Case" class="overview-image" width="1280" height="1810" loading="lazy" decoding="async">
+<noscript><img src="/img/overview-small.jpg" alt="Illustration of 6-Pack of Care by Nicky Case" class="overview-image" width="1280" height="1810" loading="lazy" decoding="async"></noscript>
 <p class="figure-caption"><strong>Figure 2.</strong> Illustration of 6-Pack of Care, by Nicky Case.</p>
 </div>
 

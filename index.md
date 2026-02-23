@@ -17,7 +17,7 @@ next_action:
 ---
 
 <div class="overview-section">
-<img src="/img/overview-small.jpg" alt="6-Pack of Care visual overview" class="overview-image" width="1280" height="1810" fetchpriority="high" decoding="async">
+<noscript><img src="/img/overview-small.jpg" alt="6-Pack of Care visual overview" class="overview-image" width="1280" height="1810" fetchpriority="high" decoding="async"></noscript>
 </div>
 
 ## Civic AI
@@ -63,12 +63,12 @@ Six design principles turn care ethics into something we can code. Think of them
 <div class="team-photos">
 
 <div><a href="https://audreyt.org/">
-<img src="/img/audrey.jpg" alt="Photo of Ambassador Audrey Tang" width="512" height="512" loading="lazy" decoding="async">
+<noscript><img src="/img/audrey.jpg" alt="Photo of Ambassador Audrey Tang" width="512" height="512" loading="lazy" decoding="async"></noscript>
 <p>Audrey Tang</p>
 </a></div>
 
 <div><a href="https://www.oxford-aiethics.ox.ac.uk/caroline-emmer-de-albuquerque-green">
-<img src="/img/caroline.jpg" alt="Photo of Dr. Caroline Green" width="2510" height="2510" loading="lazy" decoding="async">
+<noscript><img src="/img/caroline.jpg" alt="Photo of Dr. Caroline Green" width="2510" height="2510" loading="lazy" decoding="async"></noscript>
 <p>Caroline Green</p>
 </a></div>
 

@@ -16,7 +16,7 @@ next_action:
 ---
 
 <div class="overview-section">
-<img src="/img/overview-small-tw.jpg" alt="關懷六力概覽圖" class="overview-image" width="1131" height="1600" fetchpriority="high" decoding="async">
+<noscript><img src="/img/overview-small-tw.jpg" alt="關懷六力概覽圖" class="overview-image" width="1131" height="1600" fetchpriority="high" decoding="async"></noscript>
 </div>
 
 ## 仁工智慧
@@ -65,7 +65,7 @@ AI 不是活在真空裡。它活在我們的社群裡，受權力動態和價�
 
 <a href="https://audreyt.org/">
 
-<img src="/img/audrey.jpg" alt="唐鳳大使個人照片" width="512" height="512" loading="lazy" decoding="async"/>
+<noscript><img src="/img/audrey.jpg" alt="唐鳳大使個人照片" width="512" height="512" loading="lazy" decoding="async"/></noscript>
 
 <p>唐鳳</p>
 
@@ -77,7 +77,7 @@ AI 不是活在真空裡。它活在我們的社群裡，受權力動態和價�
 
 <a href="https://www.oxford-aiethics.ox.ac.uk/caroline-emmer-de-albuquerque-green">
 
-<img src="/img/caroline.jpg" alt="Caroline Green 博士個人照片" width="2510" height="2510" loading="lazy" decoding="async"/>
+<noscript><img src="/img/caroline.jpg" alt="Caroline Green 博士個人照片" width="2510" height="2510" loading="lazy" decoding="async"/></noscript>
 
 <p>Caroline Green</p>
 
