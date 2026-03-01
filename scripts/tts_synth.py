@@ -11,21 +11,23 @@ Requires:
   ELEVENLABS_VOICE_ID  – voice ID (default: Audrey Tang 0YIItGwEClgeMtCdHyV1)
 """
 
-import os, re, sys, time, requests
+import io, json, os, re, subprocess, sys, tempfile, time, requests
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
 API_KEY  = os.environ.get("ELEVENLABS_API_KEY", "")
 VOICE_ID = os.environ.get("ELEVENLABS_VOICE_ID", "0YIItGwEClgeMtCdHyV1")
-MODEL    = "eleven_flash_v2_5"
+MODEL    = "eleven_turbo_v2"
 FORMAT   = "mp3_44100_128"
 
 VOICE_SETTINGS = {
-    "stability": 0.75,
-    "similarity_boost": 0.80,
+    "stability": 0.99,
+    "similarity_boost": 0.99,
     "style": 0.0,
     "use_speaker_boost": True,
 }
+
+CHUNK_LIMIT = 20000  # stay under ElevenLabs 10k per-request limit
 
 # ── Text transformation ───────────────────────────────────────────────────────
 
@@ -59,9 +61,6 @@ ABBREVS = [
     (r"\bVBR\b",           "V-B-R"),
     (r"\bCBR\b",           "C-B-R"),
     # Slang / shorthand
-    (r"\bYIMBY\b",         "yes in my backyard"),
-    (r"\bNIMBY\b",         "not in my backyard"),
-    (r"\bMIMBY\b",         "maybe in my backyard"),
     (r"\bd/acc\b",         "d slash a-c-c"),
     # Web
     (r"ROOST\.tools\b",    "ROOST tools"),
@@ -292,6 +291,64 @@ def synthesise(text: str, out_path: str) -> None:
     print(f"Wrote {out_path}  ({len(r.content)//1024} KB, {elapsed:.1f}s)")
 
 
+# ── Loudness normalization ───────────────────────────────────────────────
+
+TARGET_I   = -16    # integrated loudness (LUFS), broadcast standard for speech
+TARGET_TP  = -1.5   # true peak (dBTP)
+TARGET_LRA =  7     # loudness range (LU)
+
+# dynaudnorm flattens frame-level dynamics (fixes files that start loud
+# then trail off); two-pass loudnorm then hits the target LUFS precisely.
+_DYNAUDNORM = "dynaudnorm=f=150:g=31:p=0.95:m=20"
+
+
+def normalize_loudness(mp3_path: str) -> None:
+    """Normalize MP3 to broadcast loudness using ffmpeg two-pass loudnorm."""
+    loudnorm_base = f"loudnorm=I={TARGET_I}:TP={TARGET_TP}:LRA={TARGET_LRA}"
+
+    # Pass 1: measure (dynaudnorm → loudnorm analysis)
+    r = subprocess.run(
+        ["ffmpeg", "-i", mp3_path,
+         "-af", f"{_DYNAUDNORM},{loudnorm_base}:print_format=json",
+         "-f", "null", "-"],
+        capture_output=True, text=True,
+    )
+    stderr = r.stderr
+    json_start = stderr.rfind("{")
+    json_end = stderr.rfind("}") + 1
+    if json_start < 0 or json_end <= json_start:
+        print("Warning: could not parse loudnorm output, skipping normalization")
+        return
+    stats = json.loads(stderr[json_start:json_end])
+    print(f"Measured loudness: {stats['input_i']} LUFS  "
+          f"(range {stats['input_lra']} LU, peak {stats['input_tp']} dBTP)")
+
+    # Pass 2: apply with measured values + linear gain
+    tmp_fd, tmp_path = tempfile.mkstemp(suffix=".mp3")
+    os.close(tmp_fd)
+    try:
+        subprocess.run(
+            ["ffmpeg", "-y", "-i", mp3_path,
+             "-af", (
+                 f"{_DYNAUDNORM},"
+                 f"{loudnorm_base}"
+                 f":measured_I={stats['input_i']}"
+                 f":measured_TP={stats['input_tp']}"
+                 f":measured_LRA={stats['input_lra']}"
+                 f":measured_thresh={stats['input_thresh']}"
+                 f":linear=true"
+             ),
+             "-ar", "44100", tmp_path],
+            check=True, capture_output=True,
+        )
+        os.replace(tmp_path, mp3_path)
+        print(f"Normalized → {TARGET_I} LUFS")
+    except subprocess.CalledProcessError as e:
+        print(f"Warning: loudness normalization failed: {e.stderr[:200] if e.stderr else e}")
+        if os.path.exists(tmp_path):
+            os.unlink(tmp_path)
+
+
 # ── CLI ───────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
@@ -313,3 +370,4 @@ if __name__ == "__main__":
         sys.exit(0)
 
     synthesise(text, out_path)
+    normalize_loudness(out_path)
