@@ -77,7 +77,7 @@ def _find_tab(tabs: list[dict], target_id: str):
 
 
 def _relativise_url(url: str, page_path: str) -> str:
-    """Convert absolute 6pack.care URLs back to relative markdown links."""
+    """Convert absolute civic.ai URLs back to relative markdown links."""
     if not url.startswith(SITE_URL):
         return url
     path = url[len(SITE_URL):]
