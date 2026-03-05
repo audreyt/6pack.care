@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "6-Pack of Care — Civic AI"
+title: "Civic AI — 6-Pack of Care"
 description: "Research project by Audrey Tang and Caroline Green"
 lang: en-gb
 alt_lang_url: "/tw/"
@@ -19,8 +19,6 @@ next_action:
 <div class="overview-section">
 <noscript><img src="/img/overview-small.jpg" alt="6-Pack of Care visual overview" class="overview-image" width="1280" height="1810" fetchpriority="high" decoding="async"></noscript>
 </div>
-
-## Civic AI
 
 We usually try to align AI by giving it rules and goals—top-down controls to keep it safe. These tools matter, but they aren't enough. Behind them lies an untested assumption: that AI is a force to be subdued.
 
@@ -45,6 +43,7 @@ Six design principles turn care ethics into something we can code. Think of them
 
 ## Latest
 
+- ["Ciudadanía Digital"](/ciudadania-digital/): On civic care, geothermal democracy, and what you would refuse to automate — a speech at Tec de Monterrey's 50th anniversary. Transcript included. _(Tec de Monterrey, Mexico City)_
 - [Podcast: The 6-Pack of Care](/podcast/): Audrey and Caroline introduce the full framework live — all six packs, with grounding in social care practice, the kami metaphor, and what to do next. Transcript included. _(Accelerating AI Ethics, Oxford, 58 min)_
 - [Doom Debate](/doom-debate/): Audrey joins Liron Shapira to defend a foomer-not-doomer position — P(Doom) is Not a Number, plurality is already here, and the 6-Pack is the blueprint for the glass horse we need. Transcript included. _(Doom Debates, 90 min)_
 - ["Treat AI Safety Like Civil Defence"](/ai-crisis-diplomacy/): Diplomatic time runs in years; algorithmic time runs in milliseconds. A speech on closing that gap — with three building blocks, a regional proposal, and the 6-Pack of Care. _(AI Impact Summit, Delhi)_
