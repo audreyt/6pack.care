@@ -252,6 +252,14 @@ Because Polis is open source, anyone can change the algorithm. Twitter took Poli
 
 What we practise is not optimisation but satisficing: meeting a threshold across all the important measures rather than maximising any single one. In a multi-agent setting, maximising one metric triggers Goodhart's law — everything you are not measuring gets sacrificed. Satisficing keeps the system in equilibrium.
 
+**From Anti-Corruption to Pro-Transparency**
+
+_Question: In Mexico many people have lost faith in democracy because they see the government as corrupt. From your perspective, how do we solve this?_
+
+In Taiwan in 2014 the president had only 9 percent approval. The opposition was also deeply divided — half wanted to "free China," the other half wanted to be free from China. The Sunflower Movement didn't just protest; it built bridges by finding uncommon common ground: we want to counter authoritarianism without becoming more authoritarian ourselves.
+
+My suggestion: don't just protest. Design better systems — perhaps with distributed ledgers, local AI models for auditing, or civic tech — so that honesty becomes the dominant strategy (incentive compatibility). Study mechanism design. Test your ideas in your local community first. Before long you become a bridge builder and move from anti-corruption to pro-transparency.
+
 **Waging Peace**
 
 _Question: How do you feel about current conflicts in the world?_
