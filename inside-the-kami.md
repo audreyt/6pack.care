@@ -13,373 +13,180 @@ nav_next:
 ---
 
 _Our 6-Pack of Care describes what surrounds a Civic AI — governance,
-accountability and community control. But what goes inside? Two convergent
-research programmes suggest an answer — and reveal a gap only democratic
-process can fill._
+accountability and community control. But what should go inside? Two
+research programmes point in the same direction. They do not solve
+democracy. They do tell us which kinds of systems are easier to govern._
 
-## The Kami has a technical substrate
+## A technical argument for boundedness
 
-The 6-Pack is deliberately technology-agnostic. Its governance works
-whether the AI inside is a current language model, a future architecture
-or something not yet imagined. This agnosticism is a feature: governance
-must outlast any single technical generation.
+The 6-Pack is deliberately technology-agnostic. Its governance should
+outlast any one model family. But technology-agnostic is not
+technology-indifferent. A deceptive model turns oversight into permanent
+combat. A general-purpose optimiser strains every boundary. An opaque
+system makes Pack 3 impossible to verify.
 
-But technology-agnostic does not mean technology-indifferent. The
-technical properties of the AI inside a Kami shape how hard governance
-has to work. A system that lies makes oversight an endless contest. A system
-that expands beyond its scope makes boundedness a constant challenge. A
-system whose competence we cannot verify makes Pack 3 a fiction.
+Two recent ML programmes — Yoshua Bengio's [Scientist AI](https://lawzero.ai/)
+and Yann LeCun's [Superhuman Adaptable Intelligence](https://arxiv.org/abs/2602.23643)
+agenda — converge on a useful design lesson: the best substrate for Civic AI is
+not a universal agent. It is a bounded, specialised system whose action remains
+under human authorisation.
 
-Two recent ML research programmes — arriving from different directions,
-using different mathematics, solving different problems — converge on
-the same structural conclusion: **bounded, specialised, non-agentic
-intelligence is not a compromise. It is the technically correct
-design.**
+That convergence does not settle politics. It does narrow the technical search
+space.
 
-The Kami is not just a metaphor. It has a technical substrate.
+## Bengio: truth without appetite
 
-## The Scientist AI: understanding without desire
+Bengio's Scientist AI starts from a simple model of trust. The laws of physics
+do not want anything. A good scientific model is trustworthy because it tries
+to describe the world, not bend the world toward a goal.
 
-Yoshua Bengio's [Scientist AI](https://lawzero.ai/) programme starts
-from a simple observation about the laws of physics: they don't care
-about you. They don't care about me. A perfect simulator of physical
-laws would be trustworthy precisely because it has no preferences for
-states of the world. It just tells you what is.
+His programme asks whether AI can be trained in that spirit: as a predictor of
+reality rather than an agent with objectives.
 
-Bengio asks: can we build AI that works the same way? Not an agent
-pursuing goals, but a predictor approximating reality — like a
-theoretical scientist who tries to understand data without planning
-experiments.
+The key move is the **truthification pipeline.** Training data is rewritten with
+explicit epistemic markers. A verified measurement or proved theorem is
+represented as a factual claim: "X is true." A tweet, speech or paper claim is
+represented differently: "someone wrote X."
 
-The key technical contribution is what he calls a **truthification
-pipeline.** All training data is transformed into statements with
-explicit epistemic markers. When we know something is true — a proven
-theorem, a verified measurement — it gets factual syntax: "X is true."
-When something is a human communication act — a tweet, a claim in a
-paper, a political speech — it gets different syntax: "someone wrote X."
+That distinction matters. It teaches the system to separate the state of the
+world from human rhetoric about the world. At runtime, a factual query asks
+"what does the model judge to be true?" A communicative query asks "what have
+people said?" Those are not the same task.
 
-This separation is not cosmetic. It teaches the system to distinguish
-reality from rhetoric. At runtime, querying in factual syntax returns
-what the AI believes is true. Querying in communicative syntax returns
-what a human would say — a fundamentally different question.
+In Bengio's own framing, this yields **epistemic correctness**: asymptotically,
+high-confidence factual answers are not deceptive. The programme is strongest
+when the system says "this is true" with confidence. It is weaker when the
+system says "unknown": that may be honest uncertainty, or it may be strategic
+silence. That gap matters for governance.
 
-The resulting property — **epistemic correctness** — guarantees (as
-data and compute increase) that when the system says something is true
-with high confidence, it does not lie. When it says "unknown," you
-cannot tell whether it genuinely doesn't know or is withholding. But
-when it speaks with confidence, you can trust it.
+The second crucial claim is architectural. Agency is not treated as the
+default. It enters through the scaffold around the model — the questions humans
+ask, the tools they attach and the actions they authorise. That is exactly
+where governance belongs.
 
-For uncertain future events — "will this policy cause harm?" — Bengio
-converts the question into a probability interval: "the probability of
-harm is between 0.90 and 0.95." That interval claim is itself either
-true or false, and therefore subject to the same epistemic guarantee.
+## SAI: capability through specialisation
 
-Crucially, this predictor is **non-agentic by construction.** Bengio
-defines agency as causing outcomes robustly — achieving goals despite
-randomness and adversaries. He shows that agentic predictors occupy an
-exponentially small volume in the space of all possible predictors.
-Training toward the Bayesian posterior (a non-agentic target), without
-allowing the AI to interact with or anticipate the effects of its
-predictions on the world, makes stumbling into agency astronomically
-unlikely.
+LeCun's SAI programme attacks a different myth: that the right goal is one
+general intelligence good at everything.
 
-Agency enters only through the human-controlled scaffold — the
-questions we choose to ask, in which syntax, for which purposes.
-Bengio is explicit: "If you don't want to get into the agency game,
-you just don't ask questions about what an agent would do."
+Its case is mathematical before it is political. The No Free Lunch theorem says
+no single algorithm dominates every class of problem. Multi-task systems suffer
+negative transfer when tasks compete for the same representational capacity.
+Even models that look general often hide specialisation internally, routing
+different tasks to different subsystems.
 
-## Superhuman Adaptable Intelligence: specialisation over generality
+The slogan version is memorable because it is correct: **the AI that folds our
+proteins should not be the AI that folds our laundry.**
 
-A second programme, led by Yann LeCun and collaborators, takes on a
-different problem: the myth of general intelligence.
+For Civic AI, the implication is direct. A Kami should not be a mini-sovereign
+mind roaming across domains. It should be a specialist: good at one class of
+community work, replaceable when its job changes, and unable to turn local
+success into universal mandate.
 
-Their [SAI paper](https://arxiv.org/abs/2602.23643) argues that human
-intelligence is specialised, not general — and the appearance of
-generality is an illusion created by our inability to perceive our own
-cognitive blind spots. Evolution optimised us for physical-world survival
-in specific niches, not universal competence. Magnus Carlsen is "good at
-chess" only relative to human limits; objectively, engines have
-outperformed him for decades.
+SAI does not solve governance either. A specialist can still be deployed for
+bad ends. But it does remove one bad default: the assumption that safer or
+smarter AI requires one system to do everything.
 
-The mathematical foundation is the No Free Lunch theorem: no single
-algorithm excels across all problem classes. Finite energy distributed
-across infinite tasks yields near-zero investment per task. Multi-task
-learning produces negative transfer — tasks competing for
-representational capacity degrade each other's performance. Even systems
-that appear general, like Switch Transformers, achieve it through
-_internal specialisation_ — routing queries to task-specific parameters.
+## The shared design lesson
 
-The paper's punchline: **"The AI that folds our proteins should not be
-the AI that folds our laundry."**
+Bengio and LeCun are solving different problems. One is asking how to make
+prediction trustworthy. The other is asking how to make capability efficient.
+Still, they point toward the same Civic AI shape.
 
-Instead of AGI, they propose **Superhuman Adaptable Intelligence** —
-systems that rapidly learn to exceed human performance on specific
-important tasks, measured by adaptation speed rather than fixed
-benchmarks. The brain is a "system of systems," and AI should be too:
-self-supervised learning, world models for planning, modular composition
-into larger systems. Architectural diversity, not monoculture.
+| Research result                               | Civic AI implication                                                       |
+| --------------------------------------------- | -------------------------------------------------------------------------- |
+| Separate truth-tracking from speech imitation | Decision traces can distinguish verified claims from reported claims       |
+| Specialisation beats generality               | Each Kami should have a narrow mandate                                     |
+| Modular systems beat monoliths                | Civic AI should be composable, replaceable and federated                   |
+| Action is the danger point                    | Authorise tools and interventions in governance, not inside opaque weights |
 
-## Where these programmes converge
+The strongest reading is modest but important: these programmes do not prove
+the 6-Pack, but they make the 6-Pack easier to implement. They reduce the
+amount of governance work wasted fighting the wrong machine shape.
 
-The two programmes solve different problems with different tools. Bengio
-works on trustworthy prediction. LeCun works on efficient capability.
-They share no intellectual genealogy and cite different literatures.
+## What this changes in the 6-Pack
 
-Yet they converge on the same architecture:
+**Pack 1: Attentiveness.** Truthification helps a bridging system tell apart
+three things that usually get muddled together: what is verified, what is
+claimed and what is contested. That makes disagreement more legible. It does
+not answer whose voices get into the training set in the first place. That
+remains a listening problem, not a modelling one.
 
-| Property           | Bengio's reasoning                                        | LeCun's reasoning                                    |
-| ------------------ | --------------------------------------------------------- | ---------------------------------------------------- |
-| **Bounded**        | Non-agentic predictor with no goals beyond accuracy       | No Free Lunch: specialisation outperforms generality |
-| **Specialised**    | Truthification requires domain-specific epistemic markers | Negative transfer degrades multi-task performance    |
-| **Non-monolithic** | Bayesian posterior as target, not an imperial optimiser   | "System of systems," modular composition             |
-| **Anti-Singleton** | Agency exponentially unlikely under correct training      | Diversity of architectures prevents local optima     |
+**Pack 2: Responsibility.** Bengio leaves a crucial gap open: who decides which
+questions may be asked, in which domains, for which purposes? The Engagement
+Contract ([Pack 2](/2/)) fills that gap. It governs the scaffold around the
+model: authorised queries, source rules, pause conditions, escrow and
+adopt-or-explain duties.
 
-Both independently validate what our 6-Pack argues from governance:
-**don't build one system to rule them all.**
+**Pack 3: Competence.** Better-calibrated uncertainty makes decision traces
+more honest. A trace that says "0.92 likely" should mean what it says. But
+Pack 3 is broader than prediction quality. Sandboxing, least power, data
+minimalism and graduated release remain operational duties. Good architecture
+reduces risk. It does not replace disciplined practice.
 
-## What this means for each pack
+**Pack 4: Responsiveness.** A truth-tracking model gives cleaner failure
+analysis: was the factual judgement wrong, was uncertainty miscalibrated or was
+the harm introduced by the deployment layer? That is useful, but it is not
+repair. Appeals, public repair logs and community-authored evals such as
+[Weval](https://weval.org/) still do the moral work of response. They are also
+how we probe the hardest case in Bengio's framework: "unknown."
 
-If we take these programmes seriously — not as requirements, but as
-the most technically grounded picture of what a Kami's inside could
-look like — the consequences map across all six packs.
+**Pack 5: Solidarity.** These architectures suggest a better basis for
+federation. Kamis can share provenance, schemas, eval results and verified
+factual claims without flattening local context into one global authority.
+Federation should move institutional knowledge, not intimate histories. Shared
+facts; local judgement.
 
-**Pack 1: Attentiveness.** Attentiveness begins before prediction — it
-asks who is heard. The truthification pipeline must be trained on
-someone's data, and whose voices enter that pipeline is an attentiveness
-question. Broad listening ([Pack 1](/1/)) means noticing who is absent
-from training, not just from deliberation.
+**Pack 6: Symbiosis.** SAI strengthens the case for boundedness because
+specialisation is not just politically safer; it is technically better. But
+Pack 6 still has to do work the ML programmes do not: sunset, succession,
+anti-capture rules and non-expansion pacts. And any world-model planner,
+however scoped, needs agency audits. Goal-directed behaviour inside a boundary
+can still be dangerous.
 
-For bridging, truthification offers something specific. When the system
-marks a claim as communicative ("someone wrote X") rather than factual
-("X is true"), bridging algorithms can treat it differently — surfacing
-the _structure_ of disagreement rather than adjudicating truth. Bridging
-does not filter noise; it makes the shape of conflict legible so that
-cross-group overlap becomes visible. A truthified data layer helps
-bridging do this work by separating what people believe from what can be
-verified — letting the bridging map focus on values, not facts.
+## What the substrate cannot decide
 
-World models could extend attentiveness further — modelling community
-dynamics to flag whose voices are systematically missing. But this
-remains speculative; the proven contribution is the truthified data
-layer that lets bridging focus on values rather than relitigating facts.
+This is where the limit becomes clear.
 
-**Pack 2: Responsibility.** Both programmes leave governance as an open
-problem. Bengio: "Who defines what is right and wrong? That should be a
-social choice, hopefully in a democracy." LeCun's "important tasks" are
-undefined. Who decides what counts as "known true" in the truthification
-pipeline, and who classifies sources — these are responsibility
-questions with real power behind them.
+**It cannot decide standing.** A non-agentic predictor can still be used
+without the consent of the people it affects. Architecture cannot grant the
+affected a voice.
 
-The Engagement Contract ([Pack 2](/2/)) governs both gaps: it specifies
-what the Kami may be queried about, in which domains, for which
-purposes — with escrow, adopt-or-explain obligations and pause triggers
-backing every commitment. Epistemic correctness strengthens this
-machinery. If the system's uncertainty scores are Bayesian-guaranteed,
-SLA breaches become mathematically verifiable — escrow auto-payouts
-triggered by calibration drift, not subjective judgement. The promise
-loop (commit → deliver → verify → renew) gains precision when the
-technical substrate makes delivery measurable.
+**It cannot decide legitimacy.** "What counts as true?", "Which sources
+qualify?", and "What tasks matter?" are not technical questions. They are
+constitutional questions.
 
-**Pack 3: Competence.** Competence in our 6-Pack is broader than
-prediction accuracy. Pack 3 covers security (sandboxing, prompt
-injection as moral failure), data minimalism, graduated release,
-guardrails-as-code and bridging-based ranking. The technical substrate
-affects some of these, not all.
+**It cannot decide pace.** Machine outputs arrive quickly. Democratic
+authorisation takes time. The two-lane system of the 6-Pack exists because
+responsible use requires slow guardrails around fast tools.
 
-Where it helps most: epistemic correctness improves one critical
-component of decision traces — uncertainty scores backed by Bayesian
-guarantees rather than ad hoc confidence. The other trace components
-(which rule fired, which sources, receipt link) are governance
-infrastructure, not prediction quality.
+**It cannot decide justice.** A prediction can be accurate and still be used
+cruelly. Repair, compensation and restored trust do not come from a posterior
+distribution.
 
-Where it helps least: security, data minimalism and the least-power
-principle are orthogonal to ML architecture. World models and Bayesian
-posteriors are complex machinery. Pack 3 says "the simplest mechanism
-meets the need." Deploying them when simpler methods suffice violates
-least power. The technical substrate is an option, not a default.
-
-Crucially, Pack 3's opening principle — "safety is a property of
-practice, not assumed from design" — means that mathematical guarantees
-must be validated through graduated release (shadow → canary → audit →
-general), not taken on trust. Epistemic correctness is a design
-property; competence is demonstrated in operation.
-
-**Pack 4: Responsiveness.** When the system fails, Bayesian internals
-enable more precise root-cause analysis: was the posterior wrong, the
-uncertainty miscalibrated or the harm caused by how the prediction was
-used? This does not happen automatically — it requires deliberate
-instrumentation — but it makes the difference between "the AI was wrong"
-and a diagnosis that prevents recurrence.
-
-But responsiveness is far more than debugging. Pack 4 is care-receiving —
-the system learning from those it serves. Community-authored evaluations
-([Weval](https://weval.org/) registries) stress-test what epistemic
-correctness cannot: when the system says "unknown," is it genuinely
-uncertain or strategically withholding? RLCF (Reinforcement Learning
-from Community Feedback) trains for cross-group endorsement — the
-community shapes the system, not just audits it. Appeals with SLA
-timers, public repair logs and trust-under-loss metrics complete the
-feedback loop.
-
-One tension deserves attention. If RLCF shapes the system toward
-community-defined "good," is the result still non-agentic in Bengio's
-sense? Training toward cross-group endorsement is a form of goal — a
-normatively chosen one. This is an open research question at the
-boundary between the two programmes. Bengio's framework may need to
-accommodate community-directed training objectives; the 6-Pack may need
-to specify how RLCF interacts with non-agentic architectures. Neither
-has solved this yet. The Tronto loop (attentiveness → responsibility
-→ competence → responsiveness → back to attentiveness) means
-responsiveness feeds the next listening cycle. When root-cause analysis
-reveals whose harm was missed, that insight becomes Pack 1's input.
-
-**Pack 5: Solidarity.** Pack 5's core is infrastructure that makes
-cooperation the path of least resistance: portability, interop treaties,
-federated trust and safety, meronymity, agent ID registries.
-
-Truthification offers a concrete solidarity benefit. If each Kami has a
-truthification pipeline, federation becomes richer: Kamis can share
-verified factual claims ("X is true" with provenance) while keeping
-communicative acts local. This is federated T&S with an epistemic layer —
-shared facts, local context.
-
-Bengio's fact/communication distinction also maps naturally to Pack 5's
-principle that expression is not amplification. A factual claim ("X is
-true") carries different amplification rights than a communicative act
-("someone wrote X"). The truthification syntax provides a principled
-basis for distinguishing speech from reach.
-
-Portability under these architectures needs definition. What transfers
-between Kamis? Truthification schemas, evaluation results, aggregate
-traces and federated factual claims travel. Individual interaction
-histories do not. Model weights sit between — they encode both institutional knowledge and
-individual interactions. If portability is to be real, the technical
-substrate must make institutional knowledge extractable in explicit,
-auditable forms rather than locking it inside opaque weights.
-
-LeCun's architectural diversity and Pack 5's institutional diversity are
-complementary but distinct. Architectural diversity (many ML approaches)
-prevents technical monoculture. Institutional diversity (many governance
-structures) prevents political monoculture. A world needs both.
-
-**Pack 6: Symbiosis.** LeCun's No Free Lunch theorem provides a
-supporting argument for the Kami architecture from a different domain.
-It proves that no single algorithm dominates all problem classes — a
-mathematical case for specialisation that complements Pack 6's
-governance case for boundedness. These are not the same argument: you
-could have 3 competing architectures (solving LeCun's problem) each
-deployed as global monopolies (failing Pack 6's test). Avoiding local
-optima is not the same as preventing uncontestable power. But the
-arguments reinforce each other.
-
-A risk worth naming: world models combined with planning produce
-goal-directed behaviour within scope. Pack 6 explicitly warns that "a
-kami that acquires the means to exceed its caps remains dangerous even
-within its mandate, because instrumental convergence operates within
-bounds." Agency audits on world-model planners — verifying that planning
-behaviour stays bounded and transparent — are not optional extras. They
-are Pack 6 requirements applied to the technical substrate.
-
-On succession: institutional knowledge (maps, evals, aggregate traces)
-transfers when a Kami sunsets; individual interaction histories do not.
-Learned model weights sit uncomfortably between — they encode both. The
-clean separation the Kami architecture requires may demand extracting
-transferable institutional knowledge into explicit, auditable forms
-rather than relying on opaque weight transfer. This is an open
-engineering problem, not a solved one.
-
-The "Scientist Kami" is one possibility, not _the_ answer. Pack 6 warns
-against steward attachment — builders treating agents as extensions of
-their identity. Communities may compose different technical substrates.
-The concept is a tool for thinking, not a commitment to a specific
-architecture.
-
-## What the technical substrate cannot provide
-
-The convergence is real. But it has sharp limits.
-
-**Neither programme answers "who decides?"** Bengio says "hopefully in a
-democracy." LeCun defines "important tasks" without governance. Our
-6-Pack exists because the most powerful technical substrate in the world
-is still a tool — and tools require the Engagement Contract ([Pack 2](/2/))
-to decide where to point them, whose interests they serve and what
-happens when they break.
-
-**Neither programme addresses standing.** A non-agentic predictor that
-is epistemically correct can still be asked the wrong questions by the
-wrong people. A superhuman specialist can still be deployed without the
-consent of those it affects. Standing — the right of the affected to
-participate in decisions about the system — is non-negotiable, and it
-comes from governance, not architecture.
-
-**Neither programme handles the speed mismatch.** Both produce outputs
-at machine speed. The constitutional question — how to use those outputs
-responsibly, in time frames that allow democratic input — is orthogonal
-to the technical properties of the predictor. The two-lane system (slow
-constitutional guardrails, fast operational execution) is our 6-Pack's
-answer to a problem neither programme raises.
-
-**Neither programme handles harm.** Epistemic correctness tells you
-what is true. Adaptation speed tells you what is learnable. Neither
-tells you what is just. When someone is harmed — when the prediction
-was right but the deployment was wrong — Pack 4's repair machinery
-fills the gap: appeals with enforced timelines, public repair logs
-documenting what broke and what now guards against recurrence, escrow
-auto-payouts when SLAs are breached, trust-under-loss metrics tracking
-whether communities that suffered still accept the system as fair.
-This operates entirely outside the technical substrate.
-
-**Neither programme prevents capture.** A Scientist AI controlled by an
-authoritarian state is still a tool of oppression. A superhuman
-specialist funded by an extractive monopoly serves the monopoly. The
-kami's Civic Care Licence, its sunset provisions, its community
-ownership — these are governance constraints that make the technical
-substrate safe to deploy.
+**It cannot prevent capture.** The same truthful specialist can serve a
+democracy, a monopoly or an authoritarian state. Governance determines which.
 
 ## The Scientist Kami
 
-If we compose these programmes with our 6-Pack, we get something neither
-provides alone: **a non-agentic predictor of reality, specialised for a
-community's needs, rapidly adaptable within democratically authorised
-scope, with epistemic guarantees on its outputs and governance
-guarantees on its deployment.**
+Put the pieces together and a plausible technical substrate comes into view:
 
-This is the Scientist Kami — a system whose inside is trustworthy by
-construction and whose outside is accountable by design.
+- a non-agentic, truth-tracking core
+- specialist modules for bounded domains
+- explicit governance over tools, queries and actions
+- community-authored evals probing both confident answers and strategic
+  silence
+- sunset and handover rules so the service can persist without permanent
+  dependence on one model or steward
 
-Its architecture:
+This is what I mean by a **Scientist Kami**: not a universal governor, but a
+civic instrument that is trustworthy inside and accountable outside.
 
-- **Self-supervised learning** on community-relevant data, with
-  truthification separating fact from communication
-- **World models** for domain-specific planning within scope, with
-  agency audits on planning behaviour
-- **Epistemic correctness** powering decision traces with calibrated
-  uncertainty
-- **Engagement Contracts** specifying purpose, queries and guardrails
-- **Community-authored evals** stress-testing the gap between confident
-  claims and strategic silence
-- **Sunset provisions** ensuring the Kami departs when its service is
-  done
+It is not the only possible substrate. It is simply the strongest one now in
+view. Bengio helps explain how the inside can stay honest. LeCun helps explain
+why the inside should stay narrow. The 6-Pack explains how that system remains
+answerable to the people around it.
 
-No component of this architecture requires the others. The governance
-works without the ML advances. The ML advances work (less safely)
-without the governance. But together, they describe a system whose
-mathematical properties reduce the governance burden, and whose
-governance constraints direct the mathematical properties toward
-community benefit.
-
-## The strongest version includes the other
-
-Bengio builds the epistemic floor — predictions you can verify. LeCun
-builds the capability walls — specialised performance that outperforms
-generality. Our 6-Pack builds everything above — governance that makes
-the building habitable.
-
-None is sufficient alone. A trustworthy oracle deployed by a
-dictatorship is still a tool of oppression. Perfect governance around an
-opaque, deceptive AI is an unending struggle. Superhuman capability
-without accountability is power without constraint.
-
-The strongest version of each framework is the one that includes the
-others. The field is converging on what goes inside the Kami. What goes
-around it — that part is up to us.
+The field is getting clearer about what belongs inside a Kami. The more
+important question — who gets to authorise it, limit it and retire it — is
+still, irreducibly, ours.
