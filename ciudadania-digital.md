@@ -220,7 +220,7 @@ I was born in 1981 — the same year as the IBM PC. Before personal computing, t
 
 Personal computing changed that. You owned your tools. You could switch your spreadsheet software, your word processor. Creativity was unleashed because people knew they were not being surveilled. When those personal computers connected, something even more remarkable happened: the free and open-source software revolution.
 
-Now, Jensen Huang — the real one — says this is the year of personal supercomputing. Anybody with a laptop can make their own AI models. The only thing you need is to know what you are doing. Three years ago, I started fine-tuning a local model to help me draft emails. It works in airplane mode. Nobody else sees my email until I hit send. I still own every word. These small, fine-tuned models run efficiently on personal hardware. Sakana AI's document-to-LoRA tool, for instance, can turn an entire speech transcript into an adapter in about one second. I trained on 2,000 of my own public transcripts in roughly 20 minutes on a MacBook. Give it a try at home.
+Now, Jensen Huang — the real one — says this is the era of personal supercomputing. Anybody with a laptop can make their own AI models. The only thing you need is to know what you are doing. Three years ago, I started fine-tuning a local model to help me draft emails. It works in airplane mode. Nobody else sees my email until I hit send. I still own every word. These small, fine-tuned models run efficiently on personal hardware. Sakana AI's document-to-LoRA tool, for instance, can turn an entire speech transcript into an adapter in about one second. I trained on 2,000 of my own public transcripts in roughly 20 minutes on a MacBook. Give it a try at home.
 
 **Digital Citizenship as Freedom of Movement**
 
@@ -254,7 +254,7 @@ What we practise is not optimisation but satisficing: meeting a threshold across
 
 **Waging Peace**
 
-_Question: How do you feel about current conflicts in the world, and could tools like Polis help address corruption?_
+_Question: How do you feel about current conflicts in the world?_
 
 Waging peace requires as much strategy, cunning, and logistics as waging war — and it is arguably harder, because trust is easy to break and very difficult to rebuild.
 
