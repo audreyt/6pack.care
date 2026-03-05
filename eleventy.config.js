@@ -1,6 +1,30 @@
 import htmlmin from "html-minifier";
 
 export default function (eleventyConfig) {
+    // Fix markdown-it CJK emphasis: CommonMark's flanking rules break when
+    // CJK punctuation (。？：) precedes closing ** without a trailing space.
+    // We patch scanDelims so any delimiter adjacent to a CJK character can
+    // open or close emphasis, matching how CJK text actually works.
+    eleventyConfig.amendLibrary("md", (mdLib) => {
+        const CJK =
+            /[\u2E80-\u9FFF\uF900-\uFAFF\uFE30-\uFE4F\uFF00-\uFFEF\u3000-\u303F\u3040-\u309F\u30A0-\u30FF]/;
+        const State = mdLib.inline.State;
+        const orig = State.prototype.scanDelims;
+        State.prototype.scanDelims = function (start, canSplitWord) {
+            const result = orig.call(this, start, canSplitWord);
+            const marker = this.src.charCodeAt(start);
+            let pos = start;
+            while (pos < this.posMax && this.src.charCodeAt(pos) === marker)
+                pos++;
+            const lastChar = start > 0 ? this.src[start - 1] : " ";
+            const nextChar = pos < this.posMax ? this.src[pos] : " ";
+            if (!result.can_close && CJK.test(lastChar))
+                result.can_close = true;
+            if (!result.can_open && CJK.test(nextChar)) result.can_open = true;
+            return result;
+        };
+    });
+
     // Passthrough copy for static assets
     eleventyConfig.addPassthroughCopy("img");
     eleventyConfig.addPassthroughCopy("audio");
