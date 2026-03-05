@@ -150,7 +150,7 @@ Another said: if a platform posts an unsigned scam ad and someone loses money, t
 
 Yet another said: we do not ban non-compliant platforms — we slow connection speed by 1 percent for every day they refuse to comply.
 
-We used a sovereign AI model called Taide — the Trustworthy AI Dialogue Engine, collectively tuned by the Taiwanese people — to weave the proposals from all 44 rooms into a coherent package. A total of 85 percent of the assembly agreed. The other 15 percent said they could live with it. Multiparty legislative support followed. Within a year, impersonation advertisements fell by 94 percent.
+We used a sovereign AI model called TAIDE — the Trustworthy AI Dialogue Engine, collectively tuned by the Taiwanese people — to weave the proposals from all 44 rooms into a coherent package. A total of 85 percent of the assembly agreed. The other 15 percent said they could live with it. Multiparty legislative support followed. Within a year, impersonation advertisements fell by 94 percent.
 
 When every party sees that 85 percent of a representative mini-public voted on something synthesised by a trusted sovereign model, no party wants to offend the 85 percent. That is what I mean by "AI in the loop of humanity," rather than humans in the loop of AI.
 
