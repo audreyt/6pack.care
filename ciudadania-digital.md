@@ -12,8 +12,6 @@ nav_next:
     text: "Home"
 ---
 
-_On civic care, geothermal democracy, and what you would refuse to automate._
-
 Thank you, Paulina. And thank you for 50 years.
 
 That number matters to me. Fifty years ago, the people who built this campus trusted that whoever came after would carry it forward. They could not have imagined our world today: brewing global conflict, extreme weather events, societal polarisation and AI — a technology sophisticated enough to forge fiction into fact.
