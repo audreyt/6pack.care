@@ -362,6 +362,12 @@ em {
     font-style: italic;
 }
 
+:lang(zh) em,
+:lang(zh) blockquote {
+    font-style: normal;
+    font-family: "Kaiti TC", "DFKai-SB", "BiauKai", "STKaiti", cursive;
+}
+
 /* ─── LEAD & CALLOUT ─── */
 .lead {
     font-size: 1.05rem;
