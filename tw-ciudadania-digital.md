@@ -12,6 +12,8 @@ nav_next:
     text: "首頁"
 ---
 
+<div style="padding:56.25% 0 0 0;position:relative;margin-bottom:2em"><iframe src="https://player.vimeo.com/video/1164537970#t=12m33s" style="position:absolute;top:0;left:0;width:100%;height:100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+
 謝謝寶琳娜（Paulina）。也感謝這五十年的點滴。
 
 這個數字對我來說意義非凡。五十年前，打造這座校園的人們相信，無論未來誰接手，都會將這裡的精神傳承下去。他們當時無法想像今日的世界：醞釀中的全球衝突、極端氣候事件、社會極化，以及 AI——一種精密到足以將虛構鍛造成事實的科技。
