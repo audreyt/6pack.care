@@ -6,7 +6,7 @@ lang: en-gb
 alt_lang_url: "/tw/ciudadania-digital"
 permalink: "/ciudadania-digital/"
 date: 2026-03-04
-description: "Address at the Tec de Monterrey 50th Anniversary, Mexico City."
+description: "Keynote on global leadership marking Tecnológico de Monterrey's 50 years of presence in Mexico City."
 nav_next:
     url: "/"
     text: "Home"

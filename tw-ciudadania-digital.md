@@ -6,7 +6,7 @@ lang: zh-tw
 alt_lang_url: "/ciudadania-digital"
 permalink: "/tw/ciudadania-digital/"
 date: 2026-03-04
-description: "演講於蒙特雷科技大學 50 週年校慶，墨西哥城。"
+description: "紀念蒙特雷科技大學進駐墨西哥城 50 週年之全球領導力主題演講。"
 nav_next:
     url: "/tw/"
     text: "首頁"
