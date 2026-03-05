@@ -59,7 +59,7 @@ class Block:
 
 
 def _normalise_url(url: str, page_path: str = "/faq/") -> str:
-    """Convert relative markdown links to absolute civic.ai URLs."""
+    """Convert relative markdown links to absolute 6pack.care URLs."""
     if url.startswith(("http://", "https://")):
         return url
     if url.startswith("#"):

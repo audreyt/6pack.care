@@ -62,7 +62,7 @@ Fortunately, the tools needed to pursue a more attentive course already exist.
 
 ## Attentiveness in Practice
 
-**Attentiveness does not emerge by accident; it rests on an explicit ethical foundation.** Building on University of Minnesota Prof. Joan Tronto’s care ethics, I, along with Caroline Emmer De Albuquerque Green (of the University of Oxford’s Institute for Ethics in AI), developed the [6-Pack of Care](https://civic.ai/manifesto/) — six interlocking practices that translate ethical principles into institutional design. The framework recognises a basic asymmetry: AI operates at speeds and scales beyond human oversight. To keep it aligned, our institutions must evolve to match that tempo by learning, responding, and recalibrating continuously, with people in the loop at every level.
+**Attentiveness does not emerge by accident; it rests on an explicit ethical foundation.** Building on University of Minnesota Prof. Joan Tronto’s care ethics, I, along with Caroline Emmer De Albuquerque Green (of the University of Oxford’s Institute for Ethics in AI), developed the [6-Pack of Care](https://6pack.care/manifesto/) — six interlocking practices that translate ethical principles into institutional design. The framework recognises a basic asymmetry: AI operates at speeds and scales beyond human oversight. To keep it aligned, our institutions must evolve to match that tempo by learning, responding, and recalibrating continuously, with people in the loop at every level.
 
 <div class="overview-section">
 <noscript><img src="/img/overview-small.jpg" alt="Illustration of 6-Pack of Care by Nicky Case" class="overview-image" width="1280" height="1810" loading="lazy" decoding="async"></noscript>

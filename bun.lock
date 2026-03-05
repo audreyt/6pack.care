@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "civic.ai",
+      "name": "6pack.care",
       "dependencies": {
         "pangu": "^7.2.0",
         "remark": "^15.0.1",

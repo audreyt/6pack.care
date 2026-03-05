@@ -22,7 +22,7 @@ In one—arguably the default trajectory—AI supercharges conflict.
 
 In the other, AI augments our ability to cooperate across differences. This means treating differences as fuel and inventing a combustion engine to turn them into energy, rather than constantly putting out fires. I call this **⿻ Plurality**.
 
-Today, I want to discuss an application of this idea to AI governance, developed at Oxford's Ethics in AI Institute, called the [6-Pack of Care](https://civic.ai).
+Today, I want to discuss an application of this idea to AI governance, developed at Oxford's Ethics in AI Institute, called the [6-Pack of Care](https://6pack.care).
 
 As AI becomes a thousand, perhaps ten thousand times faster than us, we face a fundamental asymmetry. The default trajectory: we become the **garden**, and AI becomes the **gardener**—a top-down intelligence tending humanity from above.
 

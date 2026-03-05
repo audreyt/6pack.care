@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-TTS synthesis script for civic.ai
+TTS synthesis script for 6pack.care
 Usage: python3 scripts/tts_synth.py manifesto.md audio/manifesto.mp3
 
 Reads a Markdown file, transforms it to clean spoken English,
@@ -62,6 +62,7 @@ ABBREVS = [
     (r"\bCBR\b",           "C-B-R"),
     # Slang / shorthand
     (r"\bd/acc\b",         "d slash a-c-c"),
+    (r"\b23.5 million\b",         "twenty three point five million"),
     # Web
     (r"ROOST\.tools\b",    "ROOST tools"),
 ]
