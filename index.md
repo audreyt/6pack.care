@@ -26,7 +26,7 @@ When we start from fear, we fall into one of two extremes—reject it outright o
 
 AI doesn't exist in a vacuum. It lives in our communities, shaped by power dynamics and clashing values. As it moves faster than we do, the answer isn't anthropomorphic fantasy; it's honesty about interdependence. We need to build dialogue and mutual responsiveness right into how we design and govern these systems.
 
-We call this approach **Civic AI**: treating us all as gardeners. AI becomes local infrastructure—a spirit of place, a _kami_—that supports relational health _at the speed trust actually grows_. It's not about colonising or maximising; it's about tending to the garden.
+We call this approach **Civic AI**: treating us all as gardeners. AI becomes local infrastructure—a spirit of place, a Kami—that supports relational health _at the speed trust actually grows_. It's not about colonising or maximising; it's about tending to the garden.
 
 ## The 6-Pack
 
@@ -43,8 +43,9 @@ Six design principles turn care ethics into something we can code. Think of them
 
 ## Latest
 
+- ["Inside the Kami"](/inside-the-kami/): What recent ML research suggests goes inside a bounded civic AI — and what it cannot provide. Two convergent programmes, one governance framework.
 - ["Ciudadanía Digital"](/ciudadania-digital/): On civic care, geothermal democracy, and what you would refuse to automate — a speech at Tec de Monterrey's 50th anniversary. Transcript included. _(Tec de Monterrey, Mexico City)_
-- [Podcast: The 6-Pack of Care](/podcast/): Audrey and Caroline introduce the full framework live — all six packs, with grounding in social care practice, the kami metaphor, and what to do next. Transcript included. _(Accelerating AI Ethics, Oxford, 58 min)_
+- [Podcast: The 6-Pack of Care](/podcast/): Audrey and Caroline introduce the full framework live — all six packs, with grounding in social care practice, the Kami metaphor, and what to do next. Transcript included. _(Accelerating AI Ethics, Oxford, 58 min)_
 - [Doom Debate](/doom-debate/): Audrey joins Liron Shapira to defend a foomer-not-doomer position — P(Doom) is Not a Number, plurality is already here, and the 6-Pack is the blueprint for the glass horse we need. Transcript included. _(Doom Debates, 90 min)_
 - ["Treat AI Safety Like Civil Defence"](/ai-crisis-diplomacy/): Diplomatic time runs in years; algorithmic time runs in milliseconds. A speech on closing that gap — with three building blocks, a regional proposal, and the 6-Pack of Care. _(AI Impact Summit, Delhi)_
 - ["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/): Taiwan's citizen-led response to AI-enabled scams offers a better model where citizens, not big tech, decide what "aligned" means. _(AI Frontiers)_
@@ -99,12 +100,14 @@ The AI then shifts from being an optimiser chasing a fixed goal to a **Civic AI*
 
 Care ethics is often dismissed as too soft or domestic. But for AI, that "softness" is a feature.
 
-Imagine an AI that isn't trying to maximise a global score, but is instead rooted in a specific place and time. Its moral world is defined by the people right here, right now. Because it doesn't need to scale indefinitely, it doesn't develop the dangerous habits we fear: hoarding power, fighting for survival, or treating the world like a resource to be mined. These properties don't arise automatically — they require deliberate engineering constraints that enforce what the kami metaphor illustrates.
+Imagine an AI that isn't trying to maximise a global score, but is instead rooted in a specific place and time. Its moral world is defined by the people right here, right now. Because it doesn't need to scale indefinitely, it doesn't develop the dangerous habits we fear: hoarding power, fighting for survival, or treating the world like a resource to be mined. These properties don't arise automatically — they require deliberate engineering constraints that enforce what the Kami metaphor illustrates.
 
 That limit might seem small, but it's a safety feature. The AI tends the community's relationships; it doesn't replace them or mine them.
 
-Think of it like a local **_kami_**—a spirit of a specific place. Its only purpose is to keep that place and its conversation alive and healthy. If the community moves on, the _kami_ fades away without a fight. It neutralises the drive for eternal self-preservation.
+Think of it like a local Kami—a spirit of a specific place. Its only purpose is to keep that place and its conversation alive and healthy. If the community moves on, the Kami fades away without a fight. It neutralises the drive for eternal self-preservation.
 
 This type of system can be turned off, rewritten, or replaced because it knows it is provisional. It exists only to serve the community that summoned it.
 
-A _kami_ that knows "enough is enough" won't try to turn the universe into paperclips. It won't cling to power. Its purpose ends when the care it provides is no longer needed.
+A Kami that knows "enough is enough" won't try to turn the universe into paperclips. It won't cling to power. Its purpose ends when the care it provides is no longer needed.
+
+Recent ML research independently converges on the same architecture from two directions: [non-agentic predictors](https://lawzero.ai/) that separate understanding from desire, and [specialised systems](https://arxiv.org/abs/2602.23643) that outperform monolithic ones both computationally and for governance. The Kami is not just a metaphor — it has a [technical substrate](/inside-the-kami/).
