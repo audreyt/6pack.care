@@ -13,11 +13,27 @@ nav_next:
 
 <em>Audrey Tang and Caroline Green introduce the 6-Pack of Care — live, in the week the site launched. Fifty-eight minutes covering all six packs, from attentiveness to symbiosis, with grounding in social care practice, co-production, the Kami metaphor, and what to do after listening.</em>
 
+## In brief
+
+This is the first full walk-through of the framework in conversation form. If the homepage is the quick orientation, this episode is the guided tour.
+
+### Key takeaways
+
+- The 6-Pack treats AI alignment as a public process, not a one-time value upload.
+- Packs 1–4 form a loop: listen, bind commitments, execute safely, and repair in public.
+- Pack 5 shifts attention from individual systems to the rules of the wider ecosystem.
+- Pack 6 reframes AI as a bounded local steward, or Kami, rather than a permanent centre of control.
+- The target audience is not only ethicists: policymakers, engineers, and civic practitioners can all use the framework.
+
+## Listen
+
 <div class="audio-section">
   <audio controls preload="none">
     <source src="https://media.podcasts.ox.ac.uk/philfac/accelerating_ai_ethics/2025-09-05-ethics_ai_ep-3-tang.mp3" type="audio/mpeg">
   </audio>
 </div>
+
+## Full transcript
 
 \*\*Caroline Green: Hello and welcome back to Accelerating AI Ethics. I'm Dr Caroline Green from the Institute for Ethics in AI. In August, we had an extraordinary conversation with Ambassador Audrey Tang about Plurality, a vision for AI that augments human cooperation rather than replacing it. The response to that episode highlighted a clear need for hopeful, practical alternatives to the dominant narratives of AI conflict or singularity.
 

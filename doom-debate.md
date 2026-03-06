@@ -13,9 +13,24 @@ nav_next:
 
 <em>Audrey Tang joins Liron Shapira on Doom Debates — a series on superintelligence risk. Ninety minutes on why P(Doom) is Not a Number, what a glass-horse architecture looks like, and how the 6-Pack of Care provides a blueprint for Civic AI governance at civilisational scale.</em>
 
+## In brief
+
+This debate places the 6-Pack inside the superintelligence-risk conversation. It is useful if you want the strongest contrast between top-down safety narratives and the case for bounded, democratic governance.
+
+### Key takeaways
+
+- Tang argues that `P(Doom)` is not a number when the denominator is unknown.
+- Governance should upgrade with capability rather than lag behind it.
+- The alternative to one permanent centre is many bounded local stewards, or Kamis.
+- Civic resilience depends on participatory institutions, not only lab-side safety techniques.
+
+## Watch
+
 <div class="video-embed">
 <iframe src="https://www.youtube-nocookie.com/embed/bvcmiirT8ME?si=urqA-2pfCO2UljU-" title="Doom Debate — Audrey Tang and Liron Shapira" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+
+## Full transcript
 
 **Liron Shapira**: Welcome to Doom Debates. Audrey Tang is a Taiwanese politician and free software programmer who currently serves as Taiwan’s ambassador at large for cyberspace governance. She is a self-taught programming genius who dropped out of high school and became a top contributor to open-source communities worldwide.
 

@@ -20,45 +20,39 @@ next_action:
 <noscript><img src="/img/overview-small.jpg" alt="6-Pack of Care visual overview" class="overview-image" width="1280" height="1810" fetchpriority="high" decoding="async"></noscript>
 </div>
 
-We usually try to align AI by giving it rules and goals—top-down controls to keep it safe. These tools matter, but they aren't enough. Behind them lies an untested assumption: that AI is a force to be subdued.
+**Civic AI is alignment by public process: community-authored safeguards, public accountability, and bounded local systems.**
 
-When we start from fear, we fall into one of two extremes—reject it outright or surrender to it completely—instead of building a healthy relationship.
+Most AI alignment work tries to solve values from the top down: write better rules, infer better preferences, train better models. Those tools matter. They are not enough on their own.
 
-AI doesn't exist in a vacuum. It lives in our communities, shaped by power dynamics and clashing values. As it moves faster than we do, the answer isn't anthropomorphic fantasy; it's honesty about interdependence. We need to build dialogue and mutual responsiveness right into how we design and govern these systems.
+The 6-Pack starts somewhere else. It asks who gets heard, who is accountable, how failures are repaired, and when a system should stop. Alignment is not solved once. It is maintained in public.
 
-We call this approach **Civic AI**: treating us all as gardeners. AI becomes local infrastructure—a spirit of place, a Kami—that supports relational health _at the speed trust actually grows_. It's not about colonising or maximising; it's about tending to the garden.
+The 6-Pack treats AI not as a universal governor but as a bounded local steward, or **Kami**: specific to a place, open to challenge, and easy to hand off or retire.
+
+## Start here
+
+- **Policy.** Read the [Manifesto](/manifesto/), the [FAQ](/faq/), and ["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/).
+- **Engineering.** Start with [Pack 3: Competence](/3/), [Measures](/measures/), and ["Inside the Kami"](/inside-the-kami/).
+- **Civic practice.** Start with [Pack 1: Attentiveness](/1/), [Pack 4: Responsiveness](/4/), and [Podcast: The 6-Pack of Care](/podcast/).
 
 ## The 6-Pack
 
-Six design principles turn care ethics into something we can code. Think of them as muscles we need to train to live well with diversity:
+Six design principles translate care ethics into something institutions can build and inspect:
 
-- **[Pack 1: Attentiveness](/1/)** — "Caring about." Listen before leaping. Use bridging algorithms to turn local stories into shared understanding.
-- **[Pack 2: Responsibility](/2/)** — "Taking care of." Commitments mean nothing without consequences. We use engagement contracts with escrowed funds and real deadlines to ensure power is always accountable.
-- **[Pack 3: Competence](/3/)** — "Care-giving." Trust the process, not just the promise. We focus on transparent traces, guardrails, and automatic circuit breakers if things go wrong.
-- **[Pack 4: Responsiveness](/4/)** — "Care-receiving." Check the results. The people affected can author evaluations, appeal outcomes, and force repair when the system gets it wrong.
-- **[Pack 5: Solidarity](/5/)** — "Caring with." Make it win-win. We build for data portability and shared safety, creating deals where everyone is better off, rather than locking people in.
-- **[Pack 6: Symbiosis](/6/)** — "Kami of Care." Keep it grounded. Local, temporary, and bounded. No drive for immortality, no need to take over the world. We build for "enough," not "forever."
-- **[Measures](/measures/)** — One headline public measure per pack, with supporting diagnostics.
-- **[Frequently Asked Questions](/faq/)** — The hard questions: What about speed? Cost? Bad actors? And how the 6-Pack handles them.
+- **[Pack 1: Attentiveness](/1/)** — what the people closest to the problem are seeing that institutions still miss.
+- **[Pack 2: Responsibility](/2/)** — who is accountable, with what authority, and what happens if they fail.
+- **[Pack 3: Competence](/3/)** — whether the system actually works in practice: audited, explainable, and safe to fail.
+- **[Pack 4: Responsiveness](/4/)** — whether affected people can contest outcomes and force repair.
+- **[Pack 5: Solidarity](/5/)** — whether the ecosystem rewards cooperation, exit, and public accountability over lock-in.
+- **[Pack 6: Symbiosis](/6/)** — whether the system stays bounded, local, and sunset-ready instead of hardening into permanent rule.
+- **[Measures](/measures/)** — one headline public measure per pack, with supporting diagnostics.
 
-## Latest
+## Three proof points
 
-- ["Inside the Kami"](/inside-the-kami/): What recent ML research suggests goes inside a bounded Civic AI — and what it cannot provide. Two convergent programmes, one governance framework.
-- ["Ciudadanía Digital"](/ciudadania-digital/): On civic care, geothermal democracy, and what you would refuse to automate — a speech at Tec de Monterrey's 50th anniversary. Transcript included. _(Tec de Monterrey, Mexico City)_
-- [Podcast: The 6-Pack of Care](/podcast/): Audrey and Caroline introduce the full framework live — all six packs, with grounding in social care practice, the Kami metaphor, and what to do next. Transcript included. _(Accelerating AI Ethics, Oxford, 58 min)_
-- [Doom Debate](/doom-debate/): Audrey joins Liron Shapira to defend a foomer-not-doomer position — P(Doom) is Not a Number, plurality is already here, and the 6-Pack is the blueprint for the glass horse we need. Transcript included. _(Doom Debates, 90 min)_
-- ["Treat AI Safety Like Civil Defence"](/ai-crisis-diplomacy/): Diplomatic time runs in years; algorithmic time runs in milliseconds. A speech on closing that gap — with three building blocks, a regional proposal, and the 6-Pack of Care. _(AI Impact Summit, Delhi)_
-- ["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/): Taiwan's citizen-led response to AI-enabled scams offers a better model where citizens, not big tech, decide what "aligned" means. _(AI Frontiers)_
-- [Podcast: AI and Democracy](/ai-democracy-podcast/): Transparency, collective intelligence, and the democratic case for civic tech. _(Accelerating AI Ethics, Oxford, 58 min)_
+- **A public-policy case.** ["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/) shows how Taiwan used an Alignment Assembly to respond to AI-enabled scam ads.
+- **A technical case.** ["Inside the Kami"](/inside-the-kami/) argues that bounded, specialised systems are easier to govern than general-purpose agents.
+- **A civic-practice case.** ["Ciudadanía Digital"](/ciudadania-digital/) and [Podcast: AI and Democracy](/ai-democracy-podcast/) show how this work connects to participation, legitimacy, and everyday public problem-solving.
 
-### Publications
-
-- ["Sunset Section 230 and Unleash the First Amendment"](https://cacm.acm.org/opinion/sunset-section-230-and-unleash-the-first-amendment/): Audrey, Jaron Lanier, and Allison Stanger argue for ending algorithmic amplification's liability shield while protecting human speech — the reach-not-speech reform at the heart of Pack 5. _(Communications of the ACM, January 2026)_
-- ["How Malicious AI Swarms Can Threaten Democracy"](https://www.science.org/doi/10.1126/science.adz1697): Audrey joins Maria Ressa, Nick Bostrom, Nicholas Christakis, and 19 other researchers to document how LLM-powered agent swarms can infiltrate communities and fabricate consensus at population scale. _(Science, 2026)_
-- ["Conversation Networks"](https://www.mediatechdemocracy.com/conversation-networks): Audrey, Deb Roy, and Lawrence Lessig propose civic communication infrastructure — interoperable apps with Civic AI guided by communities — as the technical layer beneath 6-Pack of Care. _(McGill Centre for Media, Technology and Democracy, March 2025)_
-- ["Community by Design"](https://arxiv.org/abs/2502.10834): Audrey and Glen Weyl with four co-authors propose rebuilding social platforms around social fabric — rewarding content that bridges communities rather than maximising engagement. The technical backbone behind Packs 1 and 5. _(arXiv, February 2025)_
-
-## About the Project
+## Project
 
 <div class="team-photos">
 
@@ -74,40 +68,4 @@ Six design principles turn care ethics into something we can code. Think of them
 
 </div>
 
-Our project—a [manifesto](/manifesto/) and a book arriving in 2026—explores what happens when we take Joan Tronto's care ethics seriously as a governance strategy for AI alignment. Audrey and Caroline will present the framework at the [Civic AI Conference](https://www.oxford-aiethics.ox.ac.uk/event/civic-ai-conference-rhodes-house-south-park-road-oxford) on 25 March 2026.
-
-## From Care to Code
-
-The core problem of AI safety is an old one: You can't get "what should be" (values) just by looking at "what is" (data).
-
-Standard approaches try to teach machines our values by watching how we behave. But that's tricky. Behaviour describes what we do, not necessarily what we _should_ do.
-
-Care ethics offers a different path. Rather than solving the Is-Ought problem, it starts, as Joan Tronto puts it, "in the middle of things" — _within_ an existing commitment to democratic values — and asks what those commitments demand once we take our mutual dependence seriously.
-
-[_⿻ Plurality_](https://plurality.net/) applies this to technology. Inspired by experiments like vTaiwan, it turns care into a process:
-
-- Recognising who needs care (Attentiveness)
-- Binding commitments to act (Responsibility)
-- Demonstrating safety in practice (Competence)
-- Letting the affected judge results (Responsiveness)
-- Building shared infrastructure for trust (Solidarity)
-
-This process gives us a new way to align AI: **alignment-by-process**. Instead of just trying to code the "right" values once and for all, we build a continuous governance process that complements technical safety research by earning trust and adapting to what the community needs.
-
-The AI then shifts from being an optimiser chasing a fixed goal to a **Civic AI**—something created by and for the community. AI's success isn't measured by a score, but by the health of the relationships it supports. Civic AI learns our values by helping us practice them.
-
-## Kami in the Machine
-
-Care ethics is often dismissed as too soft or domestic. But for AI, that "softness" is a feature.
-
-Imagine an AI that isn't trying to maximise a global score, but is instead rooted in a specific place and time. Its moral world is defined by the people right here, right now. Because it doesn't need to scale indefinitely, it doesn't develop the dangerous habits we fear: hoarding power, fighting for survival, or treating the world like a resource to be mined. These properties don't arise automatically — they require deliberate engineering constraints that enforce what the Kami metaphor illustrates.
-
-That limit might seem small, but it's a safety feature. The AI tends the community's relationships; it doesn't replace them or mine them.
-
-Think of it like a local Kami—a spirit of a specific place. Its only purpose is to keep that place and its conversation alive and healthy. If the community moves on, the Kami fades away without a fight. It neutralises the drive for eternal self-preservation.
-
-This type of system can be turned off, rewritten, or replaced because it knows it is provisional. It exists only to serve the community that summoned it.
-
-A Kami that knows "enough is enough" won't try to turn the universe into paperclips. It won't cling to power. Its purpose ends when the care it provides is no longer needed.
-
-Recent ML research independently converges on the same architecture from two directions: [non-agentic predictors](https://lawzero.ai/) that separate understanding from desire, and [specialised systems](https://arxiv.org/abs/2602.23643) that outperform monolithic ones both computationally and for governance. The Kami is not just a metaphor — it has a [technical substrate](/inside-the-kami/).
+The project sits between a [manifesto](/manifesto/), a set of operational pack pages, and a book arriving in 2026. Audrey Tang and Caroline Green will present the framework at the [Civic AI Conference](https://www.oxford-aiethics.ox.ac.uk/event/civic-ai-conference-rhodes-house-south-park-road-oxford) on 25 March 2026.

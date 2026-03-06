@@ -12,10 +12,13 @@ nav_next:
     text: "Home"
 ---
 
-_Our 6-Pack of Care describes what surrounds a Civic AI — governance,
-accountability and community control. But what should go inside? Two
-research programmes point in the same direction. They do not solve
-democracy. They do tell us which kinds of systems are easier to govern._
+The 6-Pack describes the governance around a Civic AI. This essay asks a narrower question: what kind of technical substrate makes that governance easier to uphold?
+
+## In brief
+
+- Recent work from Yoshua Bengio and Yann LeCun points toward bounded, specialised systems rather than one general-purpose governor.
+- That convergence does not settle politics, but it does narrow the technical search space.
+- The inside still cannot decide legitimacy, standing, pace, or justice. Those remain institutional questions.
 
 ## A technical argument for boundedness
 

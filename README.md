@@ -1,12 +1,10 @@
 # 6-Pack of Care
 
-A governance framework by [Audrey Tang](https://afp.oxford-aiethics.ox.ac.uk/people/ambassador-audrey-tang) and [Caroline Green](https://www.oxford-aiethics.ox.ac.uk/caroline-emmer-de-albuquerque-green) at Oxford's Institute for Ethics in AI that translates Joan Tronto's political ethics of care into six machine-codeable design primitives for **Civic AI** — deliberately bounded, purpose-specific AI stewards engineered to nurture a community's relational health rather than maximise abstract global metrics.
+Civic AI is alignment by public process: community-authored safeguards, public accountability, and bounded local systems.
 
-## Why care ethics for AI alignment?
+This repository contains the public site for the 6-Pack of Care, a governance framework by [Audrey Tang](https://afp.oxford-aiethics.ox.ac.uk/people/ambassador-audrey-tang) and [Caroline Green](https://www.oxford-aiethics.ox.ac.uk/caroline-emmer-de-albuquerque-green) at Oxford's Institute for Ethics in AI.
 
-Standard alignment approaches try to derive values from data — but no amount of "is" produces an "ought." Care ethics sidesteps this by starting, as Tronto puts it, "in the middle of things": within an existing commitment to democratic values, asking what those commitments demand once we take mutual dependence seriously. The result is **alignment-by-process** — a continuous, democratically governed practice rather than a one-time engineering solution.
-
-Where the vertical narrative of a technological singularity concentrates power in a single unbounded optimiser, the 6-Pack proposes a horizontal alternative: plural stewardship by many bounded intelligences — local _Kami_ — in close interaction with human communities. Each Kami is bound to a specific place and purpose; its success is the health of the relationships it supports, not indefinite expansion.
+The core idea is simple: instead of asking a small group of developers to define "aligned" for everyone, the 6-Pack asks who is affected, who can contest decisions, what gets logged publicly, and how systems stay local and reversible. The 6-Pack treats AI not as a sovereign optimiser but as a bounded local steward, or Kami.
 
 ## The six packs
 
@@ -21,21 +19,13 @@ Where the vertical narrative of a technological singularity concentrates power i
 
 Packs 1 – 4 form Tronto's feedback loop. Pack 5 (from _Caring Democracy_) ensures the loop operates within democratic commitments to justice, equality, and freedom. Pack 6 is Tang and Green's addition: the meta-level guardrail that keeps care local, bounded, and provisional.
 
-Also: [**Measures**](https://6pack.care/measures/) (one headline public measure per pack, with supporting diagnostics) and [**FAQ**](https://6pack.care/faq/) (speed, cost, bad actors, and how the framework handles them).
+Also: [**Measures**](https://6pack.care/measures/) and [**FAQ**](https://6pack.care/faq/).
 
-## Who it's for
+## Start here
 
-- **Academics.** A rigorous "alignment-by-process" theory grounded in Tronto, Margaret Urban Walker's expressive-collaborative morality, and Ostrom-style polycentric governance. Navigates the Is-Ought problem without collapsing into thin universalism or cultural relativism.
-- **Policymakers.** Hard governance levers: citizen alignment assemblies, structural data portability (Utah Digital Choice Act), escrow-backed engagement contracts, bridge audits, and federated trust-and-safety networks (ROOST).
-- **System designers.** Actionable technical scaffolding: bridging maps, shadow/canary orchestration with rollback, decision-trace schemas, community-authored eval registries (such as Weval), community-feedback pipelines, and guardrail-as-code engines.
-
-## Key concepts
-
-- **Bridging tools.** Pack 1 maps overlap and disagreement so missing voices and possible bridges become visible. Pack 5 audits whether civic systems reward cross-group cooperation rather than outrage.
-- **Engagement contracts.** Published, auditable specs — purpose, SLAs, pause triggers, remedies, sunset — that make power accountable and irresponsibility visible.
-- **Kami model.** Every agent has purpose bounds, resource caps, and a sunset timer. The component sunsets; the service duty persists through succession.
-- **Community feedback.** Pack 4 gives affected communities the right to author evaluations, appeal outcomes, and judge whether repair counted. Some teams may later feed approved community feedback into routing or model updates, including Reinforcement Learning from Community Feedback (RLCF).
-- **Selective-disclosure identity.** Verify that an agent is anchored to a real steward without exposing the person publicly.
+- **Policy.** [Manifesto](https://6pack.care/manifesto/), [FAQ](https://6pack.care/faq/), and [AI Alignment Cannot Be Top-Down](https://6pack.care/ai-alignment-cannot-be-top-down/).
+- **Engineering.** [Pack 3](https://6pack.care/3/), [Inside the Kami](https://6pack.care/inside-the-kami/), and [Measures](https://6pack.care/measures/).
+- **Civic practice.** [Pack 1](https://6pack.care/1/), [Pack 2](https://6pack.care/2/), and [Pack 4](https://6pack.care/4/).
 
 ## Site
 

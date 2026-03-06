@@ -14,9 +14,24 @@ nav_next:
 
 <em>Audrey Tang joins Dr Caroline Green for the first episode of Accelerating AI Ethics — recorded on Audrey's first day as an Oxford Accelerator Fellow. Fifty-eight minutes on digital democracy, collective intelligence, plurality as an alternative to singularity, and why AI ethics must be by design, not afterthought.</em>
 
+## In brief
+
+This earlier conversation supplies the background politics behind the 6-Pack. It is the best entry point if you want the Taiwan, Plurality, and democratic-governance context before the later 6-Pack episode.
+
+### Key takeaways
+
+- Democracy works better when technology helps groups find uncommon ground instead of rewarding outrage.
+- Taiwan's civic-tech practice treats conflict as something to metabolise into collective learning.
+- AI should strengthen civic muscle, not replace human judgment or send chatbots to deliberate in our place.
+- Participation infrastructure matters as much as model capability when the question is political legitimacy.
+
+## Watch
+
 <div class="video-embed">
 <iframe src="https://iframe.cloudflarestream.com/977f34c1fd03b2285f368ac43554fad6" title="AI and Democracy — Audrey Tang and Caroline Green" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+
+## Full transcript
 
 **Caroline Green**: Hello and welcome to the accelerating AI ethics podcast of the University of Oxford. I'm Dr Caroline Green, and in each episode, we explore bold ideas, innovative thinking, and creative responses to the ethical challenges posed by artificial intelligence. Today's guest is someone who truly redefines what's possible when technology meets democracy.
 

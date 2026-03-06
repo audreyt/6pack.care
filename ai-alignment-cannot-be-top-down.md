@@ -13,7 +13,13 @@ nav_next:
 audio: /audio/ai-alignment-cannot-be-top-down.mp3
 ---
 
-_Community Notes offers a better model — where citizens, not corporations, decide what “aligned” means._
+AI alignment fails when a handful of companies define it for everyone. This essay argues for alignment by public process: citizen steering, public accountability, and community-scale assistants tuned to local contexts.
+
+## In brief
+
+- Taiwan's anti-scam response shows that alignment can be defined by citizens and turned into law quickly.
+- The lesson from social media is that top-down trust-and-safety teams cannot govern complex public realities alone.
+- The practical path is threefold: clearer industry norms, better market incentives, and community-scale assistants with public oversight.
 
 In March 2024, I opened Facebook and saw Jensen Huang’s face. The Nvidia CEO was offering investment advice, speaking directly to me in Mandarin. Of course, it was not really Huang. It was an AI-generated scam, and I was far from the first to be targeted: across Taiwan, a flood of scams was defrauding millions of citizens.
 
