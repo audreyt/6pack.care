@@ -11,7 +11,7 @@ nav_next:
     text: "Home"
 ---
 
-<em>Audrey Tang joins Liron Shapira on Doom Debates — a series on superintelligence risk. Ninety minutes on why P(Doom) is Not a Number, what a glass-horse architecture looks like, and how the 6-Pack of Care provides a blueprint for civic AI governance at civilisational scale.</em>
+<em>Audrey Tang joins Liron Shapira on Doom Debates — a series on superintelligence risk. Ninety minutes on why P(Doom) is Not a Number, what a glass-horse architecture looks like, and how the 6-Pack of Care provides a blueprint for Civic AI governance at civilisational scale.</em>
 
 <div class="video-embed">
 <iframe src="https://www.youtube-nocookie.com/embed/bvcmiirT8ME?si=urqA-2pfCO2UljU-" title="Doom Debate — Audrey Tang and Liron Shapira" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -119,7 +119,7 @@ And so I think we’re pretty resilient against this kind of polarization attack
 
 **Liron Shapira**: All right, so let’s move toward the meat of the conversation. We’re obviously gonna be talking about artificial intelligence. In your current role, what kind of AI development are you actively trying to promote?
 
-**Audrey Tang**: Yeah, I’m promoting this idea of civic AI, which means people, for example, the schoolchildren that I just mentioned, are able to tune, to steer, to locally interpret AI systems that concern them.
+**Audrey Tang**: Yeah, I’m promoting this idea of Civic AI, which means people, for example, the schoolchildren that I just mentioned, are able to tune, to steer, to locally interpret AI systems that concern them.
 
 My focus is to basically do what Taiwan did when I was born in the eighties, last century, which is called the personal computing revolution. It used to be that there’s only mainframes, and people do not have computers. They have terminals, which are just screens and keyboards connected to the same supercomputer somewhere, and so it leads to power concentration, to large states, large companies, IBM, and so on.
 
@@ -353,7 +353,7 @@ It’s the same thing that I told Vitalik when he came on the show, and we were 
 
 So my question is, don’t you think that there’s this huge question mark as to whether this ideal is feasible at all?
 
-**Audrey Tang**: I think the idea of scalable governance or governance that gets better as the capability gets better is not to ask human individuals to wear hard hats, as you say, but rather to train local kami, or steward spirits, named after the Japanese idea of a kind of local steward spirits, to help defending ourselves.
+**Audrey Tang**: I think the idea of scalable governance or governance that gets better as the capability gets better is not to ask human individuals to wear hard hats, as you say, but rather to train local Kami, or steward spirits, named after the Japanese idea of a kind of local steward spirits, to help defending ourselves.
 
 One good example is in Taiwan, when we scan for the fraud scam advertisements online on social media. We, of course, have a crowdsourced reporting fraud buster website, so people can paste the scam they see online to that place.
 
@@ -361,7 +361,7 @@ But mostly, people only need to report novel forms of scam. Anything that is mor
 
 So this system is not human playing defense, it is defending AI, using the AI trained by communities. And we have that also for information manipulation detection and local message checker. There’s an app that you can literally install just called Message Checker.
 
-So the idea of these safeguards using the local kami is not saying that as the threat gets stronger and stronger, let’s stick with the current governance tools. It’s also about upgrading our governance tools, treating democracy as a social technology.
+So the idea of these safeguards using the local Kami is not saying that as the threat gets stronger and stronger, let’s stick with the current governance tools. It’s also about upgrading our governance tools, treating democracy as a social technology.
 
 **Liron Shapira**: Okay, so I’m getting the sense that where you and I are going to disagree is just in our prediction of what it looks like for AI to go superintelligent, and we haven’t touched on that yet. So I’m not directly disagreeing with anything you’re saying. I think you’re doing great.
 

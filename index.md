@@ -37,13 +37,13 @@ Six design principles turn care ethics into something we can code. Think of them
 - **[Pack 3: Competence](/3/)** — "Care-giving." Trust the process, not just the promise. We focus on transparent traces, guardrails, and automatic circuit breakers if things go wrong.
 - **[Pack 4: Responsiveness](/4/)** — "Care-receiving." Check the results. The people affected can author evaluations, appeal outcomes, and force repair when the system gets it wrong.
 - **[Pack 5: Solidarity](/5/)** — "Caring with." Make it win-win. We build for data portability and shared safety, creating deals where everyone is better off, rather than locking people in.
-- **[Pack 6: Symbiosis](/6/)** — "Kami of care." Keep it grounded. Local, temporary, and bounded. No drive for immortality, no need to take over the world. We build for "enough," not "forever."
+- **[Pack 6: Symbiosis](/6/)** — "Kami of Care." Keep it grounded. Local, temporary, and bounded. No drive for immortality, no need to take over the world. We build for "enough," not "forever."
 - **[Measures](/measures/)** — One headline public measure per pack, with supporting diagnostics.
 - **[Frequently Asked Questions](/faq/)** — The hard questions: What about speed? Cost? Bad actors? And how the 6-Pack handles them.
 
 ## Latest
 
-- ["Inside the Kami"](/inside-the-kami/): What recent ML research suggests goes inside a bounded civic AI — and what it cannot provide. Two convergent programmes, one governance framework.
+- ["Inside the Kami"](/inside-the-kami/): What recent ML research suggests goes inside a bounded Civic AI — and what it cannot provide. Two convergent programmes, one governance framework.
 - ["Ciudadanía Digital"](/ciudadania-digital/): On civic care, geothermal democracy, and what you would refuse to automate — a speech at Tec de Monterrey's 50th anniversary. Transcript included. _(Tec de Monterrey, Mexico City)_
 - [Podcast: The 6-Pack of Care](/podcast/): Audrey and Caroline introduce the full framework live — all six packs, with grounding in social care practice, the Kami metaphor, and what to do next. Transcript included. _(Accelerating AI Ethics, Oxford, 58 min)_
 - [Doom Debate](/doom-debate/): Audrey joins Liron Shapira to defend a foomer-not-doomer position — P(Doom) is Not a Number, plurality is already here, and the 6-Pack is the blueprint for the glass horse we need. Transcript included. _(Doom Debates, 90 min)_
@@ -74,7 +74,7 @@ Six design principles turn care ethics into something we can code. Think of them
 
 </div>
 
-Our project—a [manifesto](/manifesto/) and a book arriving in 2026—explores what happens when we take Joan Tronto's care ethics seriously as a governance strategy for AI alignment. Audrey and Caroline will present the framework at the [Civic AI Conference](https://www.oxford-aiethics.ox.ac.uk/event/civic-ai-conference-rhodes-house-south-park-road-oxford) on 26 March 2026.
+Our project—a [manifesto](/manifesto/) and a book arriving in 2026—explores what happens when we take Joan Tronto's care ethics seriously as a governance strategy for AI alignment. Audrey and Caroline will present the framework at the [Civic AI Conference](https://www.oxford-aiethics.ox.ac.uk/event/civic-ai-conference-rhodes-house-south-park-road-oxford) on 25 March 2026.
 
 ## From Care to Code
 

@@ -28,9 +28,9 @@ As AI becomes a thousand, perhaps ten thousand times faster than us, we face a f
 
 At that speed, traditional ethics struggle. Consequentialism — even its most sophisticated forms — relies on predicting and overseeing outcomes. When an AI system optimises far beyond our comprehension, we cannot intervene before unintended consequences cascade. Deontology relies on moral agents interpreting obligations in good faith on roughly equal footing. When the "interpreter" operates thousands of times faster, the gap between a rule's letter and its spirit widens in ways we can neither foresee nor correct. Both traditions have far more depth than caricature suggests, but care ethics offers something neither provides: it starts from relationships and process rather than from outcomes or rules alone.
 
-A framework that acknowledges this asymmetry but refuses the gardener role is an ethics around **civic care**, particularly the work of Joan Tronto. The core idea is that we remain each other's gardeners. AI becomes local infrastructure—a spirit of place, a _kami_—that supports care _at the speed care actually grows_.
+A framework that acknowledges this asymmetry but refuses the gardener role is an ethics around **civic care**, particularly the work of Joan Tronto. The core idea is that we remain each other's gardeners. AI becomes local infrastructure—a spirit of place, a _Kami_—that supports care _at the speed care actually grows_.
 
-This approach mandates a hyper-local, parochial moral scope. Each _kami_ is bound to a specific garden, rather than being a colonising or maximising ("paper-clipping") force.
+This approach mandates a hyper-local, parochial moral scope. Each _Kami_ is bound to a specific garden, rather than being a colonising or maximising ("paper-clipping") force.
 
 Designing AI as care infrastructure requires digital permaculture, mirroring a movement that embraces anti-fragility through diversity—what Professor Yuk Hui calls "technodiversity"—rather than fragile monocultures.
 
@@ -110,7 +110,7 @@ Here are key policy levers:
 - **Expression ≠ Amplification (Freedom of Speech vs. Freedom of Reach).** We must distinguish hosting speech from algorithmic amplification. In the US context, Section 230 protects speech, but has never protected amplification. We must reframe the debate around recommender accountability, regulating amplification without touching the speech itself.
 - **Social Portability.** We must mandate "number portability for social." The Utah Digital Choice Act (effective July 2026) mandates that citizens can take their entire social graph to new services. It requires platforms to choose a fair, non-discriminatory, interoperable protocol (e.g., ActivityPub, AT Protocol, or DSNP), with the state publishing qualifying technical standards. The information superhighway must have off-ramps, which forces platforms to compete on quality of care, not lock-in.
 - **Bridging-Based Ranking Transparency.** We can audit the relational health of platforms. X.com is already testing bridge-based ranking (derived from Community Notes) as the default feed. Its new Collaborative Notes feature lets human contributors request AI-drafted context, then collectively rate and refine it—a two-lane pattern where AI provides speed and humans provide judgement.
-- **Federated Trust & Safety.** We must adopt open-source, federated models. A key example is the **ROOST.tools** (Robust Open Online Safety Tools) initiative for Child Sexual Abuse Material (CSAM) defence, launched this year in Paris. The initiative bridged the security camp (Eric Schmidt) and the open camp (Yann LeCun). Instead of relying on a single source (e.g., Microsoft PhotoDNA), ROOST allows partners (e.g., Bluesky, Roblox, or Discord) to train local AIs — what I call _kami_ — to detect CSAM within their specific cultural context. Embeddings are translated into text (legal to hold, with fewer privacy issues) and shared via federated learning. Safety is tuned to local norms without being colonised by a single corporate policy.
+- **Federated Trust & Safety.** We must adopt open-source, federated models. A key example is the **ROOST.tools** (Robust Open Online Safety Tools) initiative for Child Sexual Abuse Material (CSAM) defence, launched this year in Paris. The initiative bridged the security camp (Eric Schmidt) and the open camp (Yann LeCun). Instead of relying on a single source (e.g., Microsoft PhotoDNA), ROOST allows partners (e.g., Bluesky, Roblox, or Discord) to train local AIs — what I call _Kami_ — to detect CSAM within their specific cultural context. Embeddings are translated into text (legal to hold, with fewer privacy issues) and shared via federated learning. Safety is tuned to local norms without being colonised by a single corporate policy.
 
 # From "Is" to "Ought"
 
@@ -162,7 +162,7 @@ Good intentions require working code. Competence is shipping systems that delive
 
 This competence is where we implement decision traces, shadow mode, canaries, fallbacks, and security constraints. The point is not to guess what the community values, but to prove the system can act safely within the bounds already set.
 
-Security is also a competence — and a moral — question. An agent that can be hijacked cannot tend its place. Prompt injection, privilege escalation, and scope creep are care failures, not merely technical ones. A kami with real resources runs in a strict sandbox: least-privilege permissions, validated inputs, no implicit trust of anything upstream.
+Security is also a competence — and a moral — question. An agent that can be hijacked cannot tend its place. Prompt injection, privilege escalation, and scope creep are care failures, not merely technical ones. A Kami with real resources runs in a strict sandbox: least-privilege permissions, validated inputs, no implicit trust of anything upstream.
 
 _Rule of thumb: Security failures are moral failures of those who build and deploy, not merely technical oversights._
 
@@ -196,24 +196,24 @@ The infrastructure makes decentralised defence easier and more dominant, making 
 
 _Rule of thumb: Make positive-sum games easy to play._
 
-# Symbiosis: **"Kami of care"**
+# Symbiosis: **"Kami of Care"**
 
 The final piece of the puzzle addresses the ultimate fear: that AI systems, even designed as infrastructure, could still compete—expanding their reach until one dominates all others. How do we ensure a world of cooperative local systems rather than a single, all-powerful ruler?
 
-The inspiration comes from an ancient idea, beautifully expressed in the Japanese Shinto tradition: the concept of **_kami_** (神).
+The inspiration comes from an ancient idea, beautifully expressed in the Japanese Shinto tradition: the concept of **_Kami_** (神).
 
-A _local kami_ is a guardian spirit. It's not an all-powerful god that reigns over everything, but the spirit **of a particular place**. There might be a _kami_ of a specific river, a particular forest, or even an old tree. Whatever the form, its entire existence and purpose are interwoven with the health of that one thing. The river's guardian has no ambition to manage the forest; its purpose is fulfilled by ensuring the river thrives.
+A _local Kami_ is a guardian spirit. It's not an all-powerful god that reigns over everything, but the spirit **of a particular place**. There might be a _Kami_ of a specific river, a particular forest, or even an old tree. Whatever the form, its entire existence and purpose are interwoven with the health of that one thing. The river's guardian has no ambition to manage the forest; its purpose is fulfilled by ensuring the river thrives.
 
 This concept gives us a powerful design principle: **boundedness**.
 
-Today, most technology is built for infinite scale. A successful app is expected to grow forever. But the _kami_ model suggests a different goal. We can design AIs to be local stewards — _kami_ of care — whose boundedness is not intrinsic but engineered: resource caps, sunset timers, non-expansion pacts, and fresh democratic authority for any scope change. Without these, "imperial creep" — scope expansion beyond the original mandate — is a real failure mode.
+Today, most technology is built for infinite scale. A successful app is expected to grow forever. But the _Kami_ model suggests a different goal. We can design AIs to be local stewards — _Kami_ of Care — whose boundedness is not intrinsic but engineered: resource caps, sunset timers, non-expansion pacts, and fresh democratic authority for any scope change. Without these, "imperial creep" — scope expansion beyond the original mandate — is a real failure mode.
 
 But this raises a crucial question: What stops these specialised AIs from fighting each other?
 
 The solution is not to create a bigger AI to rule over them. Instead, we create a system of cooperative governance, built on two key principles:
 
 1.  **Federation:** The AIs agree on a shared set of rules for how to interact peacefully, like countries agreeing on trade laws and diplomatic protocols. This agreement creates a common ground for cooperation.
-2.  **Subsidiarity:** This idea is simple but profound: **problems should always be solved at the most local level possible.** The national-level AI shouldn't interfere with the city-level AI unless there's a problem the city truly cannot solve on its own. This separation protects the autonomy and purpose of each local _kami_.
+2.  **Subsidiarity:** This idea is simple but profound: **problems should always be solved at the most local level possible.** The national-level AI shouldn't interfere with the city-level AI unless there's a problem the city truly cannot solve on its own. This separation protects the autonomy and purpose of each local _Kami_.
 
 The vision of a **"society of AI permaculturists"** is the direct alternative to the **"singleton"**—the idea of a single AI that eventually manages everything. Instead of one monolithic intelligence, we envision a vibrant, diverse ecosystem of many specialised intelligences.
 
@@ -231,7 +231,7 @@ To explain my role, I wrote this poetic job description:
 - When we see "user experience," let's make it **about human experience.**
 - When we hear "the singularity is near" — let us remember: The **Plurality** is here.
 
-The singularity is a vertical vision. Plurality is a horizontal one. The future of AI is a decentralised network of smaller, open and locally verifiable systems—_local kami_, spirits of place.
+The singularity is a vertical vision. Plurality is a horizontal one. The future of AI is a decentralised network of smaller, open and locally verifiable systems—_local Kamis_, spirits of place.
 
 # We, the People, Are the Superintelligence
 
@@ -241,7 +241,7 @@ Democracy and AI are both technologies. If we put care into their symbiosis, the
 
 Ultimately, the 6-Pack of Care is a practical training regimen for our civic muscles. It's something we can train and exercise, not just an intrinsic instinct like "love."
 
-When we look at the fundamental asymmetry of ASI, the _kami_ metaphor holds where concepts such as Geoffrey Hinton's "maternal instinct" break down due to the vast speed differences. Parenting presupposes similar timescales; "gardener" implies top-down authority — whether played by human or AI, it presupposes one side defining the rules. The _kami_ is different: it tends relational health at _the pace of the community_, sharing stewardship with everyone.
+When we look at the fundamental asymmetry of ASI, the _Kami_ metaphor holds where concepts such as Geoffrey Hinton's "maternal instinct" break down due to the vast speed differences. Parenting presupposes similar timescales; "gardener" implies top-down authority — whether played by human or AI, it presupposes one side defining the rules. The _Kami_ is different: it tends relational health at _the pace of the community_, sharing stewardship with everyone.
 
 This way, we don't need to ask if AI deserves rights based on its interiority or qualia. What matters is the relational reality, and the rights and duties within it are granted through democratic deliberation and alignment-by-process.
 

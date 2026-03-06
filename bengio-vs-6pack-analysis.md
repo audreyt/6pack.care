@@ -24,7 +24,7 @@ Bengio: "AI systems that are capable and have goals that we did not choose." Goa
 
 The 6-Pack reaches the same conclusion through political philosophy: without explicit constraints, AI develops instrumental convergence, self-preservation drives, and "imperial creep." The Humean critique (you cannot derive "ought" from "is") is the philosophical twin of Bengio's observation that pre-training implicitly encodes values nobody chose.
 
-Both also reject the current paradigm of imitating human intelligence. Bengio says this explicitly: his path "is different from what we've done in AI in the past, which was trying to imitate human intelligence." The 6-Pack says it structurally: AI should be infrastructure (like water systems or roads), not an artificial person. The kami metaphor — a spirit of place that tends one location — is deliberately non-anthropomorphic. Neither framework wants AI to be a better human. They want it to be a different kind of thing entirely.
+Both also reject the current paradigm of imitating human intelligence. Bengio says this explicitly: his path "is different from what we've done in AI in the past, which was trying to imitate human intelligence." The 6-Pack says it structurally: AI should be infrastructure (like water systems or roads), not an artificial person. The Kami metaphor — a spirit of place that tends one location — is deliberately non-anthropomorphic. Neither framework wants AI to be a better human. They want it to be a different kind of thing entirely.
 
 ### Where they diverge
 
@@ -40,7 +40,7 @@ The most productive reading of the divergence:
 
 - **Inner alignment (Bengio):** Make the predictor itself trustworthy — its outputs correspond to reality, not to goals it secretly harbours. The truthification pipeline, epistemic correctness, and non-agency guarantees are all _properties of the artifact_.
 
-- **Outer alignment (6-Pack):** Make the deployment trustworthy — the system around the AI ensures it serves the right people, for the right purposes, with the right constraints. Engagement contracts, graduated release, decision traces, and kami boundedness are all _properties of the institution_.
+- **Outer alignment (6-Pack):** Make the deployment trustworthy — the system around the AI ensures it serves the right people, for the right purposes, with the right constraints. Engagement contracts, graduated release, decision traces, and Kami boundedness are all _properties of the institution_.
 
 Each framework _assumes_ the other's domain will be handled. Bengio assumes governance will exist: "Who defines what is right and wrong? That should be a social choice, obviously, hopefully in a democracy." The 6-Pack assumes competent technology will exist but focuses on constraining it: the framework works whether the AI inside is Bengio's Scientist AI, a standard LLM, or a future architecture.
 
@@ -64,7 +64,7 @@ The truthification pipeline operationalises this. Factual syntax ("X is true") r
 
 Rather than building an agent-less AI, the 6-Pack assumes AI systems _will_ be used agentically and asks: how do we prevent that agency from escaping democratic control?
 
-The kami model is the core metaphor. Boundedness is engineered through:
+The Kami model is the core metaphor. Boundedness is engineered through:
 
 - Resource caps (compute, data, scope ceilings)
 - Sunset timers (renewal requires fresh authorisation)
@@ -72,7 +72,7 @@ The kami model is the core metaphor. Boundedness is engineered through:
 - Civic Care Licences encoding bounds, consent, portability, shutdown
 - Succession plans (institutional memory transfers; individual data does not)
 
-The most striking claim: "Sunset is success, not failure. A kami that has made itself necessary has become a dependency, not a scaffold." This inverts Silicon Valley growth logic entirely.
+The most striking claim: "Sunset is success, not failure. A Kami that has made itself necessary has become a dependency, not a scaffold." This inverts Silicon Valley growth logic entirely.
 
 ### Does Bengio's approach make governance unnecessary?
 
@@ -86,7 +86,7 @@ No, for three reasons:
 
 ### Does the 6-Pack work if Bengio's approach fails?
 
-Yes — it is designed to. The governance architecture functions as an immune system that does not need to predict the specific failure mode. Resource caps limit blast radius regardless of internal properties. Graduated release catches emergent agency before it scales. Community evals detect anomalous behaviour that lab red teams miss. Exit rights let communities leave dangerous systems. The meta-level guardrail against a Singleton — many bounded kamis instead of one permanent centre — means no single failure cascades everywhere.
+Yes — it is designed to. The governance architecture functions as an immune system that does not need to predict the specific failure mode. Resource caps limit blast radius regardless of internal properties. Graduated release catches emergent agency before it scales. Community evals detect anomalous behaviour that lab red teams miss. Exit rights let communities leave dangerous systems. The meta-level guardrail against a Singleton — many bounded Kamis instead of one permanent centre — means no single failure cascades everywhere.
 
 But it works _better_ with Bengio's contributions. A non-agentic predictor doesn't try to exploit loopholes in the engagement contract. The governance layer can focus on constraining _human_ misuse rather than fighting a two-front war against both human and machine agency.
 
@@ -94,7 +94,7 @@ But it works _better_ with Bengio's contributions. A non-agentic predictor doesn
 
 **Bengio misses collective agency.** His framework addresses whether a single predictor is agentic. But non-agentic components interacting — trading, recommending, moderating, surveilling — can produce emergent goal-directed behaviour. The 6-Pack's polycentric governance is designed for this multi-agent world.
 
-**The 6-Pack misses agency measurement.** Bengio's quantification (bits of description for goal-achievement) provides something the 6-Pack lacks: a measurable dimension along which to evaluate danger. A kami with low measured agency is categorically safer than one with high agency, regardless of governance constraints.
+**The 6-Pack misses agency measurement.** Bengio's quantification (bits of description for goal-achievement) provides something the 6-Pack lacks: a measurable dimension along which to evaluate danger. A Kami with low measured agency is categorically safer than one with high agency, regardless of governance constraints.
 
 **Bengio misses human agency amplification.** A perfect predictor of social dynamics used to manipulate elections is non-agentic — but the human wielding it is amplified. The 6-Pack (bridging algorithms, federated T&S) directly addresses this.
 
@@ -121,7 +121,7 @@ The directionality matters. Bengio answers: "Can you prove this system won't dec
 
 Pack 3 (Competence) is the most natural integration point. Its mechanisms — decision traces showing which rule fired, which sources were consulted, what the uncertainty score was — are governance infrastructure around technical performance. Bengio's epistemic correctness could serve as the engine inside this governance shell.
 
-If a kami's underlying model trained with Bengio's methods, the decision trace wouldn't just log 87% confidence — it would _guarantee_ (asymptotically) that 87% means what it says. Trace completeness gains teeth when uncertainty scores are epistemically correct, not just numerically produced.
+If a Kami's underlying model trained with Bengio's methods, the decision trace wouldn't just log 87% confidence — it would _guarantee_ (asymptotically) that 87% means what it says. Trace completeness gains teeth when uncertainty scores are epistemically correct, not just numerically produced.
 
 The fit is not seamless. Bengio acknowledges an asymmetry: when the system says "unknown," you cannot tell whether it genuinely lacks knowledge or is withholding. This is exactly the gap that Pack 4's community-authored evaluations would stress-test — communities submitting cases where the system says "unknown" to probe whether its ignorance is genuine or strategic.
 
@@ -171,7 +171,7 @@ The 6-Pack answers all of these, with specific mechanisms:
 | What counts as harm?               | "People closest to harm define harm. They author evaluations."                    |
 | Who resolves factual disagreement? | Bridging algorithms; epistemic line separates checkable facts from value disputes |
 | What happens when the AI is wrong? | Appeals, repair logs, escrow auto-payouts, incident run-books                     |
-| Who owns the infrastructure?       | Local hardware + community ownership; kami with Civic Care Licences               |
+| Who owns the infrastructure?       | Local hardware + community ownership; Kami with Civic Care Licences               |
 
 ### Does Bengio implicitly assume 6-Pack-like governance?
 
@@ -243,7 +243,7 @@ Bengio: democracy is the right venue for value choices — instrumental. The 6-P
 
 ### The Scientist Kami: a composed architecture
 
-The most natural composition: Bengio's Scientist AI as the epistemic engine inside the 6-Pack's kami architecture.
+The most natural composition: Bengio's Scientist AI as the epistemic engine inside the 6-Pack's Kami architecture.
 
 - **Pack 1 (Attentiveness):** Truthified data feeds separate factual claims from communicative acts, so bridging focuses on genuine value disagreements rather than fighting misinformation.
 - **Pack 2 (Responsibility):** Engagement Contracts govern the scaffold — specifying what may be queried, in which syntax, for what purposes.

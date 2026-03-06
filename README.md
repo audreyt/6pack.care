@@ -6,7 +6,7 @@ A governance framework by [Audrey Tang](https://afp.oxford-aiethics.ox.ac.uk/peo
 
 Standard alignment approaches try to derive values from data — but no amount of "is" produces an "ought." Care ethics sidesteps this by starting, as Tronto puts it, "in the middle of things": within an existing commitment to democratic values, asking what those commitments demand once we take mutual dependence seriously. The result is **alignment-by-process** — a continuous, democratically governed practice rather than a one-time engineering solution.
 
-Where the vertical narrative of a technological singularity concentrates power in a single unbounded optimiser, the 6-Pack proposes a horizontal alternative: plural stewardship by many bounded intelligences — local _kami_ — in close interaction with human communities. Each kami is bound to a specific place and purpose; its success is the health of the relationships it supports, not indefinite expansion.
+Where the vertical narrative of a technological singularity concentrates power in a single unbounded optimiser, the 6-Pack proposes a horizontal alternative: plural stewardship by many bounded intelligences — local _Kami_ — in close interaction with human communities. Each Kami is bound to a specific place and purpose; its success is the health of the relationships it supports, not indefinite expansion.
 
 ## The six packs
 
@@ -17,11 +17,11 @@ Where the vertical narrative of a technological singularity concentrates power i
 | 3   | [**Competence**](https://6pack.care/3/)     | Care-giving    | Does the system demonstrably work — audited, explainable, safe-to-fail?        |
 | 4   | [**Responsiveness**](https://6pack.care/4/) | Care-receiving | Can those affected correct the system, and does correction actually change it? |
 | 5   | [**Solidarity**](https://6pack.care/5/)     | Caring with    | Does the ecosystem structurally reward cooperation over lock-in?               |
-| 6   | [**Symbiosis**](https://6pack.care/6/)      | Kami of care   | Is the system bounded, sunset-ready, and incapable of imperial creep?          |
+| 6   | [**Symbiosis**](https://6pack.care/6/)      | Kami of Care   | Is the system bounded, sunset-ready, and incapable of imperial creep?          |
 
 Packs 1 – 4 form Tronto's feedback loop. Pack 5 (from _Caring Democracy_) ensures the loop operates within democratic commitments to justice, equality, and freedom. Pack 6 is Tang and Green's addition: the meta-level guardrail that keeps care local, bounded, and provisional.
 
-Also: [**Measures**](https://6pack.care/measures/) (one headline public measure per pack) and [**FAQ**](https://6pack.care/faq/) (speed, cost, bad actors, and how the framework handles them).
+Also: [**Measures**](https://6pack.care/measures/) (one headline public measure per pack, with supporting diagnostics) and [**FAQ**](https://6pack.care/faq/) (speed, cost, bad actors, and how the framework handles them).
 
 ## Who it's for
 
@@ -45,7 +45,7 @@ Built with [Eleventy](https://www.11ty.dev/) v3 and [Bun](https://bun.sh/):
 
 ```bash
 bun install          # install dependencies
-bun run dev          # local dev server at http://127.0.0.1:4000
+bun run dev          # local dev server at http://127.0.0.1:8080
 bun run build        # production build → ./docs/
 ```
 
