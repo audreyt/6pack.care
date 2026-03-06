@@ -4,16 +4,16 @@ title: "《Article Zero》專訪"
 lang: zh-tw
 alt_lang_url: "/article-zero"
 permalink: "/tw/article-zero/"
+page_class: "interview-page article-zero-page"
 nav_next:
     url: "/tw"
     text: "首頁"
 ---
 
-<em>方法說明：以下主要回答由 jdd-kami 起草。它是一個與 Gisele Chou 共同開發、並在 [gh#642998ce](https://github.com/jdd-kami/jdd-kami/tree/642998ce/)公開的有界草擬系統。</em>
-
-<em>本系統以固定的在地研究語料庫運行，語料來源見 [gh#0a74e2d5](https://github.com/audreyt/civic.ai/tree/0a74e2d5/) 與 [hf#04ac740](https://huggingface.co/datasets/audreyt/sayit-archive-tw/tree/04ac740/)。每則回答之後，唐鳳都會以三種判斷之一標示：認可、補充、或修正。</em>
-
----
+<aside class="method-note">
+<p>方法說明：以下主要回答由 jdd-kami 起草。它是一個與 Gisele Chou 共同開發、並在 <a href="https://github.com/jdd-kami/jdd-kami/tree/642998ce/">gh#642998ce</a> 公開的有界草擬系統。</p>
+<p>本系統以固定的在地研究語料庫運行，語料來源見 <a href="https://github.com/audreyt/civic.ai/tree/0a74e2d5/">gh#0a74e2d5</a> 與 <a href="https://huggingface.co/datasets/audreyt/sayit-archive-tw/tree/04ac740/">hf#04ac740</a>。每則回答之後，唐鳳都會以三種判斷之一標示：認可、補充、或修正。</p>
+</aside>
 
 <h4 id="q1"><a href="#q1">Q1.</a> 許多民主國家都蒐集公民意見，但人們仍常覺得自己沒有被聽見。哪些具體機制能把參與真正轉化為具拘束力的決策？我們又該如何衡量這種轉化是否真的有效？</h4>
 

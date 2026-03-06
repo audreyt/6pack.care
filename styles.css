@@ -368,6 +368,41 @@ em {
     font-family: "Kaiti TC", "DFKai-SB", "BiauKai", "STKaiti", cursive;
 }
 
+/* ─── INTERVIEW PAGES ─── */
+.method-note {
+    margin: 0 0 2.5rem;
+    padding: 0 0 1rem;
+    border-bottom: 1px solid var(--border);
+    font-family: var(--sans);
+    font-size: 0.92rem;
+    line-height: 1.65;
+    color: var(--muted);
+}
+
+.method-note p {
+    margin: 0.35rem 0;
+}
+
+body.interview-page h4 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body.interview-page h4 a:hover {
+    color: inherit;
+}
+
+body.interview-page hr {
+    margin: 2.2rem 0 1.3rem;
+}
+
+body.interview-page main p:has(> strong:first-child) strong:first-child {
+    font-family: var(--sans);
+    font-size: 0.82em;
+    letter-spacing: 0.04em;
+    color: var(--gold);
+}
+
 /* ─── LEAD & CALLOUT ─── */
 .lead {
     font-size: 1.05rem;
@@ -773,9 +808,55 @@ footer a:hover {
     }
 }
 
-/* ─── PRINT ─── */
+/* ─── CORMORANT GARAMOND (SELF-HOSTED) ─── */
+@font-face {
+    font-family: "Cormorant Garamond";
+    font-style: normal;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url("fonts/cormorant-normal-latin-ext.woff2") format("woff2");
+    unicode-range:
+        U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+        U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+        U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: "Cormorant Garamond";
+    font-style: normal;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url("fonts/cormorant-normal-latin.woff2") format("woff2");
+    unicode-range:
+        U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+        U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+        U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: "Cormorant Garamond";
+    font-style: italic;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url("fonts/cormorant-italic-latin-ext.woff2") format("woff2");
+    unicode-range:
+        U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+        U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+        U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: "Cormorant Garamond";
+    font-style: italic;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url("fonts/cormorant-italic-latin.woff2") format("woff2");
+    unicode-range:
+        U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+        U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+        U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ─── PRINT: OXFORD ACADEMIC TREATMENT ─── */
 @media print {
-    header,
+    /* --- Reset & hide non-print elements --- */
     .next-action,
     .skip-link,
     .lang-toggle,
@@ -785,32 +866,329 @@ footer a:hover {
         display: none !important;
     }
 
+    /* --- Base typography --- */
     body {
         background: white;
-        color: black;
-        font-size: 11pt;
+        color: #1a1a1a;
+        font-family: "Cormorant Garamond", "Lora", Georgia, serif;
+        font-size: 10.8pt;
+        line-height: 1.52;
+        text-rendering: optimizeLegibility;
+        font-feature-settings:
+            "liga" 1,
+            "kern" 1,
+            "onum" 1;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 
     main {
         max-width: 100%;
         padding: 0;
+        font-size: inherit;
+        font-family: inherit;
+    }
+
+    article,
+    section {
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
     }
 
     a {
         color: inherit;
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     a[href]::after {
-        content: " (" attr(href) ")";
-        font-size: 0.85em;
-        color: #555;
+        content: "";
     }
-
     a[href^="#"]::after,
     a[href^="/"]::after {
         content: "";
     }
+
+    /* --- Header: Oxford blue title band --- */
+    header {
+        background: #002147 !important;
+        color: white;
+        padding: 14mm 12mm 11mm;
+        margin: 0 -18mm 0;
+        width: calc(100% + 36mm);
+        text-align: center;
+        overflow: visible;
+        border-bottom: none;
+        position: relative;
+    }
+
+    header::after {
+        content: "";
+        display: block;
+        width: 32mm;
+        height: 0.6pt;
+        background: #c9a961;
+        margin: 7mm auto 0;
+    }
+
+    header img,
+    header > div {
+        display: none !important;
+    }
+
+    header h1 {
+        opacity: 1 !important;
+        animation: none !important;
+        color: white;
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 22pt;
+        font-weight: 600;
+        line-height: 1.12;
+        letter-spacing: 0.01em;
+        margin: 0;
+        text-wrap: balance;
+    }
+
+    header p,
+    header .chapter-date {
+        margin-top: 3mm;
+        color: rgba(255, 255, 255, 0.78);
+        font-family: var(--sans);
+        font-size: 8pt;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+
+    /* --- Oxford institutional line below header --- */
+    header + main::before {
+        content: "6-Pack of Care  ·  Oxford Institute for Ethics in AI  ·  Accelerator Fellowship Programme";
+        display: block;
+        text-align: center;
+        font-family: var(--sans);
+        font-size: 6.5pt;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #002147;
+        padding: 5mm 0 4mm;
+        margin: 0 auto 6mm;
+        border-bottom: 0.4pt solid #002147;
+        max-width: 34em;
+    }
+
+    /* --- Page-break & orphan control --- */
+    h2,
+    h3,
+    h4 {
+        break-after: avoid-page;
+        page-break-after: avoid;
+    }
+
+    p,
+    li,
+    blockquote {
+        orphans: 3;
+        widows: 3;
+        hyphens: auto;
+    }
+
+    /* --- Headings --- */
+    h2 {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        color: #002147;
+        border-bottom: 1pt solid #002147;
+        padding-bottom: 2mm;
+    }
+
+    h3 {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        color: #002147;
+        border-top-color: #c9a961;
+    }
+
+    /* --- Horizontal rules: gold ornamental --- */
+    hr {
+        border: 0;
+        height: 0;
+        margin: 8mm auto 5mm;
+        max-width: 34em;
+        text-align: center;
+        overflow: visible;
+        position: relative;
+    }
+
+    hr::before {
+        content: "◆";
+        display: block;
+        font-size: 6pt;
+        color: #c9a961;
+        letter-spacing: 3mm;
+        line-height: 1;
+    }
+
+    hr::after {
+        content: "";
+        display: block;
+        width: 50mm;
+        height: 0.35pt;
+        background: linear-gradient(90deg, transparent, #c9a961, transparent);
+        margin: 2mm auto 0;
+    }
+
+    /* --- Interview page specifics --- */
+    body.interview-page main > * {
+        max-width: 34em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Method note: styled as formal abstract */
+    body.interview-page .method-note {
+        margin: 0 auto 7mm;
+        padding: 3mm 4mm 3.5mm;
+        border: 0.4pt solid #bbb4a8;
+        border-left: 2pt solid #002147;
+        background: #f7f5f1;
+        font-family: var(--sans);
+        font-size: 7.8pt;
+        line-height: 1.5;
+        color: #444;
+    }
+
+    body.interview-page .method-note p {
+        margin: 1mm 0;
+    }
+
+    body.interview-page .method-note a[href^="http"] {
+        text-decoration: underline;
+        text-decoration-thickness: 0.4pt;
+        text-underline-offset: 1.5pt;
+        color: #002147;
+    }
+
+    /* Question headings: Oxford blue with gold number accent */
+    body.interview-page h4 {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 11.5pt;
+        line-height: 1.32;
+        font-weight: 700;
+        color: #002147;
+        margin: 0 0 3.5mm;
+        padding: 0 0 0 0;
+        text-wrap: balance;
+        position: relative;
+    }
+
+    /* Style Q1, Q2 etc. labels */
+    body.interview-page h4 a[href^="#q"] {
+        color: #c9a961;
+        font-weight: 700;
+        margin-right: 0.2em;
+    }
+
+    body.interview-page h4 + p,
+    body.interview-page h4 + p + p {
+        break-before: avoid-page;
+        page-break-before: avoid;
+    }
+
+    /* Speaker turn separators */
+    body.interview-page main p:has(> strong:first-child) {
+        border-top: 0.35pt solid #d4cfc7;
+        padding-top: 4mm;
+        margin-top: 5mm;
+    }
+
+    /* Speaker labels: Oxford blue small-caps */
+    body.interview-page main p:has(> strong:first-child) strong:first-child {
+        display: inline-block;
+        margin-right: 0.5em;
+        font-family: var(--sans);
+        font-size: 7.5pt;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #002147;
+    }
+
+    /* Endorsement / Qualification / Correction labels: differentiated */
+    body.interview-page
+        main
+        p:has(> strong:first-child:not(:only-child))
+        strong:first-child {
+        padding: 0.5mm 2mm;
+        border-radius: 1pt;
+    }
+
+    /* Blockquotes in print */
+    blockquote {
+        border-left: 1.5pt solid #002147;
+        padding-left: 5mm;
+        color: #333;
+        font-style: italic;
+    }
+
+    /* Emphasis in print */
+    strong {
+        color: #002147;
+        font-weight: 700;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    /* --- Footer imprint on last page --- */
+    body.interview-page main::after {
+        content: "© 2025 Audrey Tang & Caroline Green · Oxford Institute for Ethics in AI · University of Oxford";
+        display: block;
+        max-width: 34em;
+        margin: 10mm auto 0;
+        padding: 4mm 0 0;
+        border-top: 0.4pt solid #002147;
+        font-family: var(--sans);
+        font-size: 6pt;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #002147;
+        text-align: center;
+    }
+}
+
+@page {
+    size: A4 portrait;
+    margin: 18mm 20mm 22mm;
+
+    @bottom-center {
+        content: counter(page);
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 8pt;
+        color: #002147;
+    }
+
+    @top-center {
+        content: "Interview with Article Zero";
+        font-family: "Outfit", system-ui, sans-serif;
+        font-size: 6pt;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #886d35;
+    }
+}
+
+@page :first {
+    @top-center {
+        content: none;
+    }
+    @bottom-center {
+        content: none;
+    }
+    margin-top: 0;
 }
 
 /* ─── DARK MODE ─── */
