@@ -34,8 +34,7 @@ There is no automated test suite. Verify changes by building successfully and ch
 
 ## Conventions
 
-- Front matter: YAML, two-space indent, `snake_case` keys, double-quoted strings with spaces
-- Markdown: sentence-case headings, ~100 char line width
+- Front matter: YAML, four-space indent, `snake_case` keys, double-quoted strings with spaces
 - CSS: all styles in `styles.css`, mobile-first, use existing custom properties
 - Commits: short imperative style (e.g. `add manifesto link`, `ch7: fix anchor ids`)
 - Never edit the `docs/` output directory — it is generated

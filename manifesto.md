@@ -160,7 +160,7 @@ _Rule of thumb: No unchecked power; answers are required._
 
 Good intentions require working code. Competence is shipping systems that deliver care and build trust, backed by auditing and evaluation.
 
-This competence is where we implement **bridging-based ranking**. We must optimise not for individual engagement, but for cross-group endorsement and relational health.
+This competence is where we implement decision traces, shadow mode, canaries, fallbacks, and security constraints. The point is not to guess what the community values, but to prove the system can act safely within the bounds already set.
 
 Security is also a competence — and a moral — question. An agent that can be hijacked cannot tend its place. Prompt injection, privilege escalation, and scope creep are care failures, not merely technical ones. A kami with real resources runs in a strict sandbox: least-privilege permissions, validated inputs, no implicit trust of anything upstream.
 
@@ -168,9 +168,9 @@ _Rule of thumb: Security failures are moral failures of those who build and depl
 
 # Responsiveness: **"Care-receiving"**
 
-A system that cannot be corrected will fail. Since competent action invariably introduces new problems, we need rapid feedback loops.
+A system that cannot be corrected will fail. Since competent action invariably introduces new problems, we need appeals, community-authored evaluations, and public repair loops.
 
-This is also where we implement **Reinforcement Learning from Community Feedback (RLCF)**: train AI agents to optimise for cross-group endorsement and trust-under-loss — not raw engagement — letting the community define what "good" means, and letting that definition evolve.
+Some teams may then feed approved community feedback into routing or model updates — including **Reinforcement Learning from Community Feedback (RLCF)** — but that implementation choice comes after a more basic civic commitment: the community defines what counts as harm, repair, and improvement.
 
 Responsiveness also means extending alignment assemblies with [GlobalDialogues.ai](https://globaldialogues.ai/) and [Weval.org](https://weval.org/)—a "Wikipedia for Evals."
 
@@ -190,7 +190,7 @@ Solidarity and plurality scale when cooperation is the path of least resistance.
 
 This requires agent infrastructure — a civic stack where people, organisations, and AIs operate under explicit, machine-checkable norms.
 
-One example is an **Agent ID registry** using **meronymity** (partial anonymity), which allows us to identify if an agent is tethered to a real human without doxing that human. The Taiwan KYC ad requirement is a prototype of this infrastructure.
+One example is an **Agent ID registry** using **selective-disclosure identity** — sometimes called meronymity — which allows us to identify if an agent is tethered to a real human without doxing that human. The Taiwan KYC ad requirement is a prototype of this infrastructure.
 
 The infrastructure makes decentralised defence easier and more dominant, making interdependence a feature, not a bug.
 

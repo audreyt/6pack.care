@@ -34,11 +34,11 @@ Six design principles turn care ethics into something we can code. Think of them
 
 - **[Pack 1: Attentiveness](/1/)** — "Caring about." Listen before leaping. Use bridging algorithms to turn local stories into shared understanding.
 - **[Pack 2: Responsibility](/2/)** — "Taking care of." Commitments mean nothing without consequences. We use engagement contracts with escrowed funds and real deadlines to ensure power is always accountable.
-- **[Pack 3: Competence](/3/)** — "Care-giving." Trust the process, not just the promise. We focus on transparency, fast feedback loops, and automatic "circuit breakers" if things go wrong.
-- **[Pack 4: Responsiveness](/4/)** — "Care-receiving." Check the results. We rely on evaluations written by the community itself. If someone challenges the outcome, we owe them a clear, public explanation.
+- **[Pack 3: Competence](/3/)** — "Care-giving." Trust the process, not just the promise. We focus on transparent traces, guardrails, and automatic circuit breakers if things go wrong.
+- **[Pack 4: Responsiveness](/4/)** — "Care-receiving." Check the results. The people affected can author evaluations, appeal outcomes, and force repair when the system gets it wrong.
 - **[Pack 5: Solidarity](/5/)** — "Caring with." Make it win-win. We build for data portability and shared safety, creating deals where everyone is better off, rather than locking people in.
 - **[Pack 6: Symbiosis](/6/)** — "Kami of care." Keep it grounded. Local, temporary, and bounded. No drive for immortality, no need to take over the world. We build for "enough," not "forever."
-- **[Measures](/measures/)** — Metrics for each pack: one per phase of the care cycle.
+- **[Measures](/measures/)** — One headline public measure per pack, with supporting diagnostics.
 - **[Frequently Asked Questions](/faq/)** — The hard questions: What about speed? Cost? Bad actors? And how the 6-Pack handles them.
 
 ## Latest

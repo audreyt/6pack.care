@@ -19,23 +19,23 @@ Where the vertical narrative of a technological singularity concentrates power i
 | 5   | [**Solidarity**](https://6pack.care/5/)     | Caring with    | Does the ecosystem structurally reward cooperation over lock-in?               |
 | 6   | [**Symbiosis**](https://6pack.care/6/)      | Kami of care   | Is the system bounded, sunset-ready, and incapable of imperial creep?          |
 
-Packs 1 – 4 form Tronto's feedback loop. Pack 5 (from _Caring Democracy_) ensures the loop operates within democratic commitments to justice, equality, and freedom. Pack 6 is Tang and Green's addition: the anti-Singleton architecture that keeps care local, bounded, and provisional.
+Packs 1 – 4 form Tronto's feedback loop. Pack 5 (from _Caring Democracy_) ensures the loop operates within democratic commitments to justice, equality, and freedom. Pack 6 is Tang and Green's addition: the meta-level guardrail that keeps care local, bounded, and provisional.
 
-Also: [**Measures**](https://6pack.care/measures/) (one metric per pack) and [**FAQ**](https://6pack.care/faq/) (speed, cost, bad actors, and how the framework handles them).
+Also: [**Measures**](https://6pack.care/measures/) (one headline public measure per pack) and [**FAQ**](https://6pack.care/faq/) (speed, cost, bad actors, and how the framework handles them).
 
 ## Who it's for
 
 - **Academics.** A rigorous "alignment-by-process" theory grounded in Tronto, Margaret Urban Walker's expressive-collaborative morality, and Ostrom-style polycentric governance. Navigates the Is-Ought problem without collapsing into thin universalism or cultural relativism.
-- **Policymakers.** Hard governance levers: citizen alignment assemblies, structural data portability (Utah Digital Choice Act), escrow-backed engagement contracts, bridging-based ranking transparency, and federated trust-and-safety (ROOST).
-- **System designers.** Actionable technical scaffolding: bridging algorithms (PCA/embedding overlap), shadow/canary orchestration with rollback, decision-trace schemas, community-authored eval registries (Weval), RLCF reward pipelines, and guardrail-as-code engines.
+- **Policymakers.** Hard governance levers: citizen alignment assemblies, structural data portability (Utah Digital Choice Act), escrow-backed engagement contracts, bridge audits, and federated trust-and-safety networks (ROOST).
+- **System designers.** Actionable technical scaffolding: bridging maps, shadow/canary orchestration with rollback, decision-trace schemas, community-authored eval registries (such as Weval), community-feedback pipelines, and guardrail-as-code engines.
 
 ## Key concepts
 
-- **Bridging algorithms.** Recommenders score content by cross-group endorsement, not outrage. Smaller, coherent clusters earn higher bridging weight because they are harder to reach.
+- **Bridging tools.** Pack 1 maps overlap and disagreement so missing voices and possible bridges become visible. Pack 5 audits whether civic systems reward cross-group cooperation rather than outrage.
 - **Engagement contracts.** Published, auditable specs — purpose, SLAs, pause triggers, remedies, sunset — that make power accountable and irresponsibility visible.
 - **Kami model.** Every agent has purpose bounds, resource caps, and a sunset timer. The component sunsets; the service duty persists through succession.
-- **RLCF.** Reinforcement Learning from Community Feedback — training agents to optimise for cross-group endorsement and trust-under-loss, not raw engagement.
-- **Meronymity.** Partial anonymity: verify an agent is anchored to a real entity without exposing the person.
+- **Community feedback.** Pack 4 gives affected communities the right to author evaluations, appeal outcomes, and judge whether repair counted. Some teams may later feed approved community feedback into routing or model updates, including Reinforcement Learning from Community Feedback (RLCF).
+- **Selective-disclosure identity.** Verify that an agent is anchored to a real steward without exposing the person publicly.
 
 ## Site
 

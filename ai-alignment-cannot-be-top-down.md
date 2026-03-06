@@ -99,7 +99,7 @@ Shifting market incentives in these ways can make attentiveness economically via
 
 If norms set expectations and markets set incentives, _community-scale AI assistants_ can make attentiveness tangible in daily civic life.
 
-Where foundation models aim for generality, community-scale assistants are tuned to the specific histories, dialects, and norms of a community, serving as mediators between global technologies and local realities. Through systems like [Reinforcement Learning from Community Feedback](https://arxiv.org/pdf/2506.24118), which rewards models for output that people with opposing views find reasonable, community-scale assistants can transform disagreement into sense-making and problem-solving.
+Where foundation models aim for generality, community-scale assistants are tuned to the specific histories, dialects, and norms of a community, serving as mediators between global technologies and local realities. Through community-authored evaluations, appeal loops, and, where appropriate, systems like [Reinforcement Learning from Community Feedback](https://arxiv.org/pdf/2506.24118), community-scale assistants can transform disagreement into sense-making and problem-solving.
 
 Platforms like [Polis](https://youtu.be/VbCZvU7i7VY?si=xxFvUkrTG3XoPak4&t=125), a machine learning platform that performs real-time analysis of public votes to build consensus on policy debates, already reveal what this looks like in practice. When combined with integrity infrastructure — oversight by representative citizen bodies, verifiable personhood credentials, and transparent logs — AI-enabled mediation can fill the gaps that one-size-fits-all global models inevitably miss, making AI governance adaptive, pluralistic, and auditable in real time.
 
