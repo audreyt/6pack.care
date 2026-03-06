@@ -13,9 +13,24 @@ nav_next:
 
 <em>唐鳳與 Liron Shapira 在《末日辯論》節目中展開深度對談——這是一個以超級智慧風險為主題的訪談系列。九十分鐘，探討為何 P (末日) 是 NaN（非數值）、什麼是透明馬架構，以及關懷六力如何在文明尺度上為仁工智慧治理提供藍圖。</em>
 
+## 摘要
+
+這場辯論把關懷六力放進超級智慧風險的討論中。如果想看見由上而下安全敘事，與有界、民主治理主張之間最鮮明的對照，這一頁最有用。
+
+### 重點
+
+- 唐鳳主張，當分母未知時，`P（末日）` 不能被當成一個穩定數值。
+- 治理必須隨著能力升級，而不是永遠落後於能力。
+- 一個永久中心的替代方案，是許多有界的在地守護者，也就是地神（Kami）。
+- 公民韌性不只仰賴實驗室端的安全技術，也取決於參與式制度。
+
+## 觀看
+
 <div class="video-embed">
 <iframe src="https://www.youtube-nocookie.com/embed/bvcmiirT8ME?si=urqA-2pfCO2UljU-" title="末日辯論——唐鳳與 Liron Shapira" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+
+## 完整逐字稿
 
 **Liron Shapira**：歡迎收看《末日辯論》。唐鳳是臺灣政治家兼自由軟體程式設計師，目前擔任臺灣數位治理無任所大使。她是自學成才的程式設計天才，國中輟學後成為全球開源社群的頂尖貢獻者。
 

@@ -14,9 +14,24 @@ nav_next:
 
 <em>唐鳳與 Caroline Green 博士合錄《AI 倫理加速》首集——錄製於唐鳳擔任牛津加速學人的第一天。五十八分鐘涵蓋數位民主、集體智慧、多元宇宙作為奇點的替代願景，以及為何 AI 倫理必須透過設計內建，而非事後補救。</em>
 
+## 摘要
+
+這場較早的對談提供了關懷六力背後的政治脈絡。如果想先理解臺灣、多元宇宙與民主治理的背景，再進入後續的關懷六力篇章，這一頁是最佳入口。
+
+### 重點
+
+- 當科技幫助群體找到罕見共識，而不是獎勵憤怒時，民主會運作得更好。
+- 臺灣的公民科技實踐，把衝突視為可以轉化為集體學習的材料。
+- AI 應該強化公民肌力，而不是取代人的判斷，或派聊天機器人代替我們審議。
+- 當問題涉及政治正當性時，參與基礎設施和模型能力同樣重要。
+
+## 觀看
+
 <div class="video-embed">
 <iframe src="https://iframe.cloudflarestream.com/977f34c1fd03b2285f368ac43554fad6" title="AI 與民主——唐鳳與 Caroline Green" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+
+## 完整逐字稿
 
 **Caroline Green**：哈囉，歡迎收聽牛津大學的《AI 倫理加速》Podcast。我是 Caroline Green 博士。在每一集裡，我們將探索大膽的想法、創新的思維，以及對人工智慧所帶來之倫理挑戰的創造性回應。今天的來賓，是一位真正重新定義科技與民主相遇時，有何可能性的非凡人物。
 
