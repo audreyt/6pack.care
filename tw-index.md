@@ -51,6 +51,13 @@ next_action:
 - **技術案例。** [《地神之內》](/tw/inside-the-kami/)主張，有界且專精的系統比通用型智慧體更容易治理。
 - **公民實踐案例。** [《數位公民》](/tw/ciudadania-digital/)和[Podcast：AI 與民主](/tw/ai-democracy-podcast/)展示這套工作如何連到參與、正當性，以及日常公共問題解決。
 
+## 學術發表
+
+- [〈廢除 Section 230，釋放第一修正案〉](https://cacm.acm.org/opinion/sunset-section-230-and-unleash-the-first-amendment/)：唐鳳、Jaron Lanier 與 Allison Stanger 主張終結演算法放大的免責保護，同時保護人類言論——這是 Pack 5 核心的觸及而非言論改革。_(Communications of the ACM, 2026 年 1 月)_
+- [〈惡意 AI 群集如何威脅民主〉](https://www.science.org/doi/10.1126/science.adz1697)：唐鳳與 Maria Ressa、Nick Bostrom、Nicholas Christakis 等 19 位研究者共同記錄 LLM 驅動的智慧體群集如何滲透社群、在人口規模上製造假共識。_(Science, 2026)_
+- [〈對話網路〉](https://www.mediatechdemocracy.com/conversation-networks)：唐鳳、Deb Roy 與 Lawrence Lessig 提出公民通訊基礎設施——可互通的應用程式加上由社群引導的仁工智慧——作為關懷六力的技術層。_(McGill Centre for Media, Technology and Democracy, 2025 年 3 月)_
+- [〈社群出發的設計〉](https://arxiv.org/abs/2502.10834)：唐鳳與 Glen Weyl 等四位共同作者提出以社會結構為核心重建社交平台——獎勵搭橋社群的內容，而非最大化互動。Packs 1 和 5 的技術基礎。_(arXiv, 2025 年 2 月)_
+
 ## 計畫簡介
 
 <div class="team-photos">
