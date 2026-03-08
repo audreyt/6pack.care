@@ -67,7 +67,7 @@ nav_next:
 
 ## 實踐中的覺察力
 
-**覺察力並非偶然出現；它建立在明確的倫理基礎上。** 在明尼蘇達大學 Joan Tronto 教授的關懷倫理基礎上，我與 Caroline Emmer De Albuquerque Green（牛津大學 AI 倫理研究所）共同開發了 [關懷六力（6-Pack of Care）](https://6pack.care/manifesto/)——六項環環相扣的實踐，將倫理原則轉化為制度設計。該框架承認一個基本的不對稱性：AI 以超出人類監督的速度和規模運作。為了保持對齊，我們的機構必須演進以匹配這種節奏，透過持續學習、回應和重新校準，並在每個層級都有人在迴路中。
+**覺察力並非偶然出現；它建立在明確的倫理基礎上。** 在明尼蘇達大學 Joan Tronto 教授的關懷倫理基礎上，我與 Caroline Emmer De Albuquerque Green（牛津大學 AI 倫理研究所）共同開發了 [關懷六力（6-Pack of Care）](https://civic.ai/manifesto/)——六項環環相扣的實踐，將倫理原則轉化為制度設計。該框架承認一個基本的不對稱性：AI 以超出人類監督的速度和規模運作。為了保持對齊，我們的機構必須演進以匹配這種節奏，透過持續學習、回應和重新校準，並在每個層級都有人在迴路中。
 
 <div class="overview-section">
 <noscript><img src="/img/overview-small.jpg" alt="關懷六力插圖，由 Nicky Case 繪製" class="overview-image" width="1280" height="1810" loading="lazy" decoding="async"></noscript>

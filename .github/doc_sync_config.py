@@ -7,7 +7,8 @@ import argparse
 
 DOC_ID = "1qmurZps5LUyFhjbM1C6DXtWrZvWXDd3rjIXpWsAABO0"
 DOC_ID_TW = "1RPe4yOtWcixia8ludAU0DDLTMcbV1zSKP2isxD_ljIo"
-SITE_URL = "https://6pack.care"
+SITE_URL = "https://civic.ai"
+SITE_URL_ALIASES = (SITE_URL, "https://6pack.care")
 
 # Files managed by the doc-sync workflow.
 SYNC_FILES = (

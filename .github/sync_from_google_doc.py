@@ -18,7 +18,15 @@ from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 
-from doc_sync_config import SITE_URL, TAB_MAP, SYNC_FILES, CONTENT_START, doc_id_for, validate_sync_config
+from doc_sync_config import (
+    CONTENT_START,
+    SITE_URL,
+    SITE_URL_ALIASES,
+    SYNC_FILES,
+    TAB_MAP,
+    doc_id_for,
+    validate_sync_config,
+)
 
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
@@ -77,15 +85,18 @@ def _find_tab(tabs: list[dict], target_id: str):
 
 
 def _relativise_url(url: str, page_path: str) -> str:
-    """Convert absolute 6pack.care URLs back to relative markdown links."""
-    if not url.startswith(SITE_URL):
-        return url
-    path = url[len(SITE_URL):]
-    if not path:
-        return "/"
-    if path.startswith(page_path + "#"):
-        return path[len(page_path):]
-    return path
+    """Convert absolute site URLs back to relative markdown links."""
+    for site_url in SITE_URL_ALIASES:
+        if not url.startswith(site_url):
+            continue
+        path = url[len(site_url):]
+        if not path:
+            return "/"
+        if path.startswith(page_path + "#"):
+            return path[len(page_path):]
+        return path
+
+    return url
 
 
 def _extract_front_matter(path: Path) -> str:
