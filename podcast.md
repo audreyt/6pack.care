@@ -39,7 +39,7 @@ This is the first full walk-through of the framework in conversation form. If th
 
 Today, we're moving from that broad vision to the specific architecture. Audrey and I have been collaborating here at Oxford on a new book that outlines exactly how we build this future. It's titled "The 6-Pack of Care: Exercising Civic Care in AI Governance." Audrey, welcome back.
 
-\*\*Audrey Tang: So happy to be back, and what a week working with you on this new microsite. It's up now. When you're hearing this, please check out "6", as in the number "6", 6pack.care and read our manifesto and the entire microsite.
+\*\*Audrey Tang: So happy to be back, and what a week working with you on this new microsite. It's up now. When you're hearing this, please check out "6", as in the number "6", civic.ai and read our manifesto and the entire microsite.
 
 \*\*Caroline Green: It's been such a pleasure working with you on this, and this episode is all about introducing the 6-Pack of Care and the Civic AI approach to the world.
 
@@ -197,7 +197,7 @@ And I think there is a real urgency for this approach. I also work on rights —
 
 Where do you see urgency, and what would you tell our listeners to do now once they've listened to our podcast and learned more about the civic care approach?
 
-\*\*Audrey Tang: Well, first of all, check out our microsite, 6pack.care, which links to our manifesto as well as concrete tools to start using. Anyone can run a local alignment assembly; anyone can tune a local AI model using the result of that alignment assembly, and see for themselves whether this kind of communal model responds better to their community needs. Anyone can advocate for social portability, for interoperability between the providers\*\*: and none of this is theoretical.
+\*\*Audrey Tang: Well, first of all, check out our microsite, civic.ai, which links to our manifesto as well as concrete tools to start using. Anyone can run a local alignment assembly; anyone can tune a local AI model using the result of that alignment assembly, and see for themselves whether this kind of communal model responds better to their community needs. Anyone can advocate for social portability, for interoperability between the providers\*\*: and none of this is theoretical.
 
 In the Frontier Labs — we work quite closely with parts of Google, for example, Jigsaw, and I just gave a talk at DeepMind. Parts of Microsoft Research focus on Plurality research in the collaboratory. OpenAI and Anthropic have both run alignment assemblies with the CIP.
 

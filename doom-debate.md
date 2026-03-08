@@ -340,7 +340,7 @@ Let’s also talk about a recent article, The 6-Pack of Care, right? That’s on
 
 **Audrey Tang**: Well, go ahead. I believe there’s a very nice comic illustration done by Nicky Case, who also illustrated AI Safety for Fleshy Humans, which is a great thing at aisafety.dance. So you can just read the comic, I guess.
 
-**Liron Shapira**: Here, let me put it up on the screen. Here I am at 6pack.care. It’s a website that anybody can visit. It says, “6-Pack of Care, Institute for Ethics and AI, a research project by Audrey Tang and Caroline Green.”
+**Liron Shapira**: Here, let me put it up on the screen. Here I am at civic.ai. It’s a website that anybody can visit. It says, “6-Pack of Care, Institute for Ethics and AI, a research project by Audrey Tang and Caroline Green.”
 
 And sure enough, there’s this image of a six-pack, and this is what it says: “Actually, listen to people,” that’s one of the things in the pack, and then, “Actually, keep promises. We check the process. We check the results. As win-win as possible, and as local as possible.” All right, so all of these together are part of plurality, basically, right? What would you add to that?
 

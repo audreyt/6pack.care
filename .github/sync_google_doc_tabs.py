@@ -196,7 +196,7 @@ def _clean_href(href: str) -> str:
             href = unquote(target[0])
             parsed = urlparse(href)
 
-    if parsed.scheme in {"http", "https"} and parsed.netloc.endswith(("civic.ai", "6pack.care")):
+    if parsed.scheme in {"http", "https"} and parsed.netloc.endswith(("civic.ai",)):
         path = parsed.path or "/"
         href = path if path.startswith("/") else f"/{path}"
         if parsed.query:
