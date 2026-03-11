@@ -57,7 +57,7 @@ agenda:
       break: true
     - time: "11:25"
       title: "The 6-Pack Unpacked"
-      speaker: "Caroline Green chairs Peter Danenberg, Audrey Tang, Joan Tronto, Rosalind Picard"
+      speaker: "Caroline Green chairs Peter Danenberg, Joan Tronto, Audrey Tang, Rosalind Picard"
       photos:
           - { src: "/img/caroline.jpg", alt: "Caroline Green", w: 512, h: 512 }
           - {
@@ -66,8 +66,8 @@ agenda:
                 w: 400,
                 h: 400,
             }
-          - { src: "/img/audrey.jpg", alt: "Audrey Tang", w: 512, h: 512 }
           - { src: "/img/joan-tronto.jpg", alt: "Joan Tronto", w: 620, h: 350 }
+          - { src: "/img/audrey.jpg", alt: "Audrey Tang", w: 512, h: 512 }
           - {
                 src: "/img/rosalind-picard.jpg",
                 alt: "Rosalind Picard",
@@ -157,8 +157,8 @@ agenda:
           - {
                 src: "/img/tenzin-gayche.jpg",
                 alt: "Tenzin Gayche",
-                w: 400,
-                h: 400,
+                w: 800,
+                h: 800,
             }
           - {
                 src: "/img/clenton-farquharson.jpg",

@@ -57,7 +57,7 @@ agenda:
       break: true
     - time: "11:25"
       title: "圓桌：解讀六力"
-      speaker: "Caroline Green 主持，Peter Danenberg、唐鳳、Joan Tronto、Rosalind Picard"
+      speaker: "Caroline Green 主持，Peter Danenberg、Joan Tronto、唐鳳、Rosalind Picard"
       photos:
           - { src: "/img/caroline.jpg", alt: "Caroline Green", w: 512, h: 512 }
           - {
@@ -66,8 +66,8 @@ agenda:
                 w: 400,
                 h: 400,
             }
-          - { src: "/img/audrey.jpg", alt: "唐鳳", w: 512, h: 512 }
           - { src: "/img/joan-tronto.jpg", alt: "Joan Tronto", w: 620, h: 350 }
+          - { src: "/img/audrey.jpg", alt: "唐鳳", w: 512, h: 512 }
           - {
                 src: "/img/rosalind-picard.jpg",
                 alt: "Rosalind Picard",
@@ -157,8 +157,8 @@ agenda:
           - {
                 src: "/img/tenzin-gayche.jpg",
                 alt: "Tenzin Gayche",
-                w: 400,
-                h: 400,
+                w: 800,
+                h: 800,
             }
           - {
                 src: "/img/clenton-farquharson.jpg",
