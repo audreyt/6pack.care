@@ -90,4 +90,4 @@ next_action:
 
 </div>
 
-本計畫介於[計畫宣言](/tw/manifesto/)、一組可操作的 pack 頁面，以及一本預計 2026 年出版的書之間。唐鳳與 Caroline Green 將於 2026 年 3 月 25 日在[仁工智慧研討會（Civic AI Conference）](https://www.oxford-aiethics.ox.ac.uk/event/civic-ai-conference-rhodes-house-south-park-road-oxford)發表本框架。
+本計畫介於[計畫宣言](/tw/manifesto/)、一組可操作的 pack 頁面，以及一本預計 2026 年出版的書之間。唐鳳與 Caroline Green 將於 2026 年 3 月 25 日在[仁工智慧研討會（Civic AI Conference）](/tw/conference/)發表本框架。

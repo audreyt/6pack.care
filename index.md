@@ -77,4 +77,4 @@ Six design principles translate care ethics into something institutions can buil
 
 </div>
 
-The project sits between a [manifesto](/manifesto/), a set of operational pack pages, and a book arriving in 2026. Audrey Tang and Caroline Green will present the framework at the [Civic AI Conference](https://www.oxford-aiethics.ox.ac.uk/event/civic-ai-conference-rhodes-house-south-park-road-oxford) on 25 March 2026.
+The project sits between a [manifesto](/manifesto/), a set of operational pack pages, and a book arriving in 2026. Audrey Tang and Caroline Green will present the framework at the [Civic AI Conference](/conference/) on 25 March 2026.
