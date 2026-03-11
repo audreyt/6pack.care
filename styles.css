@@ -1191,6 +1191,184 @@ footer a:hover {
     margin-top: 0;
 }
 
+/* ─── CONFERENCE PAGE ─── */
+.conf-intro {
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    color: var(--muted);
+    border-left: 3px solid var(--gold);
+    padding: 16px 24px;
+    background: var(--warm);
+    border-radius: 0 4px 4px 0;
+    margin: 0 0 2em;
+}
+
+.conf-intro p {
+    margin: 0.5em 0;
+}
+
+.conf-goals {
+    display: grid;
+    gap: 16px;
+    margin: 0 0 2.5em;
+}
+
+@media (min-width: 720px) {
+    .conf-goals {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.conf-goal {
+    background: var(--warm);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 24px;
+}
+
+.conf-goal h3 {
+    font-size: 1.1rem;
+    margin: 0.3em 0 0.4em;
+    padding: 0;
+    border: none;
+}
+
+.conf-goal p {
+    font-size: 0.92rem;
+    color: var(--muted);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.conf-goal-num {
+    font-family: var(--sans);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--gold);
+    line-height: 1;
+}
+
+/* Agenda timeline */
+.conf-agenda {
+    position: relative;
+    padding-left: 2px;
+    margin: 1.5em 0 2em;
+}
+
+.conf-agenda::before {
+    content: "";
+    position: absolute;
+    left: 54px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--gold), var(--teal));
+    border-radius: 1px;
+}
+
+.conf-slot {
+    display: flex;
+    gap: 24px;
+    position: relative;
+    padding: 12px 0;
+}
+
+.conf-slot::before {
+    content: "";
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--surface);
+    border: 2px solid var(--gold);
+    z-index: 1;
+}
+
+.conf-time {
+    flex: 0 0 44px;
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--gold);
+    text-align: right;
+    padding-top: 4px;
+    letter-spacing: 0.02em;
+}
+
+.conf-detail {
+    flex: 1;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin-left: 24px;
+    font-family: var(--sans);
+}
+
+.conf-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--heading);
+    margin-bottom: 4px;
+}
+
+.conf-detail .conf-speaker {
+    font-size: 0.85rem;
+    color: var(--teal);
+    line-height: 1.5;
+}
+
+.conf-break .conf-detail {
+    background: var(--warm);
+    border-style: dashed;
+    color: var(--gold);
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.conf-break::before {
+    border-color: var(--border);
+    background: var(--warm);
+}
+
+.conf-tool-note {
+    text-align: center;
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    color: var(--muted);
+    background: var(--warm);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 10px 16px;
+    margin: 0 0 2em;
+}
+
+/* Mobile adjustments for agenda timeline */
+@media (max-width: 719px) {
+    .conf-agenda::before {
+        left: 38px;
+    }
+
+    .conf-slot::before {
+        left: 34px;
+    }
+
+    .conf-time {
+        flex: 0 0 28px;
+        font-size: 0.75rem;
+    }
+
+    .conf-detail {
+        margin-left: 16px;
+        padding: 12px 16px;
+    }
+}
+
 /* ─── DARK MODE ─── */
 @media (prefers-color-scheme: dark) {
     :root {
