@@ -1,0 +1,454 @@
+<!doctype html>
+{% assign lang2 = lang | split: '-' | first %}
+<html lang="{{ lang | default: 'en' }}">
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            if (location.hostname === "6pack.care")
+                location.replace(
+                    "https://civic.ai" +
+                        location.pathname +
+                        location.search +
+                        location.hash
+                );
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{{ title }} — {{ subtitle }}</title>
+        <meta
+            name="theme-color"
+            content="#0f1923"
+            media="(prefers-color-scheme: dark)"
+        />
+        <meta
+            name="theme-color"
+            content="#faf8f5"
+            media="(prefers-color-scheme: light)"
+        />
+        <meta name="color-scheme" content="light dark" />
+        {% assign og_desc = og_description | default: description %} {% if
+        og_image %}{% assign og_img = og_image %}{% elsif lang2 == 'zh' %}{%
+        assign og_img = site.url | append: '/img/overview-small-tw.jpg' %}{%
+        else %}{% assign og_img = site.url | append: '/img/overview-small.jpg'
+        %}{% endif %}
+        <meta property="og:title" content="{{ title }} — {{ subtitle }}" />
+        <meta property="og:description" content="{{ og_desc }}" />
+        <meta property="og:image" content="{{ og_img }}" />
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="{{ title }} — {{ subtitle }}" />
+        <meta name="twitter:description" content="{{ og_desc }}" />
+        <meta name="twitter:image" content="{{ og_img }}" />
+        <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}" />
+        <link
+            rel="preload"
+            as="font"
+            type="font/woff2"
+            href="{{ '/fonts/outfit-latin.woff2' | relative_url }}"
+            crossorigin
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            media="print"
+            onload="this.media = 'all'"
+        />
+        <noscript
+            ><link
+                rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        /></noscript>
+        <style>
+            /* Speaker photo in agenda slot */
+            .conf-detail-with-photo {
+                display: flex;
+                gap: 16px;
+                align-items: flex-start;
+            }
+            .conf-detail-with-photo img {
+                width: 52px;
+                height: 52px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 2px solid var(--border);
+                flex-shrink: 0;
+            }
+            .conf-detail-with-photo .conf-detail-text {
+                flex: 1;
+                min-width: 0;
+            }
+
+            /* Hosts banner with photos */
+            .conf-hosts {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                margin: 0 0 2.5em;
+                flex-wrap: wrap;
+            }
+            .conf-host {
+                text-align: center;
+                text-decoration: none;
+            }
+            .conf-host img {
+                width: 140px;
+                height: 140px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 3px solid var(--border);
+                transition:
+                    border-color 0.3s,
+                    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+                display: block;
+                margin: 0 auto 10px;
+            }
+            .conf-host:hover img {
+                border-color: var(--gold);
+                transform: scale(1.03);
+            }
+            .conf-host strong {
+                font-family: var(--serif);
+                font-size: 1.05rem;
+                display: block;
+            }
+            .conf-host span {
+                font-family: var(--sans);
+                font-size: 0.78rem;
+                color: var(--muted);
+            }
+
+            /* Overview diagram */
+            .conf-diagram {
+                text-align: center;
+                margin: 0 0 2em;
+            }
+            .conf-diagram img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 4px;
+                border: 1px solid var(--border);
+            }
+
+            /* Panel row of circular photos */
+            .conf-panel-photos {
+                display: flex;
+                gap: 8px;
+                margin: 6px 0 10px;
+            }
+            .conf-panel-photos img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 2px solid var(--border);
+                flex-shrink: 0;
+            }
+
+            /* Condensed 6-Pack summary */
+            .conf-packs-condensed {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 6px;
+                margin: 0.5em 0 1em;
+                font-family: var(--sans);
+                font-size: 0.82rem;
+            }
+            .conf-packs-condensed a {
+                background: var(--warm);
+                border: 1px solid var(--border);
+                border-radius: 3px;
+                padding: 5px 12px;
+                text-decoration: none;
+                color: var(--text);
+                transition: border-color 0.2s;
+            }
+            .conf-packs-condensed a:hover {
+                border-color: var(--gold);
+                color: var(--heading);
+            }
+            .conf-packs-condensed a strong {
+                color: var(--gold);
+                font-weight: 600;
+                margin-right: 4px;
+            }
+        </style>
+        <script>
+            function __imgProbe(s) {
+                return new Promise(function (r) {
+                    var i = new Image();
+                    i.onload = function () {
+                        r(i.width > 0);
+                    };
+                    i.onerror = function () {
+                        r(!1);
+                    };
+                    i.src = s;
+                });
+            }
+            window.__avif = __imgProbe(
+                '{{ "/img/probe.avif" | relative_url }}'
+            );
+        </script>
+    </head>
+    <body>
+        {% if lang2 == 'en' %}
+        <a class="skip-link" href="#main">Skip to content</a>
+        {% else %}
+        <a class="skip-link" href="#main">跳至內容</a>
+        {% endif %}
+
+        <header>
+            <a href="https://www.ox.ac.uk/"
+                ><img
+                    class="oxford-logo"
+                    width="100"
+                    height="100"
+                    src="{{ '/img/oxford-logo.svg' | relative_url }}"
+                    alt="University of Oxford Logo"
+            /></a>
+            <a href="https://afp.oxford-aiethics.ox.ac.uk/"
+                ><img
+                    class="oxford-logo"
+                    width="246"
+                    height="100"
+                    src="{{ '/img/afp-logo.svg' | relative_url }}"
+                    alt="Accelerator Fellowship Programme Logo"
+            /></a>
+
+            <div style="position: absolute; top: 20px; right: 20px">
+                <a href="{{ alt_lang_url | relative_url }}" class="lang-toggle"
+                    >{{ alt_lang_label }}</a
+                >
+            </div>
+
+            <h1>{{ title }}</h1>
+            <p
+                style="
+                    color: rgba(255, 255, 255, 0.7);
+                    font-family: var(--sans);
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                    letter-spacing: 0.06em;
+                    margin: 8px 0 0;
+                "
+            >
+                {{ subtitle }}
+            </p>
+            <p class="chapter-date">{{ date_line }}</p>
+            <br />
+            <a href="{{ register_url }}" class="next-action-button">
+                <span class="button-text">
+                    <svg
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        style="vertical-align: -0.1em"
+                    >
+                        <path d="M4.5 11.5 11.5 4.5M6 4.5h6v6" />
+                    </svg>
+                    {{ register_text }}
+                </span>
+            </a>
+        </header>
+
+        <main id="main">
+            <!-- Hosts -->
+            <div class="conf-hosts">
+                {% for host in hosts %}
+                <a href="{{ host.url }}" class="conf-host">
+                    <noscript
+                        ><img
+                            src="{{ host.photo.src }}"
+                            alt="{{ host.name }}"
+                            width="{{ host.photo.w }}"
+                            height="{{ host.photo.h }}"
+                            loading="lazy"
+                            decoding="async"
+                    /></noscript>
+                    <strong>{{ host.name }}</strong>
+                    <span>{{ host.role }}</span>
+                </a>
+                {% endfor %}
+            </div>
+
+            <!-- Intro -->
+            <section class="conf-intro">{{ content }}</section>
+
+            <!-- Goals -->
+            <div class="conf-goals">
+                {% for goal in goals %}
+                <div class="conf-goal">
+                    <span class="conf-goal-num"
+                        >{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span
+                    >
+                    <h3>{{ goal.title }}</h3>
+                    <p>{{ goal.text }}</p>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- Agenda -->
+            <h2>{{ agenda_title }}</h2>
+
+            <div class="conf-agenda">
+                {% for slot in agenda %} {% if slot.break %}
+                <div class="conf-slot conf-break">
+                    <div class="conf-time">{{ slot.time }}</div>
+                    <div class="conf-detail">{{ slot.title }}</div>
+                </div>
+                {% elsif slot.photos %}
+                <div class="conf-slot">
+                    <div class="conf-time">{{ slot.time }}</div>
+                    <div class="conf-detail">
+                        <div class="conf-panel-photos">
+                            {% for p in slot.photos %}
+                            <noscript
+                                ><img
+                                    src="{{ p.src }}"
+                                    alt="{{ p.alt }}"
+                                    width="{{ p.w }}"
+                                    height="{{ p.h }}"
+                            /></noscript>
+                            {% endfor %}
+                        </div>
+                        <div class="conf-title">{{ slot.title }}</div>
+                        {% if slot.speaker %}
+                        <div class="conf-speaker">{{ slot.speaker }}</div>
+                        {% endif %} {% if slot.description %}
+                        <div class="conf-desc">{{ slot.description }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% elsif slot.photo %}
+                <div class="conf-slot">
+                    <div class="conf-time">{{ slot.time }}</div>
+                    <div class="conf-detail">
+                        <div class="conf-detail-with-photo">
+                            <noscript
+                                ><img
+                                    src="{{ slot.photo.src }}"
+                                    alt="{{ slot.photo.alt }}"
+                                    width="{{ slot.photo.w }}"
+                                    height="{{ slot.photo.h }}"
+                            /></noscript>
+                            <div class="conf-detail-text">
+                                <div class="conf-title">{{ slot.title }}</div>
+                                {% if slot.speaker %}
+                                <div class="conf-speaker">
+                                    {{ slot.speaker }}
+                                </div>
+                                {% endif %} {% if slot.description %}
+                                <div class="conf-desc">
+                                    {{ slot.description }}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                <div class="conf-slot">
+                    <div class="conf-time">{{ slot.time }}</div>
+                    <div class="conf-detail">
+                        <div class="conf-title">{{ slot.title }}</div>
+                        {% if slot.speaker %}
+                        <div class="conf-speaker">{{ slot.speaker }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %} {% endfor %}
+            </div>
+
+            <!-- Condensed 6-Pack -->
+            <h2>{{ packs_title }}</h2>
+
+            <p style="font-size: 0.95rem">
+                {{ packs_intro }}
+                <a href="{{ packs_link_url }}">{{ packs_link_text }}</a>.
+            </p>
+
+            <div class="conf-packs-condensed">
+                {% for pack in packs %}
+                <a href="{{ pack.url }}"
+                    ><strong>{{ pack.num }}</strong> {{ pack.name }}</a
+                >
+                {% endfor %}
+            </div>
+
+            <!-- Overview diagram -->
+            <div class="conf-diagram">
+                <noscript
+                    ><img
+                        src="{{ overview_image.src }}"
+                        alt="{{ overview_image.alt }}"
+                        width="{{ overview_image.w }}"
+                        height="{{ overview_image.h }}"
+                        loading="lazy"
+                        decoding="async"
+                /></noscript>
+            </div>
+        </main>
+
+        <section class="next-action">
+            <div class="next-action-content">
+                <p style="margin: 0 0 4px; font-size: 0.95rem; opacity: 0.75">
+                    {{ register_note }}
+                </p>
+                <a href="{{ register_url }}" class="next-action-button">
+                    <span class="button-text">{{ register_button }}</span>
+                    <span class="button-arrow">
+                        <svg
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            style="vertical-align: -0.1em"
+                        >
+                            <path d="M4.5 11.5 11.5 4.5M6 4.5h6v6" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        {% include "footer.html" %}
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Event",
+                "name": "{{ title }} — {{ subtitle }}",
+                "url": "{{ site.url }}{{ page.url }}",
+                "description": "{{ og_desc }}",
+                "organizer": {
+                    "@type": "Organization",
+                    "name": "Oxford Institute for Ethics in AI",
+                    "url": "https://www.oxford-aiethics.ox.ac.uk/"
+                }
+            }
+        </script>
+        <script>
+            window.__avif.then(function (ok) {
+                document.querySelectorAll("noscript").forEach(function (ns) {
+                    var html = ns.textContent;
+                    if (html.indexOf("<img ") === -1) return;
+                    if (ok)
+                        html = html.replace(/\.(jpg|png)(?=["'\s])/g, ".avif");
+                    var tmp = document.createElement("div");
+                    tmp.innerHTML = html;
+                    var img = tmp.querySelector("img");
+                    if (img) ns.parentNode.insertBefore(img, ns);
+                });
+            });
+        </script>
+    </body>
+</html>

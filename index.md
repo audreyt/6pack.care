@@ -28,6 +28,8 @@ The 6-Pack starts somewhere else. It asks who gets heard, who is accountable, ho
 
 The 6-Pack treats AI not as a universal governor but as a bounded local steward, or **Kami**: specific to a place, open to challenge, and easy to hand off or retire.
 
+**[Civic AI Conference 2026 — 25 March, Rhodes House, Oxford](/conference/)**
+
 ## Start here
 
 - **Policy.** Read the [Manifesto](/manifesto/), the [FAQ](/faq/), and ["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/).
