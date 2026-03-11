@@ -83,7 +83,7 @@ agenda:
       speaker: "Anya Daly, Mercer Gary, Belen Liedo"
       photos:
           - { src: "/img/anya-daly.jpg", alt: "Anya Daly", w: 238, h: 238 }
-          - { src: "/img/mercer-gary.jpg", alt: "Mercer Gary", w: 799, h: 630 }
+          - { src: "/img/mercer-gary.jpg", alt: "Mercer Gary", w: 125, h: 150 }
           - { src: "/img/belen-liedo.jpg", alt: "Belen Liedo", w: 566, h: 566 }
     - time: "12:50"
       title: "Video: Self-actualisation & Care"
