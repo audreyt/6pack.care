@@ -139,26 +139,26 @@ agenda:
             }
     - time: "14:45"
       title: "可及智慧"
-      speaker: "唐鳳主持，Tenzin Thinley、Tenzin Gayche、Geshe Lobsang、Clenton Farquharson"
+      speaker: "唐鳳主持，Geshe Lobsang、Tenzin Thinley、Tenzin Gayche、Clenton Farquharson"
       photos:
           - { src: "/img/audrey.jpg", alt: "唐鳳", w: 512, h: 512 }
           - {
+                src: "/img/geshe-lobsang.jpg",
+                alt: "Geshe Lobsang",
+                w: 800,
+                h: 800,
+            }
+          - {
                 src: "/img/tenzin-thinley.jpg",
                 alt: "Tenzin Thinley",
-                w: 284,
-                h: 252,
+                w: 800,
+                h: 800,
             }
           - {
                 src: "/img/tenzin-gayche.jpg",
                 alt: "Tenzin Gayche",
                 w: 400,
                 h: 400,
-            }
-          - {
-                src: "/img/geshe-lobsang.jpg",
-                alt: "Geshe Lobsang",
-                w: 425,
-                h: 425,
             }
           - {
                 src: "/img/clenton-farquharson.jpg",
