@@ -194,6 +194,7 @@ packs_title: "The 6-Pack of Care"
 packs_intro: "Six interlocking principles for building AI that cares."
 packs_link_text: "Explore the framework"
 packs_link_url: "/"
+packs_period: "."
 packs:
     - { num: 1, name: "Attentiveness", url: "/1/" }
     - { num: 2, name: "Responsibility", url: "/2/" }

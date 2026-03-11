@@ -194,6 +194,7 @@ packs_title: "關懷六力"
 packs_intro: "六項環環相扣的關懷設計原則。"
 packs_link_text: "探索框架"
 packs_link_url: "/tw/"
+packs_period: "。"
 packs:
     - { num: 1, name: "覺察力", url: "/tw/1/" }
     - { num: 2, name: "負責力", url: "/tw/2/" }
