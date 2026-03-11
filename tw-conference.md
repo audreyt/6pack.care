@@ -23,7 +23,7 @@ hosts:
       photo: { src: "/img/caroline.jpg", w: 512, h: 512 }
 goals:
     - title: "共識"
-      text: "讓所有人對「健全仁性」與「仁工智慧」達成共同理解。"
+      text: "讓所有人對「健全人性」與「仁工智慧」達成共同理解。"
     - title: "安全空間"
       text: "一個能夠公開提出困難問題、不確定性和挑戰的場所。"
     - title: "實質影響"
@@ -32,7 +32,7 @@ agenda_title: "議程草案"
 agenda:
     - time: "09:45"
       title: "歡迎致詞與定調今日"
-      speaker: "Caroline Green——斷裂、健全仁性與關係性福祉"
+      speaker: "Caroline Green——斷裂、健全人性與關係性福祉"
       photo: { src: "/img/caroline.jpg", alt: "Caroline Green", w: 512, h: 512 }
     - time: "10:05"
       title: "主題演講 1"
@@ -210,4 +210,4 @@ overview_image:
 
 2026 年 3 月 25 日，我們齊聚牛津羅德學院，打開關懷六力——由唐鳳與 Caroline Green 創建的框架，將關懷倫理轉化為仁工智慧的可操作原則。
 
-我們將直面斷裂與絕望，攜手打造一條以健全仁性為先的前行道路。
+我們將直面斷裂與絕望，攜手打造一條以健全人性為先的前行道路。
