@@ -211,4 +211,4 @@ overview_image:
 
 On 25 March 2026 we gather at Rhodes House to unpack the 6-Pack of Care — the framework created by Audrey Tang and Caroline Green that translates care ethics into actionable principles for Civic AI.
 
-We will name the rupture, address hopelessness, and build a forward path that puts healthy humanity first.
+We will name the rupture, address hopelessness, and build a path towards healthier humanity — together.
