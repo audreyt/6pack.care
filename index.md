@@ -38,6 +38,8 @@ The 6-Pack treats AI not as a universal governor but as a bounded local steward,
 
 ## The 6-Pack
 
+The 6-Pack is an application of [⿻ Plurality](https://plurality.net) to AI governance. Packs 1–4 form a feedback loop (Attentiveness → Responsibility → Competence → Responsiveness → back to Attentiveness). Pack 5 scales that loop across organisations. Pack 6 is the boundary condition that keeps every deployment local, plural, and sunset-ready. The unit of deployment is the **Kami** — a bounded local steward, not a universal governor.
+
 Six design principles translate care ethics into something institutions can build and inspect:
 
 - **[Pack 1: Attentiveness](/1/)** — what the people closest to the problem are seeing that institutions still miss.
