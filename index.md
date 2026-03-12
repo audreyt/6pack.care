@@ -20,13 +20,17 @@ next_action:
 <noscript><img src="/img/overview-small.jpg" alt="6-Pack of Care visual overview" class="overview-image" width="1280" height="1810" fetchpriority="high" decoding="async"></noscript>
 </div>
 
-**Civic AI is alignment by public process: community-authored safeguards, public accountability, and bounded local systems.**
+**Governance should feel like a daily capability, not just a periodic vote.**
 
 Most AI alignment work tries to solve values from the top down: write better rules, infer better preferences, train better models. Those tools matter. They are not enough on their own.
 
 The 6-Pack starts somewhere else. It asks who gets heard, who is accountable, how failures are repaired, and when a system should stop. Alignment is not solved once. It is maintained in public.
 
-The 6-Pack treats AI not as a universal governor but as a bounded local steward, or **Kami**: specific to a place, open to challenge, and easy to hand off or retire.
+The unit of deployment is the **Kami** — a bounded local steward, not a universal governor. Kamis help neighbourhoods, schools, unions, faith groups, cities, and diasporas do what collective self-government has always promised but rarely delivered at scale: listen across difference, deliberate in the open, remember faithfully, and act together.
+
+No central model owns them. No platform extracts from them. Communities govern them, inspect them, contest them, and shut them down.
+
+The breakthrough is not smarter chatbots. It is stronger self-government: institutions that show their work, repair harm in public, and carry civic memory across generations.
 
 **[Civic AI Conference 2026 — 25 March, Rhodes House, Oxford](/conference/)**
 
