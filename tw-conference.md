@@ -207,7 +207,7 @@ overview_image:
 
 <figure class="conf-quote">
     <div class="conf-quote-portrait">
-        <a href="https://www.youtube.com/watch?v=q1NhzpQi_50&amp;t=40s"><noscript><img src="/img/his-holiness-dalai-lama.jpg" alt="第十四世達賴喇嘛" width="512" height="512" loading="lazy" decoding="async" /></noscript></a>
+        <a href="https://www.youtube.com/watch?v=q1NhzpQi_50&amp;t=40s"><noscript><img src="/img/his-holiness-dalai-lama.jpg" alt="第十四世達賴喇嘛" width="512" height="341" loading="lazy" decoding="async" /></noscript></a>
     </div>
     <div class="conf-quote-copy">
         <blockquote>
