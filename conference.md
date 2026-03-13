@@ -207,7 +207,7 @@ overview_image:
 
 <figure class="conf-quote">
     <div class="conf-quote-portrait">
-        <img src="/img/his-holiness-dalai-lama.jpg" alt="His Holiness the 14th Dalai Lama answers a question from Tenzin Yangtso" width="512" height="512" loading="lazy" decoding="async" />
+        <noscript><img src="/img/his-holiness-dalai-lama.jpg" alt="His Holiness the 14th Dalai Lama answers a question from Tenzin Yangtso" width="512" height="512" loading="lazy" decoding="async" /></noscript>
     </div>
     <div class="conf-quote-copy">
         <blockquote>
