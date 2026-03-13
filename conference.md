@@ -183,7 +183,7 @@ agenda:
                 h: 400,
             }
     - time: "16:00"
-      title: "End Reflections — Pass the Mic"
+      title: "End Reflections [Pass the Mic]"
     - time: "16:30"
       title: "Wrap Up & Goodbye"
 packs_title: "The 6-Pack of Care"
