@@ -59,6 +59,7 @@ Six design principles translate care ethics into something institutions can buil
 - **A public-policy case.** ["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/) shows how Taiwan used an Alignment Assembly to respond to AI-enabled scam ads.
 - **A technical case.** ["Inside the Kami"](/inside-the-kami/) argues that bounded, specialised systems are easier to govern than general-purpose agents.
 - **A civic-practice case.** ["Ciudadanía Digital"](/ciudadania-digital/) and [Podcast: AI and Democracy](/ai-democracy-podcast/) show how this work connects to participation, legitimacy, and everyday public problem-solving.
+- **A long-term care case.** ["Attentiveness in Long-Term Care AI"](/care-ai/) examines how a cross-sector collaboration co-produced a care-centric definition of responsible AI with the people closest to the problem.
 
 ## Publications
 
