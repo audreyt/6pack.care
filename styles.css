@@ -1222,7 +1222,7 @@ footer a:hover {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 14px;
+    border-radius: 50%;
     border: 2px solid var(--border);
     box-shadow: 0 10px 24px rgba(15, 25, 35, 0.12);
 }
