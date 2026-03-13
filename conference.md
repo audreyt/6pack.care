@@ -207,12 +207,12 @@ overview_image:
 
 <figure class="conf-quote">
     <div class="conf-quote-portrait">
-        <a href="https://www.youtube.com/watch?v=q1NhzpQi_50&amp;t=40s"><noscript><img src="/img/his-holiness-dalai-lama.jpg" alt="His Holiness the 14th Dalai Lama" width="512" height="512" loading="lazy" decoding="async" /></noscript></a>
+        <noscript><img src="/img/his-holiness-dalai-lama.jpg" alt="His Holiness the 14th Dalai Lama" width="512" height="512" loading="lazy" decoding="async" /></noscript>
     </div>
     <div class="conf-quote-copy">
         <blockquote>
-            <p>"In the end, artificial intelligence is a tool for this world. No matter how advanced it becomes, it can never replace the human mind's capacity for instantaneous change and its boundless power of perception.</p>
-            <p>Because life does not begin in isolation but arises from a nature of interdependence, we must use these tools not for the sake of control, but to improve the pathways of human connection. The true compassion within technology acts as a bridge to clear away the ignorance between us."</p>
+            <p>In the end, artificial intelligence is a tool for this world. No matter how advanced it becomes, it can never replace the human mind's capacity for instantaneous change and its boundless power of perception.</p>
+            <p>Because life does not begin in isolation but arises from a nature of interdependence, we must use these tools not for the sake of control, but to improve the pathways of human connection. The true compassion within technology acts as a bridge to clear away the ignorance between us.</p>
         </blockquote>
         <figcaption>— His Holiness Dalai Lama XIV</figcaption>
     </div>

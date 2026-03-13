@@ -1229,12 +1229,46 @@ footer a:hover {
 
 .conf-quote blockquote {
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 1.2em;
     border: 0;
-    color: inherit;
-    font-size: inherit;
-    font-style: inherit;
-    line-height: inherit;
+    font-family: "Cormorant Garamond", var(--serif);
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 1.55;
+    color: var(--heading);
+    position: relative;
+}
+
+:lang(zh) .conf-quote blockquote {
+    font-style: normal;
+}
+
+.conf-quote blockquote::before {
+    content: "\201C";
+    position: absolute;
+    top: -0.15em;
+    left: -0.05em;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 3.5rem;
+    font-style: normal;
+    line-height: 1;
+    color: var(--gold);
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.conf-quote blockquote::after {
+    content: "\201D";
+    position: absolute;
+    bottom: -0.5em;
+    right: -0.1em;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 3.5rem;
+    font-style: normal;
+    line-height: 1;
+    color: var(--gold);
+    opacity: 0.5;
+    pointer-events: none;
 }
 
 .conf-quote blockquote p {
