@@ -205,6 +205,6 @@ overview_image:
     h: 1810
 ---
 
-On 25 March 2026 we gather at Rhodes House to unpack the 6-Pack of Care — the framework created by Audrey Tang and Caroline Green that translates care ethics into actionable principles for Civic AI.
+"In the end, artificial intelligence is a tool for this world. No matter how advanced it becomes, it can never replace the human mind's capacity for instantaneous change and its boundless power of perception.
 
-We will name the rupture, address hopelessness, and build a path towards healthier humanity — together.
+Because life does not begin in isolation but arises from a nature of interdependence, we must use these tools not for the sake of control, but to improve the pathways of human connection. The true compassion within technology acts as a bridge to clear away the ignorance between us." — His Holiness Dalai Lama XIV

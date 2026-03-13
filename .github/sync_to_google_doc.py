@@ -11,7 +11,6 @@ in the environment (e.g. from GitHub Secrets).
 
 from __future__ import annotations
 
-import os
 import re
 import sys
 from collections import defaultdict
@@ -20,9 +19,8 @@ from pathlib import Path
 from typing import Optional
 
 from markdown_it import MarkdownIt
-from google.oauth2.credentials import Credentials
-from googleapiclient.discovery import build
 from doc_sync_config import SITE_URL, TAB_MAP, SYNC_FILES, CONTENT_START, doc_id_for, validate_sync_config
+from doc_sync_auth import build_docs_service
 
 _md = MarkdownIt()
 
@@ -443,26 +441,6 @@ def _build_requests(
     return requests, full_text
 
 
-# ── Auth ─────────────────────────────────────────────────────────────
-
-
-def _credentials() -> Credentials:
-    refresh = os.environ.get("GOOGLE_REFRESH_TOKEN")
-    cid = os.environ.get("GOOGLE_CLIENT_ID")
-    csecret = os.environ.get("GOOGLE_CLIENT_SECRET")
-    if not all([refresh, cid, csecret]):
-        raise SystemExit(
-            "Missing env: GOOGLE_REFRESH_TOKEN, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET"
-        )
-    return Credentials(
-        token=None,
-        refresh_token=refresh,
-        client_id=cid,
-        client_secret=csecret,
-        token_uri="https://oauth2.googleapis.com/token",
-    )
-
-
 # ── Helpers ──────────────────────────────────────────────────────────
 
 
@@ -523,8 +501,7 @@ def main() -> None:
     md_files = sys.argv[1:] if len(sys.argv) > 1 else list(SYNC_FILES)
     md_paths = _validate_paths(md_files)
 
-    creds = _credentials()
-    service = build("docs", "v1", credentials=creds)
+    service = build_docs_service()
 
     # Group files by doc ID so each document is fetched once.
     groups: dict[str, list[Path]] = defaultdict(list)
