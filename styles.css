@@ -1288,6 +1288,7 @@ footer a:hover {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--heading);
+    text-align: right;
 }
 
 :lang(zh) .conf-quote figcaption {
