@@ -207,7 +207,7 @@ overview_image:
 
 <figure class="conf-quote">
     <div class="conf-quote-portrait">
-        <noscript><img src="/img/his-holiness-dalai-lama.jpg" alt="第十四世達賴喇嘛回答 Tenzin Yangtso 的提問" width="512" height="512" loading="lazy" decoding="async" /></noscript>
+        <img src="/img/his-holiness-dalai-lama.jpg" alt="第十四世達賴喇嘛回答 Tenzin Yangtso 的提問" width="512" height="512" loading="lazy" decoding="async" />
     </div>
     <div class="conf-quote-copy">
         <blockquote>

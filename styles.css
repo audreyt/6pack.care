@@ -1216,6 +1216,7 @@ footer a:hover {
 .conf-quote-portrait {
     width: min(144px, 40vw);
     justify-self: center;
+    overflow: hidden;
 }
 
 .conf-quote-portrait img {
