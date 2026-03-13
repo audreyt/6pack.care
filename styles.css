@@ -1267,7 +1267,11 @@ footer a:hover {
     .conf-quote {
         grid-template-columns: auto 1fr;
         gap: 20px;
-        align-items: center;
+        align-items: start;
+    }
+
+    .conf-quote-portrait {
+        padding-top: 0.25em;
     }
 
     .conf-quote-portrait {
