@@ -205,6 +205,15 @@ overview_image:
     h: 1600
 ---
 
-「歸根結底，人工智慧是這個世界的一種工具。無論它發展到多麼先進的高度，都永遠無法取代人類心智那種瞬息萬變的能力，以及無窮無盡的思維潛能。
-
-生命並非孤立自存，而是源於相互依存的緣起；因此，我們運用這些工具的目的不應是為了『控制』，而是為了改善人與人之間的關係。科技中真正的慈悲，應如同一座橋樑，消除我們之間的隔閡與無知。」——第十四世達賴喇嘛
+<figure class="conf-quote">
+    <div class="conf-quote-portrait">
+        <noscript><img src="/img/his-holiness-dalai-lama.jpg" alt="第十四世達賴喇嘛" width="512" height="512" loading="lazy" decoding="async" /></noscript>
+    </div>
+    <div class="conf-quote-copy">
+        <blockquote>
+            <p>「歸根結底，人工智慧是這個世界的一種工具。無論它發展到多麼先進的高度，都永遠無法取代人類心智那種瞬息萬變的能力，以及無窮無盡的思維潛能。</p>
+            <p>生命並非孤立自存，而是源於相互依存的緣起；因此，我們運用這些工具的目的不應是為了『控制』，而是為了改善人與人之間的關係。科技中真正的慈悲，應如同一座橋樑，消除我們之間的隔閡與無知。」</p>
+        </blockquote>
+        <figcaption>——第十四世達賴喇嘛</figcaption>
+    </div>
+</figure>

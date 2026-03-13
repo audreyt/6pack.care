@@ -1207,6 +1207,75 @@ footer a:hover {
     margin: 0.5em 0;
 }
 
+.conf-quote {
+    display: grid;
+    gap: 16px;
+    margin: 0;
+}
+
+.conf-quote-portrait {
+    width: min(144px, 40vw);
+    justify-self: center;
+}
+
+.conf-quote-portrait img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 2px solid var(--border);
+    box-shadow: 0 10px 24px rgba(15, 25, 35, 0.12);
+}
+
+.conf-quote blockquote {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    line-height: inherit;
+}
+
+.conf-quote blockquote p {
+    margin: 0;
+}
+
+.conf-quote blockquote p + p {
+    margin-top: 0.75em;
+}
+
+.conf-quote figcaption {
+    margin-top: 0.85em;
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--heading);
+}
+
+:lang(zh) .conf-quote figcaption {
+    letter-spacing: 0.02em;
+    text-transform: none;
+}
+
+@media (min-width: 640px) {
+    .conf-quote {
+        grid-template-columns: auto 1fr;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .conf-quote-portrait {
+        width: 128px;
+        justify-self: start;
+    }
+}
+
 .conf-goals {
     display: grid;
     gap: 16px;
