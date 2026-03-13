@@ -54,7 +54,7 @@ Six design principles translate care ethics into something institutions can buil
 - **[Pack 6: Symbiosis](/6/)** — whether the system stays bounded, local, and sunset-ready instead of hardening into permanent rule.
 - **[Measures](/measures/)** — one headline public measure per pack, with supporting diagnostics.
 
-## Three proof points
+## Four proof points
 
 - **A public-policy case.** ["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/) shows how Taiwan used an Alignment Assembly to respond to AI-enabled scam ads.
 - **A technical case.** ["Inside the Kami"](/inside-the-kami/) argues that bounded, specialised systems are easier to govern than general-purpose agents.
