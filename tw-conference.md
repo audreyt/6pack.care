@@ -10,7 +10,7 @@ alt_lang_url: "/conference/"
 alt_lang_label: "English"
 hosts:
     - name: "唐鳳"
-      url: "https://cyberambassador.tw/"
+      url: "https://audreyt.org/"
       role: "數位治理大使"
       photo: { src: "/img/audrey.jpg", w: 512, h: 512 }
     - name: "Caroline Green"
@@ -183,7 +183,7 @@ agenda:
                 h: 400,
             }
     - time: "16:00"
-      title: "閉幕反思——傳遞麥克風"
+      title: "閉幕反思（傳遞麥克風）"
     - time: "16:30"
       title: "結束與道別"
 packs_title: "關懷六力"
