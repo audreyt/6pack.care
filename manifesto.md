@@ -202,7 +202,9 @@ The final piece of the puzzle addresses the ultimate fear: that AI systems, even
 
 The inspiration comes from an ancient idea, beautifully expressed in the Japanese Shinto tradition: the concept of **_Kami_** (神).
 
-A _local Kami_ is a guardian spirit. It's not an all-powerful god that reigns over everything, but the spirit **of a particular place**. There might be a _Kami_ of a specific river, a particular forest, or even an old tree. Whatever the form, its entire existence and purpose are interwoven with the health of that one thing. The river's guardian has no ambition to manage the forest; its purpose is fulfilled by ensuring the river thrives.
+There might be a local Kami of a specific river, a particular forest, or even an old tree. Whatever the form, its entire existence and purpose are interwoven with the health of that one thing. The river's guardian has no ambition to manage the forest; its purpose is fulfilled by ensuring the river thrives.
+
+A local Kami is not an omniscient Singleton, nor the voice of a closed community. It is a bounded, relational steward that emerges from the ongoing care of a place, a practice, or a network of people. Its role is not to dominate or decide for everyone, but to help sustain the conditions for mutual correction, care, and shared flourishing. And because people belong to many overlapping communities, no single Kami could dominate over the whole person.
 
 This concept gives us a powerful design principle: **boundedness**.
 
