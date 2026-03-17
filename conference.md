@@ -208,7 +208,7 @@ overview_image:
 <div class="conf-quotes-pair">
 <figure class="conf-quote">
     <div class="conf-quote-portrait">
-        <img src="/img/his-holiness-dalai-lama.jpg" alt="His Holiness the 14th Dalai Lama answers a question from Tenzin Yangtso" width="512" height="512" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:50%;border:2px solid var(--border);box-shadow:0 10px 24px rgba(15,25,35,.12)" />
+        <img src="/img/his-holiness-dalai-lama.jpg" alt="His Holiness the 14th Dalai Lama answers a question from Tenzin Yangtso" title="His Holiness the 14th Dalai Lama answers a question from Tenzin Yangtso" width="512" height="512" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:50%;border:2px solid var(--border);box-shadow:0 10px 24px rgba(15,25,35,.12)" />
     </div>
     <div class="conf-quote-copy">
         <blockquote>
@@ -221,7 +221,7 @@ overview_image:
 
 <figure class="conf-quote">
     <div class="conf-quote-portrait">
-        <img src="/img/pope-leo-xiv.jpg" alt="Official portrait of Pope Leo XIV © Vatican Media" width="512" height="512" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:50%;border:2px solid var(--border);box-shadow:0 10px 24px rgba(15,25,35,.12)" />
+        <img src="/img/pope-leo-xiv.jpg" alt="Official portrait of Pope Leo XIV © Vatican Media" title="Official portrait of Pope Leo XIV © Vatican Media" width="512" height="512" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:50%;border:2px solid var(--border);box-shadow:0 10px 24px rgba(15,25,35,.12)" />
     </div>
     <div class="conf-quote-copy">
         <blockquote>
