@@ -1311,6 +1311,55 @@ footer a:hover {
         width: 128px;
         justify-self: start;
     }
+
+    .conf-quote--mirror {
+        grid-template-columns: 1fr auto;
+    }
+
+    .conf-quote--mirror .conf-quote-portrait {
+        order: 1;
+    }
+
+    .conf-quote--mirror figcaption {
+        text-align: left;
+    }
+}
+
+.conf-quote + .conf-quote {
+    margin-top: 1.5em;
+}
+
+/* Side-by-side quote pair */
+.conf-quotes-pair {
+    display: grid;
+    gap: 24px;
+}
+
+@media (min-width: 640px) {
+    .conf-quotes-pair {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    .conf-quotes-pair .conf-quote {
+        grid-template-columns: 1fr;
+    }
+
+    .conf-quotes-pair .conf-quote-portrait {
+        justify-self: center;
+    }
+
+    .conf-quotes-pair .conf-quote + .conf-quote {
+        margin-top: 0;
+    }
+
+    .conf-quotes-pair .conf-quote figcaption {
+        text-align: right;
+    }
+
+    .conf-quotes-pair .conf-quote blockquote {
+        font-size: 1.1rem;
+    }
 }
 
 .conf-goals {

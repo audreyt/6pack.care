@@ -205,6 +205,7 @@ overview_image:
     h: 1810
 ---
 
+<div class="conf-quotes-pair">
 <figure class="conf-quote">
     <div class="conf-quote-portrait">
         <img src="/img/his-holiness-dalai-lama.jpg" alt="His Holiness the 14th Dalai Lama answers a question from Tenzin Yangtso" width="512" height="512" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:50%;border:2px solid var(--border);box-shadow:0 10px 24px rgba(15,25,35,.12)" />
@@ -217,3 +218,16 @@ overview_image:
         <figcaption>— His Holiness Dalai Lama XIV</figcaption>
     </div>
 </figure>
+
+<figure class="conf-quote">
+    <div class="conf-quote-portrait">
+        <img src="/img/pope-leo-xiv.jpg" alt="Official portrait of Pope Leo XIV © Vatican Media" width="512" height="512" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:50%;border:2px solid var(--border);box-shadow:0 10px 24px rgba(15,25,35,.12)" />
+    </div>
+    <div class="conf-quote-copy">
+        <blockquote>
+            <p>We need faces and voices to speak for people again. We need to cherish the gift of communication as the deepest truth of humanity, to which all technological innovation should also be oriented.</p>
+        </blockquote>
+        <figcaption>— Pope Leo XIV</figcaption>
+    </div>
+</figure>
+</div>

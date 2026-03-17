@@ -258,9 +258,6 @@
                 {% endfor %}
             </div>
 
-            <!-- Intro -->
-            <section class="conf-intro">{{ content }}</section>
-
             <!-- Goals -->
             <div class="conf-goals">
                 {% for goal in goals %}
@@ -345,6 +342,9 @@
                 </div>
                 {% endif %} {% endfor %}
             </div>
+
+            <!-- Quotes -->
+            {{ content }}
 
             <!-- Condensed 6-Pack -->
             <h2>{{ packs_title }}</h2>
