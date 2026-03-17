@@ -1336,25 +1336,8 @@ footer a:hover {
 }
 
 @media (min-width: 640px) {
-    .conf-quotes-pair {
-        grid-template-columns: 1fr 1fr;
-        align-items: start;
-    }
-
-    .conf-quotes-pair .conf-quote {
-        grid-template-columns: 1fr;
-    }
-
-    .conf-quotes-pair .conf-quote-portrait {
-        justify-self: center;
-    }
-
     .conf-quotes-pair .conf-quote + .conf-quote {
         margin-top: 0;
-    }
-
-    .conf-quotes-pair .conf-quote figcaption {
-        text-align: right;
     }
 
     .conf-quotes-pair .conf-quote blockquote {
