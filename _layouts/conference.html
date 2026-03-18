@@ -318,7 +318,11 @@
                             /></noscript>
                             {% endfor %}
                         </div>
-                        <div class="conf-title">{{ slot.title }}</div>
+                        <div class="conf-title">
+                            {% if slot.url %}<a href="{{ slot.url }}"
+                                >{{ slot.title }}</a
+                            >{% else %}{{ slot.title }}{% endif %}
+                        </div>
                         {% if slot.speaker %}
                         <div class="conf-speaker">{{ slot.speaker }}</div>
                         {% endif %} {% if slot.description %}
@@ -339,7 +343,11 @@
                                     height="{{ slot.photo.h }}"
                             /></noscript>
                             <div class="conf-detail-text">
-                                <div class="conf-title">{{ slot.title }}</div>
+                                <div class="conf-title">
+                                    {% if slot.url %}<a href="{{ slot.url }}"
+                                        >{{ slot.title }}</a
+                                    >{% else %}{{ slot.title }}{% endif %}
+                                </div>
                                 {% if slot.speaker %}
                                 <div class="conf-speaker">
                                     {{ slot.speaker }}
@@ -357,7 +365,11 @@
                 <div class="conf-slot">
                     <div class="conf-time">{{ slot.time }}</div>
                     <div class="conf-detail">
-                        <div class="conf-title">{{ slot.title }}</div>
+                        <div class="conf-title">
+                            {% if slot.url %}<a href="{{ slot.url }}"
+                                >{{ slot.title }}</a
+                            >{% else %}{{ slot.title }}{% endif %}
+                        </div>
                         {% if slot.speaker %}
                         <div class="conf-speaker">{{ slot.speaker }}</div>
                         {% endif %}

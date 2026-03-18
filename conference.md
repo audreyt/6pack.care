@@ -83,6 +83,7 @@ agenda:
           - { src: "/img/belen-liedo.jpg", alt: "Belen Liedo", w: 566, h: 566 }
     - time: "12:50"
       title: "Video: Self-actualisation & Care"
+      url: "/self-actualisation-and-care/"
       speaker: "Anne-Marie Slaughter"
       photo:
           {
