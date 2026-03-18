@@ -199,22 +199,45 @@
         {% endif %}
 
         <header>
-            <a href="https://www.ox.ac.uk/"
-                ><img
+            {% if lang2 == 'en' %}
+            <a href="{{ '/' | relative_url }}" title="Home">
+                <img
                     class="oxford-logo"
                     width="100"
                     height="100"
                     src="{{ '/img/oxford-logo.svg' | relative_url }}"
                     alt="University of Oxford Logo"
-            /></a>
-            <a href="https://afp.oxford-aiethics.ox.ac.uk/"
-                ><img
+                />
+            </a>
+            <a href="{{ '/' | relative_url }}" title="Civic AI Home">
+                <img
                     class="oxford-logo"
                     width="246"
                     height="100"
                     src="{{ '/img/afp-logo.svg' | relative_url }}"
                     alt="Accelerator Fellowship Programme Logo"
-            /></a>
+                />
+            </a>
+            {% else %}
+            <a href="{{ '/tw' | relative_url }}" title="首頁">
+                <img
+                    class="oxford-logo"
+                    width="100"
+                    height="100"
+                    src="{{ '/img/oxford-logo.svg' | relative_url }}"
+                    alt="牛津大學校徽"
+                />
+            </a>
+            <a href="{{ '/tw' | relative_url }}" title="關懷六力首頁">
+                <img
+                    class="oxford-logo"
+                    width="246"
+                    height="100"
+                    src="{{ '/img/afp-logo.svg' | relative_url }}"
+                    alt="加速哲人徽章"
+                />
+            </a>
+            {% endif %}
 
             <div style="position: absolute; top: 20px; right: 20px">
                 <a href="{{ alt_lang_url | relative_url }}" class="lang-toggle"
