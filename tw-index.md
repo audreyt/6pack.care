@@ -66,6 +66,7 @@ next_action:
 - [〈惡意 AI 群集如何威脅民主〉](https://www.science.org/doi/10.1126/science.adz1697)：唐鳳與 Maria Ressa、Nick Bostrom、Nicholas Christakis 等 19 位研究者共同記錄 LLM 驅動的智慧體群集如何滲透社群、在人口規模上製造假共識。_(Science, 2026)_
 - [〈對話網路〉](https://www.mediatechdemocracy.com/conversation-networks)：唐鳳、Deb Roy 與 Lawrence Lessig 提出公民通訊基礎設施——可互通的應用程式加上由社群引導的仁工智慧——作為關懷六力的技術層。_(McGill Centre for Media, Technology and Democracy, 2025 年 3 月)_
 - [〈社群出發的設計〉](https://arxiv.org/abs/2502.10834)：唐鳳與 Glen Weyl 等四位共同作者提出以社會結構為核心重建社交平台——獎勵搭橋社群的內容，而非最大化互動。Packs 1 和 5 的技術基礎。_(arXiv, 2025 年 2 月)_
+- [〈⿻存在〉](/tw/plurality-being/)：Tenzin Yangtso 從生存邏輯與生命意義——物質與意識——之間的張力出發，主張從開採轉向耕耘。_(2026 年 3 月)_
 
 ## 計畫簡介
 
