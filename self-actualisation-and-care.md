@@ -30,9 +30,9 @@ The place where I am in my own writing and thinking about care, is how care give
 
 Elizabeth Garlow and I wrote an article called "A Worldview of Care and a New Economics," which we published in Daedalus in January of 2025 as part of an edited volume on the social science of caregiving. And in that article, we essentially said that Maslow got it wrong with his hierarchy of needs.
 
-Now, I understand I'm operating with a very simplified notion of Maslow, but it is the pyramid that most people know, in which you start with basic physical needs, and about halfway up there's love and belonging, and at the top there's self-actualization, which most of us understand as a highly individualist concept.
+Now, I understand I'm operating with a very simplified notion of Maslow, but it is the pyramid that most people know, in which you start with basic physical needs, and about halfway up there's love and belonging, and at the top there's self-actualisation, which most of us understand as a highly individualist concept.
 
-Elizabeth and I argue: No, that's wrong. Actually, this is not a hierarchy; self-actualization and love and belonging should be parallel needs of equal strength.
+Elizabeth and I argue: No, that's wrong. Actually, this is not a hierarchy; self-actualisation and love and belonging should be parallel needs of equal strength.
 
 If you think about care, you understand that most human beings, if they're fortunate, their first experience in life is connection — connection to the biological parent, connection to whoever is caring for them.
 
@@ -42,11 +42,11 @@ And you need both. You need connection and separation. You need an individual id
 
 You need independence — again, we think of human development that way — and interdependence.
 
-We cannot grow, and this is where your Kami concept is so powerful, we cannot grow if we are not connected to others. And finally, then, yes, absolutely we need self-actualization, and that can be defined in many different ways, but at the same time, we need belonging.
+We cannot grow, and this is where your Kami concept is so powerful, we cannot grow if we are not connected to others. And finally, then, yes, absolutely we need self-actualisation, and that can be defined in many different ways, but at the same time, we need belonging.
 
 If you look at that concept of human nature, then you suddenly see care and competition, which is really sort of a non-capitalist system, and a capitalist system, side-by-side. And again, the 6-Pack and the idea of the Kami as informing AI, but also I think human existence in a very profound way, opens the door; it goes alongside, accompanies the way I've been thinking, and Elizabeth and others have been thinking about care.
 
-Now, I should have named our concept of a human being. Hilary Cottam and I first named her _sapiens integra_; Elizabeth and I built on that original concept, as Hilary has in her own work. She can be a her or a him, a non-binary, any combination, but that human being is _sapiens integra_. And _integra_, of course, means whole. So she is somebody who needs and values connection as much as separation, belonging as much as self-actualization.
+Now, I should have named our concept of a human being. Hilary Cottam and I first named her _sapiens integra_; Elizabeth and I built on that original concept, as Hilary has in her own work. She can be a her or a him, a non-binary, any combination, but that human being is _sapiens integra_. And _integra_, of course, means whole. So she is somebody who needs and values connection as much as separation, belonging as much as self-actualisation.
 
 ## The Worldview and Ethos of Care
 
