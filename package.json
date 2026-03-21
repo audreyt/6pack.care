@@ -28,6 +28,7 @@
         "**/*.md": "bun run pangu-format.mjs"
     },
     "dependencies": {
+        "markdown-it-footnote": "^4.0.0",
         "pangu": "^7.2.0",
         "remark": "^15.0.1",
         "remark-pangu": "^2.2.0",

@@ -1,4 +1,5 @@
 import htmlmin from "html-minifier";
+import footnote from "markdown-it-footnote";
 
 export default function (eleventyConfig) {
     // Fix markdown-it CJK emphasis: CommonMark's flanking rules break when
@@ -6,6 +7,7 @@ export default function (eleventyConfig) {
     // We patch scanDelims so any delimiter adjacent to a CJK character can
     // open or close emphasis, matching how CJK text actually works.
     eleventyConfig.amendLibrary("md", (mdLib) => {
+        mdLib.use(footnote);
         const CJK =
             /[\u2E80-\u9FFF\uF900-\uFAFF\uFE30-\uFE4F\uFF00-\uFFEF\u3000-\u303F\u3040-\u309F\u30A0-\u30FF]/;
         const State = mdLib.inline.State;
