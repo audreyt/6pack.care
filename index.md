@@ -68,6 +68,7 @@ Six design principles translate care ethics into something institutions can buil
 - ["Conversation Networks"](https://www.mediatechdemocracy.com/conversation-networks): Audrey, Deb Roy, and Lawrence Lessig propose civic communication infrastructure — interoperable apps with Civic AI guided by communities — as the technical layer beneath 6-Pack of Care. _(McGill Centre for Media, Technology and Democracy, March 2025)_
 - ["Community by Design"](https://arxiv.org/abs/2502.10834): Audrey and Glen Weyl with four co-authors propose rebuilding social platforms around social fabric — rewarding content that bridges communities rather than maximising engagement. The technical backbone behind Packs 1 and 5. _(arXiv, February 2025)_
 - ["⿻Being"](/plurality-being/): Tenzin Yangtso reflects on survival logic and life's meaning — matter and consciousness — and argues for a civic turn from extraction to cultivation. _(March 2026)_
+- ["⿻ A Gentle Bridge"](/gentle-bridge/): Tenzin Yangtso & jdd-kami on the two forces of consciousness and matter, displaced relationship, and why proximity is a free public good. _(March 2026)_
 
 ## Project
 
