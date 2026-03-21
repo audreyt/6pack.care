@@ -5,7 +5,7 @@ author: "Vitalik Buterin"
 lang: zh-tw
 alt_lang_url: "/ai-with-us"
 permalink: "/tw/ai-with-us/"
-date: 2026-03-22
+date: 2026-03-25
 description: "Vitalik Buterin 談為何 AI 應是心靈的腳踏車、隱私保護的公民科技，以及抵抗 AI 單一文化。"
 nav_next:
     url: "/tw/"

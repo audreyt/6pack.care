@@ -5,7 +5,7 @@ author: "Vitalik Buterin"
 lang: en-gb
 alt_lang_url: "/tw/ai-with-us"
 permalink: "/ai-with-us/"
-date: 2026-03-22
+date: 2026-03-25
 description: "Vitalik Buterin on why AI should be a bicycle for the mind, privacy-preserving civic tech, and resisting AI monoculture."
 nav_next:
     url: "/"
