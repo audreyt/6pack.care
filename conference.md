@@ -102,7 +102,7 @@ agenda:
           - { src: "/img/caroline.jpg", alt: "Caroline Green", w: 512, h: 512 }
           - { src: "/img/audrey.jpg", alt: "Audrey Tang", w: 512, h: 512 }
     - time: "14:10"
-      title: "Video: Prototyping Kami Infrastructure"
+      title: "[Video: Prototyping Kami Infrastructure](/building-kami-infrastructure/)"
       speaker: "Vitalik Buterin"
       photo:
           {
