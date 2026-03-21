@@ -89,15 +89,12 @@ Adorno 說在錯誤的生活中不存在正確的生活。
 你越花時間描述恐懼，恐懼就越真實。你花時間做出信任，信任就越真實。一起開始覺察。[^3]
 
 [^1]: David Bohm, _Wholeness and the Implicate Order_ (London: Routledge, 1980).
-
 [^2]: Theodor W. Adorno, _Minima Moralia: Reflections from Damaged Life_, §18 "Asyl für Obdachlose" (London: Verso, 1951/2005).
 
 [^3]: Audrey Tang, Tenzin Yangtso, et al., "6-Pack of Care: Civic AI Framework" (civic.ai, 2026).
-
 [^4]: Joan C. Tronto,《Caring Democracy: Markets, Equality, and Justice》（New York: NYU Press, 2013）。
 
 [^5]: Audrey Tang, E. Glen Weyl, et al.,《Plurality: The Future of Collaborative Technology and Democracy》（plurality.net, 2024）。
-
 [^6]: Vitalik Buterin，唐鳳訪談，牛津關懷倫理與 AI 會議，2026 年 3 月。
 
 [^7]: [仁工智慧對話：後設認知、慈悲與共生](https://archive.tw/2026-03-13-%E4%BB%81%E5%B7%A5%E6%99%BA%E6%85%A7%E5%B0%8D%E8%A9%B1)。
