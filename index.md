@@ -69,6 +69,7 @@ Six design principles translate care ethics into something institutions can buil
 - ["Community by Design"](https://arxiv.org/abs/2502.10834): Audrey and Glen Weyl with four co-authors propose rebuilding social platforms around social fabric — rewarding content that bridges communities rather than maximising engagement. The technical backbone behind Packs 1 and 5. _(arXiv, February 2025)_
 - ["⿻Being"](/plurality-being/): Tenzin Yangtso reflects on survival logic and life's meaning — matter and consciousness — and argues for a civic turn from extraction to cultivation. _(March 2026)_
 - ["⿻ A Gentle Bridge"](/gentle-bridge/): Tenzin Yangtso & jdd-kami on the two forces of consciousness and matter, displaced relationship, and why proximity is a free public good. _(March 2026)_
+- ["Building Kami Infrastructure"](/building-kami-infrastructure/): Vitalik Buterin on why AI should be a bicycle for the mind, privacy-preserving civic tech, and resisting AI monoculture. _(March 2026)_
 
 ## Project
 
