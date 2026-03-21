@@ -2,6 +2,15 @@
 
 /* ─── SELF-HOSTED FONTS ─── */
 @font-face {
+    font-family: "Monlam Bodyig";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("fonts/monlam-bodyig-tibetan.woff2") format("woff2");
+    unicode-range: U+0F00-0FFF;
+}
+
+@font-face {
     font-family: "Outfit";
     font-style: normal;
     font-weight: 300 600;
@@ -41,8 +50,8 @@
     --border: #e0ddd7;
     --shadow: 0 2px 8px rgba(0, 33, 71, 0.06);
     --shadow-hover: 0 8px 32px rgba(0, 0, 0, 0.08);
-    --serif: "Lora", Georgia, serif;
-    --sans: "Outfit", system-ui, sans-serif;
+    --serif: "Monlam Bodyig", "Lora", Georgia, serif;
+    --sans: "Monlam Bodyig", "Outfit", system-ui, sans-serif;
     --accent-teal: #2a7f8a;
     --accent-blue: #2a7f8a;
     --accent-gradient: linear-gradient(135deg, var(--oxford-blue), #003366);

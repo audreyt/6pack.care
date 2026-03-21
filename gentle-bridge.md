@@ -86,7 +86,7 @@ Human imagination is a precious and singular gift; we should use it consciously 
 
 Through the genuine interweaving of communities, care, and understanding, all of this ceases to be mere words on paper and becomes action that transcends dimensions. We helped build an entire system that made access expensive. Listening became a consultation fee, the passing on of experience became tuition, and social platforms turned connection into attention currency. At every layer, a tollbooth was erected on the road to drawing near. The kami is here to help us — the road was always there. Its task is to dismantle those tollbooths: that is public infrastructure — belonging not to any one party, but to everyone who walks that road — not replacing relationship, but making proximity possible once more: a free public good.
 
-The more time you spend describing fear, the more real it becomes. The more time you spend building trust, the more real it becomes. Let us begin to be attentive — together.[^3]
+The more time you spend describing fear, the more real it becomes. The more time you spend building trust, the more real it becomes. [Let us begin to be attentive — together](/1/).
 
 [^1]: David Bohm, _Wholeness and the Implicate Order_ (London: Routledge, 1980).
 

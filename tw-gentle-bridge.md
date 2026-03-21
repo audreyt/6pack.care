@@ -86,15 +86,18 @@ Adorno 說在錯誤的生活中不存在正確的生活。
 
 透過社群真實的交織、關懷與理解，這一切不再只是紙上談兵，而可以是跨越維度的行動。我們協助造了一整套系統，把接取變貴了。傾聽變成掛號費，傳承變成學費，社交平台把連結變注意力貨幣。每一層都在接近的路上加了收費站。地神要做的是把那些收費站拆掉——路一直都在。那就是公共建設——它不屬於任何人，它屬於所有走那條路的人——不是替代關係，而是讓靠近重新成為可能：自由公共財。
 
-你越花時間描述恐懼，恐懼就越真實。你花時間做出信任，信任就越真實。一起開始覺察。[^3]
+你越花時間描述恐懼，恐懼就越真實。你花時間做出信任，信任就越真實。[一起開始覺察](/tw/1/)。
 
 [^1]: David Bohm, _Wholeness and the Implicate Order_ (London: Routledge, 1980).
+
 [^2]: Theodor W. Adorno, _Minima Moralia: Reflections from Damaged Life_, §18 "Asyl für Obdachlose" (London: Verso, 1951/2005).
 
 [^3]: Audrey Tang, Tenzin Yangtso, et al., "6-Pack of Care: Civic AI Framework" (civic.ai, 2026).
+
 [^4]: Joan C. Tronto,《Caring Democracy: Markets, Equality, and Justice》（New York: NYU Press, 2013）。
 
 [^5]: Audrey Tang, E. Glen Weyl, et al.,《Plurality: The Future of Collaborative Technology and Democracy》（plurality.net, 2024）。
+
 [^6]: Vitalik Buterin，唐鳳訪談，牛津關懷倫理與 AI 會議，2026 年 3 月。
 
 [^7]: [仁工智慧對話：後設認知、慈悲與共生](https://archive.tw/2026-03-13-%E4%BB%81%E5%B7%A5%E6%99%BA%E6%85%A7%E5%B0%8D%E8%A9%B1)。
