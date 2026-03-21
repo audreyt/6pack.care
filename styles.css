@@ -179,8 +179,9 @@ header p {
     font-size: 1rem;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.75);
-    margin: 8px 0 0;
+    margin: 8px auto 0;
     line-height: 1.6;
+    max-width: 680px;
 }
 
 header a {
