@@ -100,4 +100,4 @@ The more time you spend describing fear, the more real it becomes. The more time
 
 [^6]: Vitalik Buterin, interview with Audrey Tang for Oxford Ethics of Care & AI Conference, March 2026.
 
-[^7]: Civic AI Dialogue: Metacognition, Compassion, and Symbiosis (https://archive.tw/2026-03-13-仁工智慧對話).
+[^7]: [Civic AI Dialogue: Metacognition, Compassion, and Symbiosis](https://archive.tw/2026-03-13-%E4%BB%81%E5%B7%A5%E6%99%BA%E6%85%A7%E5%B0%8D%E8%A9%B1).
