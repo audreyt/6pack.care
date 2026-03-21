@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: "Building Kami Infrastructure"
+title: "AI With Us, Not Without Us"
 author: "Vitalik Buterin"
 lang: en-gb
 alt_lang_url: "/tw/building-kami-infrastructure"
@@ -34,9 +34,11 @@ One of the types of AI that I'm most interested in is AI that's really optimised
 
 A lot of the time when people work with agents, we think of them as these little spirits that we give instructions to and then they run off and do their own thing. And if you just give one of them your private key, even if you tell it to pay for your coffee, it might get tricked by something on the internet.
 
-Thinking about bounding authority, thinking about knowing what situations you wanted to do things by itself and in what situations you want human confirmation, what kinds of human confirmation, possibly even what kinds of confirmation from an independent model — is really important. Money is one type of object where it's really natural to think about limited delegation. Another important one is privacy.
+Thinking about bounding authority, thinking about knowing what situations you wanted to do things by itself and in what situations you want human confirmation, what kinds of human confirmation, possibly even what kinds of confirmation from an independent model — is really important.
 
 ## Privacy & "Shadow LLMs"
+
+Money is one type of object where it's really natural to think about limited delegation. Another important one is privacy.
 
 One type of AI civic tech we don't even talk about enough is the idea that if you can do private compute over multiple people's information, you could imagine a sort of LLM shadow of yourself that then gets put into a box and it gets to see all kinds of secret information from other people, from the organisation. And it's able to output a decision — just that one decision — based on what that secret information is, and it can't leak anything else.
 
