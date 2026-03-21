@@ -103,7 +103,7 @@ agenda:
           - { src: "/img/audrey.jpg", alt: "Audrey Tang", w: 512, h: 512 }
     - time: "14:10"
       title: "Video: AI With Us, Not Without Us"
-      url: "/building-kami-infrastructure/"
+      url: "/ai-with-us/"
       speaker: "Vitalik Buterin"
       photo:
           {

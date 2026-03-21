@@ -3,8 +3,8 @@ layout: chapter
 title: "AI With Us, Not Without Us"
 author: "Vitalik Buterin"
 lang: en-gb
-alt_lang_url: "/tw/building-kami-infrastructure"
-permalink: "/building-kami-infrastructure/"
+alt_lang_url: "/tw/ai-with-us"
+permalink: "/ai-with-us/"
 date: 2026-03-22
 description: "Vitalik Buterin on why AI should be a bicycle for the mind, privacy-preserving civic tech, and resisting AI monoculture."
 nav_next:

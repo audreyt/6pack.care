@@ -3,8 +3,8 @@ layout: chapter
 title: "AI 與我們同在，而非取代我們"
 author: "Vitalik Buterin"
 lang: zh-tw
-alt_lang_url: "/building-kami-infrastructure"
-permalink: "/tw/building-kami-infrastructure/"
+alt_lang_url: "/ai-with-us"
+permalink: "/tw/ai-with-us/"
 date: 2026-03-22
 description: "Vitalik Buterin 談為何 AI 應是心靈的腳踏車、隱私保護的公民科技，以及抵抗 AI 單一文化。"
 nav_next:

@@ -103,7 +103,7 @@ agenda:
           - { src: "/img/audrey.jpg", alt: "唐鳳", w: 512, h: 512 }
     - time: "14:10"
       title: "影片：AI 與我們同在，而非取代我們"
-      url: "/tw/building-kami-infrastructure/"
+      url: "/tw/ai-with-us/"
       speaker: "Vitalik Buterin"
       photo:
           {
