@@ -102,7 +102,8 @@ agenda:
           - { src: "/img/caroline.jpg", alt: "Caroline Green", w: 512, h: 512 }
           - { src: "/img/audrey.jpg", alt: "唐鳳", w: 512, h: 512 }
     - time: "14:10"
-      title: "[影片：AI 與我們同在，而非取代我們](/tw/building-kami-infrastructure/)"
+      title: "影片：AI 與我們同在，而非取代我們"
+      url: "/tw/building-kami-infrastructure/"
       speaker: "Vitalik Buterin"
       photo:
           {
