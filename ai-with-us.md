@@ -13,7 +13,7 @@ nav_next:
 ---
 
 <div class="video-embed">
-<iframe src="https://customer-07bto6bf9uibrlc3.cloudflarestream.com/9b0f67a1a59455e7d7b4a9c042ae39cd/iframe?defaultTextTrack=en" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://customer-07bto6bf9uibrlc3.cloudflarestream.com/ebb10120e2cab4b45e99c2d676a082a4/iframe?poster=https%3A%2F%2Fcustomer-07bto6bf9uibrlc3.cloudflarestream.com%2Febb10120e2cab4b45e99c2d676a082a4%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D1s&defaultTextTrack=en" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## The Mainstream AI Vision & Its Discontents
