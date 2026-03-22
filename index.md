@@ -34,6 +34,8 @@ The breakthrough is not smarter chatbots. It is stronger self-government: instit
 
 **[Civic AI Conference 2026 — 25 March, Rhodes House, Oxford](/conference/)**
 
+**[Podcast: Can AI Be Compassionate?](/compassion-and-ai/)** — Buddhist ethics, interdependence, and why compassion is a way of being, not a skill to train into a system.
+
 ## Start here
 
 - **Policy.** Read the [Manifesto](/manifesto/), the [FAQ](/faq/), and ["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/).

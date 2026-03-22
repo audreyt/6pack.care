@@ -33,6 +33,8 @@ next_action:
 
 **[仁工智慧研討會 2026——3 月 25 日，牛津羅德學院](/tw/conference/)**
 
+**[Podcast：AI 能有「慈悲心」嗎？](/tw/compassion-and-ai/)**——佛教倫理、緣起，以及為何慈悲是一種存在方式，而非一種可以訓練進系統的技能。
+
 ## 從這裡開始
 
 - **政策。** 先讀[計畫宣言](/tw/manifesto/)、[常見問題](/tw/faq/)，以及[《AI 對齊不能由上而下》](/tw/ai-alignment-cannot-be-top-down/)。
