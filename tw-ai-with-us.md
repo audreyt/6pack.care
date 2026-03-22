@@ -13,7 +13,7 @@ nav_next:
 ---
 
 <div class="video-embed">
-<iframe src="https://customer-07bto6bf9uibrlc3.cloudflarestream.com/ebb10120e2cab4b45e99c2d676a082a4/iframe?poster=https%3A%2F%2Fcustomer-07bto6bf9uibrlc3.cloudflarestream.com%2Febb10120e2cab4b45e99c2d676a082a4%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D1s&defaultTextTrack=en" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://customer-07bto6bf9uibrlc3.cloudflarestream.com/a94bd40b528be58688e1c8b61b12d0b1/iframe?poster=https%3A%2F%2Fcustomer-07bto6bf9uibrlc3.cloudflarestream.com%2Fa94bd40b528be58688e1c8b61b12d0b1%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D1s&defaultTextTrack=en" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## 主流 AI 願景及其不安
