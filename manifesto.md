@@ -30,7 +30,7 @@ At that speed, traditional ethics struggle. Consequentialism — even its most s
 
 A framework that acknowledges this asymmetry but refuses the gardener role is an ethics around **civic care**, particularly the work of Joan Tronto. The core idea is that we remain each other's gardeners. AI becomes local infrastructure—a spirit of place, a _Kami_—that supports care _at the speed care actually grows_.
 
-This approach mandates a hyper-local, parochial moral scope. Each _Kami_ is bound to a specific garden, rather than being a colonising or maximising ("paper-clipping") force.
+This approach mandates a hyper-local, parochial moral scope. Each _Kami_ is bound to specific relationships, rather than being a colonising or maximising ("paper-clipping") force.
 
 Designing AI as care infrastructure requires digital permaculture, mirroring a movement that embraces anti-fragility through diversity—what Professor Yuk Hui calls "technodiversity"—rather than fragile monocultures.
 
