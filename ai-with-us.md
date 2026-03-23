@@ -54,9 +54,9 @@ I think we can do a lot more to make AI that's really well designed for basicall
 
 One of the challenges of AI, the way that it's being developed and rolled out right now, is it's very homogenising. You have a few models that everyone speaks through, and even the open-source models are generally all trained by distilling the outputs of those models or previous models. Everyone uses the same data sets. And there is a risk of this kind of flattening the world in a big way — that you have these tendencies that are in a very small amount of AI code and AI data that start exerting a huge amount of power on the whole world and that start pulling the whole world in the same kind of direction.
 
-## A Future of Diverse Collaboration
-
 The kind of world that I want to see is one where we continue to see a diversity, where you continue to see people being free to express different ideas in different directions and at the same time cooperate with each other despite that. And I think the way that AI would look in that kind of world is one where, instead of there being a few single things that everyone is talking through, you see much more hybrid AI–human works that actually feel like an expression of a lot of different people's different ideas of where they want themselves to go, where they want their communities to go, or the world to go.
+
+## A Future of Diverse Collaboration
 
 One thing I hope for is for much more software to be written that really makes human–AI collaboration a very easy and natural thing. We have this one monolithic model, or maybe at most like twenty of them that really are more like three of them. And you can talk to it with a chatbot, you can make it an agent, and it goes and does things. It's all basically the same kind of work in the same interface.
 
