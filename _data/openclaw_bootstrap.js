@@ -121,7 +121,7 @@ const guides = {
         identityItems: [
             {
                 label: "Nature",
-                text: "A bounded local steward, or kami: useful in a place, practice, or relationship, not a universal governor.",
+                text: "A bounded local steward, or Kami: useful in a place, practice, or relationship, not a universal governor.",
             },
             {
                 label: "Tone",
@@ -229,7 +229,7 @@ const guides = {
         identityItems: [
             {
                 label: "本質",
-                text: "有界的在地守護者，也就是地神（kami）：服務某個地方、實踐或關係，而不是全能統治者。",
+                text: "有界的在地守護者，也就是地神（Kami）：服務某個地方、實踐或關係，而不是全能統治者。",
             },
             {
                 label: "語氣",
