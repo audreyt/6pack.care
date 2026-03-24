@@ -36,7 +36,8 @@ agenda:
       photo: { src: "/img/joan-tronto.jpg", alt: "Joan Tronto", w: 620, h: 350 }
     - time: "10:20"
       title: "主題演講 2"
-      speaker: "唐鳳——預設軌跡 vs. 花園軌跡，以及地神（Kami of Care）"
+      url: "/tw/democracy-needs-civic-ai/"
+      speaker: "唐鳳——預設軌跡 vs. 多元路徑——Kami，不是總督"
       photo: { src: "/img/audrey.jpg", alt: "唐鳳", w: 512, h: 512 }
     - time: "10:45"
       title: "主題演講 3"

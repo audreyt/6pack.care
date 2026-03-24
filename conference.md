@@ -36,7 +36,8 @@ agenda:
       photo: { src: "/img/joan-tronto.jpg", alt: "Joan Tronto", w: 620, h: 350 }
     - time: "10:20"
       title: "Keynote 2"
-      speaker: "Audrey Tang — Owning the default trajectory vs. the garden trajectory & the Kami of Care"
+      url: "/democracy-needs-civic-ai/"
+      speaker: "Audrey Tang — The default trajectory vs. plurality — Kami, not governor"
       photo: { src: "/img/audrey.jpg", alt: "Audrey Tang", w: 512, h: 512 }
     - time: "10:45"
       title: "Keynote 3"
