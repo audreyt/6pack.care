@@ -7,6 +7,7 @@ alt_lang_url: "/democracy-needs-civic-ai"
 permalink: "/tw/democracy-needs-civic-ai/"
 date: 2026-03-25
 description: "唐鳳談為何民主需要有界、在地、可問責的 Civic AI：Kami，不是總督。"
+thumbnail: "/img/audrey.jpg"
 nav_next:
     url: "/tw/conference/"
     text: "研討會"

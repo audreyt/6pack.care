@@ -26,10 +26,15 @@
         />
         <meta name="color-scheme" content="light dark" />
         {% assign og_desc = description | default: site.description | strip_html
-        %} {% if og_image %}{% assign og_img = og_image %}{% elsif lang2 == 'zh'
-        %}{% assign og_img = site.url | append: '/img/overview-small-tw.jpg'
-        %}{% else %}{% assign og_img = site.url | append:
-        '/img/overview-small.jpg' %}{% endif %}
+        %} {% if og_image %}{% assign og_img = og_image %}{% elsif thumbnail.src
+        %}{% assign og_img = thumbnail.src %}{% elsif thumbnail %}{% assign
+        og_img = thumbnail %}{% elsif lang2 == 'zh' %}{% assign og_img =
+        '/img/overview-small-tw.jpg' %}{% else %}{% assign og_img =
+        '/img/overview-small.jpg' %}{% endif %} {% unless og_img contains '://'
+        %}{% assign og_img_first_char = og_img | slice: 0, 1 %}{% if
+        og_img_first_char == '/' %}{% assign og_img = site.url | append: og_img
+        %}{% else %}{% assign og_img = site.url | append: '/' | append: og_img
+        %}{% endif %}{% endunless %}
         <meta property="og:title" content="{{ title }}" />
         <meta property="og:description" content="{{ og_desc }}" />
         <meta property="og:image" content="{{ og_img }}" />

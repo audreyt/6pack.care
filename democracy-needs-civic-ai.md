@@ -7,6 +7,7 @@ alt_lang_url: "/tw/democracy-needs-civic-ai"
 permalink: "/democracy-needs-civic-ai/"
 date: 2026-03-25
 description: "Audrey Tang on why democracy needs bounded, local Civic AI: Kami, not governor."
+thumbnail: "/img/audrey.jpg"
 nav_next:
     url: "/conference/"
     text: "Conference"

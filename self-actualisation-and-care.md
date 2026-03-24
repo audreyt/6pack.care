@@ -7,6 +7,7 @@ alt_lang_url: "/tw/self-actualisation-and-care"
 permalink: "/self-actualisation-and-care/"
 date: 2026-03-25
 description: "Anne-Marie Slaughter on sapiens integra, the ethics of care, and the convergence of care and AI."
+thumbnail: "/img/anne-marie-slaughter.jpg"
 nav_next:
     url: "/"
     text: "Home"

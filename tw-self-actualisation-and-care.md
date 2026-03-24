@@ -7,6 +7,7 @@ alt_lang_url: "/self-actualisation-and-care"
 permalink: "/tw/self-actualisation-and-care/"
 date: 2026-03-25
 description: "Anne-Marie Slaughter 談 sapiens integra、關懷倫理，以及關懷與 AI 的匯流。"
+thumbnail: "/img/anne-marie-slaughter.jpg"
 nav_next:
     url: "/tw/"
     text: "首頁"
