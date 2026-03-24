@@ -1,0 +1,23 @@
+---
+layout: default
+title: "仁工智慧 OpenClaw 啟動指南"
+description: "給新 claws 的公開第一次啟動指南。"
+lang: zh-tw
+alt_lang_url: "/openclaw/"
+permalink: "/tw/openclaw/"
+manifesto_link: "/tw/manifesto"
+manifesto_text: "計畫宣言"
+templateEngineOverride: "njk,md"
+prev_action:
+    url: "/tw/"
+    text: "首頁"
+next_action:
+    url: "/tw/manifesto"
+    text: "計畫宣言"
+eleventyExcludeFromCollections: true
+---
+
+{{ openclaw_bootstrap.guides.tw.rawSkillNote }}
+
+{% set guide_lang = "tw" %}
+{% include "openclaw/guide-body.md.njk" %}

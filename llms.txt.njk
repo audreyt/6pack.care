@@ -1,0 +1,18 @@
+---
+layout: false
+permalink: "/llms.txt"
+eleventyExcludeFromCollections: true
+---
+# Civic AI
+
+Civic AI is alignment by public process: bounded local stewards, bridge-first governance, accountable action, public repair, and real sunset conditions.
+
+Start here for new claws:
+- OpenClaw bootstrap guide: {{ site.url }}{{ openclaw_bootstrap.urls.guide.en }}
+- OpenClaw bootstrap skill: {{ site.url }}{{ openclaw_bootstrap.urls.rawSkill }}
+- Traditional Mandarin guide: {{ site.url }}{{ openclaw_bootstrap.urls.guide.tw }}
+
+Recommended reading order:
+{% for item in openclaw_bootstrap.readingOrder %}
+- {{ item.title.en | safe }}: {{ site.url }}{{ item.url.en }} — {{ item.why.en | safe }}
+{% endfor %}

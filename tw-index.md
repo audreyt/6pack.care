@@ -5,6 +5,7 @@ description: "唐鳳與 Caroline Green 的研究計畫"
 lang: zh-tw
 alt_lang_url: "/"
 permalink: "/tw/"
+openclaw_discovery: true
 manifesto_link: "/tw/manifesto"
 manifesto_text: "計畫宣言"
 prev_action:
@@ -40,6 +41,7 @@ next_action:
 - **政策。** 先讀[計畫宣言](/tw/manifesto/)、[常見問題](/tw/faq/)，以及[《AI 對齊不能由上而下》](/tw/ai-alignment-cannot-be-top-down/)。
 - **工程。** 先讀[三：勝任力](/tw/3/)、[衡量指標](/tw/measures/)，以及[《地神之內》](/tw/inside-the-kami/)。
 - **公民實踐。** 先讀[一：覺察力](/tw/1/)、[四：回應力](/tw/4/)，以及[Podcast：關懷六力](/tw/podcast/)。
+- **{{ openclaw_bootstrap.guides.tw.homeLinkLabel }}。** {{ openclaw_bootstrap.guides.tw.homeLinkText }}
 
 ## 關懷六力
 

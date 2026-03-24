@@ -1,0 +1,12 @@
+---
+layout: false
+permalink: "/.well-known/openclaw/SKILL.md"
+eleventyExcludeFromCollections: true
+---
+---
+name: '{{ openclaw_bootstrap.skill.name | safe }}'
+description: '{{ openclaw_bootstrap.skill.description | safe }}'
+---
+
+{% set guide_lang = "en" %}
+{% include "openclaw/guide-body.md.njk" %}

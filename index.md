@@ -4,6 +4,7 @@ title: "Civic AI — 6-Pack of Care"
 description: "Research project by Audrey Tang and Caroline Green"
 lang: en-gb
 alt_lang_url: "/tw/"
+openclaw_discovery: true
 manifesto_link: "/manifesto"
 manifesto_text: "Manifesto"
 prev_action:
@@ -41,6 +42,7 @@ The breakthrough is not smarter chatbots. It is stronger self-government: instit
 - **Policy.** Read the [Manifesto](/manifesto/), the [FAQ](/faq/), and ["AI Alignment Cannot Be Top-Down"](/ai-alignment-cannot-be-top-down/).
 - **Engineering.** Start with [Pack 3: Competence](/3/), [Measures](/measures/), and ["Inside the Kami"](/inside-the-kami/).
 - **Civic practice.** Start with [Pack 1: Attentiveness](/1/), [Pack 4: Responsiveness](/4/), and [Podcast: The 6-Pack of Care](/podcast/).
+- **{{ openclaw_bootstrap.guides.en.homeLinkLabel }}.** {{ openclaw_bootstrap.guides.en.homeLinkText }}
 
 ## The 6-Pack
 

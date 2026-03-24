@@ -39,6 +39,41 @@
         <meta name="twitter:title" content="{{ title }}" />
         <meta name="twitter:description" content="{{ og_desc }}" />
         <meta name="twitter:image" content="{{ og_img }}" />
+        {% if openclaw_discovery %}{% if lang2 == 'zh' %}{% assign
+        openclaw_guide_url = openclaw_bootstrap.urls.guide.tw %}{% else %}{%
+        assign openclaw_guide_url = openclaw_bootstrap.urls.guide.en %}{% endif
+        %}
+        <link
+            rel="alternate"
+            type="text/markdown"
+            href="{{ site.url }}{{ openclaw_bootstrap.urls.rawSkill }}"
+            title="Civic AI OpenClaw bootstrap skill"
+        />
+        <link
+            rel="alternate"
+            type="text/html"
+            href="{{ site.url }}{{ openclaw_guide_url }}"
+            title="Civic AI OpenClaw bootstrap guide"
+        />
+        <link
+            rel="alternate"
+            type="text/plain"
+            href="{{ site.url }}{{ openclaw_bootstrap.urls.llms }}"
+            title="Civic AI llms.txt"
+        />
+        <meta
+            name="openclaw:skill"
+            content="{{ site.url }}{{ openclaw_bootstrap.urls.rawSkill }}"
+        />
+        <meta
+            name="openclaw:guide"
+            content="{{ site.url }}{{ openclaw_guide_url }}"
+        />
+        <meta
+            name="llms"
+            content="{{ site.url }}{{ openclaw_bootstrap.urls.llms }}"
+        />
+        {% endif %}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}" />
@@ -126,11 +161,15 @@
             {% endif %}
             <div style="position: absolute; top: 20px; right: 20px">
                 {% if lang2 == 'en' %}
-                <a href="{{ '/tw' | relative_url }}" class="lang-toggle"
+                <a
+                    href="{{ alt_lang_url | default: '/tw/' | relative_url }}"
+                    class="lang-toggle"
                     >華文</a
                 >
                 {% else %}
-                <a href="{{ '/' | relative_url }}" class="lang-toggle"
+                <a
+                    href="{{ alt_lang_url | default: '/' | relative_url }}"
+                    class="lang-toggle"
                     >English</a
                 >
                 {% endif %}

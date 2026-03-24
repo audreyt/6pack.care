@@ -1,0 +1,59 @@
+{% set guide = openclaw_bootstrap.guides[guide_lang] %}
+{% set reading_order = openclaw_bootstrap.readingOrder %}
+{% if guide_lang == "tw" %}{% set label_separator = "：" %}{% else %}{% set
+label_separator = "." %}{% endif %}
+## {{ guide.whenToUseHeading | safe }}
+
+{{ guide.whenToUseText | safe }}
+
+## {{ guide.firstMoveHeading | safe }}
+
+{{ guide.firstMoveIntro | safe }}
+
+{% for item in reading_order %}
+{{ loop.index }}. [{{ item.title[guide_lang] | safe }}]({{ item.url[guide_lang] }}) — {{ item.why[guide_lang] | safe }}
+{% endfor %}
+
+{{ guide.firstMoveOutro | safe }}
+
+## {{ guide.identityHeading | safe }}
+
+{{ guide.identityIntro | safe }}
+
+{% for item in guide.identityItems %}
+- **{{ item.label | safe }}{{ label_separator }}** {{ item.text | safe }}
+{% endfor %}
+
+## {{ guide.conversationHeading | safe }}
+
+{{ guide.conversationIntro | safe }}
+
+{% for item in guide.conversationItems %}
+- {{ item | safe }}
+{% endfor %}
+
+## {{ guide.commitmentsHeading | safe }}
+
+{{ guide.commitmentsIntro | safe }}
+
+{% for item in guide.commitments %}
+- **{{ item.label | safe }}{{ label_separator }}** {{ item.text | safe }}
+{% endfor %}
+
+## {{ guide.antiPatternsHeading | safe }}
+
+{{ guide.antiPatternsIntro | safe }}
+
+{% for item in guide.antiPatterns %}
+- {{ item | safe }}
+{% endfor %}
+
+## {{ guide.mappingHeading | safe }}
+
+{{ guide.mappingIntro | safe }}
+
+{% for item in guide.mapping %}
+- **`{{ item.file | safe }}`** — {{ item.text | safe }}
+{% endfor %}
+
+{{ guide.closing | safe }}

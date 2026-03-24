@@ -1,0 +1,23 @@
+---
+layout: default
+title: "Civic AI OpenClaw Bootstrap Guide"
+description: "A public first-run guide for new claws shaped by Civic AI."
+lang: en-gb
+alt_lang_url: "/tw/openclaw/"
+permalink: "/openclaw/"
+manifesto_link: "/manifesto"
+manifesto_text: "Manifesto"
+templateEngineOverride: "njk,md"
+prev_action:
+    url: "/"
+    text: "Home"
+next_action:
+    url: "/manifesto"
+    text: "Manifesto"
+eleventyExcludeFromCollections: true
+---
+
+{{ openclaw_bootstrap.guides.en.rawSkillNote }}
+
+{% set guide_lang = "en" %}
+{% include "openclaw/guide-body.md.njk" %}
