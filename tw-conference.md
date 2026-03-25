@@ -164,7 +164,7 @@ agenda:
       break: true
     - time: "15:30"
       title: "仁工智慧的實踐"
-      speaker: "Caroline Green 主持，Karina Palyutina、Zarinah Agnew"
+      speaker: "Caroline Green 主持，Karina Palyutina、Zarinah Agnew、唐鳳"
       photos:
           - { src: "/img/caroline.jpg", alt: "Caroline Green", w: 512, h: 512 }
           - {
@@ -179,6 +179,7 @@ agenda:
                 w: 400,
                 h: 400,
             }
+          - { src: "/img/audrey.jpg", alt: "唐鳳", w: 512, h: 512 }
     - time: "16:00"
       title: "閉幕反思（傳遞麥克風）"
     - time: "16:30"

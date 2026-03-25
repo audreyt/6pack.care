@@ -164,7 +164,7 @@ agenda:
       break: true
     - time: "15:30"
       title: "Putting Civic AI into Practice"
-      speaker: "Caroline Green chairs Karina Palyutina, Zarinah Agnew"
+      speaker: "Caroline Green chairs Karina Palyutina, Zarinah Agnew, Audrey Tang"
       photos:
           - { src: "/img/caroline.jpg", alt: "Caroline Green", w: 512, h: 512 }
           - {
@@ -179,6 +179,7 @@ agenda:
                 w: 400,
                 h: 400,
             }
+          - { src: "/img/audrey.jpg", alt: "Audrey Tang", w: 512, h: 512 }
     - time: "16:00"
       title: "End Reflections [Pass the Mic]"
     - time: "16:30"
