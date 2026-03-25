@@ -51,7 +51,7 @@ In this story, democracy is not destroyed. It is simply … outgrown. Like
 training wheels on a bicycle after you learn how to ride.
 
 This is not hypothetical. In January, I co-authored a paper in _Science_ with
-20 other researchers, including Nick Bostrom, Maria Ressa and Nicholas
+21 other researchers, including Nick Bostrom, Maria Ressa and Nicholas
 Christakis. We studied malicious AI swarms: networks of AI agents that maintain
 persistent identities, build synthetic relationships and coordinate on goals
 never agreed by people they manipulated.
@@ -104,9 +104,10 @@ The Kami wrote about listening. But listening for _what_?
 >
 > - Rebecca Henderson
 
-Last month, Rebecca Henderson addressed an audience at the Harvard Ash Center.
-She said: "I have been an academic for nearly 40 years and I have never said
-the word _love_ at an academic gathering before. But I am desperate."
+At an Ash Center conference at Harvard Kennedy School last December, Rebecca
+Henderson urged us to talk about love, compassion, and the purpose of being
+human. She said: "I have been an academic for nearly 40 years and I have never
+said the word _love_ at an academic gathering before. But I am desperate."
 
 Not uncomfortable. Not hedging. _Desperate._
 
@@ -153,11 +154,12 @@ internet in Asia. Censorship would have solved one problem by creating another.
 
 So, we went to the people.
 
-We sent text messages to a random sample of 200,000 citizens. 447 showed up to
-deliberate. They sat in 44 rooms of 10: retired teachers, tech workers, victims
-of fraud. Each room was aided by AI transcription and synthesis, not AI
-deciding, but AI listening. Sorting arguments. Surfacing agreement. Making sure
-the quietest voice was not drowned out by the loudest.
+We sent text messages to 200,000 randomly selected people. 447 were chosen by
+lottery to mirror Taiwan's demographics. They deliberated in 44 rooms online,
+about ten people to a group. Retired teachers, tech workers, victims of fraud.
+Each room was aided by AI transcription and synthesis, not AI deciding, but AI
+listening. Sorting arguments. Surfacing agreement. Making sure the quietest
+voice was not drowned out by the loudest.
 
 How should platforms verify advertisers? Who bears liability when a deepfake
 causes financial harm? These were not polite conversations. But in Taiwan, we
@@ -191,7 +193,7 @@ Joan's care ethics. You can find them at civic.ai. But here is the essence.
 Joan gave us five care phases: caring about, caring for, care giving, care
 receiving and caring with. She also warned us that care can be distorted.
 Neoliberalism reduces it to personal responsibility, while colonialism operates
-as a discourse of care. So, our task was to captain for care's failures, not
+as a discourse of care. So, our task was to account for care's failures, not
 just celebrate its virtues.
 
 Think of it as breathing.
