@@ -52311,13 +52311,11 @@ Please report this to https://github.com/markedjs/marked.`),
                     f.forEach((g, y) => {
                         (!i || i.includes(g)) &&
                             (a.has(g) || a.set(g, []),
-                            a
-                                .get(g)
-                                .push(
-                                    ht(T({}, p), {
-                                        _currentSubtopic: m[y] || "Other",
-                                    })
-                                ));
+                            a.get(g).push(
+                                ht(T({}, p), {
+                                    _currentSubtopic: m[y] || "Other",
+                                })
+                            ));
                     });
                 });
                 let l = [],
@@ -53528,13 +53526,11 @@ Please report this to https://github.com/markedjs/marked.`),
                             : [i.subtopics];
                     r.forEach((o, a) => {
                         (n.has(o) || n.set(o, []),
-                            n
-                                .get(o)
-                                .push(
-                                    ht(T({}, i), {
-                                        _currentSubtopic: s[a] || "Other",
-                                    })
-                                ));
+                            n.get(o).push(
+                                ht(T({}, i), {
+                                    _currentSubtopic: s[a] || "Other",
+                                })
+                            ));
                     });
                 });
                 let e = Array.from(n.entries()).map(([i, r]) => {
