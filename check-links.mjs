@@ -48,8 +48,11 @@ function resolveLocal(href, fromFile) {
 const errors = [];
 
 for (const file of htmlFiles) {
-    const html = readFileSync(file, "utf8");
+    const raw = readFileSync(file, "utf8");
     const rel = file.slice(DOCS.length);
+
+    // Strip <script> blocks so we don't match JS-generated href/src patterns
+    const html = raw.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
 
     // Match href="..." and src="..."
     for (const m of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
