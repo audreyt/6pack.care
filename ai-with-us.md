@@ -27,7 +27,7 @@ And also, I think there's something deep in human psychology that we don't just 
 
 ## AI as a "Bicycle for the Mind"
 
-It's AI that does more to maximise human–AI collaboration — the set of things that AI can do _with_ us rather than completely separately from us. It's AI that is much more realistic. It's AI that is much more customised to the preferences people have, to the existing things that people are doing, to all of the interesting things that are going on in the world at the edges. And I think it's something that is fundamentally harder to scale in the sense of scaling to $10 trillion within two years. But I think it's a model that most people would find much more agreeable.
+It's AI that does more to maximise human–AI collaboration — the set of things that AI can do _with_ us rather than completely separately from us. It's AI that is much more pluralistic. It's AI that is much more customised to the preferences people have, to the existing things that people are doing, to all of the interesting things that are going on in the world at the edges. And I think it's something that is fundamentally harder to scale in the sense of scaling to $10 trillion within two years. But I think it's a model that most people would find much more agreeable.
 
 One of the types of AI that I'm most interested in is AI that's really optimised for working with the user and basically trying to empower human–AI collaborations as much as possible — being a bicycle for the mind instead of being a car that you're supposed to just go to sleep inside.
 
