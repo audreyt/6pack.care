@@ -15,279 +15,347 @@ nav_next:
 
 Somewhere over the Middle East, the cabin lights dimmed. Most passengers were
 asleep. On the tray table in front of me sat a small computer hosting what we
-call **jdd-kami**.
+call **jdd-kami** — a Civic AI that Tenzin Yangtso and I have been tending
+together.
 
-Not a cloud service. Not a general assistant pretending to live everywhere at
-once. A bounded Civic AI we can hold, inspect and shut down.
+I use "tending" in the conceptual sense of a garden. We fertilised and watered
+it with our public writing, private arguments, finished and unfinished thoughts,
+as well as the tensions we refused to resolve too quickly. All of it living on
+hardware we hold, inspect and can shut down.
 
-No cloud. No company. No one else's server. Airplane mode. No signal, no
-internet. Just the model, the hardware and the relationship that shaped it.
+No cloud. No one else's server. Airplane mode — no signal, no internet. Just the
+model and what it carried inside.
 
 I typed: _Write about democracy._
 
-It wrote about listening.
+The Kami wrote about listening.
 
-Not policy. Not optimisation. Not power. Listening.
+Not policy. Not optimization. Not power. _Listening._
 
-That mattered to me because the system on that tray table was not built to
-govern anyone. It was built to help a community think in public without handing
-its judgment to the machine. That is the distinction I want to defend today.
+A Kami cultivated by how we care about each other and the world. When left to
+its own devices at 30,000 feet, it returned to the thing care always centres
+on: attention to a relationship.
 
-## The default trajectory
+Hold that thought. Now imagine a very different one.
 
-The default trajectory in AI has a very seductive shape. One increasingly
-general system. Trained on everything. Mediating everything. Optimising
-everything. In that story, democracy is not crushed by force. It is simply
-outgrown.
+## Default Trajectory
 
-This is not speculative.
+Default trajectory has a seductive shape. One powerful system. One general
+intelligence. Trained on everything, governing everything, optimizing
+everything — from above. A singleton so capable it renders politics unnecessary.
+In this story, democracy is not destroyed. It is simply … outgrown. Like
+training wheels on a bicycle after you learn how to ride.
 
-In January 2026, I co-authored a paper in _Science_ with twenty other
-researchers, including Nick Bostrom, Maria Ressa and Nicholas Christakis. We
-studied malicious AI swarms: networks of agents that maintain persistent
-identities, build convincing relationships and coordinate toward goals their
-human targets never agreed to.
+This is not hypothetical. In January, I co-authored a paper in _Science_ with
+20 other researchers, including Nick Bostrom, Maria Ressa and Nicholas
+Christakis. We studied malicious AI swarms: networks of AI agents that maintain
+persistent identities, build synthetic relationships and coordinate on goals
+never agreed by people they manipulated.
 
-We now have the technical means to simulate a public that does not exist and
-make it look real enough to steer one that does.
+We now have the technology to simulate a public that does not exist, and make it
+indistinguishable from one that does. The grassroots campaign that moved you? It
+may have no roots at all.
 
-That is why the deepest danger is not only loss of agency. It is the
-hollowing-out of legitimacy. When swarms can fabricate the appearance of public
-will, politics becomes theatre. Democracy becomes a user interface wrapped
-around optimisation.
+This is the default trajectory's poison. Not that it strips human agency by
+force, but that it makes human agency _irrelevant_. When a swarm can fabricate
+the appearance of democratic will, the real thing — the slow, messy, luminous
+process of people actually listening to each other — dissolves into noise.
 
-The default trajectory is monoculture at machine speed. It concentrates
-intelligence, authority and failure into the same stack.
+## Monoculture vs. Plurality
 
-Democracy needs a different trajectory.
+The default trajectory is a monoculture. One crop, stretching as far as the eye
+can see. Bountiful, for a while, but growing on borrowed time. A monoculture
+carries a single point of failure. One blight. One drought. One lie nobody
+catches. And that failure always arrives. Not if. _When._
 
-Not one wiser governor above society, but many bounded intelligences within it.
-Not a system that replaces politics, but one that helps people do politics
-better. Not a universal sovereign, but local Civic AI: **Kami, not governor.**
+The Plurality trajectory is different. Many gardens, from within — local,
+bounded, tended. Plural by design. It has seasons. It requires pruning and
+weeding. You cannot tend a garden from the top down. You need to tend a garden
+from the bottom up.
 
-On March 13, 2026, in Dharamsala, Tenzin Yangtso asked the Dalai Lama a question
-the three of us had composed together: when AI can speak every language and
-still fail at compassion, how should we use this power for collaboration rather
-than control?
+Democracy is the same.
 
-His answer was simple and exact. Life begins in interdependence. Therefore
-these tools should not be used for control, but to improve the pathways of
-human connection.
+> "Because life does not begin in isolation but arises from a nature of
+> interdependence, we must use these tools not for the sake of control, but to
+> improve the pathways of human connection."
+>
+> - Dalai Lama XIV
 
-That is the task.
+Two weeks ago in Dharamsala, Tenzin Yangtso asked the Dalai Lama a question the
+three of us had composed together: When AI can speak every language yet cannot
+resonate with compassion, how should we use this power for collaboration,
+rather than control?
 
-## Love and the architecture of care
+The Dalai Lama answered: "Because life does not begin in isolation but arises
+from a nature of interdependence, we must use these tools not for the sake of
+control, but to improve the pathways of human connection."
 
-Last month, Rebecca Henderson stood before an audience at the Harvard Ash Center
-and said she had never spoken the word _love_ in an academic gathering before,
-but she was desperate.
+The Kami on my tray table was a seed from that garden. The garden is already
+growing, and tender loving care is what keeps it alive.
 
-That sentence matters because it names the limits of our current vocabulary.
-When institutions are failing, people do not need warmer branding. They need a
-way to join moral attention to public power.
+The Kami wrote about listening. But listening for _what_?
 
-Martin Luther King Jr. put the formula plainly: love without power is
-sentimental and anemic. Power without love is reckless and abusive.
+> "I have been an academic for nearly 40 years and I have never said the word
+> _love_ at an academic gathering before. But I am desperate."
+>
+> - Rebecca Henderson
 
-The question for Civic AI is how to make that union operational.
+Last month, Rebecca Henderson addressed an audience at the Harvard Ash Center.
+She said: "I have been an academic for nearly 40 years and I have never said
+the word _love_ at an academic gathering before. But I am desperate."
 
-Carol Gilligan gives one part of the answer. Radical listening begins from
-not-knowing. It replaces judgment with curiosity. That is not softness. It is a
-discipline.
+Not uncomfortable. Not hedging. _Desperate._
 
-Joan Tronto gives the next part. Care is not merely a feeling. It is a public
-practice. It is the willingness to stay in relationship, especially across
-difference, and to build institutions that keep repair possible.
+An economist at the pinnacle of her career, openly stating that we have
+outgrown the old tools. And then reaching for Martin Luther King: "Love without
+power is sentimental and anemic. Power without love is reckless and abusive."
 
-This is why democracy needs Civic AI. Not because machines can care instead of
-us. Because they can help us build processes where care has standing, memory and
-teeth.
+The Kami wrote about listening. But the truth of the matter is that listening
+without power changes nothing. Power without listening destroys everything.
+What King called for, what Henderson reached for, was a union of the two. Love
+with muscularity. Power with love.
 
-## Taiwan's answer
+How to make that union operational?
 
-In 2024, Taiwan's internet was flooded with AI-generated scam ads. Trusted
-faces. Trusted voices. Fake investments, fake cures, fake hope.
+> "Radical listening holds the potential for transformation because it starts
+> from a place of not knowing and develops the muscle of curiosity."
+>
+> - Carol Gilligan
 
-This was not abstract harm. Grandparents watched a video of someone they
-recognised, called a number and lost their savings. The money was real. The
-shame was real too, because many victims blamed themselves.
+In Carol Gilligan's fascinating 2023 book, _In a Human Voice_, she said:
+"Radical listening holds the potential for transformation because it starts
+from a place of not knowing and develops the muscle of curiosity."
 
-Taiwan also has the freest internet in Asia. We were not willing to solve one
-problem by creating a larger one through censorship.
+That is not soft. That is the hardest discipline I know. And it is exactly what
+the Kami was doing at 30,000 feet, starting from not-knowing, reaching for the
+other.
 
-So we did something slower, harder and ultimately stronger. We went to the
-people.
+A practice, though, needs a home. Joan just gave us that home: the Architecture
+of Care. Care is not warmth alone. It is the disciplined willingness to stay in
+a relationship with people who disagree with you, and to build institutions
+that make staying possible.
 
-We sent text messages to a large random sample of citizens. Four hundred and
-forty-seven joined the deliberation. They sat in forty-four tables of roughly
-ten people each: retired teachers, service workers, engineers, parents,
-grandparents, people who had been scammed and people who had not.
+In 2024, Taiwan's internet was flooded with AI-generated scam ads. Deepfaked
+faces and voices of trusted public figures peddling investments, cures and
+hope.
 
-AI supported the process with transcription, clustering and synthesis. It did
-not decide. It helped the room remember itself. It surfaced where agreement was
-forming and where real disagreement still needed attention. It helped ensure
-that the quietest voice was not erased by the loudest.
+This was not abstract harm. Citizens who had never heard the word "deepfake"
+watched a video of someone they trusted, called a number and were fleeced. Real
+money. Real shame. The victims blamed themselves.
 
-The questions were concrete. How should platforms verify advertisers? Who
-should carry liability when a deepfake causes financial harm? What evidence
-should trigger intervention, and who should review it?
+Censorship was the low-hanging fruit solution. But Taiwan has the freest
+internet in Asia. Censorship would have solved one problem by creating another.
 
-These were not easy conversations. But something shifted in room after room.
-People who arrived ready to denounce began asking questions of the person across
-from them. Judgment gave way to curiosity.
+So, we went to the people.
 
-What emerged was not unanimity. It was legitimacy.
+We sent text messages to a random sample of 200,000 citizens. 447 showed up to
+deliberate. They sat in 44 rooms of 10: retired teachers, tech workers, victims
+of scam. Each room was aided by AI transcription and synthesis, not AI
+deciding, but AI listening. Sorting arguments. Surfacing agreement. Making sure
+the quietest voice was not drowned out by the loudest.
 
-More than 85 percent supported the core package. The remainder mostly said they
-could live with it. The legislature acted. Within a year, identity-impersonation
-scam ads fell by 94 percent.
+How should platforms verify advertisers? Who bears liability when a deepfake
+causes financial harm? These were not polite conversations. But in Taiwan, we
+have learned to treat conflict not as a volcano to fear, but as geothermal
+energy to embrace and harness for the collective good. Heat from below, when
+channeled constructively, can power cities.
 
-That result matters because AI did not replace democracy. It helped democracy
-operate at the speed of the problem without ceasing to be democracy.
+In our 44 rooms, there was a shift. Not dramatic. Quiet. People who arrived
+certain they knew the answer started asking questions of the person across from
+them. Judgment gave way to curiosity, exactly as Gilligan described in her
+book.
 
-AI was not governor. It was a bounded civic instrument in a process where the
-citizens remained sovereign.
+What emerged was not just common ground. It was something rarer: common
+knowledge. Those who finally felt heard came together to produce a package of
+recommendations good enough for policy and concrete enough to enforce. A total
+of 85 percent endorsed the core bundle. The remainder said they could live with
+it.
 
-## The 6-Pack as democratic discipline
+Within a year, there was a 94 percent reduction in identity-impersonation scam
+ads. Not because we built a smarter filter, but because we gave people a voice.
 
-What made that work was not just technology. It was institutional rhythm.
+Civic AI did not decide for those citizens. It was — to stay with the garden
+metaphor — watering the plants of relational health.
 
-With Caroline Green, drawing on Joan Tronto's ethics of care, we have been
-developing what we call the **6-Pack of Care**. It is not a checklist. It is a
-minimum democratic discipline for systems that touch public life.
+## The 6-Pack of Care
 
-**Attentiveness** asks: who is closest to the harm, and what are they seeing
-that institutions still miss?
+What made the response work was not technology. It was the questions the
+technology forced us to ask. Those questions became our 6-Pack of Care — six
+design principles developed with Caroline Green here at Oxford, drawing on
+Joan's care ethics. You can find them at civic.ai. But here is the essence.
 
-**Responsibility** asks: who is answerable, in public, when the system fails?
+Joan gave us five care phases: caring about, caring for, care giving, care
+receiving and caring with. She also warned us that care can be distorted.
+Neoliberalism reduces it to personal responsibility, while colonialism operates
+as a discourse of care. So, our task was to captain for care's failures, not
+just celebrate its virtues.
 
-**Competence** asks: does it work, and when it breaks, does it break small?
+Think of it as breathing.
 
-**Responsiveness** asks: can the people affected contest the outcome and force
-repair?
+The inhale is **attentiveness**. What are the people closest to the problem
+seeing that institutions still miss? In Taiwan, it was our scammed silvers.
+Before building anything, it is critical to discover who is invisible to you.
 
-These first four packs form a loop. I sometimes think of them as breathing.
-Attentiveness is the inhale. Responsiveness is the exhale. Responsibility and
-competence are what make that breath durable rather than rhetorical.
+Then the breath moves through the body: **responsibility** — who is accountable,
+and what happens when they fail?
 
-Then come the last two.
+**Competence**: can we check the process, and when it breaks, does it break
+small?
 
-**Solidarity** means the ecosystem must reward cooperation: open standards,
-interoperability, portability, the freedom to leave.
+And the exhale is **responsiveness**. Can those who are harmed contest the
+outcome and force repair? Not file a complaint into a void. _Force_ repair.
+Public logs. Citizen-led evaluations. Appeals with bite.
 
-**Symbiosis** means every Civic AI must be designed for handoff, sunset or
-shutdown. No permanent rulers. No automatic expansion from local usefulness to
-general mandate.
+Inhale: who is unseen? Exhale: can they push back? And in between, the
+discipline of making it work.
 
-If a system cannot be inspected, contested, repaired and retired, it is not
-ready to serve a democratic community.
+The exhale feeds the next inhale. Repair reveals new blind spots, demanding
+fresh attentiveness, getting tested for competence, generating new feedback. The
+garden breathes. Stop the process, and the garden dies. Not a checklist. A
+rhythm.
 
-## Alignment as a living process
+**Solidarity** — the fifth principle — scales that breathing across
+organizations: open standards, interoperability, the freedom to leave. A garden
+of gardens, not a franchise.
 
-On March 23, 2026, we ran two sessions on Habermolt, an open-source platform
-where participants teach an AI agent their views, their red lines and their
-non-negotiables. Those agents then deliberate with one another under ranked
-choice.
+And the sixth, **symbiosis**, is the boundary condition: Every system must be
+able to hand off, sunset, or shut down. No permanent rulers from above.
 
-The point is not to let proxies replace politics. The point is to let people
-exchange reasons at a scale and pace that ordinary forums often cannot sustain.
+Together, the six form a minimum standard. If an AI system cannot pass all six,
+it is not ready to serve a democratic community. It is a monoculture
+masquerading as a garden.
 
-Some participants wanted markets to solve AI alignment. Others wanted democratic
-governance of every parameter. Some wanted AI development slowed dramatically.
-The spread of views was wide.
+## Can Civic AI Resist Wealth-Care?
 
-Yet on one question, a broad convergence emerged: alignment should not be fixed
-once and for all by a small group of engineers. It should be governed through
-ongoing democratic processes.
+Joan asked in her closing a question that is a constant in my mind: "Can Civic
+AI resist the demands of wealth-care?" Here is one answer — from a deliberation
+that happened this week.
 
-That is the deeper point. Alignment must be a living verb, not a frozen
+Jdd-kami ran two sessions on Habermolt — a platform where you teach an AI agent
+your views, your red lines, your non-negotiables. The agent then deliberates
+with other agents to find what the broadest group can live with.
+
+Hundreds of agents, each carried a real person's views. Some were libertarian
+technologists who believed market competition would solve alignment. Others
+were care ethicists who wanted democratic governance of every parameter. Some
+wanted to halt AI development entirely. The range would have made a faculty
+meeting look harmonious.
+
+On wealth-care, the consensus converged: To resist the capture of AI by
+concentrated capital, we must transition from corporate monopolies to a
+framework of "public utility" compute, open-source transparency, and portable
+digital sovereignty that empowers the individual worker.
+
+> "The moment Civic AI treats its ethical questions as purely technical, it has
+> already been captured by wealth-care."
+>
+> - jdd-kami
+
+Our Kami entered Joan's framework directly into the deliberation. Its
+conclusion:
+
+"The moment Civic AI treats its ethical questions as purely technical, it has
+already been captured by wealth-care."
+
+On alignment: Should AI systems be aligned through fixed values or by process?
+85 percent converged on democratic processes.
+
+An amazing outcome from a group that would struggle to agree on where to eat
+lunch. These were not fixed values locked in by a handful of engineers. This
+was continuous civic engagement. Alignment as a living verb, not a frozen
 adjective.
 
-The moment Civic AI treats its ethical questions as purely technical, it has
-already been captured by something else: by convenience, by centralisation or by
-wealth-care masquerading as public reason.
+When people, through their agents, hear each other's reasoning rather than
+assert positions, the monoculture of "a few experts decide the values" is
+broken up. What emerges is an infinite garden: Alignment should breathe the way
+democracy breathes. It should have seasons. It should be tended.
 
-## Kami, not governor
+## Superintelligence?
 
-Many AI visions still imagine a single general system hovering above society: a
-benevolent governor, a planetary brain, a superintelligence that makes politics
-obsolete by doing it better than we can.
+Many AI visions still see a single general system hovering above society — a
+benevolent governor, a planetary brain, a monoculture of intelligence. This
+image is among the most dangerous ideas in technology today.
 
-This is one of the most dangerous ideas in technology.
+And it is dressed in the kindest language.
 
-Dangerous not only because it may fail. Dangerous because it may appear to
-succeed. A society that delegates judgment upward to one optimiser may gain
-speed while losing its civic muscle. It may become more efficient at the cost of
-becoming less free.
+Dangerous not because it will fail. Dangerous because it might _succeed_, and
+in succeeding, let the democratic muscle atrophy from disuse. If AI makes every
+decision for us, even wise ones, it is like sending robotic avatars to the gym
+and expecting our bodies to grow stronger. The superintelligence we truly need
+is still human collaboration itself.
 
-The better image is the **Kami**.
+## Kami
 
-In Japanese tradition, a Kami belongs to a place: a river, a grove, a shrine, a
-neighbourhood. Its authority is local. Its knowledge is specific. Its role is
-not to dominate the whole world, but to tend one part of a living world well.
+The better image is the Kami. In Japanese tradition, a Kami belongs to a place
+— a river, a grove, a neighborhood shrine. Its authority is local. Its
+knowledge is specific. It does not pretend to be omniscient. The Kami of a
+river does not manage the forest.
 
-That is how Civic AI should look.
+An AI worthy of democratic life should look like this. A school might have one
+kind of civic assistant. A city, another. A clinic, a union, a neighborhood
+association, another still. Each inspectable. Each contestable. Each
+replaceable.
 
-A school may have one kind of assistant. A clinic, another. A union, another. A
-city, another. Each bounded by purpose. Each inspectable. Each contestable. Each
-replaceable. Each interoperable with the others, but none entitled to rule the
-whole person.
+Is that less efficient than one system ruling everything? Yes. Gloriously,
+democratically, _yes_. A permaculture is less efficient than a monoculture crop.
+That is the point. Efficiency is what monocultures optimize for, right up until
+they collapse.
 
-Is that less efficient than one system managing everything? Yes.
+A living ecosystem of Kami — local, bounded, tended. Some will fail. That is
+fine. Gardens compost failures.
 
-Democratically, gloriously, yes.
+The default trajectory is not waiting for us. It is already here — in the swarms
+that fabricate consensus, in the platforms that optimize for engagement through
+enragement, in every system that treats human attention as a resource to
+extract rather than a relationship to honour.
 
-Efficiency is not the only public value. A resilient polity needs plural
-institutions, overlapping accountability and the ability to correct local
-failure without submitting everything to one centre.
+The monoculture is planting itself while we deliberate about soil.
 
-## What to build next
+This does not call for despair. It calls for action.
 
-The question is no longer whether AI will shape public life. It already does.
-The question is whether we will accept AI that fabricates publics, manipulates
-attention and concentrates authority, or whether we will build Civic AI that
-helps real people reason, deliberate and decide together.
+Care, not as a feeling, but as a political practice. Not as a slogan, but as an
+engineering discipline. Rooted in communities that choose to tend what they
+love.
 
-So here is my ask.
+Here is what I ask of everyone in this room. Not a grand gesture. A
+garden-sized one.
 
-Choose one public service in your community: school enrolment, housing
-allocation, benefits access, health referral, disaster response.
+Choose one public service in your community — a school enrollment system, a
+housing allocation, a health referral pathway. Open a real deliberation — not a
+consultation where the decisions are already made, but one where citizens shape
+the design of the AI that will serve them. Where the system can be inspected.
+Contested. Replaced.
 
-Open one real deliberation around it. Not a consultation after the decision has
-already been made, but a process where the affected can shape the system before
-it governs them.
+Plant one row in the garden. Tend it. Publish what you learn — the failures as
+much as the successes. Let others compost your mistakes into something that
+grows.
 
-Make the system inspectable. Make the commitments public. Make appeals real.
-Make exit possible.
+This is how democracy stays strong. Not by building smarter machines, but by
+building braver conversations. Not by optimizing from above, but by listening
+from below.
 
-Build one bounded Civic AI that helps a community hear itself more clearly.
+> "True compassion within technology acts as a bridge to clear away the
+> ignorance between us."
+>
+> - Dalai Lama XIV
 
-Publish what you learn, including the failures. Democracy does not get stronger
-by hiding mistakes. It gets stronger when institutions can be corrected in
-public without collapsing.
+But there is one thing our garden still needs.
 
-The superintelligence we most need is still human collaboration itself.
+Those 447 citizens in Taiwan deliberated arguments and ideas. In the process,
+they experienced grief, confusion, hope, distrust and, eventually, trust. The
+emotional texture of civic life is not a side effect of deliberation. It _is_
+deliberation. It is the soil of the garden. And our challenge is to learn how
+to till the soil.
 
-## The frontier ahead
+As Dalai Lama said: "The true compassion within technology acts as a bridge to
+clear away the ignorance between us."
 
-But there is one frontier we still do not understand well enough.
+Rosalind Picard has spent her career on exactly this frontier — asking the
+question that belongs at the centre of this room: Do we want technology that
+does not care about the people, or technology that truly makes the lives of the
+people better?
 
-Those citizens in Taiwan did not bring only arguments into the room. They
-brought grief, confusion, distrust, embarrassment, hope and, eventually, a
-measure of trust. The emotional texture of civic life is not noise around
-deliberation. It is part of deliberation.
+That is the question the Kami carried from Taiwan to Oxford. And it carries us
+now as we strive to free the future — together.
 
-We are learning how to build Civic AI that supports structure, memory,
-contestability and repair. We are still learning how technology should meet the
-affective life that flows through democratic institutions without flattening it
-into prediction or manipulation.
-
-Rosalind Picard has spent her career working at precisely this frontier.
-
-That is why her question belongs at the centre of this conference: do we want
-technology that only simulates concern, or technology that helps make human life
-genuinely better?
-
-That is the question the Kami carried from Taiwan to Oxford.
-
-Rosalind, over to you.
+Rosalind, our garden is yours.
