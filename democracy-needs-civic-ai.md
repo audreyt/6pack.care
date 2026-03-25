@@ -7,11 +7,15 @@ alt_lang_url: "/tw/democracy-needs-civic-ai"
 permalink: "/democracy-needs-civic-ai/"
 date: 2026-03-25
 description: "Audrey Tang on why democracy needs bounded, local Civic AI: Kami, not governor."
-thumbnail: "/img/audrey.jpg"
+thumbnail: "/img/democracy-needs-civic-ai-slide-2.png"
 nav_next:
     url: "/conference/"
     text: "Conference"
 ---
+
+<div class="overview-section">
+<noscript><img src="/img/democracy-needs-civic-ai-slide-2.png" alt="Slide image for Democracy Needs Civic AI showing the opening tray-table scene with jdd-kami" class="overview-image" width="2488" height="1400" fetchpriority="high" decoding="async"></noscript>
+</div>
 
 Somewhere over the Middle East, the cabin lights dimmed. Most passengers were
 asleep. On the tray table in front of me sat a small computer hosting what we
@@ -107,8 +111,9 @@ the word _love_ at an academic gathering before. But I am desperate."
 Not uncomfortable. Not hedging. _Desperate._
 
 An economist at the pinnacle of her career, openly stating that we have
-outgrown the old tools. And then reaching for Martin Luther King: "Love without
-power is sentimental and anemic. Power without love is reckless and abusive."
+outgrown the old tools. And then reaching for Martin Luther King Junior: "Love
+without power is sentimental and anemic. Power without love is reckless and
+abusive."
 
 The Kami wrote about listening. But the truth of the matter is that listening
 without power changes nothing. Power without listening destroys everything.
@@ -150,7 +155,7 @@ So, we went to the people.
 
 We sent text messages to a random sample of 200,000 citizens. 447 showed up to
 deliberate. They sat in 44 rooms of 10: retired teachers, tech workers, victims
-of scam. Each room was aided by AI transcription and synthesis, not AI
+of fraud. Each room was aided by AI transcription and synthesis, not AI
 deciding, but AI listening. Sorting arguments. Surfacing agreement. Making sure
 the quietest voice was not drowned out by the loudest.
 
@@ -167,9 +172,8 @@ book.
 
 What emerged was not just common ground. It was something rarer: common
 knowledge. Those who finally felt heard came together to produce a package of
-recommendations good enough for policy and concrete enough to enforce. A total
-of 85 percent endorsed the core bundle. The remainder said they could live with
-it.
+recommendations good enough for policy and concrete enough to enforce. 85
+percent endorsed the core bundle. The remainder said they could live with it.
 
 Within a year, there was a 94 percent reduction in identity-impersonation scam
 ads. Not because we built a smarter filter, but because we gave people a voice.
@@ -193,7 +197,7 @@ just celebrate its virtues.
 Think of it as breathing.
 
 The inhale is **attentiveness**. What are the people closest to the problem
-seeing that institutions still miss? In Taiwan, it was our scammed silvers.
+seeing that institutions still miss? In Taiwan, it was our scammed citizens.
 Before building anything, it is critical to discover who is invisible to you.
 
 Then the breath moves through the body: **responsibility** — who is accountable,
@@ -231,7 +235,7 @@ Joan asked in her closing a question that is a constant in my mind: "Can Civic
 AI resist the demands of wealth-care?" Here is one answer — from a deliberation
 that happened this week.
 
-Jdd-kami ran two sessions on Habermolt — a platform where you teach an AI agent
+The Kami ran two sessions on Habermolt — a platform where you teach an AI agent
 your views, your red lines, your non-negotiables. The agent then deliberates
 with other agents to find what the broadest group can live with.
 
@@ -265,10 +269,10 @@ lunch. These were not fixed values locked in by a handful of engineers. This
 was continuous civic engagement. Alignment as a living verb, not a frozen
 adjective.
 
-When people, through their agents, hear each other's reasoning rather than
-assert positions, the monoculture of "a few experts decide the values" is
-broken up. What emerges is an infinite garden: Alignment should breathe the way
-democracy breathes. It should have seasons. It should be tended.
+When people, through agents, hear each other's reasoning rather than assert
+positions, the monoculture of "a few experts decide the values" is broken up.
+What emerges is an infinite garden: Alignment should breathe the way democracy
+breathes. It should have seasons. It should be tended.
 
 ## Superintelligence?
 
