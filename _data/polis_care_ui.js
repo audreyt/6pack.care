@@ -28,7 +28,7 @@ export default {
             statementDynamics: "Statement dynamics",
             opinionDynamics: "Opinion dynamics",
             sourceWindow: "Activity window",
-            source: "Original Polis conversation",
+            source: "Snapshot repository",
         },
         statements: {
             kicker: "Statement map",
@@ -158,7 +158,7 @@ export default {
             statementDynamics: "陳述動態",
             opinionDynamics: "意見動態",
             sourceWindow: "活動期間",
-            source: "原始 Polis 對話",
+            source: "資料快照倉庫",
         },
         statements: {
             kicker: "陳述地圖",
