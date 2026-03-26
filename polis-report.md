@@ -36,7 +36,56 @@ This report captures the views of 61 participants at the [Civic AI Conference 20
 
 <svg class="polis-beeswarm" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Statement divisiveness chart"><title>How divisive was the conversation?</title><line x1="50" y1="122" x2="550" y2="122" stroke="var(--border)" stroke-width="1.5"/><text x="50" y="140" fill="var(--muted)" font-family="var(--sans)" font-size="10" font-weight="600">Consensus</text><text x="550" y="140" fill="var(--muted)" font-family="var(--sans)" font-size="10" font-weight="600" text-anchor="end">Divisive</text><line x1="115" y1="122" x2="500" y2="122" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="4 4"/><circle cx="50.0" cy="65.0" r="7" fill="#2a7f8a" opacity="0.82"><title>#7: Always reach a real person with government services (97% agree, 0% disagree)</title></circle><circle cx="91.7" cy="65.0" r="7" fill="#2a7f8a" opacity="0.82"><title>#14: Teach children to question AI, not just use it (93% agree, 3% disagree)</title></circle><circle cx="96.2" cy="81.1" r="7" fill="#2a7f8a" opacity="0.82"><title>#5: You should be told when AI helps make decisions about you (93% agree, 0% disagree)</title></circle><circle cx="108.9" cy="65.0" r="7" fill="#2a7f8a" opacity="0.82"><title>#1: AI should free up staff time, not replace human contact (91% agree, 0% disagree)</title></circle><circle cx="116.3" cy="81.1" r="7" fill="#2a7f8a" opacity="0.82"><title>#16: Should be told chatbot is not a real person (90% agree, 3% disagree)</title></circle><circle cx="130.5" cy="65.0" r="7" fill="#2a7f8a" opacity="0.82"><title>#17: Big tech cares more about profits than communities (90% agree, 3% disagree)</title></circle><circle cx="165.5" cy="65.0" r="7" fill="#2a7f8a" opacity="0.82"><title>#19: AI companies should pay artists and writers (87% agree, 6% disagree)</title></circle><circle cx="170.7" cy="81.1" r="7" fill="#2a7f8a" opacity="0.82"><title>#9: People harmed while government too slow to act (84% agree, 9% disagree)</title></circle><circle cx="171.5" cy="48.9" r="7" fill="#2a7f8a" opacity="0.82"><title>#13: Communities should have voice in local AI use (85% agree, 6% disagree)</title></circle><circle cx="181.9" cy="65.0" r="7" fill="#2a7f8a" opacity="0.82"><title>#6: Someone responsible if AI treats people unfairly (85% agree, 6% disagree)</title></circle><circle cx="216.9" cy="65.0" r="7" fill="#2a7f8a" opacity="0.82"><title>#2: Dementia patients deserve a say in AI care tools (86% agree, 3% disagree)</title></circle><circle cx="222.9" cy="81.1" r="7" fill="#2a7f8a" opacity="0.82"><title>#18: Community caring matters more than advanced tech (82% agree, 4% disagree)</title></circle><circle cx="251.9" cy="65.0" r="7" fill="#2a7f8a" opacity="0.82"><title>#10: Workers should get real help, not just advice (79% agree, 12% disagree)</title></circle><circle cx="275.8" cy="65.0" r="7" fill="var(--text)" opacity="0.82"><title>#8: UK should create body to shut down harmful AI (74% agree, 9% disagree)</title></circle><circle cx="383.1" cy="65.0" r="7" fill="var(--text)" opacity="0.82"><title>#3: AI companionship for elderly better than being alone (67% agree, 17% disagree)</title></circle><circle cx="394.3" cy="81.1" r="7" fill="var(--text)" opacity="0.82"><title>#20: Slow down AI until we understand the effects (64% agree, 24% disagree)</title></circle><circle cx="506.0" cy="65.0" r="7" fill="var(--text)" opacity="0.82"><title>#12: AI data centres will create good local jobs (39% agree, 25% disagree)</title></circle><circle cx="515.7" cy="81.1" r="7" fill="var(--text)" opacity="0.82"><title>#11: Companies must help workers they replace with AI (43% agree, 43% disagree)</title></circle><circle cx="542.5" cy="65.0" r="7" fill="var(--text)" opacity="0.82"><title>#4: Offer imperfect AI tools to families with serious illness (49% agree, 35% disagree)</title></circle><circle cx="550.0" cy="81.1" r="7" fill="#c0392b" opacity="0.82"><title>#15: AI in schools helps more than it harms (25% agree, 47% disagree)</title></circle></svg>
 
-<p class="figure-caption">Each dot is a statement. Hover to see details. Teal = broad agreement, dark = mixed views, red = majority disagree.</p>
+<p class="figure-caption">Each dot is a statement. Tap or hover to see details. Teal = broad agreement, dark = mixed views, red = majority disagree.</p>
+
+<div class="polis-statement" id="beeswarm-detail" style="display:none">
+<p class="polis-statement-text" id="bd-text"></p>
+<div class="polis-bar" id="bd-bar"></div>
+<div class="polis-bar-labels" id="bd-labels"></div>
+<div class="polis-group-bars" id="bd-groups"></div>
+</div>
+
+<script>
+(()=>{
+const S={
+7:[97,0,"People should always be able to reach a real person when dealing with a government service, even if AI handles most tasks."],
+14:[93,3,"Schools should teach children to question what AI tells them, not just how to use it."],
+5:[93,0,"When AI helps make a decision about your benefits, housing, or health, you should be told."],
+1:[91,0,"AI in care homes should free up time for staff to spend with residents, not replace human contact."],
+16:[90,3,"When I talk to a chatbot or AI assistant, I should always be told it is not a real person."],
+17:[90,3,"Big technology companies care more about profits than about what happens to our communities."],
+19:[87,6,"AI companies should have to pay artists and writers when they use their work to train AI systems."],
+9:[84,9,"People are being harmed by AI-driven decisions while the government takes too long to act."],
+13:[85,6,"Communities should have a voice in deciding how AI is used in their local schools and hospitals."],
+6:[85,6,"If an AI system treats people unfairly because of their race, age, or disability, someone should be held responsible."],
+2:[86,3,"People living with dementia deserve a say in whether AI tools are used in their care."],
+18:[82,4,"A community that takes care of its people matters more than one with the most advanced technology."],
+10:[79,12,"Workers who lose their jobs because of AI should get real help finding new work, not just advice."],
+8:[74,9,"The UK should create an independent body with real power to shut down harmful AI systems."],
+3:[67,17,"Using AI to keep an elderly person company when no human is available is better than leaving them alone."],
+20:[64,24,"We should slow down on AI until we better understand what it does to people."],
+4:[49,35,"Families caring for someone with a serious illness should be offered AI tools to help, even if those tools are not perfect."],
+11:[43,43,"Companies should not be allowed to replace workers with AI unless they help those workers find new roles."],
+12:[39,25,"New AI data centres in Oxfordshire will create good jobs for local people, not just for tech workers from elsewhere."],
+15:[25,47,"AI tools in schools do more to help struggling students catch up than they do to harm learning."]
+};
+const G={3:[[79,0],[40,40],[83,17]],20:[[31,46],[79,14],[100,0]],4:[[15,46],[94,0],[0,100]],11:[[6,69],[67,25],[86,14]],12:[[38,23],[42,17],[33,67]],15:[[47,13],[8,67],[0,100]]};
+const gn=["A","B","C"],gc=["polis-ga","polis-gb","polis-gc"];
+const panel=document.getElementById("beeswarm-detail");
+const bT=document.getElementById("bd-text"),bB=document.getElementById("bd-bar"),bL=document.getElementById("bd-labels"),bG=document.getElementById("bd-groups");
+const svg=document.querySelector(".polis-beeswarm");
+svg.querySelectorAll("circle").forEach(c=>{const t=c.querySelector("title");if(!t)return;const m=t.textContent.match(/^#(\d+)/);if(m){c.setAttribute("data-stmt",m[1]);c.style.cursor="pointer";}});
+function show(id){const s=S[id];if(!s)return;const[a,d,text]=s,p=100-a-d;
+bT.textContent="#"+id+": "+text;
+bB.innerHTML='<div class="polis-bar-agree" style="width:'+a+'%"></div>'+(d>0?'<div class="polis-bar-disagree" style="width:'+d+'%"></div>':"");
+bL.innerHTML='<span class="polis-label-agree">'+a+"% agree</span>"+(d>0?' <span class="polis-label-disagree">'+d+"% disagree</span>":"")+(p>0?" <span>"+p+"% pass</span>":"");
+const g=G[id];if(g){bG.innerHTML=g.map((r,i)=>'<div class="polis-group-bar"><span class="polis-group-name '+gc[i]+'">'+gn[i]+'</span><div class="polis-bar"><div class="polis-bar-agree" style="width:'+r[0]+'%"></div>'+(r[1]>0?'<div class="polis-bar-disagree" style="width:'+r[1]+'%"></div>':'')+'</div><span class="polis-group-pct">'+r[0]+"%</span></div>").join("");bG.style.display="";}else{bG.innerHTML="";bG.style.display="none";}
+svg.querySelectorAll("[data-stmt]").forEach(c=>{c.setAttribute("opacity",c.getAttribute("data-stmt")===String(id)?"1":"0.4");});
+panel.style.display="";panel.scrollIntoView({behavior:"smooth",block:"nearest"});}
+svg.addEventListener("click",e=>{const c=e.target.closest("[data-stmt]");if(c)show(c.getAttribute("data-stmt"));});
+svg.addEventListener("mouseover",e=>{const c=e.target.closest("[data-stmt]");if(c)show(c.getAttribute("data-stmt"));});
+})();
+</script>
 
 ### What We Agree On
 

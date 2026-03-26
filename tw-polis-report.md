@@ -36,7 +36,56 @@ nav_next:
 
 <svg class="polis-beeswarm" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Statement divisiveness chart"><title>How divisive was the conversation?</title><line x1="50" y1="122" x2="550" y2="122" stroke="var(--border)" stroke-width="1.5"/><text x="50" y="140" fill="var(--muted)" font-family="var(--sans)" font-size="10" font-weight="600">共識</text><text x="550" y="140" fill="var(--muted)" font-family="var(--sans)" font-size="10" font-weight="600" text-anchor="end">分歧</text><line x1="115" y1="122" x2="500" y2="122" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="4 4"/><circle cx="50.0" cy="65.0" r="7" fill="#2a7f8a" opacity="0.82"><title>#7: 在使用政府服務時應能聯繫到真人 (97% 同意)</title></circle><circle cx="91.7" cy="65.0" r="7" fill="#2a7f8a" opacity="0.82"><title>#14: 教導孩子質疑 AI (93% 同意)</title></circle><circle cx="96.2" cy="81.1" r="7" fill="#2a7f8a" opacity="0.82"><title>#5: AI 做決定時應被告知 (93% 同意)</title></circle><circle cx="108.9" cy="65.0" r="7" fill="#2a7f8a" opacity="0.82"><title>#1: AI 應騰出時間給工作人員 (91% 同意)</title></circle><circle cx="116.3" cy="81.1" r="7" fill="#2a7f8a" opacity="0.82"><title>#16: 應被告知聊天對象非真人 (90% 同意)</title></circle><circle cx="130.5" cy="65.0" r="7" fill="#2a7f8a" opacity="0.82"><title>#17: 科技公司利潤重於社區 (90% 同意)</title></circle><circle cx="165.5" cy="65.0" r="7" fill="#2a7f8a" opacity="0.82"><title>#19: AI 公司應付費給創作者 (87% 同意)</title></circle><circle cx="170.7" cy="81.1" r="7" fill="#2a7f8a" opacity="0.82"><title>#9: 政府行動太慢 (84% 同意)</title></circle><circle cx="171.5" cy="48.9" r="7" fill="#2a7f8a" opacity="0.82"><title>#13: 社區應有發言權 (85% 同意)</title></circle><circle cx="181.9" cy="65.0" r="7" fill="#2a7f8a" opacity="0.82"><title>#6: AI 偏見應有人負責 (85% 同意)</title></circle><circle cx="216.9" cy="65.0" r="7" fill="#2a7f8a" opacity="0.82"><title>#2: 失智症患者應有發言權 (86% 同意)</title></circle><circle cx="222.9" cy="81.1" r="7" fill="#2a7f8a" opacity="0.82"><title>#18: 照顧社區比先進技術重要 (82% 同意)</title></circle><circle cx="251.9" cy="65.0" r="7" fill="#2a7f8a" opacity="0.82"><title>#10: 勞工應得到實際幫助 (79% 同意)</title></circle><circle cx="275.8" cy="65.0" r="7" fill="var(--text)" opacity="0.82"><title>#8: 英國應建立獨立 AI 機構 (74% 同意)</title></circle><circle cx="383.1" cy="65.0" r="7" fill="var(--text)" opacity="0.82"><title>#3: AI 陪伴長者好過獨處 (67% 同意)</title></circle><circle cx="394.3" cy="81.1" r="7" fill="var(--text)" opacity="0.82"><title>#20: 應放慢 AI 發展 (64% 同意)</title></circle><circle cx="506.0" cy="65.0" r="7" fill="var(--text)" opacity="0.82"><title>#12: AI 資料中心創造好工作 (39% 同意)</title></circle><circle cx="515.7" cy="81.1" r="7" fill="var(--text)" opacity="0.82"><title>#11: 公司須幫助被取代員工 (43% 同意)</title></circle><circle cx="542.5" cy="65.0" r="7" fill="var(--text)" opacity="0.82"><title>#4: 向家庭提供不完美 AI 工具 (49% 同意)</title></circle><circle cx="550.0" cy="81.1" r="7" fill="#c0392b" opacity="0.82"><title>#15: AI 在學校中利大於弊 (25% 同意, 47% 不同意)</title></circle></svg>
 
-<p class="figure-caption">每個點代表一項陳述。懸停查看詳情。藍綠色＝廣泛共識，深色＝意見分歧，紅色＝多數不同意。</p>
+<p class="figure-caption">每個點代表一項陳述。點擊或懸停查看詳情。藍綠色＝廣泛共識，深色＝意見分歧，紅色＝多數不同意。</p>
+
+<div class="polis-statement" id="beeswarm-detail" style="display:none">
+<p class="polis-statement-text" id="bd-text"></p>
+<div class="polis-bar" id="bd-bar"></div>
+<div class="polis-bar-labels" id="bd-labels"></div>
+<div class="polis-group-bars" id="bd-groups"></div>
+</div>
+
+<script>
+(()=>{
+const S={
+7:[97,0,"在使用政府服務時，即使 AI 處理了大部分工作，人們仍應隨時能夠聯繫到真人。"],
+14:[93,3,"學校應該教導孩子質疑 AI 告訴他們的內容，而不僅僅是如何使用它。"],
+5:[93,0,"當 AI 協助做出關於你的福利、住房或健康的決定時，你應該被告知。"],
+1:[91,0,"AI 在照護機構中應該為工作人員騰出更多時間與住民相處，而非取代人與人之間的接觸。"],
+16:[90,3,"當我與聊天機器人或 AI 助手交談時，我應該總是被告知它不是真人。"],
+17:[90,3,"大型科技公司更在乎利潤，而非我們社區會發生什麼。"],
+19:[87,6,"AI 公司在使用藝術家和作家的作品來訓練 AI 系統時，應該付費給他們。"],
+9:[84,9,"人們正在因 AI 驅動的決策而受到傷害，而政府的行動太慢了。"],
+13:[85,6,"社區應該在決定如何在當地學校和醫院使用 AI 時擁有發言權。"],
+6:[85,6,"如果 AI 系統因為種族、年齡或身心障礙而不公平地對待人們，應該有人為此負責。"],
+2:[86,3,"失智症患者應該對是否使用 AI 工具來照護他們擁有發言權。"],
+18:[82,4,"一個照顧人民的社區，比一個擁有最先進技術的社區更重要。"],
+10:[79,12,"因 AI 失去工作的勞工應該得到實際幫助來找到新工作，而不只是建議。"],
+8:[74,9,"英國應該建立一個獨立機構，擁有關閉有害 AI 系統的實權。"],
+3:[67,17,"在沒有人陪伴的情況下，用 AI 來陪伴長者，好過讓他們獨自一人。"],
+20:[64,24,"在更好地了解 AI 對人們的影響之前，我們應該放慢 AI 的發展速度。"],
+4:[49,35,"照顧重病家人的家庭應該被提供 AI 工具來協助，即使這些工具並不完美。"],
+11:[43,43,"除非公司幫助員工找到新職位，否則不應被允許用 AI 取代他們。"],
+12:[39,25,"牛津郡新建的 AI 資料中心將為當地居民創造好的工作機會，而不只是為外地的科技工作者。"],
+15:[25,47,"學校中的 AI 工具對幫助落後學生趕上進度的效果，大於它對學習造成的傷害。"]
+};
+const G={3:[[79,0],[40,40],[83,17]],20:[[31,46],[79,14],[100,0]],4:[[15,46],[94,0],[0,100]],11:[[6,69],[67,25],[86,14]],12:[[38,23],[42,17],[33,67]],15:[[47,13],[8,67],[0,100]]};
+const gn=["A","B","C"],gc=["polis-ga","polis-gb","polis-gc"];
+const panel=document.getElementById("beeswarm-detail");
+const bT=document.getElementById("bd-text"),bB=document.getElementById("bd-bar"),bL=document.getElementById("bd-labels"),bG=document.getElementById("bd-groups");
+const svg=document.querySelector(".polis-beeswarm");
+svg.querySelectorAll("circle").forEach(c=>{const t=c.querySelector("title");if(!t)return;const m=t.textContent.match(/^#(\d+)/);if(m){c.setAttribute("data-stmt",m[1]);c.style.cursor="pointer";}});
+function show(id){const s=S[id];if(!s)return;const[a,d,text]=s,p=100-a-d;
+bT.textContent="#"+id+"："+text;
+bB.innerHTML='<div class="polis-bar-agree" style="width:'+a+'%"></div>'+(d>0?'<div class="polis-bar-disagree" style="width:'+d+'%"></div>':"");
+bL.innerHTML='<span class="polis-label-agree">'+a+"% 同意</span>"+(d>0?' <span class="polis-label-disagree">'+d+"% 不同意</span>":"")+(p>0?" <span>"+p+"% 略過</span>":"");
+const g=G[id];if(g){bG.innerHTML=g.map((r,i)=>'<div class="polis-group-bar"><span class="polis-group-name '+gc[i]+'">'+gn[i]+'</span><div class="polis-bar"><div class="polis-bar-agree" style="width:'+r[0]+'%"></div>'+(r[1]>0?'<div class="polis-bar-disagree" style="width:'+r[1]+'%"></div>':'')+'</div><span class="polis-group-pct">'+r[0]+"%</span></div>").join("");bG.style.display="";}else{bG.innerHTML="";bG.style.display="none";}
+svg.querySelectorAll("[data-stmt]").forEach(c=>{c.setAttribute("opacity",c.getAttribute("data-stmt")===String(id)?"1":"0.4");});
+panel.style.display="";panel.scrollIntoView({behavior:"smooth",block:"nearest"});}
+svg.addEventListener("click",e=>{const c=e.target.closest("[data-stmt]");if(c)show(c.getAttribute("data-stmt"));});
+svg.addEventListener("mouseover",e=>{const c=e.target.closest("[data-stmt]");if(c)show(c.getAttribute("data-stmt"));});
+})();
+</script>
 
 ### 共識之處
 
