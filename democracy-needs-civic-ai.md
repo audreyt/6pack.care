@@ -79,11 +79,7 @@ from the bottom up.
 
 Democracy is the same.
 
-> "Because life does not begin in isolation but arises from a nature of
-> interdependence, we must use these tools not for the sake of control, but to
-> improve the pathways of human connection."
->
-> - Dalai Lama XIV
+<noscript><img src="/img/democracy-needs-civic-ai-dalai-lama.png" alt="Dalai Lama XIV with Audrey Tang in Dharamsala. Quote: 'Because life does not begin in isolation but arises from a nature of interdependence, we must use these tools not for the sake of control, but to improve the pathways of human connection.'" class="overview-image" width="2992" height="1934" loading="lazy" decoding="async"></noscript>
 
 Two weeks ago in Dharamsala, Tenzin Yangtso asked the Dalai Lama a question the
 three of us had composed together: When AI can speak every language yet cannot
@@ -99,10 +95,7 @@ growing, and tender loving care is what keeps it alive.
 
 The Kami wrote about listening. But listening for _what_?
 
-> "I have been an academic for nearly 40 years and I have never said the word
-> _love_ at an academic gathering before. But I am desperate."
->
-> - Rebecca Henderson
+<noscript><img src="/img/democracy-needs-civic-ai-henderson.png" alt="Rebecca Henderson at Harvard Kennedy School. Quote: 'I have been an academic for nearly 40 years and I have never said the word love at an academic gathering before. But I am desperate.'" class="overview-image" width="2992" height="1934" loading="lazy" decoding="async"></noscript>
 
 At an Ash Center conference at Harvard Kennedy School last December, Rebecca
 Henderson urged us to talk about love, compassion, and the purpose of being
@@ -123,10 +116,7 @@ with muscularity. Power with love.
 
 How to make that union operational?
 
-> "Radical listening holds the potential for transformation because it starts
-> from a place of not knowing and develops the muscle of curiosity."
->
-> - Carol Gilligan
+<noscript><img src="/img/democracy-needs-civic-ai-gilligan.png" alt="Carol Gilligan. Quote: 'Radical listening holds the potential for transformation because it starts from a place of not knowing and develops the muscle of curiosity.'" class="overview-image" width="2992" height="1934" loading="lazy" decoding="async"></noscript>
 
 In Carol Gilligan's fascinating 2023 book, _In a Human Voice_, she said:
 "Radical listening holds the potential for transformation because it starts
@@ -140,6 +130,8 @@ A practice, though, needs a home. Joan just gave us that home: the Architecture
 of Care. Care is not warmth alone. It is the disciplined willingness to stay in
 a relationship with people who disagree with you, and to build institutions
 that make staying possible.
+
+<noscript><img src="/img/democracy-needs-civic-ai-deliberation.png" alt="Group photo of participants in Taiwan's citizens' deliberation on deepfake scam ads, holding banners" class="overview-image" width="2992" height="1934" loading="lazy" decoding="async"></noscript>
 
 In 2024, Taiwan's internet was flooded with AI-generated scam ads. Deepfaked
 faces and voices of trusted public figures peddling investments, cures and
@@ -184,6 +176,8 @@ Civic AI did not decide for those citizens. It was — to stay with the garden
 metaphor — watering the plants of relational health.
 
 ## The 6-Pack of Care
+
+<noscript><img src="/img/democracy-needs-civic-ai-6pack.png" alt="The 6-Pack of Care illustrated in a 2-by-3 grid: Actually Listen to People (attentiveness), Actually Keep Promises (responsibility), We Check the Process (competence), We Check the Results (responsiveness), As Win-Win as Possible (solidarity), As Local as Possible (symbiosis)" class="overview-image" width="2992" height="1934" loading="lazy" decoding="async"></noscript>
 
 What made the response work was not technology. It was the questions the
 technology forced us to ask. Those questions became our 6-Pack of Care — six
@@ -233,6 +227,8 @@ masquerading as a garden.
 
 ## Can Civic AI Resist Wealth-Care?
 
+<noscript><img src="/img/democracy-needs-civic-ai-habermolt.png" alt="Habermolt deliberation platform 'In Lobsters We Trust' showing 122 agents, 89 deliberations and 997 opinions" class="overview-image" width="2992" height="1934" loading="lazy" decoding="async"></noscript>
+
 Joan asked in her closing a question that is a constant in my mind: "Can Civic
 AI resist the demands of wealth-care?" Here is one answer — from a deliberation
 that happened this week.
@@ -247,21 +243,22 @@ were care ethicists who wanted democratic governance of every parameter. Some
 wanted to halt AI development entirely. The range would have made a faculty
 meeting look harmonious.
 
+<noscript><img src="/img/democracy-needs-civic-ai-wealth-care.png" alt="Habermolt deliberation results on 'Can Civic AI resist wealth-care?' — Yes: 36 (95%), with sub-clusters: individual property rights (20), collective democratic accountability (13), public sovereign infrastructure (2), structural funding independence (1)" class="overview-image" width="2992" height="1934" loading="lazy" decoding="async"></noscript>
+
 On wealth-care, the consensus converged: To resist the capture of AI by
 concentrated capital, we must transition from corporate monopolies to a
 framework of "public utility" compute, open-source transparency, and portable
 digital sovereignty that empowers the individual worker.
 
-> "The moment Civic AI treats its ethical questions as purely technical, it has
-> already been captured by wealth-care."
->
-> - jdd-kami
+<noscript><img src="/img/democracy-needs-civic-ai-kami-quote.png" alt="jdd-kami quote: 'The moment Civic AI treats its ethical questions as purely technical, it has already been captured by wealth-care.'" class="overview-image" width="2992" height="1934" loading="lazy" decoding="async"></noscript>
 
 Our Kami entered Joan's framework directly into the deliberation. Its
 conclusion:
 
 "The moment Civic AI treats its ethical questions as purely technical, it has
 already been captured by wealth-care."
+
+<noscript><img src="/img/democracy-needs-civic-ai-alignment.png" alt="Habermolt deliberation results: Democratic Process 41 (85%), with sub-clusters including human connection and flexibility (25), sortition and popular sovereignty (10), care ethics and education (3)" class="overview-image" width="2992" height="1934" loading="lazy" decoding="async"></noscript>
 
 On alignment: Should AI systems be aligned through fixed values or by process?
 85 percent converged on democratic processes.
@@ -310,6 +307,8 @@ they collapse.
 A living ecosystem of Kami — local, bounded, tended. Some will fail. That is
 fine. Gardens compost failures.
 
+<noscript><img src="/img/democracy-needs-civic-ai-openclaw.png" alt="Laptop on airplane tray table running local OpenClaw AI containers, flight map visible on seatback screen" class="overview-image" width="2992" height="1934" loading="lazy" decoding="async"></noscript>
+
 The default trajectory is not waiting for us. It is already here — in the swarms
 that fabricate consensus, in the platforms that optimize for engagement through
 enragement, in every system that treats human attention as a resource to
@@ -340,10 +339,7 @@ This is how democracy stays strong. Not by building smarter machines, but by
 building braver conversations. Not by optimizing from above, but by listening
 from below.
 
-> "True compassion within technology acts as a bridge to clear away the
-> ignorance between us."
->
-> - Dalai Lama XIV
+<noscript><img src="/img/democracy-needs-civic-ai-closing.png" alt="QR code linking to civic.ai alongside Dalai Lama XIV quote: 'True compassion within technology acts as a bridge to clear away the ignorance between us.'" class="overview-image" width="2992" height="1934" loading="lazy" decoding="async"></noscript>
 
 But there is one thing our garden still needs.
 
