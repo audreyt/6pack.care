@@ -69,7 +69,7 @@ const S={
 12:[39,25,"牛津郡新建的 AI 資料中心將為當地居民創造好的工作機會，而不只是為外地的科技工作者。"],
 15:[25,47,"學校中的 AI 工具對幫助落後學生趕上進度的效果，大於它對學習造成的傷害。"]
 };
-const G={3:[[79,0],[40,40],[83,17]],20:[[31,46],[79,14],[100,0]],4:[[15,46],[94,0],[0,100]],11:[[6,69],[67,25],[86,14]],12:[[38,23],[42,17],[33,67]],15:[[47,13],[8,67],[0,100]]};
+const G={1:[[81,0],[100,0],[100,0]],2:[[85,0],[92,0],[75,25]],3:[[79,0],[40,40],[83,17]],4:[[15,46],[94,0],[0,100]],5:[[92,0],[90,0],[100,0]],6:[[69,15],[93,0],[100,0]],7:[[93,0],[100,0],[100,0]],8:[[60,20],[79,0],[100,0]],9:[[73,20],[92,0],[100,0]],10:[[50,29],[100,0],[100,0]],11:[[6,69],[67,25],[86,14]],12:[[38,23],[42,17],[33,67]],13:[[80,7],[86,7],[100,0]],14:[[83,8],[100,0],[100,0]],15:[[47,13],[8,67],[0,100]],16:[[86,0],[90,10],[100,0]],17:[[86,7],[91,0],[100,0]],18:[[75,0],[83,8],[100,0]],19:[[77,8],[100,0],[86,14]],20:[[31,46],[79,14],[100,0]]};
 const gn=["A","B","C"],gc=["polis-ga","polis-gb","polis-gc"];
 const panel=document.getElementById("beeswarm-detail");
 const bT=document.getElementById("bd-text"),bB=document.getElementById("bd-bar"),bL=document.getElementById("bd-labels"),bG=document.getElementById("bd-groups");
@@ -79,7 +79,7 @@ function show(id){const s=S[id];if(!s)return;const[a,d,text]=s,p=100-a-d;
 bT.textContent="#"+id+"："+text;
 bB.innerHTML='<div class="polis-bar-agree" style="width:'+a+'%"></div>'+(d>0?'<div class="polis-bar-disagree" style="width:'+d+'%"></div>':"");
 bL.innerHTML='<span class="polis-label-agree">'+a+"% 同意</span>"+(d>0?' <span class="polis-label-disagree">'+d+"% 不同意</span>":"")+(p>0?" <span>"+p+"% 略過</span>":"");
-const g=G[id];if(g){bG.innerHTML=g.map((r,i)=>'<div class="polis-group-bar"><span class="polis-group-name '+gc[i]+'">'+gn[i]+'</span><div class="polis-bar"><div class="polis-bar-agree" style="width:'+r[0]+'%"></div>'+(r[1]>0?'<div class="polis-bar-disagree" style="width:'+r[1]+'%"></div>':'')+'</div><span class="polis-group-pct">'+r[0]+"%</span></div>").join("");bG.style.display="";}else{bG.innerHTML="";bG.style.display="none";}
+const g=G[id];bG.innerHTML=g.map((r,i)=>'<div class="polis-group-bar"><span class="polis-group-name '+gc[i]+'">'+gn[i]+'</span><div class="polis-bar"><div class="polis-bar-agree" style="width:'+r[0]+'%"></div>'+(r[1]>0?'<div class="polis-bar-disagree" style="width:'+r[1]+'%"></div>':'')+'</div><span class="polis-group-pct">'+r[0]+"%</span></div>").join("");
 svg.querySelectorAll("[data-stmt]").forEach(c=>{c.setAttribute("opacity",c.getAttribute("data-stmt")===String(id)?"1":"0.4");});
 panel.style.display="";panel.scrollIntoView({behavior:"smooth",block:"nearest"});}
 svg.addEventListener("click",e=>{const c=e.target.closest("[data-stmt]");if(c)show(c.getAttribute("data-stmt"));});
