@@ -296,7 +296,3 @@ The smallest but most decisive group. They take strong, clear positions and are 
 - 100% want an independent body with power to shut down harmful AI
 
 </div>
-
----
-
-<p class="polis-source"><a href="https://polis.comhairle.scot/report/r2jstrdchy3udbrf8arjx">View the original Polis report</a></p>

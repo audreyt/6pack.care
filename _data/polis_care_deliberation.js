@@ -1,5 +1,8 @@
 const EXPORT_ID = "r2jstrdchy3udbrf8arjx";
-const BASE_URL = `https://polis.comhairle.scot/api/v3/reportExport/${EXPORT_ID}`;
+const SNAPSHOT_BLOB_BASE =
+    "https://github.com/audreyt/polis-tally/blob/gh-pages";
+const SNAPSHOT_RAW_BASE =
+    "https://raw.githubusercontent.com/audreyt/polis-tally/gh-pages";
 const EN_DATE = new Intl.DateTimeFormat("en-GB", {
     day: "numeric",
     month: "short",
@@ -519,22 +522,35 @@ async function fetchText(url) {
 }
 
 export default async function () {
+    const sourceFiles = {
+        summary: `${EXPORT_ID}-summary.csv`,
+        comments: `${EXPORT_ID}-comments.csv`,
+        votes: `${EXPORT_ID}-votes.csv`,
+        participantVotes: `${EXPORT_ID}-participant-votes.csv`,
+        commentGroups: `${EXPORT_ID}-comment-groups.csv`,
+    };
     const sourceUrls = {
-        summary: `${BASE_URL}/summary.csv`,
-        comments: `${BASE_URL}/comments.csv`,
-        votes: `${BASE_URL}/votes.csv`,
-        participantVotes: `${BASE_URL}/participant-votes.csv`,
-        commentGroups: `${BASE_URL}/comment-groups.csv`,
-        polis: "https://polis.comhairle.scot/5ccwfj3hbe",
+        summary: `${SNAPSHOT_BLOB_BASE}/${sourceFiles.summary}`,
+        comments: `${SNAPSHOT_BLOB_BASE}/${sourceFiles.comments}`,
+        votes: `${SNAPSHOT_BLOB_BASE}/${sourceFiles.votes}`,
+        participantVotes: `${SNAPSHOT_BLOB_BASE}/${sourceFiles.participantVotes}`,
+        commentGroups: `${SNAPSHOT_BLOB_BASE}/${sourceFiles.commentGroups}`,
+        snapshotRepo: "https://github.com/audreyt/polis-tally/tree/gh-pages",
+    };
+    const fetchUrls = {
+        summary: `${SNAPSHOT_RAW_BASE}/${sourceFiles.summary}`,
+        comments: `${SNAPSHOT_RAW_BASE}/${sourceFiles.comments}`,
+        votes: `${SNAPSHOT_RAW_BASE}/${sourceFiles.votes}`,
+        participantVotes: `${SNAPSHOT_RAW_BASE}/${sourceFiles.participantVotes}`,
     };
 
     try {
         const [summaryText, commentsText, votesText, participantVotesText] =
             await Promise.all([
-                fetchText(sourceUrls.summary),
-                fetchText(sourceUrls.comments),
-                fetchText(sourceUrls.votes),
-                fetchText(sourceUrls.participantVotes),
+                fetchText(fetchUrls.summary),
+                fetchText(fetchUrls.comments),
+                fetchText(fetchUrls.votes),
+                fetchText(fetchUrls.participantVotes),
             ]);
 
         const summary = parseSummary(summaryText);
@@ -980,7 +996,7 @@ export default async function () {
             ok: true,
             exportId: EXPORT_ID,
             sourceUrls,
-            polisUrl: sourceUrls.polis,
+            snapshotUrl: sourceUrls.snapshotRepo,
             question: {
                 en: "What kind of AI use would people accept in care, government, and everyday public life?",
                 tw: "人們願意接受哪一種 AI 應用於照護、政府與日常公共生活？",
@@ -1047,7 +1063,7 @@ export default async function () {
             ok: false,
             exportId: EXPORT_ID,
             sourceUrls,
-            polisUrl: sourceUrls.polis,
+            snapshotUrl: sourceUrls.snapshotRepo,
             error: String(error),
         };
     }
