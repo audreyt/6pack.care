@@ -98,7 +98,7 @@ agenda:
       break: true
     - time: "14:00"
       title: "Welcome Back"
-      speaker: "Sensemaking readout & introduction to afternoon"
+      speaker: "Reflections [Pass the Mic] & introduction to afternoon"
       photos:
           - { src: "/img/caroline.jpg", alt: "Caroline Green", w: 512, h: 512 }
           - { src: "/img/audrey.jpg", alt: "Audrey Tang", w: 512, h: 512 }

@@ -98,7 +98,7 @@ agenda:
       break: true
     - time: "14:00"
       title: "午後開場"
-      speaker: "上午彙整與下午介紹"
+      speaker: "回饋 [Pass the Mic] 與下午介紹"
       photos:
           - { src: "/img/caroline.jpg", alt: "Caroline Green", w: 512, h: 512 }
           - { src: "/img/audrey.jpg", alt: "唐鳳", w: 512, h: 512 }
