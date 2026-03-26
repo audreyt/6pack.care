@@ -1625,9 +1625,7 @@ footer a:hover {
 
 .polis-group-bar {
     display: grid;
-    grid-template-columns: 24px 1fr 40px;
-    align-items: center;
-    gap: 8px;
+    gap: 4px;
 }
 
 .polis-group-bar .polis-bar {
