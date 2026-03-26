@@ -2160,7 +2160,7 @@ footer a:hover {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 6px;
+    white-space: nowrap;
     color: var(--muted);
     font-size: 0.84rem;
     font-weight: 600;
