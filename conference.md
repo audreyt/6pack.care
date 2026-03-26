@@ -229,3 +229,12 @@ overview_image:
     </div>
 </figure>
 </div>
+
+<h2>Sensemaking</h2>
+
+<p style="font-size:0.95rem">Participants took part in a <a href="https://pol.is">Polis</a> exercise on AI and community care. The results are available in two formats.</p>
+
+<div class="conf-packs-condensed">
+<a href="/conference/report/">Community Voices on AI</a>
+<a href="/conference/sensemaking/">Deliberation Mirror</a>
+</div>

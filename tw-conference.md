@@ -229,3 +229,12 @@ overview_image:
     </div>
 </figure>
 </div>
+
+<h2>集體感知</h2>
+
+<p style="font-size:0.95rem">與會者參與了一場以 AI 與社區關懷為主題的 <a href="https://pol.is">Polis</a> 集體感知練習，結果以兩種格式呈現。</p>
+
+<div class="conf-packs-condensed">
+<a href="/tw/conference/report/">社群 AI 之聲</a>
+<a href="/tw/conference/sensemaking/">審議鏡像</a>
+</div>
