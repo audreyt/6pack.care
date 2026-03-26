@@ -1,0 +1,566 @@
+{% set lang_key = "en" %}
+{% if ui_locale == "tw" %}
+    {% set lang_key = "tw" %}
+{% endif %}
+{% set ui = polis_care_ui[lang_key] %}
+{% set report = polis_care_deliberation %}
+{% set selected_statement_id = report.leadingStatement.id if report.ok else "" %}
+{% set selected_participant_id = report.featuredParticipantId if report.ok else "" %}
+
+<div class="polis-fullbleed">
+    <div class="polis-report">
+        {% if not report.ok %}
+            <section class="polis-error-card">
+                <p class="polis-eyebrow">{{ ui.eyebrow }}</p>
+                <h2>{{ ui.errorTitle }}</h2>
+                <p>{{ ui.errorDescription }}</p>
+                <p>
+                    <a href="{{ report.sourceUrls.comments }}">comments.csv</a>
+                </p>
+            </section>
+        {% else %}
+            <section class="polis-hero" id="consensus">
+                <div class="polis-hero__copy">
+                    <p class="polis-eyebrow">{{ ui.eyebrow }}</p>
+                    <h2>{{ report.question[lang_key] }}</h2>
+                    <p class="polis-hero__dek">{{ report.dek[lang_key] }}</p>
+                    <div class="polis-hero__meta">
+                        <span>{{ report.summary.voters }} {{ ui.stats.participants | lower }}</span>
+                        <span>{{ report.summary.comments }} {{ ui.stats.statements | lower }}</span>
+                        <span>{{ report.summary.groups }} {{ ui.stats.clusters | lower }}</span>
+                        <span>{{ report.sourceWindow.from[lang_key] }} → {{ report.sourceWindow.to[lang_key] }}</span>
+                    </div>
+                </div>
+
+                <nav class="polis-pill-nav" aria-label="Sections">
+                    <a href="#consensus" data-report-nav>{{ ui.nav.consensus }}</a>
+                    <a href="#statements" data-report-nav>{{ ui.nav.statements }}</a>
+                    <a href="#participants" data-report-nav>{{ ui.nav.participants }}</a>
+                    <a href="#method" data-report-nav>{{ ui.nav.method }}</a>
+                </nav>
+
+                <div class="polis-stats-grid">
+                    <article class="polis-stat">
+                        <p class="polis-stat__value">{{ report.stats.participants }}</p>
+                        <p class="polis-stat__label">{{ ui.stats.participants }}</p>
+                    </article>
+                    <article class="polis-stat">
+                        <p class="polis-stat__value">{{ report.stats.votes }}</p>
+                        <p class="polis-stat__label">{{ ui.stats.votes }}</p>
+                    </article>
+                    <article class="polis-stat">
+                        <p class="polis-stat__value">{{ report.stats.statements }}</p>
+                        <p class="polis-stat__label">{{ ui.stats.statements }}</p>
+                    </article>
+                    <article class="polis-stat">
+                        <p class="polis-stat__value">{{ report.stats.clusters }}</p>
+                        <p class="polis-stat__label">{{ ui.stats.clusters }}</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="polis-consensus-grid">
+                <article class="polis-consensus-card">
+                    <div class="polis-card__header">
+                        <span class="polis-badge polis-badge--warm">{{ ui.consensus.badge }}</span>
+                        <span class="polis-rank-chip">#{{ report.leadingStatement.rank }}</span>
+                    </div>
+                    <h3>{{ report.leadingStatement.body | escape }}</h3>
+                    <p>{{ ui.consensus.description }}</p>
+
+                    <div class="polis-metric-pair">
+                        <div>
+                            <span>{{ ui.consensus.support }}</span>
+                            <strong>{{ report.leadingStatement.supportPct }}%</strong>
+                        </div>
+                        <div>
+                            <span>{{ ui.consensus.bridge }}</span>
+                            <strong>{{ report.leadingStatement.bridgePct }}%</strong>
+                        </div>
+                    </div>
+
+                    <div class="polis-inline-meta">
+                        <span>{{ ui.consensus.strongestGroup }} {{ report.leadingStatement.strongestGroup.label[lang_key] }}</span>
+                        <span>{{ ui.consensus.weakestGroup }} {{ report.leadingStatement.weakestGroup.label[lang_key] }}</span>
+                    </div>
+
+                    <div class="polis-group-bars">
+                        {% for group in report.leadingStatement.groupSupport %}
+                            <div class="polis-group-bar">
+                                <div class="polis-group-bar__label">
+                                    <span class="polis-dot" style="background: {{ group.color }}"></span>
+                                    <span>{{ group.label[lang_key] }}</span>
+                                    <strong>{{ group.agreePct }}%</strong>
+                                </div>
+                                <div class="polis-group-bar__track">
+                                    <span class="polis-group-bar__fill" style="width: {{ group.agreePct }}%; background: {{ group.color }}"></span>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </article>
+
+                <aside class="polis-side-stack">
+                    {% set statement_status = ui.dynamics[report.statementDynamics] %}
+                    {% set opinion_status = ui.dynamics[report.opinionDynamics] %}
+                    <article class="polis-side-card">
+                        <div class="polis-side-card__kicker">{{ ui.consensus.statementDynamics }}</div>
+                        <div class="polis-status-pill" style="--status-color: #c4614a">
+                            <span>{{ statement_status.icon }}</span>
+                            <strong>{{ statement_status.label }}</strong>
+                        </div>
+                        <p>{{ statement_status.description }}</p>
+                    </article>
+
+                    <article class="polis-side-card">
+                        <div class="polis-side-card__kicker">{{ ui.consensus.opinionDynamics }}</div>
+                        <div class="polis-status-pill" style="--status-color: #2a7f8a">
+                            <span>{{ opinion_status.icon }}</span>
+                            <strong>{{ opinion_status.label }}</strong>
+                        </div>
+                        <p>{{ opinion_status.description }}</p>
+                    </article>
+
+                    <article class="polis-side-card">
+                        <div class="polis-side-card__kicker">{{ ui.consensus.timeline }}</div>
+                        <p class="polis-side-card__note">{{ ui.consensus.timelineDescription }}</p>
+                        <ol class="polis-history-list">
+                            {% for event in report.leaderHistory %}
+                                <li>
+                                    <span class="polis-history-list__count">{{ event.voteCount }}</span>
+                                    <div>
+                                        <strong>#{{ event.statement.rank }}</strong>
+                                        <p>{{ event.statement.body | escape }}</p>
+                                        <span>{{ event.atDisplay[lang_key] }}</span>
+                                    </div>
+                                </li>
+                            {% endfor %}
+                        </ol>
+                    </article>
+
+                    <article class="polis-side-card">
+                        <div class="polis-side-card__kicker">{{ ui.consensus.source }}</div>
+                        <p>
+                            <a href="{{ report.polisUrl }}">{{ report.polisUrl }}</a>
+                        </p>
+                        <p class="polis-side-card__note">
+                            {{ ui.consensus.sourceWindow }}: {{ report.sourceWindow.from[lang_key] }} → {{ report.sourceWindow.to[lang_key] }}
+                        </p>
+                    </article>
+                </aside>
+            </section>
+
+            <section class="polis-section" id="statements">
+                <div class="polis-section__heading">
+                    <p class="polis-section__kicker">{{ ui.statements.kicker }}</p>
+                    <h2>{{ ui.statements.title }}</h2>
+                    <p>{{ ui.statements.description }}</p>
+                </div>
+
+                <div class="polis-two-up">
+                    <div class="polis-card-column">
+                        {% for statement in report.statements %}
+                            <article class="polis-statement-card{% if statement.id == selected_statement_id %} is-selected{% endif %}" data-statement-target="{{ statement.id }}" tabindex="0">
+                                <div class="polis-card__header">
+                                    <span class="polis-rank-chip" style="background: {{ statement.accent }}">{{ statement.rank }}</span>
+                                    <div class="polis-card__metrics">
+                                        <span>{{ statement.supportPct }}% {{ ui.statements.cardMeta }}</span>
+                                        <span>{{ statement.bridgePct }}% {{ ui.statements.bridgeMeta }}</span>
+                                    </div>
+                                </div>
+                                <p class="polis-statement-card__body">{{ statement.body | escape }}</p>
+                                <div class="polis-mini-bars" aria-hidden="true">
+                                    {% for group in statement.groupSupport %}
+                                        <span class="polis-mini-bars__segment" style="width: {{ group.agreePct }}%; background: {{ group.color }}"></span>
+                                    {% endfor %}
+                                </div>
+                                <div class="polis-inline-meta">
+                                    <span>{{ statement.totalVotes }} {{ ui.statements.detailVotes | lower }}</span>
+                                    <span>{{ ui.consensus.weakestGroup }} {{ statement.weakestGroup.label[lang_key] }}</span>
+                                </div>
+                            </article>
+                        {% endfor %}
+                    </div>
+
+                    <div class="polis-sticky-visual">
+                        <div class="polis-visual-card">
+                            <svg viewBox="0 0 640 460" class="polis-plot" aria-label="Statement map">
+                                {% for edge in report.statementEdges %}
+                                    <line
+                                        x1="{{ edge.x1 }}"
+                                        y1="{{ edge.y1 }}"
+                                        x2="{{ edge.x2 }}"
+                                        y2="{{ edge.y2 }}"
+                                        stroke="rgba(44, 62, 80, 0.18)"
+                                        stroke-dasharray="5 6"
+                                        stroke-width="{{ 1 + edge.similarity }}"
+                                    ></line>
+                                {% endfor %}
+                                {% for statement in report.statements %}
+                                    <g
+                                        class="polis-point{% if statement.id == selected_statement_id %} is-selected{% endif %}"
+                                        data-statement-target="{{ statement.id }}"
+                                        tabindex="0"
+                                        role="button"
+                                    >
+                                        <circle
+                                            cx="{{ statement.plot.x }}"
+                                            cy="{{ statement.plot.y }}"
+                                            r="{{ statement.radius }}"
+                                            fill="{{ statement.accent }}"
+                                            fill-opacity="0.2"
+                                        ></circle>
+                                        <circle
+                                            cx="{{ statement.plot.x }}"
+                                            cy="{{ statement.plot.y }}"
+                                            r="{{ statement.radius - 4 }}"
+                                            fill="{{ statement.accent }}"
+                                        ></circle>
+                                        <text
+                                            x="{{ statement.plot.x }}"
+                                            y="{{ statement.plot.y + 4 }}"
+                                            text-anchor="middle"
+                                            font-size="11"
+                                            font-weight="700"
+                                            fill="#ffffff"
+                                        >
+                                            {{ statement.rank }}
+                                        </text>
+                                    </g>
+                                {% endfor %}
+                            </svg>
+
+                            <div class="polis-detail-panels">
+                                {% for statement in report.statements %}
+                                    <article class="polis-detail-panel{% if statement.id == selected_statement_id %} is-selected{% endif %}" data-statement-panel="{{ statement.id }}">
+                                        <div class="polis-card__header">
+                                            <span class="polis-badge" style="background: {{ statement.accent }}22; color: {{ statement.accent }}">{{ ui.statements.detailTitle }}</span>
+                                            <span class="polis-rank-chip" style="background: {{ statement.accent }}">{{ statement.rank }}</span>
+                                        </div>
+                                        <h3>{{ statement.body | escape }}</h3>
+                                        <div class="polis-metric-pair">
+                                            <div>
+                                                <span>{{ ui.statements.detailSupport }}</span>
+                                                <strong>{{ statement.supportPct }}%</strong>
+                                            </div>
+                                            <div>
+                                                <span>{{ ui.statements.detailDisagreement }}</span>
+                                                <strong>{{ statement.disagreementPct }}%</strong>
+                                            </div>
+                                            <div>
+                                                <span>{{ ui.statements.detailVotes }}</span>
+                                                <strong>{{ statement.totalVotes }}</strong>
+                                            </div>
+                                        </div>
+                                        <p class="polis-side-card__note">{{ ui.statements.created }}: {{ statement.createdAtDisplay[lang_key] }}</p>
+                                        <div class="polis-group-bars">
+                                            {% for group in statement.groupSupport %}
+                                                <div class="polis-group-bar">
+                                                    <div class="polis-group-bar__label">
+                                                        <span class="polis-dot" style="background: {{ group.color }}"></span>
+                                                        <span>{{ group.label[lang_key] }}</span>
+                                                        <strong>{{ group.agreePct }}%</strong>
+                                                    </div>
+                                                    <div class="polis-group-bar__track">
+                                                        <span class="polis-group-bar__fill" style="width: {{ group.agreePct }}%; background: {{ group.color }}"></span>
+                                                    </div>
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                    </article>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="polis-section" id="participants">
+                <div class="polis-section__heading">
+                    <p class="polis-section__kicker">{{ ui.participants.kicker }}</p>
+                    <h2>{{ ui.participants.title }}</h2>
+                    <p>{{ ui.participants.description }}</p>
+                </div>
+
+                <div class="polis-cluster-ribbon">
+                    <p>{{ ui.participants.ribbonTitle }}</p>
+                    <div class="polis-cluster-ribbon__bar">
+                        {% for group in report.groups %}
+                            <span
+                                class="polis-cluster-ribbon__segment"
+                                style="width: {{ group.sharePct }}%; background: {{ group.color }}"
+                            ></span>
+                        {% endfor %}
+                    </div>
+                    <div class="polis-cluster-ribbon__legend">
+                        {% for group in report.groups %}
+                            <span>
+                                <span class="polis-dot" style="background: {{ group.color }}"></span>
+                                {{ group.label[lang_key] }} <strong>{{ group.sharePct }}%</strong>
+                            </span>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="polis-two-up">
+                    <div class="polis-card-column polis-card-column--participants">
+                        {% for participant in report.participants %}
+                            <article class="polis-participant-card{% if participant.id == selected_participant_id %} is-selected{% endif %}" data-participant-target="{{ participant.id }}" tabindex="0">
+                                <div class="polis-card__header">
+                                    <div class="polis-participant-card__identity">
+                                        <span class="polis-dot polis-dot--large" style="background: {{ participant.group.color }}"></span>
+                                        <strong>{{ participant.label[lang_key] }}</strong>
+                                    </div>
+                                    <span class="polis-badge" style="background: {{ participant.group.soft }}; color: {{ participant.group.color }}">{{ participant.group.label[lang_key] }}</span>
+                                </div>
+
+                                {% if participant.isAuthor %}
+                                    <p class="polis-inline-tag">{{ ui.participants.authorTag }}</p>
+                                {% endif %}
+
+                                <div class="polis-inline-meta">
+                                    <span>{{ participant.nVotes }} {{ ui.participants.votes | lower }}</span>
+                                    <span>{{ participant.nAgree }} {{ ui.status.agree | lower }}</span>
+                                    <span>{{ participant.nDisagree }} {{ ui.status.disagree | lower }}</span>
+                                </div>
+
+                                <div class="polis-vote-strip" aria-label="{{ ui.participants.voteStrip }}">
+                                    {% for item in participant.voteStrip %}
+                                        <span
+                                            class="polis-vote-strip__cell polis-vote-strip__cell--{% if item.value > 0 %}agree{% elif item.value < 0 %}disagree{% else %}pass{% endif %}"
+                                            title="#{{ loop.index }}"
+                                        ></span>
+                                    {% endfor %}
+                                </div>
+
+                                {% if participant.topAgreements.length %}
+                                    <div class="polis-participant-card__list">
+                                        <span>{{ ui.participants.agrees }}</span>
+                                        <p>
+                                            {% for item in participant.topAgreements %}
+                                                <span>#{{ item.rank }}</span>{% if not loop.last %}, {% endif %}
+                                            {% endfor %}
+                                        </p>
+                                    </div>
+                                {% endif %}
+
+                                {% if participant.topDisagreements.length %}
+                                    <div class="polis-participant-card__list">
+                                        <span>{{ ui.participants.disagrees }}</span>
+                                        <p>
+                                            {% for item in participant.topDisagreements %}
+                                                <span>#{{ item.rank }}</span>{% if not loop.last %}, {% endif %}
+                                            {% endfor %}
+                                        </p>
+                                    </div>
+                                {% endif %}
+                            </article>
+                        {% endfor %}
+                    </div>
+
+                    <div class="polis-sticky-visual">
+                        <div class="polis-visual-card">
+                            <svg viewBox="0 0 640 460" class="polis-plot" aria-label="Participant map">
+                                {% for edge in report.participantEdges %}
+                                    <line
+                                        x1="{{ edge.x1 }}"
+                                        y1="{{ edge.y1 }}"
+                                        x2="{{ edge.x2 }}"
+                                        y2="{{ edge.y2 }}"
+                                        stroke="{% if edge.sameCluster %}rgba(42, 127, 138, 0.16){% else %}rgba(196, 97, 74, 0.14){% endif %}"
+                                        stroke-dasharray="{% if edge.sameCluster %}0{% else %}6 6{% endif %}"
+                                        stroke-width="{{ 1 + edge.similarity }}"
+                                    ></line>
+                                {% endfor %}
+                                {% for participant in report.participants %}
+                                    <g
+                                        class="polis-point{% if participant.id == selected_participant_id %} is-selected{% endif %}"
+                                        data-participant-target="{{ participant.id }}"
+                                        tabindex="0"
+                                        role="button"
+                                    >
+                                        <circle
+                                            cx="{{ participant.plot.x }}"
+                                            cy="{{ participant.plot.y }}"
+                                            r="{% if participant.id == selected_participant_id %}11{% else %}8{% endif %}"
+                                            fill="{{ participant.group.color }}"
+                                            fill-opacity="0.85"
+                                        ></circle>
+                                    </g>
+                                {% endfor %}
+                            </svg>
+
+                            <div class="polis-detail-panels">
+                                {% for participant in report.participants %}
+                                    <article class="polis-detail-panel{% if participant.id == selected_participant_id %} is-selected{% endif %}" data-participant-panel="{{ participant.id }}">
+                                        <div class="polis-card__header">
+                                            <span class="polis-badge" style="background: {{ participant.group.soft }}; color: {{ participant.group.color }}">{{ ui.participants.detailTitle }}</span>
+                                            <strong>{{ participant.label[lang_key] }}</strong>
+                                        </div>
+                                        <p class="polis-inline-meta">
+                                            <span>{{ participant.group.label[lang_key] }}</span>
+                                            <span>{{ participant.nVotes }} {{ ui.participants.votes | lower }}</span>
+                                            <span>{{ participant.nAgree }} {{ ui.status.agree | lower }}</span>
+                                            <span>{{ participant.nDisagree }} {{ ui.status.disagree | lower }}</span>
+                                        </p>
+                                        {% if participant.isAuthor %}
+                                            <p class="polis-inline-tag">{{ ui.participants.authorTag }}</p>
+                                        {% endif %}
+
+                                        {% if participant.topAgreements.length %}
+                                            <div class="polis-selection-list">
+                                                <h3>{{ ui.participants.agrees }}</h3>
+                                                <ul>
+                                                    {% for item in participant.topAgreements %}
+                                                        <li><strong>#{{ item.rank }}</strong> {{ item.body | escape }}</li>
+                                                    {% endfor %}
+                                                </ul>
+                                            </div>
+                                        {% endif %}
+
+                                        {% if participant.topDisagreements.length %}
+                                            <div class="polis-selection-list">
+                                                <h3>{{ ui.participants.disagrees }}</h3>
+                                                <ul>
+                                                    {% for item in participant.topDisagreements %}
+                                                        <li><strong>#{{ item.rank }}</strong> {{ item.body | escape }}</li>
+                                                    {% endfor %}
+                                                </ul>
+                                            </div>
+                                        {% endif %}
+                                    </article>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="polis-section polis-section--method" id="method">
+                <div class="polis-section__heading">
+                    <p class="polis-section__kicker">{{ ui.nav.method }}</p>
+                    <h2>{{ ui.method.title }}</h2>
+                    <p>{{ ui.method.description }}</p>
+                </div>
+
+                <div class="polis-method-grid">
+                    <article class="polis-side-card">
+                        <div class="polis-side-card__kicker">{{ ui.method.sources }}</div>
+                        <ul class="polis-link-list">
+                            <li><a href="{{ report.sourceUrls.summary }}">summary.csv</a></li>
+                            <li><a href="{{ report.sourceUrls.comments }}">comments.csv</a></li>
+                            <li><a href="{{ report.sourceUrls.votes }}">votes.csv</a></li>
+                            <li><a href="{{ report.sourceUrls.participantVotes }}">participant-votes.csv</a></li>
+                            <li><a href="{{ report.sourceUrls.commentGroups }}">comment-groups.csv</a></li>
+                        </ul>
+                    </article>
+
+                    <article class="polis-side-card">
+                        <div class="polis-side-card__kicker">{{ ui.method.limitations }}</div>
+                        <ul class="polis-method-list">
+                            {% for item in report.method[lang_key] %}
+                                <li>{{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                        <p class="polis-side-card__note">{{ ui.method.note }}</p>
+                    </article>
+                </div>
+            </section>
+
+            <script>
+                (() => {
+                    const bindSelection = (prefix) => {
+                        const targets = Array.from(
+                            document.querySelectorAll(`[data-${prefix}-target]`),
+                        );
+                        const panels = Array.from(
+                            document.querySelectorAll(`[data-${prefix}-panel]`),
+                        );
+
+                        if (!targets.length || !panels.length) {
+                            return;
+                        }
+
+                        const select = (id) => {
+                            for (const element of targets) {
+                                element.classList.toggle(
+                                    "is-selected",
+                                    element.dataset[`${prefix}Target`] === id,
+                                );
+                            }
+                            for (const panel of panels) {
+                                panel.classList.toggle(
+                                    "is-selected",
+                                    panel.dataset[`${prefix}Panel`] === id,
+                                );
+                            }
+                        };
+
+                        for (const element of targets) {
+                            element.addEventListener("click", () => {
+                                select(element.dataset[`${prefix}Target`]);
+                            });
+                            element.addEventListener("keydown", (event) => {
+                                if (event.key === "Enter" || event.key === " ") {
+                                    event.preventDefault();
+                                    select(element.dataset[`${prefix}Target`]);
+                                }
+                            });
+                        }
+                    };
+
+                    bindSelection("statement");
+                    bindSelection("participant");
+
+                    const navLinks = Array.from(
+                        document.querySelectorAll("[data-report-nav]"),
+                    );
+                    const sections = navLinks
+                        .map((link) => {
+                            const section = document.querySelector(
+                                link.getAttribute("href"),
+                            );
+                            if (!section) {
+                                return null;
+                            }
+                            return { link, section };
+                        })
+                        .filter(Boolean);
+
+                    if (sections.length) {
+                        const observer = new IntersectionObserver(
+                            (entries) => {
+                                const visible = entries
+                                    .filter((entry) => entry.isIntersecting)
+                                    .sort(
+                                        (left, right) =>
+                                            right.intersectionRatio -
+                                            left.intersectionRatio,
+                                    )[0];
+
+                                if (!visible) {
+                                    return;
+                                }
+
+                                for (const item of sections) {
+                                    item.link.classList.toggle(
+                                        "is-active",
+                                        item.section === visible.target,
+                                    );
+                                }
+                            },
+                            {
+                                rootMargin: "-40% 0px -45% 0px",
+                                threshold: [0.15, 0.35, 0.55],
+                            },
+                        );
+
+                        for (const item of sections) {
+                            observer.observe(item.section);
+                        }
+                    }
+                })();
+            </script>
+        {% endif %}
+    </div>
+</div>
