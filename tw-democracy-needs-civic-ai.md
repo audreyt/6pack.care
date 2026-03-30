@@ -53,7 +53,7 @@ Kami 寫的是傾聽。
 
 <noscript><img src="/img/democracy-needs-civic-ai-dalai-lama.png" alt="達賴喇嘛十四世與唐鳳在達蘭薩拉。語錄：'Because life does not begin in isolation but arises from a nature of interdependence, we must use these tools not for the sake of control, but to improve the pathways of human connection.'" class="overview-image" width="2992" height="1934" loading="lazy" decoding="async"></noscript>
 
-兩週前在達蘭薩拉，Tenzin Yangtso 向達賴喇嘛提出了一個由我們三人共同起草的問題：當 AI 能說每一種語言，卻無法與慈悲共振時，我們應該如何使用這股力量來促進合作，而不是控制？
+兩週前在達蘭薩拉，Tenzin Yangtso 向達賴喇嘛提出了我們共同起草的問題：當 AI 能說每一種語言，卻無法與慈悲共振時，我們應該如何使用這股力量來促進合作，而不是控制？
 
 達賴喇嘛回答：「生命並非孤立自存，而是源於相互依存的緣起；因此，我們運用這些工具的目的不應是為了控制，而是為了改善人與人之間連結的路徑。」
 

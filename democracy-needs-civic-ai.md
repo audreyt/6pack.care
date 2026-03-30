@@ -81,8 +81,8 @@ Democracy is the same.
 
 <noscript><img src="/img/democracy-needs-civic-ai-dalai-lama.png" alt="Dalai Lama XIV with Audrey Tang in Dharamsala. Quote: 'Because life does not begin in isolation but arises from a nature of interdependence, we must use these tools not for the sake of control, but to improve the pathways of human connection.'" class="overview-image" width="2992" height="1934" loading="lazy" decoding="async"></noscript>
 
-Two weeks ago in Dharamsala, Tenzin Yangtso asked the Dalai Lama a question the
-three of us had composed together: When AI can speak every language yet cannot
+Two weeks ago in Dharamsala, Tenzin Yangtso asked the Dalai Lama a question
+we had composed together: When AI can speak every language yet cannot
 resonate with compassion, how should we use this power for collaboration,
 rather than control?
 
