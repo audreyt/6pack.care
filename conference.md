@@ -98,7 +98,7 @@ agenda:
       break: true
     - time: "14:00"
       title: "Welcome Back"
-      speaker: "Sensemaking readout & introduction to afternoon"
+      speaker: "Reflections [Pass the Mic] & introduction to afternoon"
       photos:
           - { src: "/img/caroline.jpg", alt: "Caroline Green", w: 512, h: 512 }
           - { src: "/img/audrey.jpg", alt: "Audrey Tang", w: 512, h: 512 }
@@ -228,4 +228,13 @@ overview_image:
         <figcaption>— Pope Leo XIV</figcaption>
     </div>
 </figure>
+</div>
+
+<h2>Sensemaking</h2>
+
+<p style="font-size:0.95rem">Participants took part in a <a href="https://pol.is">Polis</a> exercise on AI and community care. The results are available in two formats.</p>
+
+<div class="conf-packs-condensed">
+<a href="/conference/report/">Community Voices on AI</a>
+<a href="/conference/sensemaking/">Deliberation Mirror</a>
 </div>
