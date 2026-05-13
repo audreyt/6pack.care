@@ -7,18 +7,14 @@ alt_lang_url: "/democracy-needs-civic-ai"
 permalink: "/tw/democracy-needs-civic-ai/"
 date: 2026-03-25
 description: "唐鳳談為何民主需要有界、在地、可問責的「仁工智慧」：地神，不是總督。"
-thumbnail: "/img/democracy-needs-civic-ai-slide-2.png"
+thumbnail: "https://customer-07bto6bf9uibrlc3.cloudflarestream.com/affd2bbbb0574a4d62a95c1f3fd43e65/thumbnails/thumbnail.jpg?time=55s"
 nav_next:
     url: "/tw/conference/"
     text: "研討會"
 ---
 
-<div class="overview-section">
-<noscript><img src="/img/democracy-needs-civic-ai-slide-2.png" alt="《民主需要仁工智慧》開場投影片圖像，呈現餐盤桌上的 jdd-kami 情境" class="overview-image" width="2488" height="1400" fetchpriority="high" decoding="async"></noscript>
-</div>
-
 <div class="video-embed">
-<iframe src="https://customer-07bto6bf9uibrlc3.cloudflarestream.com/affd2bbbb0574a4d62a95c1f3fd43e65/iframe?defaultTextTrack=zh-Hant" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://customer-07bto6bf9uibrlc3.cloudflarestream.com/affd2bbbb0574a4d62a95c1f3fd43e65/iframe?defaultTextTrack=zh-Hant&poster=https%3A%2F%2Fcustomer-07bto6bf9uibrlc3.cloudflarestream.com%2Faffd2bbbb0574a4d62a95c1f3fd43e65%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D55s" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 飛過中東上空時，機艙燈光暗了下來。大多數乘客都睡著了。我面前的餐盤桌上，放著一台小電腦，裡面跑著我們稱為 **jdd-kami** 的系統：那是 Tenzin Yangtso 和我一起照料的仁工智慧（Civic AI）。

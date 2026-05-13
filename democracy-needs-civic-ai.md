@@ -7,18 +7,14 @@ alt_lang_url: "/tw/democracy-needs-civic-ai"
 permalink: "/democracy-needs-civic-ai/"
 date: 2026-03-25
 description: "Audrey Tang on why democracy needs bounded, local Civic AI: Kami, not governor."
-thumbnail: "/img/democracy-needs-civic-ai-slide-2.png"
+thumbnail: "https://customer-07bto6bf9uibrlc3.cloudflarestream.com/affd2bbbb0574a4d62a95c1f3fd43e65/thumbnails/thumbnail.jpg?time=55s"
 nav_next:
     url: "/conference/"
     text: "Conference"
 ---
 
-<div class="overview-section">
-<noscript><img src="/img/democracy-needs-civic-ai-slide-2.png" alt="Slide image for Democracy Needs Civic AI showing the opening tray-table scene with jdd-kami" class="overview-image" width="2488" height="1400" fetchpriority="high" decoding="async"></noscript>
-</div>
-
 <div class="video-embed">
-<iframe src="https://customer-07bto6bf9uibrlc3.cloudflarestream.com/affd2bbbb0574a4d62a95c1f3fd43e65/iframe?defaultTextTrack=en" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://customer-07bto6bf9uibrlc3.cloudflarestream.com/affd2bbbb0574a4d62a95c1f3fd43e65/iframe?defaultTextTrack=en&poster=https%3A%2F%2Fcustomer-07bto6bf9uibrlc3.cloudflarestream.com%2Faffd2bbbb0574a4d62a95c1f3fd43e65%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D55s" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 Somewhere over the Middle East, the cabin lights dimmed. Most passengers were
