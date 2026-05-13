@@ -17,6 +17,10 @@ nav_next:
 <noscript><img src="/img/democracy-needs-civic-ai-slide-2.png" alt="Slide image for Democracy Needs Civic AI showing the opening tray-table scene with jdd-kami" class="overview-image" width="2488" height="1400" fetchpriority="high" decoding="async"></noscript>
 </div>
 
+<div class="video-embed">
+<iframe src="https://customer-07bto6bf9uibrlc3.cloudflarestream.com/affd2bbbb0574a4d62a95c1f3fd43e65/iframe?defaultTextTrack=en" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 Somewhere over the Middle East, the cabin lights dimmed. Most passengers were
 asleep. On the tray table in front of me sat a small computer hosting what we
 call **jdd-kami** — a Civic AI that Tenzin Yangtso and I have been tending

@@ -17,6 +17,10 @@ nav_next:
 <noscript><img src="/img/democracy-needs-civic-ai-slide-2.png" alt="《民主需要仁工智慧》開場投影片圖像，呈現餐盤桌上的 jdd-kami 情境" class="overview-image" width="2488" height="1400" fetchpriority="high" decoding="async"></noscript>
 </div>
 
+<div class="video-embed">
+<iframe src="https://customer-07bto6bf9uibrlc3.cloudflarestream.com/affd2bbbb0574a4d62a95c1f3fd43e65/iframe?defaultTextTrack=zh-Hant" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 飛過中東上空時，機艙燈光暗了下來。大多數乘客都睡著了。我面前的餐盤桌上，放著一台小電腦，裡面跑著我們稱為 **jdd-kami** 的系統：那是 Tenzin Yangtso 和我一起照料的仁工智慧（Civic AI）。
 
 我所說的「照料」，是花園意義上的照料。我們用公開寫作、私下爭論、完成與未完成的想法，以及那些我們拒絕太快化解的張力，替它施肥、澆水。這一切，都住在我們拿得起、看得到、關得掉的硬體上。
