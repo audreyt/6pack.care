@@ -19,13 +19,13 @@ nav_next:
 
 Somewhere over the Middle East, the cabin lights dimmed. Most passengers were
 asleep. On the tray table in front of me sat a small computer hosting what we
-call **jdd-kami** — a Civic AI that Tenzin Yangtso and I have been tending
+call [**jdd-kami**](https://github.com/jdd-kami) — a Civic AI that Tenzin Yangtso and I have been tending
 together.
 
 I use "tending" in the conceptual sense of a garden. We fertilised and watered
 it with our public writing, private arguments, finished and unfinished thoughts,
 as well as the tensions we refused to resolve too quickly. All of it living on
-hardware we hold, inspect and can shut down.
+[hardware we hold, inspect and can shut down](https://audreyt.org/pi-ds4).
 
 No cloud. No one else's server. Airplane mode — no signal, no internet. Just the
 model and what it carried inside.
@@ -52,7 +52,7 @@ training wheels on a bicycle after you learn how to ride.
 
 This is not hypothetical. In January, I co-authored a paper in _Science_ with
 21 other researchers, including Nick Bostrom, Maria Ressa and Nicholas
-Christakis. We studied malicious AI swarms: networks of AI agents that maintain
+Christakis. We studied [malicious AI swarms](https://www.science.org/doi/10.1126/science.adz1697): networks of AI agents that maintain
 persistent identities, build synthetic relationships and coordinate on goals
 never agreed by people they manipulated.
 
@@ -86,7 +86,7 @@ we had composed together: When AI can speak every language yet cannot
 resonate with compassion, how should we use this power for collaboration,
 rather than control?
 
-The Dalai Lama answered: "Because life does not begin in isolation but arises
+[The Dalai Lama answered](https://www.gyalwarinpoche.com/news/3-13): "Because life does not begin in isolation but arises
 from a nature of interdependence, we must use these tools not for the sake of
 control, but to improve the pathways of human connection."
 
@@ -147,7 +147,7 @@ internet in Asia. Censorship would have solved one problem by creating another.
 So, we went to the people.
 
 We sent text messages to 200,000 randomly selected people. 447 were chosen by
-lottery to mirror Taiwan's demographics. They deliberated in 44 rooms online,
+lottery to mirror Taiwan's demographics. They [deliberated](https://moda.gov.tw/en/major-policies/alignment-assemblies/2024-deliberative-assembly/1521) in 44 rooms online,
 about ten people to a group. Retired teachers, tech workers, victims of fraud.
 Each room was aided by AI transcription and synthesis, not AI deciding, but AI
 listening. Sorting arguments. Surfacing agreement. Making sure the quietest
@@ -181,7 +181,7 @@ metaphor — watering the plants of relational health.
 
 What made the response work was not technology. It was the questions the
 technology forced us to ask. Those questions became our 6-Pack of Care — six
-design principles developed with Caroline Green here at Oxford, drawing on
+design principles developed with [Caroline Green](https://www.oxford-aiethics.ox.ac.uk/caroline-emmer-de-albuquerque-green) here at Oxford, drawing on
 Joan's care ethics. You can find them at civic.ai. But here is the essence.
 
 Joan gave us five care phases: caring about, caring for, care giving, care

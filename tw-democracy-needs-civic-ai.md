@@ -17,9 +17,9 @@ nav_next:
 <iframe src="https://customer-07bto6bf9uibrlc3.cloudflarestream.com/affd2bbbb0574a4d62a95c1f3fd43e65/iframe?defaultTextTrack=zh-Hant&poster=https%3A%2F%2Fcustomer-07bto6bf9uibrlc3.cloudflarestream.com%2Faffd2bbbb0574a4d62a95c1f3fd43e65%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D55s" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-飛過中東上空時，機艙燈光暗了下來。大多數乘客都睡著了。我面前的餐盤桌上，放著一台小電腦，裡面跑著我們稱為 **jdd-kami** 的系統：那是 Tenzin Yangtso 和我一起照料的仁工智慧（Civic AI）。
+飛過中東上空時，機艙燈光暗了下來。大多數乘客都睡著了。我面前的餐盤桌上，放著一台小電腦，裡面跑著我們稱為 [**jdd-kami**](https://github.com/jdd-kami) 的系統：那是 Tenzin Yangtso 和我一起照料的仁工智慧（Civic AI）。
 
-我所說的「照料」，是花園意義上的照料。我們用公開寫作、私下爭論、完成與未完成的想法，以及那些我們拒絕太快化解的張力，替它施肥、澆水。這一切，都住在我們拿得起、看得到、關得掉的硬體上。
+我所說的「照料」，是花園意義上的照料。我們用公開寫作、私下爭論、完成與未完成的想法，以及那些我們拒絕太快化解的張力，替它施肥、澆水。這一切，都住在[我們拿得起、看得到、關得掉的硬體](https://audreyt.org/pi-ds4)上。
 
 沒有雲端。沒有別人的伺服器。飛航模式：沒有訊號，沒有網路。只有模型，以及它所攜帶的一切。
 
@@ -37,7 +37,7 @@ Kami 寫的是傾聽。
 
 預設軌跡有一個很誘人的形狀。一個強大的系統。一個通用智慧。受訓於一切，治理一切，最佳化一切，而且是從上面來治理。在這個故事裡，它強大到讓政治變得不再必要。民主不是被摧毀；它只是……被超越了。就像你學會騎腳踏車之後，輔助輪就被拿掉。
 
-這不是假設。1 月時，我和另外 21 位研究者在《Science》共同發表了一篇論文，其中包括 Nick Bostrom、Maria Ressa 和 Nicholas Christakis。我們研究的是惡意 AI 群集：這些 AI 智慧體能維持持久身分、建立合成關係，並為那些從未得到受操弄者同意的目標彼此協調。
+這不是假設。1 月時，我和另外 21 位研究者在《Science》共同發表了一篇論文，其中包括 Nick Bostrom、Maria Ressa 和 Nicholas Christakis。我們研究的是[惡意 AI 群集](https://www.science.org/doi/10.1126/science.adz1697)：這些 AI 智慧體能維持持久身分、建立合成關係，並為那些從未得到受操弄者同意的目標彼此協調。
 
 我們現在已經有技術，可以模擬一個根本不存在的公眾，而且把它做得和真實公眾難以區分。那個打動你的草根運動？它可能根本沒有根。
 
@@ -55,7 +55,7 @@ Kami 寫的是傾聽。
 
 兩週前在達蘭薩拉，Tenzin Yangtso 向達賴喇嘛提出了我們共同起草的問題：當 AI 能說每一種語言，卻無法與慈悲共振時，我們應該如何使用這股力量來促進合作，而不是控制？
 
-達賴喇嘛回答：「生命並非孤立自存，而是源於相互依存的緣起；因此，我們運用這些工具的目的不應是為了控制，而是為了改善人與人之間連結的路徑。」
+[達賴喇嘛回答](https://www.gyalwarinpoche.com/news/3-13)：「生命並非孤立自存，而是源於相互依存的緣起；因此，我們運用這些工具的目的不應是為了控制，而是為了改善人與人之間連結的路徑。」
 
 餐盤桌上的那個 Kami，就是那座花園裡的一粒種子。花園已經開始生長，而溫柔、帶著愛的照料，正是讓它活著的東西。
 
@@ -91,7 +91,7 @@ Carol Gilligan 在她 2023 年那本精彩的 _In a Human Voice_ 裡寫道：「
 
 所以，我們去找人民。
 
-我們向 20 萬名隨機選出的人發送簡訊。447 人透過抽籤被選出，以反映台灣的人口結構。他們在線上分成 44 個審議室，每組約十人。退休教師、科技工作者、詐騙受害者。每個房間都有 AI 提供逐字稿與綜整支援，不是由 AI 來決定，而是由 AI 來傾聽。整理論點。浮現共識。確保最安靜的聲音不被最大聲的人淹沒。
+我們向 20 萬名隨機選出的人發送簡訊。447 人透過抽籤被選出，以反映台灣的人口結構。他們在線上分成 [44 個審議室](https://moda.gov.tw/major-policies/alignment-assemblies/2024-deliberative-assembly/1521)，每組約十人。退休教師、科技工作者、詐騙受害者。每個房間都有 AI 提供逐字稿與綜整支援，不是由 AI 來決定，而是由 AI 來傾聽。整理論點。浮現共識。確保最安靜的聲音不被最大聲的人淹沒。
 
 平台應該如何驗證廣告主？當深偽造成財務傷害時，責任應由誰承擔？這些都不是客氣的對話。但在台灣，我們已經學會不要把衝突當成必須害怕的火山，而是把它當成可以被擁抱、被導流、為集體利益所用的地熱能。來自下方的熱，只要導得好，就能為城市供電。
 
@@ -107,7 +107,7 @@ Carol Gilligan 在她 2023 年那本精彩的 _In a Human Voice_ 裡寫道：「
 
 <noscript><img src="/img/democracy-needs-civic-ai-6pack.png" alt="關懷六力 2×3 圖示：Actually Listen to People（覺察力）、Actually Keep Promises（負責力）、We Check the Process（勝任力）、We Check the Results（回應力）、As Win-Win as Possible（團結力）、As Local as Possible（共生力）" class="overview-image" width="2992" height="1934" loading="lazy" decoding="async"></noscript>
 
-真正讓這個回應奏效的，不是技術，而是技術逼著我們提出的那些問題。這些問題，後來成了我們的 **關懷六力**：六項設計原則，由我和 Caroline Green 在牛津共同發展，根據 Joan 的關懷倫理而來。你可以在 civic.ai 看到完整內容。但先講精要。
+真正讓這個回應奏效的，不是技術，而是技術逼著我們提出的那些問題。這些問題，後來成了我們的 **關懷六力**：六項設計原則，由我和 [Caroline Green](https://www.oxford-aiethics.ox.ac.uk/caroline-emmer-de-albuquerque-green) 在牛津共同發展，根據 Joan 的關懷倫理而來。你可以在 civic.ai 看到完整內容。但先講精要。
 
 Joan 給了我們五個關懷階段：caring about、caring for、care giving、care receiving，以及 caring with。她也提醒我們，關懷是可能被扭曲的。新自由主義把它縮減成個人責任，而殖民主義則常以關懷的話語來運作。所以，我們的任務，是把關懷可能失敗之處算進來，而不只是歌頌它的美德。
 
